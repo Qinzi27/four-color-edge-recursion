@@ -1,0 +1,321 @@
+<div id="four-color-edge-explainer">
+  <style>
+    #four-color-edge-explainer {
+      color: var(--foreground);
+      width: 100%;
+    }
+
+    #four-color-edge-explainer .fc-tabs {
+      margin-bottom: 12px;
+    }
+
+    #four-color-edge-explainer .fc-stage {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 14px;
+      align-items: start;
+    }
+
+    #four-color-edge-explainer .fc-stage.two-up {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    #four-color-edge-explainer svg {
+      display: block;
+      width: 100%;
+      height: auto;
+      color: var(--foreground);
+    }
+
+    #four-color-edge-explainer .boundary {
+      fill: none;
+      stroke: var(--foreground);
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    #four-color-edge-explainer .guide {
+      fill: none;
+      stroke: var(--muted-foreground);
+      stroke-width: 1.5;
+      stroke-dasharray: 5 5;
+    }
+
+    #four-color-edge-explainer .map-frame {
+      fill: none;
+      stroke: var(--border);
+      stroke-width: 1.5;
+    }
+
+    #four-color-edge-explainer .face-1 { fill: var(--viz-series-1); opacity: 0.18; }
+    #four-color-edge-explainer .face-2 { fill: var(--viz-series-2); opacity: 0.18; }
+    #four-color-edge-explainer .face-3 { fill: var(--viz-series-3); opacity: 0.18; }
+    #four-color-edge-explainer .face-4 { fill: var(--viz-series-4); opacity: 0.18; }
+
+    #four-color-edge-explainer .face-dot-1 { fill: var(--viz-series-1); }
+    #four-color-edge-explainer .face-dot-2 { fill: var(--viz-series-2); }
+    #four-color-edge-explainer .face-dot-3 { fill: var(--viz-series-3); }
+    #four-color-edge-explainer .face-dot-4 { fill: var(--viz-series-4); }
+
+    #four-color-edge-explainer text {
+      fill: var(--foreground);
+      font-size: 15px;
+      font-weight: 400;
+    }
+
+    #four-color-edge-explainer text.major {
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    #four-color-edge-explainer text.note {
+      fill: var(--muted-foreground);
+      font-size: 14px;
+    }
+
+    #four-color-edge-explainer .label-bg {
+      fill: var(--background);
+      opacity: 0.94;
+    }
+
+    #four-color-edge-explainer .node {
+      fill: var(--background);
+      stroke: var(--foreground);
+      stroke-width: 2;
+    }
+
+    #four-color-edge-explainer .dual-edge {
+      fill: none;
+      stroke: var(--muted-foreground);
+      stroke-width: 2;
+    }
+
+    #four-color-edge-explainer .bad-edge {
+      fill: none;
+      stroke: var(--destructive);
+      stroke-width: 3;
+    }
+
+    #four-color-edge-explainer .good-edge {
+      fill: none;
+      stroke: var(--viz-series-3);
+      stroke-width: 3;
+    }
+
+    #four-color-edge-explainer text.bad-text {
+      fill: var(--destructive);
+      font-weight: 500;
+    }
+
+    #four-color-edge-explainer .legend-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+      margin-top: 8px;
+    }
+
+    #four-color-edge-explainer .legend-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    #four-color-edge-explainer .swatch {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      flex: 0 0 auto;
+    }
+
+    #four-color-edge-explainer .swatch.face-dot-1 { background: var(--viz-series-1); }
+    #four-color-edge-explainer .swatch.face-dot-2 { background: var(--viz-series-2); }
+    #four-color-edge-explainer .swatch.face-dot-3 { background: var(--viz-series-3); }
+    #four-color-edge-explainer .swatch.face-dot-4 { background: var(--viz-series-4); }
+
+    @media (max-width: 560px) {
+      #four-color-edge-explainer .fc-stage.two-up {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+  </style>
+
+  <h2>一条边怎样记录左右两侧颜色</h2>
+
+  <div class="nav nav-pills fc-tabs" role="tablist" aria-label="解释步骤">
+    <button class="nav-link active" id="fc-tab-edge" role="tab" aria-controls="fc-panel-edge" aria-selected="true" type="button">① 基本边</button>
+    <button class="nav-link" id="fc-tab-branch" role="tab" aria-controls="fc-panel-branch" aria-selected="false" type="button">② 从 2 侧分支</button>
+    <button class="nav-link" id="fc-tab-closure" role="tab" aria-controls="fc-panel-closure" aria-selected="false" type="button">③ 闭合后为何会用到 4</button>
+    <button class="nav-link" id="fc-tab-cycle" role="tab" aria-controls="fc-panel-cycle" aria-selected="false" type="button">④ 闭路一致性</button>
+  </div>
+
+  <div id="fc-panel-edge" role="tabpanel" aria-labelledby="fc-tab-edge">
+    <div class="fc-stage">
+      <svg viewBox="0 0 720 360" role="img" aria-labelledby="edge-title edge-desc">
+        <title id="edge-title">有向边的左右两侧颜色</title>
+        <desc id="edge-desc">一条从左指向右的水平边，上方面为颜色一，是方向的左侧；下方面为颜色二，是方向的右侧，因此边记为有序对一二。</desc>
+        <rect class="face-1" x="50" y="35" width="620" height="145"></rect>
+        <rect class="face-2" x="50" y="180" width="620" height="145"></rect>
+        <rect class="map-frame" x="50" y="35" width="620" height="290"></rect>
+        <line class="boundary" x1="50" y1="180" x2="670" y2="180"></line>
+        <polygon points="646,180 628,170 628,190" fill="var(--foreground)"></polygon>
+        <text class="major" x="360" y="102" text-anchor="middle">面 F₁ · 颜色 1 · 左侧 L(e)</text>
+        <text class="major" x="360" y="272" text-anchor="middle">面 F₂ · 颜色 2 · 右侧 R(e)</text>
+        <rect class="label-bg" x="286" y="157" width="148" height="34" rx="4"></rect>
+        <text class="major" x="360" y="181" text-anchor="middle">e = (1, 2)</text>
+        <text class="note" x="360" y="344" text-anchor="middle">“左 / 右”由箭头方向决定；反向后写作 (2, 1)</text>
+      </svg>
+    </div>
+  </div>
+
+  <div id="fc-panel-branch" role="tabpanel" aria-labelledby="fc-tab-branch" hidden>
+    <div class="fc-stage">
+      <svg viewBox="0 0 720 410" role="img" aria-labelledby="branch-title branch-desc">
+        <title id="branch-title">从颜色二一侧接入一条分割线</title>
+        <desc id="branch-desc">新分割线从颜色二所在的下方接到原边，原边在接点处分成两段。左段分隔颜色一和二，右段分隔颜色一和三，新边分隔颜色二和三。</desc>
+        <rect class="face-1" x="50" y="35" width="620" height="145"></rect>
+        <rect class="face-2" x="50" y="180" width="310" height="155"></rect>
+        <rect class="face-3" x="360" y="180" width="310" height="155"></rect>
+
+        <rect class="map-frame" x="50" y="35" width="620" height="300"></rect>
+
+        <line class="boundary" x1="50" y1="180" x2="350" y2="180"></line>
+        <polygon points="350,180 333,170 333,190" fill="var(--foreground)"></polygon>
+        <line class="boundary" x1="370" y1="180" x2="670" y2="180"></line>
+        <polygon points="650,180 633,170 633,190" fill="var(--foreground)"></polygon>
+        <line class="boundary" x1="360" y1="335" x2="360" y2="194"></line>
+        <polygon points="360,194 350,212 370,212" fill="var(--foreground)"></polygon>
+        <circle cx="360" cy="180" r="5" fill="var(--foreground)"></circle>
+
+        <text class="major" x="360" y="102" text-anchor="middle">颜色 1</text>
+        <text class="major" x="205" y="274" text-anchor="middle">颜色 2</text>
+        <text class="major" x="515" y="274" text-anchor="middle">颜色 3</text>
+
+        <rect class="label-bg" x="146" y="157" width="128" height="31" rx="4"></rect>
+        <text x="210" y="179" text-anchor="middle">e₁ = (1, 2)</text>
+        <rect class="label-bg" x="446" y="157" width="128" height="31" rx="4"></rect>
+        <text x="510" y="179" text-anchor="middle">e₂ = (1, 3)</text>
+        <rect class="label-bg" x="371" y="233" width="126" height="31" rx="4"></rect>
+        <text x="434" y="255" text-anchor="middle">e₃ = (2, 3)</text>
+
+        <text class="major" x="360" y="370" text-anchor="middle">不是一条边 (1,(2,3))，而是三条边的三个颜色对</text>
+        <text class="note" x="360" y="397" text-anchor="middle">新线须接到边界或形成闭环，才真正把原面分成两个面</text>
+      </svg>
+    </div>
+  </div>
+
+  <div id="fc-panel-closure" role="tabpanel" aria-labelledby="fc-tab-closure" hidden>
+    <div class="fc-stage two-up">
+      <div>
+        <svg viewBox="0 0 360 335" role="img" aria-labelledby="map-title map-desc">
+          <title id="map-title">四个面两两相邻的闭合地图</title>
+          <desc id="map-desc">一个外三角形被中心点到三个顶点的线分成三个内部三角形，外部是第四个面；四个面中的每一对都共享一段边界。</desc>
+          <path class="face-4" fill-rule="evenodd" d="M12,12 H348 V323 H12 Z M180,40 L42,290 L318,290 Z"></path>
+          <polygon class="face-1" points="180,40 42,290 180,205"></polygon>
+          <polygon class="face-2" points="180,40 180,205 318,290"></polygon>
+          <polygon class="face-3" points="42,290 318,290 180,205"></polygon>
+
+          <path class="boundary" d="M180,40 L42,290 L318,290 Z"></path>
+          <path class="boundary" d="M180,40 L180,205 M42,290 L180,205 L318,290"></path>
+
+          <text class="major" x="120" y="155" text-anchor="middle">1</text>
+          <text class="major" x="240" y="155" text-anchor="middle">2</text>
+          <text class="major" x="180" y="260" text-anchor="middle">3</text>
+          <text class="major" x="180" y="318" text-anchor="middle">4（外部面）</text>
+          <text class="note" x="180" y="22" text-anchor="middle">闭合地图</text>
+        </svg>
+      </div>
+
+      <div>
+        <svg viewBox="0 0 360 335" role="img" aria-labelledby="dual-title dual-desc">
+          <title id="dual-title">闭合地图的对偶图是完全图 K 四</title>
+          <desc id="dual-desc">四个节点分别代表四个面，每一对节点之间都有边，因此四个面必须使用四种不同颜色。</desc>
+          <line class="dual-edge" x1="180" y1="48" x2="58" y2="225"></line>
+          <line class="dual-edge" x1="180" y1="48" x2="302" y2="225"></line>
+          <line class="dual-edge" x1="58" y1="225" x2="302" y2="225"></line>
+          <line class="dual-edge" x1="180" y1="48" x2="180" y2="178"></line>
+          <line class="dual-edge" x1="58" y1="225" x2="180" y2="178"></line>
+          <line class="dual-edge" x1="302" y1="225" x2="180" y2="178"></line>
+
+          <circle class="face-dot-1" cx="180" cy="48" r="27"></circle>
+          <circle class="face-dot-2" cx="58" cy="225" r="27"></circle>
+          <circle class="face-dot-3" cx="302" cy="225" r="27"></circle>
+          <circle class="face-dot-4" cx="180" cy="178" r="27"></circle>
+          <text class="major" x="180" y="54" text-anchor="middle">1</text>
+          <text class="major" x="58" y="231" text-anchor="middle">2</text>
+          <text class="major" x="302" y="231" text-anchor="middle">3</text>
+          <text class="major" x="180" y="184" text-anchor="middle">4</text>
+
+          <text class="note" x="180" y="22" text-anchor="middle">面邻接的对偶图 K₄</text>
+          <text class="major" x="180" y="285" text-anchor="middle">每一对面都相邻</text>
+          <text class="note" x="180" y="315" text-anchor="middle">所以这个例子不能只用 3 色</text>
+        </svg>
+      </div>
+    </div>
+
+    <div class="legend-row" aria-label="颜色编号图例">
+      <span class="legend-item"><span class="swatch face-dot-1"></span>颜色 1</span>
+      <span class="legend-item"><span class="swatch face-dot-2"></span>颜色 2</span>
+      <span class="legend-item"><span class="swatch face-dot-3"></span>颜色 3</span>
+      <span class="legend-item"><span class="swatch face-dot-4"></span>颜色 4</span>
+    </div>
+  </div>
+
+  <div id="fc-panel-cycle" role="tabpanel" aria-labelledby="fc-tab-cycle" hidden>
+    <div class="fc-stage two-up">
+      <svg viewBox="0 0 360 330" role="img" aria-labelledby="bad-cycle-title bad-cycle-desc">
+        <title id="bad-cycle-title">三个非零局部标签仍可形成闭路冲突</title>
+        <desc id="bad-cycle-desc">对偶三角形的三条边都赋差值零一。每条边的值都非零，但沿闭路异或得到零一而不是零，所以不能恢复一致的面颜色。</desc>
+        <text class="major" x="180" y="24" text-anchor="middle">局部都非零，仍可能冲突</text>
+
+        <path class="bad-edge" d="M180,65 L65,235 L295,235 Z"></path>
+        <circle class="node" cx="180" cy="65" r="28"></circle>
+        <circle class="node" cx="65" cy="235" r="28"></circle>
+        <circle class="node" cx="295" cy="235" r="28"></circle>
+        <text x="180" y="62" text-anchor="middle">A</text>
+        <text class="note" x="180" y="81" text-anchor="middle">00</text>
+        <text x="65" y="232" text-anchor="middle">B</text>
+        <text class="note" x="65" y="251" text-anchor="middle">01</text>
+        <text x="295" y="232" text-anchor="middle">C</text>
+        <text class="note" x="295" y="251" text-anchor="middle">00?</text>
+
+        <rect class="label-bg" x="91" y="130" width="48" height="25" rx="3"></rect>
+        <text x="115" y="149" text-anchor="middle">01</text>
+        <rect class="label-bg" x="221" y="130" width="48" height="25" rx="3"></rect>
+        <text x="245" y="149" text-anchor="middle">01</text>
+        <rect class="label-bg" x="156" y="222" width="48" height="25" rx="3"></rect>
+        <text x="180" y="241" text-anchor="middle">01</text>
+
+        <text class="bad-text" x="180" y="290" text-anchor="middle">01 ⊕ 01 ⊕ 01 = 01 ≠ 00</text>
+        <text class="note" x="180" y="316" text-anchor="middle">回到 A 时得到 01，与起点 00 矛盾</text>
+      </svg>
+
+      <svg viewBox="0 0 360 330" role="img" aria-labelledby="good-cycle-title good-cycle-desc">
+        <title id="good-cycle-title">闭路差分异或为零时颜色一致</title>
+        <desc id="good-cycle-desc">对偶三角形的三条边依次赋差值零一、一零、一一，异或为零，因此从任意路径恢复的面颜色一致。</desc>
+        <text class="major" x="180" y="24" text-anchor="middle">闭路和为 00，颜色才一致</text>
+
+        <path class="good-edge" d="M180,65 L65,235 L295,235 Z"></path>
+        <circle class="node" cx="180" cy="65" r="28"></circle>
+        <circle class="node" cx="65" cy="235" r="28"></circle>
+        <circle class="node" cx="295" cy="235" r="28"></circle>
+        <text x="180" y="62" text-anchor="middle">A</text>
+        <text class="note" x="180" y="81" text-anchor="middle">00</text>
+        <text x="65" y="232" text-anchor="middle">B</text>
+        <text class="note" x="65" y="251" text-anchor="middle">01</text>
+        <text x="295" y="232" text-anchor="middle">C</text>
+        <text class="note" x="295" y="251" text-anchor="middle">11</text>
+
+        <rect class="label-bg" x="91" y="130" width="48" height="25" rx="3"></rect>
+        <text x="115" y="149" text-anchor="middle">01</text>
+        <rect class="label-bg" x="221" y="130" width="48" height="25" rx="3"></rect>
+        <text x="245" y="149" text-anchor="middle">11</text>
+        <rect class="label-bg" x="156" y="222" width="48" height="25" rx="3"></rect>
+        <text x="180" y="241" text-anchor="middle">10</text>
+
+        <text class="major" x="180" y="290" text-anchor="middle">01 ⊕ 10 ⊕ 11 = 00</text>
+        <text class="note" x="180" y="316" text-anchor="middle">沿任何路径回到 A，仍得到 00</text>
+      </svg>
+    </div>
+  </div>
+</div>

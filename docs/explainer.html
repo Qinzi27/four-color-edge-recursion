@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="四色问题的有向边左右面、递归分裂与闭路一致性互动解释。An offline explainer of plane-map edge-side colors and Klein-four-group consistency.">
+  <title>四色边侧递归 · Edge-side recursion</title>
+  <style>
+    :root { color-scheme:light dark; --ink:#192938; --paper:#f8fafc; --line:#bdcbd7; --one:#cce6f7; --two:#ffe0a8; --three:#c7eee1; }
+    * { box-sizing:border-box; }
+    body { margin:0; padding:28px 18px; font:16px/1.65 system-ui,"Microsoft YaHei",sans-serif; background:var(--paper); color:var(--ink); }
+    main { max-width:960px; margin:auto; }
+    h1 { font-size:clamp(24px,4vw,36px); line-height:1.3; }
+    h2 { font-size:21px; }
+    a { color:#126298; }
+    section { padding:16px 0 25px; border-top:1px solid var(--line); }
+    button,select { font:inherit; color:var(--ink); background:var(--paper); border:1px solid var(--line); border-radius:6px; padding:8px 12px; }
+    button { cursor:pointer; }
+    .pair { font:600 20px/1.5 ui-monospace,monospace; }
+    .grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; align-items:center; }
+    svg { width:100%; height:auto; display:block; }
+    svg text { fill:var(--ink); font-size:17px; font-family:system-ui,sans-serif; }
+    .line { stroke:var(--ink); stroke-width:3; fill:none; }
+    .controls { display:flex; flex-wrap:wrap; gap:12px; }
+    label { display:flex; align-items:center; gap:8px; }
+    .result { min-height:3.5em; font-weight:600; }
+    .muted { font-size:14px; }
+    @media(max-width:620px) { .grid { grid-template-columns:1fr; gap:12px; } body { padding:20px 12px; } }
+    @media(prefers-color-scheme:dark) { :root { --ink:#e1eaf1; --paper:#14202c; --line:#486073; --one:#264b65; --two:#665128; --three:#265b4f; } a { color:#87caf5; } }
+  </style>
+</head>
+<body>
+<main>
+  <h1>一条边的两侧，怎样约束整张地图？</h1>
+  <p>Edge-side recursion · Qinzi27 · 研究基础图解</p>
+  <p><a href="../README.zh-CN.md">仓库说明</a> · <a href="FOUNDATIONS.md">数学基础</a> · <a href="https://github.com/Qinzi27/four-color-edge-recursion">GitHub</a></p>
+  <section>
+    <h2>① 左右跟随边的方向</h2>
+    <div class="grid">
+      <svg viewBox="0 0 400 240" role="img" aria-label="颜色1在水平线上方，颜色2在下方；改变箭头方向后左右面标签交换">
+        <path d="M12 18H388V120H12Z" fill="var(--one)"/><path d="M12 120H388V222H12Z" fill="var(--two)"/>
+        <path class="line" d="M12 120H388"/>
+        <path id="arrow" class="line" d="M366 111L384 120L366 129"/>
+        <text x="200" y="70" text-anchor="middle">F₁ · 颜色 1</text><text x="200" y="182" text-anchor="middle">F₂ · 颜色 2</text>
+      </svg>
+      <div><button id="reverse" type="button" aria-pressed="false">反转箭头 / Reverse</button>
+        <p id="pair" class="pair" aria-live="polite">L = 1，R = 2 → (1, 2)</p>
+        <p>面和颜色都没有改变，改变的是读取这条边的方向。完整记录还应包含面编号。</p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h2>② 伸出一条线，与闭合出一个面</h2>
+    <div class="grid">
+      <svg viewBox="0 0 400 270" role="img" aria-label="从原边向下伸出的线，只有连接到另一段边界后才分裂颜色2所在面">
+        <path d="M12 18H388V120H12Z" fill="var(--one)"/><path d="M12 120H388V240H12Z" fill="var(--two)"/>
+        <path id="new-face" d="M200 120H388V240H200Z" fill="var(--three)" visibility="hidden"/>
+        <path class="line" d="M12 18H388V240H12Z M12 120H388"/>
+        <path id="split-line" class="line" d="M200 120V185"/>
+        <text x="200" y="72" text-anchor="middle">1</text><text x="102" y="197" text-anchor="middle">2</text>
+        <text id="split-right" x="300" y="197" text-anchor="middle">2（同一面）</text>
+      </svg>
+      <div><button id="close" type="button" aria-pressed="false">连接到下边界 / Close</button>
+        <p id="split-state" class="result" aria-live="polite">悬空阶段：两侧是同一个面，ΔF = 0。</p>
+        <p>闭合后的 <code>(1,(2,3))</code> 记录历史。实际三段边分别记录 <code>(1,2)</code>、<code>(1,3)</code>、<code>(2,3)</code>。图中矩形显示局部观察窗口及其边界连接位置。</p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h2>③ 沿对偶闭路走一圈，必须回到原颜色</h2>
+    <div class="grid">
+      <svg viewBox="0 0 400 285" role="img" aria-label="三个面构成对偶三角形，每条边的差分可以调整，三条边异或为零才能恢复一致颜色">
+        <path class="line" d="M200 42L62 225H338Z"/>
+        <g fill="var(--paper)" stroke="var(--ink)" stroke-width="2"><circle cx="200" cy="42" r="30"/><circle cx="62" cy="225" r="30"/><circle cx="338" cy="225" r="30"/></g>
+        <text x="200" y="48" text-anchor="middle">A:00</text><text id="b-color" x="62" y="231" text-anchor="middle">B:01</text><text id="c-color" x="338" y="231" text-anchor="middle">C:11</text>
+        <text id="ab-label" x="95" y="126">01</text><text id="bc-label" x="186" y="216">10</text><text id="ca-label" x="285" y="126">11</text>
+      </svg>
+      <div>
+        <div class="controls">
+          <label>AB <select id="ab"><option value="1">01</option><option value="2">10</option><option value="3">11</option></select></label>
+          <label>BC <select id="bc"><option value="1">01</option><option value="2" selected>10</option><option value="3">11</option></select></label>
+          <label>CA <select id="ca"><option value="1">01</option><option value="2">10</option><option value="3" selected>11</option></select></label>
+        </div>
+        <p id="cycle-result" class="result" aria-live="polite"></p>
+        <p>节点代表面，连线代表跨越原图边界。B、C 的颜色沿 A→B→C 推导，再用 CA 检查能否回到 A。每条边都非零，并不足以保证闭路一致。</p>
+      </div>
+    </div>
+  </section>
+  <p class="muted">这三个例子解释表示与约束；它们不构成所有平面图都能由该递归规则完成四色着色的证明。程序和完整证明范围请见仓库。</p>
+</main>
+<script>
+  // Directions change the side names, not the identities or colors of faces.
+  const reverse = document.getElementById('reverse');
+  reverse.addEventListener('click', () => {
+    const reversed = reverse.getAttribute('aria-pressed') !== 'true';
+    reverse.setAttribute('aria-pressed', String(reversed));
+    document.getElementById('arrow').setAttribute('d', reversed ? 'M34 111L16 120L34 129' : 'M366 111L384 120L366 129');
+    document.getElementById('pair').textContent = reversed ? 'L = 2，R = 1 → (2, 1)' : 'L = 1，R = 2 → (1, 2)';
+  });
+  // Only a completed boundary-to-boundary arc separates the displayed disk face.
+  const close = document.getElementById('close');
+  close.addEventListener('click', () => {
+    const closed = close.getAttribute('aria-pressed') !== 'true';
+    close.setAttribute('aria-pressed', String(closed));
+    close.textContent = closed ? '退回悬空阶段 / Undo' : '连接到下边界 / Close';
+    document.getElementById('new-face').setAttribute('visibility', closed ? 'visible' : 'hidden');
+    document.getElementById('split-line').setAttribute('d', closed ? 'M200 120V240' : 'M200 120V185');
+    document.getElementById('split-right').textContent = closed ? '3' : '2（同一面）';
+    document.getElementById('split-state').textContent = closed ? '闭合分裂：两个不同的子面，ΔF = 1；历史为 (1,(2,3))。' : '悬空阶段：两侧是同一个面，ΔF = 0。';
+  });
+  const bits = value => value.toString(2).padStart(2, '0');
+  function updateCycle() {
+    // Start at A=00 and integrate along the spanning path AB, BC.
+    const values = ['ab', 'bc', 'ca'].map(id => Number(document.getElementById(id).value));
+    const [ab, bc, ca] = values;
+    const defect = ab ^ bc ^ ca;
+    ['ab', 'bc', 'ca'].forEach((id, i) => document.getElementById(id + '-label').textContent = bits(values[i]));
+    document.getElementById('b-color').textContent = 'B:' + bits(ab);
+    document.getElementById('c-color').textContent = 'C:' + bits(ab ^ bc);
+    document.getElementById('cycle-result').textContent = values.map(bits).join(' ⊕ ') + ' = ' + bits(defect) + (defect === 0 ? '：一致，返回 A=00。' : '：冲突，返回的颜色不是 A=00。');
+  }
+  ['ab', 'bc', 'ca'].forEach(id => document.getElementById(id).addEventListener('change', updateCycle));
+  updateCycle();
+</script>
+</body>
+</html>

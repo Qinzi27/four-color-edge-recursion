@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "Please cite the repository version and commit used. This is an exploratory research model, not a new proof of the Four-Color Theorem."
+title: "Four-Color Edge Recursion: Plane-Map Boundary Signatures and V4 Flow Repair"
+type: software
+authors:
+  - name: "Qinzi27"
+    website: "https://github.com/Qinzi27"
+version: 0.1.0
+date-released: 2026-09-06
+repository-code: "https://github.com/Qinzi27/four-color-edge-recursion"
+url: "https://github.com/Qinzi27/four-color-edge-recursion"
+abstract: >-
+  A reproducible research foundation for recursive left/right face-color
+  descriptions of plane maps, complete boundary extension relations,
+  and exact minimum-change Klein-four-group flow repair on two-terminal
+  series-parallel networks. Includes elementary proofs, executable
+  reference implementations, examples, and independent finite checks.
+keywords:
+  - four-color theorem
+  - plane maps
+  - planar graphs
+  - edge-side coloring
+  - boundary signatures
+  - Klein four-group
+  - nowhere-zero flows
+  - recursive decomposition

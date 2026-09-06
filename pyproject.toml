@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "four-color-edge-recursion"
+version = "0.1.0"
+description = "Recursive edge-side models, boundary signatures, and verifiable V4 flow repair for plane-map coloring"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "Qinzi27"}]
+keywords = ["four-color-theorem", "planar-graphs", "graph-coloring", "recursion", "nowhere-zero-flow"]
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/Qinzi27/four-color-edge-recursion"
+Documentation = "https://github.com/Qinzi27/four-color-edge-recursion/blob/main/docs/FOUNDATIONS.md"
+
+[tool.setuptools.packages.find]
+include = ["fourcolor*"]
