@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.2.0 — 2026-09-07
+
+- Added a dependency-free interactive drawing website with seven original cases.
+- Planarized intersections/overlaps; handled disconnected and nested boundaries
+  using invisible, face-preserving bridges; retained the external frame face.
+- Implemented direct four-bit marker selection, with no backtracking or enumeration,
+  following the initiating author's requirement. Candidate exhaustion is explicit.
+- Added JSON replay/certificates, SVG export, directed-shore inspection, and undo.
+- Added 22 Node tests, including a planar greedy obstruction, and 37 independent
+  Python/web certificate comparisons. Existing mathematical core remains unchanged.
+- Browser interaction and actual WebMCP-context validation have not been performed.
+
 ## 0.1.0 — 2026-09-06
 
 Initial public research foundation for Qinzi27's recursive edge-side model.

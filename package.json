@@ -1,0 +1,13 @@
+{
+  "name": "four-color-map-lab",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "Reproducible drawing and four-coloring workbench for plane maps",
+  "engines": {"node": ">=20"},
+  "scripts": {
+    "dev": "node scripts/serve-web.mjs",
+    "build": "node scripts/build-web.mjs",
+    "test": "node --test tests/web.test.mjs"
+  }
+}

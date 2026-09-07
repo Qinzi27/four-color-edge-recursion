@@ -57,6 +57,30 @@ for balance at all vertices. This distinction matters when reproducing the recur
 
 ## Run locally
 
+### Interactive map lab (v0.2)
+
+Draw straight boundaries or load seven deterministic teaching maps. Crossings,
+islands, nested regions and dangling edges are handled explicitly. Inspect each
+directed edge's left/right face markers and export JSON or SVG.
+
+The web app uses **direct candidate-mask selection, not backtracking or coloring
+enumeration**. Each face is assigned at most once per run. An empty candidate set
+is reported as `blocked`, never as evidence that a fifth color is necessary.
+An eight-vertex planar regression fixture demonstrates that this greedy rule is
+not complete. The earlier Python enumeration baseline is not called by the app.
+
+```sh
+# Node.js 20+; the web app has no third-party dependencies.
+npm run dev
+npm test
+npm run build
+python scripts/validate_web.py
+```
+
+Open the local URL printed by `npm run dev`. See [web reproduction and algorithm
+contract](docs/WEB_APP.md). Public source does not automatically grant access to
+an independently hosted site; site sharing is controlled separately.
+
 Python 3.10 or newer is sufficient. The core has no third-party dependencies.
 From the repository root:
 

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="画线分割地图，自动四色填色，检查有向边的左右面与闭路一致性。可复现的四色问题研究小程序。">
+  <title>四色地图实验室 · Four Color Map Lab</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>四色地图实验室<small>FOUR COLOR MAP LAB</small></span></a>
+    <nav><a href="https://github.com/Qinzi27/four-color-edge-recursion" target="_blank" rel="noreferrer">研究仓库 ↗</a><button id="help" type="button">使用说明</button></nav>
+  </header>
+  <main>
+    <aside class="gallery" aria-label="地图案例">
+      <div class="section-label">从一个案例开始</div>
+      <div id="cases"><button type="button" class="case active">四面体地图<span>4 个面两两相邻</span></button></div>
+      <p class="gallery-note">案例均为程序生成的教学地图，可继续加线修改。</p>
+    </aside>
+    <section class="workspace" aria-label="地图画板">
+      <div class="canvas-heading"><div><h1 id="map-title">四面体地图</h1><p id="map-description">从三个内部区域，看见第四种颜色为什么出现。</p></div><span id="state" class="state" role="status">准备就绪</span></div>
+      <div class="toolbar">
+        <div class="tool-group"><button id="draw" type="button" aria-pressed="true">╱ 画线</button><button id="inspect" type="button" aria-pressed="false">⌖ 查边</button></div>
+        <div class="tool-group"><button id="undo" type="button" title="Ctrl/⌘ + Z">↶ 撤销</button><button id="clear" type="button">清空</button></div>
+        <label class="auto"><input id="autocolor" type="checkbox" checked>自动填色</label>
+        <button id="colorize" class="primary" type="button">选取色标并验证</button>
+      </div>
+      <div class="canvas-wrap">
+        <svg id="canvas" viewBox="-18 -18 936 636" role="img" aria-label="可拖动画线的地图画板，交叉线自动分段，闭合区域自动填色">
+          <rect x="-18" y="-18" width="936" height="636" fill="#dfeaf5"/>
+          <rect width="900" height="600" fill="#ffcd4d"/>
+          <path d="M450 85L185 500L715 500Z" fill="#63bbea" stroke="#18314c" stroke-width="3"/>
+          <path d="M450 85L450 350L715 500Z" fill="#b795e3" stroke="#18314c" stroke-width="3"/>
+          <path d="M185 500L450 350L715 500Z" fill="#61c8a8" stroke="#18314c" stroke-width="3"/>
+          <rect width="900" height="600" fill="none" stroke="#18314c" stroke-width="3"/>
+        </svg>
+        <div id="canvas-hint">拖动画一条线，交点会自动连接；靠近端点会吸附。</div>
+      </div>
+      <div class="canvas-footer"><span id="stats">地图区域识别中</span><div><button id="export-json" type="button">导出案例 JSON</button><button id="import-button" type="button">导入案例</button><input id="import-json" type="file" accept=".json,application/json" hidden><button id="export-svg" type="button">保存 SVG</button></div></div>
+      <div id="error" role="alert" hidden></div>
+    </section>
+    <aside class="inspector" aria-label="模型检查">
+      <div class="section-label">颜色与边侧</div>
+      <div class="palette"><span><i style="background:#63bbea"></i>1 · 00</span><span><i style="background:#ffcd4d"></i>2 · 01</span><span><i style="background:#b795e3"></i>3 · 10</span><span><i style="background:#61c8a8"></i>4 · 11</span></div>
+      <div id="edge-detail"><p class="empty-detail">切换「查边」，点一条边，查看方向及左右两面的颜色。</p></div>
+      <div class="section-label separated">这张地图的验证</div>
+      <ul id="checks" class="checks"><li>等待识别与着色</li></ul>
+      <details open><summary>这次怎样选色标</summary><p id="solver-detail">维护四个候选色标，排除相邻已用色，直接选取一个；不枚举着色方案，不回溯。</p><ol id="history" class="history"></ol></details>
+      <details><summary>理论与算法的边界</summary><p>左右面身份和异或差分来自本项目的模型。选择规则：候选最少的面优先，其次邻接度最高，再按面编号；直接选最低可用色标。每面至多赋色一次，候选为空就停止，不暗中回溯，也不增加第五色。这是待完善的贪心规则，不保证任意地图成功，不构成新的四色定理证明。</p><p>画框外部也计为一个面。悬空线不分面；岛屿和嵌套区域通过不分面的隐藏桥处理。编辑后重新识别并赋色；面编号和颜色不保证跨编辑保持不变。</p><a href="https://github.com/Qinzi27/four-color-edge-recursion/blob/main/docs/FOUNDATIONS.md" target="_blank" rel="noreferrer">阅读数学基础 ↗</a></details>
+    </aside>
+  </main>
+  <dialog id="help-dialog"><h2>画一张地图，核验一次着色</h2><p>拖动画直线；也可连续点击起点和终点。线相交时自动生成交点，闭合后自动形成新面。按 Escape 取消正在画的线。</p><p>查边模式会显示箭头、左右面及颜色差。撤销可以逐步回到之前的分割。</p><p>导出 JSON 保存线段、分割顺序和验证结果。导入同一文件可复现地图。SVG 用于保存已填色的图。</p><p>当前版本处理有限直线段地图，不从照片或手绘图片自动识别边界。很密集的输入可能达到计算上限；此时不会把超时解释成需要第五色。</p><form method="dialog"><button class="primary">开始画图</button></form></dialog>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

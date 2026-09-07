@@ -1,0 +1,237 @@
+{
+  "schema_version": 1,
+  "seed": 20260907,
+  "family": "3..12 left-to-right segments; 30 samples",
+  "python": "3.12.14",
+  "cases": 37,
+  "solved": 37,
+  "blocked": 0,
+  "all_passed": true,
+  "records": [
+    {
+      "id": "tetrahedron",
+      "faces": 5,
+      "status": "solved",
+      "passed": true
+    },
+    {
+      "id": "grid",
+      "faces": 21,
+      "status": "solved",
+      "passed": true
+    },
+    {
+      "id": "islands",
+      "faces": 4,
+      "status": "solved",
+      "passed": true
+    },
+    {
+      "id": "dangling",
+      "faces": 2,
+      "status": "solved",
+      "passed": true
+    },
+    {
+      "id": "touching",
+      "faces": 4,
+      "status": "solved",
+      "passed": true
+    },
+    {
+      "id": "seeded",
+      "faces": 48,
+      "status": "solved",
+      "passed": true
+    },
+    {
+      "id": "blank",
+      "faces": 2,
+      "status": "solved",
+      "passed": true
+    },
+    {
+      "id": "seeded-lines-0",
+      "faces": 8,
+      "status": "solved",
+      "passed": true
+    },
+    {
+      "id": "seeded-lines-1",
+      "faces": 8,
+      "status": "solved",
+      "passed": true
+    },
+    {
+      "id": "seeded-lines-2",
+      "faces": 13,
+      "status": "solved",
+      "passed": true
+    },
+    {
+      "id": "seeded-lines-3",
+      "faces": 13,
+      "status": "solved",
+      "passed": true
+    },
+    {
+      "id": "seeded-lines-4",
+      "faces": 26,
+      "status": "solved",
+      "passed": true
+    },
+    {
+      "id": "seeded-lines-5",
+      "faces": 27,
+      "status": "solved",
+      "passed": true
+    },
+    {
+      "id": "seeded-lines-6",
+      "faces": 29,
+      "status": "solved",
+      "passed": true
+    },
+    {
+      "id": "seeded-lines-7",
+      "faces": 37,
+      "status": "solved",
+      "passed": true
+    },
+    {
+      "id": "seeded-lines-8",
+      "faces": 49,
+      "status": "solved",
+      "passed": true
+    },
+    {
+      "id": "seeded-lines-9",
+      "faces": 57,
+      "status": "solved",
+      "passed": true
+    },
+    {
+      "id": "seeded-lines-10",
+      "faces": 8,
+      "status": "solved",
+      "passed": true
+    },
+    {
+      "id": "seeded-lines-11",
+      "faces": 8,
+      "status": "solved",
+      "passed": true
+    },
+    {
+      "id": "seeded-lines-12",
+      "faces": 10,
+      "status": "solved",
+      "passed": true
+    },
+    {
+      "id": "seeded-lines-13",
+      "faces": 18,
+      "status": "solved",
+      "passed": true
+    },
+    {
+      "id": "seeded-lines-14",
+      "faces": 16,
+      "status": "solved",
+      "passed": true
+    },
+    {
+      "id": "seeded-lines-15",
+      "faces": 21,
+      "status": "solved",
+      "passed": true
+    },
+    {
+      "id": "seeded-lines-16",
+      "faces": 28,
+      "status": "solved",
+      "passed": true
+    },
+    {
+      "id": "seeded-lines-17",
+      "faces": 30,
+      "status": "solved",
+      "passed": true
+    },
+    {
+      "id": "seeded-lines-18",
+      "faces": 49,
+      "status": "solved",
+      "passed": true
+    },
+    {
+      "id": "seeded-lines-19",
+      "faces": 44,
+      "status": "solved",
+      "passed": true
+    },
+    {
+      "id": "seeded-lines-20",
+      "faces": 8,
+      "status": "solved",
+      "passed": true
+    },
+    {
+      "id": "seeded-lines-21",
+      "faces": 9,
+      "status": "solved",
+      "passed": true
+    },
+    {
+      "id": "seeded-lines-22",
+      "faces": 14,
+      "status": "solved",
+      "passed": true
+    },
+    {
+      "id": "seeded-lines-23",
+      "faces": 17,
+      "status": "solved",
+      "passed": true
+    },
+    {
+      "id": "seeded-lines-24",
+      "faces": 27,
+      "status": "solved",
+      "passed": true
+    },
+    {
+      "id": "seeded-lines-25",
+      "faces": 22,
+      "status": "solved",
+      "passed": true
+    },
+    {
+      "id": "seeded-lines-26",
+      "faces": 29,
+      "status": "solved",
+      "passed": true
+    },
+    {
+      "id": "seeded-lines-27",
+      "faces": 33,
+      "status": "solved",
+      "passed": true
+    },
+    {
+      "id": "seeded-lines-28",
+      "faces": 43,
+      "status": "solved",
+      "passed": true
+    },
+    {
+      "id": "seeded-lines-29",
+      "faces": 50,
+      "status": "solved",
+      "passed": true
+    }
+  ],
+  "scope": "Finite cross-language topology and certificate checks; not greedy completeness.",
+  "browser_ui_tested": false,
+  "webmcp_browser_context_verified": false
+}
