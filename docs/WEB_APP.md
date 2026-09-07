@@ -1,5 +1,10 @@
 # 四色地图实验室：使用、算法与复现
 
+公开入口：[GitHub Pages](https://qinzi27.github.io/four-color-edge-recursion/)，无需登录。
+[递归模型图解](https://qinzi27.github.io/four-color-edge-recursion/model.html)与画板的
+候选色标基线分开呈现；[方法审计](METHOD_REVIEW-2026-09-07.md)解释差异和待补规则。
+发布工作流在 `.github/workflows/pages.yml`，只部署 `dist/` 的静态资源。
+
 ## 1. 本版做什么
 
 首版是本仓库的交互研究工具，不是另一套四色定理证明。由 Qinzi27 提出边侧递归
@@ -106,13 +111,14 @@ python scripts/validate.py
 python scripts/validate_web.py
 ```
 
-`npm test` 包含 22 项：案例几何、单次赋色/候选集合重放、方向、点接触、重合、
-桥、导入/导出、非法输入、贪心阻塞及 WebMCP 适配器模拟检查。
+`npm test` 包含 23 项：案例几何、单次赋色/候选集合重放、方向、点接触、重合、
+桥、导入/导出、非法输入、贪心阻塞、冻结旧色的分面反例及 WebMCP 适配器模拟检查。
 `validate_web.py` 用既有 Python `PlaneMap` 独立重建浏览器导出的旋转系统，
 核验面、差分和积分；输入是 7 个内置案例及种子 `20260907` 的 30 张地图。
 记录见 `outputs/web-validation.json`。所有成功记录都是有限证据。
 
-`npm run build` 只复制 `web/` 的静态资源到 `dist/`；不包含 Python、私人记录或密钥。
+`npm run build` 复制 `web/` 静态资源和独立的 `docs/explainer.html` 图解到 `dist/`；
+不包含 Python、私人记录或密钥。
 公开 GitHub 仓库不自动改变托管网站访问权限，也不能保证搜索引擎收录。
 
 ## English summary

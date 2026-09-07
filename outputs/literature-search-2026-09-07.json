@@ -1,0 +1,36 @@
+{
+  "access_date": "2026-09-07",
+  "scope": "Targeted prior-art and method-fidelity review; not an exhaustive novelty search",
+  "crossref": {
+    "endpoint": "https://api.crossref.org/works",
+    "queries": [
+      {"query.bibliographic": "Map coloring and the vector cross product", "rows": 3},
+      {"query.bibliographic": "Toward a language theoretic proof of the four color theorem", "rows": 3},
+      {"query.bibliographic": "Colouring of planar maps and the equality of two languages", "rows": 2}
+    ],
+    "exact_dois": ["10.1016/j.disc.2004.07.031", "10.1145/359094.359101"],
+    "validation": "Checked status=ok and message.items or message.DOI; retained matching titles only. Relevance totals are not counts of equivalent methods."
+  },
+  "web_queries": [
+    "Kauffman 1990 map coloring associativity binary trees four color theorem",
+    "Klein four group flow four color theorem edge coloring plane maps Tait",
+    "Brelaz 1979 New methods to color the vertices of a graph 10.1145",
+    "site:arxiv.org Precoloring extension in planar near-Eulerian-triangulations"
+  ],
+  "sources": [
+    {"doi": "10.1016/0095-8956(90)90114-F", "year": 1990, "title": "Map coloring and the vector cross product", "access": "metadata and publisher abstract; full text not obtained"},
+    {"doi": "10.1016/j.disc.2004.07.031", "year": 2005, "title": "Reformulating the map color theorem", "url": "https://homepages.math.uic.edu/~kauffman/MapReform.pdf", "access": "full text sections 2, 3 and 7"},
+    {"doi": "10.1016/j.aam.2011.11.002", "year": 2012, "title": "Toward a language theoretic proof of the four color theorem", "url": "https://sites.math.rutgers.edu/~zeilberg/mamarim/mamarimPDF/4ct.pdf", "access": "full text sections 1-3 and selected constructions"},
+    {"doi": "10.1007/BFb0022655", "year": 1986, "title": "Colourings of planar maps and the equality of two languages", "access": "Crossref metadata; readable full text unavailable"},
+    {"year": 1998, "title": "An Update on the Four-Color Theorem", "url": "https://thomas.math.gatech.edu/PAP/update.pdf", "access": "author full text PDF pages 5-7, Equivalent Formulations"},
+    {"arxiv_id": "2312.13061", "version_read": "v1", "year": 2023, "title": "Precoloring extension in planar near-Eulerian-triangulations", "url": "https://arxiv.org/html/2312.13061v1", "access": "full text abstract, introduction and Theorems 1-2"},
+    {"doi": "10.1145/359094.359101", "year": 1979, "title": "New methods to color the vertices of a graph", "access": "Crossref metadata and abstract; publisher and PDF fetches failed"}
+  ],
+  "warnings": [
+    "No claim that all related literature has been retrieved.",
+    "No inference of novelty from unmatched wording or notation.",
+    "Original 1880 Tait paper not read.",
+    "Precoloring paper's open questions are described in that paper's scope, not asserted unresolved as of the access date."
+  ],
+  "workflow_attribution": {"skill": "paper-lookup", "reference": "https://arxiv.org/abs/2609.00065", "version_observed": "v2", "role": "retrieval procedure only, not mathematical evidence"}
+}

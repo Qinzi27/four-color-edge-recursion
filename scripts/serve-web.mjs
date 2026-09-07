@@ -11,7 +11,8 @@ const server = createServer(async (request, response) => {
     const name = decodeURIComponent(new URL(request.url, 'http://localhost').pathname);
     const target = resolve(root, '.' + (name === '/' ? '/index.html' : name));
     if (!target.startsWith(root + sep)) throw new Error('Invalid path');
-    const body = await readFile(target);
+    // The theory page is an explicit public alias, never an arbitrary parent path.
+    const body = await readFile(name === '/model.html' ? new URL('../docs/explainer.html', import.meta.url) : target);
     response.writeHead(200, { 'Content-Type': types[extname(target)] || 'application/octet-stream', 'Cache-Control':'no-store' });
     response.end(body);
   } catch {

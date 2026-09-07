@@ -8,6 +8,14 @@ and verifiable Klein-four-group flow repair.**
 
 [![Validation](https://github.com/Qinzi27/four-color-edge-recursion/actions/workflows/validate.yml/badge.svg)](https://github.com/Qinzi27/four-color-edge-recursion/actions/workflows/validate.yml)
 
+[Open the public map lab](https://qinzi27.github.io/four-color-edge-recursion/)
+· [Recursive model explainer](https://qinzi27.github.io/four-color-edge-recursion/model.html)
+· [Method fidelity and literature audit](docs/METHOD_REVIEW-2026-09-07.md)
+
+The public GitHub Pages site does not require a GitHub or ChatGPT account. Its
+automatic coloring is a **comparison baseline**, not a complete implementation
+of an as-yet-unspecified recursive color-inheritance rule.
+
 This project develops Qinzi27's idea of describing a directed boundary by the
 colors on its two sides, `(1,2)`, and recording successive region splits with
 expressions such as `(1,(2,3))`. The research goal is to understand what extra

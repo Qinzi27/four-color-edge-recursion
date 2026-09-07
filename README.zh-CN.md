@@ -3,6 +3,13 @@
 [English](README.md) · [完整数学基础](docs/FOUNDATIONS.md) · [研究计划](docs/RESEARCH_PLAN.md)
 · [文献对照](docs/RELATED_WORK.md) · [API 与示例](docs/API.md)
 
+[公开小程序：外部用户直接访问](https://qinzi27.github.io/four-color-edge-recursion/)
+· [原始递归模型图解](https://qinzi27.github.io/four-color-edge-recursion/model.html)
+· [方法忠实性与文献核对](docs/METHOD_REVIEW-2026-09-07.md)
+
+GitHub Pages 页面不要求登录 GitHub 或 ChatGPT。当前自动填色明确标为**候选色标
+对照基线**，不将“候选最少优先”冒充提出者尚未完整规定的递归选色法。
+
 本项目将 Qinzi27 提出的“用 `(1,2)` 描写有向边左右两侧颜色，用
 `(1,(2,3))` 记录区域递归分裂”整理为可阅读、可运行、可检查的研究基础。
 我们研究：递归时必须保留哪些信息，才能保证局部选择在闭合后仍然一致？

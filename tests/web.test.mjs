@@ -87,6 +87,23 @@ test('fixed colors are preserved and conflicting fixed colors rejected',()=>{
   const again=selectMarkers(m,{fixedColors:s.colors});assert.deepEqual(again.colors,s.colors);
   assert.throws(()=>selectMarkers(m,{fixedColors:Array(m.faces.length).fill(0)}));
 });
+test('a single face split need not extend if all surrounding old colors are frozen',()=>{
+  // Each half will touch all three old ring colors, so both demand color 0.
+  const inner=[[450,150],[650,225],[650,375],[450,450],[250,375],[250,225]];
+  const outer=[[450,0],[900,150],[900,450],[450,600],[0,450],[0,150]];
+  const strokes=inner.map((a,i)=>edge(a,inner[(i+1)%6])).concat(inner.map((a,i)=>edge(a,outer[i])));
+  const before=buildMap(doc(strokes)),oldColors=[0,3,1,2,3,1,2,0];
+  assert.equal(before.faces.length,8);assert.equal(verifyColoring(before,oldColors).passed,true);
+  const after=buildMap(doc([...strokes,edge(inner[0],inner[3])])),fixed=[0,3,1,2,3,1,2,-1,-1];
+  assert.equal(after.faces.length,9);
+  for(const f of [7,8]){
+    assert.equal(after.faces[f].area,45000);
+    assert.deepEqual([...new Set(after.adjacency[f].filter(n=>n<7).map(n=>fixed[n]))].sort(),[1,2,3]);
+  }
+  assert(after.adjacency[7].includes(8));assert.equal(selectMarkers(after,{fixedColors:fixed}).status,'blocked');
+  // The same final map remains four-colorable when old ring colors may change.
+  const witness=[0,1,2,1,2,1,2,0,3];assert.equal(verifyColoring(after,witness).passed,true);
+});
 test('WebMCP adapter mock checks names, shared actions, invalid input and cleanup (not browser validation)',async()=>{
   const registered=new Map();let state={caseId:'blank'};
   const dispose=registerMapTools({context:{registerTool:(tool,opts)=>registered.set(tool.name,{tool,opts})},snapshot:()=>state,caseIds:['blank'],loadCase:async id=>(state={caseId:id}),addSegments:async strokes=>{normalizeDocument(doc(strokes));return(state={count:strokes.length});}});

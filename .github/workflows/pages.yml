@@ -1,0 +1,52 @@
+# Only validated, explicitly built public assets are deployed to GitHub Pages.
+name: Publish public map lab
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check lockfile and test marker/geometry implementation
+        run: |
+          npm ci
+          npm test
+          python scripts/validate.py
+          python scripts/validate_web.py
+      - name: Build static public files
+        run: npm run build
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish to the public GitHub Pages site
+        id: deployment
+        uses: actions/deploy-pages@v4

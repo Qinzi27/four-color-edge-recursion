@@ -3,14 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="画线分割地图，自动四色填色，检查有向边的左右面与闭路一致性。可复现的四色问题研究小程序。">
+  <meta name="description" content="Qinzi27 的四色边侧递归研究：画线分割地图、检查左右面与闭路一致性，并与无回溯候选色标基线对照。不声称新的四色定理证明。">
+  <link rel="canonical" href="https://qinzi27.github.io/four-color-edge-recursion/">
   <title>四色地图实验室 · Four Color Map Lab</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <header class="topbar">
     <a class="brand" href="./"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>四色地图实验室<small>FOUR COLOR MAP LAB</small></span></a>
-    <nav><a href="https://github.com/Qinzi27/four-color-edge-recursion" target="_blank" rel="noreferrer">研究仓库 ↗</a><button id="help" type="button">使用说明</button></nav>
+    <nav><a href="./model.html">递归模型图解</a><a href="https://github.com/Qinzi27/four-color-edge-recursion" target="_blank" rel="noreferrer">研究仓库 ↗</a><button id="help" type="button">使用说明</button></nav>
   </header>
   <main>
     <aside class="gallery" aria-label="地图案例">
@@ -20,6 +21,7 @@
     </aside>
     <section class="workspace" aria-label="地图画板">
       <div class="canvas-heading"><div><h1 id="map-title">四面体地图</h1><p id="map-description">从三个内部区域，看见第四种颜色为什么出现。</p></div><span id="state" class="state" role="status">准备就绪</span></div>
+      <p class="method-note">当前填色是<strong>候选色标对照基线</strong>，不是原始递归规则的完整实现。你的方法记录左右面与分割历史；具体继承、选色和闭合规则仍需明确。<a href="./model.html">查看 (1,2) → (1,(2,3)) 图解</a></p>
       <div class="toolbar">
         <div class="tool-group"><button id="draw" type="button" aria-pressed="true">╱ 画线</button><button id="inspect" type="button" aria-pressed="false">⌖ 查边</button></div>
         <div class="tool-group"><button id="undo" type="button" title="Ctrl/⌘ + Z">↶ 撤销</button><button id="clear" type="button">清空</button></div>
@@ -46,7 +48,7 @@
       <div id="edge-detail"><p class="empty-detail">切换「查边」，点一条边，查看方向及左右两面的颜色。</p></div>
       <div class="section-label separated">这张地图的验证</div>
       <ul id="checks" class="checks"><li>等待识别与着色</li></ul>
-      <details open><summary>这次怎样选色标</summary><p id="solver-detail">维护四个候选色标，排除相邻已用色，直接选取一个；不枚举着色方案，不回溯。</p><ol id="history" class="history"></ol></details>
+      <details open><summary>基线选色记录（非分割谱系）</summary><p id="solver-detail">维护四个候选色标，排除相邻已用色，直接选取一个；不枚举着色方案，不回溯。</p><ol id="history" class="history"></ol></details>
       <details><summary>理论与算法的边界</summary><p>左右面身份和异或差分来自本项目的模型。选择规则：候选最少的面优先，其次邻接度最高，再按面编号；直接选最低可用色标。每面至多赋色一次，候选为空就停止，不暗中回溯，也不增加第五色。这是待完善的贪心规则，不保证任意地图成功，不构成新的四色定理证明。</p><p>画框外部也计为一个面。悬空线不分面；岛屿和嵌套区域通过不分面的隐藏桥处理。编辑后重新识别并赋色；面编号和颜色不保证跨编辑保持不变。</p><a href="https://github.com/Qinzi27/four-color-edge-recursion/blob/main/docs/FOUNDATIONS.md" target="_blank" rel="noreferrer">阅读数学基础 ↗</a></details>
     </aside>
   </main>

@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-09-07 — Public Pages and method-fidelity clarification
+
+- Added GitHub Pages deployment of validated static assets and the theory explainer.
+- Clearly labeled the greedy marker rule as a comparison baseline, not the
+  initiating author's fully specified recursive construction.
+- Added a literature/provenance review and a frozen-precoloring face-split
+  obstruction. Node regression coverage now contains 23 tests.
+
 ## 0.2.0 — 2026-09-07
 
 - Added a dependency-free interactive drawing website with seven original cases.
