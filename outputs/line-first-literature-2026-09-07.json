@@ -1,0 +1,53 @@
+{
+  "access_date": "2026-09-07",
+  "scope": "Targeted primary-source comparison after the user's edge-first clarification; not exhaustive novelty clearance.",
+  "web_queries": [
+    "gain graphs balanced potential Zaslavsky",
+    "combinatorial maps darts permutation face rotation system",
+    "Zaslavsky gain graphs balance switching potentials group labels pdf",
+    "discrete differential forms graph exact cochain potential reconstruction cycle sum zero paper",
+    "voltage graphs signed coloring four color edge difference Z2 Z2",
+    "Statistical ranking and combinatorial Hodge theory arxiv",
+    "Criteria for Balance in Abelian Gain Graphs arxiv",
+    "Cyclic 4-colorings of graphs on surfaces DOI"
+  ],
+  "crossref_queries": {
+    "endpoint": "https://api.crossref.org/works",
+    "parameters_shared": {"rows": 3, "select": "DOI,title,author,published"},
+    "queries": [
+      {"query.bibliographic": "Exact Predicates Exact Constructions and Combinatorics for Mesh CSG", "total_results_reported": 238699, "retrieved": 3, "relevant_doi": "10.1145/3744642", "use": "Metadata only; publisher full text returned 403; not used to claim an application result."},
+      {"query.bibliographic": "A Topological Approach for Cycle Detection in Line Drawings", "total_results_reported": 4444818, "retrieved": 3, "use": "Broad exploratory query, no close title match used as evidence."},
+      {"query.bibliographic": "combinatorial maps image segmentation", "total_results_reported": 1337241, "retrieved": 3, "use": "Low-specificity metadata results; application remains a hypothesis."}
+    ],
+    "note": "Crossref ranking totals are broad retrieval counts, not counts of directly relevant studies. First page only. status and message-type checked."
+  },
+  "crossref_exact_checks": {
+    "endpoint_template": "https://api.crossref.org/works/{url_encoded_doi}",
+    "dois": ["10.1007/s00454-005-1170-6", "10.1007/s10107-010-0419-x", "10.1002/jgt.21900"],
+    "response_check": "status=ok, message-type=work, titles/authors/publication dates checked",
+    "date_note": "HodgeRank online 2010 / issue 2011; Cyclic 4-Colorings online 2015 / issue 2016; use issue years."
+  },
+  "arxiv_check_by_literature_subtask": {
+    "endpoint": "https://export.arxiv.org/api/query",
+    "parameters": {"id_list": "math/0210052,0811.1067"},
+    "total_results": 2,
+    "returned": 2,
+    "versions": ["math/0210052v5", "0811.1067v2"],
+    "parser": "paper-lookup arxiv_atom.py",
+    "warning": "Preserve the math/ archive prefix in the older identifier, not the parser's shortened convenience field."
+  },
+  "sources": [
+    {"url": "https://cgogn.github.io/combinatorial_maps.html", "access": "Full official documentation page", "scope": "Darts, cell orbits, optional indexing; not proof of this project's novelty."},
+    {"doi": "10.1007/s00454-005-1170-6", "url": "https://arxiv.org/pdf/math/0210052v5", "access": "Author preprint full text; relevant sections inspected", "locations": ["Section 1", "Section 5, Lemma 5.2"], "scope": "Gain balance and satisfied states, respecting group-action hypotheses."},
+    {"doi": "10.1002/jgt.21900", "url": "https://tgt.ynu.ac.jp/ozeki/2013NNO.pdf", "access": "Author manuscript full text; relevant sections inspected", "locations": ["Theorem 2", "Section 4"], "scope": "Restricted surface/cyclic-coloring framework, not arbitrary-surface four-colorability."},
+    {"doi": "10.1007/s10107-010-0419-x", "url": "https://web.stanford.edu/~yyye/hodgeRank2011.pdf", "access": "Author-hosted final full text; relevant sections inspected", "locations": ["Section 3.2", "Figure 1", "Theorem 4"], "scope": "Pairwise observations and inconsistency; not identical to exact symbolic side equality."}
+  ],
+  "software_credit": {
+    "title": "Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents",
+    "authors": ["Timothy Kassis", "Vinayak Agarwal", "Yuhuan He", "Darshil Patel", "Aubrey M. Brueckner"],
+    "year": 2026,
+    "url": "https://arxiv.org/abs/2609.00065",
+    "version_observed": "v2",
+    "use": "Retrieval workflow attribution only, not mathematical evidence."
+  }
+}

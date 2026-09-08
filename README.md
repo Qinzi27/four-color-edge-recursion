@@ -8,13 +8,25 @@ and verifiable Klein-four-group flow repair.**
 
 [![Validation](https://github.com/Qinzi27/four-color-edge-recursion/actions/workflows/validate.yml/badge.svg)](https://github.com/Qinzi27/four-color-edge-recursion/actions/workflows/validate.yml)
 
-[Open the public map lab](https://qinzi27.github.io/four-color-edge-recursion/)
+[Open the line-first construction lab](https://qinzi27.github.io/four-color-edge-recursion/rules.html)
+· [Old comparison baseline](https://qinzi27.github.io/four-color-edge-recursion/)
 · [Recursive model explainer](https://qinzi27.github.io/four-color-edge-recursion/model.html)
 · [Method fidelity and literature audit](docs/METHOD_REVIEW-2026-09-07.md)
 
-The public GitHub Pages site does not require a GitHub or ChatGPT account. Its
-automatic coloring is a **comparison baseline**, not a complete implementation
-of an as-yet-unspecified recursive color-inheritance rule.
+The public GitHub Pages site does not require a GitHub or ChatGPT account.
+The new **line-first construction lab** commits only anchored paths or independent
+loops, reads existing symbols from directed line names, and applies a proved
+two-contact extension rule without coloring enumeration or backtracking.
+It stops with a certificate when a frozen precoloring cannot extend. The old
+face-greedy interface remains a clearly labeled comparison baseline.
+
+The general successful-order gap remains unresolved. A four-step example shows
+that one input history blocks while another history of the same target map works.
+There are 13 replayable gallery cases and 240 consecutively seeded generated maps;
+160 guillotine histories block, whereas 80 ring/fan cases complete. Python independently
+validates 2,569 committed-state certificates, not universal success.
+See [proved rule, counterexample and reproduction](docs/CONSTRUCTION_RULES-2026-09-08.md)
+and the [machine-readable experiment report](outputs/construction-validation-2026-09-08.json).
 
 This project develops Qinzi27's idea of describing a directed boundary by the
 colors on its two sides, `(1,2)`, and recording successive region splits with
@@ -65,7 +77,16 @@ for balance at all vertices. This distinction matters when reproducing the recur
 
 ## Run locally
 
-### Interactive map lab (v0.2)
+### Line-first lab and comparison baseline
+
+Run `npm run dev` and open `/rules.html` under the printed URL. Replay gallery
+operations, draw anchored polylines or independent loops, inspect ordered line
+names, and export/import auditable JSON. `python scripts/validate_construction.py`
+repeats the finite experiments and independent Python checks. Every incomplete or
+blocked operation preserves all committed names. This is a restricted implementation
+proposal, not a claim that the initiating notation uniquely determines tie-breaking.
+
+The older root page remains available for comparison:
 
 Draw straight boundaries or load seven deterministic teaching maps. Crossings,
 islands, nested regions and dangling edges are handled explicitly. Inspect each

@@ -29,7 +29,9 @@ export function normalizeDocument(input) {
   function point(p) {
     if (!Array.isArray(p)||p.length!==2||p.some(v=>typeof v!=='number'||!Number.isFinite(v))) throw new ModelError('线段端点必须是两个有限数值。','input');
     if(p[0]<0||p[0]>WIDTH||p[1]<0||p[1]>HEIGHT) throw new ModelError('线段端点超出画框。','input');
-    return p.map(v=>Math.round(v*1000)/1000);
+    // Preserve exact projected anchors on oblique lines. Premature 0.001
+    // rounding opens gaps. Planarize canonicalizes vertex keys once instead.
+    return [...p];
   }
   const strokes=input.strokes.map((s,i)=>{
     if(!s||typeof s!=='object') throw new ModelError('第 '+(i+1)+' 条线段格式错误。','input');

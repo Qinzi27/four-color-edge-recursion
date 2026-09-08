@@ -3,12 +3,23 @@
 [English](README.md) · [完整数学基础](docs/FOUNDATIONS.md) · [研究计划](docs/RESEARCH_PLAN.md)
 · [文献对照](docs/RELATED_WORK.md) · [API 与示例](docs/API.md)
 
-[公开小程序：外部用户直接访问](https://qinzi27.github.io/four-color-edge-recursion/)
+[新：公开线名构造台](https://qinzi27.github.io/four-color-edge-recursion/rules.html)
+· [旧候选色标对照](https://qinzi27.github.io/four-color-edge-recursion/)
 · [原始递归模型图解](https://qinzi27.github.io/four-color-edge-recursion/model.html)
 · [方法忠实性与文献核对](docs/METHOD_REVIEW-2026-09-07.md)
 
-GitHub Pages 页面不要求登录 GitHub 或 ChatGPT。当前自动填色明确标为**候选色标
-对照基线**，不将“候选最少优先”冒充提出者尚未完整规定的递归选色法。
+GitHub Pages 页面不要求登录 GitHub 或 ChatGPT。新入口从有向线的左右名字出发，
+只有连线完成真实锚定或独立闭环后才提交；按已证明的“两色接触”条件直接选标，
+保留另一子侧的符号和其他旧侧，不枚举着色组合、不回溯、不暗换算法。
+旧的面候选色标算法保留为明确标注的对照入口。
+
+**一般成功顺序的缺口尚未解决。** 已找到四步反例：同一目标地图，一种构造历史
+受阻，另一种历史成功。新图库有13个重放案例；240个连续种子生成案例中，160个
+递归矩形历史受阻，80个环/扇形案例完成。2,569份状态证书经Python独立核验，
+不能把“证书检查通过”当成“任意地图都能完成”。
+
+[单步证明、反例、操作说明与复现](docs/CONSTRUCTION_RULES-2026-09-08.md)
+· [完整机器报告](outputs/construction-validation-2026-09-08.json)
 
 本项目将 Qinzi27 提出的“用 `(1,2)` 描写有向边左右两侧颜色，用
 `(1,(2,3))` 记录区域递归分裂”整理为可阅读、可运行、可检查的研究基础。
@@ -22,7 +33,17 @@ GitHub Pages 页面不要求登录 GitHub 或 ChatGPT。当前自动填色明确
 
 ## 从直觉到定义
 
-### 先在网站小程序里试画（v0.2）
+### 新的线名构造台
+
+运行 `npm run dev`，在打印地址后加 `/rules.html`。选择图库后点击“案例下一步”；
+也可自行点击锚点和折点，或在空白处画独立闭环。检查线名显示方向、左右符号与谱系。
+JSON导出保存操作、线名及草稿；导入重新计算并校验证书。运行
+`python scripts/validate_construction.py` 重现全部生成案例与跨语言检查。
+
+具体选择约定为：合格子侧中优先取外部符号集合最小者，侧序号打破平局，再取最低
+可用符号。这是可检验的实现提案，不声称原始记号已经唯一规定了这一约定。
+
+### 保留的旧对照画板（v0.2）
 
 运行 `npm run dev`，打开它打印的本地地址。首版提供 7 个可复现案例，
 支持拖动画直线、交点自动分段、闭合区域识别、查边、撤销、JSON 导入导出和 SVG 保存。

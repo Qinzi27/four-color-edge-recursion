@@ -11,7 +11,7 @@
 <body>
   <header class="topbar">
     <a class="brand" href="./"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>四色地图实验室<small>FOUR COLOR MAP LAB</small></span></a>
-    <nav><a href="./model.html">递归模型图解</a><a href="https://github.com/Qinzi27/four-color-edge-recursion" target="_blank" rel="noreferrer">研究仓库 ↗</a><button id="help" type="button">使用说明</button></nav>
+    <nav><a href="./rules.html">新：线名构造台</a><a href="./model.html">递归模型图解</a><a href="https://github.com/Qinzi27/four-color-edge-recursion" target="_blank" rel="noreferrer">研究仓库 ↗</a><button id="help" type="button">使用说明</button></nav>
   </header>
   <main>
     <aside class="gallery" aria-label="地图案例">
@@ -21,7 +21,7 @@
     </aside>
     <section class="workspace" aria-label="地图画板">
       <div class="canvas-heading"><div><h1 id="map-title">四面体地图</h1><p id="map-description">从三个内部区域，看见第四种颜色为什么出现。</p></div><span id="state" class="state" role="status">准备就绪</span></div>
-      <p class="method-note">当前填色是<strong>候选色标对照基线</strong>，不是原始递归规则的完整实现。你的方法记录左右面与分割历史；具体继承、选色和闭合规则仍需明确。<a href="./model.html">查看 (1,2) → (1,(2,3)) 图解</a></p>
+      <p class="method-note">这里保留<strong>旧候选色标对照基线</strong>。新的程序从线名出发，只在锚定/闭环后按已证明的受限条件选标，并保留阻塞证书。<a href="./rules.html">进入线名构造台 →</a></p>
       <div class="toolbar">
         <div class="tool-group"><button id="draw" type="button" aria-pressed="true">╱ 画线</button><button id="inspect" type="button" aria-pressed="false">⌖ 查边</button></div>
         <div class="tool-group"><button id="undo" type="button" title="Ctrl/⌘ + Z">↶ 撤销</button><button id="clear" type="button">清空</button></div>

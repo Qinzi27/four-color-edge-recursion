@@ -45,9 +45,16 @@ jobs:
         run: npm test
       - name: Independent Python reconstruction of web certificates
         run: python scripts/validate_web.py
+      - name: Independent line-first construction certificates
+        run: python scripts/validate_construction.py
+      - name: Bounded abstract research oracle, separate from production
+        run: python scripts/search_construction_gap.py
       - name: Build static website
         run: npm run build
       - uses: actions/upload-artifact@v4
         with:
           name: web-validation
-          path: outputs/web-validation.json
+          path: |
+            outputs/web-validation.json
+            outputs/construction-validation-2026-09-08.json
+            outputs/reverse-merge-search-2026-09-08.json

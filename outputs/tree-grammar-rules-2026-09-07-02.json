@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-07T07:11:59.360078+00:00",
+  "python_version": "3.12.14",
+  "random_seed": null,
+  "sampling": "exhaustive within stated bounds; no randomness",
+  "scope": "Ordered binary tree grammar, not arbitrary face-split histories; finite checks are not a new four-color proof.",
+  "source": {
+    "doi": "10.1016/j.aam.2011.11.002",
+    "arxiv": "1006.1324v2",
+    "sections": [
+      "1",
+      "2",
+      "3",
+      "4 Propositions 10-11",
+      "6 Theorem 18"
+    ]
+  },
+  "symbol_to_nonzero_group_code": {
+    "0": "01",
+    "1": "10",
+    "2": "11"
+  },
+  "oracle": "prefix XOR on every subtree leaf interval; no grammar-table recursion",
+  "tree_families": [
+    {
+      "leaves": 1,
+      "ordered_tree_shapes": 1,
+      "tree_word_checks": 3,
+      "unordered_pairs_including_self": 1,
+      "minimum_literal_common_words": 3
+    },
+    {
+      "leaves": 2,
+      "ordered_tree_shapes": 1,
+      "tree_word_checks": 9,
+      "unordered_pairs_including_self": 1,
+      "minimum_literal_common_words": 6
+    },
+    {
+      "leaves": 3,
+      "ordered_tree_shapes": 2,
+      "tree_word_checks": 54,
+      "unordered_pairs_including_self": 3,
+      "minimum_literal_common_words": 6
+    },
+    {
+      "leaves": 4,
+      "ordered_tree_shapes": 5,
+      "tree_word_checks": 405,
+      "unordered_pairs_including_self": 15,
+      "minimum_literal_common_words": 6
+    },
+    {
+      "leaves": 5,
+      "ordered_tree_shapes": 14,
+      "tree_word_checks": 3402,
+      "unordered_pairs_including_self": 105,
+      "minimum_literal_common_words": 6
+    },
+    {
+      "leaves": 6,
+      "ordered_tree_shapes": 42,
+      "tree_word_checks": 30618,
+      "unordered_pairs_including_self": 903,
+      "minimum_literal_common_words": 6
+    },
+    {
+      "leaves": 7,
+      "ordered_tree_shapes": 132,
+      "tree_word_checks": 288684,
+      "unordered_pairs_including_self": 8778,
+      "minimum_literal_common_words": 6
+    }
+  ],
+  "extensions": {
+    "base_leaves_min": 2,
+    "base_leaves_max": 5,
+    "ordered_tree_pair_and_leaf_cases": 1094,
+    "operations_checked_per_case": 3,
+    "triplication_scope": "forward map and root preservation, not all new parse words",
+    "passed": true
+  },
+  "examples": [
+    {
+      "first": "((x,x),x)",
+      "second": "(x,(x,x))",
+      "word": [
+        0,
+        1,
+        1
+      ],
+      "first_root": 0,
+      "second_root": null
+    },
+    {
+      "first": "((x,x),x)",
+      "second": "(x,(x,x))",
+      "word": [
+        0,
+        1,
+        0
+      ],
+      "first_root": 1,
+      "second_root": 1
+    },
+    {
+      "first": "((x,x),(x,x))",
+      "second": "(((x,x),x),x)",
+      "word": [
+        0,
+        1,
+        2,
+        0
+      ],
+      "first_root": 0,
+      "second_root": null
+    },
+    {
+      "first": "((x,x),(x,x))",
+      "second": "(((x,x),x),x)",
+      "word": [
+        0,
+        1,
+        0,
+        2
+      ],
+      "first_root": 0,
+      "second_root": 0
+    }
+  ],
+  "passed": true
+}

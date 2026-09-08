@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-07T07:15:28.814884+00:00",
+  "python_version": "3.12.14",
+  "random_seed": 20260906,
+  "scope": "Finite implementation checks only; not an exhaustive check of planar graphs or a new proof of the Four Color Theorem.",
+  "unittest": {
+    "tests_run": 44,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": true
+  },
+  "tetrahedron_exhaustive": {
+    "vertices": 4,
+    "edges": 6,
+    "faces": 4,
+    "face_assignments_examined": 256,
+    "proper_face_colorings": 24,
+    "nonzero_edge_assignments_examined": 729,
+    "balanced_nonzero_edge_assignments": 6
+  },
+  "series_parallel_repair": {
+    "triangle_all_initial_labels": {
+      "instances": 27,
+      "terminal_states_compared": 108,
+      "candidate_labelings_enumerated": 729,
+      "maximum_edges": 3,
+      "zero_defect_feasible_instances": 27,
+      "zero_defect_infeasible_instances": 0
+    },
+    "theta_all_initial_labels": {
+      "instances": 27,
+      "terminal_states_compared": 108,
+      "candidate_labelings_enumerated": 729,
+      "maximum_edges": 3,
+      "zero_defect_feasible_instances": 27,
+      "zero_defect_infeasible_instances": 0
+    },
+    "seeded_random": {
+      "instances": 30,
+      "terminal_states_compared": 120,
+      "candidate_labelings_enumerated": 10818,
+      "maximum_edges": 7,
+      "zero_defect_feasible_instances": 14,
+      "zero_defect_infeasible_instances": 16
+    }
+  },
+  "recursive_construction": {
+    "example": "triangle -> dangling interior edge -> first closure -> tetrahedral map",
+    "states": [
+      {
+        "step": 0,
+        "vertices": 3,
+        "edges": 3,
+        "faces": 2,
+        "proper_face_colorings": 12
+      },
+      {
+        "step": 1,
+        "vertices": 4,
+        "edges": 4,
+        "faces": 2,
+        "proper_face_colorings": 12
+      },
+      {
+        "step": 2,
+        "vertices": 4,
+        "edges": 5,
+        "faces": 3,
+        "proper_face_colorings": 24
+      },
+      {
+        "step": 3,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "proper_face_colorings": 24
+      }
+    ],
+    "operations": [
+      {
+        "kind": "extend",
+        "corner": 0,
+        "vertex": "O"
+      },
+      {
+        "kind": "close_split",
+        "start": 7,
+        "end": 2
+      },
+      {
+        "kind": "close_split",
+        "start": 8,
+        "end": 4
+      }
+    ],
+    "face_lineage_events_checked": 3
+  },
+  "precoloring_obstruction": {
+    "graph": "four-cycle rim with one hub adjacent to all four rim vertices",
+    "proper_rim_colorings": 84,
+    "extendable_rim_colorings": 60,
+    "nonextendable_proper_rim_colorings": 24,
+    "total_proper_four_colorings": 72,
+    "nonextendable_rim_example": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "valid_full_coloring_example": [
+      0,
+      1,
+      0,
+      1,
+      2
+    ],
+    "meaning": "Failure of this fixed boundary precoloring, not failure of four-colorability."
+  }
+}

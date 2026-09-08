@@ -1,0 +1,223 @@
+{
+  "schema_version": 1,
+  "scope": "Line-first symbolic consistency only, not a four-color selection algorithm or novelty proof.",
+  "randomness": "none; all input sets and bounds are explicit",
+  "algorithm": "CCW corner equalities, deterministic propagation, no assignment search/backtracking",
+  "right_branch_template": {
+    "incoming": [
+      "1",
+      "2"
+    ],
+    "continuation": [
+      "1",
+      "3"
+    ],
+    "branch": [
+      "3",
+      "2"
+    ],
+    "history": [
+      "1",
+      [
+        "2",
+        "3"
+      ]
+    ]
+  },
+  "partial_triangle": {
+    "status": "consistent",
+    "names": [
+      [
+        "A",
+        "B"
+      ],
+      [
+        "A",
+        "B"
+      ],
+      [
+        "A",
+        "B"
+      ]
+    ],
+    "side_orbits": [
+      [
+        0,
+        2,
+        4
+      ],
+      [
+        1,
+        5,
+        3
+      ]
+    ],
+    "unresolved_orbits": [],
+    "conflicts": []
+  },
+  "triangle_conflict": {
+    "status": "conflict",
+    "names": [
+      [
+        "A",
+        "B"
+      ],
+      [
+        "A",
+        "B"
+      ],
+      [
+        "A",
+        "C"
+      ]
+    ],
+    "side_orbits": [
+      [
+        0,
+        2,
+        4
+      ],
+      [
+        1,
+        5,
+        3
+      ]
+    ],
+    "unresolved_orbits": [],
+    "conflicts": [
+      {
+        "kind": "side_mismatch",
+        "side_orbit": 1,
+        "symbols": [
+          "B",
+          "C"
+        ],
+        "darts": [
+          1,
+          5
+        ]
+      }
+    ]
+  },
+  "five_symbol_witness": {
+    "status": "consistent",
+    "names": [
+      [
+        "A",
+        "B"
+      ],
+      [
+        "C",
+        "A"
+      ],
+      [
+        "D",
+        "C"
+      ],
+      [
+        "E",
+        "D"
+      ],
+      [
+        "B",
+        "E"
+      ]
+    ],
+    "side_orbits": [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        6,
+        9
+      ]
+    ],
+    "unresolved_orbits": [],
+    "conflicts": []
+  },
+  "global_rename_example": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ]
+  ],
+  "bounded_independent_checks": [
+    {
+      "case": "triangle_partial",
+      "alphabet": [
+        null,
+        "A",
+        "B"
+      ],
+      "input_assignments_checked": 729,
+      "outcomes": {
+        "conflict": 602,
+        "consistent": 98,
+        "underdetermined": 29
+      },
+      "oracle_agreement": true
+    },
+    {
+      "case": "dangling_triangle_partial",
+      "alphabet": [
+        null,
+        "A",
+        "B"
+      ],
+      "input_assignments_checked": 6561,
+      "outcomes": {
+        "conflict": 6050,
+        "consistent": 434,
+        "underdetermined": 77
+      },
+      "oracle_agreement": true
+    },
+    {
+      "case": "tetrahedron_full_two_symbols",
+      "alphabet": [
+        "A",
+        "B"
+      ],
+      "input_assignments_checked": 4096,
+      "outcomes": {
+        "conflict": 4096
+      },
+      "oracle_agreement": true
+    },
+    {
+      "case": "five_parallel_full_two_symbols",
+      "alphabet": [
+        "A",
+        "B"
+      ],
+      "input_assignments_checked": 1024,
+      "outcomes": {
+        "conflict": 1024
+      },
+      "oracle_agreement": true
+    }
+  ],
+  "limitations": [
+    "connected plane topology only",
+    "no palette bound or unknown-name selection",
+    "no incremental editing implementation",
+    "witnesses are valid, not proved shortest"
+  ]
+}
