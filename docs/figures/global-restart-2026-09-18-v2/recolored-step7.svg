@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="960" viewBox="0 0 1900 960">
+<rect width="100%" height="100%" fill="white"/>
+<text x="60" y="30" font-size="39" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">你的判断在这张图上成立：全图重新标色后，第 7 刀成功</text>
+<text x="60" y="103" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">左：旧增量规则留下的名字　｜　右：新增线网清空旧名，从外圈自动重算</text>
+<text x="60" y="180" font-size="28" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">旧名控制：尚未加入虚线</text>
+<text x="60" y="224" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">外侧固定 1；数字表示当前线侧名</text>
+<rect x="60" y="465.8" width="810" height="204.3" fill="#CDE7F4"/>
+<rect x="60" y="670.1" width="810" height="45" fill="#FFE4AF"/>
+<rect x="60" y="275" width="277.2" height="190.8" fill="#DDCFE8"/>
+<rect x="679.2" y="275" width="190.8" height="190.8" fill="#DDCFE8"/>
+<rect x="337.2" y="275" width="342" height="190.8" fill="#FFE4AF"/>
+<rect x="440.7" y="715.1" width="429.3" height="99.9" fill="#CDE7F4"/>
+<rect x="60" y="715.1" width="380.7" height="99.9" fill="#DDCFE8"/>
+<polyline points="60,275 870,275 870,815 60,815 60,275" fill="none" stroke="#202831" stroke-width="5"/>
+<polyline points="60,465.8 870,465.8" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="60,670.1 870,670.1" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="60,715.1 870,715.1" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="337.2,275 337.2,465.8" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="679.2,275 679.2,465.8" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="440.7,715.1 440.7,815" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="411.9,670.1 411.9,684.1" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="411.9,693.1 411.9,707.1" fill="none" stroke="#B74400" stroke-width="5"/>
+<text x="465" y="551.95" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="465" y="676.6" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="198.6" y="354.4" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<text x="774.6" y="354.4" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<text x="508.2" y="354.4" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="655.35" y="749.05" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="250.35" y="749.05" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<text x="1010" y="180" font-size="28" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">新结果：四个名字，全边界校验通过</text>
+<text x="1010" y="224" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">外侧固定 1；数字表示当前线侧名</text>
+<rect x="1010" y="275" width="277.2" height="190.8" fill="#CDE7F4"/>
+<rect x="1287.2" y="275" width="342" height="190.8" fill="#FFE4AF"/>
+<rect x="1629.2" y="275" width="190.8" height="190.8" fill="#CDE7F4"/>
+<rect x="1010" y="465.8" width="810" height="204.3" fill="#DDCFE8"/>
+<rect x="1361.9" y="670.1" width="458.1" height="45" fill="#CDE7F4"/>
+<rect x="1390.7" y="715.1" width="429.3" height="99.9" fill="#FFE4AF"/>
+<rect x="1010" y="715.1" width="380.7" height="99.9" fill="#DDCFE8"/>
+<rect x="1010" y="670.1" width="351.9" height="45" fill="#FFE4AF"/>
+<polyline points="1010,275 1820,275 1820,815 1010,815 1010,275" fill="none" stroke="#202831" stroke-width="5"/>
+<polyline points="1010,465.8 1820,465.8" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1010,670.1 1820,670.1" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1010,715.1 1820,715.1" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1287.2,275 1287.2,465.8" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1361.9,670.1 1361.9,715.1" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1390.7,715.1 1390.7,815" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1629.2,275 1629.2,465.8" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="1148.6" y="354.4" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="1458.2" y="354.4" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="1724.6" y="354.4" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="1415" y="551.95" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<text x="1590.95" y="676.6" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="1605.35" y="749.05" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="1200.35" y="749.05" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<text x="1185.95" y="676.6" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<polyline points="1361.9,670.1 1361.9,715.1" fill="none" stroke="#B74400" stroke-width="5"/>
+<text x="60" y="850" font-size="26" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">右图由 closed-support 规则自动产生；未手工喂入名字，未沿用旧图的局部预算。</text>
+<text x="60" y="900" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">此图只展示第 7 刀；本条 24 刀历史首次新冲突在第 24 刀，不能混称全程成功。</text>
+</svg>

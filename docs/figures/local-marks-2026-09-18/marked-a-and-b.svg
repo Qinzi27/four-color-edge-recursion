@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1030" viewBox="0 0 1900 1030">
+<rect width="100%" height="100%" fill="white"/>
+<text x="60" y="30" font-size="44" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">局部侧名更新：A 的手绘结果与 B 的延伸</text>
+<text x="60" y="100" font-size="28" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">按原坐标等比绘制；母线身份不变，分段名字随实际侧别更新。</text>
+<text x="60" y="170" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">A｜按你的标注从头回放</text>
+<text x="1010" y="170" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">B｜旧名不动，内部新侧取 1</text>
+<text x="60" y="216" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">外侧：1</text>
+<polyline points="60,265 870,265 870,805 60,805 60,265" fill="none" stroke="#202831" stroke-width="5"/>
+<polyline points="433.5,265 433.5,805" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="444.3" y="308.2" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">L1</text>
+<polyline points="60,626.8 433.5,626.8" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="93.615" y="596.2" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">L2</text>
+<polyline points="269.7,626.8 269.7,805" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="280.5" y="641.056" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">L3</text>
+<polyline points="228.3,265 228.3,626.8" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="239.1" y="293.944" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">L4</text>
+<text x="651.75" y="511" font-size="45" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="351.6" y="691.9" font-size="45" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<text x="164.85" y="691.9" font-size="45" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="330.9" y="421.9" font-size="45" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="144.15" y="421.9" font-size="45" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<text x="1010" y="216" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">外侧：1</text>
+<polyline points="1010,265 1820,265 1820,805 1010,805 1010,265" fill="none" stroke="#202831" stroke-width="5"/>
+<polyline points="1010,559.3 1820,559.3" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="1082.9" y="528.7" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">L1</text>
+<polyline points="1476.2,265 1476.2,559.3" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="1487" y="288.544" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">L2</text>
+<polyline points="1010,419.8 1476.2,419.8" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="1051.96" y="389.2" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">L3</text>
+<polyline points="1261.1,265 1261.1,419.8" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="1271.9" y="277.384" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">L4</text>
+<polyline points="1154,419.8 1154,559.3" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="1164.8" y="430.96" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">L5</text>
+<text x="1415" y="658.15" font-size="45" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="1648.1" y="388.15" font-size="45" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="1368.65" y="318.4" font-size="45" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="1135.55" y="318.4" font-size="45" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="1315.1" y="465.55" font-size="45" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#00618A">1</text>
+<text x="1082" y="465.55" font-size="45" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<text x="60" y="834" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">横母线 L2 的最终局部名字（上 / 下）：</text>
+<text x="60" y="880" font-size="26" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">左段 (4,2) → 短中段 (3,2) → 右段 (3,4)</text>
+<text x="1010" y="834" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">右内部侧的旧邻名只有 {2,3}，兄弟侧为 4。</text>
+<text x="1010" y="880" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">它不接外侧 1，因此可以复用名字 1。</text>
+<text x="60" y="963" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">已验证的是这两个实例；局部成功不等于一般完备性。L 编号仅用于指认母线，不是颜色。</text>
+</svg>

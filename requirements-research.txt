@@ -1,0 +1,3 @@
+# Optional research/test dependency; the mathematical core uses only stdlib.
+# pip selects a compatible release for Python 3.10 and newer.
+Pillow>=10,<13

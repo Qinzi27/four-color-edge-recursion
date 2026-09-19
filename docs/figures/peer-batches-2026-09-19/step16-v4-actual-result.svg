@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1570" height="1150" viewBox="0 0 1570 1150">
+<rect width="100%" height="100%" fill="white"/>
+<text x="55" y="30" font-size="39" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">同一第16步图：v4 实际重新标色</text>
+<text x="55" y="96" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">所有色名来自新算法本次完整运行；旧成功解从未作为输入。</text>
+<text x="55" y="151" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">外侧1；图内数字是当前色名，右表 sN 才是侧编号。</text>
+<rect x="342.1" y="452.2" width="14.3" height="232.1" fill="#EEEEEE"/>
+<rect x="55" y="230" width="209" height="141.9" fill="#DDCFE8"/>
+<rect x="264" y="230" width="92.4" height="222.2" fill="#CDE7F4"/>
+<rect x="356.4" y="230" width="304.7" height="660" fill="#FFE4AF"/>
+<rect x="661.1" y="230" width="172.7" height="660" fill="#CDE7F4"/>
+<rect x="833.8" y="230" width="119.9" height="660" fill="#FFE4AF"/>
+<rect x="953.7" y="230" width="91.3" height="660" fill="#CDE7F4"/>
+<rect x="264" y="846" width="92.4" height="44" fill="#CDE7F4"/>
+<rect x="224.4" y="441.2" width="39.6" height="448.8" fill="#DDCFE8"/>
+<rect x="135.3" y="441.2" width="89.1" height="448.8" fill="#CDE7F4"/>
+<rect x="55" y="441.2" width="80.3" height="448.8" fill="#DDCFE8"/>
+<rect x="55" y="371.9" width="209" height="69.3" fill="#FFE4AF"/>
+<rect x="264" y="452.2" width="35.2" height="232.1" fill="#EEEEEE"/>
+<rect x="264" y="684.3" width="92.4" height="125.4" fill="#CDE7F4"/>
+<rect x="264" y="809.7" width="92.4" height="36.3" fill="#EEEEEE"/>
+<rect x="299.2" y="452.2" width="24.2" height="232.1" fill="#FFE4AF"/>
+<rect x="323.4" y="452.2" width="18.7" height="232.1" fill="#DDCFE8"/>
+<polyline points="55,230 1045,230 1045,890 55,890 55,230" fill="none" stroke="#202831" stroke-width="5"/>
+<polyline points="55,371.9 264,371.9" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="55,441.2 264,441.2" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="135.3,441.2 135.3,890" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="224.4,441.2 224.4,890" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="264,230 264,890" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="264,452.2 356.4,452.2" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="264,684.3 356.4,684.3" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="264,809.7 356.4,809.7" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="264,846 356.4,846" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="299.2,452.2 299.2,684.3" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="323.4,452.2 323.4,684.3" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="342.1,452.2 342.1,684.3" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="356.4,230 356.4,890" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="661.1,230 661.1,890" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="833.8,230 833.8,890" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="953.7,230 953.7,890" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="159.5" y="285.95" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<text x="310.2" y="326.1" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="508.75" y="545" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="747.45" y="545" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="893.75" y="545" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="999.35" y="545" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="310.2" y="854" font-size="28" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="244.2" y="653.1" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<text x="179.85" y="650.6" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="95.15" y="650.6" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<text x="159.5" y="391.55" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="281.6" y="557.25" font-size="22" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">1</text>
+<text x="310.2" y="732" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="310.2" y="816.35" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">1</text>
+<text x="311.3" y="560.75" font-size="15" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="332.75" y="562.25" font-size="12" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<polyline points="264,684.3 356.4,684.3 356.4,809.7 264,809.7 264,684.3" fill="none" stroke="#B74400" stroke-width="4"/>
+<text x="1095" y="236" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#B74400">橙框：旧致命位置 s13</text>
+<text x="1095" y="286" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">v4 最终色名：2</text>
+<text x="1095" y="341" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">侧编号 → 当前色名</text>
+<text x="1095" y="392" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">s1 = 4</text>
+<text x="1095" y="430" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">s2 = 2</text>
+<text x="1095" y="468" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">s3 = 3</text>
+<text x="1095" y="506" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">s4 = 2</text>
+<text x="1095" y="544" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">s5 = 3</text>
+<text x="1095" y="582" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">s6 = 2</text>
+<text x="1095" y="620" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">s7 = 2</text>
+<text x="1095" y="658" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">s8 = 4</text>
+<text x="1095" y="696" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">s9 = 2</text>
+<text x="1300" y="392" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">s10 = 4</text>
+<text x="1300" y="430" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">s11 = 3</text>
+<text x="1300" y="468" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">s12 = 1</text>
+<text x="1300" y="506" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">s13 = 2</text>
+<text x="1300" y="544" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">s14 = 1</text>
+<text x="1300" y="582" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">s15 = 3</text>
+<text x="1300" y="620" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">s16 = 4</text>
+<text x="1300" y="658" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">s17 = 1</text>
+<text x="55" y="951" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">细窄区域保持真实宽度；极窄区域省略图内重复数字，但其色名完整保留在右表。</text>
+<text x="55" y="1003" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">状态：solved；主动落名 9 次；回溯 0；旧色输入 False。</text>
+<text x="55" y="1055" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">最终真实共边与全部推导证书独立核验；单张图完成不等于通用性已经证明。</text>
+</svg>

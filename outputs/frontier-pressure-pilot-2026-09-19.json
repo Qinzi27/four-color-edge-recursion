@@ -1,0 +1,5338 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-18T16:06:51.802968+00:00",
+  "experiment": "Read-only anchored-pressure priority audit on an explicitly bounded exploratory panel",
+  "input_report": {
+    "path": "outputs/global-restart-all-2026-09-18-v2.json.gz",
+    "sha256": "7f0f37a298baa7ff09ebd2917c772e4d4aaa5f58578ffbde05bb31bcee0b42dd"
+  },
+  "panel": {
+    "seeds": [
+      20260908,
+      20260943,
+      20261027,
+      20260916
+    ],
+    "inclusive_steps": [
+      0,
+      8
+    ],
+    "history_prefix_references": 36,
+    "distinct_canonical_drawings": 33,
+    "selection": "Target case plus three previously discussed teaching/failure seeds; not unseen validation."
+  },
+  "candidate_definition": {
+    "formula": "q_all(I)=sum(4-len(D(s)) for distinct incident shore identities, INCLUDING singleton shores)",
+    "priority": "(q_all, established_primal_cycle_support), then unchanged geometric ordering",
+    "active_unit": "At least one unresolved shore. Fully named units still leave the queue.",
+    "selected_side": "Unchanged first unresolved geometric occurrence, not a global MRV selector.",
+    "selected_name": "Unchanged existing-name reuse, then smallest number.",
+    "execution": "Runtime-only replacement of current_priorities for the pilot; no production file edited.",
+    "production_equivalent": "fourcolor.frontier_restart.restart_frontier_names(..., policy=anchored-pressure)"
+  },
+  "summary": {
+    "baseline_solved": 31,
+    "candidate_solved": 32,
+    "changed_drawings": [
+      {
+        "aliases": [
+          {
+            "seed": 20261027,
+            "step": 6
+          }
+        ],
+        "baseline": "conflict",
+        "candidate": "solved"
+      },
+      {
+        "aliases": [
+          {
+            "seed": 20260916,
+            "step": 6
+          }
+        ],
+        "baseline": "solved",
+        "candidate": "conflict"
+      },
+      {
+        "aliases": [
+          {
+            "seed": 20260916,
+            "step": 7
+          }
+        ],
+        "baseline": "conflict",
+        "candidate": "solved"
+      }
+    ],
+    "baseline_saved_trace_matches": 33,
+    "candidate_named_policy_matches": 33,
+    "independently_checked_policy_runs": 66
+  },
+  "source_sha256": {
+    "fourcolor/global_restart.py": "56aafff2632cf4c02cc20c7a056d02b9932f65f700311846d7d81c1cb32b3cbb",
+    "fourcolor/frontier_restart.py": "2b82e9de0ecad888b5248602d039997889becac1718282f5c4a5eaa6d8c1c533",
+    "fourcolor/closed_support.py": "0a95dd2802d16654a4342332ae9f9825944a26c4fe2cad182de0a214fbfc56f1",
+    "fourcolor/whole_lines.py": "5bd54516c18ff74c2dcba2a5e89a27b1af7e3c0277fb3aa8e12f0efa55f9312c",
+    "fourcolor/weighted_lines.py": "21cf5484a0504807463dafaa54992bf2cd6b1a4924e80b5a4ad29d3381ddd389",
+    "scripts/validate_global_restart.py": "2807c3ce904e42e4fb2bd194f773724c6bf7364f592d8cc730dfecc856601c18",
+    "scripts/validate_weighted_lines.py": "d4cd30cb02e5e269598d48599fcd090731c92c7d9903222bd581e81cdd6f0eea",
+    "scripts/restart-geometry.mjs": "66d72196c12e56e2ca63b6debb06b661e6dc9a110be6c4f236d9f8f32653897e",
+    "web/engine.js": "1451287b703e6f90765a1ed96acd2c4c5fc30d467be6c207da81f4b982035d84"
+  },
+  "limits": [
+    "Exploratory related prefixes, not independent random samples or universal correctness evidence.",
+    "A real regression is retained; this priority does not dominate the baseline.",
+    "Four is an input palette. A solved output is checked, not an existence proof for arbitrary drawings.",
+    "The manual target-case witness is distinct from the automatic candidate output.",
+    "No coloring assignments, alternative histories, or retry branches are enumerated by the candidate."
+  ],
+  "target_audit": {
+    "geometry_key": "25d13b9c924dc80292ad016dc3323575b353aff333f7657b2cef5aef8b60ed01",
+    "baseline_trace": [
+      {
+        "unit": "L:0,172>518,172@0.53861003861:1",
+        "mother": "L:0,172>518,172",
+        "unresolved_shores": [
+          2,
+          7
+        ],
+        "same_single_mother": false,
+        "constraint_weight": 3,
+        "priority": [
+          3,
+          0
+        ],
+        "closed_support": {
+          "supported": false,
+          "block_edge_ids": [],
+          "endpoint_vertices": [
+            "11",
+            "12"
+          ]
+        },
+        "tied_units": [
+          "L:0,172>518,172@0.53861003861:1",
+          "L:0,327>900,327@0:0.07",
+          "L:518,0>518,327@0:0.525993883792",
+          "L:63,172>63,327@0:1"
+        ],
+        "dart": 24,
+        "side": 2,
+        "domain": [
+          3,
+          4
+        ],
+        "used_names": [
+          1,
+          2
+        ],
+        "symbol": 3
+      },
+      {
+        "unit": "L:518,0>518,327@0.525993883792:1",
+        "mother": "L:518,0>518,327",
+        "unresolved_shores": [
+          3,
+          7
+        ],
+        "same_single_mother": false,
+        "constraint_weight": 4,
+        "priority": [
+          4,
+          0
+        ],
+        "closed_support": {
+          "supported": false,
+          "block_edge_ids": [],
+          "endpoint_vertices": [
+            "12",
+            "15"
+          ]
+        },
+        "tied_units": [
+          "L:518,0>518,327@0.525993883792:1"
+        ],
+        "dart": 42,
+        "side": 3,
+        "domain": [
+          2,
+          4
+        ],
+        "used_names": [
+          1,
+          2,
+          3
+        ],
+        "symbol": 2
+      },
+      {
+        "unit": "L:0,327>900,327@0:0.07",
+        "mother": "L:0,327>900,327",
+        "unresolved_shores": [
+          5,
+          4
+        ],
+        "same_single_mother": false,
+        "constraint_weight": 4,
+        "priority": [
+          4,
+          0
+        ],
+        "closed_support": {
+          "supported": false,
+          "block_edge_ids": [],
+          "endpoint_vertices": [
+            "7",
+            "13"
+          ]
+        },
+        "tied_units": [
+          "L:0,327>900,327@0:0.07",
+          "L:0,327>900,327@0.177777777778:0.575555555556"
+        ],
+        "dart": 26,
+        "side": 5,
+        "domain": [
+          3,
+          4
+        ],
+        "used_names": [
+          1,
+          2,
+          3
+        ],
+        "symbol": 3
+      }
+    ],
+    "candidate_trace": [
+      {
+        "unit": "L:0,172>518,172@0:0.121621621622",
+        "mother": "L:0,172>518,172",
+        "unresolved_shores": [
+          5
+        ],
+        "same_single_mother": false,
+        "constraint_weight": 5,
+        "priority": [
+          5,
+          0
+        ],
+        "closed_support": {
+          "supported": false,
+          "block_edge_ids": [],
+          "endpoint_vertices": [
+            "8",
+            "9"
+          ]
+        },
+        "previous_unresolved_weight": 2,
+        "tied_units": [
+          "L:0,172>518,172@0:0.121621621622",
+          "L:279,0>279,172@0:1",
+          "frame@0.093:0.172666666667",
+          "frame@0.891:0.942666666667"
+        ],
+        "dart": 19,
+        "side": 5,
+        "domain": [
+          3,
+          4
+        ],
+        "used_names": [
+          1,
+          2
+        ],
+        "symbol": 3
+      },
+      {
+        "unit": "L:0,172>518,172@0.121621621622:0.30888030888",
+        "mother": "L:0,172>518,172",
+        "unresolved_shores": [
+          6
+        ],
+        "same_single_mother": false,
+        "constraint_weight": 5,
+        "priority": [
+          5,
+          0
+        ],
+        "closed_support": {
+          "supported": false,
+          "block_edge_ids": [],
+          "endpoint_vertices": [
+            "9",
+            "10"
+          ]
+        },
+        "previous_unresolved_weight": 2,
+        "tied_units": [
+          "L:0,172>518,172@0.121621621622:0.30888030888",
+          "L:0,327>900,327@0:0.07",
+          "L:279,0>279,172@0:1",
+          "L:63,172>63,327@0:1",
+          "frame@0.093:0.172666666667",
+          "frame@0.409:0.891"
+        ],
+        "dart": 21,
+        "side": 6,
+        "domain": [
+          1,
+          4
+        ],
+        "used_names": [
+          1,
+          2,
+          3
+        ],
+        "symbol": 1
+      },
+      {
+        "unit": "L:0,172>518,172@0.30888030888:0.53861003861",
+        "mother": "L:0,172>518,172",
+        "unresolved_shores": [
+          7
+        ],
+        "same_single_mother": false,
+        "constraint_weight": 5,
+        "priority": [
+          5,
+          0
+        ],
+        "closed_support": {
+          "supported": false,
+          "block_edge_ids": [],
+          "endpoint_vertices": [
+            "10",
+            "11"
+          ]
+        },
+        "previous_unresolved_weight": 2,
+        "tied_units": [
+          "L:0,172>518,172@0.30888030888:0.53861003861",
+          "L:0,327>900,327@0:0.07",
+          "L:0,327>900,327@0.07:0.177777777778",
+          "L:160,172>160,327@0:1",
+          "L:279,0>279,172@0:1",
+          "frame@0.093:0.172666666667",
+          "frame@0.409:0.891"
+        ],
+        "dart": 23,
+        "side": 7,
+        "domain": [
+          3,
+          4
+        ],
+        "used_names": [
+          1,
+          2,
+          3
+        ],
+        "symbol": 3
+      }
+    ],
+    "baseline_conflict_propagation": [
+      {
+        "from_side": 0,
+        "to_side": 4,
+        "edge": 4,
+        "whole_line": "frame",
+        "removed": 1
+      },
+      {
+        "from_side": 1,
+        "to_side": 6,
+        "edge": 10,
+        "whole_line": "L:0,172>518,172",
+        "removed": 2
+      },
+      {
+        "from_side": 1,
+        "to_side": 7,
+        "edge": 11,
+        "whole_line": "L:0,172>518,172",
+        "removed": 2
+      },
+      {
+        "from_side": 2,
+        "to_side": 7,
+        "edge": 12,
+        "whole_line": "L:0,172>518,172",
+        "removed": 3
+      },
+      {
+        "from_side": 3,
+        "to_side": 4,
+        "edge": 16,
+        "whole_line": "L:0,327>900,327",
+        "removed": 2
+      },
+      {
+        "from_side": 5,
+        "to_side": 4,
+        "edge": 13,
+        "whole_line": "L:0,327>900,327",
+        "removed": 3
+      },
+      {
+        "from_side": 5,
+        "to_side": 6,
+        "edge": 17,
+        "whole_line": "L:63,172>63,327",
+        "removed": 3
+      },
+      {
+        "from_side": 4,
+        "to_side": 6,
+        "edge": 14,
+        "whole_line": "L:0,327>900,327",
+        "removed": 4
+      },
+      {
+        "from_side": 4,
+        "to_side": 7,
+        "edge": 15,
+        "whole_line": "L:0,327>900,327",
+        "removed": 4
+      },
+      {
+        "from_side": 6,
+        "to_side": 7,
+        "edge": 18,
+        "whole_line": "L:160,172>160,327",
+        "removed": 1
+      }
+    ],
+    "completion_after_only_first_two_old_decisions": [
+      1,
+      2,
+      3,
+      2,
+      3,
+      4,
+      1,
+      4
+    ],
+    "manual_completion_note": "Manually supplied separate witness, not the algorithm output.",
+    "first_fatal_old_choice": 3
+  },
+  "conditional_hall_audit": {
+    "scope": "Conditional deduction after retaining the FIRST TWO OLD decisions; not a fresh tight-hall policy run.",
+    "case": {
+      "seed": 20261027,
+      "step": 6,
+      "geometry_key": "25d13b9c924dc80292ad016dc3323575b353aff333f7657b2cef5aef8b60ed01",
+      "frame_size": [
+        900,
+        600
+      ]
+    },
+    "coordinate_system": "x-right, y-down; bounds=[x0,y0,x1,y1], outside has no finite region bounds",
+    "initial_anchors_by_dart": {
+      "0": [
+        1
+      ],
+      "1": [
+        2
+      ]
+    },
+    "retained_old_decisions": [
+      {
+        "unit": "L:0,172>518,172@0.53861003861:1",
+        "mother": "L:0,172>518,172",
+        "unresolved_shores": [
+          2,
+          7
+        ],
+        "same_single_mother": false,
+        "constraint_weight": 3,
+        "priority": [
+          3,
+          0
+        ],
+        "closed_support": {
+          "supported": false,
+          "block_edge_ids": [],
+          "endpoint_vertices": [
+            "11",
+            "12"
+          ]
+        },
+        "tied_units": [
+          "L:0,172>518,172@0.53861003861:1",
+          "L:0,327>900,327@0:0.07",
+          "L:518,0>518,327@0:0.525993883792",
+          "L:63,172>63,327@0:1"
+        ],
+        "dart": 24,
+        "side": 2,
+        "domain": [
+          3,
+          4
+        ],
+        "used_names": [
+          1,
+          2
+        ],
+        "symbol": 3
+      },
+      {
+        "unit": "L:518,0>518,327@0.525993883792:1",
+        "mother": "L:518,0>518,327",
+        "unresolved_shores": [
+          3,
+          7
+        ],
+        "same_single_mother": false,
+        "constraint_weight": 4,
+        "priority": [
+          4,
+          0
+        ],
+        "closed_support": {
+          "supported": false,
+          "block_edge_ids": [],
+          "endpoint_vertices": [
+            "12",
+            "15"
+          ]
+        },
+        "tied_units": [
+          "L:518,0>518,327@0.525993883792:1"
+        ],
+        "dart": 42,
+        "side": 3,
+        "domain": [
+          2,
+          4
+        ],
+        "used_names": [
+          1,
+          2,
+          3
+        ],
+        "symbol": 2
+      }
+    ],
+    "given_anchors_by_dart": {
+      "0": [
+        1
+      ],
+      "1": [
+        2
+      ],
+      "24": [
+        3
+      ],
+      "42": [
+        2
+      ]
+    },
+    "shore_records": [
+      {
+        "side": 0,
+        "label": "outside",
+        "bounds": null,
+        "before_hall_domain": [
+          1
+        ],
+        "after_hall_domain": [
+          1
+        ]
+      },
+      {
+        "side": 1,
+        "label": "A",
+        "bounds": [
+          0,
+          0,
+          279,
+          172
+        ],
+        "before_hall_domain": [
+          2
+        ],
+        "after_hall_domain": [
+          2
+        ]
+      },
+      {
+        "side": 2,
+        "label": "B",
+        "bounds": [
+          279,
+          0,
+          518,
+          172
+        ],
+        "before_hall_domain": [
+          3
+        ],
+        "after_hall_domain": [
+          3
+        ]
+      },
+      {
+        "side": 3,
+        "label": "C",
+        "bounds": [
+          518,
+          0,
+          900,
+          327
+        ],
+        "before_hall_domain": [
+          2
+        ],
+        "after_hall_domain": [
+          2
+        ]
+      },
+      {
+        "side": 4,
+        "label": "D",
+        "bounds": [
+          0,
+          327,
+          900,
+          600
+        ],
+        "before_hall_domain": [
+          3,
+          4
+        ],
+        "after_hall_domain": [
+          3
+        ]
+      },
+      {
+        "side": 5,
+        "label": "E",
+        "bounds": [
+          0,
+          172,
+          63,
+          327
+        ],
+        "before_hall_domain": [
+          3,
+          4
+        ],
+        "after_hall_domain": [
+          4
+        ]
+      },
+      {
+        "side": 6,
+        "label": "F",
+        "bounds": [
+          63,
+          172,
+          160,
+          327
+        ],
+        "before_hall_domain": [
+          1,
+          3,
+          4
+        ],
+        "after_hall_domain": [
+          1
+        ]
+      },
+      {
+        "side": 7,
+        "label": "G",
+        "bounds": [
+          160,
+          172,
+          518,
+          327
+        ],
+        "before_hall_domain": [
+          1,
+          4
+        ],
+        "after_hall_domain": [
+          4
+        ]
+      }
+    ],
+    "shared_boundaries": [
+      {
+        "edge": 0,
+        "side_ids": [
+          0,
+          1
+        ],
+        "side_labels": [
+          "outside",
+          "A"
+        ],
+        "segment": [
+          [
+            0,
+            0
+          ],
+          [
+            279,
+            0
+          ]
+        ],
+        "length_px": 279,
+        "after_hall_different": true
+      },
+      {
+        "edge": 1,
+        "side_ids": [
+          0,
+          2
+        ],
+        "side_labels": [
+          "outside",
+          "B"
+        ],
+        "segment": [
+          [
+            279,
+            0
+          ],
+          [
+            518,
+            0
+          ]
+        ],
+        "length_px": 239,
+        "after_hall_different": true
+      },
+      {
+        "edge": 2,
+        "side_ids": [
+          0,
+          3
+        ],
+        "side_labels": [
+          "outside",
+          "C"
+        ],
+        "segment": [
+          [
+            518,
+            0
+          ],
+          [
+            900,
+            0
+          ]
+        ],
+        "length_px": 382,
+        "after_hall_different": true
+      },
+      {
+        "edge": 3,
+        "side_ids": [
+          0,
+          3
+        ],
+        "side_labels": [
+          "outside",
+          "C"
+        ],
+        "segment": [
+          [
+            900,
+            0
+          ],
+          [
+            900,
+            327
+          ]
+        ],
+        "length_px": 327,
+        "after_hall_different": true
+      },
+      {
+        "edge": 4,
+        "side_ids": [
+          0,
+          4
+        ],
+        "side_labels": [
+          "outside",
+          "D"
+        ],
+        "segment": [
+          [
+            900,
+            327
+          ],
+          [
+            900,
+            600
+          ]
+        ],
+        "length_px": 273,
+        "after_hall_different": true
+      },
+      {
+        "edge": 5,
+        "side_ids": [
+          0,
+          4
+        ],
+        "side_labels": [
+          "outside",
+          "D"
+        ],
+        "segment": [
+          [
+            900,
+            600
+          ],
+          [
+            0,
+            600
+          ]
+        ],
+        "length_px": 900,
+        "after_hall_different": true
+      },
+      {
+        "edge": 6,
+        "side_ids": [
+          0,
+          4
+        ],
+        "side_labels": [
+          "outside",
+          "D"
+        ],
+        "segment": [
+          [
+            0,
+            600
+          ],
+          [
+            0,
+            327
+          ]
+        ],
+        "length_px": 273,
+        "after_hall_different": true
+      },
+      {
+        "edge": 7,
+        "side_ids": [
+          0,
+          5
+        ],
+        "side_labels": [
+          "outside",
+          "E"
+        ],
+        "segment": [
+          [
+            0,
+            327
+          ],
+          [
+            0,
+            172
+          ]
+        ],
+        "length_px": 155,
+        "after_hall_different": true
+      },
+      {
+        "edge": 8,
+        "side_ids": [
+          0,
+          1
+        ],
+        "side_labels": [
+          "outside",
+          "A"
+        ],
+        "segment": [
+          [
+            0,
+            172
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "length_px": 172,
+        "after_hall_different": true
+      },
+      {
+        "edge": 9,
+        "side_ids": [
+          1,
+          5
+        ],
+        "side_labels": [
+          "A",
+          "E"
+        ],
+        "segment": [
+          [
+            0,
+            172
+          ],
+          [
+            63,
+            172
+          ]
+        ],
+        "length_px": 63,
+        "after_hall_different": true
+      },
+      {
+        "edge": 10,
+        "side_ids": [
+          1,
+          6
+        ],
+        "side_labels": [
+          "A",
+          "F"
+        ],
+        "segment": [
+          [
+            63,
+            172
+          ],
+          [
+            160,
+            172
+          ]
+        ],
+        "length_px": 97,
+        "after_hall_different": true
+      },
+      {
+        "edge": 11,
+        "side_ids": [
+          1,
+          7
+        ],
+        "side_labels": [
+          "A",
+          "G"
+        ],
+        "segment": [
+          [
+            160,
+            172
+          ],
+          [
+            279,
+            172
+          ]
+        ],
+        "length_px": 119,
+        "after_hall_different": true
+      },
+      {
+        "edge": 12,
+        "side_ids": [
+          2,
+          7
+        ],
+        "side_labels": [
+          "B",
+          "G"
+        ],
+        "segment": [
+          [
+            279,
+            172
+          ],
+          [
+            518,
+            172
+          ]
+        ],
+        "length_px": 239,
+        "after_hall_different": true
+      },
+      {
+        "edge": 13,
+        "side_ids": [
+          5,
+          4
+        ],
+        "side_labels": [
+          "E",
+          "D"
+        ],
+        "segment": [
+          [
+            0,
+            327
+          ],
+          [
+            63,
+            327
+          ]
+        ],
+        "length_px": 63,
+        "after_hall_different": true
+      },
+      {
+        "edge": 14,
+        "side_ids": [
+          6,
+          4
+        ],
+        "side_labels": [
+          "F",
+          "D"
+        ],
+        "segment": [
+          [
+            63,
+            327
+          ],
+          [
+            160,
+            327
+          ]
+        ],
+        "length_px": 97,
+        "after_hall_different": true
+      },
+      {
+        "edge": 15,
+        "side_ids": [
+          7,
+          4
+        ],
+        "side_labels": [
+          "G",
+          "D"
+        ],
+        "segment": [
+          [
+            160,
+            327
+          ],
+          [
+            518,
+            327
+          ]
+        ],
+        "length_px": 358,
+        "after_hall_different": true
+      },
+      {
+        "edge": 16,
+        "side_ids": [
+          3,
+          4
+        ],
+        "side_labels": [
+          "C",
+          "D"
+        ],
+        "segment": [
+          [
+            518,
+            327
+          ],
+          [
+            900,
+            327
+          ]
+        ],
+        "length_px": 382,
+        "after_hall_different": true
+      },
+      {
+        "edge": 17,
+        "side_ids": [
+          6,
+          5
+        ],
+        "side_labels": [
+          "F",
+          "E"
+        ],
+        "segment": [
+          [
+            63,
+            172
+          ],
+          [
+            63,
+            327
+          ]
+        ],
+        "length_px": 155,
+        "after_hall_different": true
+      },
+      {
+        "edge": 18,
+        "side_ids": [
+          7,
+          6
+        ],
+        "side_labels": [
+          "G",
+          "F"
+        ],
+        "segment": [
+          [
+            160,
+            172
+          ],
+          [
+            160,
+            327
+          ]
+        ],
+        "length_px": 155,
+        "after_hall_different": true
+      },
+      {
+        "edge": 19,
+        "side_ids": [
+          2,
+          1
+        ],
+        "side_labels": [
+          "B",
+          "A"
+        ],
+        "segment": [
+          [
+            279,
+            0
+          ],
+          [
+            279,
+            172
+          ]
+        ],
+        "length_px": 172,
+        "after_hall_different": true
+      },
+      {
+        "edge": 20,
+        "side_ids": [
+          3,
+          2
+        ],
+        "side_labels": [
+          "C",
+          "B"
+        ],
+        "segment": [
+          [
+            518,
+            0
+          ],
+          [
+            518,
+            172
+          ]
+        ],
+        "length_px": 172,
+        "after_hall_different": true
+      },
+      {
+        "edge": 21,
+        "side_ids": [
+          3,
+          7
+        ],
+        "side_labels": [
+          "C",
+          "G"
+        ],
+        "segment": [
+          [
+            518,
+            172
+          ],
+          [
+            518,
+            327
+          ]
+        ],
+        "length_px": 155,
+        "after_hall_different": true
+      }
+    ],
+    "clique_certificates": [
+      {
+        "side_ids": [
+          4,
+          5,
+          6
+        ],
+        "side_labels": [
+          "D",
+          "E",
+          "F"
+        ],
+        "all_three_pairwise_boundaries_checked": true,
+        "pairwise_boundaries": [
+          {
+            "side_ids": [
+              4,
+              5
+            ],
+            "side_labels": [
+              "D",
+              "E"
+            ],
+            "shared_segments": [
+              [
+                [
+                  0,
+                  327
+                ],
+                [
+                  63,
+                  327
+                ]
+              ]
+            ],
+            "total_shared_length_px": 63
+          },
+          {
+            "side_ids": [
+              4,
+              6
+            ],
+            "side_labels": [
+              "D",
+              "F"
+            ],
+            "shared_segments": [
+              [
+                [
+                  63,
+                  327
+                ],
+                [
+                  160,
+                  327
+                ]
+              ]
+            ],
+            "total_shared_length_px": 97
+          },
+          {
+            "side_ids": [
+              5,
+              6
+            ],
+            "side_labels": [
+              "E",
+              "F"
+            ],
+            "shared_segments": [
+              [
+                [
+                  63,
+                  172
+                ],
+                [
+                  63,
+                  327
+                ]
+              ]
+            ],
+            "total_shared_length_px": 155
+          }
+        ]
+      },
+      {
+        "side_ids": [
+          4,
+          6,
+          7
+        ],
+        "side_labels": [
+          "D",
+          "F",
+          "G"
+        ],
+        "all_three_pairwise_boundaries_checked": true,
+        "pairwise_boundaries": [
+          {
+            "side_ids": [
+              4,
+              6
+            ],
+            "side_labels": [
+              "D",
+              "F"
+            ],
+            "shared_segments": [
+              [
+                [
+                  63,
+                  327
+                ],
+                [
+                  160,
+                  327
+                ]
+              ]
+            ],
+            "total_shared_length_px": 97
+          },
+          {
+            "side_ids": [
+              4,
+              7
+            ],
+            "side_labels": [
+              "D",
+              "G"
+            ],
+            "shared_segments": [
+              [
+                [
+                  160,
+                  327
+                ],
+                [
+                  518,
+                  327
+                ]
+              ]
+            ],
+            "total_shared_length_px": 358
+          },
+          {
+            "side_ids": [
+              6,
+              7
+            ],
+            "side_labels": [
+              "F",
+              "G"
+            ],
+            "shared_segments": [
+              [
+                [
+                  160,
+                  172
+                ],
+                [
+                  160,
+                  327
+                ]
+              ]
+            ],
+            "total_shared_length_px": 155
+          }
+        ]
+      }
+    ],
+    "singleton_only_before_hall": {
+      "status": "underdetermined",
+      "domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "trace": [
+        {
+          "from_side": 0,
+          "to_side": 4,
+          "edge": 4,
+          "whole_line": "frame",
+          "removed": 1
+        },
+        {
+          "from_side": 0,
+          "to_side": 5,
+          "edge": 7,
+          "whole_line": "frame",
+          "removed": 1
+        },
+        {
+          "from_side": 1,
+          "to_side": 5,
+          "edge": 9,
+          "whole_line": "L:0,172>518,172",
+          "removed": 2
+        },
+        {
+          "from_side": 1,
+          "to_side": 6,
+          "edge": 10,
+          "whole_line": "L:0,172>518,172",
+          "removed": 2
+        },
+        {
+          "from_side": 1,
+          "to_side": 7,
+          "edge": 11,
+          "whole_line": "L:0,172>518,172",
+          "removed": 2
+        },
+        {
+          "from_side": 2,
+          "to_side": 7,
+          "edge": 12,
+          "whole_line": "L:0,172>518,172",
+          "removed": 3
+        },
+        {
+          "from_side": 3,
+          "to_side": 4,
+          "edge": 16,
+          "whole_line": "L:0,327>900,327",
+          "removed": 2
+        }
+      ],
+      "backtracks": 0,
+      "choices": 0,
+      "palette": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "complete_hall_result": {
+      "status": "solved",
+      "domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          1
+        ],
+        [
+          4
+        ]
+      ],
+      "trace": [
+        {
+          "from_side": 0,
+          "to_side": 4,
+          "edge": 4,
+          "whole_line": "frame",
+          "removed": 1
+        },
+        {
+          "from_side": 0,
+          "to_side": 5,
+          "edge": 7,
+          "whole_line": "frame",
+          "removed": 1
+        },
+        {
+          "from_side": 1,
+          "to_side": 5,
+          "edge": 9,
+          "whole_line": "L:0,172>518,172",
+          "removed": 2
+        },
+        {
+          "from_side": 1,
+          "to_side": 6,
+          "edge": 10,
+          "whole_line": "L:0,172>518,172",
+          "removed": 2
+        },
+        {
+          "from_side": 1,
+          "to_side": 7,
+          "edge": 11,
+          "whole_line": "L:0,172>518,172",
+          "removed": 2
+        },
+        {
+          "from_side": 2,
+          "to_side": 7,
+          "edge": 12,
+          "whole_line": "L:0,172>518,172",
+          "removed": 3
+        },
+        {
+          "from_side": 3,
+          "to_side": 4,
+          "edge": 16,
+          "whole_line": "L:0,327>900,327",
+          "removed": 2
+        },
+        {
+          "rule": "hall-reservation",
+          "clique": [
+            4,
+            5,
+            6
+          ],
+          "subset": [
+            4,
+            5
+          ],
+          "union": [
+            3,
+            4
+          ],
+          "subset_domains": [
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "to_side": 6,
+          "removed": [
+            3,
+            4
+          ]
+        },
+        {
+          "rule": "hall-reservation",
+          "clique": [
+            4,
+            6,
+            7
+          ],
+          "subset": [
+            6,
+            7
+          ],
+          "union": [
+            1,
+            4
+          ],
+          "subset_domains": [
+            [
+              1
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          "to_side": 4,
+          "removed": [
+            4
+          ]
+        },
+        {
+          "rule": "singleton",
+          "from_side": 4,
+          "to_side": 5,
+          "removed": [
+            3
+          ]
+        },
+        {
+          "rule": "singleton",
+          "from_side": 6,
+          "to_side": 7,
+          "removed": [
+            1
+          ]
+        }
+      ],
+      "hall_conflict": null,
+      "backtracks": 0,
+      "choices": 0,
+      "palette": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "trace_note": "Rows without rule are base singleton propagation; all Hall reservations retain their contemporaneous subset domains.",
+    "final_all_boundaries_verified": true,
+    "independent_trace_replay": {
+      "passed": true,
+      "events_checked": 11,
+      "method": "Initialize domains from the saved dart anchors; independently reconstruct actual adjacency from plane edges; replay every singleton or Hall-reservation certificate, checking then-current domains, true clique adjacency, union size, exact removed names, final domains, and every final inequality."
+    },
+    "source_sha256": {
+      "fourcolor/frontier_restart.py": "2b82e9de0ecad888b5248602d039997889becac1718282f5c4a5eaa6d8c1c533"
+    }
+  },
+  "records": [
+    {
+      "geometry_key": "5362a35401bc9275e2fb58fb29814cb0cf12af3bb22091754aefabba65e8c51d",
+      "aliases": [
+        {
+          "seed": 20260908,
+          "step": 0
+        },
+        {
+          "seed": 20260943,
+          "step": 0
+        },
+        {
+          "seed": 20261027,
+          "step": 0
+        },
+        {
+          "seed": 20260916,
+          "step": 0
+        }
+      ],
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": []
+      },
+      "baseline_status": "solved",
+      "candidate_status": "solved",
+      "baseline_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "candidate_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "baseline_trace_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "candidate_trace_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "baseline_matches_saved_v2": true,
+      "candidate_matches_anchored_pressure": true,
+      "independent_checks": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "geometry_key": "e5ff77bdc97ac0fa3d0fd9043c44abf8911596a38d7484f2ce3b52c1d4264c1b",
+      "aliases": [
+        {
+          "seed": 20260908,
+          "step": 1
+        }
+      ],
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              212
+            ],
+            "b": [
+              900,
+              212
+            ]
+          }
+        ]
+      },
+      "baseline_status": "solved",
+      "candidate_status": "solved",
+      "baseline_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "candidate_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "baseline_trace_sha256": "db8a0ba1f38e3da63bba5c9b34a2e0997a8dffcda703c7c8668b7966bac46006",
+      "candidate_trace_sha256": "a1f197587e7c218627bf2ee383ef17a934ff60a6b8858f6a631ff73d45931d92",
+      "baseline_matches_saved_v2": true,
+      "candidate_matches_anchored_pressure": true,
+      "independent_checks": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "geometry_key": "c3d5132d534ca18c344bab473a3cc9ffb665571d25b5a54ab0845da87397e75d",
+      "aliases": [
+        {
+          "seed": 20260908,
+          "step": 2
+        }
+      ],
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              212
+            ],
+            "b": [
+              900,
+              212
+            ]
+          },
+          {
+            "a": [
+              0,
+              439
+            ],
+            "b": [
+              900,
+              439
+            ]
+          }
+        ]
+      },
+      "baseline_status": "solved",
+      "candidate_status": "solved",
+      "baseline_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ]
+      ],
+      "candidate_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ]
+      ],
+      "baseline_trace_sha256": "4fc48dcba1347d72afbacb2c2fbfeba255a4629f404054c804bef815584ac66f",
+      "candidate_trace_sha256": "2389145210b038fb09c275c70f0997920f5d81c47b197eee56f52d8da31d334d",
+      "baseline_matches_saved_v2": true,
+      "candidate_matches_anchored_pressure": true,
+      "independent_checks": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "geometry_key": "2be5621fbcfed3756c2171a608f3ce71c57b0620aca1ff8eeaf92c9e0879550d",
+      "aliases": [
+        {
+          "seed": 20260908,
+          "step": 3
+        }
+      ],
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              212
+            ],
+            "b": [
+              900,
+              212
+            ]
+          },
+          {
+            "a": [
+              0,
+              439
+            ],
+            "b": [
+              900,
+              439
+            ]
+          },
+          {
+            "a": [
+              0,
+              489
+            ],
+            "b": [
+              900,
+              489
+            ]
+          }
+        ]
+      },
+      "baseline_status": "solved",
+      "candidate_status": "solved",
+      "baseline_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "candidate_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "baseline_trace_sha256": "b3b6a98b1e1d6c52b1c8c45818b0130b34ec74164c57536d4c4936a0bb6f61cf",
+      "candidate_trace_sha256": "273995c699263a8e4f41f61b56ff3c5638594814370b2bc7c7e0e924bb944281",
+      "baseline_matches_saved_v2": true,
+      "candidate_matches_anchored_pressure": true,
+      "independent_checks": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "geometry_key": "388104102cc28785cdca1b5a25a15fcccfec14d7079a0c5f295e1464bcfaee08",
+      "aliases": [
+        {
+          "seed": 20260908,
+          "step": 4
+        }
+      ],
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              212
+            ],
+            "b": [
+              900,
+              212
+            ]
+          },
+          {
+            "a": [
+              0,
+              439
+            ],
+            "b": [
+              900,
+              439
+            ]
+          },
+          {
+            "a": [
+              0,
+              489
+            ],
+            "b": [
+              900,
+              489
+            ]
+          },
+          {
+            "a": [
+              308,
+              0
+            ],
+            "b": [
+              308,
+              212
+            ]
+          }
+        ]
+      },
+      "baseline_status": "solved",
+      "candidate_status": "solved",
+      "baseline_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "candidate_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "baseline_trace_sha256": "ee66e692f67e90d7afb5e4e003e3104f24628b5fbf0a0e1d875d91a0d5955cf7",
+      "candidate_trace_sha256": "d105ba102b8e4631523494f35a129221ea80bd32021438cf54cc9c172e5aa473",
+      "baseline_matches_saved_v2": true,
+      "candidate_matches_anchored_pressure": true,
+      "independent_checks": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "geometry_key": "0ffafb41ab44e8de79ca56ac86713e689288bef023061d3dad1116681d2eac05",
+      "aliases": [
+        {
+          "seed": 20260908,
+          "step": 5
+        }
+      ],
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              212
+            ],
+            "b": [
+              900,
+              212
+            ]
+          },
+          {
+            "a": [
+              0,
+              439
+            ],
+            "b": [
+              900,
+              439
+            ]
+          },
+          {
+            "a": [
+              0,
+              489
+            ],
+            "b": [
+              900,
+              489
+            ]
+          },
+          {
+            "a": [
+              308,
+              0
+            ],
+            "b": [
+              308,
+              212
+            ]
+          },
+          {
+            "a": [
+              688,
+              0
+            ],
+            "b": [
+              688,
+              212
+            ]
+          }
+        ]
+      },
+      "baseline_status": "solved",
+      "candidate_status": "solved",
+      "baseline_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "candidate_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "baseline_trace_sha256": "720e903979fe940ef2da6b22ce0ac7de17da55add16ea66bb000e1cab23d57ae",
+      "candidate_trace_sha256": "53568730d052ee1dd8df523169dd07fe7cd0ead7cf3152953caa982d8a4a1964",
+      "baseline_matches_saved_v2": true,
+      "candidate_matches_anchored_pressure": true,
+      "independent_checks": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "geometry_key": "742b81c3cc59ef582670a75c135090d6b14315bd64aa975b4578c83b219134f0",
+      "aliases": [
+        {
+          "seed": 20260908,
+          "step": 6
+        }
+      ],
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              212
+            ],
+            "b": [
+              900,
+              212
+            ]
+          },
+          {
+            "a": [
+              0,
+              439
+            ],
+            "b": [
+              900,
+              439
+            ]
+          },
+          {
+            "a": [
+              0,
+              489
+            ],
+            "b": [
+              900,
+              489
+            ]
+          },
+          {
+            "a": [
+              308,
+              0
+            ],
+            "b": [
+              308,
+              212
+            ]
+          },
+          {
+            "a": [
+              423,
+              489
+            ],
+            "b": [
+              423,
+              600
+            ]
+          },
+          {
+            "a": [
+              688,
+              0
+            ],
+            "b": [
+              688,
+              212
+            ]
+          }
+        ]
+      },
+      "baseline_status": "solved",
+      "candidate_status": "solved",
+      "baseline_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "candidate_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          3
+        ]
+      ],
+      "baseline_trace_sha256": "fa4f6e6af665120299c3bc947fb631406078df1bd645e7339f84f596537cac97",
+      "candidate_trace_sha256": "d9e765d4b65f65d1805d6b4efb6d3359879fbe2cbf53b7c4732dd6cfeb1c6df5",
+      "baseline_matches_saved_v2": true,
+      "candidate_matches_anchored_pressure": true,
+      "independent_checks": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "geometry_key": "53d8f440dba4d0dcfde2e0c663b04d05695fcff0e45635912c029207795e8fb3",
+      "aliases": [
+        {
+          "seed": 20260908,
+          "step": 7
+        }
+      ],
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              212
+            ],
+            "b": [
+              900,
+              212
+            ]
+          },
+          {
+            "a": [
+              0,
+              439
+            ],
+            "b": [
+              900,
+              439
+            ]
+          },
+          {
+            "a": [
+              0,
+              489
+            ],
+            "b": [
+              900,
+              489
+            ]
+          },
+          {
+            "a": [
+              308,
+              0
+            ],
+            "b": [
+              308,
+              212
+            ]
+          },
+          {
+            "a": [
+              391,
+              439
+            ],
+            "b": [
+              391,
+              489
+            ]
+          },
+          {
+            "a": [
+              423,
+              489
+            ],
+            "b": [
+              423,
+              600
+            ]
+          },
+          {
+            "a": [
+              688,
+              0
+            ],
+            "b": [
+              688,
+              212
+            ]
+          }
+        ]
+      },
+      "baseline_status": "solved",
+      "candidate_status": "solved",
+      "baseline_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          3
+        ]
+      ],
+      "candidate_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ]
+      ],
+      "baseline_trace_sha256": "ec4cd3aac9be56aa01f2003b5dd626e01038cb8d85c35c25088f5a65321e7baa",
+      "candidate_trace_sha256": "ec4bee1b52a210fb95ee5ff37d413ad8c6714db9dd5c52cbbd1b1f3d64a65c8b",
+      "baseline_matches_saved_v2": true,
+      "candidate_matches_anchored_pressure": true,
+      "independent_checks": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "geometry_key": "da5b8b308bce27853527113ba813ad9fe2f11b7666f29fdc7cc2a63d3697448d",
+      "aliases": [
+        {
+          "seed": 20260908,
+          "step": 8
+        }
+      ],
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              212
+            ],
+            "b": [
+              900,
+              212
+            ]
+          },
+          {
+            "a": [
+              0,
+              439
+            ],
+            "b": [
+              900,
+              439
+            ]
+          },
+          {
+            "a": [
+              0,
+              489
+            ],
+            "b": [
+              900,
+              489
+            ]
+          },
+          {
+            "a": [
+              152,
+              489
+            ],
+            "b": [
+              152,
+              600
+            ]
+          },
+          {
+            "a": [
+              308,
+              0
+            ],
+            "b": [
+              308,
+              212
+            ]
+          },
+          {
+            "a": [
+              391,
+              439
+            ],
+            "b": [
+              391,
+              489
+            ]
+          },
+          {
+            "a": [
+              423,
+              489
+            ],
+            "b": [
+              423,
+              600
+            ]
+          },
+          {
+            "a": [
+              688,
+              0
+            ],
+            "b": [
+              688,
+              212
+            ]
+          }
+        ]
+      },
+      "baseline_status": "solved",
+      "candidate_status": "solved",
+      "baseline_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "candidate_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          2
+        ]
+      ],
+      "baseline_trace_sha256": "fe0f9355cd724ddbac4ef72bef42d47447d088522d6ba682bf12573dd75264b8",
+      "candidate_trace_sha256": "39534d58d28e444fecd4c2366a0c23046b9a3944acdf8e86939f2c4368dbb1da",
+      "baseline_matches_saved_v2": true,
+      "candidate_matches_anchored_pressure": true,
+      "independent_checks": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "geometry_key": "0e4d803cb9a5e7fea2d8fedc325ce85bcff832fe926b2a68e8cf92b3c2506519",
+      "aliases": [
+        {
+          "seed": 20260943,
+          "step": 1
+        }
+      ],
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              305,
+              0
+            ],
+            "b": [
+              305,
+              600
+            ]
+          }
+        ]
+      },
+      "baseline_status": "solved",
+      "candidate_status": "solved",
+      "baseline_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "candidate_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "baseline_trace_sha256": "ddc0af71f976897353dc012d9a7fd41bacb4ff5dcc211dc08b0967583cd54ffd",
+      "candidate_trace_sha256": "746620ff11a372c2f89cb223d36f6cf1cb9712d26e68a69f43c05be513e9993a",
+      "baseline_matches_saved_v2": true,
+      "candidate_matches_anchored_pressure": true,
+      "independent_checks": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "geometry_key": "44ab7b20f67927f4866a8d88ccbc9be8a2cbdb531189a38c79b034f5616bd1c1",
+      "aliases": [
+        {
+          "seed": 20260943,
+          "step": 2
+        }
+      ],
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              199,
+              0
+            ],
+            "b": [
+              199,
+              600
+            ]
+          },
+          {
+            "a": [
+              305,
+              0
+            ],
+            "b": [
+              305,
+              600
+            ]
+          }
+        ]
+      },
+      "baseline_status": "solved",
+      "candidate_status": "solved",
+      "baseline_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ]
+      ],
+      "candidate_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ]
+      ],
+      "baseline_trace_sha256": "ff9338e7fecd82bec6cf7c7911fb9f9fec4c546bf77c520892782c9e1f8a5cfc",
+      "candidate_trace_sha256": "8aada8caab71ea1df9d7c283c97b14b9cd1a0a3900f36f62cad08d7502943ace",
+      "baseline_matches_saved_v2": true,
+      "candidate_matches_anchored_pressure": true,
+      "independent_checks": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "geometry_key": "0886e94a79ae2eddef0827a85f661972d07215c52b4532041432d2bf8f762a98",
+      "aliases": [
+        {
+          "seed": 20260943,
+          "step": 3
+        }
+      ],
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              379
+            ],
+            "b": [
+              199,
+              379
+            ]
+          },
+          {
+            "a": [
+              199,
+              0
+            ],
+            "b": [
+              199,
+              600
+            ]
+          },
+          {
+            "a": [
+              305,
+              0
+            ],
+            "b": [
+              305,
+              600
+            ]
+          }
+        ]
+      },
+      "baseline_status": "solved",
+      "candidate_status": "solved",
+      "baseline_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ]
+      ],
+      "candidate_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "baseline_trace_sha256": "c9e8b81715a5e91d22ff30408dc07478653c9aac6331eb07531369dce5e29548",
+      "candidate_trace_sha256": "7f9b14205a3e27d1ebb44c0a38af7bc564c49903a685f7e8af4314a87c461484",
+      "baseline_matches_saved_v2": true,
+      "candidate_matches_anchored_pressure": true,
+      "independent_checks": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "geometry_key": "9274f343fb3f3930d42c59de5949661a22834cfe2a8befe45fb90e3518bb621c",
+      "aliases": [
+        {
+          "seed": 20260943,
+          "step": 4
+        }
+      ],
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              379
+            ],
+            "b": [
+              199,
+              379
+            ]
+          },
+          {
+            "a": [
+              66,
+              0
+            ],
+            "b": [
+              66,
+              379
+            ]
+          },
+          {
+            "a": [
+              199,
+              0
+            ],
+            "b": [
+              199,
+              600
+            ]
+          },
+          {
+            "a": [
+              305,
+              0
+            ],
+            "b": [
+              305,
+              600
+            ]
+          }
+        ]
+      },
+      "baseline_status": "solved",
+      "candidate_status": "solved",
+      "baseline_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "candidate_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          3
+        ]
+      ],
+      "baseline_trace_sha256": "7f1d974c752246474632090a32d4cb993da2a44098cac44991a2c54b7ed230bc",
+      "candidate_trace_sha256": "a313b16fcd7b4058ad069c55d59c13f9ace9413a80952714aedc4191ababf309",
+      "baseline_matches_saved_v2": true,
+      "candidate_matches_anchored_pressure": true,
+      "independent_checks": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "geometry_key": "b08619c99ff55c9732ef2970461806f0606c7c987f4ab5d5f900e8cd99fb616a",
+      "aliases": [
+        {
+          "seed": 20260943,
+          "step": 5
+        }
+      ],
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              379
+            ],
+            "b": [
+              199,
+              379
+            ]
+          },
+          {
+            "a": [
+              66,
+              0
+            ],
+            "b": [
+              66,
+              379
+            ]
+          },
+          {
+            "a": [
+              127,
+              379
+            ],
+            "b": [
+              127,
+              600
+            ]
+          },
+          {
+            "a": [
+              199,
+              0
+            ],
+            "b": [
+              199,
+              600
+            ]
+          },
+          {
+            "a": [
+              305,
+              0
+            ],
+            "b": [
+              305,
+              600
+            ]
+          }
+        ]
+      },
+      "baseline_status": "solved",
+      "candidate_status": "solved",
+      "baseline_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ]
+      ],
+      "candidate_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "baseline_trace_sha256": "f379d7530195bf3650d96b3a924b680250cb494f0f0ba336913a6cec8fba2adf",
+      "candidate_trace_sha256": "f007487e80910a36abb28737c4fe57945176fc375b0e1cb9b6fa88b7d90c87fd",
+      "baseline_matches_saved_v2": true,
+      "candidate_matches_anchored_pressure": true,
+      "independent_checks": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "geometry_key": "282ffaa534e47e7e7e44199bcec893fa086c3fa50d33844d3bd71d3d559a0746",
+      "aliases": [
+        {
+          "seed": 20260943,
+          "step": 6
+        }
+      ],
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              379
+            ],
+            "b": [
+              199,
+              379
+            ]
+          },
+          {
+            "a": [
+              66,
+              0
+            ],
+            "b": [
+              66,
+              379
+            ]
+          },
+          {
+            "a": [
+              127,
+              379
+            ],
+            "b": [
+              127,
+              600
+            ]
+          },
+          {
+            "a": [
+              157,
+              0
+            ],
+            "b": [
+              157,
+              379
+            ]
+          },
+          {
+            "a": [
+              199,
+              0
+            ],
+            "b": [
+              199,
+              600
+            ]
+          },
+          {
+            "a": [
+              305,
+              0
+            ],
+            "b": [
+              305,
+              600
+            ]
+          }
+        ]
+      },
+      "baseline_status": "solved",
+      "candidate_status": "solved",
+      "baseline_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ]
+      ],
+      "candidate_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "baseline_trace_sha256": "8aca3068b8c5dfa0d81735df2ff1471e956f7b0fb6de69a23fc96063745b7edc",
+      "candidate_trace_sha256": "da5aaae0a8adfef3ce3469326ec12526aad46c9277fbac2193cb558ad21560cc",
+      "baseline_matches_saved_v2": true,
+      "candidate_matches_anchored_pressure": true,
+      "independent_checks": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "geometry_key": "878b5c956fd0869793aadb024b8248c573e60b0b87ebe8f997af39eab2d88d13",
+      "aliases": [
+        {
+          "seed": 20260943,
+          "step": 7
+        }
+      ],
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              379
+            ],
+            "b": [
+              199,
+              379
+            ]
+          },
+          {
+            "a": [
+              34,
+              0
+            ],
+            "b": [
+              34,
+              379
+            ]
+          },
+          {
+            "a": [
+              66,
+              0
+            ],
+            "b": [
+              66,
+              379
+            ]
+          },
+          {
+            "a": [
+              127,
+              379
+            ],
+            "b": [
+              127,
+              600
+            ]
+          },
+          {
+            "a": [
+              157,
+              0
+            ],
+            "b": [
+              157,
+              379
+            ]
+          },
+          {
+            "a": [
+              199,
+              0
+            ],
+            "b": [
+              199,
+              600
+            ]
+          },
+          {
+            "a": [
+              305,
+              0
+            ],
+            "b": [
+              305,
+              600
+            ]
+          }
+        ]
+      },
+      "baseline_status": "solved",
+      "candidate_status": "solved",
+      "baseline_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "candidate_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          3
+        ]
+      ],
+      "baseline_trace_sha256": "cb4fc077a6425c2f245ed8a7076a8e1b3b97d3e3c6a35d9b60c4aeed572fcd4d",
+      "candidate_trace_sha256": "123ec270109d8e4b68a2dc7207cda8ba94e240f1d040a2d8d8daa72ce85c94c7",
+      "baseline_matches_saved_v2": true,
+      "candidate_matches_anchored_pressure": true,
+      "independent_checks": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "geometry_key": "510b90105a79f1a6e0daddf1233e9a10f7947edfdadbd82ac237e85a048ae90e",
+      "aliases": [
+        {
+          "seed": 20260943,
+          "step": 8
+        }
+      ],
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              379
+            ],
+            "b": [
+              199,
+              379
+            ]
+          },
+          {
+            "a": [
+              0,
+              504
+            ],
+            "b": [
+              127,
+              504
+            ]
+          },
+          {
+            "a": [
+              34,
+              0
+            ],
+            "b": [
+              34,
+              379
+            ]
+          },
+          {
+            "a": [
+              66,
+              0
+            ],
+            "b": [
+              66,
+              379
+            ]
+          },
+          {
+            "a": [
+              127,
+              379
+            ],
+            "b": [
+              127,
+              600
+            ]
+          },
+          {
+            "a": [
+              157,
+              0
+            ],
+            "b": [
+              157,
+              379
+            ]
+          },
+          {
+            "a": [
+              199,
+              0
+            ],
+            "b": [
+              199,
+              600
+            ]
+          },
+          {
+            "a": [
+              305,
+              0
+            ],
+            "b": [
+              305,
+              600
+            ]
+          }
+        ]
+      },
+      "baseline_status": "solved",
+      "candidate_status": "solved",
+      "baseline_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ]
+      ],
+      "candidate_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "baseline_trace_sha256": "6f68c18a1c4ab12af30dad1bd8759a62cdc450f9da3ede7189011d4d8afc7da3",
+      "candidate_trace_sha256": "9754f0dfe6531f4837b4f671736c276bb4e80ae96bc0b9308b3737a458105f0d",
+      "baseline_matches_saved_v2": true,
+      "candidate_matches_anchored_pressure": true,
+      "independent_checks": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "geometry_key": "9ed2bf53f1a655c310514e284bbe6d9634a3e569424256625aef42eefa9f76f4",
+      "aliases": [
+        {
+          "seed": 20261027,
+          "step": 1
+        }
+      ],
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              327
+            ],
+            "b": [
+              900,
+              327
+            ]
+          }
+        ]
+      },
+      "baseline_status": "solved",
+      "candidate_status": "solved",
+      "baseline_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "candidate_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "baseline_trace_sha256": "cbd22a75d9b441f2fe284313b1e1f6d07b646d2f4f7e3cf76af8f1afb64d4e18",
+      "candidate_trace_sha256": "69d74f5a0ca6d661aef6b7c43cf42970527c9a78843dd37e3b84710948a94b92",
+      "baseline_matches_saved_v2": true,
+      "candidate_matches_anchored_pressure": true,
+      "independent_checks": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "geometry_key": "a1dc2a6ca79b6ebd45c0f8f1e157c5896cb376958c9b22ed2fc5930ec6a15468",
+      "aliases": [
+        {
+          "seed": 20261027,
+          "step": 2
+        }
+      ],
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              327
+            ],
+            "b": [
+              900,
+              327
+            ]
+          },
+          {
+            "a": [
+              518,
+              0
+            ],
+            "b": [
+              518,
+              327
+            ]
+          }
+        ]
+      },
+      "baseline_status": "solved",
+      "candidate_status": "solved",
+      "baseline_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "candidate_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          3
+        ]
+      ],
+      "baseline_trace_sha256": "c6f75613dd7f6908f203be4973d8b992fb9f1a0c12d8b20333c25a2afa9141ab",
+      "candidate_trace_sha256": "0b7a8a5b90ff5a8cb7cbabe45d3769e6136562de57ad2fd4653f93d274eebb51",
+      "baseline_matches_saved_v2": true,
+      "candidate_matches_anchored_pressure": true,
+      "independent_checks": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "geometry_key": "e86d7f464d6dc3ca9533676c2ee28d9e1feb8149fe493190481d21e095bdd63d",
+      "aliases": [
+        {
+          "seed": 20261027,
+          "step": 3
+        }
+      ],
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              172
+            ],
+            "b": [
+              518,
+              172
+            ]
+          },
+          {
+            "a": [
+              0,
+              327
+            ],
+            "b": [
+              900,
+              327
+            ]
+          },
+          {
+            "a": [
+              518,
+              0
+            ],
+            "b": [
+              518,
+              327
+            ]
+          }
+        ]
+      },
+      "baseline_status": "solved",
+      "candidate_status": "solved",
+      "baseline_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ]
+      ],
+      "candidate_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "baseline_trace_sha256": "cacb7cde1b3b528542e31248f94dae24b011a58503d0fd4e8f1e252786e203c1",
+      "candidate_trace_sha256": "b41da33ec4cc9fda6f2a6d61678da7b41c7f9372c31e22abffbde7119dc5efcd",
+      "baseline_matches_saved_v2": true,
+      "candidate_matches_anchored_pressure": true,
+      "independent_checks": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "geometry_key": "263a78162c60c437c98e0a990254f744d9dffb4aedfefaf633a318548a04251c",
+      "aliases": [
+        {
+          "seed": 20261027,
+          "step": 4
+        }
+      ],
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              172
+            ],
+            "b": [
+              518,
+              172
+            ]
+          },
+          {
+            "a": [
+              0,
+              327
+            ],
+            "b": [
+              900,
+              327
+            ]
+          },
+          {
+            "a": [
+              279,
+              0
+            ],
+            "b": [
+              279,
+              172
+            ]
+          },
+          {
+            "a": [
+              518,
+              0
+            ],
+            "b": [
+              518,
+              327
+            ]
+          }
+        ]
+      },
+      "baseline_status": "solved",
+      "candidate_status": "solved",
+      "baseline_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "candidate_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          3
+        ]
+      ],
+      "baseline_trace_sha256": "a77aaf5464061c75f7f64f4f65cf7578b06ee05de6eda9e97ad9e630705210b4",
+      "candidate_trace_sha256": "50c6bd65550d12814a4f152104f1bdebad5692c5266f8eaf7f0222df7b59db5a",
+      "baseline_matches_saved_v2": true,
+      "candidate_matches_anchored_pressure": true,
+      "independent_checks": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "geometry_key": "778510f006fc34a5c7080290d673ac7a0781b4e7d31fd22ece6331cd4eea6d95",
+      "aliases": [
+        {
+          "seed": 20261027,
+          "step": 5
+        }
+      ],
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              172
+            ],
+            "b": [
+              518,
+              172
+            ]
+          },
+          {
+            "a": [
+              0,
+              327
+            ],
+            "b": [
+              900,
+              327
+            ]
+          },
+          {
+            "a": [
+              160,
+              172
+            ],
+            "b": [
+              160,
+              327
+            ]
+          },
+          {
+            "a": [
+              279,
+              0
+            ],
+            "b": [
+              279,
+              172
+            ]
+          },
+          {
+            "a": [
+              518,
+              0
+            ],
+            "b": [
+              518,
+              327
+            ]
+          }
+        ]
+      },
+      "baseline_status": "solved",
+      "candidate_status": "solved",
+      "baseline_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          3
+        ],
+        [
+          1
+        ]
+      ],
+      "candidate_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          1
+        ]
+      ],
+      "baseline_trace_sha256": "dc5dbcfd388689e1370895408179c11f1d5efce1735bde03078e1c78b0c2e888",
+      "candidate_trace_sha256": "ac1b89a8477b8f487e263c6c8473a00a18fea0252a09e18e56b555836f2cc104",
+      "baseline_matches_saved_v2": true,
+      "candidate_matches_anchored_pressure": true,
+      "independent_checks": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "geometry_key": "25d13b9c924dc80292ad016dc3323575b353aff333f7657b2cef5aef8b60ed01",
+      "aliases": [
+        {
+          "seed": 20261027,
+          "step": 6
+        }
+      ],
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              172
+            ],
+            "b": [
+              518,
+              172
+            ]
+          },
+          {
+            "a": [
+              0,
+              327
+            ],
+            "b": [
+              900,
+              327
+            ]
+          },
+          {
+            "a": [
+              63,
+              172
+            ],
+            "b": [
+              63,
+              327
+            ]
+          },
+          {
+            "a": [
+              160,
+              172
+            ],
+            "b": [
+              160,
+              327
+            ]
+          },
+          {
+            "a": [
+              279,
+              0
+            ],
+            "b": [
+              279,
+              172
+            ]
+          },
+          {
+            "a": [
+              518,
+              0
+            ],
+            "b": [
+              518,
+              327
+            ]
+          }
+        ]
+      },
+      "baseline_status": "conflict",
+      "candidate_status": "solved",
+      "baseline_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          3
+        ],
+        [
+          1
+        ],
+        []
+      ],
+      "candidate_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          3
+        ],
+        [
+          1
+        ],
+        [
+          3
+        ]
+      ],
+      "baseline_trace_sha256": "16a618982e102d7b441d7e91a8f49059007ded8e4d18ec20e0b11e2831267a3a",
+      "candidate_trace_sha256": "1c5da24cd3396aac69ae5cb64280bfa7fb1232d279094811e2bb03d623c46a58",
+      "baseline_matches_saved_v2": true,
+      "candidate_matches_anchored_pressure": true,
+      "independent_checks": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "geometry_key": "c058d3b6d8e82275ed1e6770276c783578cd42b126cc2e6cf2dcdabc707088d8",
+      "aliases": [
+        {
+          "seed": 20261027,
+          "step": 7
+        }
+      ],
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              172
+            ],
+            "b": [
+              518,
+              172
+            ]
+          },
+          {
+            "a": [
+              0,
+              327
+            ],
+            "b": [
+              900,
+              327
+            ]
+          },
+          {
+            "a": [
+              63,
+              172
+            ],
+            "b": [
+              63,
+              327
+            ]
+          },
+          {
+            "a": [
+              160,
+              172
+            ],
+            "b": [
+              160,
+              327
+            ]
+          },
+          {
+            "a": [
+              279,
+              0
+            ],
+            "b": [
+              279,
+              172
+            ]
+          },
+          {
+            "a": [
+              279,
+              91
+            ],
+            "b": [
+              518,
+              91
+            ]
+          },
+          {
+            "a": [
+              518,
+              0
+            ],
+            "b": [
+              518,
+              327
+            ]
+          }
+        ]
+      },
+      "baseline_status": "solved",
+      "candidate_status": "solved",
+      "baseline_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          3
+        ],
+        [
+          1
+        ],
+        [
+          3
+        ],
+        [
+          1
+        ]
+      ],
+      "candidate_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          1
+        ],
+        [
+          3
+        ],
+        [
+          1
+        ]
+      ],
+      "baseline_trace_sha256": "f8ea1e8755837226c91aba7dba3f4b4f2bf8840ca46fd9405c1b48b6e7f5f83b",
+      "candidate_trace_sha256": "f07761f99f5d2e5d1468a846ffdf9c4baf9b3ff6be083cc9e4613e25db029b1d",
+      "baseline_matches_saved_v2": true,
+      "candidate_matches_anchored_pressure": true,
+      "independent_checks": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "geometry_key": "8e5ef2d89b30af1a9cf9b88b5a6998341d80a744b07b5fde45ec8a646c305c26",
+      "aliases": [
+        {
+          "seed": 20261027,
+          "step": 8
+        }
+      ],
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              172
+            ],
+            "b": [
+              518,
+              172
+            ]
+          },
+          {
+            "a": [
+              0,
+              327
+            ],
+            "b": [
+              900,
+              327
+            ]
+          },
+          {
+            "a": [
+              63,
+              172
+            ],
+            "b": [
+              63,
+              327
+            ]
+          },
+          {
+            "a": [
+              160,
+              172
+            ],
+            "b": [
+              160,
+              327
+            ]
+          },
+          {
+            "a": [
+              279,
+              0
+            ],
+            "b": [
+              279,
+              172
+            ]
+          },
+          {
+            "a": [
+              279,
+              91
+            ],
+            "b": [
+              518,
+              91
+            ]
+          },
+          {
+            "a": [
+              518,
+              0
+            ],
+            "b": [
+              518,
+              327
+            ]
+          },
+          {
+            "a": [
+              737,
+              0
+            ],
+            "b": [
+              737,
+              327
+            ]
+          }
+        ]
+      },
+      "baseline_status": "solved",
+      "candidate_status": "solved",
+      "baseline_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          3
+        ],
+        [
+          1
+        ],
+        [
+          3
+        ],
+        [
+          1
+        ]
+      ],
+      "candidate_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          1
+        ],
+        [
+          3
+        ],
+        [
+          1
+        ]
+      ],
+      "baseline_trace_sha256": "7d74f95c12f3779c5699270f491d01cbf80311407e420ac3fd1176305b5d6431",
+      "candidate_trace_sha256": "ca8c5681b903c7a145a0d2826623aeed61243f57dd7d8127e9e41bfa79e21de4",
+      "baseline_matches_saved_v2": true,
+      "candidate_matches_anchored_pressure": true,
+      "independent_checks": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "geometry_key": "1fc25db8f11428ad68981f6448f52909ad760528991dad2ff8d49547fc8dcd7b",
+      "aliases": [
+        {
+          "seed": 20260916,
+          "step": 1
+        }
+      ],
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              326
+            ],
+            "b": [
+              900,
+              326
+            ]
+          }
+        ]
+      },
+      "baseline_status": "solved",
+      "candidate_status": "solved",
+      "baseline_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "candidate_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "baseline_trace_sha256": "f28b7badf45748a6ef9679114ed72b03665cad22461ed0df539218edcb525cf8",
+      "candidate_trace_sha256": "ab1ff530b75f6acf682c47d2ce8129a63e4af892fd90411b3756a72664e98696",
+      "baseline_matches_saved_v2": true,
+      "candidate_matches_anchored_pressure": true,
+      "independent_checks": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "geometry_key": "7ee998ad11567c989921a80ff31b3f5b0092f3e1251cfb78082d960ed7e2673b",
+      "aliases": [
+        {
+          "seed": 20260916,
+          "step": 2
+        }
+      ],
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              326
+            ],
+            "b": [
+              900,
+              326
+            ]
+          },
+          {
+            "a": [
+              519,
+              0
+            ],
+            "b": [
+              519,
+              326
+            ]
+          }
+        ]
+      },
+      "baseline_status": "solved",
+      "candidate_status": "solved",
+      "baseline_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "candidate_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          3
+        ]
+      ],
+      "baseline_trace_sha256": "2410c8537e527ef4b596adff41212d47e43c603b3ddc6c059fe2f4b22d96951d",
+      "candidate_trace_sha256": "d39e61027cbd37903a00718eb4e8a685a0da9c7ed053f9ced95d1471b91e38eb",
+      "baseline_matches_saved_v2": true,
+      "candidate_matches_anchored_pressure": true,
+      "independent_checks": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "geometry_key": "f67b92890fa84cf43afb0520f94d250367573a97b0656e2cbb456468d2bf28af",
+      "aliases": [
+        {
+          "seed": 20260916,
+          "step": 3
+        }
+      ],
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              326
+            ],
+            "b": [
+              900,
+              326
+            ]
+          },
+          {
+            "a": [
+              519,
+              0
+            ],
+            "b": [
+              519,
+              326
+            ]
+          },
+          {
+            "a": [
+              519,
+              110
+            ],
+            "b": [
+              900,
+              110
+            ]
+          }
+        ]
+      },
+      "baseline_status": "solved",
+      "candidate_status": "solved",
+      "baseline_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "candidate_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          3
+        ]
+      ],
+      "baseline_trace_sha256": "1cbcc01165dd397346e61a2d78c75ae3258a52d42f9975113cc3939bb9b44039",
+      "candidate_trace_sha256": "9f1595f45dc503774e9ac409ef5d7bcfac709a3b194f468adf782d308c8fdeff",
+      "baseline_matches_saved_v2": true,
+      "candidate_matches_anchored_pressure": true,
+      "independent_checks": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "geometry_key": "a604cc8161366a3a0ca5bbced7a0c53ccf5d7140179e3c217896050c97859d31",
+      "aliases": [
+        {
+          "seed": 20260916,
+          "step": 4
+        }
+      ],
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              326
+            ],
+            "b": [
+              900,
+              326
+            ]
+          },
+          {
+            "a": [
+              519,
+              0
+            ],
+            "b": [
+              519,
+              326
+            ]
+          },
+          {
+            "a": [
+              519,
+              110
+            ],
+            "b": [
+              900,
+              110
+            ]
+          },
+          {
+            "a": [
+              722,
+              110
+            ],
+            "b": [
+              722,
+              326
+            ]
+          }
+        ]
+      },
+      "baseline_status": "solved",
+      "candidate_status": "solved",
+      "baseline_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          1
+        ]
+      ],
+      "candidate_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          1
+        ]
+      ],
+      "baseline_trace_sha256": "d8bbad84de6a938faeb23fa65d1555a708d5a10030b08aaac7df170636174c1f",
+      "candidate_trace_sha256": "bd469ebb52f8dfc75aee6917cf00f9fbe8adbf6c7c2794f0a59e3e1bb998ed4c",
+      "baseline_matches_saved_v2": true,
+      "candidate_matches_anchored_pressure": true,
+      "independent_checks": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "geometry_key": "fe4d2728f2a38878151c44e1701093544b67cdcb3aa59f90ed453da1bb3a4367",
+      "aliases": [
+        {
+          "seed": 20260916,
+          "step": 5
+        }
+      ],
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              186
+            ],
+            "b": [
+              519,
+              186
+            ]
+          },
+          {
+            "a": [
+              0,
+              326
+            ],
+            "b": [
+              900,
+              326
+            ]
+          },
+          {
+            "a": [
+              519,
+              0
+            ],
+            "b": [
+              519,
+              326
+            ]
+          },
+          {
+            "a": [
+              519,
+              110
+            ],
+            "b": [
+              900,
+              110
+            ]
+          },
+          {
+            "a": [
+              722,
+              110
+            ],
+            "b": [
+              722,
+              326
+            ]
+          }
+        ]
+      },
+      "baseline_status": "solved",
+      "candidate_status": "solved",
+      "baseline_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          3
+        ],
+        [
+          1
+        ]
+      ],
+      "candidate_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          1
+        ]
+      ],
+      "baseline_trace_sha256": "32b19a869af428e19cc9ac1aa41277f8b765fa244a2936773c2ed9abf777ee2f",
+      "candidate_trace_sha256": "0b7f7d0fccb6aa38ca5f843993a358fd5ac4087b3b76d400c1c7f3d2030e24c5",
+      "baseline_matches_saved_v2": true,
+      "candidate_matches_anchored_pressure": true,
+      "independent_checks": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "geometry_key": "c8a707defc9209314edd6acef8336c71053f5e5184df4e6307502755a6636e88",
+      "aliases": [
+        {
+          "seed": 20260916,
+          "step": 6
+        }
+      ],
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              186
+            ],
+            "b": [
+              519,
+              186
+            ]
+          },
+          {
+            "a": [
+              0,
+              326
+            ],
+            "b": [
+              900,
+              326
+            ]
+          },
+          {
+            "a": [
+              519,
+              0
+            ],
+            "b": [
+              519,
+              326
+            ]
+          },
+          {
+            "a": [
+              519,
+              110
+            ],
+            "b": [
+              900,
+              110
+            ]
+          },
+          {
+            "a": [
+              722,
+              110
+            ],
+            "b": [
+              722,
+              326
+            ]
+          },
+          {
+            "a": [
+              814,
+              110
+            ],
+            "b": [
+              814,
+              326
+            ]
+          }
+        ]
+      },
+      "baseline_status": "solved",
+      "candidate_status": "conflict",
+      "baseline_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          3
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "candidate_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          1
+        ],
+        [
+          3
+        ]
+      ],
+      "baseline_trace_sha256": "84c768f4b9b890d610587a2fb41cc5c46f055cd5e3ec81e0ee6fda9343f543b6",
+      "candidate_trace_sha256": "fc6bac58f73f447dea1e01ee4aaf589267e82cb2cec1b76fb1e228b69f1087d1",
+      "baseline_matches_saved_v2": true,
+      "candidate_matches_anchored_pressure": true,
+      "independent_checks": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "geometry_key": "9048644abd6a6baff65593cb31b5d362a936fca4eb89346c02edd1ab5bf5d2a1",
+      "aliases": [
+        {
+          "seed": 20260916,
+          "step": 7
+        }
+      ],
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              186
+            ],
+            "b": [
+              519,
+              186
+            ]
+          },
+          {
+            "a": [
+              0,
+              326
+            ],
+            "b": [
+              900,
+              326
+            ]
+          },
+          {
+            "a": [
+              335,
+              0
+            ],
+            "b": [
+              335,
+              186
+            ]
+          },
+          {
+            "a": [
+              519,
+              0
+            ],
+            "b": [
+              519,
+              326
+            ]
+          },
+          {
+            "a": [
+              519,
+              110
+            ],
+            "b": [
+              900,
+              110
+            ]
+          },
+          {
+            "a": [
+              722,
+              110
+            ],
+            "b": [
+              722,
+              326
+            ]
+          },
+          {
+            "a": [
+              814,
+              110
+            ],
+            "b": [
+              814,
+              326
+            ]
+          }
+        ]
+      },
+      "baseline_status": "conflict",
+      "candidate_status": "solved",
+      "baseline_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "candidate_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          1
+        ],
+        [
+          3
+        ]
+      ],
+      "baseline_trace_sha256": "38daaf80afef12e2e4d8b7dc7fafd2f32c94c376fd9be356fac6375f7e78e8ad",
+      "candidate_trace_sha256": "3ff1d0d0920a32188e6c08b5366cdecee93b297bc1ae256d067ae0bd4b320a7b",
+      "baseline_matches_saved_v2": true,
+      "candidate_matches_anchored_pressure": true,
+      "independent_checks": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "geometry_key": "8c604ea905246cc96a5960823502717066faf669262cd9456d954409a572164a",
+      "aliases": [
+        {
+          "seed": 20260916,
+          "step": 8
+        }
+      ],
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              186
+            ],
+            "b": [
+              519,
+              186
+            ]
+          },
+          {
+            "a": [
+              0,
+              268
+            ],
+            "b": [
+              519,
+              268
+            ]
+          },
+          {
+            "a": [
+              0,
+              326
+            ],
+            "b": [
+              900,
+              326
+            ]
+          },
+          {
+            "a": [
+              335,
+              0
+            ],
+            "b": [
+              335,
+              186
+            ]
+          },
+          {
+            "a": [
+              519,
+              0
+            ],
+            "b": [
+              519,
+              326
+            ]
+          },
+          {
+            "a": [
+              519,
+              110
+            ],
+            "b": [
+              900,
+              110
+            ]
+          },
+          {
+            "a": [
+              722,
+              110
+            ],
+            "b": [
+              722,
+              326
+            ]
+          },
+          {
+            "a": [
+              814,
+              110
+            ],
+            "b": [
+              814,
+              326
+            ]
+          }
+        ]
+      },
+      "baseline_status": "solved",
+      "candidate_status": "solved",
+      "baseline_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "candidate_domains": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "baseline_trace_sha256": "b8ac89ac209791c3c94389356f2798525e6871f6e5eed6d44e36c2d0d9e7bf0e",
+      "candidate_trace_sha256": "fcccaf7945466dce68ad5a1436834ac4671b95a5d59292b850e5980ffc94c41a",
+      "baseline_matches_saved_v2": true,
+      "candidate_matches_anchored_pressure": true,
+      "independent_checks": {
+        "baseline": true,
+        "candidate": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1570" height="1170" viewBox="0 0 1570 1170">
+<rect width="100%" height="100%" fill="white"/>
+<text x="55" y="30" font-size="38" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">v4 新受阻图：完整线网留白，供人工标记</text>
+<text x="55" y="99" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">guillotine-20260946 / 18</text>
+<text x="55" y="157" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">外侧1；内部 ? 不是当前已承诺的颜色。本图不说明需要第五色。</text>
+<polyline points="55,230 1045,230 1045,890 55,890 55,230" fill="none" stroke="#202831" stroke-width="5"/>
+<polyline points="179.3,230 179.3,890" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="179.3,289.4 281.6,289.4" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="179.3,380.7 281.6,380.7" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="179.3,462.1 281.6,462.1" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="179.3,634.8 232.1,634.8" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="232.1,462.1 232.1,890" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="232.1,641.4 281.6,641.4" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="249.7,641.4 249.7,890" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="281.6,230 281.6,890" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="281.6,302.6 411.4,302.6" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="281.6,429.1 411.4,429.1" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="411.4,230 411.4,890" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="753.5,230 753.5,890" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="753.5,659 1045,659" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="753.5,754.7 947.1,754.7" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="947.1,659 947.1,890" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="984.5,659 984.5,890" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1021.9,659 1021.9,890" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="117.15" y="545" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="230.45" y="244.7" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="346.5" y="251.3" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="582.45" y="545" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="899.25" y="429.5" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="1033.45" y="767" font-size="15" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="1003.2" y="762.5" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="965.8" y="762.5" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="850.3" y="807.35" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="346.5" y="644.55" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="265.65" y="755.7" font-size="20" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="205.7" y="747.4" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="230.45" y="320.05" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="230.45" y="406.4" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="205.7" y="533.45" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="256.85" y="536.75" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="346.5" y="350.85" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="850.3" y="691.85" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="1095" y="242" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">侧编号 → 待填写</text>
+<text x="1095" y="300" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">s1 = ?</text>
+<text x="1095" y="338" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">s2 = ?</text>
+<text x="1095" y="376" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">s3 = ?</text>
+<text x="1095" y="414" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">s4 = ?</text>
+<text x="1095" y="452" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">s5 = ?</text>
+<text x="1095" y="490" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">s6 = ?</text>
+<text x="1095" y="528" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">s7 = ?</text>
+<text x="1095" y="566" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">s8 = ?</text>
+<text x="1095" y="604" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">s9 = ?</text>
+<text x="1095" y="642" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">s10 = ?</text>
+<text x="1285" y="300" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">s11 = ?</text>
+<text x="1285" y="338" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">s12 = ?</text>
+<text x="1285" y="376" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">s13 = ?</text>
+<text x="1285" y="414" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">s14 = ?</text>
+<text x="1285" y="452" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">s15 = ?</text>
+<text x="1285" y="490" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">s16 = ?</text>
+<text x="1285" y="528" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">s17 = ?</text>
+<text x="1285" y="566" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">s18 = ?</text>
+<text x="1285" y="604" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">s19 = ?</text>
+<text x="55" y="951" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">请标出同级先处理的母线、保留侧与取名顺序。</text>
+<text x="55" y="1006" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">若有同步改名，请标明影响范围与触发条件。</text>
+<text x="55" y="1061" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">完整输入、各阶段粗区、失败推导链都保存在同目录 manifest.json。</text>
+</svg>

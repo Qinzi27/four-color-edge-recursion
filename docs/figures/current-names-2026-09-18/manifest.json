@@ -1,0 +1,4489 @@
+{
+  "input": {
+    "filename": "current-names-all-2026-09-18-v3.json.gz",
+    "sha256": "da1d1eb9487f2207ef279e0e04c15aef5e6238df6165829d5fb7bf249e28c3de"
+  },
+  "source_policy": "interface-b3",
+  "source_cases": [
+    "guillotine-20260911",
+    "guillotine-20260908"
+  ],
+  "repair_event": {
+    "method": "shared_interface_release",
+    "cut": [
+      [
+        175,
+        219
+      ],
+      [
+        337,
+        219
+      ]
+    ],
+    "parent": "root.r.l",
+    "s": 3,
+    "endpoint_incidence": [
+      {
+        "point": [
+          175,
+          219
+        ],
+        "incident_mothers": [
+          {
+            "id": "cut-3",
+            "is_frame": false,
+            "segment": [
+              [
+                175,
+                0
+              ],
+              [
+                175,
+                600
+              ]
+            ],
+            "position": "interior"
+          }
+        ],
+        "frame_segments": [],
+        "incident_old_sides": [
+          {
+            "id": "root.r.l",
+            "symbol": 3,
+            "bounds": [
+              175,
+              0,
+              337,
+              600
+            ],
+            "boundary_segments": [
+              {
+                "edge": "left",
+                "segment": [
+                  [
+                    175,
+                    600
+                  ],
+                  [
+                    175,
+                    0
+                  ]
+                ],
+                "position": "interior"
+              }
+            ],
+            "contact_position": "edge_interior"
+          },
+          {
+            "id": "root.r.r",
+            "symbol": 2,
+            "bounds": [
+              0,
+              0,
+              175,
+              600
+            ],
+            "boundary_segments": [
+              {
+                "edge": "right",
+                "segment": [
+                  [
+                    175,
+                    0
+                  ],
+                  [
+                    175,
+                    600
+                  ]
+                ],
+                "position": "interior"
+              }
+            ],
+            "contact_position": "edge_interior"
+          }
+        ],
+        "closed_incidence_only": true,
+        "creates_color_constraint": false
+      },
+      {
+        "point": [
+          337,
+          219
+        ],
+        "incident_mothers": [
+          {
+            "id": "cut-1",
+            "is_frame": false,
+            "segment": [
+              [
+                337,
+                0
+              ],
+              [
+                337,
+                600
+              ]
+            ],
+            "position": "interior"
+          }
+        ],
+        "frame_segments": [],
+        "incident_old_sides": [
+          {
+            "id": "root.l.l",
+            "symbol": 4,
+            "bounds": [
+              337,
+              0,
+              900,
+              409
+            ],
+            "boundary_segments": [
+              {
+                "edge": "left",
+                "segment": [
+                  [
+                    337,
+                    409
+                  ],
+                  [
+                    337,
+                    0
+                  ]
+                ],
+                "position": "interior"
+              }
+            ],
+            "contact_position": "edge_interior"
+          },
+          {
+            "id": "root.r.l",
+            "symbol": 3,
+            "bounds": [
+              175,
+              0,
+              337,
+              600
+            ],
+            "boundary_segments": [
+              {
+                "edge": "right",
+                "segment": [
+                  [
+                    337,
+                    0
+                  ],
+                  [
+                    337,
+                    600
+                  ]
+                ],
+                "position": "interior"
+              }
+            ],
+            "contact_position": "edge_interior"
+          }
+        ],
+        "closed_incidence_only": true,
+        "creates_color_constraint": false
+      }
+    ],
+    "initial_candidates": [
+      {
+        "child_id": "root.r.l.l",
+        "bounds": [
+          175,
+          0,
+          337,
+          219
+        ],
+        "old_neighbor_ids": [
+          "outside",
+          "root.l.l",
+          "root.r.r"
+        ],
+        "R": [
+          1,
+          2,
+          4
+        ],
+        "available_names": []
+      },
+      {
+        "child_id": "root.r.l.r",
+        "bounds": [
+          175,
+          219,
+          337,
+          600
+        ],
+        "old_neighbor_ids": [
+          "outside",
+          "root.l.l",
+          "root.l.r",
+          "root.r.r"
+        ],
+        "R": [
+          1,
+          2,
+          4
+        ],
+        "available_names": []
+      }
+    ],
+    "max_old_sides": 3,
+    "release_enabled": true,
+    "release_trace": [],
+    "selection_order": [
+      "new_name_introduction",
+      "numeric_name",
+      "bounds"
+    ],
+    "release_stop_reason": "locally_stable",
+    "release_budget_blocked_ids": [],
+    "release_potential": [
+      12,
+      12
+    ],
+    "candidates": [
+      {
+        "child_id": "root.r.l.l",
+        "bounds": [
+          175,
+          0,
+          337,
+          219
+        ],
+        "old_neighbor_ids": [
+          "outside",
+          "root.l.l",
+          "root.r.r"
+        ],
+        "R": [
+          1,
+          2,
+          4
+        ],
+        "available_names": []
+      },
+      {
+        "child_id": "root.r.l.r",
+        "bounds": [
+          175,
+          219,
+          337,
+          600
+        ],
+        "old_neighbor_ids": [
+          "outside",
+          "root.l.l",
+          "root.l.r",
+          "root.r.r"
+        ],
+        "R": [
+          1,
+          2,
+          4
+        ],
+        "available_names": []
+      }
+    ],
+    "fixed_common_interfaces": [
+      {
+        "id": "outside",
+        "name": 1
+      },
+      {
+        "id": "root.l.l",
+        "name": 4
+      },
+      {
+        "id": "root.r.r",
+        "name": 2
+      }
+    ],
+    "reason": null,
+    "normalization_preview": {
+      "width": 900,
+      "height": 600,
+      "cuts": [
+        [
+          [
+            337,
+            0
+          ],
+          [
+            337,
+            600
+          ]
+        ],
+        [
+          [
+            337,
+            409
+          ],
+          [
+            900,
+            409
+          ]
+        ],
+        [
+          [
+            175,
+            0
+          ],
+          [
+            175,
+            600
+          ]
+        ]
+      ],
+      "sides": [
+        {
+          "id": "root.l.l",
+          "bounds": [
+            337,
+            0,
+            900,
+            409
+          ],
+          "symbol": 4
+        },
+        {
+          "id": "root.l.r",
+          "bounds": [
+            337,
+            409,
+            900,
+            600
+          ],
+          "symbol": 2
+        },
+        {
+          "id": "root.r.l",
+          "bounds": [
+            175,
+            0,
+            337,
+            600
+          ],
+          "symbol": 3
+        },
+        {
+          "id": "root.r.r",
+          "bounds": [
+            0,
+            0,
+            175,
+            600
+          ],
+          "symbol": 2
+        }
+      ]
+    },
+    "scope": "this deterministic policy and budget only",
+    "shared_release_attempted": true,
+    "shared_release_candidates": [
+      {
+        "id": "root.l.l",
+        "current": 4,
+        "common_name_multiplicity": 1,
+        "neighbor_names": {
+          "outside": 1,
+          "root.l.r": 2,
+          "root.r.l": 3
+        },
+        "targets": [],
+        "budget_ok": true
+      },
+      {
+        "id": "root.r.r",
+        "current": 2,
+        "common_name_multiplicity": 1,
+        "neighbor_names": {
+          "outside": 1,
+          "root.r.l": 3
+        },
+        "targets": [
+          4
+        ],
+        "budget_ok": true
+      }
+    ],
+    "shared_release": {
+      "id": "root.r.r",
+      "before": 2,
+      "after": 4,
+      "common_names_before": [
+        1,
+        2,
+        4
+      ],
+      "common_names_after": [
+        1,
+        4
+      ],
+      "precharged_old_ids": [
+        "root.r.r"
+      ]
+    },
+    "after_shared_release_event": {
+      "method": "current_direct",
+      "cut": [
+        [
+          175,
+          219
+        ],
+        [
+          337,
+          219
+        ]
+      ],
+      "parent": "root.r.l",
+      "s": 3,
+      "endpoint_incidence": [
+        {
+          "point": [
+            175,
+            219
+          ],
+          "incident_mothers": [
+            {
+              "id": "cut-3",
+              "is_frame": false,
+              "segment": [
+                [
+                  175,
+                  0
+                ],
+                [
+                  175,
+                  600
+                ]
+              ],
+              "position": "interior"
+            }
+          ],
+          "frame_segments": [],
+          "incident_old_sides": [
+            {
+              "id": "root.r.l",
+              "symbol": 3,
+              "bounds": [
+                175,
+                0,
+                337,
+                600
+              ],
+              "boundary_segments": [
+                {
+                  "edge": "left",
+                  "segment": [
+                    [
+                      175,
+                      600
+                    ],
+                    [
+                      175,
+                      0
+                    ]
+                  ],
+                  "position": "interior"
+                }
+              ],
+              "contact_position": "edge_interior"
+            },
+            {
+              "id": "root.r.r",
+              "symbol": 4,
+              "bounds": [
+                0,
+                0,
+                175,
+                600
+              ],
+              "boundary_segments": [
+                {
+                  "edge": "right",
+                  "segment": [
+                    [
+                      175,
+                      0
+                    ],
+                    [
+                      175,
+                      600
+                    ]
+                  ],
+                  "position": "interior"
+                }
+              ],
+              "contact_position": "edge_interior"
+            }
+          ],
+          "closed_incidence_only": true,
+          "creates_color_constraint": false
+        },
+        {
+          "point": [
+            337,
+            219
+          ],
+          "incident_mothers": [
+            {
+              "id": "cut-1",
+              "is_frame": false,
+              "segment": [
+                [
+                  337,
+                  0
+                ],
+                [
+                  337,
+                  600
+                ]
+              ],
+              "position": "interior"
+            }
+          ],
+          "frame_segments": [],
+          "incident_old_sides": [
+            {
+              "id": "root.l.l",
+              "symbol": 4,
+              "bounds": [
+                337,
+                0,
+                900,
+                409
+              ],
+              "boundary_segments": [
+                {
+                  "edge": "left",
+                  "segment": [
+                    [
+                      337,
+                      409
+                    ],
+                    [
+                      337,
+                      0
+                    ]
+                  ],
+                  "position": "interior"
+                }
+              ],
+              "contact_position": "edge_interior"
+            },
+            {
+              "id": "root.r.l",
+              "symbol": 3,
+              "bounds": [
+                175,
+                0,
+                337,
+                600
+              ],
+              "boundary_segments": [
+                {
+                  "edge": "right",
+                  "segment": [
+                    [
+                      337,
+                      0
+                    ],
+                    [
+                      337,
+                      600
+                    ]
+                  ],
+                  "position": "interior"
+                }
+              ],
+              "contact_position": "edge_interior"
+            }
+          ],
+          "closed_incidence_only": true,
+          "creates_color_constraint": false
+        }
+      ],
+      "initial_candidates": [
+        {
+          "child_id": "root.r.l.l",
+          "bounds": [
+            175,
+            0,
+            337,
+            219
+          ],
+          "old_neighbor_ids": [
+            "outside",
+            "root.l.l",
+            "root.r.r"
+          ],
+          "R": [
+            1,
+            4
+          ],
+          "available_names": [
+            2
+          ]
+        },
+        {
+          "child_id": "root.r.l.r",
+          "bounds": [
+            175,
+            219,
+            337,
+            600
+          ],
+          "old_neighbor_ids": [
+            "outside",
+            "root.l.l",
+            "root.l.r",
+            "root.r.r"
+          ],
+          "R": [
+            1,
+            2,
+            4
+          ],
+          "available_names": []
+        }
+      ],
+      "max_old_sides": 2,
+      "release_enabled": false,
+      "release_trace": [],
+      "selection_order": [
+        "new_name_introduction",
+        "numeric_name",
+        "bounds"
+      ],
+      "candidates": [
+        {
+          "child_id": "root.r.l.l",
+          "bounds": [
+            175,
+            0,
+            337,
+            219
+          ],
+          "old_neighbor_ids": [
+            "outside",
+            "root.l.l",
+            "root.r.r"
+          ],
+          "R": [
+            1,
+            4
+          ],
+          "available_names": [
+            2
+          ]
+        },
+        {
+          "child_id": "root.r.l.r",
+          "bounds": [
+            175,
+            219,
+            337,
+            600
+          ],
+          "old_neighbor_ids": [
+            "outside",
+            "root.l.l",
+            "root.l.r",
+            "root.r.r"
+          ],
+          "R": [
+            1,
+            2,
+            4
+          ],
+          "available_names": []
+        }
+      ],
+      "target": 2,
+      "introduced_new_name": false,
+      "new_name_child": "root.r.l.l",
+      "changed_old_sides": [],
+      "changed_old_side_ids": [],
+      "line_profiles_before": {
+        "frame": [
+          {
+            "segment": [
+              [
+                0,
+                0
+              ],
+              [
+                175,
+                0
+              ]
+            ],
+            "pair": [
+              1,
+              4
+            ],
+            "type": [
+              1,
+              4
+            ]
+          },
+          {
+            "segment": [
+              [
+                175,
+                0
+              ],
+              [
+                337,
+                0
+              ]
+            ],
+            "pair": [
+              1,
+              3
+            ],
+            "type": [
+              1,
+              3
+            ]
+          },
+          {
+            "segment": [
+              [
+                337,
+                0
+              ],
+              [
+                900,
+                0
+              ]
+            ],
+            "pair": [
+              1,
+              4
+            ],
+            "type": [
+              1,
+              4
+            ]
+          },
+          {
+            "segment": [
+              [
+                900,
+                0
+              ],
+              [
+                900,
+                409
+              ]
+            ],
+            "pair": [
+              1,
+              4
+            ],
+            "type": [
+              1,
+              4
+            ]
+          },
+          {
+            "segment": [
+              [
+                900,
+                409
+              ],
+              [
+                900,
+                600
+              ]
+            ],
+            "pair": [
+              1,
+              2
+            ],
+            "type": [
+              1,
+              2
+            ]
+          },
+          {
+            "segment": [
+              [
+                900,
+                600
+              ],
+              [
+                337,
+                600
+              ]
+            ],
+            "pair": [
+              1,
+              2
+            ],
+            "type": [
+              1,
+              2
+            ]
+          },
+          {
+            "segment": [
+              [
+                337,
+                600
+              ],
+              [
+                175,
+                600
+              ]
+            ],
+            "pair": [
+              1,
+              3
+            ],
+            "type": [
+              1,
+              3
+            ]
+          },
+          {
+            "segment": [
+              [
+                175,
+                600
+              ],
+              [
+                0,
+                600
+              ]
+            ],
+            "pair": [
+              1,
+              4
+            ],
+            "type": [
+              1,
+              4
+            ]
+          },
+          {
+            "segment": [
+              [
+                0,
+                600
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "pair": [
+              1,
+              4
+            ],
+            "type": [
+              1,
+              4
+            ]
+          }
+        ],
+        "cut-1": [
+          {
+            "segment": [
+              [
+                337,
+                0
+              ],
+              [
+                337,
+                409
+              ]
+            ],
+            "pair": [
+              4,
+              3
+            ],
+            "type": [
+              3,
+              4
+            ]
+          },
+          {
+            "segment": [
+              [
+                337,
+                409
+              ],
+              [
+                337,
+                600
+              ]
+            ],
+            "pair": [
+              2,
+              3
+            ],
+            "type": [
+              2,
+              3
+            ]
+          }
+        ],
+        "cut-2": [
+          {
+            "segment": [
+              [
+                337,
+                409
+              ],
+              [
+                900,
+                409
+              ]
+            ],
+            "pair": [
+              4,
+              2
+            ],
+            "type": [
+              2,
+              4
+            ]
+          }
+        ],
+        "cut-3": [
+          {
+            "segment": [
+              [
+                175,
+                0
+              ],
+              [
+                175,
+                600
+              ]
+            ],
+            "pair": [
+              3,
+              4
+            ],
+            "type": [
+              3,
+              4
+            ]
+          }
+        ]
+      },
+      "line_profiles_after": {
+        "frame": [
+          {
+            "segment": [
+              [
+                0,
+                0
+              ],
+              [
+                175,
+                0
+              ]
+            ],
+            "pair": [
+              1,
+              4
+            ],
+            "type": [
+              1,
+              4
+            ]
+          },
+          {
+            "segment": [
+              [
+                175,
+                0
+              ],
+              [
+                337,
+                0
+              ]
+            ],
+            "pair": [
+              1,
+              2
+            ],
+            "type": [
+              1,
+              2
+            ]
+          },
+          {
+            "segment": [
+              [
+                337,
+                0
+              ],
+              [
+                900,
+                0
+              ]
+            ],
+            "pair": [
+              1,
+              4
+            ],
+            "type": [
+              1,
+              4
+            ]
+          },
+          {
+            "segment": [
+              [
+                900,
+                0
+              ],
+              [
+                900,
+                409
+              ]
+            ],
+            "pair": [
+              1,
+              4
+            ],
+            "type": [
+              1,
+              4
+            ]
+          },
+          {
+            "segment": [
+              [
+                900,
+                409
+              ],
+              [
+                900,
+                600
+              ]
+            ],
+            "pair": [
+              1,
+              2
+            ],
+            "type": [
+              1,
+              2
+            ]
+          },
+          {
+            "segment": [
+              [
+                900,
+                600
+              ],
+              [
+                337,
+                600
+              ]
+            ],
+            "pair": [
+              1,
+              2
+            ],
+            "type": [
+              1,
+              2
+            ]
+          },
+          {
+            "segment": [
+              [
+                337,
+                600
+              ],
+              [
+                175,
+                600
+              ]
+            ],
+            "pair": [
+              1,
+              3
+            ],
+            "type": [
+              1,
+              3
+            ]
+          },
+          {
+            "segment": [
+              [
+                175,
+                600
+              ],
+              [
+                0,
+                600
+              ]
+            ],
+            "pair": [
+              1,
+              4
+            ],
+            "type": [
+              1,
+              4
+            ]
+          },
+          {
+            "segment": [
+              [
+                0,
+                600
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "pair": [
+              1,
+              4
+            ],
+            "type": [
+              1,
+              4
+            ]
+          }
+        ],
+        "cut-1": [
+          {
+            "segment": [
+              [
+                337,
+                0
+              ],
+              [
+                337,
+                219
+              ]
+            ],
+            "pair": [
+              4,
+              2
+            ],
+            "type": [
+              2,
+              4
+            ]
+          },
+          {
+            "segment": [
+              [
+                337,
+                219
+              ],
+              [
+                337,
+                409
+              ]
+            ],
+            "pair": [
+              4,
+              3
+            ],
+            "type": [
+              3,
+              4
+            ]
+          },
+          {
+            "segment": [
+              [
+                337,
+                409
+              ],
+              [
+                337,
+                600
+              ]
+            ],
+            "pair": [
+              2,
+              3
+            ],
+            "type": [
+              2,
+              3
+            ]
+          }
+        ],
+        "cut-2": [
+          {
+            "segment": [
+              [
+                337,
+                409
+              ],
+              [
+                900,
+                409
+              ]
+            ],
+            "pair": [
+              4,
+              2
+            ],
+            "type": [
+              2,
+              4
+            ]
+          }
+        ],
+        "cut-3": [
+          {
+            "segment": [
+              [
+                175,
+                0
+              ],
+              [
+                175,
+                219
+              ]
+            ],
+            "pair": [
+              2,
+              4
+            ],
+            "type": [
+              2,
+              4
+            ]
+          },
+          {
+            "segment": [
+              [
+                175,
+                219
+              ],
+              [
+                175,
+                600
+              ]
+            ],
+            "pair": [
+              3,
+              4
+            ],
+            "type": [
+              3,
+              4
+            ]
+          }
+        ],
+        "cut-4": [
+          {
+            "segment": [
+              [
+                175,
+                219
+              ],
+              [
+                337,
+                219
+              ]
+            ],
+            "pair": [
+              2,
+              3
+            ],
+            "type": [
+              2,
+              3
+            ]
+          }
+        ]
+      },
+      "profile_changes": [
+        {
+          "mother": "frame",
+          "before": [
+            {
+              "segment": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  175,
+                  0
+                ]
+              ],
+              "pair": [
+                1,
+                4
+              ],
+              "type": [
+                1,
+                4
+              ]
+            },
+            {
+              "segment": [
+                [
+                  175,
+                  0
+                ],
+                [
+                  337,
+                  0
+                ]
+              ],
+              "pair": [
+                1,
+                3
+              ],
+              "type": [
+                1,
+                3
+              ]
+            },
+            {
+              "segment": [
+                [
+                  337,
+                  0
+                ],
+                [
+                  900,
+                  0
+                ]
+              ],
+              "pair": [
+                1,
+                4
+              ],
+              "type": [
+                1,
+                4
+              ]
+            },
+            {
+              "segment": [
+                [
+                  900,
+                  0
+                ],
+                [
+                  900,
+                  409
+                ]
+              ],
+              "pair": [
+                1,
+                4
+              ],
+              "type": [
+                1,
+                4
+              ]
+            },
+            {
+              "segment": [
+                [
+                  900,
+                  409
+                ],
+                [
+                  900,
+                  600
+                ]
+              ],
+              "pair": [
+                1,
+                2
+              ],
+              "type": [
+                1,
+                2
+              ]
+            },
+            {
+              "segment": [
+                [
+                  900,
+                  600
+                ],
+                [
+                  337,
+                  600
+                ]
+              ],
+              "pair": [
+                1,
+                2
+              ],
+              "type": [
+                1,
+                2
+              ]
+            },
+            {
+              "segment": [
+                [
+                  337,
+                  600
+                ],
+                [
+                  175,
+                  600
+                ]
+              ],
+              "pair": [
+                1,
+                3
+              ],
+              "type": [
+                1,
+                3
+              ]
+            },
+            {
+              "segment": [
+                [
+                  175,
+                  600
+                ],
+                [
+                  0,
+                  600
+                ]
+              ],
+              "pair": [
+                1,
+                4
+              ],
+              "type": [
+                1,
+                4
+              ]
+            },
+            {
+              "segment": [
+                [
+                  0,
+                  600
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "pair": [
+                1,
+                4
+              ],
+              "type": [
+                1,
+                4
+              ]
+            }
+          ],
+          "after": [
+            {
+              "segment": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  175,
+                  0
+                ]
+              ],
+              "pair": [
+                1,
+                4
+              ],
+              "type": [
+                1,
+                4
+              ]
+            },
+            {
+              "segment": [
+                [
+                  175,
+                  0
+                ],
+                [
+                  337,
+                  0
+                ]
+              ],
+              "pair": [
+                1,
+                2
+              ],
+              "type": [
+                1,
+                2
+              ]
+            },
+            {
+              "segment": [
+                [
+                  337,
+                  0
+                ],
+                [
+                  900,
+                  0
+                ]
+              ],
+              "pair": [
+                1,
+                4
+              ],
+              "type": [
+                1,
+                4
+              ]
+            },
+            {
+              "segment": [
+                [
+                  900,
+                  0
+                ],
+                [
+                  900,
+                  409
+                ]
+              ],
+              "pair": [
+                1,
+                4
+              ],
+              "type": [
+                1,
+                4
+              ]
+            },
+            {
+              "segment": [
+                [
+                  900,
+                  409
+                ],
+                [
+                  900,
+                  600
+                ]
+              ],
+              "pair": [
+                1,
+                2
+              ],
+              "type": [
+                1,
+                2
+              ]
+            },
+            {
+              "segment": [
+                [
+                  900,
+                  600
+                ],
+                [
+                  337,
+                  600
+                ]
+              ],
+              "pair": [
+                1,
+                2
+              ],
+              "type": [
+                1,
+                2
+              ]
+            },
+            {
+              "segment": [
+                [
+                  337,
+                  600
+                ],
+                [
+                  175,
+                  600
+                ]
+              ],
+              "pair": [
+                1,
+                3
+              ],
+              "type": [
+                1,
+                3
+              ]
+            },
+            {
+              "segment": [
+                [
+                  175,
+                  600
+                ],
+                [
+                  0,
+                  600
+                ]
+              ],
+              "pair": [
+                1,
+                4
+              ],
+              "type": [
+                1,
+                4
+              ]
+            },
+            {
+              "segment": [
+                [
+                  0,
+                  600
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "pair": [
+                1,
+                4
+              ],
+              "type": [
+                1,
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "mother": "cut-1",
+          "before": [
+            {
+              "segment": [
+                [
+                  337,
+                  0
+                ],
+                [
+                  337,
+                  409
+                ]
+              ],
+              "pair": [
+                4,
+                3
+              ],
+              "type": [
+                3,
+                4
+              ]
+            },
+            {
+              "segment": [
+                [
+                  337,
+                  409
+                ],
+                [
+                  337,
+                  600
+                ]
+              ],
+              "pair": [
+                2,
+                3
+              ],
+              "type": [
+                2,
+                3
+              ]
+            }
+          ],
+          "after": [
+            {
+              "segment": [
+                [
+                  337,
+                  0
+                ],
+                [
+                  337,
+                  219
+                ]
+              ],
+              "pair": [
+                4,
+                2
+              ],
+              "type": [
+                2,
+                4
+              ]
+            },
+            {
+              "segment": [
+                [
+                  337,
+                  219
+                ],
+                [
+                  337,
+                  409
+                ]
+              ],
+              "pair": [
+                4,
+                3
+              ],
+              "type": [
+                3,
+                4
+              ]
+            },
+            {
+              "segment": [
+                [
+                  337,
+                  409
+                ],
+                [
+                  337,
+                  600
+                ]
+              ],
+              "pair": [
+                2,
+                3
+              ],
+              "type": [
+                2,
+                3
+              ]
+            }
+          ]
+        },
+        {
+          "mother": "cut-3",
+          "before": [
+            {
+              "segment": [
+                [
+                  175,
+                  0
+                ],
+                [
+                  175,
+                  600
+                ]
+              ],
+              "pair": [
+                3,
+                4
+              ],
+              "type": [
+                3,
+                4
+              ]
+            }
+          ],
+          "after": [
+            {
+              "segment": [
+                [
+                  175,
+                  0
+                ],
+                [
+                  175,
+                  219
+                ]
+              ],
+              "pair": [
+                2,
+                4
+              ],
+              "type": [
+                2,
+                4
+              ]
+            },
+            {
+              "segment": [
+                [
+                  175,
+                  219
+                ],
+                [
+                  175,
+                  600
+                ]
+              ],
+              "pair": [
+                3,
+                4
+              ],
+              "type": [
+                3,
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "mother": "cut-4",
+          "before": [],
+          "after": [
+            {
+              "segment": [
+                [
+                  175,
+                  219
+                ],
+                [
+                  337,
+                  219
+                ]
+              ],
+              "pair": [
+                2,
+                3
+              ],
+              "type": [
+                2,
+                3
+              ]
+            }
+          ]
+        }
+      ],
+      "new_line_pair": [
+        2,
+        3
+      ],
+      "new_line_type": [
+        2,
+        3
+      ],
+      "conflicts": [],
+      "actual_inherit": "right",
+      "new_name": 2,
+      "changed_old_count": 0
+    },
+    "changed_old_sides": [
+      {
+        "id": "root.r.r",
+        "before": 2,
+        "after": 4
+      }
+    ],
+    "changed_old_side_ids": [
+      "root.r.r"
+    ],
+    "line_profiles_before": {
+      "frame": [
+        {
+          "segment": [
+            [
+              0,
+              0
+            ],
+            [
+              175,
+              0
+            ]
+          ],
+          "pair": [
+            1,
+            2
+          ],
+          "type": [
+            1,
+            2
+          ]
+        },
+        {
+          "segment": [
+            [
+              175,
+              0
+            ],
+            [
+              337,
+              0
+            ]
+          ],
+          "pair": [
+            1,
+            3
+          ],
+          "type": [
+            1,
+            3
+          ]
+        },
+        {
+          "segment": [
+            [
+              337,
+              0
+            ],
+            [
+              900,
+              0
+            ]
+          ],
+          "pair": [
+            1,
+            4
+          ],
+          "type": [
+            1,
+            4
+          ]
+        },
+        {
+          "segment": [
+            [
+              900,
+              0
+            ],
+            [
+              900,
+              409
+            ]
+          ],
+          "pair": [
+            1,
+            4
+          ],
+          "type": [
+            1,
+            4
+          ]
+        },
+        {
+          "segment": [
+            [
+              900,
+              409
+            ],
+            [
+              900,
+              600
+            ]
+          ],
+          "pair": [
+            1,
+            2
+          ],
+          "type": [
+            1,
+            2
+          ]
+        },
+        {
+          "segment": [
+            [
+              900,
+              600
+            ],
+            [
+              337,
+              600
+            ]
+          ],
+          "pair": [
+            1,
+            2
+          ],
+          "type": [
+            1,
+            2
+          ]
+        },
+        {
+          "segment": [
+            [
+              337,
+              600
+            ],
+            [
+              175,
+              600
+            ]
+          ],
+          "pair": [
+            1,
+            3
+          ],
+          "type": [
+            1,
+            3
+          ]
+        },
+        {
+          "segment": [
+            [
+              175,
+              600
+            ],
+            [
+              0,
+              600
+            ]
+          ],
+          "pair": [
+            1,
+            2
+          ],
+          "type": [
+            1,
+            2
+          ]
+        },
+        {
+          "segment": [
+            [
+              0,
+              600
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pair": [
+            1,
+            2
+          ],
+          "type": [
+            1,
+            2
+          ]
+        }
+      ],
+      "cut-1": [
+        {
+          "segment": [
+            [
+              337,
+              0
+            ],
+            [
+              337,
+              409
+            ]
+          ],
+          "pair": [
+            4,
+            3
+          ],
+          "type": [
+            3,
+            4
+          ]
+        },
+        {
+          "segment": [
+            [
+              337,
+              409
+            ],
+            [
+              337,
+              600
+            ]
+          ],
+          "pair": [
+            2,
+            3
+          ],
+          "type": [
+            2,
+            3
+          ]
+        }
+      ],
+      "cut-2": [
+        {
+          "segment": [
+            [
+              337,
+              409
+            ],
+            [
+              900,
+              409
+            ]
+          ],
+          "pair": [
+            4,
+            2
+          ],
+          "type": [
+            2,
+            4
+          ]
+        }
+      ],
+      "cut-3": [
+        {
+          "segment": [
+            [
+              175,
+              0
+            ],
+            [
+              175,
+              600
+            ]
+          ],
+          "pair": [
+            3,
+            2
+          ],
+          "type": [
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    "line_profiles_after": {
+      "frame": [
+        {
+          "segment": [
+            [
+              0,
+              0
+            ],
+            [
+              175,
+              0
+            ]
+          ],
+          "pair": [
+            1,
+            4
+          ],
+          "type": [
+            1,
+            4
+          ]
+        },
+        {
+          "segment": [
+            [
+              175,
+              0
+            ],
+            [
+              337,
+              0
+            ]
+          ],
+          "pair": [
+            1,
+            2
+          ],
+          "type": [
+            1,
+            2
+          ]
+        },
+        {
+          "segment": [
+            [
+              337,
+              0
+            ],
+            [
+              900,
+              0
+            ]
+          ],
+          "pair": [
+            1,
+            4
+          ],
+          "type": [
+            1,
+            4
+          ]
+        },
+        {
+          "segment": [
+            [
+              900,
+              0
+            ],
+            [
+              900,
+              409
+            ]
+          ],
+          "pair": [
+            1,
+            4
+          ],
+          "type": [
+            1,
+            4
+          ]
+        },
+        {
+          "segment": [
+            [
+              900,
+              409
+            ],
+            [
+              900,
+              600
+            ]
+          ],
+          "pair": [
+            1,
+            2
+          ],
+          "type": [
+            1,
+            2
+          ]
+        },
+        {
+          "segment": [
+            [
+              900,
+              600
+            ],
+            [
+              337,
+              600
+            ]
+          ],
+          "pair": [
+            1,
+            2
+          ],
+          "type": [
+            1,
+            2
+          ]
+        },
+        {
+          "segment": [
+            [
+              337,
+              600
+            ],
+            [
+              175,
+              600
+            ]
+          ],
+          "pair": [
+            1,
+            3
+          ],
+          "type": [
+            1,
+            3
+          ]
+        },
+        {
+          "segment": [
+            [
+              175,
+              600
+            ],
+            [
+              0,
+              600
+            ]
+          ],
+          "pair": [
+            1,
+            4
+          ],
+          "type": [
+            1,
+            4
+          ]
+        },
+        {
+          "segment": [
+            [
+              0,
+              600
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pair": [
+            1,
+            4
+          ],
+          "type": [
+            1,
+            4
+          ]
+        }
+      ],
+      "cut-1": [
+        {
+          "segment": [
+            [
+              337,
+              0
+            ],
+            [
+              337,
+              219
+            ]
+          ],
+          "pair": [
+            4,
+            2
+          ],
+          "type": [
+            2,
+            4
+          ]
+        },
+        {
+          "segment": [
+            [
+              337,
+              219
+            ],
+            [
+              337,
+              409
+            ]
+          ],
+          "pair": [
+            4,
+            3
+          ],
+          "type": [
+            3,
+            4
+          ]
+        },
+        {
+          "segment": [
+            [
+              337,
+              409
+            ],
+            [
+              337,
+              600
+            ]
+          ],
+          "pair": [
+            2,
+            3
+          ],
+          "type": [
+            2,
+            3
+          ]
+        }
+      ],
+      "cut-2": [
+        {
+          "segment": [
+            [
+              337,
+              409
+            ],
+            [
+              900,
+              409
+            ]
+          ],
+          "pair": [
+            4,
+            2
+          ],
+          "type": [
+            2,
+            4
+          ]
+        }
+      ],
+      "cut-3": [
+        {
+          "segment": [
+            [
+              175,
+              0
+            ],
+            [
+              175,
+              219
+            ]
+          ],
+          "pair": [
+            2,
+            4
+          ],
+          "type": [
+            2,
+            4
+          ]
+        },
+        {
+          "segment": [
+            [
+              175,
+              219
+            ],
+            [
+              175,
+              600
+            ]
+          ],
+          "pair": [
+            3,
+            4
+          ],
+          "type": [
+            3,
+            4
+          ]
+        }
+      ],
+      "cut-4": [
+        {
+          "segment": [
+            [
+              175,
+              219
+            ],
+            [
+              337,
+              219
+            ]
+          ],
+          "pair": [
+            2,
+            3
+          ],
+          "type": [
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    "profile_changes": [
+      {
+        "mother": "frame",
+        "before": [
+          {
+            "segment": [
+              [
+                0,
+                0
+              ],
+              [
+                175,
+                0
+              ]
+            ],
+            "pair": [
+              1,
+              2
+            ],
+            "type": [
+              1,
+              2
+            ]
+          },
+          {
+            "segment": [
+              [
+                175,
+                0
+              ],
+              [
+                337,
+                0
+              ]
+            ],
+            "pair": [
+              1,
+              3
+            ],
+            "type": [
+              1,
+              3
+            ]
+          },
+          {
+            "segment": [
+              [
+                337,
+                0
+              ],
+              [
+                900,
+                0
+              ]
+            ],
+            "pair": [
+              1,
+              4
+            ],
+            "type": [
+              1,
+              4
+            ]
+          },
+          {
+            "segment": [
+              [
+                900,
+                0
+              ],
+              [
+                900,
+                409
+              ]
+            ],
+            "pair": [
+              1,
+              4
+            ],
+            "type": [
+              1,
+              4
+            ]
+          },
+          {
+            "segment": [
+              [
+                900,
+                409
+              ],
+              [
+                900,
+                600
+              ]
+            ],
+            "pair": [
+              1,
+              2
+            ],
+            "type": [
+              1,
+              2
+            ]
+          },
+          {
+            "segment": [
+              [
+                900,
+                600
+              ],
+              [
+                337,
+                600
+              ]
+            ],
+            "pair": [
+              1,
+              2
+            ],
+            "type": [
+              1,
+              2
+            ]
+          },
+          {
+            "segment": [
+              [
+                337,
+                600
+              ],
+              [
+                175,
+                600
+              ]
+            ],
+            "pair": [
+              1,
+              3
+            ],
+            "type": [
+              1,
+              3
+            ]
+          },
+          {
+            "segment": [
+              [
+                175,
+                600
+              ],
+              [
+                0,
+                600
+              ]
+            ],
+            "pair": [
+              1,
+              2
+            ],
+            "type": [
+              1,
+              2
+            ]
+          },
+          {
+            "segment": [
+              [
+                0,
+                600
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "pair": [
+              1,
+              2
+            ],
+            "type": [
+              1,
+              2
+            ]
+          }
+        ],
+        "after": [
+          {
+            "segment": [
+              [
+                0,
+                0
+              ],
+              [
+                175,
+                0
+              ]
+            ],
+            "pair": [
+              1,
+              4
+            ],
+            "type": [
+              1,
+              4
+            ]
+          },
+          {
+            "segment": [
+              [
+                175,
+                0
+              ],
+              [
+                337,
+                0
+              ]
+            ],
+            "pair": [
+              1,
+              2
+            ],
+            "type": [
+              1,
+              2
+            ]
+          },
+          {
+            "segment": [
+              [
+                337,
+                0
+              ],
+              [
+                900,
+                0
+              ]
+            ],
+            "pair": [
+              1,
+              4
+            ],
+            "type": [
+              1,
+              4
+            ]
+          },
+          {
+            "segment": [
+              [
+                900,
+                0
+              ],
+              [
+                900,
+                409
+              ]
+            ],
+            "pair": [
+              1,
+              4
+            ],
+            "type": [
+              1,
+              4
+            ]
+          },
+          {
+            "segment": [
+              [
+                900,
+                409
+              ],
+              [
+                900,
+                600
+              ]
+            ],
+            "pair": [
+              1,
+              2
+            ],
+            "type": [
+              1,
+              2
+            ]
+          },
+          {
+            "segment": [
+              [
+                900,
+                600
+              ],
+              [
+                337,
+                600
+              ]
+            ],
+            "pair": [
+              1,
+              2
+            ],
+            "type": [
+              1,
+              2
+            ]
+          },
+          {
+            "segment": [
+              [
+                337,
+                600
+              ],
+              [
+                175,
+                600
+              ]
+            ],
+            "pair": [
+              1,
+              3
+            ],
+            "type": [
+              1,
+              3
+            ]
+          },
+          {
+            "segment": [
+              [
+                175,
+                600
+              ],
+              [
+                0,
+                600
+              ]
+            ],
+            "pair": [
+              1,
+              4
+            ],
+            "type": [
+              1,
+              4
+            ]
+          },
+          {
+            "segment": [
+              [
+                0,
+                600
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "pair": [
+              1,
+              4
+            ],
+            "type": [
+              1,
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "mother": "cut-1",
+        "before": [
+          {
+            "segment": [
+              [
+                337,
+                0
+              ],
+              [
+                337,
+                409
+              ]
+            ],
+            "pair": [
+              4,
+              3
+            ],
+            "type": [
+              3,
+              4
+            ]
+          },
+          {
+            "segment": [
+              [
+                337,
+                409
+              ],
+              [
+                337,
+                600
+              ]
+            ],
+            "pair": [
+              2,
+              3
+            ],
+            "type": [
+              2,
+              3
+            ]
+          }
+        ],
+        "after": [
+          {
+            "segment": [
+              [
+                337,
+                0
+              ],
+              [
+                337,
+                219
+              ]
+            ],
+            "pair": [
+              4,
+              2
+            ],
+            "type": [
+              2,
+              4
+            ]
+          },
+          {
+            "segment": [
+              [
+                337,
+                219
+              ],
+              [
+                337,
+                409
+              ]
+            ],
+            "pair": [
+              4,
+              3
+            ],
+            "type": [
+              3,
+              4
+            ]
+          },
+          {
+            "segment": [
+              [
+                337,
+                409
+              ],
+              [
+                337,
+                600
+              ]
+            ],
+            "pair": [
+              2,
+              3
+            ],
+            "type": [
+              2,
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "mother": "cut-3",
+        "before": [
+          {
+            "segment": [
+              [
+                175,
+                0
+              ],
+              [
+                175,
+                600
+              ]
+            ],
+            "pair": [
+              3,
+              2
+            ],
+            "type": [
+              2,
+              3
+            ]
+          }
+        ],
+        "after": [
+          {
+            "segment": [
+              [
+                175,
+                0
+              ],
+              [
+                175,
+                219
+              ]
+            ],
+            "pair": [
+              2,
+              4
+            ],
+            "type": [
+              2,
+              4
+            ]
+          },
+          {
+            "segment": [
+              [
+                175,
+                219
+              ],
+              [
+                175,
+                600
+              ]
+            ],
+            "pair": [
+              3,
+              4
+            ],
+            "type": [
+              3,
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "mother": "cut-4",
+        "before": [],
+        "after": [
+          {
+            "segment": [
+              [
+                175,
+                219
+              ],
+              [
+                337,
+                219
+              ]
+            ],
+            "pair": [
+              2,
+              3
+            ],
+            "type": [
+              2,
+              3
+            ]
+          }
+        ]
+      }
+    ],
+    "new_line_pair": [
+      2,
+      3
+    ],
+    "new_line_type": [
+      2,
+      3
+    ],
+    "conflicts": [],
+    "actual_inherit": "right",
+    "new_name": 2,
+    "changed_old_count": 1
+  },
+  "stop_event": {
+    "method": "current_direct",
+    "cut": [
+      [
+        391,
+        439
+      ],
+      [
+        391,
+        489
+      ]
+    ],
+    "parent": "root.r.r.l",
+    "s": 3,
+    "endpoint_incidence": [
+      {
+        "point": [
+          391,
+          439
+        ],
+        "incident_mothers": [
+          {
+            "id": "cut-2",
+            "is_frame": false,
+            "segment": [
+              [
+                0,
+                439
+              ],
+              [
+                900,
+                439
+              ]
+            ],
+            "position": "interior"
+          }
+        ],
+        "frame_segments": [],
+        "incident_old_sides": [
+          {
+            "id": "root.r.l",
+            "symbol": 2,
+            "bounds": [
+              0,
+              212,
+              900,
+              439
+            ],
+            "boundary_segments": [
+              {
+                "edge": "bottom",
+                "segment": [
+                  [
+                    900,
+                    439
+                  ],
+                  [
+                    0,
+                    439
+                  ]
+                ],
+                "position": "interior"
+              }
+            ],
+            "contact_position": "edge_interior"
+          },
+          {
+            "id": "root.r.r.l",
+            "symbol": 3,
+            "bounds": [
+              0,
+              439,
+              900,
+              489
+            ],
+            "boundary_segments": [
+              {
+                "edge": "top",
+                "segment": [
+                  [
+                    0,
+                    439
+                  ],
+                  [
+                    900,
+                    439
+                  ]
+                ],
+                "position": "interior"
+              }
+            ],
+            "contact_position": "edge_interior"
+          }
+        ],
+        "closed_incidence_only": true,
+        "creates_color_constraint": false
+      },
+      {
+        "point": [
+          391,
+          489
+        ],
+        "incident_mothers": [
+          {
+            "id": "cut-3",
+            "is_frame": false,
+            "segment": [
+              [
+                0,
+                489
+              ],
+              [
+                900,
+                489
+              ]
+            ],
+            "position": "interior"
+          }
+        ],
+        "frame_segments": [],
+        "incident_old_sides": [
+          {
+            "id": "root.r.r.l",
+            "symbol": 3,
+            "bounds": [
+              0,
+              439,
+              900,
+              489
+            ],
+            "boundary_segments": [
+              {
+                "edge": "bottom",
+                "segment": [
+                  [
+                    900,
+                    489
+                  ],
+                  [
+                    0,
+                    489
+                  ]
+                ],
+                "position": "interior"
+              }
+            ],
+            "contact_position": "edge_interior"
+          },
+          {
+            "id": "root.r.r.r.r",
+            "symbol": 4,
+            "bounds": [
+              0,
+              489,
+              423,
+              600
+            ],
+            "boundary_segments": [
+              {
+                "edge": "top",
+                "segment": [
+                  [
+                    0,
+                    489
+                  ],
+                  [
+                    423,
+                    489
+                  ]
+                ],
+                "position": "interior"
+              }
+            ],
+            "contact_position": "edge_interior"
+          }
+        ],
+        "closed_incidence_only": true,
+        "creates_color_constraint": false
+      }
+    ],
+    "initial_candidates": [
+      {
+        "child_id": "root.r.r.l.r",
+        "bounds": [
+          0,
+          439,
+          391,
+          489
+        ],
+        "old_neighbor_ids": [
+          "outside",
+          "root.r.l",
+          "root.r.r.r.r"
+        ],
+        "R": [
+          1,
+          2,
+          4
+        ],
+        "available_names": []
+      },
+      {
+        "child_id": "root.r.r.l.l",
+        "bounds": [
+          391,
+          439,
+          900,
+          489
+        ],
+        "old_neighbor_ids": [
+          "outside",
+          "root.r.l",
+          "root.r.r.r.l",
+          "root.r.r.r.r"
+        ],
+        "R": [
+          1,
+          2,
+          4
+        ],
+        "available_names": []
+      }
+    ],
+    "max_old_sides": 3,
+    "release_enabled": true,
+    "release_trace": [],
+    "selection_order": [
+      "new_name_introduction",
+      "numeric_name",
+      "bounds"
+    ],
+    "release_stop_reason": "locally_stable",
+    "release_budget_blocked_ids": [],
+    "release_potential": [
+      23,
+      23
+    ],
+    "candidates": [
+      {
+        "child_id": "root.r.r.l.r",
+        "bounds": [
+          0,
+          439,
+          391,
+          489
+        ],
+        "old_neighbor_ids": [
+          "outside",
+          "root.r.l",
+          "root.r.r.r.r"
+        ],
+        "R": [
+          1,
+          2,
+          4
+        ],
+        "available_names": []
+      },
+      {
+        "child_id": "root.r.r.l.l",
+        "bounds": [
+          391,
+          439,
+          900,
+          489
+        ],
+        "old_neighbor_ids": [
+          "outside",
+          "root.r.l",
+          "root.r.r.r.l",
+          "root.r.r.r.r"
+        ],
+        "R": [
+          1,
+          2,
+          4
+        ],
+        "available_names": []
+      }
+    ],
+    "fixed_common_interfaces": [
+      {
+        "id": "outside",
+        "name": 1
+      },
+      {
+        "id": "root.r.l",
+        "name": 2
+      },
+      {
+        "id": "root.r.r.r.r",
+        "name": 4
+      }
+    ],
+    "reason": "no_safe_shared_interface_release",
+    "normalization_preview": {
+      "width": 900,
+      "height": 600,
+      "cuts": [
+        [
+          [
+            0,
+            212
+          ],
+          [
+            900,
+            212
+          ]
+        ],
+        [
+          [
+            0,
+            439
+          ],
+          [
+            900,
+            439
+          ]
+        ],
+        [
+          [
+            0,
+            489
+          ],
+          [
+            900,
+            489
+          ]
+        ],
+        [
+          [
+            308,
+            0
+          ],
+          [
+            308,
+            212
+          ]
+        ],
+        [
+          [
+            688,
+            0
+          ],
+          [
+            688,
+            212
+          ]
+        ],
+        [
+          [
+            423,
+            489
+          ],
+          [
+            423,
+            600
+          ]
+        ]
+      ],
+      "sides": [
+        {
+          "id": "root.r.l",
+          "bounds": [
+            0,
+            212,
+            900,
+            439
+          ],
+          "symbol": 2
+        },
+        {
+          "id": "root.r.r.l",
+          "bounds": [
+            0,
+            439,
+            900,
+            489
+          ],
+          "symbol": 3
+        },
+        {
+          "id": "root.l.r",
+          "bounds": [
+            0,
+            0,
+            308,
+            212
+          ],
+          "symbol": 4
+        },
+        {
+          "id": "root.l.l.l",
+          "bounds": [
+            688,
+            0,
+            900,
+            212
+          ],
+          "symbol": 4
+        },
+        {
+          "id": "root.l.l.r",
+          "bounds": [
+            308,
+            0,
+            688,
+            212
+          ],
+          "symbol": 3
+        },
+        {
+          "id": "root.r.r.r.l",
+          "bounds": [
+            423,
+            489,
+            900,
+            600
+          ],
+          "symbol": 2
+        },
+        {
+          "id": "root.r.r.r.r",
+          "bounds": [
+            0,
+            489,
+            423,
+            600
+          ],
+          "symbol": 4
+        }
+      ]
+    },
+    "scope": "this deterministic policy and budget only",
+    "shared_release_attempted": true,
+    "shared_release_candidates": [
+      {
+        "id": "root.r.l",
+        "current": 2,
+        "common_name_multiplicity": 1,
+        "neighbor_names": {
+          "outside": 1,
+          "root.l.l.l": 4,
+          "root.l.l.r": 3,
+          "root.l.r": 4,
+          "root.r.r.l": 3
+        },
+        "targets": [],
+        "budget_ok": true
+      },
+      {
+        "id": "root.r.r.r.r",
+        "current": 4,
+        "common_name_multiplicity": 1,
+        "neighbor_names": {
+          "outside": 1,
+          "root.r.r.l": 3,
+          "root.r.r.r.l": 2
+        },
+        "targets": [],
+        "budget_ok": true
+      }
+    ]
+  },
+  "records": [
+    {
+      "key": "repair-before",
+      "certificate": {
+        "state": {
+          "width": 900,
+          "height": 600,
+          "cuts": [
+            [
+              [
+                337,
+                0
+              ],
+              [
+                337,
+                600
+              ]
+            ],
+            [
+              [
+                337,
+                409
+              ],
+              [
+                900,
+                409
+              ]
+            ],
+            [
+              [
+                175,
+                0
+              ],
+              [
+                175,
+                600
+              ]
+            ]
+          ],
+          "sides": [
+            {
+              "id": "root.l.l",
+              "bounds": [
+                337,
+                0,
+                900,
+                409
+              ],
+              "symbol": 4
+            },
+            {
+              "id": "root.l.r",
+              "bounds": [
+                337,
+                409,
+                900,
+                600
+              ],
+              "symbol": 2
+            },
+            {
+              "id": "root.r.l",
+              "bounds": [
+                175,
+                0,
+                337,
+                600
+              ],
+              "symbol": 3
+            },
+            {
+              "id": "root.r.r",
+              "bounds": [
+                0,
+                0,
+                175,
+                600
+              ],
+              "symbol": 2
+            }
+          ]
+        },
+        "independent_audit": {
+          "node_geometry": {
+            "key": "repair-before",
+            "rotation": [
+              [
+                17,
+                0
+              ],
+              [
+                1,
+                24,
+                2
+              ],
+              [
+                3,
+                18,
+                4
+              ],
+              [
+                5,
+                6
+              ],
+              [
+                23,
+                8,
+                7
+              ],
+              [
+                10,
+                9
+              ],
+              [
+                12,
+                11,
+                21
+              ],
+              [
+                14,
+                13,
+                25
+              ],
+              [
+                15,
+                16
+              ],
+              [
+                20,
+                22,
+                19
+              ]
+            ],
+            "names": [
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "3"
+              ],
+              [
+                "1",
+                "4"
+              ],
+              [
+                "1",
+                "4"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "3"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "4",
+                "3"
+              ],
+              [
+                "2",
+                "3"
+              ],
+              [
+                "4",
+                "2"
+              ],
+              [
+                "3",
+                "2"
+              ]
+            ],
+            "edge_conflicts": [],
+            "face_count": 5,
+            "errors": []
+          },
+          "python_status": "consistent",
+          "python_side_orbits": [
+            [
+              0,
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              14,
+              16
+            ],
+            [
+              1,
+              17,
+              15,
+              25
+            ],
+            [
+              3,
+              24,
+              13,
+              21,
+              19
+            ],
+            [
+              5,
+              18,
+              22,
+              7
+            ],
+            [
+              9,
+              23,
+              20,
+              11
+            ]
+          ],
+          "node_certificate_sha256": "e50c12db97fcfe63da9fc5c9c08fdb70407a9660b6fcf8dd69b89f8840272522"
+        }
+      }
+    },
+    {
+      "key": "repair-after",
+      "certificate": {
+        "state": {
+          "width": 900,
+          "height": 600,
+          "cuts": [
+            [
+              [
+                337,
+                0
+              ],
+              [
+                337,
+                600
+              ]
+            ],
+            [
+              [
+                337,
+                409
+              ],
+              [
+                900,
+                409
+              ]
+            ],
+            [
+              [
+                175,
+                0
+              ],
+              [
+                175,
+                600
+              ]
+            ],
+            [
+              [
+                175,
+                219
+              ],
+              [
+                337,
+                219
+              ]
+            ]
+          ],
+          "sides": [
+            {
+              "id": "root.l.l",
+              "bounds": [
+                337,
+                0,
+                900,
+                409
+              ],
+              "symbol": 4
+            },
+            {
+              "id": "root.l.r",
+              "bounds": [
+                337,
+                409,
+                900,
+                600
+              ],
+              "symbol": 2
+            },
+            {
+              "id": "root.r.r",
+              "bounds": [
+                0,
+                0,
+                175,
+                600
+              ],
+              "symbol": 4
+            },
+            {
+              "id": "root.r.l.l",
+              "bounds": [
+                175,
+                0,
+                337,
+                219
+              ],
+              "symbol": 2
+            },
+            {
+              "id": "root.r.l.r",
+              "bounds": [
+                175,
+                219,
+                337,
+                600
+              ],
+              "symbol": 3
+            }
+          ]
+        },
+        "independent_audit": {
+          "node_geometry": {
+            "key": "repair-after",
+            "rotation": [
+              [
+                17,
+                0
+              ],
+              [
+                1,
+                26,
+                2
+              ],
+              [
+                3,
+                18,
+                4
+              ],
+              [
+                5,
+                6
+              ],
+              [
+                25,
+                8,
+                7
+              ],
+              [
+                10,
+                9
+              ],
+              [
+                12,
+                11,
+                23
+              ],
+              [
+                14,
+                13,
+                29
+              ],
+              [
+                15,
+                16
+              ],
+              [
+                31,
+                20,
+                19
+              ],
+              [
+                22,
+                24,
+                21
+              ],
+              [
+                28,
+                30,
+                27
+              ]
+            ],
+            "names": [
+              [
+                "1",
+                "4"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "4"
+              ],
+              [
+                "1",
+                "4"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "3"
+              ],
+              [
+                "1",
+                "4"
+              ],
+              [
+                "1",
+                "4"
+              ],
+              [
+                "4",
+                "2"
+              ],
+              [
+                "4",
+                "3"
+              ],
+              [
+                "2",
+                "3"
+              ],
+              [
+                "4",
+                "2"
+              ],
+              [
+                "2",
+                "4"
+              ],
+              [
+                "3",
+                "4"
+              ],
+              [
+                "2",
+                "3"
+              ]
+            ],
+            "edge_conflicts": [],
+            "face_count": 6,
+            "errors": []
+          },
+          "python_status": "consistent",
+          "python_side_orbits": [
+            [
+              0,
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              14,
+              16
+            ],
+            [
+              1,
+              17,
+              15,
+              29,
+              27
+            ],
+            [
+              3,
+              26,
+              30,
+              19
+            ],
+            [
+              5,
+              18,
+              20,
+              24,
+              7
+            ],
+            [
+              9,
+              25,
+              22,
+              11
+            ],
+            [
+              13,
+              23,
+              21,
+              31,
+              28
+            ]
+          ],
+          "node_certificate_sha256": "96caf869e33dca96246567494ef44fc5466e94d5817310dfe123dc4743914ac0"
+        }
+      }
+    },
+    {
+      "key": "still-blocked-before",
+      "certificate": {
+        "state": {
+          "width": 900,
+          "height": 600,
+          "cuts": [
+            [
+              [
+                0,
+                212
+              ],
+              [
+                900,
+                212
+              ]
+            ],
+            [
+              [
+                0,
+                439
+              ],
+              [
+                900,
+                439
+              ]
+            ],
+            [
+              [
+                0,
+                489
+              ],
+              [
+                900,
+                489
+              ]
+            ],
+            [
+              [
+                308,
+                0
+              ],
+              [
+                308,
+                212
+              ]
+            ],
+            [
+              [
+                688,
+                0
+              ],
+              [
+                688,
+                212
+              ]
+            ],
+            [
+              [
+                423,
+                489
+              ],
+              [
+                423,
+                600
+              ]
+            ]
+          ],
+          "sides": [
+            {
+              "id": "root.r.l",
+              "bounds": [
+                0,
+                212,
+                900,
+                439
+              ],
+              "symbol": 2
+            },
+            {
+              "id": "root.r.r.l",
+              "bounds": [
+                0,
+                439,
+                900,
+                489
+              ],
+              "symbol": 3
+            },
+            {
+              "id": "root.l.r",
+              "bounds": [
+                0,
+                0,
+                308,
+                212
+              ],
+              "symbol": 4
+            },
+            {
+              "id": "root.l.l.l",
+              "bounds": [
+                688,
+                0,
+                900,
+                212
+              ],
+              "symbol": 4
+            },
+            {
+              "id": "root.l.l.r",
+              "bounds": [
+                308,
+                0,
+                688,
+                212
+              ],
+              "symbol": 3
+            },
+            {
+              "id": "root.r.r.r.l",
+              "bounds": [
+                423,
+                489,
+                900,
+                600
+              ],
+              "symbol": 2
+            },
+            {
+              "id": "root.r.r.r.r",
+              "bounds": [
+                0,
+                489,
+                423,
+                600
+              ],
+              "symbol": 4
+            }
+          ]
+        },
+        "independent_audit": {
+          "node_geometry": {
+            "key": "still-blocked-before",
+            "rotation": [
+              [
+                25,
+                0
+              ],
+              [
+                1,
+                38,
+                2
+              ],
+              [
+                3,
+                40,
+                4
+              ],
+              [
+                5,
+                6
+              ],
+              [
+                31,
+                8,
+                7
+              ],
+              [
+                33,
+                10,
+                9
+              ],
+              [
+                37,
+                12,
+                11
+              ],
+              [
+                14,
+                13
+              ],
+              [
+                16,
+                15,
+                43
+              ],
+              [
+                17,
+                18
+              ],
+              [
+                19,
+                34,
+                20
+              ],
+              [
+                21,
+                32,
+                22
+              ],
+              [
+                23,
+                26,
+                24
+              ],
+              [
+                27,
+                28,
+                39
+              ],
+              [
+                29,
+                30,
+                41
+              ],
+              [
+                35,
+                42,
+                36
+              ]
+            ],
+            "names": [
+              [
+                "1",
+                "4"
+              ],
+              [
+                "1",
+                "3"
+              ],
+              [
+                "1",
+                "4"
+              ],
+              [
+                "1",
+                "4"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "3"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "4"
+              ],
+              [
+                "1",
+                "4"
+              ],
+              [
+                "1",
+                "3"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "4"
+              ],
+              [
+                "4",
+                "2"
+              ],
+              [
+                "3",
+                "2"
+              ],
+              [
+                "4",
+                "2"
+              ],
+              [
+                "2",
+                "3"
+              ],
+              [
+                "3",
+                "4"
+              ],
+              [
+                "3",
+                "2"
+              ],
+              [
+                "3",
+                "4"
+              ],
+              [
+                "4",
+                "3"
+              ],
+              [
+                "2",
+                "4"
+              ]
+            ],
+            "edge_conflicts": [],
+            "face_count": 8,
+            "errors": []
+          },
+          "python_status": "consistent",
+          "python_side_orbits": [
+            [
+              0,
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              14,
+              16,
+              18,
+              20,
+              22,
+              24
+            ],
+            [
+              1,
+              25,
+              26,
+              39
+            ],
+            [
+              3,
+              38,
+              28,
+              41
+            ],
+            [
+              5,
+              40,
+              30,
+              7
+            ],
+            [
+              9,
+              31,
+              29,
+              27,
+              23,
+              32
+            ],
+            [
+              11,
+              33,
+              21,
+              34,
+              36
+            ],
+            [
+              13,
+              37,
+              42,
+              15
+            ],
+            [
+              17,
+              43,
+              35,
+              19
+            ]
+          ],
+          "node_certificate_sha256": "e617ad7d5e51f1f76638586c538c173ff5e3917f47f14bc802355fe4e5c69ac0"
+        }
+      }
+    }
+  ],
+  "files": [
+    {
+      "filename": "shared-interface-success.png",
+      "sha256": "09dea87dd32ed8330e2de8a6a7048d3dde97c28a5c9abcafe321f5047fd34c79",
+      "width_px": 1900,
+      "height_px": 950
+    },
+    {
+      "filename": "shared-interface-success.svg",
+      "sha256": "c17b8e35a58718d428e1937998ab4473b31178994f2632c6de75c2c38da9ae32",
+      "width_px": 1900,
+      "height_px": 950
+    },
+    {
+      "filename": "still-blocked-20260908.png",
+      "sha256": "7922c3ab15ad3a283aa2b16344132395d233a656e85c168c23a895a7c837911c",
+      "width_px": 1650,
+      "height_px": 960
+    },
+    {
+      "filename": "still-blocked-20260908.svg",
+      "sha256": "904296474a6254ca3f7ee73a2979574a8c47ca9cd8023a781e75e1a692356270",
+      "width_px": 1650,
+      "height_px": 960
+    }
+  ],
+  "font": "msyh.ttc",
+  "transform": "Exact uniform scale0.9 in comparison and1.0 in stopped case; x-right/y-down.",
+  "source_sha256": {
+    "scripts/render_current_cases.py": "02dd1799cbb60e4d2aad208b9ff9d285fead405efed094fccc5ddf4363ff9051",
+    "scripts/render_anchor_failure_cases.py": "8bdea94aa0f3f8ea101d1c139c47fcf6b645373d64e0da06ad0ea4a6fd8b7b5e",
+    "fourcolor/interface_names.py": "cd3d468c3feb75b2e0aa319d95177307aed53b4ce50bb0105c9dbee215e742c4",
+    "fourcolor/current_names.py": "6ed8422ff38e138e2d98d03d5da226a7b91ab3725bdab094349edee9d392d049",
+    "fourcolor/current_geometry.py": "b782c4bf35f31363bfc3e70a60670e17b94041e4dc267a6a2a177196db0509ae"
+  }
+}

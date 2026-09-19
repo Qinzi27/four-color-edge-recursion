@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="960" viewBox="0 0 1900 960">
+<rect width="100%" height="100%" fill="white"/>
+<text x="60" y="32" font-size="44" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">案例 C 更正｜先按最少复用从外圈重算</text>
+<text x="60" y="105" font-size="28" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">旧 3—4—2 合法但非最少；重算为 2—3—2 后，新竖线直接得到 (3,4)。</text>
+<text x="60" y="170" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">加竖线前：上、中、下 = 2、3、2</text>
+<text x="1010" y="170" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">加竖线后：中左 4，中右继承 3</text>
+<text x="60" y="218" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">外侧：1</text>
+<text x="1010" y="218" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">外侧：1</text>
+<polyline points="60,265 870,265 870,805 60,805 60,265" fill="none" stroke="#202831" stroke-width="5"/>
+<polyline points="60,586.3 870,586.3" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="132.9" y="555.7" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">L1</text>
+<polyline points="60,703.3 870,703.3" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="132.9" y="672.7" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">L2</text>
+<text x="465" y="402.65" font-size="43" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="465" y="621.8" font-size="43" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="465" y="731.15" font-size="43" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<polyline points="1010,265 1820,265 1820,805 1010,805 1010,265" fill="none" stroke="#202831" stroke-width="5"/>
+<polyline points="1010,586.3 1820,586.3" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="1082.9" y="555.7" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">L1</text>
+<polyline points="1010,703.3 1820,703.3" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="1082.9" y="672.7" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">L2</text>
+<polyline points="1407.8,586.3 1407.8,703.3" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="1418.6" y="595.66" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">L3</text>
+<text x="1415" y="402.65" font-size="43" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="1415" y="731.15" font-size="43" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="1613.9" y="621.8" font-size="43" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="1208.9" y="621.8" font-size="43" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<text x="60" y="835" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">含外侧只需 3 种；上下不相邻，可同名 2。</text>
+<text x="1010" y="835" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">R = {1,2}，继承名 s = 3，新名 t = 4。</text>
+<text x="60" y="901" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">原几何与加线顺序不变；三步均直接命名，无修复旧侧、无配色搜索。本图仅验证案例 C。</text>
+</svg>

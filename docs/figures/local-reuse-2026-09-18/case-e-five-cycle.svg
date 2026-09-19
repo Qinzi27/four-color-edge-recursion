@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1650" height="950" viewBox="0 0 1650 950">
+<rect width="100%" height="100%" fill="white"/>
+<text x="50" y="30" font-size="44" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">案例 E｜只坚持同一两名，会遇到一个五圈</text>
+<text x="50" y="100" font-size="28" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">展示的是保留旧名后的试分割，不是合法终态；这套旧名本来已使用最少四名。</text>
+<text x="50" y="180" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">外侧固定 1；字母是侧身份，数字是当前名</text>
+<polyline points="50,230 950,230 950,830 50,830 50,230" fill="none" stroke="#202831" stroke-width="5"/>
+<polyline points="50,444 950,444" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="50,701 950,701" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="50,353 950,353" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="362,353 362,444" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="389,701 389,830" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="249,701 249,830" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="648,353 648,444" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="504,444 504,458" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="504,467 504,481" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="504,490 504,504" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="504,513 504,527" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="504,536 504,550" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="504,559 504,573" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="504,582 504,596" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="504,605 504,619" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="504,628 504,642" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="504,651 504,665" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="504,674 504,688" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="504,697 504,701" fill="none" stroke="#B74400" stroke-width="5"/>
+<text x="500" y="273.5" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#00618A">A: 2</text>
+<text x="799" y="380.5" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#00618A">B: 3</text>
+<text x="669.5" y="747.5" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#505B67">C: 4</text>
+<text x="319" y="747.5" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#505B67">D: 3</text>
+<text x="149.5" y="747.5" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#505B67">E: 4</text>
+<text x="206" y="380.5" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#00618A">F: 3</text>
+<text x="505" y="380.5" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#505B67">G: 4</text>
+<text x="727" y="554.5" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#00618A">R: 2</text>
+<text x="277" y="554.5" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#00618A">L: 2</text>
+<text x="1020" y="240" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">局部五圈：侧与侧共边</text>
+<text x="1020" y="305" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">A — B — R — L — F — A</text>
+<text x="1020" y="380" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">若这五个侧都只允许用 2、3，</text>
+<text x="1020" y="425" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">沿五条邻接边交替，回到起点</text>
+<text x="1020" y="470" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">必然冲突。这不是第五色需求。</text>
+<text x="1020" y="550" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">至少其中一个侧要允许 1 或 4。</text>
+<text x="1020" y="615" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">虚线：新增线，尚未提交。</text>
+<text x="1020" y="660" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">当前 L=2、R=2，不能保留同名。</text>
+<text x="1020" y="735" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">可直接在图上另标你的命名方案。</text>
+<text x="50" y="882" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">原坐标等比例绘制；五圈每一条共边已核验。限制的是此处固定两名，不是否定整体方法。</text>
+</svg>

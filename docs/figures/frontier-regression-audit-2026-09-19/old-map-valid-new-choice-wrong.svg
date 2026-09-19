@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1070" viewBox="0 0 1900 1070">
+<rect width="100%" height="100%" fill="white"/>
+<text x="55" y="28" font-size="39" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">旧图没有失去四色解：错在新策略的第 2 次主动落名</text>
+<text x="55" y="95" font-size="26" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">seed 20261209，第 9 刀｜完全相同的线网；两幅都是经过完整共边校验的合法结果。</text>
+<text x="55" y="165" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">旧策略的合法结果（仍然有效）</text>
+<text x="55" y="214" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">外侧1；内部数字表示当前线侧名</text>
+<rect x="55" y="267" width="317.7" height="540" fill="#CDE7F4"/>
+<rect x="372.7" y="267" width="87.3" height="174.6" fill="#FFE4AF"/>
+<rect x="460" y="267" width="60.3" height="174.6" fill="#CDE7F4"/>
+<rect x="520.3" y="267" width="344.7" height="174.6" fill="#FFE4AF"/>
+<rect x="590.5" y="441.6" width="274.5" height="153.9" fill="#CDE7F4"/>
+<rect x="549.1" y="595.5" width="315.9" height="211.5" fill="#FFE4AF"/>
+<rect x="372.7" y="679.2" width="176.4" height="127.8" fill="#DDCFE8"/>
+<rect x="372.7" y="441.6" width="217.8" height="153.9" fill="#EEEEEE"/>
+<rect x="372.7" y="595.5" width="88.2" height="83.7" fill="#FFE4AF"/>
+<rect x="460.9" y="595.5" width="88.2" height="83.7" fill="#CDE7F4"/>
+<polyline points="55,267 865,267 865,807 55,807 55,267" fill="none" stroke="#202831" stroke-width="5"/>
+<polyline points="372.7,267 372.7,807" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="372.7,441.6 865,441.6" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="372.7,595.5 865,595.5" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="372.7,679.2 549.1,679.2" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="460,267 460,441.6" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="460.9,595.5 460.9,679.2" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="520.3,267 520.3,441.6" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="549.1,595.5 549.1,807" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="590.5,441.6 590.5,595.5" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="213.85" y="522" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="416.35" y="339.3" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="490.15" y="339.3" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="692.65" y="339.3" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="727.75" y="503.55" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="707.05" y="686.25" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="460.9" y="728.1" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<text x="481.6" y="503.55" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">1</text>
+<text x="416.8" y="622.35" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="505" y="622.35" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="1000" y="165" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">旧解整体交换3/4：保留新策略第1步</text>
+<text x="1000" y="214" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">外侧1；内部数字表示当前线侧名</text>
+<rect x="1000" y="267" width="317.7" height="540" fill="#CDE7F4"/>
+<rect x="1317.7" y="267" width="87.3" height="174.6" fill="#DDCFE8"/>
+<rect x="1405" y="267" width="60.3" height="174.6" fill="#CDE7F4"/>
+<rect x="1465.3" y="267" width="344.7" height="174.6" fill="#DDCFE8"/>
+<rect x="1535.5" y="441.6" width="274.5" height="153.9" fill="#CDE7F4"/>
+<rect x="1494.1" y="595.5" width="315.9" height="211.5" fill="#DDCFE8"/>
+<rect x="1317.7" y="679.2" width="176.4" height="127.8" fill="#FFE4AF"/>
+<rect x="1317.7" y="441.6" width="217.8" height="153.9" fill="#EEEEEE"/>
+<rect x="1317.7" y="595.5" width="88.2" height="83.7" fill="#DDCFE8"/>
+<rect x="1405.9" y="595.5" width="88.2" height="83.7" fill="#CDE7F4"/>
+<polyline points="1000,267 1810,267 1810,807 1000,807 1000,267" fill="none" stroke="#202831" stroke-width="5"/>
+<polyline points="1317.7,267 1317.7,807" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1317.7,441.6 1810,441.6" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1317.7,595.5 1810,595.5" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1317.7,679.2 1494.1,679.2" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1405,267 1405,441.6" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1405.9,595.5 1405.9,679.2" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1465.3,267 1465.3,441.6" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1494.1,595.5 1494.1,807" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1535.5,441.6 1535.5,595.5" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="1158.85" y="522" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="1361.35" y="339.3" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<text x="1435.15" y="339.3" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="1637.65" y="339.3" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<text x="1672.75" y="503.55" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="1652.05" y="686.25" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<text x="1405.9" y="728.1" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="1426.6" y="503.55" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">1</text>
+<text x="1361.8" y="622.35" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<text x="1450" y="622.35" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<polyline points="1494.1,595.5 1810,595.5 1810,807 1494.1,807 1494.1,595.5" fill="none" stroke="#00618A" stroke-width="6"/>
+<text x="55" y="847" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">第1步：下方中间侧取3仍可完成。第2步：蓝框侧候选为 {2,4}，程序抢先取2导致冲突。</text>
+<text x="55" y="907" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">右图证明保留第1步、取4有合法完成；右图只是诊断证据，没有被喂回生产算法。</text>
+<text x="55" y="968" font-size="26" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">“新策略没有完成”不能写成“旧图不可四色”，也不能写成“用户的母线思想被证伪”。</text>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="980" viewBox="0 0 1500 980">
+<rect width="100%" height="100%" fill="white"/>
+<text x="60" y="30" font-size="40" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">可继续人工标记｜整图重启后的真实未解例</text>
+<text x="60" y="102" font-size="26" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">seed 20261027，第 6 刀；closed-support：当前约束优先，闭环只作辅助。</text>
+<text x="60" y="169" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">外侧固定 1；所有内侧留白，问号不是已提交名字。</text>
+<polyline points="60,230 960,230 960,830 60,830 60,230" fill="none" stroke="#202831" stroke-width="5"/>
+<polyline points="60,402 578,402" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="60,557 960,557" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="123,402 123,557" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="220,402 220,557" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="339,230 339,402" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="578,230 578,557" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="199.5" y="300" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="458.5" y="300" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="769" y="377.5" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="510" y="677.5" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="91.5" y="463.5" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="171.5" y="463.5" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="399" y="463.5" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<polyline points="123,402 123,557" fill="none" stroke="#B74400" stroke-width="5"/>
+<text x="1010" y="267" font-size="26" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#B74400">橙色实线：</text>
+<text x="1010" y="315" font-size="26" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">已经加入的第6刀</text>
+<text x="1010" y="400" font-size="26" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">几何完整保留；</text>
+<text x="1010" y="448" font-size="26" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">命名失败不删线。</text>
+<text x="1010" y="533" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">这是具体策略未解，</text>
+<text x="1010" y="581" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">不是需要第五色。</text>
+<text x="60" y="887" font-size="26" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">请标：先检查哪个闭环、先处理哪段线、何时固定名字；可一次重写全部旧名。</text>
+</svg>

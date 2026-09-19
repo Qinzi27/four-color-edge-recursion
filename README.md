@@ -6,6 +6,133 @@ and verifiable Klein-four-group flow repair.**
 [中文说明](README.zh-CN.md) · [Mathematical foundations](docs/FOUNDATIONS.en.md) · [数学基础](docs/FOUNDATIONS.md)
 · [Research questions](docs/RESEARCH_PLAN.md) · [Related work](docs/RELATED_WORK.md)
 
+## Complete research archive
+
+[Chronological methods, results and obstructions (中文)](docs/RESEARCH_HISTORY-2026-09-19.md)
+· [English research history](docs/RESEARCH_HISTORY.en.md)
+· [Reproduce from a clean checkout](docs/REPRODUCING_RESEARCH.md)
+
+This archive records the research through 2026-09-19: changing definitions,
+implementations, finite experiments, repaired examples, remaining obstructions,
+and regressions. Different versions and test denominators must not be combined.
+There is no new general proof or uniformly successful candidate algorithm.
+Historical statements such as “not uploaded” describe the status at that stage;
+this archive publishes the preserved work. The interactive website remains the
+earlier construction lab, not an interface to the latest Python candidates.
+
+Latest research experiment (2026-09-19): [peer-batch geometry, full rerun and implicit inequalities](docs/PEER_BATCH_RESULTS-2026-09-19.md).
+The frozen v4 solves 7060/7069 drawings, repairing all four v3 failures but introducing
+nine regressions. It is not a uniformly stronger replacement or a general method.
+All prefixes succeed for 358/363 histories; 362 final maps and 301/302 static references
+succeed. Independent full-corpus audits pass; failures remain preserved.
+A [proved nine-side implication](docs/IMPLICIT_INEQUALITY-2026-09-19.md) can exclude
+the fatal candidate in 3/9 new failures. It is not integrated into v4 and does not
+establish that those three maps have been rerun successfully.
+Run a single drawing with `python scripts/name_peer_batch_map.py examples/peer-batch-five-lines.json --output outputs/my-peer-example.json`.
+The output preserves interval-wise mother-line names and independently checked proofs.
+No website replacement or publication; all prior evidence remains intact.
+
+Previous unified algorithm (2026-09-19): [stage-scoped initialization and optional mother levels](docs/STAGED_LEVEL_RESULTS-2026-09-19.md).
+One frozen v3 reruns all 7069 maps: 7065 solved, four conflicts, no scope rejection.
+All 6113 original-cohort maps now succeed, including the blue-anchor case, but four
+previously solved prefixes in one later-seed history regress. Every prefix succeeds
+for 362/363 histories; all 363 final maps and 302 static references succeed.
+[Theoretical conflict dossier](docs/STAGED_LEVEL_CONFLICTS-2026-09-19.md) preserves
+the first fatal decisions, exact relation contradictions, and independent legal
+witnesses for the next round. Initialization is safe; later greedy completion is
+not proved. Independent aggregate/proof audits, 489 Python and 107 Node tests pass.
+Old evidence and the website are preserved; no GitHub publication.
+
+Previous direction (2026-09-19): implementation frozen at the user's request.
+[Mathematical method draft](docs/MATHEMATICAL_METHOD-2026-09-19.md) separates
+birth labels, current mother-line profiles and stage-scoped anchors;
+[literature comparison](docs/RELATED_WORK_UPDATE-2026-09-19.md) identifies prior
+tree-grammar/boundary-state work and the remaining safe-choice conjecture.
+A later one-map anchor diagnosis is not a new full-corpus result. No novelty or
+universal-completeness claim, solver change, or publication is made in this update.
+
+Previous complete rerun (2026-09-19): [levels are auxiliary, not an eligibility gate](docs/LEVEL_SIDES_FULL-2026-09-19.md).
+After the user's clarification, frozen v2 independently reruns all 7069 maps:
+7068 solved, one conflict, no level-based rejection. All six prior failures are
+repaired, but one previously solved map regresses. Every prefix succeeds for
+362/363 histories; all 363 final maps and 302 static references succeed.
+Exact blank/valid-comparator diagrams and independent audits are saved. This is
+not complete success or a universal proof. All 457 Python and 107 Node tests pass.
+No website replacement or GitHub publication.
+
+Previous six-case test (2026-09-19): [mother-level stages and current-side constraints](docs/LEVEL_SIDE_RULES-2026-09-19.md).
+One fixed level/whole-mother scheduling candidate solves all six prior regressions,
+with 64 active choices including 20 uses of name 1; independent proofs and boundary
+checks pass. This does not reproduce every handwritten mark: the highlighted strip
+receives 3. That stage had NOT rerun all 7069 maps; see the later full results above. All 427 Python tests passed;
+exact output diagrams are saved. The old core and website are not replaced.
+
+Previous retrospective analysis (2026-09-19): [same-name mothers, generations and sibling positions](docs/LINE_GENERATIONS-2026-09-19.md).
+Six regressions and 36 known-success controls confirm that whole lines with the
+same directed (2,3) pair can have different geometric support depths. Three first
+trajectory divergences in regressions involve shallower old choices; the other
+three have equal depths, parents and ancestry counts but different positions.
+This is diagnostic evidence, not a new ordering's success test. No solver or website change.
+
+Previous local clarification (2026-09-19): [minimum-number choice audit](docs/MINIMUM_NAME_AUDIT-2026-09-19.md).
+All 39,301 active choices across 7069 inputs already choose their smallest candidate.
+With scheduling and filtering fixed, replacing reuse-first by `min(D)` leaves the
+runs unchanged: 7063 solved, six blocked. The displayed D map succeeds on a fresh
+restart; its frozen-name illustration is not a new failure. No solver or website change.
+
+Previous full validation (2026-09-19): [complete frozen-rule corpus replay](docs/RELATION_FRONTIER_FULL-2026-09-19.md).
+The current rule solves 7063/7069 distinct inputs, every prefix of 359/363 histories,
+all 363 final drawings, and all 302 static cases. It fixes 268 prior failures but
+regresses on six previously solved intermediate drawings. Their old valid colorings
+remain available; greedy commitment, not four-colorability, fails. Full input coverage,
+baseline reproduction, certificates and independent summary audit pass. No retuning,
+fallback solver, general completeness claim, or website update.
+
+Previous diagnostic stage (2026-09-19): [preserve side-name compatibility before committing names](docs/RELATION_FRONTIER-2026-09-19.md).
+The existing pair filter now integrates with geometry-only restarts, keeping
+mother identities, intervals, and the priority formula unchanged. No new cycle
+grouping is introduced. The ninth-cut regression loses its fatal candidate
+before commitment, without backtracking or importing an old coloring.
+All 307 predeclared known-case diagnostics complete, including 135 regressions
+and 135 success controls. This stage did not rerun the full 7069 drawings;
+the subsequent complete replay is linked above. These diagnostics do not establish
+completeness. No website update.
+
+Earlier this round (2026-09-19): [line-side urgency, local candidate reservation and full replay](docs/FRONTIER_RULES-2026-09-19.md).
+Using established constraint-filtering ideas, the best new candidate solves 5881/6113
+existing drawings and every prefix of 244/323 histories (baseline: 5638 and 199).
+It completes 24/40 predeclared new-seed histories (baseline: 9), but regresses on
+135 previously solved existing drawings. All failures and a new six-cut example
+are retained. The 35,345 independent checks include conflicts, not only successful
+colorings. No general proof, novelty claim, or website update.
+
+Earlier local research (2026-09-18): [restart after EVERY added line; current constraints and closed-cycle support](docs/GLOBAL_RESTART-2026-09-18.md).
+The previously stopped seventh cut now recolors automatically. Across 323 declared
+histories and every geometric prefix, the closure-assisted proposal completes
+all prefixes of 199 histories and the final drawing of 264; these are different
+counts. The constraint-only control completes 200 full histories, so the closure
+tie preference has not demonstrated an overall improvement. No website update.
+
+Earlier local research: [current side names, shared-interface release, conditional proofs and full replay](docs/CURRENT_NAMING_RULES-2026-09-18.md).
+On 323 deduplicated declared histories, the bounded rule completes 18, blocks on
+219, and marks 86 outside its rectangular adapter. The wider-budget control
+completes 95, with 142 still blocked. All 17,491 initial/committed-state checks
+pass; 302 static topology checks are reported separately, not as coloring success.
+This is a local research implementation, not a general proof or a website update.
+
+Earlier [continuous dual-anchor experiment](docs/ANCHOR_FOREST_CONTINUATION-2026-09-18.md):
+all 85 earlier first-block repairs now continue, adding 228 committed steps, but
+all 360 general rectangular runs eventually block again; all 80 strip runs finish.
+At 60 new stops, a common anchor exists only in a newly created child side.
+
+Local research update (2026-09-18): [retained-side inheritance and equivalent line types](docs/RETAINED_PROFILE_SYNTHESIS-2026-09-18.md).
+The supplied 3|4|3 sketch now has a reproducible full-boundary naming and verified
+two-anchor strip synchronization model. All 80 strip-history runs complete;
+360 general rectangular-history runs still block. A separate broader dual-anchor
+audit certifies a one-step repair at 85 of those blocks, without continuing their
+remaining histories. This is not a general proof
+and is not yet wired into the public website described below.
+
 [![Validation](https://github.com/Qinzi27/four-color-edge-recursion/actions/workflows/validate.yml/badge.svg)](https://github.com/Qinzi27/four-color-edge-recursion/actions/workflows/validate.yml)
 
 [Open the line-first construction lab](https://qinzi27.github.io/four-color-edge-recursion/rules.html)

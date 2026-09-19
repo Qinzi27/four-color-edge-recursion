@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="920" viewBox="0 0 1900 920">
+<rect width="100%" height="100%" fill="white"/>
+<text x="60" y="35" font-size="44" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">案例 B  /  第 5 条内部线加入时停住</text>
+<text x="60" y="105" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">出现不接外圈的内部侧；外圈不再邻接每一个侧</text>
+<text x="60" y="167" font-size="29" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">加线前：当前线侧名字（允许重命名）</text>
+<text x="1010" y="167" font-size="29" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">加线后：空白图，请按你的规则标记</text>
+<text x="60" y="213" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">外侧：1</text>
+<text x="1010" y="213" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">外侧：留给你标记</text>
+<polyline points="60,260 870,260 870,800 60,800 60,260" fill="none" stroke="#202831" stroke-width="5"/>
+<polyline points="60,554.3 870,554.3" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="132.9" y="523.7" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">L1</text>
+<polyline points="526.2,260 526.2,554.3" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="537" y="283.544" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">L2</text>
+<polyline points="60,414.8 526.2,414.8" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="101.958" y="384.2" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">L3</text>
+<polyline points="311.1,260 311.1,414.8" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="321.9" y="272.384" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">L4</text>
+<text x="465" y="654.15" font-size="43" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="698.1" y="384.15" font-size="43" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="293.1" y="461.55" font-size="43" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<text x="418.65" y="314.4" font-size="43" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="185.55" y="314.4" font-size="43" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<polyline points="1010,260 1820,260 1820,800 1010,800 1010,260" fill="none" stroke="#202831" stroke-width="5"/>
+<polyline points="1010,554.3 1820,554.3" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1476.2,260 1476.2,554.3" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1010,414.8 1476.2,414.8" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1261.1,260 1261.1,414.8" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1154,414.8 1154,428.8" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="1154,437.8 1154,451.8" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="1154,460.8 1154,474.8" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="1154,483.8 1154,497.8" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="1154,506.8 1154,520.8" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="1154,529.8 1154,543.8" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="1154,552.8 1154,554.3" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="1010,829 1024,829" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="1033,829 1047,829" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="1056,829 1070,829" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="1079,829 1080,829" fill="none" stroke="#B74400" stroke-width="5"/>
+<text x="1100" y="815" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">新增 L5；其余实线为已有线</text>
+<text x="60" y="815" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">L 是画线顺序编号；数字是侧名，不是端点名。</text>
+<text x="60" y="871" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">记录：guillotine / seed 20261027 / inherit left。只说明当前规则停住，不是四名不可能。</text>
+</svg>

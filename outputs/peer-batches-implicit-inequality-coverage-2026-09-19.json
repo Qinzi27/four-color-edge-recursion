@@ -1,0 +1,1261 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-19T06:16:17.729421+00:00",
+  "report": {
+    "filename": "peer-batches-full-2026-09-19.json.gz",
+    "sha256": "fb004374e06ee0ace87328a8559e108b23e0e9b71663e1a35158738a5e3ad543"
+  },
+  "diagnosis": {
+    "filename": "peer-batches-failure-diagnosis-2026-09-19.json",
+    "sha256": "fbddf644e5d3bd9a7fa1b38c8b7258b53ecbfbba40f767ff140edabc3bc70a67"
+  },
+  "source_sha256": {
+    "fourcolor/implicit_inequality.py": "f69df9171708f6c6102d155b6e39e7a8f8d2356013e7053a4713f1ea84d12662",
+    "fourcolor/embedding.py": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+    "scripts/check_implicit_inequality_failures.py": "e62d2747332592bdf81fe46125e428130ba97d87bec84349f678ac42f1e3e728",
+    "tests/test_implicit_inequality.py": "d8f2ca4ca7616b45879d8987e8052f980b4d593c4098a41eef93b32c0a6365f5"
+  },
+  "source_hashes_unchanged": true,
+  "search_scope": "Both orientations of fatal side versus every previously committed side with the same name",
+  "failure_records_checked": 9,
+  "fatal_choices_excluded_by_template": 3,
+  "coverage_fraction": [
+    3,
+    9
+  ],
+  "records": [
+    {
+      "key": "0201bcb2c3404ffa6e6b71236350806a352287218609f742cf39c78296299f29",
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261041",
+          "step": 22
+        }
+      ],
+      "face_count": 24,
+      "first_fatal_choice_index_one_based": 2,
+      "fatal_side": 18,
+      "fatal_name": 1,
+      "committed_same_name_partners": [
+        0
+      ],
+      "template_searches": [
+        {
+          "ordered_target_sides": [
+            0,
+            18
+          ],
+          "matched": false
+        },
+        {
+          "ordered_target_sides": [
+            18,
+            0
+          ],
+          "matched": false
+        }
+      ],
+      "covered": false,
+      "certificates": []
+    },
+    {
+      "key": "2edf6c16cb2053dd5143624a5c1b35e2e1c5f769fb9c138921a0d8157055f7ec",
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260968",
+          "step": 24
+        },
+        {
+          "kind": "static",
+          "source": "guillotine-20260968"
+        }
+      ],
+      "face_count": 26,
+      "first_fatal_choice_index_one_based": 2,
+      "fatal_side": 4,
+      "fatal_name": 2,
+      "committed_same_name_partners": [
+        1
+      ],
+      "template_searches": [
+        {
+          "ordered_target_sides": [
+            1,
+            4
+          ],
+          "matched": false
+        },
+        {
+          "ordered_target_sides": [
+            4,
+            1
+          ],
+          "matched": false
+        }
+      ],
+      "covered": false,
+      "certificates": []
+    },
+    {
+      "key": "49d23c2b2264addeb951705f1ba030aea546f06da3a46163feb9e0f81c44f977",
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261041",
+          "step": 21
+        }
+      ],
+      "face_count": 23,
+      "first_fatal_choice_index_one_based": 2,
+      "fatal_side": 17,
+      "fatal_name": 1,
+      "committed_same_name_partners": [
+        0
+      ],
+      "template_searches": [
+        {
+          "ordered_target_sides": [
+            0,
+            17
+          ],
+          "matched": false
+        },
+        {
+          "ordered_target_sides": [
+            17,
+            0
+          ],
+          "matched": false
+        }
+      ],
+      "covered": false,
+      "certificates": []
+    },
+    {
+      "key": "4a06575daa04c673667f33ae291ca23e5012b5fb78c51849e6331a8f560c7bf4",
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260946",
+          "step": 20
+        }
+      ],
+      "face_count": 22,
+      "first_fatal_choice_index_one_based": 2,
+      "fatal_side": 4,
+      "fatal_name": 2,
+      "committed_same_name_partners": [
+        1
+      ],
+      "template_searches": [
+        {
+          "ordered_target_sides": [
+            1,
+            4
+          ],
+          "matched": true
+        },
+        {
+          "ordered_target_sides": [
+            4,
+            1
+          ],
+          "matched": false
+        }
+      ],
+      "covered": true,
+      "certificates": [
+        {
+          "committed_partner": 1,
+          "certificate": {
+            "kind": "nine-side-two-triangle-implicit-inequality",
+            "palette_size": 4,
+            "mapping": {
+              "O": 0,
+              "A": 1,
+              "B": 4,
+              "p": 2,
+              "q": 3,
+              "r": 15,
+              "s": 16,
+              "t": 11,
+              "u": 20
+            },
+            "required_adjacencies": [
+              {
+                "vertices": [
+                  "O",
+                  "A"
+                ],
+                "sides": [
+                  0,
+                  1
+                ],
+                "raw_edge_ids": [
+                  0,
+                  17,
+                  18
+                ]
+              },
+              {
+                "vertices": [
+                  "O",
+                  "B"
+                ],
+                "sides": [
+                  0,
+                  4
+                ],
+                "raw_edge_ids": [
+                  3,
+                  12
+                ]
+              },
+              {
+                "vertices": [
+                  "O",
+                  "p"
+                ],
+                "sides": [
+                  0,
+                  2
+                ],
+                "raw_edge_ids": [
+                  1
+                ]
+              },
+              {
+                "vertices": [
+                  "A",
+                  "p"
+                ],
+                "sides": [
+                  1,
+                  2
+                ],
+                "raw_edge_ids": [
+                  19
+                ]
+              },
+              {
+                "vertices": [
+                  "O",
+                  "q"
+                ],
+                "sides": [
+                  0,
+                  3
+                ],
+                "raw_edge_ids": [
+                  2
+                ]
+              },
+              {
+                "vertices": [
+                  "B",
+                  "q"
+                ],
+                "sides": [
+                  4,
+                  3
+                ],
+                "raw_edge_ids": [
+                  47
+                ]
+              },
+              {
+                "vertices": [
+                  "p",
+                  "q"
+                ],
+                "sides": [
+                  2,
+                  3
+                ],
+                "raw_edge_ids": [
+                  38
+                ]
+              },
+              {
+                "vertices": [
+                  "r",
+                  "p"
+                ],
+                "sides": [
+                  15,
+                  2
+                ],
+                "raw_edge_ids": [
+                  24
+                ]
+              },
+              {
+                "vertices": [
+                  "r",
+                  "q"
+                ],
+                "sides": [
+                  15,
+                  3
+                ],
+                "raw_edge_ids": [
+                  39
+                ]
+              },
+              {
+                "vertices": [
+                  "r",
+                  "A"
+                ],
+                "sides": [
+                  15,
+                  1
+                ],
+                "raw_edge_ids": [
+                  20
+                ]
+              },
+              {
+                "vertices": [
+                  "s",
+                  "r"
+                ],
+                "sides": [
+                  16,
+                  15
+                ],
+                "raw_edge_ids": [
+                  25
+                ]
+              },
+              {
+                "vertices": [
+                  "s",
+                  "A"
+                ],
+                "sides": [
+                  16,
+                  1
+                ],
+                "raw_edge_ids": [
+                  21
+                ]
+              },
+              {
+                "vertices": [
+                  "t",
+                  "O"
+                ],
+                "sides": [
+                  11,
+                  0
+                ],
+                "raw_edge_ids": [
+                  13
+                ]
+              },
+              {
+                "vertices": [
+                  "t",
+                  "B"
+                ],
+                "sides": [
+                  11,
+                  4
+                ],
+                "raw_edge_ids": [
+                  49
+                ]
+              },
+              {
+                "vertices": [
+                  "t",
+                  "s"
+                ],
+                "sides": [
+                  11,
+                  16
+                ],
+                "raw_edge_ids": [
+                  42
+                ]
+              },
+              {
+                "vertices": [
+                  "u",
+                  "B"
+                ],
+                "sides": [
+                  20,
+                  4
+                ],
+                "raw_edge_ids": [
+                  48
+                ]
+              },
+              {
+                "vertices": [
+                  "u",
+                  "r"
+                ],
+                "sides": [
+                  20,
+                  15
+                ],
+                "raw_edge_ids": [
+                  40
+                ]
+              },
+              {
+                "vertices": [
+                  "u",
+                  "s"
+                ],
+                "sides": [
+                  20,
+                  16
+                ],
+                "raw_edge_ids": [
+                  41
+                ]
+              },
+              {
+                "vertices": [
+                  "u",
+                  "t"
+                ],
+                "sides": [
+                  20,
+                  11
+                ],
+                "raw_edge_ids": [
+                  46
+                ]
+              }
+            ],
+            "conclusion": {
+              "sides": [
+                1,
+                4
+              ],
+              "relation": "!=",
+              "kind": "derived-name-relation-not-geometric-edge"
+            }
+          },
+          "verification": {
+            "passed": true,
+            "template_vertices": 9,
+            "required_adjacencies": 19,
+            "conclusion": {
+              "sides": [
+                1,
+                4
+              ],
+              "relation": "!=",
+              "kind": "derived-name-relation-not-geometric-edge"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "66b1a56305161b76660d5d2567a7f9720ecde941c8df98f922e594da95d898ed",
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260946",
+          "step": 19
+        }
+      ],
+      "face_count": 21,
+      "first_fatal_choice_index_one_based": 2,
+      "fatal_side": 4,
+      "fatal_name": 2,
+      "committed_same_name_partners": [
+        1
+      ],
+      "template_searches": [
+        {
+          "ordered_target_sides": [
+            1,
+            4
+          ],
+          "matched": true
+        },
+        {
+          "ordered_target_sides": [
+            4,
+            1
+          ],
+          "matched": false
+        }
+      ],
+      "covered": true,
+      "certificates": [
+        {
+          "committed_partner": 1,
+          "certificate": {
+            "kind": "nine-side-two-triangle-implicit-inequality",
+            "palette_size": 4,
+            "mapping": {
+              "O": 0,
+              "A": 1,
+              "B": 4,
+              "p": 2,
+              "q": 3,
+              "r": 14,
+              "s": 15,
+              "t": 10,
+              "u": 19
+            },
+            "required_adjacencies": [
+              {
+                "vertices": [
+                  "O",
+                  "A"
+                ],
+                "sides": [
+                  0,
+                  1
+                ],
+                "raw_edge_ids": [
+                  0,
+                  16,
+                  17
+                ]
+              },
+              {
+                "vertices": [
+                  "O",
+                  "B"
+                ],
+                "sides": [
+                  0,
+                  4
+                ],
+                "raw_edge_ids": [
+                  3,
+                  11
+                ]
+              },
+              {
+                "vertices": [
+                  "O",
+                  "p"
+                ],
+                "sides": [
+                  0,
+                  2
+                ],
+                "raw_edge_ids": [
+                  1
+                ]
+              },
+              {
+                "vertices": [
+                  "A",
+                  "p"
+                ],
+                "sides": [
+                  1,
+                  2
+                ],
+                "raw_edge_ids": [
+                  18
+                ]
+              },
+              {
+                "vertices": [
+                  "O",
+                  "q"
+                ],
+                "sides": [
+                  0,
+                  3
+                ],
+                "raw_edge_ids": [
+                  2
+                ]
+              },
+              {
+                "vertices": [
+                  "B",
+                  "q"
+                ],
+                "sides": [
+                  4,
+                  3
+                ],
+                "raw_edge_ids": [
+                  46
+                ]
+              },
+              {
+                "vertices": [
+                  "p",
+                  "q"
+                ],
+                "sides": [
+                  2,
+                  3
+                ],
+                "raw_edge_ids": [
+                  37
+                ]
+              },
+              {
+                "vertices": [
+                  "r",
+                  "p"
+                ],
+                "sides": [
+                  14,
+                  2
+                ],
+                "raw_edge_ids": [
+                  23
+                ]
+              },
+              {
+                "vertices": [
+                  "r",
+                  "q"
+                ],
+                "sides": [
+                  14,
+                  3
+                ],
+                "raw_edge_ids": [
+                  38
+                ]
+              },
+              {
+                "vertices": [
+                  "r",
+                  "A"
+                ],
+                "sides": [
+                  14,
+                  1
+                ],
+                "raw_edge_ids": [
+                  19
+                ]
+              },
+              {
+                "vertices": [
+                  "s",
+                  "r"
+                ],
+                "sides": [
+                  15,
+                  14
+                ],
+                "raw_edge_ids": [
+                  24
+                ]
+              },
+              {
+                "vertices": [
+                  "s",
+                  "A"
+                ],
+                "sides": [
+                  15,
+                  1
+                ],
+                "raw_edge_ids": [
+                  20
+                ]
+              },
+              {
+                "vertices": [
+                  "t",
+                  "O"
+                ],
+                "sides": [
+                  10,
+                  0
+                ],
+                "raw_edge_ids": [
+                  12
+                ]
+              },
+              {
+                "vertices": [
+                  "t",
+                  "B"
+                ],
+                "sides": [
+                  10,
+                  4
+                ],
+                "raw_edge_ids": [
+                  48
+                ]
+              },
+              {
+                "vertices": [
+                  "t",
+                  "s"
+                ],
+                "sides": [
+                  10,
+                  15
+                ],
+                "raw_edge_ids": [
+                  41
+                ]
+              },
+              {
+                "vertices": [
+                  "u",
+                  "B"
+                ],
+                "sides": [
+                  19,
+                  4
+                ],
+                "raw_edge_ids": [
+                  47
+                ]
+              },
+              {
+                "vertices": [
+                  "u",
+                  "r"
+                ],
+                "sides": [
+                  19,
+                  14
+                ],
+                "raw_edge_ids": [
+                  39
+                ]
+              },
+              {
+                "vertices": [
+                  "u",
+                  "s"
+                ],
+                "sides": [
+                  19,
+                  15
+                ],
+                "raw_edge_ids": [
+                  40
+                ]
+              },
+              {
+                "vertices": [
+                  "u",
+                  "t"
+                ],
+                "sides": [
+                  19,
+                  10
+                ],
+                "raw_edge_ids": [
+                  45
+                ]
+              }
+            ],
+            "conclusion": {
+              "sides": [
+                1,
+                4
+              ],
+              "relation": "!=",
+              "kind": "derived-name-relation-not-geometric-edge"
+            }
+          },
+          "verification": {
+            "passed": true,
+            "template_vertices": 9,
+            "required_adjacencies": 19,
+            "conclusion": {
+              "sides": [
+                1,
+                4
+              ],
+              "relation": "!=",
+              "kind": "derived-name-relation-not-geometric-edge"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "83774b23a0d4ca689637eb9555de40af629ace7e0de4eedd9855bb4864c7baba",
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260946",
+          "step": 18
+        }
+      ],
+      "face_count": 20,
+      "first_fatal_choice_index_one_based": 2,
+      "fatal_side": 4,
+      "fatal_name": 2,
+      "committed_same_name_partners": [
+        1
+      ],
+      "template_searches": [
+        {
+          "ordered_target_sides": [
+            1,
+            4
+          ],
+          "matched": true
+        },
+        {
+          "ordered_target_sides": [
+            4,
+            1
+          ],
+          "matched": false
+        }
+      ],
+      "covered": true,
+      "certificates": [
+        {
+          "committed_partner": 1,
+          "certificate": {
+            "kind": "nine-side-two-triangle-implicit-inequality",
+            "palette_size": 4,
+            "mapping": {
+              "O": 0,
+              "A": 1,
+              "B": 4,
+              "p": 2,
+              "q": 3,
+              "r": 14,
+              "s": 15,
+              "t": 10,
+              "u": 18
+            },
+            "required_adjacencies": [
+              {
+                "vertices": [
+                  "O",
+                  "A"
+                ],
+                "sides": [
+                  0,
+                  1
+                ],
+                "raw_edge_ids": [
+                  0,
+                  16,
+                  17
+                ]
+              },
+              {
+                "vertices": [
+                  "O",
+                  "B"
+                ],
+                "sides": [
+                  0,
+                  4
+                ],
+                "raw_edge_ids": [
+                  3,
+                  11
+                ]
+              },
+              {
+                "vertices": [
+                  "O",
+                  "p"
+                ],
+                "sides": [
+                  0,
+                  2
+                ],
+                "raw_edge_ids": [
+                  1
+                ]
+              },
+              {
+                "vertices": [
+                  "A",
+                  "p"
+                ],
+                "sides": [
+                  1,
+                  2
+                ],
+                "raw_edge_ids": [
+                  18
+                ]
+              },
+              {
+                "vertices": [
+                  "O",
+                  "q"
+                ],
+                "sides": [
+                  0,
+                  3
+                ],
+                "raw_edge_ids": [
+                  2
+                ]
+              },
+              {
+                "vertices": [
+                  "B",
+                  "q"
+                ],
+                "sides": [
+                  4,
+                  3
+                ],
+                "raw_edge_ids": [
+                  43
+                ]
+              },
+              {
+                "vertices": [
+                  "p",
+                  "q"
+                ],
+                "sides": [
+                  2,
+                  3
+                ],
+                "raw_edge_ids": [
+                  34
+                ]
+              },
+              {
+                "vertices": [
+                  "r",
+                  "p"
+                ],
+                "sides": [
+                  14,
+                  2
+                ],
+                "raw_edge_ids": [
+                  23
+                ]
+              },
+              {
+                "vertices": [
+                  "r",
+                  "q"
+                ],
+                "sides": [
+                  14,
+                  3
+                ],
+                "raw_edge_ids": [
+                  35
+                ]
+              },
+              {
+                "vertices": [
+                  "r",
+                  "A"
+                ],
+                "sides": [
+                  14,
+                  1
+                ],
+                "raw_edge_ids": [
+                  19
+                ]
+              },
+              {
+                "vertices": [
+                  "s",
+                  "r"
+                ],
+                "sides": [
+                  15,
+                  14
+                ],
+                "raw_edge_ids": [
+                  24
+                ]
+              },
+              {
+                "vertices": [
+                  "s",
+                  "A"
+                ],
+                "sides": [
+                  15,
+                  1
+                ],
+                "raw_edge_ids": [
+                  20
+                ]
+              },
+              {
+                "vertices": [
+                  "t",
+                  "O"
+                ],
+                "sides": [
+                  10,
+                  0
+                ],
+                "raw_edge_ids": [
+                  12
+                ]
+              },
+              {
+                "vertices": [
+                  "t",
+                  "B"
+                ],
+                "sides": [
+                  10,
+                  4
+                ],
+                "raw_edge_ids": [
+                  45
+                ]
+              },
+              {
+                "vertices": [
+                  "t",
+                  "s"
+                ],
+                "sides": [
+                  10,
+                  15
+                ],
+                "raw_edge_ids": [
+                  38
+                ]
+              },
+              {
+                "vertices": [
+                  "u",
+                  "B"
+                ],
+                "sides": [
+                  18,
+                  4
+                ],
+                "raw_edge_ids": [
+                  44
+                ]
+              },
+              {
+                "vertices": [
+                  "u",
+                  "r"
+                ],
+                "sides": [
+                  18,
+                  14
+                ],
+                "raw_edge_ids": [
+                  36
+                ]
+              },
+              {
+                "vertices": [
+                  "u",
+                  "s"
+                ],
+                "sides": [
+                  18,
+                  15
+                ],
+                "raw_edge_ids": [
+                  37
+                ]
+              },
+              {
+                "vertices": [
+                  "u",
+                  "t"
+                ],
+                "sides": [
+                  18,
+                  10
+                ],
+                "raw_edge_ids": [
+                  42
+                ]
+              }
+            ],
+            "conclusion": {
+              "sides": [
+                1,
+                4
+              ],
+              "relation": "!=",
+              "kind": "derived-name-relation-not-geometric-edge"
+            }
+          },
+          "verification": {
+            "passed": true,
+            "template_vertices": 9,
+            "required_adjacencies": 19,
+            "conclusion": {
+              "sides": [
+                1,
+                4
+              ],
+              "relation": "!=",
+              "kind": "derived-name-relation-not-geometric-edge"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "8a2c8689af2c57209cf86fadaf2de8a7fccd57c2b73d12360d99e329897bcb73",
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260936",
+          "step": 21
+        }
+      ],
+      "face_count": 23,
+      "first_fatal_choice_index_one_based": 5,
+      "fatal_side": 7,
+      "fatal_name": 2,
+      "committed_same_name_partners": [
+        2,
+        4
+      ],
+      "template_searches": [
+        {
+          "ordered_target_sides": [
+            2,
+            7
+          ],
+          "matched": false
+        },
+        {
+          "ordered_target_sides": [
+            7,
+            2
+          ],
+          "matched": false
+        },
+        {
+          "ordered_target_sides": [
+            4,
+            7
+          ],
+          "matched": false
+        },
+        {
+          "ordered_target_sides": [
+            7,
+            4
+          ],
+          "matched": false
+        }
+      ],
+      "covered": false,
+      "certificates": []
+    },
+    {
+      "key": "d60280254c2e606f8bbb9320e45f77de5cbd417e2c620b28c8508d7af6388be5",
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260936",
+          "step": 22
+        }
+      ],
+      "face_count": 24,
+      "first_fatal_choice_index_one_based": 5,
+      "fatal_side": 7,
+      "fatal_name": 2,
+      "committed_same_name_partners": [
+        2,
+        4
+      ],
+      "template_searches": [
+        {
+          "ordered_target_sides": [
+            2,
+            7
+          ],
+          "matched": false
+        },
+        {
+          "ordered_target_sides": [
+            7,
+            2
+          ],
+          "matched": false
+        },
+        {
+          "ordered_target_sides": [
+            4,
+            7
+          ],
+          "matched": false
+        },
+        {
+          "ordered_target_sides": [
+            7,
+            4
+          ],
+          "matched": false
+        }
+      ],
+      "covered": false,
+      "certificates": []
+    },
+    {
+      "key": "ed0cc170289dbcffef0a8e41634a1fb165bff0a09873a8abae56da6af8bc17df",
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260950",
+          "step": 19
+        }
+      ],
+      "face_count": 21,
+      "first_fatal_choice_index_one_based": 2,
+      "fatal_side": 4,
+      "fatal_name": 2,
+      "committed_same_name_partners": [
+        1
+      ],
+      "template_searches": [
+        {
+          "ordered_target_sides": [
+            1,
+            4
+          ],
+          "matched": false
+        },
+        {
+          "ordered_target_sides": [
+            4,
+            1
+          ],
+          "matched": false
+        }
+      ],
+      "covered": false,
+      "certificates": []
+    }
+  ],
+  "production_attempts_added": 0,
+  "applied_to_v4": false,
+  "limits": [
+    "Coverage excludes one recorded name, not a guarantee that the remaining choices complete a map.",
+    "Only the fixed nine-vertex nineteen-edge template is matched; no pattern expansion was used.",
+    "The searched assignments map graph vertices, not color names.",
+    "This one certified local implication is not a general four-coloring method."
+  ]
+}

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="960" viewBox="0 0 1900 960">
+<rect width="100%" height="100%" fill="white"/>
+<text x="60" y="32" font-size="44" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">案例 C｜只换继承侧仍然不够的局部例子</text>
+<text x="60" y="105" font-size="28" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">外侧 1；上、中、下为 3、4、2。中带新增竖线，两子侧旧邻名都是 {1,2,3}。</text>
+<text x="60" y="170" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">加线前：旧名</text>
+<text x="1010" y="170" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">加线后：供人工标记</text>
+<text x="60" y="218" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">外侧：1</text>
+<text x="1010" y="218" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">外侧：请标明</text>
+<polyline points="60,265 870,265 870,805 60,805 60,265" fill="none" stroke="#202831" stroke-width="5"/>
+<polyline points="60,586.3 870,586.3" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="132.9" y="555.7" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">L1</text>
+<polyline points="60,703.3 870,703.3" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="132.9" y="672.7" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">L2</text>
+<text x="465" y="402.65" font-size="43" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="465" y="621.8" font-size="43" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<text x="465" y="731.15" font-size="43" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<polyline points="1010,265 1820,265 1820,805 1010,805 1010,265" fill="none" stroke="#202831" stroke-width="5"/>
+<polyline points="1010,586.3 1820,586.3" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1010,703.3 1820,703.3" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1407.8,586.3 1407.8,600.3" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="1407.8,609.3 1407.8,623.3" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="1407.8,632.3 1407.8,646.3" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="1407.8,655.3 1407.8,669.3" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="1407.8,678.3 1407.8,692.3" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="1407.8,701.3 1407.8,703.3" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="1010,850 1024,850" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="1033,850 1047,850" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="1056,850 1070,850" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="1079,850 1080,850" fill="none" stroke="#B74400" stroke-width="5"/>
+<text x="1100" y="835" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">新增 L3；其余线不变</text>
+<text x="60" y="835" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">这只否定冻结旧名的一步选择，不是否定四名可行。</text>
+<text x="60" y="901" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">来源：guillotine / seed 20260960 / 第3步；新线 (442,357) → (442,487)。</text>
+</svg>

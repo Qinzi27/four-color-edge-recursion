@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "input": {
+    "filename": "anchor-forest-continuation-2026-09-18-v2.json",
+    "sha256": "5a9c74f3225df4b4e72452f4671ded285f41616a03fd47fe1f28d7d642ad76ad"
+  },
+  "script_sha256": "acc370d43f2db61f55c819088e1f7bf245337cc8950d69cba7fa191abf172612",
+  "source_case": {
+    "family": "guillotine",
+    "seed": 20260960,
+    "inherit": "right",
+    "step": 3
+  },
+  "current_state": {
+    "width": 900,
+    "height": 600,
+    "cuts": [
+      [
+        [
+          0,
+          357
+        ],
+        [
+          900,
+          357
+        ]
+      ],
+      [
+        [
+          0,
+          487
+        ],
+        [
+          900,
+          487
+        ]
+      ]
+    ],
+    "sides": [
+      {
+        "id": "root.l",
+        "bounds": [
+          0,
+          0,
+          900,
+          357
+        ],
+        "symbol": 3
+      },
+      {
+        "id": "root.r.l",
+        "bounds": [
+          0,
+          357,
+          900,
+          487
+        ],
+        "symbol": 4
+      },
+      {
+        "id": "root.r.r",
+        "bounds": [
+          0,
+          487,
+          900,
+          600
+        ],
+        "symbol": 2
+      }
+    ]
+  },
+  "pending_cut": [
+    [
+      442,
+      357
+    ],
+    [
+      442,
+      487
+    ]
+  ],
+  "transform": "Exact uniform scale 0.9, source x-right/y-down.",
+  "files": [
+    {
+      "filename": "case-c-local-block.png",
+      "sha256": "89f00f2f24db7354cbc3db9795826fd425bae2f9dbe380ccb4f40ffb33ba4fb2",
+      "width_px": 1900,
+      "height_px": 960
+    },
+    {
+      "filename": "case-c-local-block.svg",
+      "sha256": "e55ae23cd8ff83db68c7740f700b5f5e84224ce0316f89cee757de8a3135b233",
+      "width_px": 1900,
+      "height_px": 960
+    }
+  ]
+}

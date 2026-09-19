@@ -1,0 +1,961 @@
+{
+  "schema_version": 1,
+  "input": {
+    "filename": "current-names-all-2026-09-18-v3.json.gz",
+    "sha256": "da1d1eb9487f2207ef279e0e04c15aef5e6238df6165829d5fb7bf249e28c3de",
+    "bytes": 5599661,
+    "decoded_bytes": 42384695
+  },
+  "previous_report": {
+    "filename": "current-names-all-2026-09-18.json",
+    "sha256": "78e2044eb8456d0ec267d7ca97e3a192fc00b110423c0e1222d11458a840629f",
+    "bytes": 97319799,
+    "decoded_bytes": 97319799
+  },
+  "summarizer_sha256": "9a3d61081ccdc72b39ba06c79b6a37425a7d555d4e9a774e940c790a650abc2a",
+  "source_validation": {
+    "all_current_source_hashes_match": true,
+    "checked_sources": 33,
+    "changed_since_previous": [
+      "scripts/validate_current_corpus.py"
+    ],
+    "newly_recorded_sources": [
+      "fourcolor/embedding.py",
+      "fourcolor/interface_names.py",
+      "fourcolor/strip_chain.py"
+    ]
+  },
+  "corpus_counts": {
+    "unique_declared_histories": 323,
+    "history_aliases": 367,
+    "source_history_counts_by_cohort": {
+      "baseline": 240,
+      "fresh-seeds": 60,
+      "proved-strip-family": 40,
+      "fixed-gallery": 13,
+      "fixed-restart": 8,
+      "frozen-control": 6
+    },
+    "history_counts_by_cohort": {
+      "baseline": 216,
+      "fresh-seeds": 40,
+      "proved-strip-family": 40,
+      "fixed-gallery": 13,
+      "fixed-restart": 8,
+      "frozen-control": 6
+    },
+    "history_counts_by_family": {
+      "guillotine": 180,
+      "nested-rings-and-bridges": 16,
+      "boundary-fan": 60,
+      "two-anchor-strip": 40,
+      "construction-gallery": 13,
+      "teaching-A": 2,
+      "teaching-B": 2,
+      "teaching-C": 2,
+      "teaching-D": 3,
+      "teaching-E": 2,
+      "symbolic-teaching": 3
+    },
+    "distinct_history_terminal_stroke_sets": 277,
+    "static_source_records": 346,
+    "static_distinct_stroke_sets": 302,
+    "static_without_declared_history": 43
+  },
+  "latest_report_checks": {
+    "runs_checked": 1938,
+    "committed_step_hashes_checked": 15559,
+    "initial_certificates_checked": 1932,
+    "name_certificates_checked": 17491,
+    "unsupported_precolored_starts_preserved": 6,
+    "static_topologies_checked": 302,
+    "static_naming_success_claims": 0,
+    "all_group_and_family_counts_agree": true
+  },
+  "previous_report_checks": {
+    "runs_checked": 1292,
+    "committed_step_hashes_checked": 9536,
+    "initial_certificates_checked": 1288,
+    "name_certificates_checked": 10824,
+    "unsupported_precolored_starts_preserved": 4,
+    "static_topologies_checked": 302,
+    "static_naming_success_claims": 0,
+    "all_group_and_family_counts_agree": true
+  },
+  "old_four_policy_equivalence": {
+    "old_policy_count": 4,
+    "matched_runs": 1292,
+    "matched_step_state_hashes": 9536,
+    "matched_name_certificates": 10824,
+    "matched_static_topologies": 302,
+    "all_algorithmic_results_unchanged": true,
+    "events": "Verbose incidence/profile records were compacted; event JSON byte equality is not required."
+  },
+  "policy_and_family_counts": [
+    {
+      "policy": "legacy-b3",
+      "histories": 323,
+      "outcomes": {
+        "blocked": 220,
+        "outside_scope": 88,
+        "completed": 15
+      },
+      "committed_splits": 1906,
+      "families": [
+        {
+          "family": "boundary-fan",
+          "histories": 60,
+          "outcomes": {
+            "outside_scope": 60
+          },
+          "reasons": {
+            "nonzero axis-aligned cut required": 60
+          }
+        },
+        {
+          "family": "construction-gallery",
+          "histories": 13,
+          "outcomes": {
+            "outside_scope": 10,
+            "blocked": 1,
+            "completed": 2
+          },
+          "reasons": {
+            "exactly two endpoints required": 6,
+            "no_companion_with_common_interfaces_fixed": 1,
+            "cut must traverse exactly one rectangular side": 2,
+            "nonzero axis-aligned cut required": 1,
+            "nonrectangular_precolored_initial_state": 1
+          }
+        },
+        {
+          "family": "guillotine",
+          "histories": 180,
+          "outcomes": {
+            "blocked": 176,
+            "outside_scope": 2,
+            "completed": 2
+          },
+          "reasons": {
+            "no_companion_with_common_interfaces_fixed": 70,
+            "fixed_outside_reached": 25,
+            "local_budget_exceeded": 79,
+            "odd_cycle_in_patch": 2,
+            "endpoint mother/retained side is not uniquely defined": 2
+          }
+        },
+        {
+          "family": "nested-rings-and-bridges",
+          "histories": 16,
+          "outcomes": {
+            "outside_scope": 16
+          },
+          "reasons": {
+            "exactly two endpoints required": 16
+          }
+        },
+        {
+          "family": "symbolic-teaching",
+          "histories": 3,
+          "outcomes": {
+            "completed": 3
+          },
+          "reasons": {}
+        },
+        {
+          "family": "teaching-A",
+          "histories": 2,
+          "outcomes": {
+            "completed": 2
+          },
+          "reasons": {}
+        },
+        {
+          "family": "teaching-B",
+          "histories": 2,
+          "outcomes": {
+            "completed": 2
+          },
+          "reasons": {}
+        },
+        {
+          "family": "teaching-C",
+          "histories": 2,
+          "outcomes": {
+            "completed": 1,
+            "blocked": 1
+          },
+          "reasons": {
+            "no_companion_with_common_interfaces_fixed": 1
+          }
+        },
+        {
+          "family": "teaching-D",
+          "histories": 3,
+          "outcomes": {
+            "completed": 2,
+            "blocked": 1
+          },
+          "reasons": {
+            "local_budget_exceeded": 1
+          }
+        },
+        {
+          "family": "teaching-E",
+          "histories": 2,
+          "outcomes": {
+            "blocked": 1,
+            "completed": 1
+          },
+          "reasons": {
+            "local_budget_exceeded": 1
+          }
+        },
+        {
+          "family": "two-anchor-strip",
+          "histories": 40,
+          "outcomes": {
+            "blocked": 40
+          },
+          "reasons": {
+            "local_budget_exceeded": 40
+          }
+        }
+      ]
+    },
+    {
+      "policy": "pinned-b3",
+      "histories": 323,
+      "outcomes": {
+        "blocked": 222,
+        "completed": 15,
+        "outside_scope": 86
+      },
+      "committed_splits": 1954,
+      "families": [
+        {
+          "family": "boundary-fan",
+          "histories": 60,
+          "outcomes": {
+            "outside_scope": 60
+          },
+          "reasons": {
+            "nonzero axis-aligned cut required": 60
+          }
+        },
+        {
+          "family": "construction-gallery",
+          "histories": 13,
+          "outcomes": {
+            "outside_scope": 10,
+            "blocked": 1,
+            "completed": 2
+          },
+          "reasons": {
+            "exactly two endpoints required": 6,
+            "no_companion_with_common_interfaces_fixed": 1,
+            "cut must traverse exactly one rectangular side between opposite boundaries": 2,
+            "nonzero axis-aligned cut required": 1,
+            "nonrectangular_precolored_initial_state": 1
+          }
+        },
+        {
+          "family": "guillotine",
+          "histories": 180,
+          "outcomes": {
+            "blocked": 178,
+            "completed": 2
+          },
+          "reasons": {
+            "no_companion_with_common_interfaces_fixed": 50,
+            "boundary_phase_conflict": 29,
+            "local_budget_exceeded": 97,
+            "odd_cycle_in_patch": 2
+          }
+        },
+        {
+          "family": "nested-rings-and-bridges",
+          "histories": 16,
+          "outcomes": {
+            "outside_scope": 16
+          },
+          "reasons": {
+            "exactly two endpoints required": 16
+          }
+        },
+        {
+          "family": "symbolic-teaching",
+          "histories": 3,
+          "outcomes": {
+            "completed": 3
+          },
+          "reasons": {}
+        },
+        {
+          "family": "teaching-A",
+          "histories": 2,
+          "outcomes": {
+            "completed": 2
+          },
+          "reasons": {}
+        },
+        {
+          "family": "teaching-B",
+          "histories": 2,
+          "outcomes": {
+            "completed": 2
+          },
+          "reasons": {}
+        },
+        {
+          "family": "teaching-C",
+          "histories": 2,
+          "outcomes": {
+            "completed": 1,
+            "blocked": 1
+          },
+          "reasons": {
+            "no_companion_with_common_interfaces_fixed": 1
+          }
+        },
+        {
+          "family": "teaching-D",
+          "histories": 3,
+          "outcomes": {
+            "completed": 2,
+            "blocked": 1
+          },
+          "reasons": {
+            "local_budget_exceeded": 1
+          }
+        },
+        {
+          "family": "teaching-E",
+          "histories": 2,
+          "outcomes": {
+            "blocked": 1,
+            "completed": 1
+          },
+          "reasons": {
+            "local_budget_exceeded": 1
+          }
+        },
+        {
+          "family": "two-anchor-strip",
+          "histories": 40,
+          "outcomes": {
+            "blocked": 40
+          },
+          "reasons": {
+            "local_budget_exceeded": 40
+          }
+        }
+      ]
+    },
+    {
+      "policy": "release-b3",
+      "histories": 323,
+      "outcomes": {
+        "blocked": 221,
+        "completed": 16,
+        "outside_scope": 86
+      },
+      "committed_splits": 2073,
+      "families": [
+        {
+          "family": "boundary-fan",
+          "histories": 60,
+          "outcomes": {
+            "outside_scope": 60
+          },
+          "reasons": {
+            "nonzero axis-aligned cut required": 60
+          }
+        },
+        {
+          "family": "construction-gallery",
+          "histories": 13,
+          "outcomes": {
+            "outside_scope": 10,
+            "blocked": 1,
+            "completed": 2
+          },
+          "reasons": {
+            "exactly two endpoints required": 6,
+            "no_companion_with_common_interfaces_fixed": 1,
+            "cut must traverse exactly one rectangular side between opposite boundaries": 2,
+            "nonzero axis-aligned cut required": 1,
+            "nonrectangular_precolored_initial_state": 1
+          }
+        },
+        {
+          "family": "guillotine",
+          "histories": 180,
+          "outcomes": {
+            "blocked": 178,
+            "completed": 2
+          },
+          "reasons": {
+            "no_companion_with_common_interfaces_fixed": 39,
+            "boundary_phase_conflict": 20,
+            "local_budget_exceeded": 117,
+            "odd_cycle_in_patch": 2
+          }
+        },
+        {
+          "family": "nested-rings-and-bridges",
+          "histories": 16,
+          "outcomes": {
+            "outside_scope": 16
+          },
+          "reasons": {
+            "exactly two endpoints required": 16
+          }
+        },
+        {
+          "family": "symbolic-teaching",
+          "histories": 3,
+          "outcomes": {
+            "completed": 3
+          },
+          "reasons": {}
+        },
+        {
+          "family": "teaching-A",
+          "histories": 2,
+          "outcomes": {
+            "completed": 2
+          },
+          "reasons": {}
+        },
+        {
+          "family": "teaching-B",
+          "histories": 2,
+          "outcomes": {
+            "completed": 2
+          },
+          "reasons": {}
+        },
+        {
+          "family": "teaching-C",
+          "histories": 2,
+          "outcomes": {
+            "completed": 2
+          },
+          "reasons": {}
+        },
+        {
+          "family": "teaching-D",
+          "histories": 3,
+          "outcomes": {
+            "completed": 2,
+            "blocked": 1
+          },
+          "reasons": {
+            "local_budget_exceeded": 1
+          }
+        },
+        {
+          "family": "teaching-E",
+          "histories": 2,
+          "outcomes": {
+            "blocked": 1,
+            "completed": 1
+          },
+          "reasons": {
+            "local_budget_exceeded": 1
+          }
+        },
+        {
+          "family": "two-anchor-strip",
+          "histories": 40,
+          "outcomes": {
+            "blocked": 40
+          },
+          "reasons": {
+            "local_budget_exceeded": 40
+          }
+        }
+      ]
+    },
+    {
+      "policy": "release-b32-control",
+      "histories": 323,
+      "outcomes": {
+        "blocked": 150,
+        "completed": 87,
+        "outside_scope": 86
+      },
+      "committed_splits": 3603,
+      "families": [
+        {
+          "family": "boundary-fan",
+          "histories": 60,
+          "outcomes": {
+            "outside_scope": 60
+          },
+          "reasons": {
+            "nonzero axis-aligned cut required": 60
+          }
+        },
+        {
+          "family": "construction-gallery",
+          "histories": 13,
+          "outcomes": {
+            "outside_scope": 10,
+            "blocked": 1,
+            "completed": 2
+          },
+          "reasons": {
+            "exactly two endpoints required": 6,
+            "no_companion_with_common_interfaces_fixed": 1,
+            "cut must traverse exactly one rectangular side between opposite boundaries": 2,
+            "nonzero axis-aligned cut required": 1,
+            "nonrectangular_precolored_initial_state": 1
+          }
+        },
+        {
+          "family": "guillotine",
+          "histories": 180,
+          "outcomes": {
+            "blocked": 147,
+            "completed": 33
+          },
+          "reasons": {
+            "no_companion_with_common_interfaces_fixed": 50,
+            "boundary_phase_conflict": 66,
+            "odd_cycle_in_patch": 31
+          }
+        },
+        {
+          "family": "nested-rings-and-bridges",
+          "histories": 16,
+          "outcomes": {
+            "outside_scope": 16
+          },
+          "reasons": {
+            "exactly two endpoints required": 16
+          }
+        },
+        {
+          "family": "symbolic-teaching",
+          "histories": 3,
+          "outcomes": {
+            "completed": 3
+          },
+          "reasons": {}
+        },
+        {
+          "family": "teaching-A",
+          "histories": 2,
+          "outcomes": {
+            "completed": 2
+          },
+          "reasons": {}
+        },
+        {
+          "family": "teaching-B",
+          "histories": 2,
+          "outcomes": {
+            "completed": 2
+          },
+          "reasons": {}
+        },
+        {
+          "family": "teaching-C",
+          "histories": 2,
+          "outcomes": {
+            "completed": 2
+          },
+          "reasons": {}
+        },
+        {
+          "family": "teaching-D",
+          "histories": 3,
+          "outcomes": {
+            "completed": 2,
+            "blocked": 1
+          },
+          "reasons": {
+            "local_budget_exceeded": 1
+          }
+        },
+        {
+          "family": "teaching-E",
+          "histories": 2,
+          "outcomes": {
+            "blocked": 1,
+            "completed": 1
+          },
+          "reasons": {
+            "odd_cycle_in_patch": 1
+          }
+        },
+        {
+          "family": "two-anchor-strip",
+          "histories": 40,
+          "outcomes": {
+            "completed": 40
+          },
+          "reasons": {}
+        }
+      ]
+    },
+    {
+      "policy": "interface-b3",
+      "histories": 323,
+      "outcomes": {
+        "blocked": 219,
+        "completed": 18,
+        "outside_scope": 86
+      },
+      "committed_splits": 2189,
+      "families": [
+        {
+          "family": "boundary-fan",
+          "histories": 60,
+          "outcomes": {
+            "outside_scope": 60
+          },
+          "reasons": {
+            "nonzero axis-aligned cut required": 60
+          }
+        },
+        {
+          "family": "construction-gallery",
+          "histories": 13,
+          "outcomes": {
+            "outside_scope": 10,
+            "completed": 3
+          },
+          "reasons": {
+            "exactly two endpoints required": 6,
+            "cut must traverse exactly one rectangular side between opposite boundaries": 2,
+            "nonzero axis-aligned cut required": 1,
+            "nonrectangular_precolored_initial_state": 1
+          }
+        },
+        {
+          "family": "guillotine",
+          "histories": 180,
+          "outcomes": {
+            "blocked": 177,
+            "completed": 3
+          },
+          "reasons": {
+            "no_safe_shared_interface_release": 18,
+            "boundary_phase_conflict": 25,
+            "local_budget_exceeded": 131,
+            "odd_cycle_in_patch": 2,
+            "after_shared_release/local_budget_exceeded": 1
+          }
+        },
+        {
+          "family": "nested-rings-and-bridges",
+          "histories": 16,
+          "outcomes": {
+            "outside_scope": 16
+          },
+          "reasons": {
+            "exactly two endpoints required": 16
+          }
+        },
+        {
+          "family": "symbolic-teaching",
+          "histories": 3,
+          "outcomes": {
+            "completed": 3
+          },
+          "reasons": {}
+        },
+        {
+          "family": "teaching-A",
+          "histories": 2,
+          "outcomes": {
+            "completed": 2
+          },
+          "reasons": {}
+        },
+        {
+          "family": "teaching-B",
+          "histories": 2,
+          "outcomes": {
+            "completed": 2
+          },
+          "reasons": {}
+        },
+        {
+          "family": "teaching-C",
+          "histories": 2,
+          "outcomes": {
+            "completed": 2
+          },
+          "reasons": {}
+        },
+        {
+          "family": "teaching-D",
+          "histories": 3,
+          "outcomes": {
+            "completed": 2,
+            "blocked": 1
+          },
+          "reasons": {
+            "local_budget_exceeded": 1
+          }
+        },
+        {
+          "family": "teaching-E",
+          "histories": 2,
+          "outcomes": {
+            "blocked": 1,
+            "completed": 1
+          },
+          "reasons": {
+            "local_budget_exceeded": 1
+          }
+        },
+        {
+          "family": "two-anchor-strip",
+          "histories": 40,
+          "outcomes": {
+            "blocked": 40
+          },
+          "reasons": {
+            "local_budget_exceeded": 40
+          }
+        }
+      ]
+    },
+    {
+      "policy": "interface-b32-control",
+      "histories": 323,
+      "outcomes": {
+        "blocked": 142,
+        "completed": 95,
+        "outside_scope": 86
+      },
+      "committed_splits": 3834,
+      "families": [
+        {
+          "family": "boundary-fan",
+          "histories": 60,
+          "outcomes": {
+            "outside_scope": 60
+          },
+          "reasons": {
+            "nonzero axis-aligned cut required": 60
+          }
+        },
+        {
+          "family": "construction-gallery",
+          "histories": 13,
+          "outcomes": {
+            "outside_scope": 10,
+            "completed": 3
+          },
+          "reasons": {
+            "exactly two endpoints required": 6,
+            "cut must traverse exactly one rectangular side between opposite boundaries": 2,
+            "nonzero axis-aligned cut required": 1,
+            "nonrectangular_precolored_initial_state": 1
+          }
+        },
+        {
+          "family": "guillotine",
+          "histories": 180,
+          "outcomes": {
+            "blocked": 140,
+            "completed": 40
+          },
+          "reasons": {
+            "no_safe_shared_interface_release": 27,
+            "boundary_phase_conflict": 80,
+            "odd_cycle_in_patch": 33
+          }
+        },
+        {
+          "family": "nested-rings-and-bridges",
+          "histories": 16,
+          "outcomes": {
+            "outside_scope": 16
+          },
+          "reasons": {
+            "exactly two endpoints required": 16
+          }
+        },
+        {
+          "family": "symbolic-teaching",
+          "histories": 3,
+          "outcomes": {
+            "completed": 3
+          },
+          "reasons": {}
+        },
+        {
+          "family": "teaching-A",
+          "histories": 2,
+          "outcomes": {
+            "completed": 2
+          },
+          "reasons": {}
+        },
+        {
+          "family": "teaching-B",
+          "histories": 2,
+          "outcomes": {
+            "completed": 2
+          },
+          "reasons": {}
+        },
+        {
+          "family": "teaching-C",
+          "histories": 2,
+          "outcomes": {
+            "completed": 2
+          },
+          "reasons": {}
+        },
+        {
+          "family": "teaching-D",
+          "histories": 3,
+          "outcomes": {
+            "completed": 2,
+            "blocked": 1
+          },
+          "reasons": {
+            "local_budget_exceeded": 1
+          }
+        },
+        {
+          "family": "teaching-E",
+          "histories": 2,
+          "outcomes": {
+            "blocked": 1,
+            "completed": 1
+          },
+          "reasons": {
+            "odd_cycle_in_patch": 1
+          }
+        },
+        {
+          "family": "two-anchor-strip",
+          "histories": 40,
+          "outcomes": {
+            "completed": 40
+          },
+          "reasons": {}
+        }
+      ]
+    }
+  ],
+  "matched_refinement_comparisons": [
+    {
+      "before_policy": "legacy-b3",
+      "after_policy": "interface-b3",
+      "matched_histories": 323,
+      "further": 65,
+      "equal_depth": 258,
+      "earlier": 0,
+      "additional_committed_splits": 283,
+      "old_complete_now_not": [],
+      "newly_completed_count": 3,
+      "newly_completed_keys": [
+        "guillotine-20261042",
+        "construction-order-blocked",
+        "C_frozen_start"
+      ],
+      "no_earlier_stop_verified": true
+    },
+    {
+      "before_policy": "release-b3",
+      "after_policy": "interface-b3",
+      "matched_histories": 323,
+      "further": 21,
+      "equal_depth": 302,
+      "earlier": 0,
+      "additional_committed_splits": 116,
+      "old_complete_now_not": [],
+      "newly_completed_count": 2,
+      "newly_completed_keys": [
+        "guillotine-20261042",
+        "construction-order-blocked"
+      ],
+      "no_earlier_stop_verified": true
+    },
+    {
+      "before_policy": "release-b32-control",
+      "after_policy": "interface-b32-control",
+      "matched_histories": 323,
+      "further": 26,
+      "equal_depth": 297,
+      "earlier": 0,
+      "additional_committed_splits": 231,
+      "old_complete_now_not": [],
+      "newly_completed_count": 8,
+      "newly_completed_keys": [
+        "guillotine-20260996",
+        "guillotine-20261012",
+        "guillotine-20261042",
+        "guillotine-20261047",
+        "guillotine-20261059",
+        "guillotine-20261062",
+        "guillotine-20261204",
+        "construction-order-blocked"
+      ],
+      "no_earlier_stop_verified": true
+    }
+  ],
+  "interface_b3_failures": {
+    "blocked_histories": 219,
+    "raw_reasons": {
+      "no_safe_shared_interface_release": 18,
+      "boundary_phase_conflict": 25,
+      "local_budget_exceeded": 173,
+      "odd_cycle_in_patch": 2,
+      "after_shared_release/local_budget_exceeded": 1
+    },
+    "exhaustive_categories": {
+      "no_safe_interface_release": 18,
+      "phase": 25,
+      "budget": 174,
+      "odd_cycle": 2
+    },
+    "category_rule": "after_shared_release/local_budget_exceeded counts once as budget."
+  },
+  "repair_events_not_completion_counts": [
+    {
+      "policy": "interface-b3",
+      "successful_step_methods": {
+        "current_direct": 1951,
+        "current_release_direct": 41,
+        "shared_interface_release": 25,
+        "current_pinned_parity": 172
+      },
+      "successful_shared_interface_repairs": 25,
+      "histories_with_successful_shared_interface_repair": 21,
+      "completed_histories_with_shared_interface_repair": 2,
+      "all_successful_old_side_repair_events": 238,
+      "completed_histories_total": 18
+    },
+    {
+      "policy": "interface-b32-control",
+      "successful_step_methods": {
+        "current_direct": 2605,
+        "current_release_direct": 77,
+        "shared_interface_release": 31,
+        "current_pinned_parity": 1121
+      },
+      "successful_shared_interface_repairs": 31,
+      "histories_with_successful_shared_interface_repair": 26,
+      "completed_histories_with_shared_interface_repair": 8,
+      "all_successful_old_side_repair_events": 1229,
+      "completed_histories_total": 95
+    }
+  ],
+  "limits": [
+    "This is a report/hash audit, not another independent execution of the coloring algorithm.",
+    "302 static topology certificates make zero naming-success claims.",
+    "Histories, aliases, unique drawings, successful local repairs and completed histories are different counts.",
+    "Finite exploratory input coverage does not establish a universal proof or statistical generalization."
+  ]
+}

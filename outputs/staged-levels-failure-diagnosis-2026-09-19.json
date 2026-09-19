@@ -1,0 +1,1675 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-19T05:23:48.440975+00:00",
+  "sources": [
+    {
+      "filename": "staged-levels-full-2026-09-19.json.gz",
+      "sha256": "87250016644ba5c9c25573e0894af563eb451cd43915c11bad73927308af4910",
+      "full_corpus_run": true,
+      "failed_inventory_records": 4,
+      "all_failed_records_have_full_certificates": true
+    }
+  ],
+  "method": "six-exterior-preserving-permutations-of-archived-v2-witness",
+  "source_sha256": {
+    "scripts/diagnose_staged_levels_failures.py": "c2aa313b6572d272bccdd9013ea6fd4646063963961337343d912eccb0aaea37",
+    "scripts/validate_staged_levels.py": "e907b0a37c622c6df297b439ba69b6725117aecd2b3630021ae8bf8c1f86f67e",
+    "scripts/validate_level_sides_peer.py": "1226941d2a95b632eec0532581b21d775afd25eb24a38b05a039d485528e803f",
+    "scripts/validate_relation_frontier.py": "d572cdb030021d3d080e7cf277f688e80c2a5af87b7a52cab3d1991f75b4248e",
+    "scripts/validate_frontier_restart.py": "74b0d487b04ee218c3328cdbf566801812472cbe47a71b4f78bbda580aae39a7",
+    "scripts/validate_global_restart.py": "2807c3ce904e42e4fb2bd194f773724c6bf7364f592d8cc730dfecc856601c18",
+    "scripts/analyze_line_generations.py": "48058342337b5a7c5ec523df42e16d447ccf1009dd4ffdf9f1924e06c1e57bd6",
+    "fourcolor/embedding.py": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+    "fourcolor/line_names.py": "8fdfb7019d89edd01643bb5e1554a3aba8480dfbc032f34c72039782c620ce33",
+    "fourcolor/whole_lines.py": "5bd54516c18ff74c2dcba2a5e89a27b1af7e3c0277fb3aa8e12f0efa55f9312c",
+    "fourcolor/global_restart.py": "56aafff2632cf4c02cc20c7a056d02b9932f65f700311846d7d81c1cb32b3cbb",
+    "fourcolor/closed_support.py": "0a95dd2802d16654a4342332ae9f9825944a26c4fe2cad182de0a214fbfc56f1"
+  },
+  "source_sha256_end": {
+    "scripts/diagnose_staged_levels_failures.py": "c2aa313b6572d272bccdd9013ea6fd4646063963961337343d912eccb0aaea37",
+    "scripts/validate_staged_levels.py": "e907b0a37c622c6df297b439ba69b6725117aecd2b3630021ae8bf8c1f86f67e",
+    "scripts/validate_level_sides_peer.py": "1226941d2a95b632eec0532581b21d775afd25eb24a38b05a039d485528e803f",
+    "scripts/validate_relation_frontier.py": "d572cdb030021d3d080e7cf277f688e80c2a5af87b7a52cab3d1991f75b4248e",
+    "scripts/validate_frontier_restart.py": "74b0d487b04ee218c3328cdbf566801812472cbe47a71b4f78bbda580aae39a7",
+    "scripts/validate_global_restart.py": "2807c3ce904e42e4fb2bd194f773724c6bf7364f592d8cc730dfecc856601c18",
+    "scripts/analyze_line_generations.py": "48058342337b5a7c5ec523df42e16d447ccf1009dd4ffdf9f1924e06c1e57bd6",
+    "fourcolor/embedding.py": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+    "fourcolor/line_names.py": "8fdfb7019d89edd01643bb5e1554a3aba8480dfbc032f34c72039782c620ce33",
+    "fourcolor/whole_lines.py": "5bd54516c18ff74c2dcba2a5e89a27b1af7e3c0277fb3aa8e12f0efa55f9312c",
+    "fourcolor/global_restart.py": "56aafff2632cf4c02cc20c7a056d02b9932f65f700311846d7d81c1cb32b3cbb",
+    "fourcolor/closed_support.py": "0a95dd2802d16654a4342332ae9f9825944a26c4fe2cad182de0a214fbfc56f1"
+  },
+  "source_hashes_unchanged": true,
+  "production_attempts_added": 0,
+  "failure_records_examined": 4,
+  "terminal_choice_proved_first_fatal": 4,
+  "records": [
+    {
+      "key": "24a1e4a943b811f0c67889cea04fbdbfd6ba269e326bc7a952e07d6a98d3fafa",
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261936",
+          "step": 20
+        }
+      ],
+      "face_count": 22,
+      "candidate_policy": "stage-anchored-level-sides-v3",
+      "choices": 2,
+      "initialization": {
+        "mode": "first-through-mother-retained-side",
+        "eligible_mothers": [
+          "L:190,0>190,600",
+          "L:274,0>274,600",
+          "L:551,0>551,600",
+          "L:708,0>708,600",
+          "L:817,0>817,600"
+        ],
+        "mother": "L:190,0>190,600",
+        "side": 2,
+        "dart": 58,
+        "frame_boundary_edges": [
+          1
+        ],
+        "domain_before": [
+          2,
+          3,
+          4
+        ],
+        "symbol": 2,
+        "historical_frame_pair": [
+          1,
+          2
+        ],
+        "coarse_split_pair_unordered": [
+          2,
+          3
+        ],
+        "birth_pair_is_not_a_final_profile_constraint": true,
+        "outside_dart": 0,
+        "outside_side": 0,
+        "prebound_final_inner_anchor": false
+      },
+      "conflict_proof_replayed": {
+        "passed": true,
+        "claim": "this-greedy-commitment-set-has-no-extension-not-map-impossibility",
+        "method": "independent-stage-initialization-level-order-boundaries-and-set-proof-replay",
+        "final_legality": null,
+        "hall_events": 70,
+        "filter_phases": 4,
+        "relation_events": 250,
+        "ordered_pair_deletions_replayed": 531
+      },
+      "terminal_conflict": {
+        "hall_status": "underdetermined",
+        "hall_conflict": null,
+        "empty_unary_sides": [],
+        "empty_ordered_side_relations": [
+          [
+            3,
+            11
+          ],
+          [
+            11,
+            3
+          ]
+        ],
+        "last_relation_derivation": {
+          "i": 11,
+          "j": 3,
+          "via": 20,
+          "before": 33792,
+          "left": 18432,
+          "right": 33792,
+          "after": 0,
+          "removed": 33792,
+          "decoded_pairs": {
+            "before": [
+              [
+                3,
+                3
+              ],
+              [
+                4,
+                4
+              ]
+            ],
+            "left": [
+              [
+                3,
+                4
+              ],
+              [
+                4,
+                3
+              ]
+            ],
+            "right": [
+              [
+                3,
+                3
+              ],
+              [
+                4,
+                4
+              ]
+            ],
+            "after": [],
+            "removed": [
+              [
+                3,
+                3
+              ],
+              [
+                4,
+                4
+              ]
+            ]
+          }
+        },
+        "index_meaning": "i, j, and via are current side identities, not mother-line names."
+      },
+      "production_attempts_added": 0,
+      "diagnostic_old_colors_read": true,
+      "status": "terminal-choice-proved-first-fatal",
+      "archived_policy": "mother-level-peer-sides-v2",
+      "archived_witness_audit": {
+        "passed": true,
+        "shore_count": 22,
+        "edge_count": 64,
+        "separator_edges_checked": 64,
+        "side_orbits_checked": 22,
+        "line_names_sha256": "cca149a4ee6972f3b4b7e194195586e03a4a6cbfa61e35e7bd17daaf45af98b0"
+      },
+      "permutations_examined": 6,
+      "permutation_prefix_lengths": [
+        {
+          "permutation": {
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4
+          },
+          "matched_active_choice_prefix": 0
+        },
+        {
+          "permutation": {
+            "1": 1,
+            "2": 2,
+            "3": 4,
+            "4": 3
+          },
+          "matched_active_choice_prefix": 0
+        },
+        {
+          "permutation": {
+            "1": 1,
+            "2": 3,
+            "3": 2,
+            "4": 4
+          },
+          "matched_active_choice_prefix": 1
+        },
+        {
+          "permutation": {
+            "1": 1,
+            "2": 3,
+            "3": 4,
+            "4": 2
+          },
+          "matched_active_choice_prefix": 0
+        },
+        {
+          "permutation": {
+            "1": 1,
+            "2": 4,
+            "3": 2,
+            "4": 3
+          },
+          "matched_active_choice_prefix": 1
+        },
+        {
+          "permutation": {
+            "1": 1,
+            "2": 4,
+            "3": 3,
+            "4": 2
+          },
+          "matched_active_choice_prefix": 0
+        }
+      ],
+      "longest_witnessed_active_prefix": 1,
+      "first_fatal_choice_proved": true,
+      "first_fatal_choice_index_one_based": 2,
+      "witness": {
+        "permutation": {
+          "1": 1,
+          "2": 3,
+          "3": 2,
+          "4": 4
+        },
+        "colors": [
+          1,
+          3,
+          2,
+          3,
+          2,
+          3,
+          2,
+          4,
+          2,
+          3,
+          2,
+          3,
+          2,
+          3,
+          2,
+          4,
+          1,
+          2,
+          1,
+          3,
+          4,
+          1
+        ],
+        "matched_active_choice_prefix": 1,
+        "geometry_audit": {
+          "passed": true,
+          "shore_count": 22,
+          "edge_count": 64,
+          "separator_edges_checked": 64,
+          "side_orbits_checked": 22,
+          "line_names_sha256": "0fdfdf43d63b24ac3d90ad4ff3cc6a8400a94caec311fd4b4301617ec7aab219"
+        },
+        "prefix_relation_audit": {
+          "passed": true,
+          "propagation_calls_checked": 2,
+          "ordered_pair_memberships_checked": 968
+        }
+      },
+      "terminal_choice": {
+        "index_one_based": 2,
+        "unit": "L:190,0>190,600@0.688333333333:0.878333333333",
+        "mother": "L:190,0>190,600",
+        "side": 17,
+        "dart": 66,
+        "unresolved_shores": [
+          17,
+          11
+        ],
+        "urgency": 2,
+        "unresolved_neighbors": 7,
+        "constraint_weight": 4,
+        "including_named_weight": 4,
+        "closed_support": {
+          "supported": false,
+          "block_edge_ids": [],
+          "endpoint_vertices": [
+            "27",
+            "28"
+          ]
+        },
+        "priority": [
+          2,
+          7,
+          4,
+          0
+        ],
+        "tied_units": [
+          "L:190,0>190,600@0.688333333333:0.878333333333"
+        ],
+        "level": 2,
+        "parents": [
+          [
+            "frame"
+          ],
+          [
+            "frame"
+          ]
+        ],
+        "selection_group": "rooted",
+        "domain": [
+          1,
+          2
+        ],
+        "symbol": 1,
+        "boundary": {
+          "sources": [
+            {
+              "edge": 33,
+              "mother": "L:190,0>190,600",
+              "interval": [
+                0.6883333333333334,
+                0.8783333333333333
+              ],
+              "neighbor": 11,
+              "neighbor_domain": [
+                3,
+                4
+              ]
+            },
+            {
+              "edge": 40,
+              "mother": "L:190,413>274,413",
+              "interval": [
+                0.0,
+                0.38095238095238093
+              ],
+              "neighbor": 16,
+              "neighbor_domain": [
+                1,
+                3,
+                4
+              ]
+            },
+            {
+              "edge": 41,
+              "mother": "L:190,413>274,413",
+              "interval": [
+                0.38095238095238093,
+                0.6428571428571429
+              ],
+              "neighbor": 19,
+              "neighbor_domain": [
+                1,
+                3,
+                4
+              ]
+            },
+            {
+              "edge": 42,
+              "mother": "L:190,413>274,413",
+              "interval": [
+                0.6428571428571429,
+                0.8452380952380952
+              ],
+              "neighbor": 20,
+              "neighbor_domain": [
+                1,
+                3,
+                4
+              ]
+            },
+            {
+              "edge": 43,
+              "mother": "L:190,413>274,413",
+              "interval": [
+                0.8452380952380952,
+                1.0
+              ],
+              "neighbor": 21,
+              "neighbor_domain": [
+                1,
+                3,
+                4
+              ]
+            },
+            {
+              "edge": 44,
+              "mother": "L:190,527>274,527",
+              "interval": [
+                0.0,
+                1.0
+              ],
+              "neighbor": 18,
+              "neighbor_domain": [
+                1,
+                2,
+                3,
+                4
+              ]
+            },
+            {
+              "edge": 55,
+              "mother": "L:274,0>274,600",
+              "interval": [
+                0.6883333333333334,
+                0.8783333333333333
+              ],
+              "neighbor": 3,
+              "neighbor_domain": [
+                3,
+                4
+              ]
+            }
+          ],
+          "direct_forbidden": [],
+          "local_candidates": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "derived_exclusions": [
+            3,
+            4
+          ],
+          "one_allowed": true
+        },
+        "choice_kind": "greedy-not-a-proved-safe-extension"
+      },
+      "witness_terminal_side_name": 2,
+      "interpretation": "Every earlier active decision has this explicit legal completion; the certified final conflict therefore begins at the terminal commitment."
+    },
+    {
+      "key": "3a04a25433017abf6f2ee9fcca7691e0e9a8e6f7ccfaa29398b7d2530932f102",
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261936",
+          "step": 18
+        }
+      ],
+      "face_count": 20,
+      "candidate_policy": "stage-anchored-level-sides-v3",
+      "choices": 2,
+      "initialization": {
+        "mode": "first-through-mother-retained-side",
+        "eligible_mothers": [
+          "L:190,0>190,600",
+          "L:274,0>274,600",
+          "L:551,0>551,600",
+          "L:708,0>708,600",
+          "L:817,0>817,600"
+        ],
+        "mother": "L:190,0>190,600",
+        "side": 2,
+        "dart": 52,
+        "frame_boundary_edges": [
+          1
+        ],
+        "domain_before": [
+          2,
+          3,
+          4
+        ],
+        "symbol": 2,
+        "historical_frame_pair": [
+          1,
+          2
+        ],
+        "coarse_split_pair_unordered": [
+          2,
+          3
+        ],
+        "birth_pair_is_not_a_final_profile_constraint": true,
+        "outside_dart": 0,
+        "outside_side": 0,
+        "prebound_final_inner_anchor": false
+      },
+      "conflict_proof_replayed": {
+        "passed": true,
+        "claim": "this-greedy-commitment-set-has-no-extension-not-map-impossibility",
+        "method": "independent-stage-initialization-level-order-boundaries-and-set-proof-replay",
+        "final_legality": null,
+        "hall_events": 62,
+        "filter_phases": 4,
+        "relation_events": 178,
+        "ordered_pair_deletions_replayed": 385
+      },
+      "terminal_conflict": {
+        "hall_status": "underdetermined",
+        "hall_conflict": null,
+        "empty_unary_sides": [],
+        "empty_ordered_side_relations": [
+          [
+            3,
+            10
+          ],
+          [
+            10,
+            3
+          ]
+        ],
+        "last_relation_derivation": {
+          "i": 10,
+          "j": 3,
+          "via": 18,
+          "before": 33792,
+          "left": 18432,
+          "right": 33792,
+          "after": 0,
+          "removed": 33792,
+          "decoded_pairs": {
+            "before": [
+              [
+                3,
+                3
+              ],
+              [
+                4,
+                4
+              ]
+            ],
+            "left": [
+              [
+                3,
+                4
+              ],
+              [
+                4,
+                3
+              ]
+            ],
+            "right": [
+              [
+                3,
+                3
+              ],
+              [
+                4,
+                4
+              ]
+            ],
+            "after": [],
+            "removed": [
+              [
+                3,
+                3
+              ],
+              [
+                4,
+                4
+              ]
+            ]
+          }
+        },
+        "index_meaning": "i, j, and via are current side identities, not mother-line names."
+      },
+      "production_attempts_added": 0,
+      "diagnostic_old_colors_read": true,
+      "status": "terminal-choice-proved-first-fatal",
+      "archived_policy": "mother-level-peer-sides-v2",
+      "archived_witness_audit": {
+        "passed": true,
+        "shore_count": 20,
+        "edge_count": 58,
+        "separator_edges_checked": 58,
+        "side_orbits_checked": 20,
+        "line_names_sha256": "99708f7b48f2ce78e5810fd527ba747d51c89f85aa830ac49e09620f420d4071"
+      },
+      "permutations_examined": 6,
+      "permutation_prefix_lengths": [
+        {
+          "permutation": {
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4
+          },
+          "matched_active_choice_prefix": 0
+        },
+        {
+          "permutation": {
+            "1": 1,
+            "2": 2,
+            "3": 4,
+            "4": 3
+          },
+          "matched_active_choice_prefix": 0
+        },
+        {
+          "permutation": {
+            "1": 1,
+            "2": 3,
+            "3": 2,
+            "4": 4
+          },
+          "matched_active_choice_prefix": 1
+        },
+        {
+          "permutation": {
+            "1": 1,
+            "2": 3,
+            "3": 4,
+            "4": 2
+          },
+          "matched_active_choice_prefix": 0
+        },
+        {
+          "permutation": {
+            "1": 1,
+            "2": 4,
+            "3": 2,
+            "4": 3
+          },
+          "matched_active_choice_prefix": 1
+        },
+        {
+          "permutation": {
+            "1": 1,
+            "2": 4,
+            "3": 3,
+            "4": 2
+          },
+          "matched_active_choice_prefix": 0
+        }
+      ],
+      "longest_witnessed_active_prefix": 1,
+      "first_fatal_choice_proved": true,
+      "first_fatal_choice_index_one_based": 2,
+      "witness": {
+        "permutation": {
+          "1": 1,
+          "2": 3,
+          "3": 2,
+          "4": 4
+        },
+        "colors": [
+          1,
+          3,
+          2,
+          3,
+          2,
+          3,
+          2,
+          2,
+          3,
+          2,
+          3,
+          2,
+          3,
+          4,
+          1,
+          2,
+          1,
+          3,
+          4,
+          1
+        ],
+        "matched_active_choice_prefix": 1,
+        "geometry_audit": {
+          "passed": true,
+          "shore_count": 20,
+          "edge_count": 58,
+          "separator_edges_checked": 58,
+          "side_orbits_checked": 20,
+          "line_names_sha256": "d0bfd30100421865cf4608c086d4c1f923084799a70f7bba65cff91bc4227e18"
+        },
+        "prefix_relation_audit": {
+          "passed": true,
+          "propagation_calls_checked": 2,
+          "ordered_pair_memberships_checked": 800
+        }
+      },
+      "terminal_choice": {
+        "index_one_based": 2,
+        "unit": "L:190,0>190,600@0.688333333333:0.878333333333",
+        "mother": "L:190,0>190,600",
+        "side": 15,
+        "dart": 60,
+        "unresolved_shores": [
+          15,
+          10
+        ],
+        "urgency": 2,
+        "unresolved_neighbors": 7,
+        "constraint_weight": 4,
+        "including_named_weight": 4,
+        "closed_support": {
+          "supported": false,
+          "block_edge_ids": [],
+          "endpoint_vertices": [
+            "25",
+            "26"
+          ]
+        },
+        "priority": [
+          2,
+          7,
+          4,
+          0
+        ],
+        "tied_units": [
+          "L:190,0>190,600@0.688333333333:0.878333333333"
+        ],
+        "level": 2,
+        "parents": [
+          [
+            "frame"
+          ],
+          [
+            "frame"
+          ]
+        ],
+        "selection_group": "rooted",
+        "domain": [
+          1,
+          2
+        ],
+        "symbol": 1,
+        "boundary": {
+          "sources": [
+            {
+              "edge": 30,
+              "mother": "L:190,0>190,600",
+              "interval": [
+                0.6883333333333334,
+                0.8783333333333333
+              ],
+              "neighbor": 10,
+              "neighbor_domain": [
+                3,
+                4
+              ]
+            },
+            {
+              "edge": 37,
+              "mother": "L:190,413>274,413",
+              "interval": [
+                0.0,
+                0.38095238095238093
+              ],
+              "neighbor": 14,
+              "neighbor_domain": [
+                1,
+                3,
+                4
+              ]
+            },
+            {
+              "edge": 38,
+              "mother": "L:190,413>274,413",
+              "interval": [
+                0.38095238095238093,
+                0.6428571428571429
+              ],
+              "neighbor": 17,
+              "neighbor_domain": [
+                1,
+                3,
+                4
+              ]
+            },
+            {
+              "edge": 39,
+              "mother": "L:190,413>274,413",
+              "interval": [
+                0.6428571428571429,
+                0.8452380952380952
+              ],
+              "neighbor": 18,
+              "neighbor_domain": [
+                1,
+                3,
+                4
+              ]
+            },
+            {
+              "edge": 40,
+              "mother": "L:190,413>274,413",
+              "interval": [
+                0.8452380952380952,
+                1.0
+              ],
+              "neighbor": 19,
+              "neighbor_domain": [
+                1,
+                3,
+                4
+              ]
+            },
+            {
+              "edge": 41,
+              "mother": "L:190,527>274,527",
+              "interval": [
+                0.0,
+                1.0
+              ],
+              "neighbor": 16,
+              "neighbor_domain": [
+                1,
+                2,
+                3,
+                4
+              ]
+            },
+            {
+              "edge": 52,
+              "mother": "L:274,0>274,600",
+              "interval": [
+                0.6883333333333334,
+                0.8783333333333333
+              ],
+              "neighbor": 3,
+              "neighbor_domain": [
+                3,
+                4
+              ]
+            }
+          ],
+          "direct_forbidden": [],
+          "local_candidates": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "derived_exclusions": [
+            3,
+            4
+          ],
+          "one_allowed": true
+        },
+        "choice_kind": "greedy-not-a-proved-safe-extension"
+      },
+      "witness_terminal_side_name": 2,
+      "interpretation": "Every earlier active decision has this explicit legal completion; the certified final conflict therefore begins at the terminal commitment."
+    },
+    {
+      "key": "c0ac50852324a137e4950cfec3433a4b5f2c286471119927683a05691346410e",
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261936",
+          "step": 19
+        }
+      ],
+      "face_count": 21,
+      "candidate_policy": "stage-anchored-level-sides-v3",
+      "choices": 2,
+      "initialization": {
+        "mode": "first-through-mother-retained-side",
+        "eligible_mothers": [
+          "L:190,0>190,600",
+          "L:274,0>274,600",
+          "L:551,0>551,600",
+          "L:708,0>708,600",
+          "L:817,0>817,600"
+        ],
+        "mother": "L:190,0>190,600",
+        "side": 2,
+        "dart": 58,
+        "frame_boundary_edges": [
+          1
+        ],
+        "domain_before": [
+          2,
+          3,
+          4
+        ],
+        "symbol": 2,
+        "historical_frame_pair": [
+          1,
+          2
+        ],
+        "coarse_split_pair_unordered": [
+          2,
+          3
+        ],
+        "birth_pair_is_not_a_final_profile_constraint": true,
+        "outside_dart": 0,
+        "outside_side": 0,
+        "prebound_final_inner_anchor": false
+      },
+      "conflict_proof_replayed": {
+        "passed": true,
+        "claim": "this-greedy-commitment-set-has-no-extension-not-map-impossibility",
+        "method": "independent-stage-initialization-level-order-boundaries-and-set-proof-replay",
+        "final_legality": null,
+        "hall_events": 67,
+        "filter_phases": 4,
+        "relation_events": 183,
+        "ordered_pair_deletions_replayed": 393
+      },
+      "terminal_conflict": {
+        "hall_status": "underdetermined",
+        "hall_conflict": null,
+        "empty_unary_sides": [],
+        "empty_ordered_side_relations": [
+          [
+            3,
+            10
+          ],
+          [
+            10,
+            3
+          ]
+        ],
+        "last_relation_derivation": {
+          "i": 10,
+          "j": 3,
+          "via": 19,
+          "before": 33792,
+          "left": 18432,
+          "right": 33792,
+          "after": 0,
+          "removed": 33792,
+          "decoded_pairs": {
+            "before": [
+              [
+                3,
+                3
+              ],
+              [
+                4,
+                4
+              ]
+            ],
+            "left": [
+              [
+                3,
+                4
+              ],
+              [
+                4,
+                3
+              ]
+            ],
+            "right": [
+              [
+                3,
+                3
+              ],
+              [
+                4,
+                4
+              ]
+            ],
+            "after": [],
+            "removed": [
+              [
+                3,
+                3
+              ],
+              [
+                4,
+                4
+              ]
+            ]
+          }
+        },
+        "index_meaning": "i, j, and via are current side identities, not mother-line names."
+      },
+      "production_attempts_added": 0,
+      "diagnostic_old_colors_read": true,
+      "status": "terminal-choice-proved-first-fatal",
+      "archived_policy": "mother-level-peer-sides-v2",
+      "archived_witness_audit": {
+        "passed": true,
+        "shore_count": 21,
+        "edge_count": 61,
+        "separator_edges_checked": 61,
+        "side_orbits_checked": 21,
+        "line_names_sha256": "f7e01e96a8779ffa5aa4e7621e8d20f12f9ee9e9f5907b75ea4e80d50b7d6818"
+      },
+      "permutations_examined": 6,
+      "permutation_prefix_lengths": [
+        {
+          "permutation": {
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4
+          },
+          "matched_active_choice_prefix": 0
+        },
+        {
+          "permutation": {
+            "1": 1,
+            "2": 2,
+            "3": 4,
+            "4": 3
+          },
+          "matched_active_choice_prefix": 0
+        },
+        {
+          "permutation": {
+            "1": 1,
+            "2": 3,
+            "3": 2,
+            "4": 4
+          },
+          "matched_active_choice_prefix": 1
+        },
+        {
+          "permutation": {
+            "1": 1,
+            "2": 3,
+            "3": 4,
+            "4": 2
+          },
+          "matched_active_choice_prefix": 0
+        },
+        {
+          "permutation": {
+            "1": 1,
+            "2": 4,
+            "3": 2,
+            "4": 3
+          },
+          "matched_active_choice_prefix": 1
+        },
+        {
+          "permutation": {
+            "1": 1,
+            "2": 4,
+            "3": 3,
+            "4": 2
+          },
+          "matched_active_choice_prefix": 0
+        }
+      ],
+      "longest_witnessed_active_prefix": 1,
+      "first_fatal_choice_proved": true,
+      "first_fatal_choice_index_one_based": 2,
+      "witness": {
+        "permutation": {
+          "1": 1,
+          "2": 3,
+          "3": 2,
+          "4": 4
+        },
+        "colors": [
+          1,
+          3,
+          2,
+          3,
+          2,
+          3,
+          2,
+          2,
+          3,
+          2,
+          3,
+          2,
+          3,
+          2,
+          4,
+          1,
+          2,
+          1,
+          3,
+          4,
+          1
+        ],
+        "matched_active_choice_prefix": 1,
+        "geometry_audit": {
+          "passed": true,
+          "shore_count": 21,
+          "edge_count": 61,
+          "separator_edges_checked": 61,
+          "side_orbits_checked": 21,
+          "line_names_sha256": "d2c5a421e6c67d0e67700dd2e5f291db016c414b065df3d34711a508546814d3"
+        },
+        "prefix_relation_audit": {
+          "passed": true,
+          "propagation_calls_checked": 2,
+          "ordered_pair_memberships_checked": 882
+        }
+      },
+      "terminal_choice": {
+        "index_one_based": 2,
+        "unit": "L:190,0>190,600@0.688333333333:0.878333333333",
+        "mother": "L:190,0>190,600",
+        "side": 16,
+        "dart": 66,
+        "unresolved_shores": [
+          16,
+          10
+        ],
+        "urgency": 2,
+        "unresolved_neighbors": 7,
+        "constraint_weight": 4,
+        "including_named_weight": 4,
+        "closed_support": {
+          "supported": false,
+          "block_edge_ids": [],
+          "endpoint_vertices": [
+            "27",
+            "28"
+          ]
+        },
+        "priority": [
+          2,
+          7,
+          4,
+          0
+        ],
+        "tied_units": [
+          "L:190,0>190,600@0.688333333333:0.878333333333"
+        ],
+        "level": 2,
+        "parents": [
+          [
+            "frame"
+          ],
+          [
+            "frame"
+          ]
+        ],
+        "selection_group": "rooted",
+        "domain": [
+          1,
+          2
+        ],
+        "symbol": 1,
+        "boundary": {
+          "sources": [
+            {
+              "edge": 33,
+              "mother": "L:190,0>190,600",
+              "interval": [
+                0.6883333333333334,
+                0.8783333333333333
+              ],
+              "neighbor": 10,
+              "neighbor_domain": [
+                3,
+                4
+              ]
+            },
+            {
+              "edge": 40,
+              "mother": "L:190,413>274,413",
+              "interval": [
+                0.0,
+                0.38095238095238093
+              ],
+              "neighbor": 15,
+              "neighbor_domain": [
+                1,
+                3,
+                4
+              ]
+            },
+            {
+              "edge": 41,
+              "mother": "L:190,413>274,413",
+              "interval": [
+                0.38095238095238093,
+                0.6428571428571429
+              ],
+              "neighbor": 18,
+              "neighbor_domain": [
+                1,
+                3,
+                4
+              ]
+            },
+            {
+              "edge": 42,
+              "mother": "L:190,413>274,413",
+              "interval": [
+                0.6428571428571429,
+                0.8452380952380952
+              ],
+              "neighbor": 19,
+              "neighbor_domain": [
+                1,
+                3,
+                4
+              ]
+            },
+            {
+              "edge": 43,
+              "mother": "L:190,413>274,413",
+              "interval": [
+                0.8452380952380952,
+                1.0
+              ],
+              "neighbor": 20,
+              "neighbor_domain": [
+                1,
+                3,
+                4
+              ]
+            },
+            {
+              "edge": 44,
+              "mother": "L:190,527>274,527",
+              "interval": [
+                0.0,
+                1.0
+              ],
+              "neighbor": 17,
+              "neighbor_domain": [
+                1,
+                2,
+                3,
+                4
+              ]
+            },
+            {
+              "edge": 55,
+              "mother": "L:274,0>274,600",
+              "interval": [
+                0.6883333333333334,
+                0.8783333333333333
+              ],
+              "neighbor": 3,
+              "neighbor_domain": [
+                3,
+                4
+              ]
+            }
+          ],
+          "direct_forbidden": [],
+          "local_candidates": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "derived_exclusions": [
+            3,
+            4
+          ],
+          "one_allowed": true
+        },
+        "choice_kind": "greedy-not-a-proved-safe-extension"
+      },
+      "witness_terminal_side_name": 2,
+      "interpretation": "Every earlier active decision has this explicit legal completion; the certified final conflict therefore begins at the terminal commitment."
+    },
+    {
+      "key": "dc9cebec632a0762379de1441eea298761571ed5faf53f484d3672c4a6ce8739",
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261936",
+          "step": 16
+        }
+      ],
+      "face_count": 18,
+      "candidate_policy": "stage-anchored-level-sides-v3",
+      "choices": 2,
+      "initialization": {
+        "mode": "first-through-mother-retained-side",
+        "eligible_mothers": [
+          "L:190,0>190,600",
+          "L:274,0>274,600",
+          "L:551,0>551,600",
+          "L:708,0>708,600",
+          "L:817,0>817,600"
+        ],
+        "mother": "L:190,0>190,600",
+        "side": 2,
+        "dart": 48,
+        "frame_boundary_edges": [
+          1
+        ],
+        "domain_before": [
+          2,
+          3,
+          4
+        ],
+        "symbol": 2,
+        "historical_frame_pair": [
+          1,
+          2
+        ],
+        "coarse_split_pair_unordered": [
+          2,
+          3
+        ],
+        "birth_pair_is_not_a_final_profile_constraint": true,
+        "outside_dart": 0,
+        "outside_side": 0,
+        "prebound_final_inner_anchor": false
+      },
+      "conflict_proof_replayed": {
+        "passed": true,
+        "claim": "this-greedy-commitment-set-has-no-extension-not-map-impossibility",
+        "method": "independent-stage-initialization-level-order-boundaries-and-set-proof-replay",
+        "final_legality": null,
+        "hall_events": 56,
+        "filter_phases": 4,
+        "relation_events": 124,
+        "ordered_pair_deletions_replayed": 272
+      },
+      "terminal_conflict": {
+        "hall_status": "underdetermined",
+        "hall_conflict": null,
+        "empty_unary_sides": [],
+        "empty_ordered_side_relations": [
+          [
+            3,
+            8
+          ],
+          [
+            8,
+            3
+          ]
+        ],
+        "last_relation_derivation": {
+          "i": 8,
+          "j": 3,
+          "via": 16,
+          "before": 33792,
+          "left": 18432,
+          "right": 33792,
+          "after": 0,
+          "removed": 33792,
+          "decoded_pairs": {
+            "before": [
+              [
+                3,
+                3
+              ],
+              [
+                4,
+                4
+              ]
+            ],
+            "left": [
+              [
+                3,
+                4
+              ],
+              [
+                4,
+                3
+              ]
+            ],
+            "right": [
+              [
+                3,
+                3
+              ],
+              [
+                4,
+                4
+              ]
+            ],
+            "after": [],
+            "removed": [
+              [
+                3,
+                3
+              ],
+              [
+                4,
+                4
+              ]
+            ]
+          }
+        },
+        "index_meaning": "i, j, and via are current side identities, not mother-line names."
+      },
+      "production_attempts_added": 0,
+      "diagnostic_old_colors_read": true,
+      "status": "terminal-choice-proved-first-fatal",
+      "archived_policy": "mother-level-peer-sides-v2",
+      "archived_witness_audit": {
+        "passed": true,
+        "shore_count": 18,
+        "edge_count": 52,
+        "separator_edges_checked": 52,
+        "side_orbits_checked": 18,
+        "line_names_sha256": "bcdc6e0fb02e097605f7b5a87458b8cd2a3f04b04915a734b0b11ecb73868c09"
+      },
+      "permutations_examined": 6,
+      "permutation_prefix_lengths": [
+        {
+          "permutation": {
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4
+          },
+          "matched_active_choice_prefix": 0
+        },
+        {
+          "permutation": {
+            "1": 1,
+            "2": 2,
+            "3": 4,
+            "4": 3
+          },
+          "matched_active_choice_prefix": 0
+        },
+        {
+          "permutation": {
+            "1": 1,
+            "2": 3,
+            "3": 2,
+            "4": 4
+          },
+          "matched_active_choice_prefix": 1
+        },
+        {
+          "permutation": {
+            "1": 1,
+            "2": 3,
+            "3": 4,
+            "4": 2
+          },
+          "matched_active_choice_prefix": 0
+        },
+        {
+          "permutation": {
+            "1": 1,
+            "2": 4,
+            "3": 2,
+            "4": 3
+          },
+          "matched_active_choice_prefix": 1
+        },
+        {
+          "permutation": {
+            "1": 1,
+            "2": 4,
+            "3": 3,
+            "4": 2
+          },
+          "matched_active_choice_prefix": 0
+        }
+      ],
+      "longest_witnessed_active_prefix": 1,
+      "first_fatal_choice_proved": true,
+      "first_fatal_choice_index_one_based": 2,
+      "witness": {
+        "permutation": {
+          "1": 1,
+          "2": 3,
+          "3": 2,
+          "4": 4
+        },
+        "colors": [
+          1,
+          3,
+          2,
+          3,
+          2,
+          3,
+          2,
+          2,
+          3,
+          2,
+          3,
+          4,
+          1,
+          2,
+          1,
+          3,
+          4,
+          1
+        ],
+        "matched_active_choice_prefix": 1,
+        "geometry_audit": {
+          "passed": true,
+          "shore_count": 18,
+          "edge_count": 52,
+          "separator_edges_checked": 52,
+          "side_orbits_checked": 18,
+          "line_names_sha256": "36fe8b2ad39f662db1c07dc7e481a8fe372a936a6d741d7e0e8027fc17c9226f"
+        },
+        "prefix_relation_audit": {
+          "passed": true,
+          "propagation_calls_checked": 2,
+          "ordered_pair_memberships_checked": 648
+        }
+      },
+      "terminal_choice": {
+        "index_one_based": 2,
+        "unit": "L:190,0>190,600@0.688333333333:0.878333333333",
+        "mother": "L:190,0>190,600",
+        "side": 13,
+        "dart": 56,
+        "unresolved_shores": [
+          13,
+          8
+        ],
+        "urgency": 2,
+        "unresolved_neighbors": 7,
+        "constraint_weight": 4,
+        "including_named_weight": 4,
+        "closed_support": {
+          "supported": false,
+          "block_edge_ids": [],
+          "endpoint_vertices": [
+            "23",
+            "24"
+          ]
+        },
+        "priority": [
+          2,
+          7,
+          4,
+          0
+        ],
+        "tied_units": [
+          "L:190,0>190,600@0.688333333333:0.878333333333"
+        ],
+        "level": 2,
+        "parents": [
+          [
+            "frame"
+          ],
+          [
+            "frame"
+          ]
+        ],
+        "selection_group": "rooted",
+        "domain": [
+          1,
+          2
+        ],
+        "symbol": 1,
+        "boundary": {
+          "sources": [
+            {
+              "edge": 28,
+              "mother": "L:190,0>190,600",
+              "interval": [
+                0.6883333333333334,
+                0.8783333333333333
+              ],
+              "neighbor": 8,
+              "neighbor_domain": [
+                3,
+                4
+              ]
+            },
+            {
+              "edge": 35,
+              "mother": "L:190,413>274,413",
+              "interval": [
+                0.0,
+                0.38095238095238093
+              ],
+              "neighbor": 12,
+              "neighbor_domain": [
+                1,
+                3,
+                4
+              ]
+            },
+            {
+              "edge": 36,
+              "mother": "L:190,413>274,413",
+              "interval": [
+                0.38095238095238093,
+                0.6428571428571429
+              ],
+              "neighbor": 15,
+              "neighbor_domain": [
+                1,
+                3,
+                4
+              ]
+            },
+            {
+              "edge": 37,
+              "mother": "L:190,413>274,413",
+              "interval": [
+                0.6428571428571429,
+                0.8452380952380952
+              ],
+              "neighbor": 16,
+              "neighbor_domain": [
+                1,
+                3,
+                4
+              ]
+            },
+            {
+              "edge": 38,
+              "mother": "L:190,413>274,413",
+              "interval": [
+                0.8452380952380952,
+                1.0
+              ],
+              "neighbor": 17,
+              "neighbor_domain": [
+                1,
+                3,
+                4
+              ]
+            },
+            {
+              "edge": 39,
+              "mother": "L:190,527>274,527",
+              "interval": [
+                0.0,
+                1.0
+              ],
+              "neighbor": 14,
+              "neighbor_domain": [
+                1,
+                2,
+                3,
+                4
+              ]
+            },
+            {
+              "edge": 46,
+              "mother": "L:274,0>274,600",
+              "interval": [
+                0.6883333333333334,
+                0.8783333333333333
+              ],
+              "neighbor": 3,
+              "neighbor_domain": [
+                3,
+                4
+              ]
+            }
+          ],
+          "direct_forbidden": [],
+          "local_candidates": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "derived_exclusions": [
+            3,
+            4
+          ],
+          "one_allowed": true
+        },
+        "choice_kind": "greedy-not-a-proved-safe-extension"
+      },
+      "witness_terminal_side_name": 2,
+      "interpretation": "Every earlier active decision has this explicit legal completion; the certified final conflict therefore begins at the terminal commitment."
+    }
+  ],
+  "limitations": [
+    "Post-run explanation, not a new solver, successful production retry, or unseen test.",
+    "Only six global renamings of one archived legal witness are considered per map.",
+    "No surviving old-witness permutation does not imply no other completion exists.",
+    "A conflict concerns the current fixed commitments, not the map's four-colorability."
+  ]
+}

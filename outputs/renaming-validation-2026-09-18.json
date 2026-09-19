@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "all_passed": true,
+  "python": "3.12.14",
+  "scope": "Independent finite first-blocked-state validation; not completed histories or a non-search rule.",
+  "source_sha256": "6b34e0f81c6b9ef791b0622d2768c7f65ece0a81941c7f0960c963838a89d776",
+  "counts": {
+    "total": 160,
+    "B": 62,
+    "C": 95,
+    "intersection": 5,
+    "union": 152,
+    "BC_extra": 7,
+    "remaining": 1
+  },
+  "reconstructed_maps": 320,
+  "witnesses_checked": 167,
+  "hard_case": {
+    "seed": 20260927,
+    "minimum_split_stage_swaps": 3,
+    "goal_layer_count": 12,
+    "exhausted_component_layer_counts": [
+      1,
+      5,
+      15,
+      31,
+      26
+    ],
+    "reachable_H_assignments": 78,
+    "all_proper_H_assignments": 78,
+    "reachable_component_equals_all_H_assignments": true,
+    "proper_final_assignments": 30,
+    "minimum_changed_unsplit": 2,
+    "minimum_change_witnesses": 1,
+    "dependency_execution_order": [
+      9,
+      2,
+      3
+    ]
+  },
+  "input_report_sha256": "b78bbbcfffebf7bb3e97946e7d2ad602d0d739878ab6b43d022e4e3532509ebe"
+}

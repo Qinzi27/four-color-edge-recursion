@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="850" viewBox="0 0 1900 850">
+<rect width="100%" height="100%" fill="white"/>
+<text x="60" y="30" font-size="42" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">重算的是当前段的连接；不是把整条母线身份丢掉</text>
+<text x="60" y="130" font-size="28" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">加线前：H 两端都是外圈母线</text>
+<rect x="60" y="205" width="765" height="255" fill="#CDE7F4"/>
+<rect x="60" y="460" width="765" height="255" fill="#FFE4AF"/>
+<polyline points="60,205 825,205 825,715 60,715 60,205" fill="none" stroke="#202831" stroke-width="5"/>
+<polyline points="60,460 825,460" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="442.5" y="316.5" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="442.5" y="571.5" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="60" y="743" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">H：{外圈} — {外圈}</text>
+<text x="1010" y="130" font-size="28" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">加线后：H 两段各只有一端接外圈</text>
+<rect x="1010" y="205" width="382.5" height="255" fill="#CDE7F4"/>
+<rect x="1392.5" y="205" width="382.5" height="255" fill="#FFE4AF"/>
+<rect x="1392.5" y="460" width="382.5" height="255" fill="#CDE7F4"/>
+<rect x="1010" y="460" width="382.5" height="255" fill="#FFE4AF"/>
+<polyline points="1010,205 1775,205 1775,715 1010,715 1010,205" fill="none" stroke="#202831" stroke-width="5"/>
+<polyline points="1010,460 1775,460" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1392.5,205 1392.5,715" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="1201.25" y="316.5" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="1583.75" y="316.5" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="1583.75" y="571.5" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="1201.25" y="571.5" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="1010" y="743" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">H左：{外圈} — {V}；H右：{V} — {外圈}</text>
+</svg>

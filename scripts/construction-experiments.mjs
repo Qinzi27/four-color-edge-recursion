@@ -3,6 +3,8 @@
  * This module never calls selectMarkers, a coloring solver, or backtracking.
  */
 import assert from 'node:assert/strict';
+import {resolve} from 'node:path';
+import {pathToFileURL} from 'node:url';
 import {createConstruction,commitPath,exportConstruction,importConstruction} from '../web/construction.js';
 import {CONSTRUCTION_CASES} from '../web/construction-cases.js';
 export const FIRST_SEED=20260908;
@@ -64,4 +66,6 @@ export function runExperiments(includeSnapshots=false){
   const families=[...new Set(records.map(r=>r.family))].map(family=>{const rows=records.filter(r=>r.family===family);return {family,maps:rows.length,committed_steps:rows.reduce((s,r)=>s+r.committed_steps,0),outcomes:Object.fromEntries([...new Set(rows.map(r=>r.outcome))].map(o=>[o,rows.filter(r=>r.outcome===o).length]))};});
   return {schema_version:1,algorithm:'line-first / two-contact guard / minimum external-set then side-index / minimum available symbol / no backtracking',seed_range:[FIRST_SEED,FIRST_SEED+239],random_generator:'uint32 LCG: state = 1664525*state + 1013904223',generated_maps:240,gallery_maps:CONSTRUCTION_CASES.length,families,records,...(includeSnapshots?{snapshots}:{}),scope:'Finite correctness and failure records, not proof of a successful construction order for every map.',browser_ui_tested:false};
 }
-if(process.argv.includes('--emit'))process.stdout.write(JSON.stringify(runExperiments(true)));
+// Importing the geometry generator must not emit an unrelated experiment.
+if(process.argv[1]&&import.meta.url===pathToFileURL(resolve(process.argv[1])).href&&process.argv.includes('--emit'))
+  process.stdout.write(JSON.stringify(runExperiments(true)));

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="950" viewBox="0 0 1900 950">
+<rect width="100%" height="100%" fill="white"/>
+<text x="60" y="30" font-size="43" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">解除共同接口锁定｜一处升名即可继续</text>
+<text x="60" y="100" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">seed 20260911，第 4 刀：这是一步修复证据，不代表整条 24 刀历史全部完成。</text>
+<text x="60" y="167" font-size="31" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">之前：中栏 3 尚未分割</text>
+<text x="60" y="212" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">外侧固定 1；数字为当前线侧名</text>
+<polyline points="60,245 870,245 870,785 60,785 60,245" fill="none" stroke="#202831" stroke-width="5"/>
+<polyline points="363.3,245 363.3,785" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="363.3,613.1 870,613.1" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="217.5,245 217.5,785" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="616.65" y="406.05" font-size="43" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<text x="616.65" y="676.05" font-size="43" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="290.4" y="492" font-size="43" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="138.75" y="492" font-size="43" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<polyline points="217.5,442.1 231.5,442.1" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="240.5,442.1 254.5,442.1" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="263.5,442.1 277.5,442.1" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="286.5,442.1 300.5,442.1" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="309.5,442.1 323.5,442.1" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="332.5,442.1 346.5,442.1" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="355.5,442.1 363.3,442.1" fill="none" stroke="#B74400" stroke-width="5"/>
+<text x="1010" y="167" font-size="31" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">之后：左栏 2→4，新上 2、下 3</text>
+<text x="1010" y="212" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">外侧固定 1；数字为当前线侧名</text>
+<polyline points="1010,245 1820,245 1820,785 1010,785 1010,245" fill="none" stroke="#202831" stroke-width="5"/>
+<polyline points="1313.3,245 1313.3,785" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1313.3,613.1 1820,613.1" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1167.5,245 1167.5,785" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1167.5,442.1 1313.3,442.1" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="1566.65" y="406.05" font-size="43" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<text x="1566.65" y="676.05" font-size="43" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="1088.75" y="492" font-size="43" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<text x="1240.4" y="320.55" font-size="43" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="1240.4" y="590.55" font-size="43" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<polyline points="1167.5,442.1 1313.3,442.1" fill="none" stroke="#B74400" stroke-width="5"/>
+<text x="60" y="820" font-size="28" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">原共同禁名 {1, 2, 4} → {1, 4}；释放名字 2，只改一个未拆旧侧。</text>
+<text x="60" y="870" font-size="26" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">左图虚线未提交；右图实线及全部名字已独立校验。实际坐标等比例，无几何简化。</text>
+</svg>

@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "access_date": "2026-09-19",
+  "purpose": "Primary-source assistance for deterministic line-side scheduling and sound local filtering; not an exhaustive novelty search.",
+  "queries": [
+    "Brelaz 1979 new methods to color vertices graph saturation degree DOI",
+    "Mackworth 1977 Consistency in Networks of Relations author pdf",
+    "Regin 1994 filtering algorithm constraints difference CSP all different Hall",
+    "site.arxiv.org alldifferent Constraint van Hoeve Hall 2001"
+  ],
+  "access_failures": [
+    {"url": "https://api.crossref.org/works/10.1145%2F359094.359101", "method": "curl HTTPS DOI metadata lookup", "result": "Connection failed, curl exit 7; browser fetch also unsuccessful. No metadata response claimed."},
+    {"url": "https://dl.acm.org/doi/10.1145/359094.359101", "method": "browser", "result": "403; original Brelaz paper full text not verified through this endpoint."}
+  ],
+  "sources": [
+    {
+      "title": "New methods to color the vertices of a graph",
+      "authors": ["Daniel Brelaz"],
+      "year": 1979,
+      "doi": "10.1145/359094.359101",
+      "url": "https://doi.org/10.1145/359094.359101",
+      "verified_via": "https://igraph.org/c/doc/igraph-Coloring.html",
+      "access_scope": "Official igraph documentation, greedy DSATUR entry; not verified original full text.",
+      "used_for": "Saturation-first, unresolved-neighbor tie preference. Adapted here to current line occurrences with additional line/closure tie keys; not claimed as exact reproduction of Brelaz."
+    },
+    {
+      "title": "Consistency in Networks of Relations",
+      "authors": ["Alan K. Mackworth"],
+      "year": 1977,
+      "url": "https://www.cs.ubc.ca/~mack/Publications/AI77.pdf",
+      "access_scope": "Author-hosted full-text PDF available; relevant sections 3, 4, 6 and 7.1 inspected.",
+      "used_for": "Separate local domain filtering from choosing a complete assignment. Local consistency is not a universal completion proof."
+    },
+    {
+      "title": "A filtering algorithm for constraints of difference in CSPs",
+      "authors": ["Jean-Charles Regin"],
+      "year": 1994,
+      "url": "https://cdn.aaai.org/AAAI/1994/AAAI94-055.pdf",
+      "access_scope": "Official AAAI full-text PDF, 6 pages; introduction, value graph, Theorem 1 and matching filter inspected.",
+      "used_for": "All-different can be filtered more strongly than separate singleton inequalities. Our bounded subset filter is not an implementation of Regin's matching algorithm."
+    },
+    {
+      "title": "The alldifferent Constraint: A Survey",
+      "authors": ["W. J. van Hoeve"],
+      "year": 2001,
+      "arxiv_id": "cs/0105015",
+      "url": "https://arxiv.org/abs/cs/0105015",
+      "fulltext_url": "https://www.andrew.cmu.edu/user/vanhoeve/papers/ercim2001.pdf",
+      "access_scope": "Author-hosted 12-page text; Section 2, Theorem 1 (Hall) and Section 3 inspected.",
+      "used_for": "Candidate-union cardinality test on pairwise different variables. Only genuine dual cliques of size 3 or 4 are used, not every closed primal boundary."
+    }
+  ],
+  "workflow_source": {
+    "title": "Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents",
+    "authors": ["Timothy Kassis", "Vinayak Agarwal", "Yuhuan He", "Darshil Patel", "Aubrey M. Brueckner"],
+    "year": 2026,
+    "url": "https://arxiv.org/abs/2609.00065",
+    "doi": "10.48550/arXiv.2609.00065",
+    "verified_record_version": "v2 dated 2026-09-02",
+    "used_for": "Evidence and visualization workflow only; not a mathematical source for four-coloring."
+  }
+}

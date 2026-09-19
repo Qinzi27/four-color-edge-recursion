@@ -1,0 +1,334 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-19T06:12:09.639150+00:00",
+  "kind": "checked-small-graph-implication",
+  "input_key": "66b1a56305161b76660d5d2567a7f9720ecde941c8df98f922e594da95d898ed",
+  "script_sha256": "9cd7abda89efe41deebbf2b3f76cfef2bb9cb509258cb5b0569bb6f232aada49",
+  "source_checkpoint": {
+    "filename": "part-00110.json.gz",
+    "sha256": "0b467e60962342e89a0b5988ef214afe4d0341f462001d868cdf2bd7d4e6fce0",
+    "full_corpus_run": false,
+    "failed_inventory_records": 1
+  },
+  "pilot_evidence": {
+    "filename": "peer-batches-pilot-failure-diagnosis-2026-09-19.json",
+    "sha256": "d4265ebafac0216c5743cf7a0fc41fff57f99ac0b84c0b20806b201294057acc"
+  },
+  "mapping": {
+    "O": 0,
+    "A": 1,
+    "B": 4,
+    "p": 2,
+    "q": 3,
+    "r": 14,
+    "s": 15,
+    "t": 10,
+    "u": 19
+  },
+  "required_adjacencies": [
+    {
+      "vertices": [
+        "O",
+        "A"
+      ],
+      "sides": [
+        0,
+        1
+      ],
+      "raw_edge_ids": [
+        0,
+        16,
+        17
+      ]
+    },
+    {
+      "vertices": [
+        "O",
+        "B"
+      ],
+      "sides": [
+        0,
+        4
+      ],
+      "raw_edge_ids": [
+        3,
+        11
+      ]
+    },
+    {
+      "vertices": [
+        "O",
+        "p"
+      ],
+      "sides": [
+        0,
+        2
+      ],
+      "raw_edge_ids": [
+        1
+      ]
+    },
+    {
+      "vertices": [
+        "A",
+        "p"
+      ],
+      "sides": [
+        1,
+        2
+      ],
+      "raw_edge_ids": [
+        18
+      ]
+    },
+    {
+      "vertices": [
+        "O",
+        "q"
+      ],
+      "sides": [
+        0,
+        3
+      ],
+      "raw_edge_ids": [
+        2
+      ]
+    },
+    {
+      "vertices": [
+        "B",
+        "q"
+      ],
+      "sides": [
+        4,
+        3
+      ],
+      "raw_edge_ids": [
+        46
+      ]
+    },
+    {
+      "vertices": [
+        "p",
+        "q"
+      ],
+      "sides": [
+        2,
+        3
+      ],
+      "raw_edge_ids": [
+        37
+      ]
+    },
+    {
+      "vertices": [
+        "r",
+        "p"
+      ],
+      "sides": [
+        14,
+        2
+      ],
+      "raw_edge_ids": [
+        23
+      ]
+    },
+    {
+      "vertices": [
+        "r",
+        "q"
+      ],
+      "sides": [
+        14,
+        3
+      ],
+      "raw_edge_ids": [
+        38
+      ]
+    },
+    {
+      "vertices": [
+        "r",
+        "A"
+      ],
+      "sides": [
+        14,
+        1
+      ],
+      "raw_edge_ids": [
+        19
+      ]
+    },
+    {
+      "vertices": [
+        "s",
+        "r"
+      ],
+      "sides": [
+        15,
+        14
+      ],
+      "raw_edge_ids": [
+        24
+      ]
+    },
+    {
+      "vertices": [
+        "s",
+        "A"
+      ],
+      "sides": [
+        15,
+        1
+      ],
+      "raw_edge_ids": [
+        20
+      ]
+    },
+    {
+      "vertices": [
+        "t",
+        "O"
+      ],
+      "sides": [
+        10,
+        0
+      ],
+      "raw_edge_ids": [
+        12
+      ]
+    },
+    {
+      "vertices": [
+        "t",
+        "B"
+      ],
+      "sides": [
+        10,
+        4
+      ],
+      "raw_edge_ids": [
+        48
+      ]
+    },
+    {
+      "vertices": [
+        "t",
+        "s"
+      ],
+      "sides": [
+        10,
+        15
+      ],
+      "raw_edge_ids": [
+        41
+      ]
+    },
+    {
+      "vertices": [
+        "u",
+        "B"
+      ],
+      "sides": [
+        19,
+        4
+      ],
+      "raw_edge_ids": [
+        47
+      ]
+    },
+    {
+      "vertices": [
+        "u",
+        "r"
+      ],
+      "sides": [
+        19,
+        14
+      ],
+      "raw_edge_ids": [
+        39
+      ]
+    },
+    {
+      "vertices": [
+        "u",
+        "s"
+      ],
+      "sides": [
+        19,
+        15
+      ],
+      "raw_edge_ids": [
+        40
+      ]
+    },
+    {
+      "vertices": [
+        "u",
+        "t"
+      ],
+      "sides": [
+        19,
+        10
+      ],
+      "raw_edge_ids": [
+        45
+      ]
+    }
+  ],
+  "claim": "For nine distinct vertices with these nineteen edges, every proper coloring using at most four names has color(A) != color(B). Additional edges do not hurt the implication.",
+  "proof": [
+    "Assume A=B=a. Since O is adjacent to A and B, O=o differs from a.",
+    "p and q each avoid o and a. They are adjacent, so they exhaust the other two names b,c.",
+    "r is adjacent to p,q,A, so r=o.",
+    "s avoids r=o and A=a; t avoids O=o and B=a. Since s,t are adjacent, they exhaust b,c.",
+    "u is adjacent to B=a,r=o,s,t and therefore sees every available name: contradiction."
+  ],
+  "checked_normalized_domains": {
+    "O": [
+      1
+    ],
+    "A": [
+      2
+    ],
+    "B": [
+      2
+    ],
+    "p_q_palette": [
+      3,
+      4
+    ],
+    "r": [
+      1
+    ],
+    "s_t_palette": [
+      3,
+      4
+    ],
+    "u": []
+  },
+  "application": {
+    "existing_anchor": {
+      "side": 1,
+      "name": 2
+    },
+    "sound_exclusion": {
+      "side": 4,
+      "name": 2
+    },
+    "v4_current_domain_before_fatal_choice": [
+      2,
+      3,
+      4
+    ],
+    "unrelated_nonadjacent_pairs_affected": false
+  },
+  "production_attempts_added": 0,
+  "applied_to_v4": false,
+  "limits": [
+    "A conditional local implication, not a complete four-coloring algorithm.",
+    "This certificate checks one mapped occurrence; no corpus-wide motif search was performed.",
+    "The pattern may be previously known; no novelty claim is made."
+  ]
+}

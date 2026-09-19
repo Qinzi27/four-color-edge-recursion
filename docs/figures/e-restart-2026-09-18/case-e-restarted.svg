@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="980" viewBox="0 0 1900 980">
+<rect width="100%" height="100%" fill="white"/>
+<text x="60" y="30" font-size="44" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">案例 E 更正｜内部可以复用 1</text>
+<text x="60" y="100" font-size="28" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">按相同画线顺序从外圈重算；左右均为合法已提交状态，不是旧名草稿。</text>
+<text x="60" y="175" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">第 7 步后：G 已取 1</text>
+<text x="60" y="222" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">外侧固定 1；字母仅标位置，数字为当前侧名</text>
+<polyline points="60,260 870,260 870,800 60,800 60,260" fill="none" stroke="#202831" stroke-width="5"/>
+<polyline points="60,452.6 870,452.6" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="60,683.9 870,683.9" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="60,370.7 870,370.7" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="340.8,370.7 340.8,452.6" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="365.1,683.9 365.1,800" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="239.1,683.9 239.1,800" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="598.2,370.7 598.2,452.6" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="465" y="550.25" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#505B67">M: 2</text>
+<text x="465" y="297.35" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#505B67">A: 2</text>
+<text x="200.4" y="393.65" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#505B67">F: 4</text>
+<text x="617.55" y="723.95" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#505B67">C: 3</text>
+<text x="302.1" y="723.95" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#505B67">D: 4</text>
+<text x="149.55" y="723.95" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#505B67">E: 3</text>
+<text x="734.1" y="393.65" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#505B67">B: 3</text>
+<text x="469.5" y="393.65" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#00618A">G: 1</text>
+<text x="1010" y="175" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">第 8 步后：新线左 2、右 4</text>
+<text x="1010" y="222" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">外侧固定 1；字母仅标位置，数字为当前侧名</text>
+<polyline points="1010,260 1820,260 1820,800 1010,800 1010,260" fill="none" stroke="#202831" stroke-width="5"/>
+<polyline points="1010,452.6 1820,452.6" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1010,683.9 1820,683.9" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1010,370.7 1820,370.7" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1290.8,370.7 1290.8,452.6" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1315.1,683.9 1315.1,800" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1189.1,683.9 1189.1,800" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1548.2,370.7 1548.2,452.6" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1418.6,452.6 1418.6,683.9" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1418.6,452.6 1418.6,683.9" fill="none" stroke="#B74400" stroke-width="5"/>
+<text x="1415" y="297.35" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#505B67">A: 2</text>
+<text x="1150.4" y="393.65" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#505B67">F: 4</text>
+<text x="1567.55" y="723.95" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#505B67">C: 3</text>
+<text x="1252.1" y="723.95" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#505B67">D: 4</text>
+<text x="1099.55" y="723.95" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#505B67">E: 3</text>
+<text x="1684.1" y="393.65" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#505B67">B: 3</text>
+<text x="1419.5" y="393.65" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#00618A">G: 1</text>
+<text x="1619.3" y="550.25" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#505B67">R: 4</text>
+<text x="1214.3" y="550.25" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#505B67">L: 2</text>
+<text x="60" y="830" font-size="28" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">G 的完整邻名为 {2, 3, 4}，不含 1；最小可用名就是 1。</text>
+<text x="60" y="880" font-size="26" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">橙色实线：最后新增且已通过校验的线。两图等比例，几何与原例相同。</text>
+<text x="60" y="927" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">其余名字也按统一规则重算，不能与冻结旧名图拼接；本例成功不等于一般证明。</text>
+</svg>

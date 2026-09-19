@@ -1,0 +1,3212 @@
+{
+  "input": {
+    "filename": "global-restart-all-2026-09-18-v2.json.gz",
+    "sha256": "7f0f37a298baa7ff09ebd2917c772e4d4aaa5f58578ffbde05bb31bcee0b42dd"
+  },
+  "old_control": {
+    "filename": "docs/figures/current-names-2026-09-18/manifest.json",
+    "sha256": "90214e09a749fb8e8143c09b55fb2c05124fe1bd8d41a236094a424f0435526c"
+  },
+  "records": [
+    {
+      "history": "guillotine-20260908",
+      "step": 7,
+      "policy": "closed-support",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              212
+            ],
+            "b": [
+              900,
+              212
+            ]
+          },
+          {
+            "a": [
+              0,
+              439
+            ],
+            "b": [
+              900,
+              439
+            ]
+          },
+          {
+            "a": [
+              0,
+              489
+            ],
+            "b": [
+              900,
+              489
+            ]
+          },
+          {
+            "a": [
+              308,
+              0
+            ],
+            "b": [
+              308,
+              212
+            ]
+          },
+          {
+            "a": [
+              391,
+              439
+            ],
+            "b": [
+              391,
+              489
+            ]
+          },
+          {
+            "a": [
+              423,
+              489
+            ],
+            "b": [
+              423,
+              600
+            ]
+          },
+          {
+            "a": [
+              688,
+              0
+            ],
+            "b": [
+              688,
+              212
+            ]
+          }
+        ]
+      },
+      "geometry_sha256": "8a86f6acdf13eac14806122f1733f5e2b121a9e4684bfdf4bbc2f31ee5ec076c",
+      "result": {
+        "status": "solved",
+        "domains": [
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ],
+          [
+            2
+          ],
+          [
+            4
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ],
+          [
+            4
+          ],
+          [
+            3
+          ]
+        ],
+        "anchors_by_dart": {
+          "0": [
+            1
+          ],
+          "1": [
+            2
+          ],
+          "28": [
+            3
+          ],
+          "44": [
+            2
+          ]
+        },
+        "initial_anchors_by_dart": {
+          "0": [
+            1
+          ],
+          "1": [
+            2
+          ]
+        },
+        "units": [
+          {
+            "id": "frame@0:0.102666666667",
+            "mother": "frame",
+            "t0": 0.0,
+            "t1": 0.10266666666666667,
+            "endpoint_mothers": [
+              [],
+              [
+                "L:308,0>308,212"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 0,
+            "edges": [
+              0
+            ],
+            "occurrences": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "id": "frame@0.102666666667:0.229333333333",
+            "mother": "frame",
+            "t0": 0.10266666666666667,
+            "t1": 0.22933333333333333,
+            "endpoint_mothers": [
+              [
+                "L:308,0>308,212"
+              ],
+              [
+                "L:688,0>688,212"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 0,
+            "edges": [
+              1
+            ],
+            "occurrences": [
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          },
+          {
+            "id": "frame@0.229333333333:0.370666666667",
+            "mother": "frame",
+            "t0": 0.22933333333333333,
+            "t1": 0.37066666666666664,
+            "endpoint_mothers": [
+              [
+                "L:688,0>688,212"
+              ],
+              [
+                "L:0,212>900,212"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 0,
+            "edges": [
+              2,
+              3
+            ],
+            "occurrences": [
+              [
+                0,
+                4
+              ],
+              [
+                3,
+                5
+              ]
+            ]
+          },
+          {
+            "id": "frame@0.370666666667:0.446333333333",
+            "mother": "frame",
+            "t0": 0.37066666666666664,
+            "t1": 0.44633333333333336,
+            "endpoint_mothers": [
+              [
+                "L:0,212>900,212"
+              ],
+              [
+                "L:0,439>900,439"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 0,
+            "edges": [
+              4
+            ],
+            "occurrences": [
+              [
+                0,
+                8
+              ],
+              [
+                4,
+                9
+              ]
+            ]
+          },
+          {
+            "id": "frame@0.446333333333:0.463",
+            "mother": "frame",
+            "t0": 0.44633333333333336,
+            "t1": 0.463,
+            "endpoint_mothers": [
+              [
+                "L:0,439>900,439"
+              ],
+              [
+                "L:0,489>900,489"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 0,
+            "edges": [
+              5
+            ],
+            "occurrences": [
+              [
+                0,
+                10
+              ],
+              [
+                5,
+                11
+              ]
+            ]
+          },
+          {
+            "id": "frame@0.463:0.659",
+            "mother": "frame",
+            "t0": 0.463,
+            "t1": 0.659,
+            "endpoint_mothers": [
+              [
+                "L:0,489>900,489"
+              ],
+              [
+                "L:423,489>423,600"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 0,
+            "edges": [
+              6,
+              7
+            ],
+            "occurrences": [
+              [
+                0,
+                12
+              ],
+              [
+                6,
+                13
+              ]
+            ]
+          },
+          {
+            "id": "frame@0.659:0.837",
+            "mother": "frame",
+            "t0": 0.659,
+            "t1": 0.837,
+            "endpoint_mothers": [
+              [
+                "L:423,489>423,600"
+              ],
+              [
+                "L:0,489>900,489"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 0,
+            "edges": [
+              8,
+              9
+            ],
+            "occurrences": [
+              [
+                0,
+                16
+              ],
+              [
+                7,
+                17
+              ]
+            ]
+          },
+          {
+            "id": "frame@0.837:0.853666666667",
+            "mother": "frame",
+            "t0": 0.837,
+            "t1": 0.8536666666666667,
+            "endpoint_mothers": [
+              [
+                "L:0,489>900,489"
+              ],
+              [
+                "L:0,439>900,439"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 0,
+            "edges": [
+              10
+            ],
+            "occurrences": [
+              [
+                0,
+                20
+              ],
+              [
+                8,
+                21
+              ]
+            ]
+          },
+          {
+            "id": "frame@0.853666666667:0.929333333333",
+            "mother": "frame",
+            "t0": 0.8536666666666667,
+            "t1": 0.9293333333333333,
+            "endpoint_mothers": [
+              [
+                "L:0,439>900,439"
+              ],
+              [
+                "L:0,212>900,212"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 0,
+            "edges": [
+              11
+            ],
+            "occurrences": [
+              [
+                0,
+                22
+              ],
+              [
+                4,
+                23
+              ]
+            ]
+          },
+          {
+            "id": "frame@0.929333333333:1",
+            "mother": "frame",
+            "t0": 0.9293333333333333,
+            "t1": 1.0,
+            "endpoint_mothers": [
+              [
+                "L:0,212>900,212"
+              ],
+              []
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 0,
+            "edges": [
+              12
+            ],
+            "occurrences": [
+              [
+                0,
+                24
+              ],
+              [
+                1,
+                25
+              ]
+            ]
+          },
+          {
+            "id": "L:0,212>900,212@0:0.342222222222",
+            "mother": "L:0,212>900,212",
+            "t0": 0.0,
+            "t1": 0.3422222222222222,
+            "endpoint_mothers": [
+              [
+                "frame"
+              ],
+              [
+                "L:308,0>308,212"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 1,
+            "edges": [
+              13
+            ],
+            "occurrences": [
+              [
+                1,
+                26
+              ],
+              [
+                4,
+                27
+              ]
+            ]
+          },
+          {
+            "id": "L:0,212>900,212@0.342222222222:0.764444444444",
+            "mother": "L:0,212>900,212",
+            "t0": 0.3422222222222222,
+            "t1": 0.7644444444444445,
+            "endpoint_mothers": [
+              [
+                "L:308,0>308,212"
+              ],
+              [
+                "L:688,0>688,212"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 0,
+            "edges": [
+              14
+            ],
+            "occurrences": [
+              [
+                2,
+                28
+              ],
+              [
+                4,
+                29
+              ]
+            ]
+          },
+          {
+            "id": "L:0,212>900,212@0.764444444444:1",
+            "mother": "L:0,212>900,212",
+            "t0": 0.7644444444444445,
+            "t1": 1.0,
+            "endpoint_mothers": [
+              [
+                "L:688,0>688,212"
+              ],
+              [
+                "frame"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 1,
+            "edges": [
+              15
+            ],
+            "occurrences": [
+              [
+                3,
+                30
+              ],
+              [
+                4,
+                31
+              ]
+            ]
+          },
+          {
+            "id": "L:0,439>900,439@0:0.434444444444",
+            "mother": "L:0,439>900,439",
+            "t0": 0.0,
+            "t1": 0.43444444444444447,
+            "endpoint_mothers": [
+              [
+                "frame"
+              ],
+              [
+                "L:391,439>391,489"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 1,
+            "edges": [
+              16
+            ],
+            "occurrences": [
+              [
+                4,
+                32
+              ],
+              [
+                8,
+                33
+              ]
+            ]
+          },
+          {
+            "id": "L:0,439>900,439@0.434444444444:1",
+            "mother": "L:0,439>900,439",
+            "t0": 0.43444444444444447,
+            "t1": 1.0,
+            "endpoint_mothers": [
+              [
+                "L:391,439>391,489"
+              ],
+              [
+                "frame"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 1,
+            "edges": [
+              17
+            ],
+            "occurrences": [
+              [
+                4,
+                34
+              ],
+              [
+                5,
+                35
+              ]
+            ]
+          },
+          {
+            "id": "L:0,489>900,489@0:0.434444444444",
+            "mother": "L:0,489>900,489",
+            "t0": 0.0,
+            "t1": 0.43444444444444447,
+            "endpoint_mothers": [
+              [
+                "frame"
+              ],
+              [
+                "L:391,439>391,489"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 1,
+            "edges": [
+              18
+            ],
+            "occurrences": [
+              [
+                8,
+                36
+              ],
+              [
+                7,
+                37
+              ]
+            ]
+          },
+          {
+            "id": "L:0,489>900,489@0.434444444444:0.47",
+            "mother": "L:0,489>900,489",
+            "t0": 0.43444444444444447,
+            "t1": 0.47,
+            "endpoint_mothers": [
+              [
+                "L:391,439>391,489"
+              ],
+              [
+                "L:423,489>423,600"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 0,
+            "edges": [
+              19
+            ],
+            "occurrences": [
+              [
+                5,
+                38
+              ],
+              [
+                7,
+                39
+              ]
+            ]
+          },
+          {
+            "id": "L:0,489>900,489@0.47:1",
+            "mother": "L:0,489>900,489",
+            "t0": 0.47,
+            "t1": 1.0,
+            "endpoint_mothers": [
+              [
+                "L:423,489>423,600"
+              ],
+              [
+                "frame"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 1,
+            "edges": [
+              20
+            ],
+            "occurrences": [
+              [
+                5,
+                40
+              ],
+              [
+                6,
+                41
+              ]
+            ]
+          },
+          {
+            "id": "L:308,0>308,212@0:1",
+            "mother": "L:308,0>308,212",
+            "t0": 0.0,
+            "t1": 1.0,
+            "endpoint_mothers": [
+              [
+                "frame"
+              ],
+              [
+                "L:0,212>900,212"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 1,
+            "edges": [
+              21
+            ],
+            "occurrences": [
+              [
+                2,
+                42
+              ],
+              [
+                1,
+                43
+              ]
+            ]
+          },
+          {
+            "id": "L:391,439>391,489@0:1",
+            "mother": "L:391,439>391,489",
+            "t0": 0.0,
+            "t1": 1.0,
+            "endpoint_mothers": [
+              [
+                "L:0,439>900,439"
+              ],
+              [
+                "L:0,489>900,489"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 0,
+            "edges": [
+              22
+            ],
+            "occurrences": [
+              [
+                5,
+                44
+              ],
+              [
+                8,
+                45
+              ]
+            ]
+          },
+          {
+            "id": "L:423,489>423,600@0:1",
+            "mother": "L:423,489>423,600",
+            "t0": 0.0,
+            "t1": 1.0,
+            "endpoint_mothers": [
+              [
+                "L:0,489>900,489"
+              ],
+              [
+                "frame"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 1,
+            "edges": [
+              23
+            ],
+            "occurrences": [
+              [
+                6,
+                46
+              ],
+              [
+                7,
+                47
+              ]
+            ]
+          },
+          {
+            "id": "L:688,0>688,212@0:1",
+            "mother": "L:688,0>688,212",
+            "t0": 0.0,
+            "t1": 1.0,
+            "endpoint_mothers": [
+              [
+                "frame"
+              ],
+              [
+                "L:0,212>900,212"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 1,
+            "edges": [
+              24
+            ],
+            "occurrences": [
+              [
+                3,
+                48
+              ],
+              [
+                2,
+                49
+              ]
+            ]
+          }
+        ],
+        "trace": [
+          {
+            "unit": "L:0,212>900,212@0.342222222222:0.764444444444",
+            "mother": "L:0,212>900,212",
+            "unresolved_shores": [
+              2,
+              4
+            ],
+            "same_single_mother": false,
+            "constraint_weight": 4,
+            "priority": [
+              4,
+              0
+            ],
+            "closed_support": {
+              "supported": false,
+              "block_edge_ids": [],
+              "endpoint_vertices": [
+                "13",
+                "14"
+              ]
+            },
+            "tied_units": [
+              "L:0,212>900,212@0.342222222222:0.764444444444"
+            ],
+            "dart": 28,
+            "side": 2,
+            "domain": [
+              3,
+              4
+            ],
+            "used_names": [
+              1,
+              2
+            ],
+            "symbol": 3
+          },
+          {
+            "unit": "L:391,439>391,489@0:1",
+            "mother": "L:391,439>391,489",
+            "unresolved_shores": [
+              5,
+              8
+            ],
+            "same_single_mother": false,
+            "constraint_weight": 4,
+            "priority": [
+              4,
+              0
+            ],
+            "closed_support": {
+              "supported": false,
+              "block_edge_ids": [],
+              "endpoint_vertices": [
+                "15",
+                "16"
+              ]
+            },
+            "tied_units": [
+              "L:391,439>391,489@0:1"
+            ],
+            "dart": 44,
+            "side": 5,
+            "domain": [
+              2,
+              3
+            ],
+            "used_names": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "symbol": 2
+          }
+        ],
+        "choices": 2,
+        "backtracks": 0,
+        "conflict_propagation": [],
+        "colors": [
+          1,
+          2,
+          3,
+          2,
+          4,
+          2,
+          3,
+          4,
+          3
+        ],
+        "old_colors_read": false,
+        "local_budget": null,
+        "scope": "One fresh geometry; no alternative candidate retry; four is the input palette.",
+        "policy": "closed-support"
+      },
+      "drawing": {
+        "width": 900,
+        "height": 600,
+        "sides": [
+          {
+            "id": "1",
+            "bounds": [
+              0,
+              0,
+              308,
+              212
+            ],
+            "symbol": 2
+          },
+          {
+            "id": "2",
+            "bounds": [
+              308,
+              0,
+              688,
+              212
+            ],
+            "symbol": 3
+          },
+          {
+            "id": "3",
+            "bounds": [
+              688,
+              0,
+              900,
+              212
+            ],
+            "symbol": 2
+          },
+          {
+            "id": "4",
+            "bounds": [
+              0,
+              212,
+              900,
+              439
+            ],
+            "symbol": 4
+          },
+          {
+            "id": "5",
+            "bounds": [
+              391,
+              439,
+              900,
+              489
+            ],
+            "symbol": 2
+          },
+          {
+            "id": "6",
+            "bounds": [
+              423,
+              489,
+              900,
+              600
+            ],
+            "symbol": 3
+          },
+          {
+            "id": "7",
+            "bounds": [
+              0,
+              489,
+              423,
+              600
+            ],
+            "symbol": 4
+          },
+          {
+            "id": "8",
+            "bounds": [
+              0,
+              439,
+              391,
+              489
+            ],
+            "symbol": 3
+          }
+        ],
+        "cuts": [
+          [
+            [
+              0,
+              212
+            ],
+            [
+              900,
+              212
+            ]
+          ],
+          [
+            [
+              0,
+              439
+            ],
+            [
+              900,
+              439
+            ]
+          ],
+          [
+            [
+              0,
+              489
+            ],
+            [
+              900,
+              489
+            ]
+          ],
+          [
+            [
+              308,
+              0
+            ],
+            [
+              308,
+              212
+            ]
+          ],
+          [
+            [
+              391,
+              439
+            ],
+            [
+              391,
+              489
+            ]
+          ],
+          [
+            [
+              423,
+              489
+            ],
+            [
+              423,
+              600
+            ]
+          ],
+          [
+            [
+              688,
+              0
+            ],
+            [
+              688,
+              212
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "history": "guillotine-20260943",
+      "step": 4,
+      "policy": "shared-mother",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              379
+            ],
+            "b": [
+              199,
+              379
+            ]
+          },
+          {
+            "a": [
+              66,
+              0
+            ],
+            "b": [
+              66,
+              379
+            ]
+          },
+          {
+            "a": [
+              199,
+              0
+            ],
+            "b": [
+              199,
+              600
+            ]
+          },
+          {
+            "a": [
+              305,
+              0
+            ],
+            "b": [
+              305,
+              600
+            ]
+          }
+        ]
+      },
+      "geometry_sha256": "a9565371764ed8da3acd967ac2dcdd0a100475531962b697aea04b6ae9ac60d9",
+      "result": {
+        "status": "conflict",
+        "domains": [
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            4
+          ],
+          [
+            3
+          ],
+          [
+            2
+          ],
+          []
+        ],
+        "anchors_by_dart": {
+          "0": [
+            1
+          ],
+          "1": [
+            2
+          ],
+          "30": [
+            2
+          ],
+          "31": [
+            3
+          ]
+        },
+        "initial_anchors_by_dart": {
+          "0": [
+            1
+          ],
+          "1": [
+            2
+          ]
+        },
+        "units": [
+          {
+            "id": "frame@0:0.022",
+            "mother": "frame",
+            "t0": 0.0,
+            "t1": 0.022,
+            "endpoint_mothers": [
+              [],
+              [
+                "L:66,0>66,379"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 0,
+            "edges": [
+              0
+            ],
+            "occurrences": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "id": "frame@0.022:0.0663333333333",
+            "mother": "frame",
+            "t0": 0.022,
+            "t1": 0.06633333333333333,
+            "endpoint_mothers": [
+              [
+                "L:66,0>66,379"
+              ],
+              [
+                "L:199,0>199,600"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 0,
+            "edges": [
+              1
+            ],
+            "occurrences": [
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          },
+          {
+            "id": "frame@0.0663333333333:0.101666666667",
+            "mother": "frame",
+            "t0": 0.06633333333333333,
+            "t1": 0.10166666666666667,
+            "endpoint_mothers": [
+              [
+                "L:199,0>199,600"
+              ],
+              [
+                "L:305,0>305,600"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 0,
+            "edges": [
+              2
+            ],
+            "occurrences": [
+              [
+                0,
+                4
+              ],
+              [
+                3,
+                5
+              ]
+            ]
+          },
+          {
+            "id": "frame@0.101666666667:0.698333333333",
+            "mother": "frame",
+            "t0": 0.10166666666666667,
+            "t1": 0.6983333333333334,
+            "endpoint_mothers": [
+              [
+                "L:305,0>305,600"
+              ],
+              [
+                "L:305,0>305,600"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 0,
+            "edges": [
+              3,
+              4,
+              5
+            ],
+            "occurrences": [
+              [
+                0,
+                6
+              ],
+              [
+                4,
+                7
+              ]
+            ]
+          },
+          {
+            "id": "frame@0.698333333333:0.733666666667",
+            "mother": "frame",
+            "t0": 0.6983333333333334,
+            "t1": 0.7336666666666667,
+            "endpoint_mothers": [
+              [
+                "L:305,0>305,600"
+              ],
+              [
+                "L:199,0>199,600"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 0,
+            "edges": [
+              6
+            ],
+            "occurrences": [
+              [
+                0,
+                12
+              ],
+              [
+                3,
+                13
+              ]
+            ]
+          },
+          {
+            "id": "frame@0.733666666667:0.873666666667",
+            "mother": "frame",
+            "t0": 0.7336666666666667,
+            "t1": 0.8736666666666667,
+            "endpoint_mothers": [
+              [
+                "L:199,0>199,600"
+              ],
+              [
+                "L:0,379>199,379"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 0,
+            "edges": [
+              7,
+              8
+            ],
+            "occurrences": [
+              [
+                0,
+                14
+              ],
+              [
+                5,
+                15
+              ]
+            ]
+          },
+          {
+            "id": "frame@0.873666666667:1",
+            "mother": "frame",
+            "t0": 0.8736666666666667,
+            "t1": 1.0,
+            "endpoint_mothers": [
+              [
+                "L:0,379>199,379"
+              ],
+              []
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 0,
+            "edges": [
+              9
+            ],
+            "occurrences": [
+              [
+                0,
+                18
+              ],
+              [
+                1,
+                19
+              ]
+            ]
+          },
+          {
+            "id": "L:0,379>199,379@0:0.331658291457",
+            "mother": "L:0,379>199,379",
+            "t0": 0.0,
+            "t1": 0.3316582914572864,
+            "endpoint_mothers": [
+              [
+                "frame"
+              ],
+              [
+                "L:66,0>66,379"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 1,
+            "edges": [
+              10
+            ],
+            "occurrences": [
+              [
+                1,
+                20
+              ],
+              [
+                5,
+                21
+              ]
+            ]
+          },
+          {
+            "id": "L:0,379>199,379@0.331658291457:1",
+            "mother": "L:0,379>199,379",
+            "t0": 0.3316582914572864,
+            "t1": 1.0,
+            "endpoint_mothers": [
+              [
+                "L:66,0>66,379"
+              ],
+              [
+                "L:199,0>199,600"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 0,
+            "edges": [
+              11
+            ],
+            "occurrences": [
+              [
+                2,
+                22
+              ],
+              [
+                5,
+                23
+              ]
+            ]
+          },
+          {
+            "id": "L:199,0>199,600@0:0.631666666667",
+            "mother": "L:199,0>199,600",
+            "t0": 0.0,
+            "t1": 0.6316666666666667,
+            "endpoint_mothers": [
+              [
+                "frame"
+              ],
+              [
+                "L:0,379>199,379"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 1,
+            "edges": [
+              13
+            ],
+            "occurrences": [
+              [
+                3,
+                26
+              ],
+              [
+                2,
+                27
+              ]
+            ]
+          },
+          {
+            "id": "L:199,0>199,600@0.631666666667:1",
+            "mother": "L:199,0>199,600",
+            "t0": 0.6316666666666667,
+            "t1": 1.0,
+            "endpoint_mothers": [
+              [
+                "L:0,379>199,379"
+              ],
+              [
+                "frame"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 1,
+            "edges": [
+              14
+            ],
+            "occurrences": [
+              [
+                3,
+                28
+              ],
+              [
+                5,
+                29
+              ]
+            ]
+          },
+          {
+            "id": "L:305,0>305,600@0:1",
+            "mother": "L:305,0>305,600",
+            "t0": 0.0,
+            "t1": 1.0,
+            "endpoint_mothers": [
+              [
+                "frame"
+              ],
+              [
+                "frame"
+              ]
+            ],
+            "same_single_mother": true,
+            "frame_endpoint_count": 2,
+            "edges": [
+              15
+            ],
+            "occurrences": [
+              [
+                4,
+                30
+              ],
+              [
+                3,
+                31
+              ]
+            ]
+          },
+          {
+            "id": "L:66,0>66,379@0:1",
+            "mother": "L:66,0>66,379",
+            "t0": 0.0,
+            "t1": 1.0,
+            "endpoint_mothers": [
+              [
+                "frame"
+              ],
+              [
+                "L:0,379>199,379"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 1,
+            "edges": [
+              12
+            ],
+            "occurrences": [
+              [
+                2,
+                24
+              ],
+              [
+                1,
+                25
+              ]
+            ]
+          }
+        ],
+        "trace": [
+          {
+            "unit": "L:305,0>305,600@0:1",
+            "mother": "L:305,0>305,600",
+            "unresolved_shores": [
+              4,
+              3
+            ],
+            "same_single_mother": true,
+            "constraint_weight": 2,
+            "priority": [
+              1,
+              2
+            ],
+            "tied_units": [
+              "L:305,0>305,600@0:1"
+            ],
+            "dart": 30,
+            "side": 4,
+            "domain": [
+              2,
+              3,
+              4
+            ],
+            "used_names": [
+              1,
+              2
+            ],
+            "symbol": 2
+          },
+          {
+            "unit": "L:305,0>305,600@0:1",
+            "mother": "L:305,0>305,600",
+            "unresolved_shores": [
+              3
+            ],
+            "same_single_mother": true,
+            "constraint_weight": 2,
+            "priority": [
+              1,
+              2
+            ],
+            "tied_units": [
+              "L:305,0>305,600@0:1"
+            ],
+            "dart": 31,
+            "side": 3,
+            "domain": [
+              3,
+              4
+            ],
+            "used_names": [
+              1,
+              2
+            ],
+            "symbol": 3
+          }
+        ],
+        "choices": 2,
+        "backtracks": 0,
+        "conflict_propagation": [
+          {
+            "from_side": 0,
+            "to_side": 2,
+            "edge": 1,
+            "whole_line": "frame",
+            "removed": 1
+          },
+          {
+            "from_side": 0,
+            "to_side": 5,
+            "edge": 7,
+            "whole_line": "frame",
+            "removed": 1
+          },
+          {
+            "from_side": 1,
+            "to_side": 5,
+            "edge": 10,
+            "whole_line": "L:0,379>199,379",
+            "removed": 2
+          },
+          {
+            "from_side": 1,
+            "to_side": 2,
+            "edge": 12,
+            "whole_line": "L:66,0>66,379",
+            "removed": 2
+          },
+          {
+            "from_side": 3,
+            "to_side": 2,
+            "edge": 13,
+            "whole_line": "L:199,0>199,600",
+            "removed": 3
+          },
+          {
+            "from_side": 3,
+            "to_side": 5,
+            "edge": 14,
+            "whole_line": "L:199,0>199,600",
+            "removed": 3
+          },
+          {
+            "from_side": 2,
+            "to_side": 5,
+            "edge": 11,
+            "whole_line": "L:0,379>199,379",
+            "removed": 4
+          }
+        ],
+        "colors": null,
+        "old_colors_read": false,
+        "local_budget": null,
+        "scope": "One fresh geometry; no alternative candidate retry; four is the input palette.",
+        "policy": "shared-mother"
+      },
+      "drawing": {
+        "width": 900,
+        "height": 600,
+        "sides": [
+          {
+            "id": "1",
+            "bounds": [
+              0,
+              0,
+              66,
+              379
+            ],
+            "symbol": null
+          },
+          {
+            "id": "2",
+            "bounds": [
+              66,
+              0,
+              199,
+              379
+            ],
+            "symbol": null
+          },
+          {
+            "id": "3",
+            "bounds": [
+              199,
+              0,
+              305,
+              600
+            ],
+            "symbol": null
+          },
+          {
+            "id": "4",
+            "bounds": [
+              305,
+              0,
+              900,
+              600
+            ],
+            "symbol": null
+          },
+          {
+            "id": "5",
+            "bounds": [
+              0,
+              379,
+              199,
+              600
+            ],
+            "symbol": null
+          }
+        ],
+        "cuts": [
+          [
+            [
+              0,
+              379
+            ],
+            [
+              199,
+              379
+            ]
+          ],
+          [
+            [
+              66,
+              0
+            ],
+            [
+              66,
+              379
+            ]
+          ],
+          [
+            [
+              199,
+              0
+            ],
+            [
+              199,
+              600
+            ]
+          ],
+          [
+            [
+              305,
+              0
+            ],
+            [
+              305,
+              600
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "history": "guillotine-20260943",
+      "step": 4,
+      "policy": "segment-constraints",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              379
+            ],
+            "b": [
+              199,
+              379
+            ]
+          },
+          {
+            "a": [
+              66,
+              0
+            ],
+            "b": [
+              66,
+              379
+            ]
+          },
+          {
+            "a": [
+              199,
+              0
+            ],
+            "b": [
+              199,
+              600
+            ]
+          },
+          {
+            "a": [
+              305,
+              0
+            ],
+            "b": [
+              305,
+              600
+            ]
+          }
+        ]
+      },
+      "geometry_sha256": "a9565371764ed8da3acd967ac2dcdd0a100475531962b697aea04b6ae9ac60d9",
+      "result": {
+        "status": "solved",
+        "domains": [
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ],
+          [
+            4
+          ]
+        ],
+        "anchors_by_dart": {
+          "0": [
+            1
+          ],
+          "1": [
+            2
+          ],
+          "22": [
+            3
+          ],
+          "30": [
+            3
+          ]
+        },
+        "initial_anchors_by_dart": {
+          "0": [
+            1
+          ],
+          "1": [
+            2
+          ]
+        },
+        "units": [
+          {
+            "id": "frame@0:0.022",
+            "mother": "frame",
+            "t0": 0.0,
+            "t1": 0.022,
+            "endpoint_mothers": [
+              [],
+              [
+                "L:66,0>66,379"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 0,
+            "edges": [
+              0
+            ],
+            "occurrences": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "id": "frame@0.022:0.0663333333333",
+            "mother": "frame",
+            "t0": 0.022,
+            "t1": 0.06633333333333333,
+            "endpoint_mothers": [
+              [
+                "L:66,0>66,379"
+              ],
+              [
+                "L:199,0>199,600"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 0,
+            "edges": [
+              1
+            ],
+            "occurrences": [
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          },
+          {
+            "id": "frame@0.0663333333333:0.101666666667",
+            "mother": "frame",
+            "t0": 0.06633333333333333,
+            "t1": 0.10166666666666667,
+            "endpoint_mothers": [
+              [
+                "L:199,0>199,600"
+              ],
+              [
+                "L:305,0>305,600"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 0,
+            "edges": [
+              2
+            ],
+            "occurrences": [
+              [
+                0,
+                4
+              ],
+              [
+                3,
+                5
+              ]
+            ]
+          },
+          {
+            "id": "frame@0.101666666667:0.698333333333",
+            "mother": "frame",
+            "t0": 0.10166666666666667,
+            "t1": 0.6983333333333334,
+            "endpoint_mothers": [
+              [
+                "L:305,0>305,600"
+              ],
+              [
+                "L:305,0>305,600"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 0,
+            "edges": [
+              3,
+              4,
+              5
+            ],
+            "occurrences": [
+              [
+                0,
+                6
+              ],
+              [
+                4,
+                7
+              ]
+            ]
+          },
+          {
+            "id": "frame@0.698333333333:0.733666666667",
+            "mother": "frame",
+            "t0": 0.6983333333333334,
+            "t1": 0.7336666666666667,
+            "endpoint_mothers": [
+              [
+                "L:305,0>305,600"
+              ],
+              [
+                "L:199,0>199,600"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 0,
+            "edges": [
+              6
+            ],
+            "occurrences": [
+              [
+                0,
+                12
+              ],
+              [
+                3,
+                13
+              ]
+            ]
+          },
+          {
+            "id": "frame@0.733666666667:0.873666666667",
+            "mother": "frame",
+            "t0": 0.7336666666666667,
+            "t1": 0.8736666666666667,
+            "endpoint_mothers": [
+              [
+                "L:199,0>199,600"
+              ],
+              [
+                "L:0,379>199,379"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 0,
+            "edges": [
+              7,
+              8
+            ],
+            "occurrences": [
+              [
+                0,
+                14
+              ],
+              [
+                5,
+                15
+              ]
+            ]
+          },
+          {
+            "id": "frame@0.873666666667:1",
+            "mother": "frame",
+            "t0": 0.8736666666666667,
+            "t1": 1.0,
+            "endpoint_mothers": [
+              [
+                "L:0,379>199,379"
+              ],
+              []
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 0,
+            "edges": [
+              9
+            ],
+            "occurrences": [
+              [
+                0,
+                18
+              ],
+              [
+                1,
+                19
+              ]
+            ]
+          },
+          {
+            "id": "L:0,379>199,379@0:0.331658291457",
+            "mother": "L:0,379>199,379",
+            "t0": 0.0,
+            "t1": 0.3316582914572864,
+            "endpoint_mothers": [
+              [
+                "frame"
+              ],
+              [
+                "L:66,0>66,379"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 1,
+            "edges": [
+              10
+            ],
+            "occurrences": [
+              [
+                1,
+                20
+              ],
+              [
+                5,
+                21
+              ]
+            ]
+          },
+          {
+            "id": "L:0,379>199,379@0.331658291457:1",
+            "mother": "L:0,379>199,379",
+            "t0": 0.3316582914572864,
+            "t1": 1.0,
+            "endpoint_mothers": [
+              [
+                "L:66,0>66,379"
+              ],
+              [
+                "L:199,0>199,600"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 0,
+            "edges": [
+              11
+            ],
+            "occurrences": [
+              [
+                2,
+                22
+              ],
+              [
+                5,
+                23
+              ]
+            ]
+          },
+          {
+            "id": "L:199,0>199,600@0:0.631666666667",
+            "mother": "L:199,0>199,600",
+            "t0": 0.0,
+            "t1": 0.6316666666666667,
+            "endpoint_mothers": [
+              [
+                "frame"
+              ],
+              [
+                "L:0,379>199,379"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 1,
+            "edges": [
+              13
+            ],
+            "occurrences": [
+              [
+                3,
+                26
+              ],
+              [
+                2,
+                27
+              ]
+            ]
+          },
+          {
+            "id": "L:199,0>199,600@0.631666666667:1",
+            "mother": "L:199,0>199,600",
+            "t0": 0.6316666666666667,
+            "t1": 1.0,
+            "endpoint_mothers": [
+              [
+                "L:0,379>199,379"
+              ],
+              [
+                "frame"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 1,
+            "edges": [
+              14
+            ],
+            "occurrences": [
+              [
+                3,
+                28
+              ],
+              [
+                5,
+                29
+              ]
+            ]
+          },
+          {
+            "id": "L:305,0>305,600@0:1",
+            "mother": "L:305,0>305,600",
+            "t0": 0.0,
+            "t1": 1.0,
+            "endpoint_mothers": [
+              [
+                "frame"
+              ],
+              [
+                "frame"
+              ]
+            ],
+            "same_single_mother": true,
+            "frame_endpoint_count": 2,
+            "edges": [
+              15
+            ],
+            "occurrences": [
+              [
+                4,
+                30
+              ],
+              [
+                3,
+                31
+              ]
+            ]
+          },
+          {
+            "id": "L:66,0>66,379@0:1",
+            "mother": "L:66,0>66,379",
+            "t0": 0.0,
+            "t1": 1.0,
+            "endpoint_mothers": [
+              [
+                "frame"
+              ],
+              [
+                "L:0,379>199,379"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 1,
+            "edges": [
+              12
+            ],
+            "occurrences": [
+              [
+                2,
+                24
+              ],
+              [
+                1,
+                25
+              ]
+            ]
+          }
+        ],
+        "trace": [
+          {
+            "unit": "L:0,379>199,379@0.331658291457:1",
+            "mother": "L:0,379>199,379",
+            "unresolved_shores": [
+              2,
+              5
+            ],
+            "same_single_mother": false,
+            "constraint_weight": 4,
+            "priority": [
+              0,
+              4
+            ],
+            "tied_units": [
+              "L:0,379>199,379@0.331658291457:1"
+            ],
+            "dart": 22,
+            "side": 2,
+            "domain": [
+              3,
+              4
+            ],
+            "used_names": [
+              1,
+              2
+            ],
+            "symbol": 3
+          },
+          {
+            "unit": "L:305,0>305,600@0:1",
+            "mother": "L:305,0>305,600",
+            "unresolved_shores": [
+              4
+            ],
+            "same_single_mother": true,
+            "constraint_weight": 2,
+            "priority": [
+              0,
+              2
+            ],
+            "tied_units": [
+              "L:305,0>305,600@0:1",
+              "frame@0.101666666667:0.698333333333"
+            ],
+            "dart": 30,
+            "side": 4,
+            "domain": [
+              3,
+              4
+            ],
+            "used_names": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "symbol": 3
+          }
+        ],
+        "choices": 2,
+        "backtracks": 0,
+        "conflict_propagation": [],
+        "colors": [
+          1,
+          2,
+          3,
+          2,
+          3,
+          4
+        ],
+        "old_colors_read": false,
+        "local_budget": null,
+        "scope": "One fresh geometry; no alternative candidate retry; four is the input palette.",
+        "policy": "segment-constraints"
+      },
+      "drawing": {
+        "width": 900,
+        "height": 600,
+        "sides": [
+          {
+            "id": "1",
+            "bounds": [
+              0,
+              0,
+              66,
+              379
+            ],
+            "symbol": 2
+          },
+          {
+            "id": "2",
+            "bounds": [
+              66,
+              0,
+              199,
+              379
+            ],
+            "symbol": 3
+          },
+          {
+            "id": "3",
+            "bounds": [
+              199,
+              0,
+              305,
+              600
+            ],
+            "symbol": 2
+          },
+          {
+            "id": "4",
+            "bounds": [
+              305,
+              0,
+              900,
+              600
+            ],
+            "symbol": 3
+          },
+          {
+            "id": "5",
+            "bounds": [
+              0,
+              379,
+              199,
+              600
+            ],
+            "symbol": 4
+          }
+        ],
+        "cuts": [
+          [
+            [
+              0,
+              379
+            ],
+            [
+              199,
+              379
+            ]
+          ],
+          [
+            [
+              66,
+              0
+            ],
+            [
+              66,
+              379
+            ]
+          ],
+          [
+            [
+              199,
+              0
+            ],
+            [
+              199,
+              600
+            ]
+          ],
+          [
+            [
+              305,
+              0
+            ],
+            [
+              305,
+              600
+            ]
+          ]
+        ]
+      }
+    }
+  ],
+  "port_examples": [
+    {
+      "document": {
+        "strokes": [
+          {
+            "a": [
+              0,
+              300
+            ],
+            "b": [
+              900,
+              300
+            ]
+          }
+        ]
+      },
+      "horizontal_units": [
+        {
+          "id": "L:0,300>900,300@0:1",
+          "mother": "L:0,300>900,300",
+          "t0": 0.0,
+          "t1": 1.0,
+          "endpoint_mothers": [
+            [
+              "frame"
+            ],
+            [
+              "frame"
+            ]
+          ],
+          "same_single_mother": true,
+          "frame_endpoint_count": 2,
+          "edges": [
+            6
+          ],
+          "occurrences": [
+            [
+              1,
+              12
+            ],
+            [
+              2,
+              13
+            ]
+          ]
+        }
+      ],
+      "result": {
+        "status": "solved",
+        "domains": [
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "anchors_by_dart": {
+          "0": [
+            1
+          ],
+          "1": [
+            2
+          ],
+          "13": [
+            3
+          ]
+        },
+        "initial_anchors_by_dart": {
+          "0": [
+            1
+          ],
+          "1": [
+            2
+          ]
+        },
+        "units": [
+          {
+            "id": "frame@0:0.4",
+            "mother": "frame",
+            "t0": 0.0,
+            "t1": 0.4,
+            "endpoint_mothers": [
+              [],
+              [
+                "L:0,300>900,300"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 0,
+            "edges": [
+              0,
+              1
+            ],
+            "occurrences": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "id": "frame@0.4:0.9",
+            "mother": "frame",
+            "t0": 0.4,
+            "t1": 0.9,
+            "endpoint_mothers": [
+              [
+                "L:0,300>900,300"
+              ],
+              [
+                "L:0,300>900,300"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 0,
+            "edges": [
+              2,
+              3,
+              4
+            ],
+            "occurrences": [
+              [
+                0,
+                4
+              ],
+              [
+                2,
+                5
+              ]
+            ]
+          },
+          {
+            "id": "frame@0.9:1",
+            "mother": "frame",
+            "t0": 0.9,
+            "t1": 1.0,
+            "endpoint_mothers": [
+              [
+                "L:0,300>900,300"
+              ],
+              []
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 0,
+            "edges": [
+              5
+            ],
+            "occurrences": [
+              [
+                0,
+                10
+              ],
+              [
+                1,
+                11
+              ]
+            ]
+          },
+          {
+            "id": "L:0,300>900,300@0:1",
+            "mother": "L:0,300>900,300",
+            "t0": 0.0,
+            "t1": 1.0,
+            "endpoint_mothers": [
+              [
+                "frame"
+              ],
+              [
+                "frame"
+              ]
+            ],
+            "same_single_mother": true,
+            "frame_endpoint_count": 2,
+            "edges": [
+              6
+            ],
+            "occurrences": [
+              [
+                1,
+                12
+              ],
+              [
+                2,
+                13
+              ]
+            ]
+          }
+        ],
+        "trace": [
+          {
+            "unit": "L:0,300>900,300@0:1",
+            "mother": "L:0,300>900,300",
+            "unresolved_shores": [
+              2
+            ],
+            "same_single_mother": true,
+            "constraint_weight": 2,
+            "priority": [
+              2,
+              1
+            ],
+            "closed_support": {
+              "supported": true,
+              "block_edge_ids": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "endpoint_vertices": [
+                "5",
+                "2"
+              ]
+            },
+            "tied_units": [
+              "L:0,300>900,300@0:1"
+            ],
+            "dart": 13,
+            "side": 2,
+            "domain": [
+              3,
+              4
+            ],
+            "used_names": [
+              1,
+              2
+            ],
+            "symbol": 3
+          }
+        ],
+        "choices": 1,
+        "backtracks": 0,
+        "conflict_propagation": [],
+        "colors": [
+          1,
+          2,
+          3
+        ],
+        "old_colors_read": false,
+        "local_budget": null,
+        "scope": "One fresh geometry; no alternative candidate retry; four is the input palette.",
+        "policy": "closed-support"
+      }
+    },
+    {
+      "document": {
+        "strokes": [
+          {
+            "a": [
+              0,
+              300
+            ],
+            "b": [
+              900,
+              300
+            ]
+          },
+          {
+            "a": [
+              450,
+              0
+            ],
+            "b": [
+              450,
+              600
+            ]
+          }
+        ]
+      },
+      "horizontal_units": [
+        {
+          "id": "L:0,300>900,300@0:0.5",
+          "mother": "L:0,300>900,300",
+          "t0": 0.0,
+          "t1": 0.5,
+          "endpoint_mothers": [
+            [
+              "frame"
+            ],
+            [
+              "L:450,0>450,600"
+            ]
+          ],
+          "same_single_mother": false,
+          "frame_endpoint_count": 1,
+          "edges": [
+            8
+          ],
+          "occurrences": [
+            [
+              1,
+              16
+            ],
+            [
+              4,
+              17
+            ]
+          ]
+        },
+        {
+          "id": "L:0,300>900,300@0.5:1",
+          "mother": "L:0,300>900,300",
+          "t0": 0.5,
+          "t1": 1.0,
+          "endpoint_mothers": [
+            [
+              "L:450,0>450,600"
+            ],
+            [
+              "frame"
+            ]
+          ],
+          "same_single_mother": false,
+          "frame_endpoint_count": 1,
+          "edges": [
+            9
+          ],
+          "occurrences": [
+            [
+              2,
+              18
+            ],
+            [
+              3,
+              19
+            ]
+          ]
+        }
+      ],
+      "result": {
+        "status": "solved",
+        "domains": [
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "anchors_by_dart": {
+          "0": [
+            1
+          ],
+          "1": [
+            2
+          ],
+          "18": [
+            3
+          ],
+          "22": [
+            2
+          ],
+          "17": [
+            3
+          ]
+        },
+        "initial_anchors_by_dart": {
+          "0": [
+            1
+          ],
+          "1": [
+            2
+          ]
+        },
+        "units": [
+          {
+            "id": "frame@0:0.15",
+            "mother": "frame",
+            "t0": 0.0,
+            "t1": 0.15,
+            "endpoint_mothers": [
+              [],
+              [
+                "L:450,0>450,600"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 0,
+            "edges": [
+              0
+            ],
+            "occurrences": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "id": "frame@0.15:0.4",
+            "mother": "frame",
+            "t0": 0.15,
+            "t1": 0.4,
+            "endpoint_mothers": [
+              [
+                "L:450,0>450,600"
+              ],
+              [
+                "L:0,300>900,300"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 0,
+            "edges": [
+              1,
+              2
+            ],
+            "occurrences": [
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          },
+          {
+            "id": "frame@0.4:0.65",
+            "mother": "frame",
+            "t0": 0.4,
+            "t1": 0.65,
+            "endpoint_mothers": [
+              [
+                "L:0,300>900,300"
+              ],
+              [
+                "L:450,0>450,600"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 0,
+            "edges": [
+              3,
+              4
+            ],
+            "occurrences": [
+              [
+                0,
+                6
+              ],
+              [
+                3,
+                7
+              ]
+            ]
+          },
+          {
+            "id": "frame@0.65:0.9",
+            "mother": "frame",
+            "t0": 0.65,
+            "t1": 0.9,
+            "endpoint_mothers": [
+              [
+                "L:450,0>450,600"
+              ],
+              [
+                "L:0,300>900,300"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 0,
+            "edges": [
+              5,
+              6
+            ],
+            "occurrences": [
+              [
+                0,
+                10
+              ],
+              [
+                4,
+                11
+              ]
+            ]
+          },
+          {
+            "id": "frame@0.9:1",
+            "mother": "frame",
+            "t0": 0.9,
+            "t1": 1.0,
+            "endpoint_mothers": [
+              [
+                "L:0,300>900,300"
+              ],
+              []
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 0,
+            "edges": [
+              7
+            ],
+            "occurrences": [
+              [
+                0,
+                14
+              ],
+              [
+                1,
+                15
+              ]
+            ]
+          },
+          {
+            "id": "L:0,300>900,300@0:0.5",
+            "mother": "L:0,300>900,300",
+            "t0": 0.0,
+            "t1": 0.5,
+            "endpoint_mothers": [
+              [
+                "frame"
+              ],
+              [
+                "L:450,0>450,600"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 1,
+            "edges": [
+              8
+            ],
+            "occurrences": [
+              [
+                1,
+                16
+              ],
+              [
+                4,
+                17
+              ]
+            ]
+          },
+          {
+            "id": "L:0,300>900,300@0.5:1",
+            "mother": "L:0,300>900,300",
+            "t0": 0.5,
+            "t1": 1.0,
+            "endpoint_mothers": [
+              [
+                "L:450,0>450,600"
+              ],
+              [
+                "frame"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 1,
+            "edges": [
+              9
+            ],
+            "occurrences": [
+              [
+                2,
+                18
+              ],
+              [
+                3,
+                19
+              ]
+            ]
+          },
+          {
+            "id": "L:450,0>450,600@0:0.5",
+            "mother": "L:450,0>450,600",
+            "t0": 0.0,
+            "t1": 0.5,
+            "endpoint_mothers": [
+              [
+                "frame"
+              ],
+              [
+                "L:0,300>900,300"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 1,
+            "edges": [
+              10
+            ],
+            "occurrences": [
+              [
+                2,
+                20
+              ],
+              [
+                1,
+                21
+              ]
+            ]
+          },
+          {
+            "id": "L:450,0>450,600@0.5:1",
+            "mother": "L:450,0>450,600",
+            "t0": 0.5,
+            "t1": 1.0,
+            "endpoint_mothers": [
+              [
+                "L:0,300>900,300"
+              ],
+              [
+                "frame"
+              ]
+            ],
+            "same_single_mother": false,
+            "frame_endpoint_count": 1,
+            "edges": [
+              11
+            ],
+            "occurrences": [
+              [
+                3,
+                22
+              ],
+              [
+                4,
+                23
+              ]
+            ]
+          }
+        ],
+        "trace": [
+          {
+            "unit": "L:0,300>900,300@0.5:1",
+            "mother": "L:0,300>900,300",
+            "unresolved_shores": [
+              2,
+              3
+            ],
+            "same_single_mother": false,
+            "constraint_weight": 3,
+            "priority": [
+              3,
+              0
+            ],
+            "closed_support": {
+              "supported": false,
+              "block_edge_ids": [],
+              "endpoint_vertices": [
+                "8",
+                "3"
+              ]
+            },
+            "tied_units": [
+              "L:0,300>900,300@0.5:1",
+              "L:450,0>450,600@0.5:1"
+            ],
+            "dart": 18,
+            "side": 2,
+            "domain": [
+              3,
+              4
+            ],
+            "used_names": [
+              1,
+              2
+            ],
+            "symbol": 3
+          },
+          {
+            "unit": "L:450,0>450,600@0.5:1",
+            "mother": "L:450,0>450,600",
+            "unresolved_shores": [
+              3,
+              4
+            ],
+            "same_single_mother": false,
+            "constraint_weight": 4,
+            "priority": [
+              4,
+              0
+            ],
+            "closed_support": {
+              "supported": false,
+              "block_edge_ids": [],
+              "endpoint_vertices": [
+                "8",
+                "5"
+              ]
+            },
+            "tied_units": [
+              "L:450,0>450,600@0.5:1"
+            ],
+            "dart": 22,
+            "side": 3,
+            "domain": [
+              2,
+              4
+            ],
+            "used_names": [
+              1,
+              2,
+              3
+            ],
+            "symbol": 2
+          },
+          {
+            "unit": "L:0,300>900,300@0:0.5",
+            "mother": "L:0,300>900,300",
+            "unresolved_shores": [
+              4
+            ],
+            "same_single_mother": false,
+            "constraint_weight": 2,
+            "priority": [
+              2,
+              1
+            ],
+            "closed_support": {
+              "supported": true,
+              "block_edge_ids": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                9,
+                10
+              ],
+              "endpoint_vertices": [
+                "7",
+                "8"
+              ]
+            },
+            "tied_units": [
+              "L:0,300>900,300@0:0.5",
+              "L:450,0>450,600@0.5:1"
+            ],
+            "dart": 17,
+            "side": 4,
+            "domain": [
+              3,
+              4
+            ],
+            "used_names": [
+              1,
+              2,
+              3
+            ],
+            "symbol": 3
+          }
+        ],
+        "choices": 3,
+        "backtracks": 0,
+        "conflict_propagation": [],
+        "colors": [
+          1,
+          2,
+          3,
+          2,
+          3
+        ],
+        "old_colors_read": false,
+        "local_budget": null,
+        "scope": "One fresh geometry; no alternative candidate retry; four is the input palette.",
+        "policy": "closed-support"
+      }
+    }
+  ],
+  "files": [
+    {
+      "filename": "recolored-step7.png",
+      "sha256": "ee2c7c8640d938e06743b56b2fa2e5dcd5dc589b2ee3d33d395f0349a92fd6d5",
+      "width_px": 1900,
+      "height_px": 960
+    },
+    {
+      "filename": "recolored-step7.svg",
+      "sha256": "61ff729c897f026f9799ac475794e2141222ce8184f669f46a0355e6e025ad25",
+      "width_px": 1900,
+      "height_px": 960
+    },
+    {
+      "filename": "priority-fork-step4.png",
+      "sha256": "ab06bc89893f22fadfc475294cccc3f6b9795d39ce6317532eb5c8d88fea65d5",
+      "width_px": 1900,
+      "height_px": 980
+    },
+    {
+      "filename": "priority-fork-step4.svg",
+      "sha256": "fbc36e81b4e3f834a067a8fb11a72fb7c8c6ddbd964b136803aa6f418cc72df6",
+      "width_px": 1900,
+      "height_px": 980
+    },
+    {
+      "filename": "current-port-weights.png",
+      "sha256": "5c7a987a8cd417a7b09608cd8147a704a89df5c6eb1a48613c522ebf8a86715c",
+      "width_px": 1900,
+      "height_px": 850
+    },
+    {
+      "filename": "current-port-weights.svg",
+      "sha256": "0b2b6c31f78be2a7b6ae714419ef2fdfda43c41ee8bb5f4c3749f8308fac6c93",
+      "width_px": 1900,
+      "height_px": 850
+    }
+  ],
+  "font": "msyh.ttc",
+  "geometry_transform": "Exact uniform scaling; x-right/y-down; no geometry simplified.",
+  "source_sha256": {
+    "scripts/render_global_restart.py": "4ee1045270b8462ee8a90aca4faacb50143f930817df9961b483872ce751328b",
+    "scripts/render_anchor_failure_cases.py": "8bdea94aa0f3f8ea101d1c139c47fcf6b645373d64e0da06ad0ea4a6fd8b7b5e",
+    "fourcolor/global_restart.py": "56aafff2632cf4c02cc20c7a056d02b9932f65f700311846d7d81c1cb32b3cbb",
+    "fourcolor/closed_support.py": "0a95dd2802d16654a4342332ae9f9825944a26c4fe2cad182de0a214fbfc56f1"
+  }
+}

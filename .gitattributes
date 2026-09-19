@@ -1,4 +1,6 @@
 * text=auto
+.gitattributes text eol=lf
+.gitignore text eol=lf
 *.py text eol=lf
 *.md text eol=lf
 *.yml text eol=lf
@@ -8,3 +10,10 @@
 *.json text eol=lf
 *.cff text eol=lf
 *.bib text eol=lf
+*.js text eol=lf
+*.mjs text eol=lf
+
+# Frozen reports and figure manifests are byte-hashed research evidence.
+# Some original JSON has CRLF; preserve original bytes on add and checkout.
+outputs/** -text
+docs/figures/** -text

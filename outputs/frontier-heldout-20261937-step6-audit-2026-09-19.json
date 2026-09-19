@@ -1,0 +1,1719 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-18T16:17:52.738136+00:00",
+  "scope": "Post-run diagnosis only. Enumeration and relational inference were NOT fed to the frozen naming policies.",
+  "case": {
+    "history": "heldout-guillotine-20261937",
+    "seed": 20261937,
+    "step": 6,
+    "geometry_key": "0f98032727c10a179fd2cf03e271713203ffbdce0aaa3475cdfb42dd2981d422"
+  },
+  "input_report": {
+    "path": "outputs/frontier-restart-all-2026-09-19.json.gz",
+    "sha256": "5a9a06c95ef44b35ee6339e595208d6b9132540acfc59bc1bcbefdfd34bbe950"
+  },
+  "source_sha256": {
+    "fourcolor/frontier_restart.py": "2b82e9de0ecad888b5248602d039997889becac1718282f5c4a5eaa6d8c1c533",
+    "fourcolor/global_restart.py": "56aafff2632cf4c02cc20c7a056d02b9932f65f700311846d7d81c1cb32b3cbb",
+    "fourcolor/whole_lines.py": "5bd54516c18ff74c2dcba2a5e89a27b1af7e3c0277fb3aa8e12f0efa55f9312c",
+    "scripts/restart-geometry.mjs": "66d72196c12e56e2ca63b6debb06b661e6dc9a110be6c4f236d9f8f32653897e",
+    "web/engine.js": "1451287b703e6f90765a1ed96acd2c4c5fc30d467be6c207da81f4b982035d84"
+  },
+  "document": {
+    "frame": {
+      "width": 900,
+      "height": 600
+    },
+    "strokes": [
+      {
+        "a": [
+          521,
+          0
+        ],
+        "b": [
+          521,
+          600
+        ]
+      },
+      {
+        "a": [
+          521,
+          205
+        ],
+        "b": [
+          900,
+          205
+        ]
+      },
+      {
+        "a": [
+          636,
+          0
+        ],
+        "b": [
+          636,
+          205
+        ]
+      },
+      {
+        "a": [
+          636,
+          127
+        ],
+        "b": [
+          709,
+          127
+        ]
+      },
+      {
+        "a": [
+          636,
+          152
+        ],
+        "b": [
+          709,
+          152
+        ]
+      },
+      {
+        "a": [
+          709,
+          0
+        ],
+        "b": [
+          709,
+          205
+        ]
+      }
+    ]
+  },
+  "sides": [
+    {
+      "side": 0,
+      "label": "outside",
+      "bounds": null
+    },
+    {
+      "side": 1,
+      "label": "A",
+      "bounds": [
+        0,
+        0,
+        521,
+        600
+      ]
+    },
+    {
+      "side": 2,
+      "label": "B",
+      "bounds": [
+        521,
+        0,
+        636,
+        205
+      ]
+    },
+    {
+      "side": 3,
+      "label": "C",
+      "bounds": [
+        636,
+        0,
+        709,
+        127
+      ]
+    },
+    {
+      "side": 4,
+      "label": "D",
+      "bounds": [
+        709,
+        0,
+        900,
+        205
+      ]
+    },
+    {
+      "side": 5,
+      "label": "E",
+      "bounds": [
+        521,
+        205,
+        900,
+        600
+      ]
+    },
+    {
+      "side": 6,
+      "label": "F",
+      "bounds": [
+        636,
+        152,
+        709,
+        205
+      ]
+    },
+    {
+      "side": 7,
+      "label": "G",
+      "bounds": [
+        636,
+        127,
+        709,
+        152
+      ]
+    }
+  ],
+  "adjacency_checks": {
+    "rectangle_and_plane_adjacency_match": true,
+    "distinct_pairs": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        6,
+        7
+      ]
+    ],
+    "shared_boundaries": [
+      {
+        "edge": 0,
+        "sides": [
+          0,
+          1
+        ],
+        "start": [
+          0,
+          0
+        ],
+        "end": [
+          521,
+          0
+        ],
+        "length": 521,
+        "mother": "frame"
+      },
+      {
+        "edge": 1,
+        "sides": [
+          0,
+          2
+        ],
+        "start": [
+          521,
+          0
+        ],
+        "end": [
+          636,
+          0
+        ],
+        "length": 115,
+        "mother": "frame"
+      },
+      {
+        "edge": 2,
+        "sides": [
+          0,
+          3
+        ],
+        "start": [
+          636,
+          0
+        ],
+        "end": [
+          709,
+          0
+        ],
+        "length": 73,
+        "mother": "frame"
+      },
+      {
+        "edge": 3,
+        "sides": [
+          0,
+          4
+        ],
+        "start": [
+          709,
+          0
+        ],
+        "end": [
+          900,
+          0
+        ],
+        "length": 191,
+        "mother": "frame"
+      },
+      {
+        "edge": 4,
+        "sides": [
+          0,
+          4
+        ],
+        "start": [
+          900,
+          0
+        ],
+        "end": [
+          900,
+          205
+        ],
+        "length": 205,
+        "mother": "frame"
+      },
+      {
+        "edge": 5,
+        "sides": [
+          0,
+          5
+        ],
+        "start": [
+          900,
+          205
+        ],
+        "end": [
+          900,
+          600
+        ],
+        "length": 395,
+        "mother": "frame"
+      },
+      {
+        "edge": 6,
+        "sides": [
+          0,
+          5
+        ],
+        "start": [
+          900,
+          600
+        ],
+        "end": [
+          521,
+          600
+        ],
+        "length": 379,
+        "mother": "frame"
+      },
+      {
+        "edge": 7,
+        "sides": [
+          0,
+          1
+        ],
+        "start": [
+          521,
+          600
+        ],
+        "end": [
+          0,
+          600
+        ],
+        "length": 521,
+        "mother": "frame"
+      },
+      {
+        "edge": 8,
+        "sides": [
+          0,
+          1
+        ],
+        "start": [
+          0,
+          600
+        ],
+        "end": [
+          0,
+          0
+        ],
+        "length": 600,
+        "mother": "frame"
+      },
+      {
+        "edge": 9,
+        "sides": [
+          2,
+          1
+        ],
+        "start": [
+          521,
+          0
+        ],
+        "end": [
+          521,
+          205
+        ],
+        "length": 205,
+        "mother": "L:521,0>521,600"
+      },
+      {
+        "edge": 10,
+        "sides": [
+          5,
+          1
+        ],
+        "start": [
+          521,
+          205
+        ],
+        "end": [
+          521,
+          600
+        ],
+        "length": 395,
+        "mother": "L:521,0>521,600"
+      },
+      {
+        "edge": 11,
+        "sides": [
+          2,
+          5
+        ],
+        "start": [
+          521,
+          205
+        ],
+        "end": [
+          636,
+          205
+        ],
+        "length": 115,
+        "mother": "L:521,205>900,205"
+      },
+      {
+        "edge": 12,
+        "sides": [
+          6,
+          5
+        ],
+        "start": [
+          636,
+          205
+        ],
+        "end": [
+          709,
+          205
+        ],
+        "length": 73,
+        "mother": "L:521,205>900,205"
+      },
+      {
+        "edge": 13,
+        "sides": [
+          4,
+          5
+        ],
+        "start": [
+          709,
+          205
+        ],
+        "end": [
+          900,
+          205
+        ],
+        "length": 191,
+        "mother": "L:521,205>900,205"
+      },
+      {
+        "edge": 14,
+        "sides": [
+          3,
+          2
+        ],
+        "start": [
+          636,
+          0
+        ],
+        "end": [
+          636,
+          127
+        ],
+        "length": 127,
+        "mother": "L:636,0>636,205"
+      },
+      {
+        "edge": 15,
+        "sides": [
+          7,
+          2
+        ],
+        "start": [
+          636,
+          127
+        ],
+        "end": [
+          636,
+          152
+        ],
+        "length": 25,
+        "mother": "L:636,0>636,205"
+      },
+      {
+        "edge": 16,
+        "sides": [
+          6,
+          2
+        ],
+        "start": [
+          636,
+          152
+        ],
+        "end": [
+          636,
+          205
+        ],
+        "length": 53,
+        "mother": "L:636,0>636,205"
+      },
+      {
+        "edge": 17,
+        "sides": [
+          3,
+          7
+        ],
+        "start": [
+          636,
+          127
+        ],
+        "end": [
+          709,
+          127
+        ],
+        "length": 73,
+        "mother": "L:636,127>709,127"
+      },
+      {
+        "edge": 18,
+        "sides": [
+          7,
+          6
+        ],
+        "start": [
+          636,
+          152
+        ],
+        "end": [
+          709,
+          152
+        ],
+        "length": 73,
+        "mother": "L:636,152>709,152"
+      },
+      {
+        "edge": 19,
+        "sides": [
+          4,
+          3
+        ],
+        "start": [
+          709,
+          0
+        ],
+        "end": [
+          709,
+          127
+        ],
+        "length": 127,
+        "mother": "L:709,0>709,205"
+      },
+      {
+        "edge": 20,
+        "sides": [
+          4,
+          7
+        ],
+        "start": [
+          709,
+          127
+        ],
+        "end": [
+          709,
+          152
+        ],
+        "length": 25,
+        "mother": "L:709,0>709,205"
+      },
+      {
+        "edge": 21,
+        "sides": [
+          4,
+          6
+        ],
+        "start": [
+          709,
+          152
+        ],
+        "end": [
+          709,
+          205
+        ],
+        "length": 53,
+        "mother": "L:709,0>709,205"
+      }
+    ]
+  },
+  "saved_policy_statuses": {
+    "closed-support": "conflict",
+    "anchored-pressure": "conflict",
+    "tight-frontier": "conflict",
+    "tight-degree": "conflict",
+    "tight-hall": "conflict"
+  },
+  "tight_hall_trace": [
+    {
+      "unit": "L:521,205>900,205@0:0.303430079156",
+      "mother": "L:521,205>900,205",
+      "side": 2,
+      "dart": 22,
+      "unresolved_shores": [
+        2,
+        5
+      ],
+      "urgency": 2,
+      "unresolved_neighbors": 4,
+      "constraint_weight": 4,
+      "including_named_weight": 4,
+      "closed_support": {
+        "supported": false,
+        "block_edge_ids": [],
+        "endpoint_vertices": [
+          "9",
+          "10"
+        ]
+      },
+      "priority": [
+        2,
+        4,
+        4,
+        0
+      ],
+      "domain": [
+        3,
+        4
+      ],
+      "used_names": [
+        1,
+        2
+      ],
+      "symbol": 3,
+      "tied_units": [
+        "L:521,205>900,205@0:0.303430079156",
+        "L:521,205>900,205@0.303430079156:0.496042216359",
+        "L:636,0>636,205@0.741463414634:1"
+      ]
+    },
+    {
+      "unit": "L:709,0>709,205@0:0.619512195122",
+      "mother": "L:709,0>709,205",
+      "side": 4,
+      "dart": 38,
+      "unresolved_shores": [
+        4,
+        3
+      ],
+      "urgency": 2,
+      "unresolved_neighbors": 3,
+      "constraint_weight": 4,
+      "including_named_weight": 4,
+      "closed_support": {
+        "supported": false,
+        "block_edge_ids": [],
+        "endpoint_vertices": [
+          "3",
+          "14"
+        ]
+      },
+      "priority": [
+        2,
+        3,
+        4,
+        0
+      ],
+      "domain": [
+        2,
+        3
+      ],
+      "used_names": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "symbol": 2,
+      "tied_units": [
+        "L:709,0>709,205@0:0.619512195122",
+        "L:709,0>709,205@0.741463414634:1"
+      ]
+    }
+  ],
+  "tight_hall_conflict_propagation": [
+    {
+      "from_side": 0,
+      "to_side": 3,
+      "edge": 2,
+      "whole_line": "frame",
+      "removed": 1
+    },
+    {
+      "from_side": 0,
+      "to_side": 5,
+      "edge": 5,
+      "whole_line": "frame",
+      "removed": 1
+    },
+    {
+      "from_side": 1,
+      "to_side": 5,
+      "edge": 10,
+      "whole_line": "L:521,0>521,600",
+      "removed": 2
+    },
+    {
+      "from_side": 2,
+      "to_side": 5,
+      "edge": 11,
+      "whole_line": "L:521,205>900,205",
+      "removed": 3
+    },
+    {
+      "from_side": 2,
+      "to_side": 3,
+      "edge": 14,
+      "whole_line": "L:636,0>636,205",
+      "removed": 3
+    },
+    {
+      "from_side": 2,
+      "to_side": 7,
+      "edge": 15,
+      "whole_line": "L:636,0>636,205",
+      "removed": 3
+    },
+    {
+      "from_side": 2,
+      "to_side": 6,
+      "edge": 16,
+      "whole_line": "L:636,0>636,205",
+      "removed": 3
+    },
+    {
+      "from_side": 4,
+      "to_side": 3,
+      "edge": 19,
+      "whole_line": "L:709,0>709,205",
+      "removed": 2
+    },
+    {
+      "from_side": 4,
+      "to_side": 7,
+      "edge": 20,
+      "whole_line": "L:709,0>709,205",
+      "removed": 2
+    },
+    {
+      "from_side": 4,
+      "to_side": 6,
+      "edge": 21,
+      "whole_line": "L:709,0>709,205",
+      "removed": 2
+    },
+    {
+      "from_side": 5,
+      "to_side": 6,
+      "edge": 12,
+      "whole_line": "L:521,205>900,205",
+      "removed": 4
+    },
+    {
+      "from_side": 3,
+      "to_side": 7,
+      "edge": 17,
+      "whole_line": "L:636,127>709,127",
+      "removed": 4
+    },
+    {
+      "from_side": 6,
+      "to_side": 7,
+      "edge": 18,
+      "whole_line": "L:636,152>709,152",
+      "removed": 1
+    }
+  ],
+  "prefix_diagnostic_oracle": {
+    "method": "Exhaustively test all 4^6 assignments of sides 2..7 with outside=1 and side1=2 using independently reconstructed rectangle adjacency.",
+    "assignments_tested": 4096,
+    "initial_completion_count": 10,
+    "checks": [
+      {
+        "active_decisions": 0,
+        "anchors_by_dart": {
+          "0": [
+            1
+          ],
+          "1": [
+            2
+          ]
+        },
+        "fixed_sides": {
+          "0": 1,
+          "1": 2
+        },
+        "oracle_completion_count": 10,
+        "first_completion": [
+          1,
+          2,
+          3,
+          2,
+          3,
+          4,
+          1,
+          4
+        ],
+        "hall_status": "underdetermined",
+        "hall_domains": [
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            3,
+            4
+          ]
+        ],
+        "hall_trace": [
+          {
+            "from_side": 0,
+            "to_side": 2,
+            "edge": 1,
+            "whole_line": "frame",
+            "removed": 1
+          },
+          {
+            "from_side": 0,
+            "to_side": 3,
+            "edge": 2,
+            "whole_line": "frame",
+            "removed": 1
+          },
+          {
+            "from_side": 0,
+            "to_side": 4,
+            "edge": 3,
+            "whole_line": "frame",
+            "removed": 1
+          },
+          {
+            "from_side": 0,
+            "to_side": 5,
+            "edge": 5,
+            "whole_line": "frame",
+            "removed": 1
+          },
+          {
+            "from_side": 1,
+            "to_side": 2,
+            "edge": 9,
+            "whole_line": "L:521,0>521,600",
+            "removed": 2
+          },
+          {
+            "from_side": 1,
+            "to_side": 5,
+            "edge": 10,
+            "whole_line": "L:521,0>521,600",
+            "removed": 2
+          },
+          {
+            "rule": "hall-reservation",
+            "clique": [
+              2,
+              5,
+              6
+            ],
+            "subset": [
+              2,
+              5
+            ],
+            "union": [
+              3,
+              4
+            ],
+            "subset_domains": [
+              [
+                3,
+                4
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "to_side": 6,
+            "removed": [
+              3,
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "active_decisions": 1,
+        "anchors_by_dart": {
+          "0": [
+            1
+          ],
+          "1": [
+            2
+          ],
+          "22": [
+            3
+          ]
+        },
+        "fixed_sides": {
+          "0": 1,
+          "1": 2,
+          "2": 3
+        },
+        "oracle_completion_count": 5,
+        "first_completion": [
+          1,
+          2,
+          3,
+          2,
+          3,
+          4,
+          1,
+          4
+        ],
+        "hall_status": "underdetermined",
+        "hall_domains": [
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            4
+          ]
+        ],
+        "hall_trace": [
+          {
+            "from_side": 0,
+            "to_side": 3,
+            "edge": 2,
+            "whole_line": "frame",
+            "removed": 1
+          },
+          {
+            "from_side": 0,
+            "to_side": 4,
+            "edge": 3,
+            "whole_line": "frame",
+            "removed": 1
+          },
+          {
+            "from_side": 0,
+            "to_side": 5,
+            "edge": 5,
+            "whole_line": "frame",
+            "removed": 1
+          },
+          {
+            "from_side": 1,
+            "to_side": 5,
+            "edge": 10,
+            "whole_line": "L:521,0>521,600",
+            "removed": 2
+          },
+          {
+            "from_side": 2,
+            "to_side": 5,
+            "edge": 11,
+            "whole_line": "L:521,205>900,205",
+            "removed": 3
+          },
+          {
+            "from_side": 2,
+            "to_side": 3,
+            "edge": 14,
+            "whole_line": "L:636,0>636,205",
+            "removed": 3
+          },
+          {
+            "from_side": 2,
+            "to_side": 7,
+            "edge": 15,
+            "whole_line": "L:636,0>636,205",
+            "removed": 3
+          },
+          {
+            "from_side": 2,
+            "to_side": 6,
+            "edge": 16,
+            "whole_line": "L:636,0>636,205",
+            "removed": 3
+          },
+          {
+            "from_side": 5,
+            "to_side": 6,
+            "edge": 12,
+            "whole_line": "L:521,205>900,205",
+            "removed": 4
+          },
+          {
+            "from_side": 5,
+            "to_side": 4,
+            "edge": 13,
+            "whole_line": "L:521,205>900,205",
+            "removed": 4
+          }
+        ]
+      },
+      {
+        "active_decisions": 2,
+        "anchors_by_dart": {
+          "0": [
+            1
+          ],
+          "1": [
+            2
+          ],
+          "22": [
+            3
+          ],
+          "38": [
+            2
+          ]
+        },
+        "fixed_sides": {
+          "0": 1,
+          "1": 2,
+          "2": 3,
+          "4": 2
+        },
+        "oracle_completion_count": 0,
+        "first_completion": null,
+        "hall_status": "conflict",
+        "hall_domains": [
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ],
+          [
+            4
+          ],
+          [
+            2
+          ],
+          [
+            4
+          ],
+          [
+            1
+          ],
+          []
+        ],
+        "hall_trace": [
+          {
+            "from_side": 0,
+            "to_side": 3,
+            "edge": 2,
+            "whole_line": "frame",
+            "removed": 1
+          },
+          {
+            "from_side": 0,
+            "to_side": 5,
+            "edge": 5,
+            "whole_line": "frame",
+            "removed": 1
+          },
+          {
+            "from_side": 1,
+            "to_side": 5,
+            "edge": 10,
+            "whole_line": "L:521,0>521,600",
+            "removed": 2
+          },
+          {
+            "from_side": 2,
+            "to_side": 5,
+            "edge": 11,
+            "whole_line": "L:521,205>900,205",
+            "removed": 3
+          },
+          {
+            "from_side": 2,
+            "to_side": 3,
+            "edge": 14,
+            "whole_line": "L:636,0>636,205",
+            "removed": 3
+          },
+          {
+            "from_side": 2,
+            "to_side": 7,
+            "edge": 15,
+            "whole_line": "L:636,0>636,205",
+            "removed": 3
+          },
+          {
+            "from_side": 2,
+            "to_side": 6,
+            "edge": 16,
+            "whole_line": "L:636,0>636,205",
+            "removed": 3
+          },
+          {
+            "from_side": 4,
+            "to_side": 3,
+            "edge": 19,
+            "whole_line": "L:709,0>709,205",
+            "removed": 2
+          },
+          {
+            "from_side": 4,
+            "to_side": 7,
+            "edge": 20,
+            "whole_line": "L:709,0>709,205",
+            "removed": 2
+          },
+          {
+            "from_side": 4,
+            "to_side": 6,
+            "edge": 21,
+            "whole_line": "L:709,0>709,205",
+            "removed": 2
+          },
+          {
+            "from_side": 5,
+            "to_side": 6,
+            "edge": 12,
+            "whole_line": "L:521,205>900,205",
+            "removed": 4
+          },
+          {
+            "from_side": 3,
+            "to_side": 7,
+            "edge": 17,
+            "whole_line": "L:636,127>709,127",
+            "removed": 4
+          },
+          {
+            "from_side": 6,
+            "to_side": 7,
+            "edge": 18,
+            "whole_line": "L:636,152>709,152",
+            "removed": 1
+          }
+        ]
+      }
+    ],
+    "first_nonextendible_active_decision": 2
+  },
+  "odd_common_neighbor_cycle_certificate": {
+    "graph": "shore adjacency (loopless simple dual), NOT a primal line cycle",
+    "hubs": [
+      2,
+      4
+    ],
+    "hubs_not_adjacent": true,
+    "all_seven_hub_and_cycle_identities_distinct": true,
+    "odd_cycle": [
+      0,
+      3,
+      7,
+      6,
+      5
+    ],
+    "cycle_length": 5,
+    "cycle_edges": [
+      {
+        "sides": [
+          0,
+          3
+        ],
+        "atomic_edges": [
+          {
+            "edge": 2,
+            "sides": [
+              0,
+              3
+            ],
+            "start": [
+              636,
+              0
+            ],
+            "end": [
+              709,
+              0
+            ],
+            "length": 73,
+            "mother": "frame"
+          }
+        ],
+        "total_length": 73
+      },
+      {
+        "sides": [
+          3,
+          7
+        ],
+        "atomic_edges": [
+          {
+            "edge": 17,
+            "sides": [
+              3,
+              7
+            ],
+            "start": [
+              636,
+              127
+            ],
+            "end": [
+              709,
+              127
+            ],
+            "length": 73,
+            "mother": "L:636,127>709,127"
+          }
+        ],
+        "total_length": 73
+      },
+      {
+        "sides": [
+          7,
+          6
+        ],
+        "atomic_edges": [
+          {
+            "edge": 18,
+            "sides": [
+              7,
+              6
+            ],
+            "start": [
+              636,
+              152
+            ],
+            "end": [
+              709,
+              152
+            ],
+            "length": 73,
+            "mother": "L:636,152>709,152"
+          }
+        ],
+        "total_length": 73
+      },
+      {
+        "sides": [
+          6,
+          5
+        ],
+        "atomic_edges": [
+          {
+            "edge": 12,
+            "sides": [
+              6,
+              5
+            ],
+            "start": [
+              636,
+              205
+            ],
+            "end": [
+              709,
+              205
+            ],
+            "length": 73,
+            "mother": "L:521,205>900,205"
+          }
+        ],
+        "total_length": 73
+      },
+      {
+        "sides": [
+          5,
+          0
+        ],
+        "atomic_edges": [
+          {
+            "edge": 5,
+            "sides": [
+              0,
+              5
+            ],
+            "start": [
+              900,
+              205
+            ],
+            "end": [
+              900,
+              600
+            ],
+            "length": 395,
+            "mother": "frame"
+          },
+          {
+            "edge": 6,
+            "sides": [
+              0,
+              5
+            ],
+            "start": [
+              900,
+              600
+            ],
+            "end": [
+              521,
+              600
+            ],
+            "length": 379,
+            "mother": "frame"
+          }
+        ],
+        "total_length": 774
+      }
+    ],
+    "hub_spokes": [
+      {
+        "sides": [
+          2,
+          0
+        ],
+        "atomic_edges": [
+          {
+            "edge": 1,
+            "sides": [
+              0,
+              2
+            ],
+            "start": [
+              521,
+              0
+            ],
+            "end": [
+              636,
+              0
+            ],
+            "length": 115,
+            "mother": "frame"
+          }
+        ],
+        "total_length": 115
+      },
+      {
+        "sides": [
+          2,
+          3
+        ],
+        "atomic_edges": [
+          {
+            "edge": 14,
+            "sides": [
+              3,
+              2
+            ],
+            "start": [
+              636,
+              0
+            ],
+            "end": [
+              636,
+              127
+            ],
+            "length": 127,
+            "mother": "L:636,0>636,205"
+          }
+        ],
+        "total_length": 127
+      },
+      {
+        "sides": [
+          2,
+          7
+        ],
+        "atomic_edges": [
+          {
+            "edge": 15,
+            "sides": [
+              7,
+              2
+            ],
+            "start": [
+              636,
+              127
+            ],
+            "end": [
+              636,
+              152
+            ],
+            "length": 25,
+            "mother": "L:636,0>636,205"
+          }
+        ],
+        "total_length": 25
+      },
+      {
+        "sides": [
+          2,
+          6
+        ],
+        "atomic_edges": [
+          {
+            "edge": 16,
+            "sides": [
+              6,
+              2
+            ],
+            "start": [
+              636,
+              152
+            ],
+            "end": [
+              636,
+              205
+            ],
+            "length": 53,
+            "mother": "L:636,0>636,205"
+          }
+        ],
+        "total_length": 53
+      },
+      {
+        "sides": [
+          2,
+          5
+        ],
+        "atomic_edges": [
+          {
+            "edge": 11,
+            "sides": [
+              2,
+              5
+            ],
+            "start": [
+              521,
+              205
+            ],
+            "end": [
+              636,
+              205
+            ],
+            "length": 115,
+            "mother": "L:521,205>900,205"
+          }
+        ],
+        "total_length": 115
+      },
+      {
+        "sides": [
+          4,
+          0
+        ],
+        "atomic_edges": [
+          {
+            "edge": 3,
+            "sides": [
+              0,
+              4
+            ],
+            "start": [
+              709,
+              0
+            ],
+            "end": [
+              900,
+              0
+            ],
+            "length": 191,
+            "mother": "frame"
+          },
+          {
+            "edge": 4,
+            "sides": [
+              0,
+              4
+            ],
+            "start": [
+              900,
+              0
+            ],
+            "end": [
+              900,
+              205
+            ],
+            "length": 205,
+            "mother": "frame"
+          }
+        ],
+        "total_length": 396
+      },
+      {
+        "sides": [
+          4,
+          3
+        ],
+        "atomic_edges": [
+          {
+            "edge": 19,
+            "sides": [
+              4,
+              3
+            ],
+            "start": [
+              709,
+              0
+            ],
+            "end": [
+              709,
+              127
+            ],
+            "length": 127,
+            "mother": "L:709,0>709,205"
+          }
+        ],
+        "total_length": 127
+      },
+      {
+        "sides": [
+          4,
+          7
+        ],
+        "atomic_edges": [
+          {
+            "edge": 20,
+            "sides": [
+              4,
+              7
+            ],
+            "start": [
+              709,
+              127
+            ],
+            "end": [
+              709,
+              152
+            ],
+            "length": 25,
+            "mother": "L:709,0>709,205"
+          }
+        ],
+        "total_length": 25
+      },
+      {
+        "sides": [
+          4,
+          6
+        ],
+        "atomic_edges": [
+          {
+            "edge": 21,
+            "sides": [
+              4,
+              6
+            ],
+            "start": [
+              709,
+              152
+            ],
+            "end": [
+              709,
+              205
+            ],
+            "length": 53,
+            "mother": "L:709,0>709,205"
+          }
+        ],
+        "total_length": 53
+      },
+      {
+        "sides": [
+          4,
+          5
+        ],
+        "atomic_edges": [
+          {
+            "edge": 13,
+            "sides": [
+              4,
+              5
+            ],
+            "start": [
+              709,
+              205
+            ],
+            "end": [
+              900,
+              205
+            ],
+            "length": 191,
+            "mother": "L:521,205>900,205"
+          }
+        ],
+        "total_length": 191
+      }
+    ],
+    "deduction": "If hubs have different names, every common neighbor loses both names. The odd cycle then has at most two names, contradicting alternation around an odd cycle. Thus every proper coloring with at most four names has hub2=hub4.",
+    "relation_is_unconditional_on_the_two_initial_anchors": true,
+    "finite_oracle_confirms_relation": true
+  },
+  "manual_completion_after_first_decision": {
+    "colors_by_side": [
+      1,
+      2,
+      3,
+      2,
+      3,
+      4,
+      1,
+      4
+    ],
+    "checked_all_actual_shared_boundaries": true,
+    "description": "A separate manually supplied witness, not an automatic policy output or hidden fallback."
+  },
+  "first_failure_cause": {
+    "decision": 2,
+    "side": 4,
+    "bounds": [
+      709,
+      0,
+      900,
+      205
+    ],
+    "domain_before": [
+      2,
+      3
+    ],
+    "chosen": 2,
+    "forced_name_given_first_decision": 3,
+    "elementary_chain": [
+      "side2=3 and outside=1 and side1=2 force side5=4.",
+      "The commitment side4=2 forces side3=4 (neighbors outside1,side2=3).",
+      "It also forces side6=1 (neighbors side2=3,side4=2,side5=4).",
+      "side7 sees side2=3,side4=2,side3=4,side6=1, so its domain is empty."
+    ]
+  },
+  "limits": [
+    "This is a necessary relation for a specific certified configuration, not a complete solver.",
+    "Three/four-clique filtering cannot in general infer all odd common-neighbor cycle relations.",
+    "The oracle is a separate finite diagnostic; the reported naming policies still made no retry or backtrack."
+  ]
+}

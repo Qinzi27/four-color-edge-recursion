@@ -1,0 +1,8023 @@
+{
+  "schema_version": 1,
+  "scope": "One declared C replay; no generic normalization, search, or four-color proof.",
+  "source": {
+    "filename": "anchor-forest-continuation-2026-09-18-v2.json",
+    "sha256": "5a9c74f3225df4b4e72452f4671ded285f41616a03fd47fe1f28d7d642ad76ad",
+    "family": "guillotine",
+    "seed": 20260960,
+    "inherit": "right"
+  },
+  "code_sha256": {
+    "scripts/validate_c_restart.py": "b6d485e431460fdbb933f2c5e5ae81088d82d8599c496bdcaff0366947c6837f",
+    "scripts/validate_marked_cases.py": "b0f30e01402365ce81e700ecc4c11973aa2a294157860658e78bca1265d842a5",
+    "scripts/compare_local_marks.py": "d77aca237830512b78127222c2c8a660bd50d418a6cfa47439bda7bee29cce73",
+    "scripts/audit_retained_blocks.py": "be76a3a94cc9e2a473045b8575283ad84264247ae6ad494b3387aa92808fdb19",
+    "scripts/inherited-oracle.mjs": "89e953e1be6896e02d45ca0f9e163883c628d2c96404ef0b88fa811d0782c7bf",
+    "fourcolor/inherited_names.py": "235751061bc97b7cac9036890a29971c3d11688cad4aa628ceafa09412fd4c14",
+    "fourcolor/retained_profiles.py": "5caed3fe79850cd7bd66a142ada98e5732e3af058325adfc2772fc2da5faec47"
+  },
+  "fixed_right_control": {
+    "initial_state": {
+      "width": 900,
+      "height": 600,
+      "cuts": [],
+      "sides": [
+        {
+          "id": "root",
+          "bounds": [
+            0,
+            0,
+            900,
+            600
+          ],
+          "symbol": 2
+        }
+      ]
+    },
+    "initial_rectangle_audit": {
+      "status": "consistent",
+      "outside_name": 1,
+      "positive_length_edges": [
+        {
+          "first": "outside",
+          "second": "root",
+          "names": [
+            1,
+            2
+          ]
+        }
+      ],
+      "edge_count": 1,
+      "adjacency": {
+        "outside": [
+          "root"
+        ],
+        "root": [
+          "outside"
+        ]
+      }
+    },
+    "steps": [
+      {
+        "step": 1,
+        "cut": [
+          [
+            0,
+            357
+          ],
+          [
+            900,
+            357
+          ]
+        ],
+        "inherit": "right",
+        "status": "split",
+        "event": {
+          "method": "complete_boundary_mex",
+          "cut": [
+            [
+              0,
+              357
+            ],
+            [
+              900,
+              357
+            ]
+          ],
+          "parent": "root",
+          "inherited_name": 2,
+          "s": 2,
+          "requested_inherit": "right",
+          "inherit": "right",
+          "ports": [
+            {
+              "point": [
+                0,
+                357
+              ],
+              "mother": "frame",
+              "retained_side": "outside",
+              "symbol": 1
+            },
+            {
+              "point": [
+                900,
+                357
+              ],
+              "mother": "frame",
+              "retained_side": "outside",
+              "symbol": 1
+            }
+          ],
+          "endpoint_retained": [
+            1
+          ],
+          "contacts": [
+            {
+              "side": "outside",
+              "symbol": 1,
+              "segment": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  357
+                ]
+              ]
+            },
+            {
+              "side": "outside",
+              "symbol": 1,
+              "segment": [
+                [
+                  900,
+                  0
+                ],
+                [
+                  900,
+                  357
+                ]
+              ]
+            },
+            {
+              "side": "outside",
+              "symbol": 1,
+              "segment": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  900,
+                  0
+                ]
+              ]
+            }
+          ],
+          "full_boundary_retained": [
+            1
+          ],
+          "R": [
+            1
+          ],
+          "t": 3,
+          "diagnostic_new_name": 3,
+          "new_name": 3,
+          "sync_requested": false,
+          "sync_attempted": false,
+          "scope": "complete boundary restrictions for this rectangular cut; not a general four-color proof",
+          "changed_old_sides": [],
+          "changed_old_side_ids": [],
+          "line_profiles_before": {
+            "frame": [
+              {
+                "segment": [
+                  [
+                    0,
+                    0
+                  ],
+                  [
+                    900,
+                    0
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    900,
+                    0
+                  ],
+                  [
+                    900,
+                    600
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    900,
+                    600
+                  ],
+                  [
+                    0,
+                    600
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    0,
+                    600
+                  ],
+                  [
+                    0,
+                    0
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              }
+            ]
+          },
+          "line_profiles_after": {
+            "frame": [
+              {
+                "segment": [
+                  [
+                    0,
+                    0
+                  ],
+                  [
+                    900,
+                    0
+                  ]
+                ],
+                "pair": [
+                  1,
+                  3
+                ],
+                "type": [
+                  1,
+                  3
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    900,
+                    0
+                  ],
+                  [
+                    900,
+                    357
+                  ]
+                ],
+                "pair": [
+                  1,
+                  3
+                ],
+                "type": [
+                  1,
+                  3
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    900,
+                    357
+                  ],
+                  [
+                    900,
+                    600
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    900,
+                    600
+                  ],
+                  [
+                    0,
+                    600
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    0,
+                    600
+                  ],
+                  [
+                    0,
+                    357
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    0,
+                    357
+                  ],
+                  [
+                    0,
+                    0
+                  ]
+                ],
+                "pair": [
+                  1,
+                  3
+                ],
+                "type": [
+                  1,
+                  3
+                ]
+              }
+            ],
+            "cut-1": [
+              {
+                "segment": [
+                  [
+                    0,
+                    357
+                  ],
+                  [
+                    900,
+                    357
+                  ]
+                ],
+                "pair": [
+                  3,
+                  2
+                ],
+                "type": [
+                  2,
+                  3
+                ]
+              }
+            ]
+          },
+          "profile_changes": [
+            {
+              "mother": "frame",
+              "before": [
+                {
+                  "segment": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      900,
+                      0
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      900,
+                      0
+                    ],
+                    [
+                      900,
+                      600
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      900,
+                      600
+                    ],
+                    [
+                      0,
+                      600
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      0,
+                      600
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                }
+              ],
+              "after": [
+                {
+                  "segment": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      900,
+                      0
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    3
+                  ],
+                  "type": [
+                    1,
+                    3
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      900,
+                      0
+                    ],
+                    [
+                      900,
+                      357
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    3
+                  ],
+                  "type": [
+                    1,
+                    3
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      900,
+                      357
+                    ],
+                    [
+                      900,
+                      600
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      900,
+                      600
+                    ],
+                    [
+                      0,
+                      600
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      0,
+                      600
+                    ],
+                    [
+                      0,
+                      357
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      0,
+                      357
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    3
+                  ],
+                  "type": [
+                    1,
+                    3
+                  ]
+                }
+              ]
+            },
+            {
+              "mother": "cut-1",
+              "before": [],
+              "after": [
+                {
+                  "segment": [
+                    [
+                      0,
+                      357
+                    ],
+                    [
+                      900,
+                      357
+                    ]
+                  ],
+                  "pair": [
+                    3,
+                    2
+                  ],
+                  "type": [
+                    2,
+                    3
+                  ]
+                }
+              ]
+            }
+          ],
+          "new_line_pair": [
+            3,
+            2
+          ],
+          "new_line_type": [
+            2,
+            3
+          ],
+          "conflicts": [],
+          "actual_inherit": "right"
+        },
+        "state": {
+          "width": 900,
+          "height": 600,
+          "cuts": [
+            [
+              [
+                0,
+                357
+              ],
+              [
+                900,
+                357
+              ]
+            ]
+          ],
+          "sides": [
+            {
+              "id": "root.l",
+              "bounds": [
+                0,
+                0,
+                900,
+                357
+              ],
+              "symbol": 3
+            },
+            {
+              "id": "root.r",
+              "bounds": [
+                0,
+                357,
+                900,
+                600
+              ],
+              "symbol": 2
+            }
+          ]
+        },
+        "rectangle_audit": {
+          "status": "consistent",
+          "outside_name": 1,
+          "positive_length_edges": [
+            {
+              "first": "outside",
+              "second": "root.l",
+              "names": [
+                1,
+                3
+              ]
+            },
+            {
+              "first": "outside",
+              "second": "root.r",
+              "names": [
+                1,
+                2
+              ]
+            },
+            {
+              "first": "root.l",
+              "second": "root.r",
+              "names": [
+                3,
+                2
+              ]
+            }
+          ],
+          "edge_count": 3,
+          "adjacency": {
+            "outside": [
+              "root.l",
+              "root.r"
+            ],
+            "root.l": [
+              "outside",
+              "root.r"
+            ],
+            "root.r": [
+              "outside",
+              "root.l"
+            ]
+          }
+        },
+        "daughter_domains": [
+          {
+            "id": "root.r",
+            "bounds": [
+              0,
+              357,
+              900,
+              600
+            ],
+            "geometric_side": "page_bottom",
+            "directed_side": "right",
+            "inherit_for_other_child": "left",
+            "old_contacts": [
+              {
+                "id": "outside",
+                "symbol": 1
+              }
+            ],
+            "R": [
+              1
+            ],
+            "s": 2,
+            "available_names": [
+              3,
+              4
+            ],
+            "touches_outside": true
+          },
+          {
+            "id": "root.l",
+            "bounds": [
+              0,
+              0,
+              900,
+              357
+            ],
+            "geometric_side": "page_top",
+            "directed_side": "left",
+            "inherit_for_other_child": "right",
+            "old_contacts": [
+              {
+                "id": "outside",
+                "symbol": 1
+              }
+            ],
+            "R": [
+              1
+            ],
+            "s": 2,
+            "available_names": [
+              3,
+              4
+            ],
+            "touches_outside": true
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "cut": [
+          [
+            0,
+            487
+          ],
+          [
+            900,
+            487
+          ]
+        ],
+        "inherit": "right",
+        "status": "split",
+        "event": {
+          "method": "complete_boundary_mex",
+          "cut": [
+            [
+              0,
+              487
+            ],
+            [
+              900,
+              487
+            ]
+          ],
+          "parent": "root.r",
+          "inherited_name": 2,
+          "s": 2,
+          "requested_inherit": "right",
+          "inherit": "right",
+          "ports": [
+            {
+              "point": [
+                0,
+                487
+              ],
+              "mother": "frame",
+              "retained_side": "outside",
+              "symbol": 1
+            },
+            {
+              "point": [
+                900,
+                487
+              ],
+              "mother": "frame",
+              "retained_side": "outside",
+              "symbol": 1
+            }
+          ],
+          "endpoint_retained": [
+            1
+          ],
+          "contacts": [
+            {
+              "side": "outside",
+              "symbol": 1,
+              "segment": [
+                [
+                  0,
+                  357
+                ],
+                [
+                  0,
+                  487
+                ]
+              ]
+            },
+            {
+              "side": "outside",
+              "symbol": 1,
+              "segment": [
+                [
+                  900,
+                  357
+                ],
+                [
+                  900,
+                  487
+                ]
+              ]
+            },
+            {
+              "side": "root.l",
+              "symbol": 3,
+              "segment": [
+                [
+                  0,
+                  357
+                ],
+                [
+                  900,
+                  357
+                ]
+              ]
+            }
+          ],
+          "full_boundary_retained": [
+            1,
+            3
+          ],
+          "R": [
+            1,
+            3
+          ],
+          "t": 4,
+          "diagnostic_new_name": 4,
+          "new_name": 4,
+          "sync_requested": false,
+          "sync_attempted": false,
+          "scope": "complete boundary restrictions for this rectangular cut; not a general four-color proof",
+          "changed_old_sides": [],
+          "changed_old_side_ids": [],
+          "line_profiles_before": {
+            "frame": [
+              {
+                "segment": [
+                  [
+                    0,
+                    0
+                  ],
+                  [
+                    900,
+                    0
+                  ]
+                ],
+                "pair": [
+                  1,
+                  3
+                ],
+                "type": [
+                  1,
+                  3
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    900,
+                    0
+                  ],
+                  [
+                    900,
+                    357
+                  ]
+                ],
+                "pair": [
+                  1,
+                  3
+                ],
+                "type": [
+                  1,
+                  3
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    900,
+                    357
+                  ],
+                  [
+                    900,
+                    600
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    900,
+                    600
+                  ],
+                  [
+                    0,
+                    600
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    0,
+                    600
+                  ],
+                  [
+                    0,
+                    357
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    0,
+                    357
+                  ],
+                  [
+                    0,
+                    0
+                  ]
+                ],
+                "pair": [
+                  1,
+                  3
+                ],
+                "type": [
+                  1,
+                  3
+                ]
+              }
+            ],
+            "cut-1": [
+              {
+                "segment": [
+                  [
+                    0,
+                    357
+                  ],
+                  [
+                    900,
+                    357
+                  ]
+                ],
+                "pair": [
+                  3,
+                  2
+                ],
+                "type": [
+                  2,
+                  3
+                ]
+              }
+            ]
+          },
+          "line_profiles_after": {
+            "frame": [
+              {
+                "segment": [
+                  [
+                    0,
+                    0
+                  ],
+                  [
+                    900,
+                    0
+                  ]
+                ],
+                "pair": [
+                  1,
+                  3
+                ],
+                "type": [
+                  1,
+                  3
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    900,
+                    0
+                  ],
+                  [
+                    900,
+                    357
+                  ]
+                ],
+                "pair": [
+                  1,
+                  3
+                ],
+                "type": [
+                  1,
+                  3
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    900,
+                    357
+                  ],
+                  [
+                    900,
+                    487
+                  ]
+                ],
+                "pair": [
+                  1,
+                  4
+                ],
+                "type": [
+                  1,
+                  4
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    900,
+                    487
+                  ],
+                  [
+                    900,
+                    600
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    900,
+                    600
+                  ],
+                  [
+                    0,
+                    600
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    0,
+                    600
+                  ],
+                  [
+                    0,
+                    487
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    0,
+                    487
+                  ],
+                  [
+                    0,
+                    357
+                  ]
+                ],
+                "pair": [
+                  1,
+                  4
+                ],
+                "type": [
+                  1,
+                  4
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    0,
+                    357
+                  ],
+                  [
+                    0,
+                    0
+                  ]
+                ],
+                "pair": [
+                  1,
+                  3
+                ],
+                "type": [
+                  1,
+                  3
+                ]
+              }
+            ],
+            "cut-1": [
+              {
+                "segment": [
+                  [
+                    0,
+                    357
+                  ],
+                  [
+                    900,
+                    357
+                  ]
+                ],
+                "pair": [
+                  3,
+                  4
+                ],
+                "type": [
+                  3,
+                  4
+                ]
+              }
+            ],
+            "cut-2": [
+              {
+                "segment": [
+                  [
+                    0,
+                    487
+                  ],
+                  [
+                    900,
+                    487
+                  ]
+                ],
+                "pair": [
+                  4,
+                  2
+                ],
+                "type": [
+                  2,
+                  4
+                ]
+              }
+            ]
+          },
+          "profile_changes": [
+            {
+              "mother": "frame",
+              "before": [
+                {
+                  "segment": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      900,
+                      0
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    3
+                  ],
+                  "type": [
+                    1,
+                    3
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      900,
+                      0
+                    ],
+                    [
+                      900,
+                      357
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    3
+                  ],
+                  "type": [
+                    1,
+                    3
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      900,
+                      357
+                    ],
+                    [
+                      900,
+                      600
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      900,
+                      600
+                    ],
+                    [
+                      0,
+                      600
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      0,
+                      600
+                    ],
+                    [
+                      0,
+                      357
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      0,
+                      357
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    3
+                  ],
+                  "type": [
+                    1,
+                    3
+                  ]
+                }
+              ],
+              "after": [
+                {
+                  "segment": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      900,
+                      0
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    3
+                  ],
+                  "type": [
+                    1,
+                    3
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      900,
+                      0
+                    ],
+                    [
+                      900,
+                      357
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    3
+                  ],
+                  "type": [
+                    1,
+                    3
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      900,
+                      357
+                    ],
+                    [
+                      900,
+                      487
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    4
+                  ],
+                  "type": [
+                    1,
+                    4
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      900,
+                      487
+                    ],
+                    [
+                      900,
+                      600
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      900,
+                      600
+                    ],
+                    [
+                      0,
+                      600
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      0,
+                      600
+                    ],
+                    [
+                      0,
+                      487
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      0,
+                      487
+                    ],
+                    [
+                      0,
+                      357
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    4
+                  ],
+                  "type": [
+                    1,
+                    4
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      0,
+                      357
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    3
+                  ],
+                  "type": [
+                    1,
+                    3
+                  ]
+                }
+              ]
+            },
+            {
+              "mother": "cut-1",
+              "before": [
+                {
+                  "segment": [
+                    [
+                      0,
+                      357
+                    ],
+                    [
+                      900,
+                      357
+                    ]
+                  ],
+                  "pair": [
+                    3,
+                    2
+                  ],
+                  "type": [
+                    2,
+                    3
+                  ]
+                }
+              ],
+              "after": [
+                {
+                  "segment": [
+                    [
+                      0,
+                      357
+                    ],
+                    [
+                      900,
+                      357
+                    ]
+                  ],
+                  "pair": [
+                    3,
+                    4
+                  ],
+                  "type": [
+                    3,
+                    4
+                  ]
+                }
+              ]
+            },
+            {
+              "mother": "cut-2",
+              "before": [],
+              "after": [
+                {
+                  "segment": [
+                    [
+                      0,
+                      487
+                    ],
+                    [
+                      900,
+                      487
+                    ]
+                  ],
+                  "pair": [
+                    4,
+                    2
+                  ],
+                  "type": [
+                    2,
+                    4
+                  ]
+                }
+              ]
+            }
+          ],
+          "new_line_pair": [
+            4,
+            2
+          ],
+          "new_line_type": [
+            2,
+            4
+          ],
+          "conflicts": [],
+          "actual_inherit": "right"
+        },
+        "state": {
+          "width": 900,
+          "height": 600,
+          "cuts": [
+            [
+              [
+                0,
+                357
+              ],
+              [
+                900,
+                357
+              ]
+            ],
+            [
+              [
+                0,
+                487
+              ],
+              [
+                900,
+                487
+              ]
+            ]
+          ],
+          "sides": [
+            {
+              "id": "root.l",
+              "bounds": [
+                0,
+                0,
+                900,
+                357
+              ],
+              "symbol": 3
+            },
+            {
+              "id": "root.r.l",
+              "bounds": [
+                0,
+                357,
+                900,
+                487
+              ],
+              "symbol": 4
+            },
+            {
+              "id": "root.r.r",
+              "bounds": [
+                0,
+                487,
+                900,
+                600
+              ],
+              "symbol": 2
+            }
+          ]
+        },
+        "rectangle_audit": {
+          "status": "consistent",
+          "outside_name": 1,
+          "positive_length_edges": [
+            {
+              "first": "outside",
+              "second": "root.l",
+              "names": [
+                1,
+                3
+              ]
+            },
+            {
+              "first": "outside",
+              "second": "root.r.l",
+              "names": [
+                1,
+                4
+              ]
+            },
+            {
+              "first": "outside",
+              "second": "root.r.r",
+              "names": [
+                1,
+                2
+              ]
+            },
+            {
+              "first": "root.l",
+              "second": "root.r.l",
+              "names": [
+                3,
+                4
+              ]
+            },
+            {
+              "first": "root.r.l",
+              "second": "root.r.r",
+              "names": [
+                4,
+                2
+              ]
+            }
+          ],
+          "edge_count": 5,
+          "adjacency": {
+            "outside": [
+              "root.l",
+              "root.r.l",
+              "root.r.r"
+            ],
+            "root.l": [
+              "outside",
+              "root.r.l"
+            ],
+            "root.r.l": [
+              "outside",
+              "root.l",
+              "root.r.r"
+            ],
+            "root.r.r": [
+              "outside",
+              "root.r.l"
+            ]
+          }
+        },
+        "daughter_domains": [
+          {
+            "id": "root.r.r",
+            "bounds": [
+              0,
+              487,
+              900,
+              600
+            ],
+            "geometric_side": "page_bottom",
+            "directed_side": "right",
+            "inherit_for_other_child": "left",
+            "old_contacts": [
+              {
+                "id": "outside",
+                "symbol": 1
+              }
+            ],
+            "R": [
+              1
+            ],
+            "s": 2,
+            "available_names": [
+              3,
+              4
+            ],
+            "touches_outside": true
+          },
+          {
+            "id": "root.r.l",
+            "bounds": [
+              0,
+              357,
+              900,
+              487
+            ],
+            "geometric_side": "page_top",
+            "directed_side": "left",
+            "inherit_for_other_child": "right",
+            "old_contacts": [
+              {
+                "id": "outside",
+                "symbol": 1
+              },
+              {
+                "id": "root.l",
+                "symbol": 3
+              }
+            ],
+            "R": [
+              1,
+              3
+            ],
+            "s": 2,
+            "available_names": [
+              4
+            ],
+            "touches_outside": true
+          }
+        ]
+      }
+    ],
+    "final_state": {
+      "width": 900,
+      "height": 600,
+      "cuts": [
+        [
+          [
+            0,
+            357
+          ],
+          [
+            900,
+            357
+          ]
+        ],
+        [
+          [
+            0,
+            487
+          ],
+          [
+            900,
+            487
+          ]
+        ]
+      ],
+      "sides": [
+        {
+          "id": "root.l",
+          "bounds": [
+            0,
+            0,
+            900,
+            357
+          ],
+          "symbol": 3
+        },
+        {
+          "id": "root.r.l",
+          "bounds": [
+            0,
+            357,
+            900,
+            487
+          ],
+          "symbol": 4
+        },
+        {
+          "id": "root.r.r",
+          "bounds": [
+            0,
+            487,
+            900,
+            600
+          ],
+          "symbol": 2
+        }
+      ]
+    },
+    "final_profiles": {
+      "frame": [
+        {
+          "segment": [
+            [
+              0,
+              0
+            ],
+            [
+              900,
+              0
+            ]
+          ],
+          "pair": [
+            1,
+            3
+          ]
+        },
+        {
+          "segment": [
+            [
+              900,
+              0
+            ],
+            [
+              900,
+              357
+            ]
+          ],
+          "pair": [
+            1,
+            3
+          ]
+        },
+        {
+          "segment": [
+            [
+              900,
+              357
+            ],
+            [
+              900,
+              487
+            ]
+          ],
+          "pair": [
+            1,
+            4
+          ]
+        },
+        {
+          "segment": [
+            [
+              900,
+              487
+            ],
+            [
+              900,
+              600
+            ]
+          ],
+          "pair": [
+            1,
+            2
+          ]
+        },
+        {
+          "segment": [
+            [
+              900,
+              600
+            ],
+            [
+              0,
+              600
+            ]
+          ],
+          "pair": [
+            1,
+            2
+          ]
+        },
+        {
+          "segment": [
+            [
+              0,
+              600
+            ],
+            [
+              0,
+              487
+            ]
+          ],
+          "pair": [
+            1,
+            2
+          ]
+        },
+        {
+          "segment": [
+            [
+              0,
+              487
+            ],
+            [
+              0,
+              357
+            ]
+          ],
+          "pair": [
+            1,
+            4
+          ]
+        },
+        {
+          "segment": [
+            [
+              0,
+              357
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pair": [
+            1,
+            3
+          ]
+        }
+      ],
+      "cut-1": [
+        {
+          "segment": [
+            [
+              0,
+              357
+            ],
+            [
+              900,
+              357
+            ]
+          ],
+          "pair": [
+            3,
+            4
+          ]
+        }
+      ],
+      "cut-2": [
+        {
+          "segment": [
+            [
+              0,
+              487
+            ],
+            [
+              900,
+              487
+            ]
+          ],
+          "pair": [
+            4,
+            2
+          ]
+        }
+      ]
+    },
+    "final_step_domains": [
+      {
+        "id": "root.r.r",
+        "bounds": [
+          0,
+          487,
+          900,
+          600
+        ],
+        "geometric_side": "page_bottom",
+        "directed_side": "right",
+        "inherit_for_other_child": "left",
+        "old_contacts": [
+          {
+            "id": "outside",
+            "symbol": 1
+          }
+        ],
+        "R": [
+          1
+        ],
+        "s": 2,
+        "available_names": [
+          3,
+          4
+        ],
+        "touches_outside": true
+      },
+      {
+        "id": "root.r.l",
+        "bounds": [
+          0,
+          357,
+          900,
+          487
+        ],
+        "geometric_side": "page_top",
+        "directed_side": "left",
+        "inherit_for_other_child": "right",
+        "old_contacts": [
+          {
+            "id": "outside",
+            "symbol": 1
+          },
+          {
+            "id": "root.l",
+            "symbol": 3
+          }
+        ],
+        "R": [
+          1,
+          3
+        ],
+        "s": 2,
+        "available_names": [
+          4
+        ],
+        "touches_outside": true
+      }
+    ],
+    "inherit": "right",
+    "synchronize": false,
+    "no_unsplit_old_side_renamed": true
+  },
+  "declared_left_replay": {
+    "initial_state": {
+      "width": 900,
+      "height": 600,
+      "cuts": [],
+      "sides": [
+        {
+          "id": "root",
+          "bounds": [
+            0,
+            0,
+            900,
+            600
+          ],
+          "symbol": 2
+        }
+      ]
+    },
+    "initial_rectangle_audit": {
+      "status": "consistent",
+      "outside_name": 1,
+      "positive_length_edges": [
+        {
+          "first": "outside",
+          "second": "root",
+          "names": [
+            1,
+            2
+          ]
+        }
+      ],
+      "edge_count": 1,
+      "adjacency": {
+        "outside": [
+          "root"
+        ],
+        "root": [
+          "outside"
+        ]
+      }
+    },
+    "steps": [
+      {
+        "step": 1,
+        "cut": [
+          [
+            0,
+            357
+          ],
+          [
+            900,
+            357
+          ]
+        ],
+        "inherit": "left",
+        "status": "split",
+        "event": {
+          "method": "complete_boundary_mex",
+          "cut": [
+            [
+              0,
+              357
+            ],
+            [
+              900,
+              357
+            ]
+          ],
+          "parent": "root",
+          "inherited_name": 2,
+          "s": 2,
+          "requested_inherit": "left",
+          "inherit": "left",
+          "ports": [
+            {
+              "point": [
+                0,
+                357
+              ],
+              "mother": "frame",
+              "retained_side": "outside",
+              "symbol": 1
+            },
+            {
+              "point": [
+                900,
+                357
+              ],
+              "mother": "frame",
+              "retained_side": "outside",
+              "symbol": 1
+            }
+          ],
+          "endpoint_retained": [
+            1
+          ],
+          "contacts": [
+            {
+              "side": "outside",
+              "symbol": 1,
+              "segment": [
+                [
+                  0,
+                  357
+                ],
+                [
+                  0,
+                  600
+                ]
+              ]
+            },
+            {
+              "side": "outside",
+              "symbol": 1,
+              "segment": [
+                [
+                  900,
+                  357
+                ],
+                [
+                  900,
+                  600
+                ]
+              ]
+            },
+            {
+              "side": "outside",
+              "symbol": 1,
+              "segment": [
+                [
+                  0,
+                  600
+                ],
+                [
+                  900,
+                  600
+                ]
+              ]
+            }
+          ],
+          "full_boundary_retained": [
+            1
+          ],
+          "R": [
+            1
+          ],
+          "t": 3,
+          "diagnostic_new_name": 3,
+          "new_name": 3,
+          "sync_requested": false,
+          "sync_attempted": false,
+          "scope": "complete boundary restrictions for this rectangular cut; not a general four-color proof",
+          "changed_old_sides": [],
+          "changed_old_side_ids": [],
+          "line_profiles_before": {
+            "frame": [
+              {
+                "segment": [
+                  [
+                    0,
+                    0
+                  ],
+                  [
+                    900,
+                    0
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    900,
+                    0
+                  ],
+                  [
+                    900,
+                    600
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    900,
+                    600
+                  ],
+                  [
+                    0,
+                    600
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    0,
+                    600
+                  ],
+                  [
+                    0,
+                    0
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              }
+            ]
+          },
+          "line_profiles_after": {
+            "frame": [
+              {
+                "segment": [
+                  [
+                    0,
+                    0
+                  ],
+                  [
+                    900,
+                    0
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    900,
+                    0
+                  ],
+                  [
+                    900,
+                    357
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    900,
+                    357
+                  ],
+                  [
+                    900,
+                    600
+                  ]
+                ],
+                "pair": [
+                  1,
+                  3
+                ],
+                "type": [
+                  1,
+                  3
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    900,
+                    600
+                  ],
+                  [
+                    0,
+                    600
+                  ]
+                ],
+                "pair": [
+                  1,
+                  3
+                ],
+                "type": [
+                  1,
+                  3
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    0,
+                    600
+                  ],
+                  [
+                    0,
+                    357
+                  ]
+                ],
+                "pair": [
+                  1,
+                  3
+                ],
+                "type": [
+                  1,
+                  3
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    0,
+                    357
+                  ],
+                  [
+                    0,
+                    0
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              }
+            ],
+            "cut-1": [
+              {
+                "segment": [
+                  [
+                    0,
+                    357
+                  ],
+                  [
+                    900,
+                    357
+                  ]
+                ],
+                "pair": [
+                  2,
+                  3
+                ],
+                "type": [
+                  2,
+                  3
+                ]
+              }
+            ]
+          },
+          "profile_changes": [
+            {
+              "mother": "frame",
+              "before": [
+                {
+                  "segment": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      900,
+                      0
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      900,
+                      0
+                    ],
+                    [
+                      900,
+                      600
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      900,
+                      600
+                    ],
+                    [
+                      0,
+                      600
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      0,
+                      600
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                }
+              ],
+              "after": [
+                {
+                  "segment": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      900,
+                      0
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      900,
+                      0
+                    ],
+                    [
+                      900,
+                      357
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      900,
+                      357
+                    ],
+                    [
+                      900,
+                      600
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    3
+                  ],
+                  "type": [
+                    1,
+                    3
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      900,
+                      600
+                    ],
+                    [
+                      0,
+                      600
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    3
+                  ],
+                  "type": [
+                    1,
+                    3
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      0,
+                      600
+                    ],
+                    [
+                      0,
+                      357
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    3
+                  ],
+                  "type": [
+                    1,
+                    3
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      0,
+                      357
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                }
+              ]
+            },
+            {
+              "mother": "cut-1",
+              "before": [],
+              "after": [
+                {
+                  "segment": [
+                    [
+                      0,
+                      357
+                    ],
+                    [
+                      900,
+                      357
+                    ]
+                  ],
+                  "pair": [
+                    2,
+                    3
+                  ],
+                  "type": [
+                    2,
+                    3
+                  ]
+                }
+              ]
+            }
+          ],
+          "new_line_pair": [
+            2,
+            3
+          ],
+          "new_line_type": [
+            2,
+            3
+          ],
+          "conflicts": [],
+          "actual_inherit": "left"
+        },
+        "state": {
+          "width": 900,
+          "height": 600,
+          "cuts": [
+            [
+              [
+                0,
+                357
+              ],
+              [
+                900,
+                357
+              ]
+            ]
+          ],
+          "sides": [
+            {
+              "id": "root.l",
+              "bounds": [
+                0,
+                0,
+                900,
+                357
+              ],
+              "symbol": 2
+            },
+            {
+              "id": "root.r",
+              "bounds": [
+                0,
+                357,
+                900,
+                600
+              ],
+              "symbol": 3
+            }
+          ]
+        },
+        "rectangle_audit": {
+          "status": "consistent",
+          "outside_name": 1,
+          "positive_length_edges": [
+            {
+              "first": "outside",
+              "second": "root.l",
+              "names": [
+                1,
+                2
+              ]
+            },
+            {
+              "first": "outside",
+              "second": "root.r",
+              "names": [
+                1,
+                3
+              ]
+            },
+            {
+              "first": "root.l",
+              "second": "root.r",
+              "names": [
+                2,
+                3
+              ]
+            }
+          ],
+          "edge_count": 3,
+          "adjacency": {
+            "outside": [
+              "root.l",
+              "root.r"
+            ],
+            "root.l": [
+              "outside",
+              "root.r"
+            ],
+            "root.r": [
+              "outside",
+              "root.l"
+            ]
+          }
+        },
+        "daughter_domains": [
+          {
+            "id": "root.r",
+            "bounds": [
+              0,
+              357,
+              900,
+              600
+            ],
+            "geometric_side": "page_bottom",
+            "directed_side": "right",
+            "inherit_for_other_child": "left",
+            "old_contacts": [
+              {
+                "id": "outside",
+                "symbol": 1
+              }
+            ],
+            "R": [
+              1
+            ],
+            "s": 2,
+            "available_names": [
+              3,
+              4
+            ],
+            "touches_outside": true
+          },
+          {
+            "id": "root.l",
+            "bounds": [
+              0,
+              0,
+              900,
+              357
+            ],
+            "geometric_side": "page_top",
+            "directed_side": "left",
+            "inherit_for_other_child": "right",
+            "old_contacts": [
+              {
+                "id": "outside",
+                "symbol": 1
+              }
+            ],
+            "R": [
+              1
+            ],
+            "s": 2,
+            "available_names": [
+              3,
+              4
+            ],
+            "touches_outside": true
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "cut": [
+          [
+            0,
+            487
+          ],
+          [
+            900,
+            487
+          ]
+        ],
+        "inherit": "left",
+        "status": "split",
+        "event": {
+          "method": "complete_boundary_mex",
+          "cut": [
+            [
+              0,
+              487
+            ],
+            [
+              900,
+              487
+            ]
+          ],
+          "parent": "root.r",
+          "inherited_name": 3,
+          "s": 3,
+          "requested_inherit": "left",
+          "inherit": "left",
+          "ports": [
+            {
+              "point": [
+                0,
+                487
+              ],
+              "mother": "frame",
+              "retained_side": "outside",
+              "symbol": 1
+            },
+            {
+              "point": [
+                900,
+                487
+              ],
+              "mother": "frame",
+              "retained_side": "outside",
+              "symbol": 1
+            }
+          ],
+          "endpoint_retained": [
+            1
+          ],
+          "contacts": [
+            {
+              "side": "outside",
+              "symbol": 1,
+              "segment": [
+                [
+                  0,
+                  487
+                ],
+                [
+                  0,
+                  600
+                ]
+              ]
+            },
+            {
+              "side": "outside",
+              "symbol": 1,
+              "segment": [
+                [
+                  900,
+                  487
+                ],
+                [
+                  900,
+                  600
+                ]
+              ]
+            },
+            {
+              "side": "outside",
+              "symbol": 1,
+              "segment": [
+                [
+                  0,
+                  600
+                ],
+                [
+                  900,
+                  600
+                ]
+              ]
+            }
+          ],
+          "full_boundary_retained": [
+            1
+          ],
+          "R": [
+            1
+          ],
+          "t": 2,
+          "diagnostic_new_name": 2,
+          "new_name": 2,
+          "sync_requested": false,
+          "sync_attempted": false,
+          "scope": "complete boundary restrictions for this rectangular cut; not a general four-color proof",
+          "changed_old_sides": [],
+          "changed_old_side_ids": [],
+          "line_profiles_before": {
+            "frame": [
+              {
+                "segment": [
+                  [
+                    0,
+                    0
+                  ],
+                  [
+                    900,
+                    0
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    900,
+                    0
+                  ],
+                  [
+                    900,
+                    357
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    900,
+                    357
+                  ],
+                  [
+                    900,
+                    600
+                  ]
+                ],
+                "pair": [
+                  1,
+                  3
+                ],
+                "type": [
+                  1,
+                  3
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    900,
+                    600
+                  ],
+                  [
+                    0,
+                    600
+                  ]
+                ],
+                "pair": [
+                  1,
+                  3
+                ],
+                "type": [
+                  1,
+                  3
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    0,
+                    600
+                  ],
+                  [
+                    0,
+                    357
+                  ]
+                ],
+                "pair": [
+                  1,
+                  3
+                ],
+                "type": [
+                  1,
+                  3
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    0,
+                    357
+                  ],
+                  [
+                    0,
+                    0
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              }
+            ],
+            "cut-1": [
+              {
+                "segment": [
+                  [
+                    0,
+                    357
+                  ],
+                  [
+                    900,
+                    357
+                  ]
+                ],
+                "pair": [
+                  2,
+                  3
+                ],
+                "type": [
+                  2,
+                  3
+                ]
+              }
+            ]
+          },
+          "line_profiles_after": {
+            "frame": [
+              {
+                "segment": [
+                  [
+                    0,
+                    0
+                  ],
+                  [
+                    900,
+                    0
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    900,
+                    0
+                  ],
+                  [
+                    900,
+                    357
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    900,
+                    357
+                  ],
+                  [
+                    900,
+                    487
+                  ]
+                ],
+                "pair": [
+                  1,
+                  3
+                ],
+                "type": [
+                  1,
+                  3
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    900,
+                    487
+                  ],
+                  [
+                    900,
+                    600
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    900,
+                    600
+                  ],
+                  [
+                    0,
+                    600
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    0,
+                    600
+                  ],
+                  [
+                    0,
+                    487
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    0,
+                    487
+                  ],
+                  [
+                    0,
+                    357
+                  ]
+                ],
+                "pair": [
+                  1,
+                  3
+                ],
+                "type": [
+                  1,
+                  3
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    0,
+                    357
+                  ],
+                  [
+                    0,
+                    0
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              }
+            ],
+            "cut-1": [
+              {
+                "segment": [
+                  [
+                    0,
+                    357
+                  ],
+                  [
+                    900,
+                    357
+                  ]
+                ],
+                "pair": [
+                  2,
+                  3
+                ],
+                "type": [
+                  2,
+                  3
+                ]
+              }
+            ],
+            "cut-2": [
+              {
+                "segment": [
+                  [
+                    0,
+                    487
+                  ],
+                  [
+                    900,
+                    487
+                  ]
+                ],
+                "pair": [
+                  3,
+                  2
+                ],
+                "type": [
+                  2,
+                  3
+                ]
+              }
+            ]
+          },
+          "profile_changes": [
+            {
+              "mother": "frame",
+              "before": [
+                {
+                  "segment": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      900,
+                      0
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      900,
+                      0
+                    ],
+                    [
+                      900,
+                      357
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      900,
+                      357
+                    ],
+                    [
+                      900,
+                      600
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    3
+                  ],
+                  "type": [
+                    1,
+                    3
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      900,
+                      600
+                    ],
+                    [
+                      0,
+                      600
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    3
+                  ],
+                  "type": [
+                    1,
+                    3
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      0,
+                      600
+                    ],
+                    [
+                      0,
+                      357
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    3
+                  ],
+                  "type": [
+                    1,
+                    3
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      0,
+                      357
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                }
+              ],
+              "after": [
+                {
+                  "segment": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      900,
+                      0
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      900,
+                      0
+                    ],
+                    [
+                      900,
+                      357
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      900,
+                      357
+                    ],
+                    [
+                      900,
+                      487
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    3
+                  ],
+                  "type": [
+                    1,
+                    3
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      900,
+                      487
+                    ],
+                    [
+                      900,
+                      600
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      900,
+                      600
+                    ],
+                    [
+                      0,
+                      600
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      0,
+                      600
+                    ],
+                    [
+                      0,
+                      487
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      0,
+                      487
+                    ],
+                    [
+                      0,
+                      357
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    3
+                  ],
+                  "type": [
+                    1,
+                    3
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      0,
+                      357
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                }
+              ]
+            },
+            {
+              "mother": "cut-2",
+              "before": [],
+              "after": [
+                {
+                  "segment": [
+                    [
+                      0,
+                      487
+                    ],
+                    [
+                      900,
+                      487
+                    ]
+                  ],
+                  "pair": [
+                    3,
+                    2
+                  ],
+                  "type": [
+                    2,
+                    3
+                  ]
+                }
+              ]
+            }
+          ],
+          "new_line_pair": [
+            3,
+            2
+          ],
+          "new_line_type": [
+            2,
+            3
+          ],
+          "conflicts": [],
+          "actual_inherit": "left"
+        },
+        "state": {
+          "width": 900,
+          "height": 600,
+          "cuts": [
+            [
+              [
+                0,
+                357
+              ],
+              [
+                900,
+                357
+              ]
+            ],
+            [
+              [
+                0,
+                487
+              ],
+              [
+                900,
+                487
+              ]
+            ]
+          ],
+          "sides": [
+            {
+              "id": "root.l",
+              "bounds": [
+                0,
+                0,
+                900,
+                357
+              ],
+              "symbol": 2
+            },
+            {
+              "id": "root.r.l",
+              "bounds": [
+                0,
+                357,
+                900,
+                487
+              ],
+              "symbol": 3
+            },
+            {
+              "id": "root.r.r",
+              "bounds": [
+                0,
+                487,
+                900,
+                600
+              ],
+              "symbol": 2
+            }
+          ]
+        },
+        "rectangle_audit": {
+          "status": "consistent",
+          "outside_name": 1,
+          "positive_length_edges": [
+            {
+              "first": "outside",
+              "second": "root.l",
+              "names": [
+                1,
+                2
+              ]
+            },
+            {
+              "first": "outside",
+              "second": "root.r.l",
+              "names": [
+                1,
+                3
+              ]
+            },
+            {
+              "first": "outside",
+              "second": "root.r.r",
+              "names": [
+                1,
+                2
+              ]
+            },
+            {
+              "first": "root.l",
+              "second": "root.r.l",
+              "names": [
+                2,
+                3
+              ]
+            },
+            {
+              "first": "root.r.l",
+              "second": "root.r.r",
+              "names": [
+                3,
+                2
+              ]
+            }
+          ],
+          "edge_count": 5,
+          "adjacency": {
+            "outside": [
+              "root.l",
+              "root.r.l",
+              "root.r.r"
+            ],
+            "root.l": [
+              "outside",
+              "root.r.l"
+            ],
+            "root.r.l": [
+              "outside",
+              "root.l",
+              "root.r.r"
+            ],
+            "root.r.r": [
+              "outside",
+              "root.r.l"
+            ]
+          }
+        },
+        "daughter_domains": [
+          {
+            "id": "root.r.r",
+            "bounds": [
+              0,
+              487,
+              900,
+              600
+            ],
+            "geometric_side": "page_bottom",
+            "directed_side": "right",
+            "inherit_for_other_child": "left",
+            "old_contacts": [
+              {
+                "id": "outside",
+                "symbol": 1
+              }
+            ],
+            "R": [
+              1
+            ],
+            "s": 3,
+            "available_names": [
+              2,
+              4
+            ],
+            "touches_outside": true
+          },
+          {
+            "id": "root.r.l",
+            "bounds": [
+              0,
+              357,
+              900,
+              487
+            ],
+            "geometric_side": "page_top",
+            "directed_side": "left",
+            "inherit_for_other_child": "right",
+            "old_contacts": [
+              {
+                "id": "outside",
+                "symbol": 1
+              },
+              {
+                "id": "root.l",
+                "symbol": 2
+              }
+            ],
+            "R": [
+              1,
+              2
+            ],
+            "s": 3,
+            "available_names": [
+              4
+            ],
+            "touches_outside": true
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "cut": [
+          [
+            442,
+            357
+          ],
+          [
+            442,
+            487
+          ]
+        ],
+        "inherit": "left",
+        "status": "split",
+        "event": {
+          "method": "complete_boundary_mex",
+          "cut": [
+            [
+              442,
+              357
+            ],
+            [
+              442,
+              487
+            ]
+          ],
+          "parent": "root.r.l",
+          "inherited_name": 3,
+          "s": 3,
+          "requested_inherit": "left",
+          "inherit": "left",
+          "ports": [
+            {
+              "point": [
+                442,
+                357
+              ],
+              "mother": "cut-1",
+              "retained_side": "root.l",
+              "symbol": 2
+            },
+            {
+              "point": [
+                442,
+                487
+              ],
+              "mother": "cut-2",
+              "retained_side": "root.r.r",
+              "symbol": 2
+            }
+          ],
+          "endpoint_retained": [
+            2
+          ],
+          "contacts": [
+            {
+              "side": "outside",
+              "symbol": 1,
+              "segment": [
+                [
+                  0,
+                  357
+                ],
+                [
+                  0,
+                  487
+                ]
+              ]
+            },
+            {
+              "side": "root.l",
+              "symbol": 2,
+              "segment": [
+                [
+                  0,
+                  357
+                ],
+                [
+                  442,
+                  357
+                ]
+              ]
+            },
+            {
+              "side": "root.r.r",
+              "symbol": 2,
+              "segment": [
+                [
+                  0,
+                  487
+                ],
+                [
+                  442,
+                  487
+                ]
+              ]
+            }
+          ],
+          "full_boundary_retained": [
+            1,
+            2
+          ],
+          "R": [
+            1,
+            2
+          ],
+          "t": 4,
+          "diagnostic_new_name": 4,
+          "new_name": 4,
+          "sync_requested": false,
+          "sync_attempted": false,
+          "scope": "complete boundary restrictions for this rectangular cut; not a general four-color proof",
+          "changed_old_sides": [],
+          "changed_old_side_ids": [],
+          "line_profiles_before": {
+            "frame": [
+              {
+                "segment": [
+                  [
+                    0,
+                    0
+                  ],
+                  [
+                    900,
+                    0
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    900,
+                    0
+                  ],
+                  [
+                    900,
+                    357
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    900,
+                    357
+                  ],
+                  [
+                    900,
+                    487
+                  ]
+                ],
+                "pair": [
+                  1,
+                  3
+                ],
+                "type": [
+                  1,
+                  3
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    900,
+                    487
+                  ],
+                  [
+                    900,
+                    600
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    900,
+                    600
+                  ],
+                  [
+                    0,
+                    600
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    0,
+                    600
+                  ],
+                  [
+                    0,
+                    487
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    0,
+                    487
+                  ],
+                  [
+                    0,
+                    357
+                  ]
+                ],
+                "pair": [
+                  1,
+                  3
+                ],
+                "type": [
+                  1,
+                  3
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    0,
+                    357
+                  ],
+                  [
+                    0,
+                    0
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              }
+            ],
+            "cut-1": [
+              {
+                "segment": [
+                  [
+                    0,
+                    357
+                  ],
+                  [
+                    900,
+                    357
+                  ]
+                ],
+                "pair": [
+                  2,
+                  3
+                ],
+                "type": [
+                  2,
+                  3
+                ]
+              }
+            ],
+            "cut-2": [
+              {
+                "segment": [
+                  [
+                    0,
+                    487
+                  ],
+                  [
+                    900,
+                    487
+                  ]
+                ],
+                "pair": [
+                  3,
+                  2
+                ],
+                "type": [
+                  2,
+                  3
+                ]
+              }
+            ]
+          },
+          "line_profiles_after": {
+            "frame": [
+              {
+                "segment": [
+                  [
+                    0,
+                    0
+                  ],
+                  [
+                    900,
+                    0
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    900,
+                    0
+                  ],
+                  [
+                    900,
+                    357
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    900,
+                    357
+                  ],
+                  [
+                    900,
+                    487
+                  ]
+                ],
+                "pair": [
+                  1,
+                  3
+                ],
+                "type": [
+                  1,
+                  3
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    900,
+                    487
+                  ],
+                  [
+                    900,
+                    600
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    900,
+                    600
+                  ],
+                  [
+                    0,
+                    600
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    0,
+                    600
+                  ],
+                  [
+                    0,
+                    487
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    0,
+                    487
+                  ],
+                  [
+                    0,
+                    357
+                  ]
+                ],
+                "pair": [
+                  1,
+                  4
+                ],
+                "type": [
+                  1,
+                  4
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    0,
+                    357
+                  ],
+                  [
+                    0,
+                    0
+                  ]
+                ],
+                "pair": [
+                  1,
+                  2
+                ],
+                "type": [
+                  1,
+                  2
+                ]
+              }
+            ],
+            "cut-1": [
+              {
+                "segment": [
+                  [
+                    0,
+                    357
+                  ],
+                  [
+                    442,
+                    357
+                  ]
+                ],
+                "pair": [
+                  2,
+                  4
+                ],
+                "type": [
+                  2,
+                  4
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    442,
+                    357
+                  ],
+                  [
+                    900,
+                    357
+                  ]
+                ],
+                "pair": [
+                  2,
+                  3
+                ],
+                "type": [
+                  2,
+                  3
+                ]
+              }
+            ],
+            "cut-2": [
+              {
+                "segment": [
+                  [
+                    0,
+                    487
+                  ],
+                  [
+                    442,
+                    487
+                  ]
+                ],
+                "pair": [
+                  4,
+                  2
+                ],
+                "type": [
+                  2,
+                  4
+                ]
+              },
+              {
+                "segment": [
+                  [
+                    442,
+                    487
+                  ],
+                  [
+                    900,
+                    487
+                  ]
+                ],
+                "pair": [
+                  3,
+                  2
+                ],
+                "type": [
+                  2,
+                  3
+                ]
+              }
+            ],
+            "cut-3": [
+              {
+                "segment": [
+                  [
+                    442,
+                    357
+                  ],
+                  [
+                    442,
+                    487
+                  ]
+                ],
+                "pair": [
+                  3,
+                  4
+                ],
+                "type": [
+                  3,
+                  4
+                ]
+              }
+            ]
+          },
+          "profile_changes": [
+            {
+              "mother": "frame",
+              "before": [
+                {
+                  "segment": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      900,
+                      0
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      900,
+                      0
+                    ],
+                    [
+                      900,
+                      357
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      900,
+                      357
+                    ],
+                    [
+                      900,
+                      487
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    3
+                  ],
+                  "type": [
+                    1,
+                    3
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      900,
+                      487
+                    ],
+                    [
+                      900,
+                      600
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      900,
+                      600
+                    ],
+                    [
+                      0,
+                      600
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      0,
+                      600
+                    ],
+                    [
+                      0,
+                      487
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      0,
+                      487
+                    ],
+                    [
+                      0,
+                      357
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    3
+                  ],
+                  "type": [
+                    1,
+                    3
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      0,
+                      357
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                }
+              ],
+              "after": [
+                {
+                  "segment": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      900,
+                      0
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      900,
+                      0
+                    ],
+                    [
+                      900,
+                      357
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      900,
+                      357
+                    ],
+                    [
+                      900,
+                      487
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    3
+                  ],
+                  "type": [
+                    1,
+                    3
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      900,
+                      487
+                    ],
+                    [
+                      900,
+                      600
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      900,
+                      600
+                    ],
+                    [
+                      0,
+                      600
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      0,
+                      600
+                    ],
+                    [
+                      0,
+                      487
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      0,
+                      487
+                    ],
+                    [
+                      0,
+                      357
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    4
+                  ],
+                  "type": [
+                    1,
+                    4
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      0,
+                      357
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "pair": [
+                    1,
+                    2
+                  ],
+                  "type": [
+                    1,
+                    2
+                  ]
+                }
+              ]
+            },
+            {
+              "mother": "cut-1",
+              "before": [
+                {
+                  "segment": [
+                    [
+                      0,
+                      357
+                    ],
+                    [
+                      900,
+                      357
+                    ]
+                  ],
+                  "pair": [
+                    2,
+                    3
+                  ],
+                  "type": [
+                    2,
+                    3
+                  ]
+                }
+              ],
+              "after": [
+                {
+                  "segment": [
+                    [
+                      0,
+                      357
+                    ],
+                    [
+                      442,
+                      357
+                    ]
+                  ],
+                  "pair": [
+                    2,
+                    4
+                  ],
+                  "type": [
+                    2,
+                    4
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      442,
+                      357
+                    ],
+                    [
+                      900,
+                      357
+                    ]
+                  ],
+                  "pair": [
+                    2,
+                    3
+                  ],
+                  "type": [
+                    2,
+                    3
+                  ]
+                }
+              ]
+            },
+            {
+              "mother": "cut-2",
+              "before": [
+                {
+                  "segment": [
+                    [
+                      0,
+                      487
+                    ],
+                    [
+                      900,
+                      487
+                    ]
+                  ],
+                  "pair": [
+                    3,
+                    2
+                  ],
+                  "type": [
+                    2,
+                    3
+                  ]
+                }
+              ],
+              "after": [
+                {
+                  "segment": [
+                    [
+                      0,
+                      487
+                    ],
+                    [
+                      442,
+                      487
+                    ]
+                  ],
+                  "pair": [
+                    4,
+                    2
+                  ],
+                  "type": [
+                    2,
+                    4
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      442,
+                      487
+                    ],
+                    [
+                      900,
+                      487
+                    ]
+                  ],
+                  "pair": [
+                    3,
+                    2
+                  ],
+                  "type": [
+                    2,
+                    3
+                  ]
+                }
+              ]
+            },
+            {
+              "mother": "cut-3",
+              "before": [],
+              "after": [
+                {
+                  "segment": [
+                    [
+                      442,
+                      357
+                    ],
+                    [
+                      442,
+                      487
+                    ]
+                  ],
+                  "pair": [
+                    3,
+                    4
+                  ],
+                  "type": [
+                    3,
+                    4
+                  ]
+                }
+              ]
+            }
+          ],
+          "new_line_pair": [
+            3,
+            4
+          ],
+          "new_line_type": [
+            3,
+            4
+          ],
+          "conflicts": [],
+          "actual_inherit": "left"
+        },
+        "state": {
+          "width": 900,
+          "height": 600,
+          "cuts": [
+            [
+              [
+                0,
+                357
+              ],
+              [
+                900,
+                357
+              ]
+            ],
+            [
+              [
+                0,
+                487
+              ],
+              [
+                900,
+                487
+              ]
+            ],
+            [
+              [
+                442,
+                357
+              ],
+              [
+                442,
+                487
+              ]
+            ]
+          ],
+          "sides": [
+            {
+              "id": "root.l",
+              "bounds": [
+                0,
+                0,
+                900,
+                357
+              ],
+              "symbol": 2
+            },
+            {
+              "id": "root.r.r",
+              "bounds": [
+                0,
+                487,
+                900,
+                600
+              ],
+              "symbol": 2
+            },
+            {
+              "id": "root.r.l.l",
+              "bounds": [
+                442,
+                357,
+                900,
+                487
+              ],
+              "symbol": 3
+            },
+            {
+              "id": "root.r.l.r",
+              "bounds": [
+                0,
+                357,
+                442,
+                487
+              ],
+              "symbol": 4
+            }
+          ]
+        },
+        "rectangle_audit": {
+          "status": "consistent",
+          "outside_name": 1,
+          "positive_length_edges": [
+            {
+              "first": "outside",
+              "second": "root.l",
+              "names": [
+                1,
+                2
+              ]
+            },
+            {
+              "first": "outside",
+              "second": "root.r.l.l",
+              "names": [
+                1,
+                3
+              ]
+            },
+            {
+              "first": "outside",
+              "second": "root.r.l.r",
+              "names": [
+                1,
+                4
+              ]
+            },
+            {
+              "first": "outside",
+              "second": "root.r.r",
+              "names": [
+                1,
+                2
+              ]
+            },
+            {
+              "first": "root.l",
+              "second": "root.r.l.l",
+              "names": [
+                2,
+                3
+              ]
+            },
+            {
+              "first": "root.l",
+              "second": "root.r.l.r",
+              "names": [
+                2,
+                4
+              ]
+            },
+            {
+              "first": "root.r.l.l",
+              "second": "root.r.l.r",
+              "names": [
+                3,
+                4
+              ]
+            },
+            {
+              "first": "root.r.l.l",
+              "second": "root.r.r",
+              "names": [
+                3,
+                2
+              ]
+            },
+            {
+              "first": "root.r.l.r",
+              "second": "root.r.r",
+              "names": [
+                4,
+                2
+              ]
+            }
+          ],
+          "edge_count": 9,
+          "adjacency": {
+            "outside": [
+              "root.l",
+              "root.r.l.l",
+              "root.r.l.r",
+              "root.r.r"
+            ],
+            "root.l": [
+              "outside",
+              "root.r.l.l",
+              "root.r.l.r"
+            ],
+            "root.r.l.l": [
+              "outside",
+              "root.l",
+              "root.r.l.r",
+              "root.r.r"
+            ],
+            "root.r.l.r": [
+              "outside",
+              "root.l",
+              "root.r.l.l",
+              "root.r.r"
+            ],
+            "root.r.r": [
+              "outside",
+              "root.r.l.l",
+              "root.r.l.r"
+            ]
+          }
+        },
+        "daughter_domains": [
+          {
+            "id": "root.r.l.r",
+            "bounds": [
+              0,
+              357,
+              442,
+              487
+            ],
+            "geometric_side": "page_left",
+            "directed_side": "right",
+            "inherit_for_other_child": "left",
+            "old_contacts": [
+              {
+                "id": "outside",
+                "symbol": 1
+              },
+              {
+                "id": "root.l",
+                "symbol": 2
+              },
+              {
+                "id": "root.r.r",
+                "symbol": 2
+              }
+            ],
+            "R": [
+              1,
+              2
+            ],
+            "s": 3,
+            "available_names": [
+              4
+            ],
+            "touches_outside": true
+          },
+          {
+            "id": "root.r.l.l",
+            "bounds": [
+              442,
+              357,
+              900,
+              487
+            ],
+            "geometric_side": "page_right",
+            "directed_side": "left",
+            "inherit_for_other_child": "right",
+            "old_contacts": [
+              {
+                "id": "outside",
+                "symbol": 1
+              },
+              {
+                "id": "root.l",
+                "symbol": 2
+              },
+              {
+                "id": "root.r.r",
+                "symbol": 2
+              }
+            ],
+            "R": [
+              1,
+              2
+            ],
+            "s": 3,
+            "available_names": [
+              4
+            ],
+            "touches_outside": true
+          }
+        ]
+      }
+    ],
+    "final_state": {
+      "width": 900,
+      "height": 600,
+      "cuts": [
+        [
+          [
+            0,
+            357
+          ],
+          [
+            900,
+            357
+          ]
+        ],
+        [
+          [
+            0,
+            487
+          ],
+          [
+            900,
+            487
+          ]
+        ],
+        [
+          [
+            442,
+            357
+          ],
+          [
+            442,
+            487
+          ]
+        ]
+      ],
+      "sides": [
+        {
+          "id": "root.l",
+          "bounds": [
+            0,
+            0,
+            900,
+            357
+          ],
+          "symbol": 2
+        },
+        {
+          "id": "root.r.r",
+          "bounds": [
+            0,
+            487,
+            900,
+            600
+          ],
+          "symbol": 2
+        },
+        {
+          "id": "root.r.l.l",
+          "bounds": [
+            442,
+            357,
+            900,
+            487
+          ],
+          "symbol": 3
+        },
+        {
+          "id": "root.r.l.r",
+          "bounds": [
+            0,
+            357,
+            442,
+            487
+          ],
+          "symbol": 4
+        }
+      ]
+    },
+    "final_profiles": {
+      "frame": [
+        {
+          "segment": [
+            [
+              0,
+              0
+            ],
+            [
+              900,
+              0
+            ]
+          ],
+          "pair": [
+            1,
+            2
+          ]
+        },
+        {
+          "segment": [
+            [
+              900,
+              0
+            ],
+            [
+              900,
+              357
+            ]
+          ],
+          "pair": [
+            1,
+            2
+          ]
+        },
+        {
+          "segment": [
+            [
+              900,
+              357
+            ],
+            [
+              900,
+              487
+            ]
+          ],
+          "pair": [
+            1,
+            3
+          ]
+        },
+        {
+          "segment": [
+            [
+              900,
+              487
+            ],
+            [
+              900,
+              600
+            ]
+          ],
+          "pair": [
+            1,
+            2
+          ]
+        },
+        {
+          "segment": [
+            [
+              900,
+              600
+            ],
+            [
+              0,
+              600
+            ]
+          ],
+          "pair": [
+            1,
+            2
+          ]
+        },
+        {
+          "segment": [
+            [
+              0,
+              600
+            ],
+            [
+              0,
+              487
+            ]
+          ],
+          "pair": [
+            1,
+            2
+          ]
+        },
+        {
+          "segment": [
+            [
+              0,
+              487
+            ],
+            [
+              0,
+              357
+            ]
+          ],
+          "pair": [
+            1,
+            4
+          ]
+        },
+        {
+          "segment": [
+            [
+              0,
+              357
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pair": [
+            1,
+            2
+          ]
+        }
+      ],
+      "cut-1": [
+        {
+          "segment": [
+            [
+              0,
+              357
+            ],
+            [
+              442,
+              357
+            ]
+          ],
+          "pair": [
+            2,
+            4
+          ]
+        },
+        {
+          "segment": [
+            [
+              442,
+              357
+            ],
+            [
+              900,
+              357
+            ]
+          ],
+          "pair": [
+            2,
+            3
+          ]
+        }
+      ],
+      "cut-2": [
+        {
+          "segment": [
+            [
+              0,
+              487
+            ],
+            [
+              442,
+              487
+            ]
+          ],
+          "pair": [
+            4,
+            2
+          ]
+        },
+        {
+          "segment": [
+            [
+              442,
+              487
+            ],
+            [
+              900,
+              487
+            ]
+          ],
+          "pair": [
+            3,
+            2
+          ]
+        }
+      ],
+      "cut-3": [
+        {
+          "segment": [
+            [
+              442,
+              357
+            ],
+            [
+              442,
+              487
+            ]
+          ],
+          "pair": [
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    "final_step_domains": [
+      {
+        "id": "root.r.l.r",
+        "bounds": [
+          0,
+          357,
+          442,
+          487
+        ],
+        "geometric_side": "page_left",
+        "directed_side": "right",
+        "inherit_for_other_child": "left",
+        "old_contacts": [
+          {
+            "id": "outside",
+            "symbol": 1
+          },
+          {
+            "id": "root.l",
+            "symbol": 2
+          },
+          {
+            "id": "root.r.r",
+            "symbol": 2
+          }
+        ],
+        "R": [
+          1,
+          2
+        ],
+        "s": 3,
+        "available_names": [
+          4
+        ],
+        "touches_outside": true
+      },
+      {
+        "id": "root.r.l.l",
+        "bounds": [
+          442,
+          357,
+          900,
+          487
+        ],
+        "geometric_side": "page_right",
+        "directed_side": "left",
+        "inherit_for_other_child": "right",
+        "old_contacts": [
+          {
+            "id": "outside",
+            "symbol": 1
+          },
+          {
+            "id": "root.l",
+            "symbol": 2
+          },
+          {
+            "id": "root.r.r",
+            "symbol": 2
+          }
+        ],
+        "R": [
+          1,
+          2
+        ],
+        "s": 3,
+        "available_names": [
+          4
+        ],
+        "touches_outside": true
+      }
+    ],
+    "inherit": "left",
+    "synchronize": false,
+    "no_unsplit_old_side_renamed": true
+  },
+  "pending_cut": [
+    [
+      442,
+      357
+    ],
+    [
+      442,
+      487
+    ]
+  ],
+  "minimality_certificates": {
+    "old_fixed_right": {
+      "witness_vertices": [
+        "outside",
+        "root.l",
+        "root.r.l"
+      ],
+      "positive_length_pairs": [
+        [
+          "outside",
+          "root.l"
+        ],
+        [
+          "outside",
+          "root.r.l"
+        ],
+        [
+          "root.l",
+          "root.r.l"
+        ]
+      ],
+      "lower_bound_including_outside": 3,
+      "used_names": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "attains_bound": false
+    },
+    "restarted_before": {
+      "witness_vertices": [
+        "outside",
+        "root.l",
+        "root.r.l"
+      ],
+      "positive_length_pairs": [
+        [
+          "outside",
+          "root.l"
+        ],
+        [
+          "outside",
+          "root.r.l"
+        ],
+        [
+          "root.l",
+          "root.r.l"
+        ]
+      ],
+      "lower_bound_including_outside": 3,
+      "used_names": [
+        1,
+        2,
+        3
+      ],
+      "attains_bound": true
+    },
+    "restarted_after": {
+      "witness_vertices": [
+        "outside",
+        "root.l",
+        "root.r.l.l",
+        "root.r.l.r"
+      ],
+      "positive_length_pairs": [
+        [
+          "outside",
+          "root.l"
+        ],
+        [
+          "outside",
+          "root.r.l.l"
+        ],
+        [
+          "outside",
+          "root.r.l.r"
+        ],
+        [
+          "root.l",
+          "root.r.l.l"
+        ],
+        [
+          "root.l",
+          "root.r.l.r"
+        ],
+        [
+          "root.r.l.l",
+          "root.r.l.r"
+        ]
+      ],
+      "lower_bound_including_outside": 4,
+      "used_names": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "attains_bound": true
+    }
+  },
+  "first_avoidable_extra_name_step": 2,
+  "normalized_three_methods": [
+    {
+      "method": "M1_candidates",
+      "status": "split",
+      "parent": "root.r.l",
+      "s": 3,
+      "cut": [
+        [
+          442,
+          357
+        ],
+        [
+          442,
+          487
+        ]
+      ],
+      "candidates_before": [
+        {
+          "child_id": "root.r.l.r",
+          "bounds": [
+            0,
+            357,
+            442,
+            487
+          ],
+          "old_neighbor_ids": [
+            "outside",
+            "root.l",
+            "root.r.r"
+          ],
+          "R": [
+            1,
+            2
+          ],
+          "candidates": [
+            4
+          ]
+        },
+        {
+          "child_id": "root.r.l.l",
+          "bounds": [
+            442,
+            357,
+            900,
+            487
+          ],
+          "old_neighbor_ids": [
+            "outside",
+            "root.l",
+            "root.r.r"
+          ],
+          "R": [
+            1,
+            2
+          ],
+          "candidates": [
+            4
+          ]
+        }
+      ],
+      "changed_old_ids": [],
+      "changed_old_count": 0,
+      "touched_mother_count": 4,
+      "profile_change_record_count": 8,
+      "repair": {
+        "needed": false,
+        "attempted": false,
+        "reason": "no_repair_needed"
+      },
+      "decision_order": "new-child bounds lexicographic, then smallest candidate name",
+      "validation_scope": "all actual old/final boundaries; mutation support is separately bounded",
+      "used_stage": "M1_direct",
+      "new_name": 4,
+      "new_name_child_id": "root.r.l.r",
+      "new_name_child_bounds": [
+        0,
+        357,
+        442,
+        487
+      ],
+      "actual_inherit": "left",
+      "old_name_changes": [],
+      "final_state": {
+        "width": 900,
+        "height": 600,
+        "cuts": [
+          [
+            [
+              0,
+              357
+            ],
+            [
+              900,
+              357
+            ]
+          ],
+          [
+            [
+              0,
+              487
+            ],
+            [
+              900,
+              487
+            ]
+          ],
+          [
+            [
+              442,
+              357
+            ],
+            [
+              442,
+              487
+            ]
+          ]
+        ],
+        "sides": [
+          {
+            "id": "root.l",
+            "bounds": [
+              0,
+              0,
+              900,
+              357
+            ],
+            "symbol": 2
+          },
+          {
+            "id": "root.r.r",
+            "bounds": [
+              0,
+              487,
+              900,
+              600
+            ],
+            "symbol": 2
+          },
+          {
+            "id": "root.r.l.l",
+            "bounds": [
+              442,
+              357,
+              900,
+              487
+            ],
+            "symbol": 3
+          },
+          {
+            "id": "root.r.l.r",
+            "bounds": [
+              0,
+              357,
+              442,
+              487
+            ],
+            "symbol": 4
+          }
+        ]
+      },
+      "boundary_audit": {
+        "all_constraints_valid": true,
+        "unique_adjacencies_checked": 9,
+        "independent_rectangle_adjacency": true,
+        "production_boundary_crosscheck": true
+      },
+      "profile_count_definition": "union of exact mother/span keys; subdivision counts removed and added records",
+      "profile_changes": [
+        {
+          "mother": "cut-1",
+          "segment": [
+            [
+              0,
+              357
+            ],
+            [
+              442,
+              357
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            2,
+            4
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "cut-1",
+          "segment": [
+            [
+              0,
+              357
+            ],
+            [
+              900,
+              357
+            ]
+          ],
+          "before_pair": [
+            2,
+            3
+          ],
+          "after_pair": null,
+          "kind": "removed"
+        },
+        {
+          "mother": "cut-1",
+          "segment": [
+            [
+              442,
+              357
+            ],
+            [
+              900,
+              357
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            2,
+            3
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "cut-2",
+          "segment": [
+            [
+              0,
+              487
+            ],
+            [
+              442,
+              487
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            4,
+            2
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "cut-2",
+          "segment": [
+            [
+              0,
+              487
+            ],
+            [
+              900,
+              487
+            ]
+          ],
+          "before_pair": [
+            3,
+            2
+          ],
+          "after_pair": null,
+          "kind": "removed"
+        },
+        {
+          "mother": "cut-2",
+          "segment": [
+            [
+              442,
+              487
+            ],
+            [
+              900,
+              487
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            3,
+            2
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "cut-3",
+          "segment": [
+            [
+              442,
+              357
+            ],
+            [
+              442,
+              487
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            3,
+            4
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "frame",
+          "segment": [
+            [
+              0,
+              487
+            ],
+            [
+              0,
+              357
+            ]
+          ],
+          "before_pair": [
+            1,
+            3
+          ],
+          "after_pair": [
+            1,
+            4
+          ],
+          "kind": "renamed"
+        }
+      ],
+      "touched_mothers": [
+        "cut-1",
+        "cut-2",
+        "cut-3",
+        "frame"
+      ],
+      "touched_existing_mother_count": 3
+    },
+    {
+      "method": "M2_one_neighbor",
+      "status": "split",
+      "parent": "root.r.l",
+      "s": 3,
+      "cut": [
+        [
+          442,
+          357
+        ],
+        [
+          442,
+          487
+        ]
+      ],
+      "candidates_before": [
+        {
+          "child_id": "root.r.l.r",
+          "bounds": [
+            0,
+            357,
+            442,
+            487
+          ],
+          "old_neighbor_ids": [
+            "outside",
+            "root.l",
+            "root.r.r"
+          ],
+          "R": [
+            1,
+            2
+          ],
+          "candidates": [
+            4
+          ]
+        },
+        {
+          "child_id": "root.r.l.l",
+          "bounds": [
+            442,
+            357,
+            900,
+            487
+          ],
+          "old_neighbor_ids": [
+            "outside",
+            "root.l",
+            "root.r.r"
+          ],
+          "R": [
+            1,
+            2
+          ],
+          "candidates": [
+            4
+          ]
+        }
+      ],
+      "changed_old_ids": [],
+      "changed_old_count": 0,
+      "touched_mother_count": 4,
+      "profile_change_record_count": 8,
+      "repair": {
+        "needed": false,
+        "attempted": false,
+        "reason": "no_repair_needed"
+      },
+      "decision_order": "new-child bounds lexicographic, then smallest candidate name",
+      "validation_scope": "all actual old/final boundaries; mutation support is separately bounded",
+      "used_stage": "M1_direct",
+      "new_name": 4,
+      "new_name_child_id": "root.r.l.r",
+      "new_name_child_bounds": [
+        0,
+        357,
+        442,
+        487
+      ],
+      "actual_inherit": "left",
+      "old_name_changes": [],
+      "final_state": {
+        "width": 900,
+        "height": 600,
+        "cuts": [
+          [
+            [
+              0,
+              357
+            ],
+            [
+              900,
+              357
+            ]
+          ],
+          [
+            [
+              0,
+              487
+            ],
+            [
+              900,
+              487
+            ]
+          ],
+          [
+            [
+              442,
+              357
+            ],
+            [
+              442,
+              487
+            ]
+          ]
+        ],
+        "sides": [
+          {
+            "id": "root.l",
+            "bounds": [
+              0,
+              0,
+              900,
+              357
+            ],
+            "symbol": 2
+          },
+          {
+            "id": "root.r.r",
+            "bounds": [
+              0,
+              487,
+              900,
+              600
+            ],
+            "symbol": 2
+          },
+          {
+            "id": "root.r.l.l",
+            "bounds": [
+              442,
+              357,
+              900,
+              487
+            ],
+            "symbol": 3
+          },
+          {
+            "id": "root.r.l.r",
+            "bounds": [
+              0,
+              357,
+              442,
+              487
+            ],
+            "symbol": 4
+          }
+        ]
+      },
+      "boundary_audit": {
+        "all_constraints_valid": true,
+        "unique_adjacencies_checked": 9,
+        "independent_rectangle_adjacency": true,
+        "production_boundary_crosscheck": true
+      },
+      "profile_count_definition": "union of exact mother/span keys; subdivision counts removed and added records",
+      "profile_changes": [
+        {
+          "mother": "cut-1",
+          "segment": [
+            [
+              0,
+              357
+            ],
+            [
+              442,
+              357
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            2,
+            4
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "cut-1",
+          "segment": [
+            [
+              0,
+              357
+            ],
+            [
+              900,
+              357
+            ]
+          ],
+          "before_pair": [
+            2,
+            3
+          ],
+          "after_pair": null,
+          "kind": "removed"
+        },
+        {
+          "mother": "cut-1",
+          "segment": [
+            [
+              442,
+              357
+            ],
+            [
+              900,
+              357
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            2,
+            3
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "cut-2",
+          "segment": [
+            [
+              0,
+              487
+            ],
+            [
+              442,
+              487
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            4,
+            2
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "cut-2",
+          "segment": [
+            [
+              0,
+              487
+            ],
+            [
+              900,
+              487
+            ]
+          ],
+          "before_pair": [
+            3,
+            2
+          ],
+          "after_pair": null,
+          "kind": "removed"
+        },
+        {
+          "mother": "cut-2",
+          "segment": [
+            [
+              442,
+              487
+            ],
+            [
+              900,
+              487
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            3,
+            2
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "cut-3",
+          "segment": [
+            [
+              442,
+              357
+            ],
+            [
+              442,
+              487
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            3,
+            4
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "frame",
+          "segment": [
+            [
+              0,
+              487
+            ],
+            [
+              0,
+              357
+            ]
+          ],
+          "before_pair": [
+            1,
+            3
+          ],
+          "after_pair": [
+            1,
+            4
+          ],
+          "kind": "renamed"
+        }
+      ],
+      "touched_mothers": [
+        "cut-1",
+        "cut-2",
+        "cut-3",
+        "frame"
+      ],
+      "touched_existing_mother_count": 3
+    },
+    {
+      "method": "M3_bounded_two_name",
+      "status": "split",
+      "parent": "root.r.l",
+      "s": 3,
+      "cut": [
+        [
+          442,
+          357
+        ],
+        [
+          442,
+          487
+        ]
+      ],
+      "candidates_before": [
+        {
+          "child_id": "root.r.l.r",
+          "bounds": [
+            0,
+            357,
+            442,
+            487
+          ],
+          "old_neighbor_ids": [
+            "outside",
+            "root.l",
+            "root.r.r"
+          ],
+          "R": [
+            1,
+            2
+          ],
+          "candidates": [
+            4
+          ]
+        },
+        {
+          "child_id": "root.r.l.l",
+          "bounds": [
+            442,
+            357,
+            900,
+            487
+          ],
+          "old_neighbor_ids": [
+            "outside",
+            "root.l",
+            "root.r.r"
+          ],
+          "R": [
+            1,
+            2
+          ],
+          "candidates": [
+            4
+          ]
+        }
+      ],
+      "changed_old_ids": [],
+      "changed_old_count": 0,
+      "touched_mother_count": 4,
+      "profile_change_record_count": 8,
+      "repair": {
+        "needed": false,
+        "attempted": false,
+        "reason": "no_repair_needed"
+      },
+      "decision_order": "new-child bounds lexicographic, then smallest candidate name",
+      "validation_scope": "all actual old/final boundaries; mutation support is separately bounded",
+      "used_stage": "M1_direct",
+      "new_name": 4,
+      "new_name_child_id": "root.r.l.r",
+      "new_name_child_bounds": [
+        0,
+        357,
+        442,
+        487
+      ],
+      "actual_inherit": "left",
+      "old_name_changes": [],
+      "final_state": {
+        "width": 900,
+        "height": 600,
+        "cuts": [
+          [
+            [
+              0,
+              357
+            ],
+            [
+              900,
+              357
+            ]
+          ],
+          [
+            [
+              0,
+              487
+            ],
+            [
+              900,
+              487
+            ]
+          ],
+          [
+            [
+              442,
+              357
+            ],
+            [
+              442,
+              487
+            ]
+          ]
+        ],
+        "sides": [
+          {
+            "id": "root.l",
+            "bounds": [
+              0,
+              0,
+              900,
+              357
+            ],
+            "symbol": 2
+          },
+          {
+            "id": "root.r.r",
+            "bounds": [
+              0,
+              487,
+              900,
+              600
+            ],
+            "symbol": 2
+          },
+          {
+            "id": "root.r.l.l",
+            "bounds": [
+              442,
+              357,
+              900,
+              487
+            ],
+            "symbol": 3
+          },
+          {
+            "id": "root.r.l.r",
+            "bounds": [
+              0,
+              357,
+              442,
+              487
+            ],
+            "symbol": 4
+          }
+        ]
+      },
+      "boundary_audit": {
+        "all_constraints_valid": true,
+        "unique_adjacencies_checked": 9,
+        "independent_rectangle_adjacency": true,
+        "production_boundary_crosscheck": true
+      },
+      "profile_count_definition": "union of exact mother/span keys; subdivision counts removed and added records",
+      "profile_changes": [
+        {
+          "mother": "cut-1",
+          "segment": [
+            [
+              0,
+              357
+            ],
+            [
+              442,
+              357
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            2,
+            4
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "cut-1",
+          "segment": [
+            [
+              0,
+              357
+            ],
+            [
+              900,
+              357
+            ]
+          ],
+          "before_pair": [
+            2,
+            3
+          ],
+          "after_pair": null,
+          "kind": "removed"
+        },
+        {
+          "mother": "cut-1",
+          "segment": [
+            [
+              442,
+              357
+            ],
+            [
+              900,
+              357
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            2,
+            3
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "cut-2",
+          "segment": [
+            [
+              0,
+              487
+            ],
+            [
+              442,
+              487
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            4,
+            2
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "cut-2",
+          "segment": [
+            [
+              0,
+              487
+            ],
+            [
+              900,
+              487
+            ]
+          ],
+          "before_pair": [
+            3,
+            2
+          ],
+          "after_pair": null,
+          "kind": "removed"
+        },
+        {
+          "mother": "cut-2",
+          "segment": [
+            [
+              442,
+              487
+            ],
+            [
+              900,
+              487
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            3,
+            2
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "cut-3",
+          "segment": [
+            [
+              442,
+              357
+            ],
+            [
+              442,
+              487
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            3,
+            4
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "frame",
+          "segment": [
+            [
+              0,
+              487
+            ],
+            [
+              0,
+              357
+            ]
+          ],
+          "before_pair": [
+            1,
+            3
+          ],
+          "after_pair": [
+            1,
+            4
+          ],
+          "kind": "renamed"
+        }
+      ],
+      "touched_mothers": [
+        "cut-1",
+        "cut-2",
+        "cut-3",
+        "frame"
+      ],
+      "touched_existing_mother_count": 3
+    }
+  ],
+  "independent_certificate_count": 7,
+  "independent_oracle_status": "checked",
+  "independent_certificates": [
+    {
+      "key": "C/restart-initial",
+      "certificate": {
+        "state": {
+          "width": 900,
+          "height": 600,
+          "cuts": [],
+          "sides": [
+            {
+              "id": "root",
+              "bounds": [
+                0,
+                0,
+                900,
+                600
+              ],
+              "symbol": 2
+            }
+          ]
+        },
+        "independent_audit": {
+          "node_geometry": {
+            "key": "C/restart-initial",
+            "rotation": [
+              [
+                7,
+                0
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                4,
+                3
+              ],
+              [
+                5,
+                6
+              ]
+            ],
+            "names": [
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "2"
+              ]
+            ],
+            "edge_conflicts": [],
+            "face_count": 2,
+            "errors": []
+          },
+          "python_status": "consistent",
+          "python_side_orbits": [
+            [
+              0,
+              2,
+              4,
+              6
+            ],
+            [
+              1,
+              7,
+              5,
+              3
+            ]
+          ],
+          "node_certificate_sha256": "1942b14c5bc472b61018b909bc5545bc3e357327557403f637d2f8f013cb44b5"
+        }
+      }
+    },
+    {
+      "key": "C/restart-1",
+      "certificate": {
+        "state": {
+          "width": 900,
+          "height": 600,
+          "cuts": [
+            [
+              [
+                0,
+                357
+              ],
+              [
+                900,
+                357
+              ]
+            ]
+          ],
+          "sides": [
+            {
+              "id": "root.l",
+              "bounds": [
+                0,
+                0,
+                900,
+                357
+              ],
+              "symbol": 2
+            },
+            {
+              "id": "root.r",
+              "bounds": [
+                0,
+                357,
+                900,
+                600
+              ],
+              "symbol": 3
+            }
+          ]
+        },
+        "independent_audit": {
+          "node_geometry": {
+            "key": "C/restart-1",
+            "rotation": [
+              [
+                11,
+                0
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                13,
+                4,
+                3
+              ],
+              [
+                6,
+                5
+              ],
+              [
+                7,
+                8
+              ],
+              [
+                9,
+                12,
+                10
+              ]
+            ],
+            "names": [
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "3"
+              ],
+              [
+                "1",
+                "3"
+              ],
+              [
+                "1",
+                "3"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "2",
+                "3"
+              ]
+            ],
+            "edge_conflicts": [],
+            "face_count": 3,
+            "errors": []
+          },
+          "python_status": "consistent",
+          "python_side_orbits": [
+            [
+              0,
+              2,
+              4,
+              6,
+              8,
+              10
+            ],
+            [
+              1,
+              11,
+              12,
+              3
+            ],
+            [
+              5,
+              13,
+              9,
+              7
+            ]
+          ],
+          "node_certificate_sha256": "a507881864545ed5eed5f79f7013adce0cf60ac1865b8fe617315e4b92313fbe"
+        }
+      }
+    },
+    {
+      "key": "C/restart-2",
+      "certificate": {
+        "state": {
+          "width": 900,
+          "height": 600,
+          "cuts": [
+            [
+              [
+                0,
+                357
+              ],
+              [
+                900,
+                357
+              ]
+            ],
+            [
+              [
+                0,
+                487
+              ],
+              [
+                900,
+                487
+              ]
+            ]
+          ],
+          "sides": [
+            {
+              "id": "root.l",
+              "bounds": [
+                0,
+                0,
+                900,
+                357
+              ],
+              "symbol": 2
+            },
+            {
+              "id": "root.r.l",
+              "bounds": [
+                0,
+                357,
+                900,
+                487
+              ],
+              "symbol": 3
+            },
+            {
+              "id": "root.r.r",
+              "bounds": [
+                0,
+                487,
+                900,
+                600
+              ],
+              "symbol": 2
+            }
+          ]
+        },
+        "independent_audit": {
+          "node_geometry": {
+            "key": "C/restart-2",
+            "rotation": [
+              [
+                15,
+                0
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                17,
+                4,
+                3
+              ],
+              [
+                19,
+                6,
+                5
+              ],
+              [
+                8,
+                7
+              ],
+              [
+                9,
+                10
+              ],
+              [
+                11,
+                18,
+                12
+              ],
+              [
+                13,
+                16,
+                14
+              ]
+            ],
+            "names": [
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "3"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "3"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "2",
+                "3"
+              ],
+              [
+                "3",
+                "2"
+              ]
+            ],
+            "edge_conflicts": [],
+            "face_count": 4,
+            "errors": []
+          },
+          "python_status": "consistent",
+          "python_side_orbits": [
+            [
+              0,
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              14
+            ],
+            [
+              1,
+              15,
+              16,
+              3
+            ],
+            [
+              5,
+              17,
+              13,
+              18
+            ],
+            [
+              7,
+              19,
+              11,
+              9
+            ]
+          ],
+          "node_certificate_sha256": "04fc925f3e4d33afb1968f7b8d09ea05fadf5b3ff46bea12c3a03ba5f1360440"
+        }
+      }
+    },
+    {
+      "key": "C/restart-3",
+      "certificate": {
+        "state": {
+          "width": 900,
+          "height": 600,
+          "cuts": [
+            [
+              [
+                0,
+                357
+              ],
+              [
+                900,
+                357
+              ]
+            ],
+            [
+              [
+                0,
+                487
+              ],
+              [
+                900,
+                487
+              ]
+            ],
+            [
+              [
+                442,
+                357
+              ],
+              [
+                442,
+                487
+              ]
+            ]
+          ],
+          "sides": [
+            {
+              "id": "root.l",
+              "bounds": [
+                0,
+                0,
+                900,
+                357
+              ],
+              "symbol": 2
+            },
+            {
+              "id": "root.r.r",
+              "bounds": [
+                0,
+                487,
+                900,
+                600
+              ],
+              "symbol": 2
+            },
+            {
+              "id": "root.r.l.l",
+              "bounds": [
+                442,
+                357,
+                900,
+                487
+              ],
+              "symbol": 3
+            },
+            {
+              "id": "root.r.l.r",
+              "bounds": [
+                0,
+                357,
+                442,
+                487
+              ],
+              "symbol": 4
+            }
+          ]
+        },
+        "independent_audit": {
+          "node_geometry": {
+            "key": "C/restart-3",
+            "rotation": [
+              [
+                15,
+                0
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                19,
+                4,
+                3
+              ],
+              [
+                23,
+                6,
+                5
+              ],
+              [
+                8,
+                7
+              ],
+              [
+                9,
+                10
+              ],
+              [
+                11,
+                20,
+                12
+              ],
+              [
+                13,
+                16,
+                14
+              ],
+              [
+                17,
+                24,
+                18
+              ],
+              [
+                21,
+                22,
+                25
+              ]
+            ],
+            "names": [
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "3"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "4"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "2",
+                "4"
+              ],
+              [
+                "2",
+                "3"
+              ],
+              [
+                "4",
+                "2"
+              ],
+              [
+                "3",
+                "2"
+              ],
+              [
+                "3",
+                "4"
+              ]
+            ],
+            "edge_conflicts": [],
+            "face_count": 5,
+            "errors": []
+          },
+          "python_status": "consistent",
+          "python_side_orbits": [
+            [
+              0,
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              14
+            ],
+            [
+              1,
+              15,
+              16,
+              18,
+              3
+            ],
+            [
+              5,
+              19,
+              24,
+              22
+            ],
+            [
+              7,
+              23,
+              21,
+              11,
+              9
+            ],
+            [
+              13,
+              20,
+              25,
+              17
+            ]
+          ],
+          "node_certificate_sha256": "0330ed62a591c19015a297523ce59d13eaeebe8e89acdff7c55bd3c8342bef2b"
+        }
+      }
+    },
+    {
+      "key": "C/normalized-M1_candidates",
+      "certificate": {
+        "state": {
+          "width": 900,
+          "height": 600,
+          "cuts": [
+            [
+              [
+                0,
+                357
+              ],
+              [
+                900,
+                357
+              ]
+            ],
+            [
+              [
+                0,
+                487
+              ],
+              [
+                900,
+                487
+              ]
+            ],
+            [
+              [
+                442,
+                357
+              ],
+              [
+                442,
+                487
+              ]
+            ]
+          ],
+          "sides": [
+            {
+              "id": "root.l",
+              "bounds": [
+                0,
+                0,
+                900,
+                357
+              ],
+              "symbol": 2
+            },
+            {
+              "id": "root.r.r",
+              "bounds": [
+                0,
+                487,
+                900,
+                600
+              ],
+              "symbol": 2
+            },
+            {
+              "id": "root.r.l.l",
+              "bounds": [
+                442,
+                357,
+                900,
+                487
+              ],
+              "symbol": 3
+            },
+            {
+              "id": "root.r.l.r",
+              "bounds": [
+                0,
+                357,
+                442,
+                487
+              ],
+              "symbol": 4
+            }
+          ]
+        },
+        "independent_audit": {
+          "node_geometry": {
+            "key": "C/normalized-M1_candidates",
+            "rotation": [
+              [
+                15,
+                0
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                19,
+                4,
+                3
+              ],
+              [
+                23,
+                6,
+                5
+              ],
+              [
+                8,
+                7
+              ],
+              [
+                9,
+                10
+              ],
+              [
+                11,
+                20,
+                12
+              ],
+              [
+                13,
+                16,
+                14
+              ],
+              [
+                17,
+                24,
+                18
+              ],
+              [
+                21,
+                22,
+                25
+              ]
+            ],
+            "names": [
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "3"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "4"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "2",
+                "4"
+              ],
+              [
+                "2",
+                "3"
+              ],
+              [
+                "4",
+                "2"
+              ],
+              [
+                "3",
+                "2"
+              ],
+              [
+                "3",
+                "4"
+              ]
+            ],
+            "edge_conflicts": [],
+            "face_count": 5,
+            "errors": []
+          },
+          "python_status": "consistent",
+          "python_side_orbits": [
+            [
+              0,
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              14
+            ],
+            [
+              1,
+              15,
+              16,
+              18,
+              3
+            ],
+            [
+              5,
+              19,
+              24,
+              22
+            ],
+            [
+              7,
+              23,
+              21,
+              11,
+              9
+            ],
+            [
+              13,
+              20,
+              25,
+              17
+            ]
+          ],
+          "node_certificate_sha256": "06b4b32d69e93366d8e9674d38a24ec8f4ec8422b5b263798690108735fe3991"
+        }
+      }
+    },
+    {
+      "key": "C/normalized-M2_one_neighbor",
+      "certificate": {
+        "state": {
+          "width": 900,
+          "height": 600,
+          "cuts": [
+            [
+              [
+                0,
+                357
+              ],
+              [
+                900,
+                357
+              ]
+            ],
+            [
+              [
+                0,
+                487
+              ],
+              [
+                900,
+                487
+              ]
+            ],
+            [
+              [
+                442,
+                357
+              ],
+              [
+                442,
+                487
+              ]
+            ]
+          ],
+          "sides": [
+            {
+              "id": "root.l",
+              "bounds": [
+                0,
+                0,
+                900,
+                357
+              ],
+              "symbol": 2
+            },
+            {
+              "id": "root.r.r",
+              "bounds": [
+                0,
+                487,
+                900,
+                600
+              ],
+              "symbol": 2
+            },
+            {
+              "id": "root.r.l.l",
+              "bounds": [
+                442,
+                357,
+                900,
+                487
+              ],
+              "symbol": 3
+            },
+            {
+              "id": "root.r.l.r",
+              "bounds": [
+                0,
+                357,
+                442,
+                487
+              ],
+              "symbol": 4
+            }
+          ]
+        },
+        "independent_audit": {
+          "node_geometry": {
+            "key": "C/normalized-M2_one_neighbor",
+            "rotation": [
+              [
+                15,
+                0
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                19,
+                4,
+                3
+              ],
+              [
+                23,
+                6,
+                5
+              ],
+              [
+                8,
+                7
+              ],
+              [
+                9,
+                10
+              ],
+              [
+                11,
+                20,
+                12
+              ],
+              [
+                13,
+                16,
+                14
+              ],
+              [
+                17,
+                24,
+                18
+              ],
+              [
+                21,
+                22,
+                25
+              ]
+            ],
+            "names": [
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "3"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "4"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "2",
+                "4"
+              ],
+              [
+                "2",
+                "3"
+              ],
+              [
+                "4",
+                "2"
+              ],
+              [
+                "3",
+                "2"
+              ],
+              [
+                "3",
+                "4"
+              ]
+            ],
+            "edge_conflicts": [],
+            "face_count": 5,
+            "errors": []
+          },
+          "python_status": "consistent",
+          "python_side_orbits": [
+            [
+              0,
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              14
+            ],
+            [
+              1,
+              15,
+              16,
+              18,
+              3
+            ],
+            [
+              5,
+              19,
+              24,
+              22
+            ],
+            [
+              7,
+              23,
+              21,
+              11,
+              9
+            ],
+            [
+              13,
+              20,
+              25,
+              17
+            ]
+          ],
+          "node_certificate_sha256": "f3b75b148f48c6e8028581003baaf4ede32bdd8f5e8810ee090044f1627e50fd"
+        }
+      }
+    },
+    {
+      "key": "C/normalized-M3_bounded_two_name",
+      "certificate": {
+        "state": {
+          "width": 900,
+          "height": 600,
+          "cuts": [
+            [
+              [
+                0,
+                357
+              ],
+              [
+                900,
+                357
+              ]
+            ],
+            [
+              [
+                0,
+                487
+              ],
+              [
+                900,
+                487
+              ]
+            ],
+            [
+              [
+                442,
+                357
+              ],
+              [
+                442,
+                487
+              ]
+            ]
+          ],
+          "sides": [
+            {
+              "id": "root.l",
+              "bounds": [
+                0,
+                0,
+                900,
+                357
+              ],
+              "symbol": 2
+            },
+            {
+              "id": "root.r.r",
+              "bounds": [
+                0,
+                487,
+                900,
+                600
+              ],
+              "symbol": 2
+            },
+            {
+              "id": "root.r.l.l",
+              "bounds": [
+                442,
+                357,
+                900,
+                487
+              ],
+              "symbol": 3
+            },
+            {
+              "id": "root.r.l.r",
+              "bounds": [
+                0,
+                357,
+                442,
+                487
+              ],
+              "symbol": 4
+            }
+          ]
+        },
+        "independent_audit": {
+          "node_geometry": {
+            "key": "C/normalized-M3_bounded_two_name",
+            "rotation": [
+              [
+                15,
+                0
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                19,
+                4,
+                3
+              ],
+              [
+                23,
+                6,
+                5
+              ],
+              [
+                8,
+                7
+              ],
+              [
+                9,
+                10
+              ],
+              [
+                11,
+                20,
+                12
+              ],
+              [
+                13,
+                16,
+                14
+              ],
+              [
+                17,
+                24,
+                18
+              ],
+              [
+                21,
+                22,
+                25
+              ]
+            ],
+            "names": [
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "3"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "1",
+                "4"
+              ],
+              [
+                "1",
+                "2"
+              ],
+              [
+                "2",
+                "4"
+              ],
+              [
+                "2",
+                "3"
+              ],
+              [
+                "4",
+                "2"
+              ],
+              [
+                "3",
+                "2"
+              ],
+              [
+                "3",
+                "4"
+              ]
+            ],
+            "edge_conflicts": [],
+            "face_count": 5,
+            "errors": []
+          },
+          "python_status": "consistent",
+          "python_side_orbits": [
+            [
+              0,
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              14
+            ],
+            [
+              1,
+              15,
+              16,
+              18,
+              3
+            ],
+            [
+              5,
+              19,
+              24,
+              22
+            ],
+            [
+              7,
+              23,
+              21,
+              11,
+              9
+            ],
+            [
+              13,
+              20,
+              25,
+              17
+            ]
+          ],
+          "node_certificate_sha256": "d7e58f9a37f2bcceb03d8c92486496ff88c80ed8264af4e3c7402ea0a256d8bf"
+        }
+      }
+    }
+  ],
+  "interpretation": "342 is proper but uses four names including outside, whereas 232 needs three. After the pending cut, a K4 certificate makes four necessary. The old C does not establish a repair requirement for the user's minimum-reuse starting rule."
+}

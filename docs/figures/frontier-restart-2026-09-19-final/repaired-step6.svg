@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1060" viewBox="0 0 1900 1060">
+<rect width="100%" height="100%" fill="white"/>
+<text x="55" y="28" font-size="39" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">原第 6 刀失败图：新规则已自动完成四色命名</text>
+<text x="55" y="95" font-size="26" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">seed 20261027｜同一完整几何，两边均清空旧名后重启；不是手工喂入答案。</text>
+<text x="55" y="162" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">旧规则：冲突，不能交付完整名字</text>
+<text x="55" y="211" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">外侧固定 1；内部数字是当前线侧名</text>
+<polyline points="55,265 865,265 865,805 55,805 55,265" fill="none" stroke="#202831" stroke-width="5"/>
+<polyline points="55,419.8 521.2,419.8" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="55,559.3 865,559.3" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="111.7,419.8 111.7,559.3" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="199,419.8 199,559.3" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="306.1,265 306.1,419.8" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="521.2,265 521.2,559.3" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="180.55" y="327.4" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="413.65" y="327.4" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="693.1" y="397.15" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="460" y="667.15" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="83.35" y="474.55" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="155.35" y="474.55" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="360.1" y="474.55" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="1000" y="162" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">新规则 tight-hall：全边核验通过</text>
+<text x="1000" y="211" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">外侧固定 1；内部数字是当前线侧名</text>
+<rect x="1000" y="265" width="251.1" height="154.8" fill="#CDE7F4"/>
+<rect x="1251.1" y="265" width="215.1" height="154.8" fill="#FFE4AF"/>
+<rect x="1466.2" y="265" width="343.8" height="294.3" fill="#DDCFE8"/>
+<rect x="1000" y="559.3" width="810" height="245.7" fill="#CDE7F4"/>
+<rect x="1000" y="419.8" width="56.7" height="139.5" fill="#DDCFE8"/>
+<rect x="1056.7" y="419.8" width="87.3" height="139.5" fill="#FFE4AF"/>
+<rect x="1144" y="419.8" width="322.2" height="139.5" fill="#EEEEEE"/>
+<polyline points="1000,265 1810,265 1810,805 1000,805 1000,265" fill="none" stroke="#202831" stroke-width="5"/>
+<polyline points="1000,419.8 1466.2,419.8" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1000,559.3 1810,559.3" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1056.7,419.8 1056.7,559.3" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1144,419.8 1144,559.3" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1251.1,265 1251.1,419.8" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1466.2,265 1466.2,559.3" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="1125.55" y="327.4" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="1358.65" y="327.4" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="1638.1" y="397.15" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<text x="1405" y="667.15" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="1028.35" y="474.55" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<text x="1100.35" y="474.55" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="1305.1" y="474.55" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">1</text>
+<text x="55" y="841" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">新增推理：先保留候选关系，再决定具体名字。</text>
+<text x="55" y="899" font-size="28" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">若三个侧两两共边，前两个都只能取 {3,4}，则第三个不能再用3或4。</text>
+<text x="55" y="956" font-size="26" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">这是一条有前提的局部排除规则；单张图修好，不代表所有地图或后续步骤都完成。</text>
+</svg>

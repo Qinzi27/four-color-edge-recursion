@@ -21,6 +21,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install research test dependency
+        run: python -m pip install -r requirements-research.txt
+      - name: Verify frozen research bytes after checkout
+        run: python scripts/check_publication_archive.py --output outputs/ci-publication-index.json
       - name: Unit tests and independent bounded validation
         run: python scripts/validate.py
       - name: Demonstration
@@ -29,7 +36,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: validation-${{ matrix.os }}-${{ matrix.python }}
-          path: outputs/validation.json
+          path: |
+            outputs/validation.json
+            outputs/ci-publication-index.json
 
   web:
     runs-on: ubuntu-latest

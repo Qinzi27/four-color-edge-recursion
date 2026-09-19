@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1450" height="1050" viewBox="0 0 1450 1050">
+<rect width="100%" height="100%" fill="white"/>
+<text x="55" y="28" font-size="38" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">另一类未完成：双端继承等级无法启动</text>
+<text x="55" y="94" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">construction-free-end / step 1</text>
+<text x="55" y="150" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">外侧1；原始线网完整保留；数字是色名，母线等级不是颜色。</text>
+<polyline points="55,218 1090,218 1090,908 55,908 55,218" fill="none" stroke="#202831" stroke-width="5"/>
+<polyline points="55,563 572.5,563" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="55" y="945" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">旧规则已有合法四色结果。</text>
+<text x="55" y="996" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">这是几何准入范围不足，不是取色后的矛盾；本轮没有临时补规则。</text>
+</svg>

@@ -1,0 +1,246 @@
+{
+  "schema_version": 1,
+  "input": {
+    "filename": "local-reuse-2026-09-18-v2.json",
+    "sha256": "bbec958a9d21d5b555b51ee262ad431df33637370e5ee381ec6e24edcc58b068"
+  },
+  "code_sha256": {
+    "scripts/render_e_parity.py": "a359d2039291b3a726eca885ba0be85932eb3083900825d47795edc0e4719924",
+    "scripts/render_anchor_failure_cases.py": "8bdea94aa0f3f8ea101d1c139c47fcf6b645373d64e0da06ad0ea4a6fd8b7b5e",
+    "scripts/audit_retained_blocks.py": "be76a3a94cc9e2a473045b8575283ad84264247ae6ad494b3387aa92808fdb19",
+    "fourcolor/inherited_names.py": "235751061bc97b7cac9036890a29971c3d11688cad4aa628ceafa09412fd4c14"
+  },
+  "source_case": "E_frozen_start",
+  "source_seed": 20260927,
+  "old_state": {
+    "width": 900,
+    "height": 600,
+    "cuts": [
+      [
+        [
+          0,
+          214
+        ],
+        [
+          900,
+          214
+        ]
+      ],
+      [
+        [
+          0,
+          471
+        ],
+        [
+          900,
+          471
+        ]
+      ],
+      [
+        [
+          0,
+          123
+        ],
+        [
+          900,
+          123
+        ]
+      ],
+      [
+        [
+          312,
+          123
+        ],
+        [
+          312,
+          214
+        ]
+      ],
+      [
+        [
+          339,
+          471
+        ],
+        [
+          339,
+          600
+        ]
+      ],
+      [
+        [
+          199,
+          471
+        ],
+        [
+          199,
+          600
+        ]
+      ],
+      [
+        [
+          598,
+          123
+        ],
+        [
+          598,
+          214
+        ]
+      ]
+    ],
+    "sides": [
+      {
+        "id": "A",
+        "bounds": [
+          0,
+          0,
+          900,
+          123
+        ],
+        "symbol": 2
+      },
+      {
+        "id": "B",
+        "bounds": [
+          598,
+          123,
+          900,
+          214
+        ],
+        "symbol": 3
+      },
+      {
+        "id": "M",
+        "bounds": [
+          0,
+          214,
+          900,
+          471
+        ],
+        "symbol": 2
+      },
+      {
+        "id": "C",
+        "bounds": [
+          339,
+          471,
+          900,
+          600
+        ],
+        "symbol": 4
+      },
+      {
+        "id": "D",
+        "bounds": [
+          199,
+          471,
+          339,
+          600
+        ],
+        "symbol": 3
+      },
+      {
+        "id": "E",
+        "bounds": [
+          0,
+          471,
+          199,
+          600
+        ],
+        "symbol": 4
+      },
+      {
+        "id": "F",
+        "bounds": [
+          0,
+          123,
+          312,
+          214
+        ],
+        "symbol": 3
+      },
+      {
+        "id": "G",
+        "bounds": [
+          312,
+          123,
+          598,
+          214
+        ],
+        "symbol": 4
+      }
+    ]
+  },
+  "pending_cut": [
+    [
+      454,
+      214
+    ],
+    [
+      454,
+      471
+    ]
+  ],
+  "draft_labels": {
+    "A": [
+      "A",
+      2
+    ],
+    "B": [
+      "B",
+      3
+    ],
+    "C": [
+      "C",
+      4
+    ],
+    "D": [
+      "D",
+      3
+    ],
+    "E": [
+      "E",
+      4
+    ],
+    "F": [
+      "F",
+      3
+    ],
+    "G": [
+      "G",
+      4
+    ],
+    "M.l": [
+      "R",
+      2
+    ],
+    "M.r": [
+      "L",
+      2
+    ]
+  },
+  "positive_length_cycle": [
+    "A",
+    "B",
+    "M.l",
+    "M.r",
+    "F",
+    "A"
+  ],
+  "all_cycle_edges_checked": true,
+  "transform": "Exact uniform scale 1.0; source x-right/y-down; no source-image edits.",
+  "font": "msyh.ttc",
+  "files": [
+    {
+      "filename": "case-e-five-cycle.png",
+      "sha256": "df0745606e7c26d9326824119d336d44c3a9753d35ed7e047d797c3e8245dfe9",
+      "width_px": 1650,
+      "height_px": 950
+    },
+    {
+      "filename": "case-e-five-cycle.svg",
+      "sha256": "77b552045f37b98b816554aa1e1449dea53e1f27ce7baa6fa2fe66a921930c2a",
+      "width_px": 1650,
+      "height_px": 950
+    }
+  ]
+}

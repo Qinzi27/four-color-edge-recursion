@@ -1,0 +1,3904 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-18T14:06:34.780726+00:00",
+  "scope": "3 saved maps x 3 fixed one-cut methods; no continuation, backtracking, proof or production change",
+  "inputs": [
+    {
+      "filename": "manifest.json",
+      "sha256": "838458333c24993940b643685d3c669d5a6cc788ebcacff1aae33cf18fef7290"
+    },
+    {
+      "filename": "anchor-forest-continuation-2026-09-18-v2.json",
+      "sha256": "5a9c74f3225df4b4e72452f4671ded285f41616a03fd47fe1f28d7d642ad76ad"
+    }
+  ],
+  "source_sha256": {
+    "scripts/compare_local_marks.py": "ac99b172dec78e776489fc40765518fa484342ade20843d1ca8d719a9fc1112f",
+    "tests/test_local_marks.py": "acd8e9036a54166b6e6ce9b3b9f7d9de1cc7968e1bbd584634a5473978397e20",
+    "fourcolor/inherited_names.py": "235751061bc97b7cac9036890a29971c3d11688cad4aa628ceafa09412fd4c14",
+    "scripts/audit_retained_blocks.py": "be76a3a94cc9e2a473045b8575283ad84264247ae6ad494b3387aa92808fdb19"
+  },
+  "policy": {
+    "M1": "two current child candidate sets, lexicographic bounds then smallest name",
+    "M2": "M1, otherwise one fixed target and one old neighbor, smallest legal replacement",
+    "M3": "M1, otherwise same fixed target/blocker, one fixed two-name component; max 3 old sides and distance 2",
+    "no_retry": "no alternative target, second name, component or repair branch is tried",
+    "locality": "limits constrain changed old sides, not reading complete boundary constraints"
+  },
+  "summary": {
+    "maps": 3,
+    "one_cut_runs": 9,
+    "by_method": {
+      "M1_candidates": {
+        "split": 2,
+        "blocked": 1
+      },
+      "M2_one_neighbor": {
+        "split": 3
+      },
+      "M3_bounded_two_name": {
+        "split": 3
+      }
+    },
+    "M3_nontrivial_multiside_repairs": 0
+  },
+  "runs": [
+    {
+      "method": "M1_candidates",
+      "status": "split",
+      "parent": "root.r.l",
+      "s": 4,
+      "cut": [
+        [
+          187,
+          0
+        ],
+        [
+          187,
+          402
+        ]
+      ],
+      "candidates_before": [
+        {
+          "child_id": "root.r.l.r",
+          "bounds": [
+            0,
+            0,
+            187,
+            402
+          ],
+          "old_neighbor_ids": [
+            "outside",
+            "root.r.r.r"
+          ],
+          "R": [
+            1,
+            2
+          ],
+          "candidates": [
+            3
+          ]
+        },
+        {
+          "child_id": "root.r.l.l",
+          "bounds": [
+            187,
+            0,
+            415,
+            402
+          ],
+          "old_neighbor_ids": [
+            "outside",
+            "root.l",
+            "root.r.r.l",
+            "root.r.r.r"
+          ],
+          "R": [
+            1,
+            2,
+            3
+          ],
+          "candidates": []
+        }
+      ],
+      "changed_old_ids": [],
+      "changed_old_count": 0,
+      "touched_mother_count": 3,
+      "profile_change_record_count": 8,
+      "repair": {
+        "needed": false,
+        "attempted": false,
+        "reason": "no_repair_needed"
+      },
+      "decision_order": "new-child bounds lexicographic, then smallest candidate name",
+      "validation_scope": "all actual old/final boundaries; mutation support is separately bounded",
+      "used_stage": "M1_direct",
+      "new_name": 3,
+      "new_name_child_id": "root.r.l.r",
+      "new_name_child_bounds": [
+        0,
+        0,
+        187,
+        402
+      ],
+      "actual_inherit": "left",
+      "old_name_changes": [],
+      "final_state": {
+        "width": 900,
+        "height": 600,
+        "cuts": [
+          [
+            [
+              415,
+              0
+            ],
+            [
+              415,
+              600
+            ]
+          ],
+          [
+            [
+              0,
+              402
+            ],
+            [
+              415,
+              402
+            ]
+          ],
+          [
+            [
+              233,
+              402
+            ],
+            [
+              233,
+              600
+            ]
+          ],
+          [
+            [
+              187,
+              0
+            ],
+            [
+              187,
+              402
+            ]
+          ]
+        ],
+        "sides": [
+          {
+            "id": "root.l",
+            "bounds": [
+              415,
+              0,
+              900,
+              600
+            ],
+            "symbol": 2
+          },
+          {
+            "id": "root.r.r.l",
+            "bounds": [
+              233,
+              402,
+              415,
+              600
+            ],
+            "symbol": 3
+          },
+          {
+            "id": "root.r.r.r",
+            "bounds": [
+              0,
+              402,
+              233,
+              600
+            ],
+            "symbol": 2
+          },
+          {
+            "id": "root.r.l.l",
+            "bounds": [
+              187,
+              0,
+              415,
+              402
+            ],
+            "symbol": 4
+          },
+          {
+            "id": "root.r.l.r",
+            "bounds": [
+              0,
+              0,
+              187,
+              402
+            ],
+            "symbol": 3
+          }
+        ]
+      },
+      "boundary_audit": {
+        "all_constraints_valid": true,
+        "unique_adjacencies_checked": 12,
+        "independent_rectangle_adjacency": true,
+        "production_boundary_crosscheck": true
+      },
+      "profile_count_definition": "union of exact mother/span keys; subdivision counts removed and added records",
+      "profile_changes": [
+        {
+          "mother": "cut-2",
+          "segment": [
+            [
+              0,
+              402
+            ],
+            [
+              187,
+              402
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            3,
+            2
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "cut-2",
+          "segment": [
+            [
+              0,
+              402
+            ],
+            [
+              233,
+              402
+            ]
+          ],
+          "before_pair": [
+            4,
+            2
+          ],
+          "after_pair": null,
+          "kind": "removed"
+        },
+        {
+          "mother": "cut-2",
+          "segment": [
+            [
+              187,
+              402
+            ],
+            [
+              233,
+              402
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            4,
+            2
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "cut-4",
+          "segment": [
+            [
+              187,
+              0
+            ],
+            [
+              187,
+              402
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            4,
+            3
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "frame",
+          "segment": [
+            [
+              0,
+              0
+            ],
+            [
+              187,
+              0
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            1,
+            3
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "frame",
+          "segment": [
+            [
+              0,
+              0
+            ],
+            [
+              415,
+              0
+            ]
+          ],
+          "before_pair": [
+            1,
+            4
+          ],
+          "after_pair": null,
+          "kind": "removed"
+        },
+        {
+          "mother": "frame",
+          "segment": [
+            [
+              0,
+              402
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "before_pair": [
+            1,
+            4
+          ],
+          "after_pair": [
+            1,
+            3
+          ],
+          "kind": "renamed"
+        },
+        {
+          "mother": "frame",
+          "segment": [
+            [
+              187,
+              0
+            ],
+            [
+              415,
+              0
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            1,
+            4
+          ],
+          "kind": "added"
+        }
+      ],
+      "touched_mothers": [
+        "cut-2",
+        "cut-4",
+        "frame"
+      ],
+      "touched_existing_mother_count": 2,
+      "case": "A",
+      "seed": 20260923,
+      "original_inherit": "right",
+      "stopped_step": 4,
+      "input_state": {
+        "width": 900,
+        "height": 600,
+        "cuts": [
+          [
+            [
+              415,
+              0
+            ],
+            [
+              415,
+              600
+            ]
+          ],
+          [
+            [
+              0,
+              402
+            ],
+            [
+              415,
+              402
+            ]
+          ],
+          [
+            [
+              233,
+              402
+            ],
+            [
+              233,
+              600
+            ]
+          ]
+        ],
+        "sides": [
+          {
+            "id": "root.l",
+            "bounds": [
+              415,
+              0,
+              900,
+              600
+            ],
+            "symbol": 2
+          },
+          {
+            "id": "root.r.l",
+            "bounds": [
+              0,
+              0,
+              415,
+              402
+            ],
+            "symbol": 4
+          },
+          {
+            "id": "root.r.r.l",
+            "bounds": [
+              233,
+              402,
+              415,
+              600
+            ],
+            "symbol": 3
+          },
+          {
+            "id": "root.r.r.r",
+            "bounds": [
+              0,
+              402,
+              233,
+              600
+            ],
+            "symbol": 2
+          }
+        ]
+      }
+    },
+    {
+      "method": "M2_one_neighbor",
+      "status": "split",
+      "parent": "root.r.l",
+      "s": 4,
+      "cut": [
+        [
+          187,
+          0
+        ],
+        [
+          187,
+          402
+        ]
+      ],
+      "candidates_before": [
+        {
+          "child_id": "root.r.l.r",
+          "bounds": [
+            0,
+            0,
+            187,
+            402
+          ],
+          "old_neighbor_ids": [
+            "outside",
+            "root.r.r.r"
+          ],
+          "R": [
+            1,
+            2
+          ],
+          "candidates": [
+            3
+          ]
+        },
+        {
+          "child_id": "root.r.l.l",
+          "bounds": [
+            187,
+            0,
+            415,
+            402
+          ],
+          "old_neighbor_ids": [
+            "outside",
+            "root.l",
+            "root.r.r.l",
+            "root.r.r.r"
+          ],
+          "R": [
+            1,
+            2,
+            3
+          ],
+          "candidates": []
+        }
+      ],
+      "changed_old_ids": [],
+      "changed_old_count": 0,
+      "touched_mother_count": 3,
+      "profile_change_record_count": 8,
+      "repair": {
+        "needed": false,
+        "attempted": false,
+        "reason": "no_repair_needed"
+      },
+      "decision_order": "new-child bounds lexicographic, then smallest candidate name",
+      "validation_scope": "all actual old/final boundaries; mutation support is separately bounded",
+      "used_stage": "M1_direct",
+      "new_name": 3,
+      "new_name_child_id": "root.r.l.r",
+      "new_name_child_bounds": [
+        0,
+        0,
+        187,
+        402
+      ],
+      "actual_inherit": "left",
+      "old_name_changes": [],
+      "final_state": {
+        "width": 900,
+        "height": 600,
+        "cuts": [
+          [
+            [
+              415,
+              0
+            ],
+            [
+              415,
+              600
+            ]
+          ],
+          [
+            [
+              0,
+              402
+            ],
+            [
+              415,
+              402
+            ]
+          ],
+          [
+            [
+              233,
+              402
+            ],
+            [
+              233,
+              600
+            ]
+          ],
+          [
+            [
+              187,
+              0
+            ],
+            [
+              187,
+              402
+            ]
+          ]
+        ],
+        "sides": [
+          {
+            "id": "root.l",
+            "bounds": [
+              415,
+              0,
+              900,
+              600
+            ],
+            "symbol": 2
+          },
+          {
+            "id": "root.r.r.l",
+            "bounds": [
+              233,
+              402,
+              415,
+              600
+            ],
+            "symbol": 3
+          },
+          {
+            "id": "root.r.r.r",
+            "bounds": [
+              0,
+              402,
+              233,
+              600
+            ],
+            "symbol": 2
+          },
+          {
+            "id": "root.r.l.l",
+            "bounds": [
+              187,
+              0,
+              415,
+              402
+            ],
+            "symbol": 4
+          },
+          {
+            "id": "root.r.l.r",
+            "bounds": [
+              0,
+              0,
+              187,
+              402
+            ],
+            "symbol": 3
+          }
+        ]
+      },
+      "boundary_audit": {
+        "all_constraints_valid": true,
+        "unique_adjacencies_checked": 12,
+        "independent_rectangle_adjacency": true,
+        "production_boundary_crosscheck": true
+      },
+      "profile_count_definition": "union of exact mother/span keys; subdivision counts removed and added records",
+      "profile_changes": [
+        {
+          "mother": "cut-2",
+          "segment": [
+            [
+              0,
+              402
+            ],
+            [
+              187,
+              402
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            3,
+            2
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "cut-2",
+          "segment": [
+            [
+              0,
+              402
+            ],
+            [
+              233,
+              402
+            ]
+          ],
+          "before_pair": [
+            4,
+            2
+          ],
+          "after_pair": null,
+          "kind": "removed"
+        },
+        {
+          "mother": "cut-2",
+          "segment": [
+            [
+              187,
+              402
+            ],
+            [
+              233,
+              402
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            4,
+            2
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "cut-4",
+          "segment": [
+            [
+              187,
+              0
+            ],
+            [
+              187,
+              402
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            4,
+            3
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "frame",
+          "segment": [
+            [
+              0,
+              0
+            ],
+            [
+              187,
+              0
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            1,
+            3
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "frame",
+          "segment": [
+            [
+              0,
+              0
+            ],
+            [
+              415,
+              0
+            ]
+          ],
+          "before_pair": [
+            1,
+            4
+          ],
+          "after_pair": null,
+          "kind": "removed"
+        },
+        {
+          "mother": "frame",
+          "segment": [
+            [
+              0,
+              402
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "before_pair": [
+            1,
+            4
+          ],
+          "after_pair": [
+            1,
+            3
+          ],
+          "kind": "renamed"
+        },
+        {
+          "mother": "frame",
+          "segment": [
+            [
+              187,
+              0
+            ],
+            [
+              415,
+              0
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            1,
+            4
+          ],
+          "kind": "added"
+        }
+      ],
+      "touched_mothers": [
+        "cut-2",
+        "cut-4",
+        "frame"
+      ],
+      "touched_existing_mother_count": 2,
+      "case": "A",
+      "seed": 20260923,
+      "original_inherit": "right",
+      "stopped_step": 4,
+      "input_state": {
+        "width": 900,
+        "height": 600,
+        "cuts": [
+          [
+            [
+              415,
+              0
+            ],
+            [
+              415,
+              600
+            ]
+          ],
+          [
+            [
+              0,
+              402
+            ],
+            [
+              415,
+              402
+            ]
+          ],
+          [
+            [
+              233,
+              402
+            ],
+            [
+              233,
+              600
+            ]
+          ]
+        ],
+        "sides": [
+          {
+            "id": "root.l",
+            "bounds": [
+              415,
+              0,
+              900,
+              600
+            ],
+            "symbol": 2
+          },
+          {
+            "id": "root.r.l",
+            "bounds": [
+              0,
+              0,
+              415,
+              402
+            ],
+            "symbol": 4
+          },
+          {
+            "id": "root.r.r.l",
+            "bounds": [
+              233,
+              402,
+              415,
+              600
+            ],
+            "symbol": 3
+          },
+          {
+            "id": "root.r.r.r",
+            "bounds": [
+              0,
+              402,
+              233,
+              600
+            ],
+            "symbol": 2
+          }
+        ]
+      }
+    },
+    {
+      "method": "M3_bounded_two_name",
+      "status": "split",
+      "parent": "root.r.l",
+      "s": 4,
+      "cut": [
+        [
+          187,
+          0
+        ],
+        [
+          187,
+          402
+        ]
+      ],
+      "candidates_before": [
+        {
+          "child_id": "root.r.l.r",
+          "bounds": [
+            0,
+            0,
+            187,
+            402
+          ],
+          "old_neighbor_ids": [
+            "outside",
+            "root.r.r.r"
+          ],
+          "R": [
+            1,
+            2
+          ],
+          "candidates": [
+            3
+          ]
+        },
+        {
+          "child_id": "root.r.l.l",
+          "bounds": [
+            187,
+            0,
+            415,
+            402
+          ],
+          "old_neighbor_ids": [
+            "outside",
+            "root.l",
+            "root.r.r.l",
+            "root.r.r.r"
+          ],
+          "R": [
+            1,
+            2,
+            3
+          ],
+          "candidates": []
+        }
+      ],
+      "changed_old_ids": [],
+      "changed_old_count": 0,
+      "touched_mother_count": 3,
+      "profile_change_record_count": 8,
+      "repair": {
+        "needed": false,
+        "attempted": false,
+        "reason": "no_repair_needed"
+      },
+      "decision_order": "new-child bounds lexicographic, then smallest candidate name",
+      "validation_scope": "all actual old/final boundaries; mutation support is separately bounded",
+      "used_stage": "M1_direct",
+      "new_name": 3,
+      "new_name_child_id": "root.r.l.r",
+      "new_name_child_bounds": [
+        0,
+        0,
+        187,
+        402
+      ],
+      "actual_inherit": "left",
+      "old_name_changes": [],
+      "final_state": {
+        "width": 900,
+        "height": 600,
+        "cuts": [
+          [
+            [
+              415,
+              0
+            ],
+            [
+              415,
+              600
+            ]
+          ],
+          [
+            [
+              0,
+              402
+            ],
+            [
+              415,
+              402
+            ]
+          ],
+          [
+            [
+              233,
+              402
+            ],
+            [
+              233,
+              600
+            ]
+          ],
+          [
+            [
+              187,
+              0
+            ],
+            [
+              187,
+              402
+            ]
+          ]
+        ],
+        "sides": [
+          {
+            "id": "root.l",
+            "bounds": [
+              415,
+              0,
+              900,
+              600
+            ],
+            "symbol": 2
+          },
+          {
+            "id": "root.r.r.l",
+            "bounds": [
+              233,
+              402,
+              415,
+              600
+            ],
+            "symbol": 3
+          },
+          {
+            "id": "root.r.r.r",
+            "bounds": [
+              0,
+              402,
+              233,
+              600
+            ],
+            "symbol": 2
+          },
+          {
+            "id": "root.r.l.l",
+            "bounds": [
+              187,
+              0,
+              415,
+              402
+            ],
+            "symbol": 4
+          },
+          {
+            "id": "root.r.l.r",
+            "bounds": [
+              0,
+              0,
+              187,
+              402
+            ],
+            "symbol": 3
+          }
+        ]
+      },
+      "boundary_audit": {
+        "all_constraints_valid": true,
+        "unique_adjacencies_checked": 12,
+        "independent_rectangle_adjacency": true,
+        "production_boundary_crosscheck": true
+      },
+      "profile_count_definition": "union of exact mother/span keys; subdivision counts removed and added records",
+      "profile_changes": [
+        {
+          "mother": "cut-2",
+          "segment": [
+            [
+              0,
+              402
+            ],
+            [
+              187,
+              402
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            3,
+            2
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "cut-2",
+          "segment": [
+            [
+              0,
+              402
+            ],
+            [
+              233,
+              402
+            ]
+          ],
+          "before_pair": [
+            4,
+            2
+          ],
+          "after_pair": null,
+          "kind": "removed"
+        },
+        {
+          "mother": "cut-2",
+          "segment": [
+            [
+              187,
+              402
+            ],
+            [
+              233,
+              402
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            4,
+            2
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "cut-4",
+          "segment": [
+            [
+              187,
+              0
+            ],
+            [
+              187,
+              402
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            4,
+            3
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "frame",
+          "segment": [
+            [
+              0,
+              0
+            ],
+            [
+              187,
+              0
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            1,
+            3
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "frame",
+          "segment": [
+            [
+              0,
+              0
+            ],
+            [
+              415,
+              0
+            ]
+          ],
+          "before_pair": [
+            1,
+            4
+          ],
+          "after_pair": null,
+          "kind": "removed"
+        },
+        {
+          "mother": "frame",
+          "segment": [
+            [
+              0,
+              402
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "before_pair": [
+            1,
+            4
+          ],
+          "after_pair": [
+            1,
+            3
+          ],
+          "kind": "renamed"
+        },
+        {
+          "mother": "frame",
+          "segment": [
+            [
+              187,
+              0
+            ],
+            [
+              415,
+              0
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            1,
+            4
+          ],
+          "kind": "added"
+        }
+      ],
+      "touched_mothers": [
+        "cut-2",
+        "cut-4",
+        "frame"
+      ],
+      "touched_existing_mother_count": 2,
+      "case": "A",
+      "seed": 20260923,
+      "original_inherit": "right",
+      "stopped_step": 4,
+      "input_state": {
+        "width": 900,
+        "height": 600,
+        "cuts": [
+          [
+            [
+              415,
+              0
+            ],
+            [
+              415,
+              600
+            ]
+          ],
+          [
+            [
+              0,
+              402
+            ],
+            [
+              415,
+              402
+            ]
+          ],
+          [
+            [
+              233,
+              402
+            ],
+            [
+              233,
+              600
+            ]
+          ]
+        ],
+        "sides": [
+          {
+            "id": "root.l",
+            "bounds": [
+              415,
+              0,
+              900,
+              600
+            ],
+            "symbol": 2
+          },
+          {
+            "id": "root.r.l",
+            "bounds": [
+              0,
+              0,
+              415,
+              402
+            ],
+            "symbol": 4
+          },
+          {
+            "id": "root.r.r.l",
+            "bounds": [
+              233,
+              402,
+              415,
+              600
+            ],
+            "symbol": 3
+          },
+          {
+            "id": "root.r.r.r",
+            "bounds": [
+              0,
+              402,
+              233,
+              600
+            ],
+            "symbol": 2
+          }
+        ]
+      }
+    },
+    {
+      "method": "M1_candidates",
+      "status": "split",
+      "parent": "root.l.r.r",
+      "s": 4,
+      "cut": [
+        [
+          160,
+          172
+        ],
+        [
+          160,
+          327
+        ]
+      ],
+      "candidates_before": [
+        {
+          "child_id": "root.l.r.r.r",
+          "bounds": [
+            0,
+            172,
+            160,
+            327
+          ],
+          "old_neighbor_ids": [
+            "outside",
+            "root.l.r.l.r",
+            "root.r"
+          ],
+          "R": [
+            1,
+            2,
+            3
+          ],
+          "candidates": []
+        },
+        {
+          "child_id": "root.l.r.r.l",
+          "bounds": [
+            160,
+            172,
+            518,
+            327
+          ],
+          "old_neighbor_ids": [
+            "root.l.l",
+            "root.l.r.l.l",
+            "root.l.r.l.r",
+            "root.r"
+          ],
+          "R": [
+            2,
+            3
+          ],
+          "candidates": [
+            1
+          ]
+        }
+      ],
+      "changed_old_ids": [],
+      "changed_old_count": 0,
+      "touched_mother_count": 4,
+      "profile_change_record_count": 9,
+      "repair": {
+        "needed": false,
+        "attempted": false,
+        "reason": "no_repair_needed"
+      },
+      "decision_order": "new-child bounds lexicographic, then smallest candidate name",
+      "validation_scope": "all actual old/final boundaries; mutation support is separately bounded",
+      "used_stage": "M1_direct",
+      "new_name": 1,
+      "new_name_child_id": "root.l.r.r.l",
+      "new_name_child_bounds": [
+        160,
+        172,
+        518,
+        327
+      ],
+      "actual_inherit": "right",
+      "old_name_changes": [],
+      "final_state": {
+        "width": 900,
+        "height": 600,
+        "cuts": [
+          [
+            [
+              0,
+              327
+            ],
+            [
+              900,
+              327
+            ]
+          ],
+          [
+            [
+              518,
+              0
+            ],
+            [
+              518,
+              327
+            ]
+          ],
+          [
+            [
+              0,
+              172
+            ],
+            [
+              518,
+              172
+            ]
+          ],
+          [
+            [
+              279,
+              0
+            ],
+            [
+              279,
+              172
+            ]
+          ],
+          [
+            [
+              160,
+              172
+            ],
+            [
+              160,
+              327
+            ]
+          ]
+        ],
+        "sides": [
+          {
+            "id": "root.r",
+            "bounds": [
+              0,
+              327,
+              900,
+              600
+            ],
+            "symbol": 3
+          },
+          {
+            "id": "root.l.l",
+            "bounds": [
+              518,
+              0,
+              900,
+              327
+            ],
+            "symbol": 2
+          },
+          {
+            "id": "root.l.r.l.l",
+            "bounds": [
+              279,
+              0,
+              518,
+              172
+            ],
+            "symbol": 3
+          },
+          {
+            "id": "root.l.r.l.r",
+            "bounds": [
+              0,
+              0,
+              279,
+              172
+            ],
+            "symbol": 2
+          },
+          {
+            "id": "root.l.r.r.l",
+            "bounds": [
+              160,
+              172,
+              518,
+              327
+            ],
+            "symbol": 1
+          },
+          {
+            "id": "root.l.r.r.r",
+            "bounds": [
+              0,
+              172,
+              160,
+              327
+            ],
+            "symbol": 4
+          }
+        ]
+      },
+      "boundary_audit": {
+        "all_constraints_valid": true,
+        "unique_adjacencies_checked": 15,
+        "independent_rectangle_adjacency": true,
+        "production_boundary_crosscheck": true
+      },
+      "profile_count_definition": "union of exact mother/span keys; subdivision counts removed and added records",
+      "profile_changes": [
+        {
+          "mother": "cut-1",
+          "segment": [
+            [
+              0,
+              327
+            ],
+            [
+              160,
+              327
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            4,
+            3
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "cut-1",
+          "segment": [
+            [
+              0,
+              327
+            ],
+            [
+              518,
+              327
+            ]
+          ],
+          "before_pair": [
+            4,
+            3
+          ],
+          "after_pair": null,
+          "kind": "removed"
+        },
+        {
+          "mother": "cut-1",
+          "segment": [
+            [
+              160,
+              327
+            ],
+            [
+              518,
+              327
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            1,
+            3
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "cut-2",
+          "segment": [
+            [
+              518,
+              172
+            ],
+            [
+              518,
+              327
+            ]
+          ],
+          "before_pair": [
+            2,
+            4
+          ],
+          "after_pair": [
+            2,
+            1
+          ],
+          "kind": "renamed"
+        },
+        {
+          "mother": "cut-3",
+          "segment": [
+            [
+              0,
+              172
+            ],
+            [
+              160,
+              172
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            2,
+            4
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "cut-3",
+          "segment": [
+            [
+              0,
+              172
+            ],
+            [
+              279,
+              172
+            ]
+          ],
+          "before_pair": [
+            2,
+            4
+          ],
+          "after_pair": null,
+          "kind": "removed"
+        },
+        {
+          "mother": "cut-3",
+          "segment": [
+            [
+              160,
+              172
+            ],
+            [
+              279,
+              172
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            2,
+            1
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "cut-3",
+          "segment": [
+            [
+              279,
+              172
+            ],
+            [
+              518,
+              172
+            ]
+          ],
+          "before_pair": [
+            3,
+            4
+          ],
+          "after_pair": [
+            3,
+            1
+          ],
+          "kind": "renamed"
+        },
+        {
+          "mother": "cut-5",
+          "segment": [
+            [
+              160,
+              172
+            ],
+            [
+              160,
+              327
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            1,
+            4
+          ],
+          "kind": "added"
+        }
+      ],
+      "touched_mothers": [
+        "cut-1",
+        "cut-2",
+        "cut-3",
+        "cut-5"
+      ],
+      "touched_existing_mother_count": 3,
+      "case": "B",
+      "seed": 20261027,
+      "original_inherit": "left",
+      "stopped_step": 5,
+      "input_state": {
+        "width": 900,
+        "height": 600,
+        "cuts": [
+          [
+            [
+              0,
+              327
+            ],
+            [
+              900,
+              327
+            ]
+          ],
+          [
+            [
+              518,
+              0
+            ],
+            [
+              518,
+              327
+            ]
+          ],
+          [
+            [
+              0,
+              172
+            ],
+            [
+              518,
+              172
+            ]
+          ],
+          [
+            [
+              279,
+              0
+            ],
+            [
+              279,
+              172
+            ]
+          ]
+        ],
+        "sides": [
+          {
+            "id": "root.r",
+            "bounds": [
+              0,
+              327,
+              900,
+              600
+            ],
+            "symbol": 3
+          },
+          {
+            "id": "root.l.l",
+            "bounds": [
+              518,
+              0,
+              900,
+              327
+            ],
+            "symbol": 2
+          },
+          {
+            "id": "root.l.r.r",
+            "bounds": [
+              0,
+              172,
+              518,
+              327
+            ],
+            "symbol": 4
+          },
+          {
+            "id": "root.l.r.l.l",
+            "bounds": [
+              279,
+              0,
+              518,
+              172
+            ],
+            "symbol": 3
+          },
+          {
+            "id": "root.l.r.l.r",
+            "bounds": [
+              0,
+              0,
+              279,
+              172
+            ],
+            "symbol": 2
+          }
+        ]
+      }
+    },
+    {
+      "method": "M2_one_neighbor",
+      "status": "split",
+      "parent": "root.l.r.r",
+      "s": 4,
+      "cut": [
+        [
+          160,
+          172
+        ],
+        [
+          160,
+          327
+        ]
+      ],
+      "candidates_before": [
+        {
+          "child_id": "root.l.r.r.r",
+          "bounds": [
+            0,
+            172,
+            160,
+            327
+          ],
+          "old_neighbor_ids": [
+            "outside",
+            "root.l.r.l.r",
+            "root.r"
+          ],
+          "R": [
+            1,
+            2,
+            3
+          ],
+          "candidates": []
+        },
+        {
+          "child_id": "root.l.r.r.l",
+          "bounds": [
+            160,
+            172,
+            518,
+            327
+          ],
+          "old_neighbor_ids": [
+            "root.l.l",
+            "root.l.r.l.l",
+            "root.l.r.l.r",
+            "root.r"
+          ],
+          "R": [
+            2,
+            3
+          ],
+          "candidates": [
+            1
+          ]
+        }
+      ],
+      "changed_old_ids": [],
+      "changed_old_count": 0,
+      "touched_mother_count": 4,
+      "profile_change_record_count": 9,
+      "repair": {
+        "needed": false,
+        "attempted": false,
+        "reason": "no_repair_needed"
+      },
+      "decision_order": "new-child bounds lexicographic, then smallest candidate name",
+      "validation_scope": "all actual old/final boundaries; mutation support is separately bounded",
+      "used_stage": "M1_direct",
+      "new_name": 1,
+      "new_name_child_id": "root.l.r.r.l",
+      "new_name_child_bounds": [
+        160,
+        172,
+        518,
+        327
+      ],
+      "actual_inherit": "right",
+      "old_name_changes": [],
+      "final_state": {
+        "width": 900,
+        "height": 600,
+        "cuts": [
+          [
+            [
+              0,
+              327
+            ],
+            [
+              900,
+              327
+            ]
+          ],
+          [
+            [
+              518,
+              0
+            ],
+            [
+              518,
+              327
+            ]
+          ],
+          [
+            [
+              0,
+              172
+            ],
+            [
+              518,
+              172
+            ]
+          ],
+          [
+            [
+              279,
+              0
+            ],
+            [
+              279,
+              172
+            ]
+          ],
+          [
+            [
+              160,
+              172
+            ],
+            [
+              160,
+              327
+            ]
+          ]
+        ],
+        "sides": [
+          {
+            "id": "root.r",
+            "bounds": [
+              0,
+              327,
+              900,
+              600
+            ],
+            "symbol": 3
+          },
+          {
+            "id": "root.l.l",
+            "bounds": [
+              518,
+              0,
+              900,
+              327
+            ],
+            "symbol": 2
+          },
+          {
+            "id": "root.l.r.l.l",
+            "bounds": [
+              279,
+              0,
+              518,
+              172
+            ],
+            "symbol": 3
+          },
+          {
+            "id": "root.l.r.l.r",
+            "bounds": [
+              0,
+              0,
+              279,
+              172
+            ],
+            "symbol": 2
+          },
+          {
+            "id": "root.l.r.r.l",
+            "bounds": [
+              160,
+              172,
+              518,
+              327
+            ],
+            "symbol": 1
+          },
+          {
+            "id": "root.l.r.r.r",
+            "bounds": [
+              0,
+              172,
+              160,
+              327
+            ],
+            "symbol": 4
+          }
+        ]
+      },
+      "boundary_audit": {
+        "all_constraints_valid": true,
+        "unique_adjacencies_checked": 15,
+        "independent_rectangle_adjacency": true,
+        "production_boundary_crosscheck": true
+      },
+      "profile_count_definition": "union of exact mother/span keys; subdivision counts removed and added records",
+      "profile_changes": [
+        {
+          "mother": "cut-1",
+          "segment": [
+            [
+              0,
+              327
+            ],
+            [
+              160,
+              327
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            4,
+            3
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "cut-1",
+          "segment": [
+            [
+              0,
+              327
+            ],
+            [
+              518,
+              327
+            ]
+          ],
+          "before_pair": [
+            4,
+            3
+          ],
+          "after_pair": null,
+          "kind": "removed"
+        },
+        {
+          "mother": "cut-1",
+          "segment": [
+            [
+              160,
+              327
+            ],
+            [
+              518,
+              327
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            1,
+            3
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "cut-2",
+          "segment": [
+            [
+              518,
+              172
+            ],
+            [
+              518,
+              327
+            ]
+          ],
+          "before_pair": [
+            2,
+            4
+          ],
+          "after_pair": [
+            2,
+            1
+          ],
+          "kind": "renamed"
+        },
+        {
+          "mother": "cut-3",
+          "segment": [
+            [
+              0,
+              172
+            ],
+            [
+              160,
+              172
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            2,
+            4
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "cut-3",
+          "segment": [
+            [
+              0,
+              172
+            ],
+            [
+              279,
+              172
+            ]
+          ],
+          "before_pair": [
+            2,
+            4
+          ],
+          "after_pair": null,
+          "kind": "removed"
+        },
+        {
+          "mother": "cut-3",
+          "segment": [
+            [
+              160,
+              172
+            ],
+            [
+              279,
+              172
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            2,
+            1
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "cut-3",
+          "segment": [
+            [
+              279,
+              172
+            ],
+            [
+              518,
+              172
+            ]
+          ],
+          "before_pair": [
+            3,
+            4
+          ],
+          "after_pair": [
+            3,
+            1
+          ],
+          "kind": "renamed"
+        },
+        {
+          "mother": "cut-5",
+          "segment": [
+            [
+              160,
+              172
+            ],
+            [
+              160,
+              327
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            1,
+            4
+          ],
+          "kind": "added"
+        }
+      ],
+      "touched_mothers": [
+        "cut-1",
+        "cut-2",
+        "cut-3",
+        "cut-5"
+      ],
+      "touched_existing_mother_count": 3,
+      "case": "B",
+      "seed": 20261027,
+      "original_inherit": "left",
+      "stopped_step": 5,
+      "input_state": {
+        "width": 900,
+        "height": 600,
+        "cuts": [
+          [
+            [
+              0,
+              327
+            ],
+            [
+              900,
+              327
+            ]
+          ],
+          [
+            [
+              518,
+              0
+            ],
+            [
+              518,
+              327
+            ]
+          ],
+          [
+            [
+              0,
+              172
+            ],
+            [
+              518,
+              172
+            ]
+          ],
+          [
+            [
+              279,
+              0
+            ],
+            [
+              279,
+              172
+            ]
+          ]
+        ],
+        "sides": [
+          {
+            "id": "root.r",
+            "bounds": [
+              0,
+              327,
+              900,
+              600
+            ],
+            "symbol": 3
+          },
+          {
+            "id": "root.l.l",
+            "bounds": [
+              518,
+              0,
+              900,
+              327
+            ],
+            "symbol": 2
+          },
+          {
+            "id": "root.l.r.r",
+            "bounds": [
+              0,
+              172,
+              518,
+              327
+            ],
+            "symbol": 4
+          },
+          {
+            "id": "root.l.r.l.l",
+            "bounds": [
+              279,
+              0,
+              518,
+              172
+            ],
+            "symbol": 3
+          },
+          {
+            "id": "root.l.r.l.r",
+            "bounds": [
+              0,
+              0,
+              279,
+              172
+            ],
+            "symbol": 2
+          }
+        ]
+      }
+    },
+    {
+      "method": "M3_bounded_two_name",
+      "status": "split",
+      "parent": "root.l.r.r",
+      "s": 4,
+      "cut": [
+        [
+          160,
+          172
+        ],
+        [
+          160,
+          327
+        ]
+      ],
+      "candidates_before": [
+        {
+          "child_id": "root.l.r.r.r",
+          "bounds": [
+            0,
+            172,
+            160,
+            327
+          ],
+          "old_neighbor_ids": [
+            "outside",
+            "root.l.r.l.r",
+            "root.r"
+          ],
+          "R": [
+            1,
+            2,
+            3
+          ],
+          "candidates": []
+        },
+        {
+          "child_id": "root.l.r.r.l",
+          "bounds": [
+            160,
+            172,
+            518,
+            327
+          ],
+          "old_neighbor_ids": [
+            "root.l.l",
+            "root.l.r.l.l",
+            "root.l.r.l.r",
+            "root.r"
+          ],
+          "R": [
+            2,
+            3
+          ],
+          "candidates": [
+            1
+          ]
+        }
+      ],
+      "changed_old_ids": [],
+      "changed_old_count": 0,
+      "touched_mother_count": 4,
+      "profile_change_record_count": 9,
+      "repair": {
+        "needed": false,
+        "attempted": false,
+        "reason": "no_repair_needed"
+      },
+      "decision_order": "new-child bounds lexicographic, then smallest candidate name",
+      "validation_scope": "all actual old/final boundaries; mutation support is separately bounded",
+      "used_stage": "M1_direct",
+      "new_name": 1,
+      "new_name_child_id": "root.l.r.r.l",
+      "new_name_child_bounds": [
+        160,
+        172,
+        518,
+        327
+      ],
+      "actual_inherit": "right",
+      "old_name_changes": [],
+      "final_state": {
+        "width": 900,
+        "height": 600,
+        "cuts": [
+          [
+            [
+              0,
+              327
+            ],
+            [
+              900,
+              327
+            ]
+          ],
+          [
+            [
+              518,
+              0
+            ],
+            [
+              518,
+              327
+            ]
+          ],
+          [
+            [
+              0,
+              172
+            ],
+            [
+              518,
+              172
+            ]
+          ],
+          [
+            [
+              279,
+              0
+            ],
+            [
+              279,
+              172
+            ]
+          ],
+          [
+            [
+              160,
+              172
+            ],
+            [
+              160,
+              327
+            ]
+          ]
+        ],
+        "sides": [
+          {
+            "id": "root.r",
+            "bounds": [
+              0,
+              327,
+              900,
+              600
+            ],
+            "symbol": 3
+          },
+          {
+            "id": "root.l.l",
+            "bounds": [
+              518,
+              0,
+              900,
+              327
+            ],
+            "symbol": 2
+          },
+          {
+            "id": "root.l.r.l.l",
+            "bounds": [
+              279,
+              0,
+              518,
+              172
+            ],
+            "symbol": 3
+          },
+          {
+            "id": "root.l.r.l.r",
+            "bounds": [
+              0,
+              0,
+              279,
+              172
+            ],
+            "symbol": 2
+          },
+          {
+            "id": "root.l.r.r.l",
+            "bounds": [
+              160,
+              172,
+              518,
+              327
+            ],
+            "symbol": 1
+          },
+          {
+            "id": "root.l.r.r.r",
+            "bounds": [
+              0,
+              172,
+              160,
+              327
+            ],
+            "symbol": 4
+          }
+        ]
+      },
+      "boundary_audit": {
+        "all_constraints_valid": true,
+        "unique_adjacencies_checked": 15,
+        "independent_rectangle_adjacency": true,
+        "production_boundary_crosscheck": true
+      },
+      "profile_count_definition": "union of exact mother/span keys; subdivision counts removed and added records",
+      "profile_changes": [
+        {
+          "mother": "cut-1",
+          "segment": [
+            [
+              0,
+              327
+            ],
+            [
+              160,
+              327
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            4,
+            3
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "cut-1",
+          "segment": [
+            [
+              0,
+              327
+            ],
+            [
+              518,
+              327
+            ]
+          ],
+          "before_pair": [
+            4,
+            3
+          ],
+          "after_pair": null,
+          "kind": "removed"
+        },
+        {
+          "mother": "cut-1",
+          "segment": [
+            [
+              160,
+              327
+            ],
+            [
+              518,
+              327
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            1,
+            3
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "cut-2",
+          "segment": [
+            [
+              518,
+              172
+            ],
+            [
+              518,
+              327
+            ]
+          ],
+          "before_pair": [
+            2,
+            4
+          ],
+          "after_pair": [
+            2,
+            1
+          ],
+          "kind": "renamed"
+        },
+        {
+          "mother": "cut-3",
+          "segment": [
+            [
+              0,
+              172
+            ],
+            [
+              160,
+              172
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            2,
+            4
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "cut-3",
+          "segment": [
+            [
+              0,
+              172
+            ],
+            [
+              279,
+              172
+            ]
+          ],
+          "before_pair": [
+            2,
+            4
+          ],
+          "after_pair": null,
+          "kind": "removed"
+        },
+        {
+          "mother": "cut-3",
+          "segment": [
+            [
+              160,
+              172
+            ],
+            [
+              279,
+              172
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            2,
+            1
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "cut-3",
+          "segment": [
+            [
+              279,
+              172
+            ],
+            [
+              518,
+              172
+            ]
+          ],
+          "before_pair": [
+            3,
+            4
+          ],
+          "after_pair": [
+            3,
+            1
+          ],
+          "kind": "renamed"
+        },
+        {
+          "mother": "cut-5",
+          "segment": [
+            [
+              160,
+              172
+            ],
+            [
+              160,
+              327
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            1,
+            4
+          ],
+          "kind": "added"
+        }
+      ],
+      "touched_mothers": [
+        "cut-1",
+        "cut-2",
+        "cut-3",
+        "cut-5"
+      ],
+      "touched_existing_mother_count": 3,
+      "case": "B",
+      "seed": 20261027,
+      "original_inherit": "left",
+      "stopped_step": 5,
+      "input_state": {
+        "width": 900,
+        "height": 600,
+        "cuts": [
+          [
+            [
+              0,
+              327
+            ],
+            [
+              900,
+              327
+            ]
+          ],
+          [
+            [
+              518,
+              0
+            ],
+            [
+              518,
+              327
+            ]
+          ],
+          [
+            [
+              0,
+              172
+            ],
+            [
+              518,
+              172
+            ]
+          ],
+          [
+            [
+              279,
+              0
+            ],
+            [
+              279,
+              172
+            ]
+          ]
+        ],
+        "sides": [
+          {
+            "id": "root.r",
+            "bounds": [
+              0,
+              327,
+              900,
+              600
+            ],
+            "symbol": 3
+          },
+          {
+            "id": "root.l.l",
+            "bounds": [
+              518,
+              0,
+              900,
+              327
+            ],
+            "symbol": 2
+          },
+          {
+            "id": "root.l.r.r",
+            "bounds": [
+              0,
+              172,
+              518,
+              327
+            ],
+            "symbol": 4
+          },
+          {
+            "id": "root.l.r.l.l",
+            "bounds": [
+              279,
+              0,
+              518,
+              172
+            ],
+            "symbol": 3
+          },
+          {
+            "id": "root.l.r.l.r",
+            "bounds": [
+              0,
+              0,
+              279,
+              172
+            ],
+            "symbol": 2
+          }
+        ]
+      }
+    },
+    {
+      "method": "M1_candidates",
+      "status": "blocked",
+      "parent": "root.r.l",
+      "s": 4,
+      "cut": [
+        [
+          442,
+          357
+        ],
+        [
+          442,
+          487
+        ]
+      ],
+      "candidates_before": [
+        {
+          "child_id": "root.r.l.r",
+          "bounds": [
+            0,
+            357,
+            442,
+            487
+          ],
+          "old_neighbor_ids": [
+            "outside",
+            "root.l",
+            "root.r.r"
+          ],
+          "R": [
+            1,
+            2,
+            3
+          ],
+          "candidates": []
+        },
+        {
+          "child_id": "root.r.l.l",
+          "bounds": [
+            442,
+            357,
+            900,
+            487
+          ],
+          "old_neighbor_ids": [
+            "outside",
+            "root.l",
+            "root.r.r"
+          ],
+          "R": [
+            1,
+            2,
+            3
+          ],
+          "candidates": []
+        }
+      ],
+      "changed_old_ids": [],
+      "changed_old_count": 0,
+      "touched_mother_count": 0,
+      "profile_change_record_count": 0,
+      "repair": {
+        "needed": false,
+        "attempted": false
+      },
+      "decision_order": "new-child bounds lexicographic, then smallest candidate name",
+      "validation_scope": "all actual old/final boundaries; mutation support is separately bounded",
+      "reason": "both_current_candidate_sets_empty",
+      "case": "C",
+      "seed": 20260960,
+      "original_inherit": "right",
+      "stopped_step": 3,
+      "input_state": {
+        "width": 900,
+        "height": 600,
+        "cuts": [
+          [
+            [
+              0,
+              357
+            ],
+            [
+              900,
+              357
+            ]
+          ],
+          [
+            [
+              0,
+              487
+            ],
+            [
+              900,
+              487
+            ]
+          ]
+        ],
+        "sides": [
+          {
+            "id": "root.l",
+            "bounds": [
+              0,
+              0,
+              900,
+              357
+            ],
+            "symbol": 3
+          },
+          {
+            "id": "root.r.l",
+            "bounds": [
+              0,
+              357,
+              900,
+              487
+            ],
+            "symbol": 4
+          },
+          {
+            "id": "root.r.r",
+            "bounds": [
+              0,
+              487,
+              900,
+              600
+            ],
+            "symbol": 2
+          }
+        ]
+      }
+    },
+    {
+      "method": "M2_one_neighbor",
+      "status": "split",
+      "parent": "root.r.l",
+      "s": 4,
+      "cut": [
+        [
+          442,
+          357
+        ],
+        [
+          442,
+          487
+        ]
+      ],
+      "candidates_before": [
+        {
+          "child_id": "root.r.l.r",
+          "bounds": [
+            0,
+            357,
+            442,
+            487
+          ],
+          "old_neighbor_ids": [
+            "outside",
+            "root.l",
+            "root.r.r"
+          ],
+          "R": [
+            1,
+            2,
+            3
+          ],
+          "candidates": []
+        },
+        {
+          "child_id": "root.r.l.l",
+          "bounds": [
+            442,
+            357,
+            900,
+            487
+          ],
+          "old_neighbor_ids": [
+            "outside",
+            "root.l",
+            "root.r.r"
+          ],
+          "R": [
+            1,
+            2,
+            3
+          ],
+          "candidates": []
+        }
+      ],
+      "changed_old_ids": [
+        "root.r.r"
+      ],
+      "changed_old_count": 1,
+      "touched_mother_count": 4,
+      "profile_change_record_count": 11,
+      "repair": {
+        "needed": true,
+        "attempted": true,
+        "target": 2,
+        "chosen_child_id": "root.r.l.r",
+        "blocker_ids": [
+          "root.r.r"
+        ],
+        "q": 3,
+        "component_ids": [
+          "root.r.r"
+        ]
+      },
+      "decision_order": "new-child bounds lexicographic, then smallest candidate name",
+      "validation_scope": "all actual old/final boundaries; mutation support is separately bounded",
+      "used_stage": "M2_one_neighbor",
+      "new_name": 2,
+      "new_name_child_id": "root.r.l.r",
+      "new_name_child_bounds": [
+        0,
+        357,
+        442,
+        487
+      ],
+      "actual_inherit": "left",
+      "old_name_changes": [
+        {
+          "id": "root.r.r",
+          "before": 2,
+          "after": 3
+        }
+      ],
+      "final_state": {
+        "width": 900,
+        "height": 600,
+        "cuts": [
+          [
+            [
+              0,
+              357
+            ],
+            [
+              900,
+              357
+            ]
+          ],
+          [
+            [
+              0,
+              487
+            ],
+            [
+              900,
+              487
+            ]
+          ],
+          [
+            [
+              442,
+              357
+            ],
+            [
+              442,
+              487
+            ]
+          ]
+        ],
+        "sides": [
+          {
+            "id": "root.l",
+            "bounds": [
+              0,
+              0,
+              900,
+              357
+            ],
+            "symbol": 3
+          },
+          {
+            "id": "root.r.r",
+            "bounds": [
+              0,
+              487,
+              900,
+              600
+            ],
+            "symbol": 3
+          },
+          {
+            "id": "root.r.l.l",
+            "bounds": [
+              442,
+              357,
+              900,
+              487
+            ],
+            "symbol": 4
+          },
+          {
+            "id": "root.r.l.r",
+            "bounds": [
+              0,
+              357,
+              442,
+              487
+            ],
+            "symbol": 2
+          }
+        ]
+      },
+      "boundary_audit": {
+        "all_constraints_valid": true,
+        "unique_adjacencies_checked": 9,
+        "independent_rectangle_adjacency": true,
+        "production_boundary_crosscheck": true
+      },
+      "profile_count_definition": "union of exact mother/span keys; subdivision counts removed and added records",
+      "profile_changes": [
+        {
+          "mother": "cut-1",
+          "segment": [
+            [
+              0,
+              357
+            ],
+            [
+              442,
+              357
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            3,
+            2
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "cut-1",
+          "segment": [
+            [
+              0,
+              357
+            ],
+            [
+              900,
+              357
+            ]
+          ],
+          "before_pair": [
+            3,
+            4
+          ],
+          "after_pair": null,
+          "kind": "removed"
+        },
+        {
+          "mother": "cut-1",
+          "segment": [
+            [
+              442,
+              357
+            ],
+            [
+              900,
+              357
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            3,
+            4
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "cut-2",
+          "segment": [
+            [
+              0,
+              487
+            ],
+            [
+              442,
+              487
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            2,
+            3
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "cut-2",
+          "segment": [
+            [
+              0,
+              487
+            ],
+            [
+              900,
+              487
+            ]
+          ],
+          "before_pair": [
+            4,
+            2
+          ],
+          "after_pair": null,
+          "kind": "removed"
+        },
+        {
+          "mother": "cut-2",
+          "segment": [
+            [
+              442,
+              487
+            ],
+            [
+              900,
+              487
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            4,
+            3
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "cut-3",
+          "segment": [
+            [
+              442,
+              357
+            ],
+            [
+              442,
+              487
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            4,
+            2
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "frame",
+          "segment": [
+            [
+              0,
+              487
+            ],
+            [
+              0,
+              357
+            ]
+          ],
+          "before_pair": [
+            1,
+            4
+          ],
+          "after_pair": [
+            1,
+            2
+          ],
+          "kind": "renamed"
+        },
+        {
+          "mother": "frame",
+          "segment": [
+            [
+              0,
+              600
+            ],
+            [
+              0,
+              487
+            ]
+          ],
+          "before_pair": [
+            1,
+            2
+          ],
+          "after_pair": [
+            1,
+            3
+          ],
+          "kind": "renamed"
+        },
+        {
+          "mother": "frame",
+          "segment": [
+            [
+              900,
+              487
+            ],
+            [
+              900,
+              600
+            ]
+          ],
+          "before_pair": [
+            1,
+            2
+          ],
+          "after_pair": [
+            1,
+            3
+          ],
+          "kind": "renamed"
+        },
+        {
+          "mother": "frame",
+          "segment": [
+            [
+              900,
+              600
+            ],
+            [
+              0,
+              600
+            ]
+          ],
+          "before_pair": [
+            1,
+            2
+          ],
+          "after_pair": [
+            1,
+            3
+          ],
+          "kind": "renamed"
+        }
+      ],
+      "touched_mothers": [
+        "cut-1",
+        "cut-2",
+        "cut-3",
+        "frame"
+      ],
+      "touched_existing_mother_count": 3,
+      "case": "C",
+      "seed": 20260960,
+      "original_inherit": "right",
+      "stopped_step": 3,
+      "input_state": {
+        "width": 900,
+        "height": 600,
+        "cuts": [
+          [
+            [
+              0,
+              357
+            ],
+            [
+              900,
+              357
+            ]
+          ],
+          [
+            [
+              0,
+              487
+            ],
+            [
+              900,
+              487
+            ]
+          ]
+        ],
+        "sides": [
+          {
+            "id": "root.l",
+            "bounds": [
+              0,
+              0,
+              900,
+              357
+            ],
+            "symbol": 3
+          },
+          {
+            "id": "root.r.l",
+            "bounds": [
+              0,
+              357,
+              900,
+              487
+            ],
+            "symbol": 4
+          },
+          {
+            "id": "root.r.r",
+            "bounds": [
+              0,
+              487,
+              900,
+              600
+            ],
+            "symbol": 2
+          }
+        ]
+      }
+    },
+    {
+      "method": "M3_bounded_two_name",
+      "status": "split",
+      "parent": "root.r.l",
+      "s": 4,
+      "cut": [
+        [
+          442,
+          357
+        ],
+        [
+          442,
+          487
+        ]
+      ],
+      "candidates_before": [
+        {
+          "child_id": "root.r.l.r",
+          "bounds": [
+            0,
+            357,
+            442,
+            487
+          ],
+          "old_neighbor_ids": [
+            "outside",
+            "root.l",
+            "root.r.r"
+          ],
+          "R": [
+            1,
+            2,
+            3
+          ],
+          "candidates": []
+        },
+        {
+          "child_id": "root.r.l.l",
+          "bounds": [
+            442,
+            357,
+            900,
+            487
+          ],
+          "old_neighbor_ids": [
+            "outside",
+            "root.l",
+            "root.r.r"
+          ],
+          "R": [
+            1,
+            2,
+            3
+          ],
+          "candidates": []
+        }
+      ],
+      "changed_old_ids": [
+        "root.r.r"
+      ],
+      "changed_old_count": 1,
+      "touched_mother_count": 4,
+      "profile_change_record_count": 11,
+      "repair": {
+        "needed": true,
+        "attempted": true,
+        "target": 2,
+        "chosen_child_id": "root.r.l.r",
+        "blocker_ids": [
+          "root.r.r"
+        ],
+        "component_ids": [
+          "root.r.r"
+        ],
+        "q": 3,
+        "max_old_sides": 3,
+        "max_old_graph_distance": 2
+      },
+      "decision_order": "new-child bounds lexicographic, then smallest candidate name",
+      "validation_scope": "all actual old/final boundaries; mutation support is separately bounded",
+      "used_stage": "M3_bounded_two_name",
+      "new_name": 2,
+      "new_name_child_id": "root.r.l.r",
+      "new_name_child_bounds": [
+        0,
+        357,
+        442,
+        487
+      ],
+      "actual_inherit": "left",
+      "old_name_changes": [
+        {
+          "id": "root.r.r",
+          "before": 2,
+          "after": 3
+        }
+      ],
+      "final_state": {
+        "width": 900,
+        "height": 600,
+        "cuts": [
+          [
+            [
+              0,
+              357
+            ],
+            [
+              900,
+              357
+            ]
+          ],
+          [
+            [
+              0,
+              487
+            ],
+            [
+              900,
+              487
+            ]
+          ],
+          [
+            [
+              442,
+              357
+            ],
+            [
+              442,
+              487
+            ]
+          ]
+        ],
+        "sides": [
+          {
+            "id": "root.l",
+            "bounds": [
+              0,
+              0,
+              900,
+              357
+            ],
+            "symbol": 3
+          },
+          {
+            "id": "root.r.r",
+            "bounds": [
+              0,
+              487,
+              900,
+              600
+            ],
+            "symbol": 3
+          },
+          {
+            "id": "root.r.l.l",
+            "bounds": [
+              442,
+              357,
+              900,
+              487
+            ],
+            "symbol": 4
+          },
+          {
+            "id": "root.r.l.r",
+            "bounds": [
+              0,
+              357,
+              442,
+              487
+            ],
+            "symbol": 2
+          }
+        ]
+      },
+      "boundary_audit": {
+        "all_constraints_valid": true,
+        "unique_adjacencies_checked": 9,
+        "independent_rectangle_adjacency": true,
+        "production_boundary_crosscheck": true
+      },
+      "profile_count_definition": "union of exact mother/span keys; subdivision counts removed and added records",
+      "profile_changes": [
+        {
+          "mother": "cut-1",
+          "segment": [
+            [
+              0,
+              357
+            ],
+            [
+              442,
+              357
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            3,
+            2
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "cut-1",
+          "segment": [
+            [
+              0,
+              357
+            ],
+            [
+              900,
+              357
+            ]
+          ],
+          "before_pair": [
+            3,
+            4
+          ],
+          "after_pair": null,
+          "kind": "removed"
+        },
+        {
+          "mother": "cut-1",
+          "segment": [
+            [
+              442,
+              357
+            ],
+            [
+              900,
+              357
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            3,
+            4
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "cut-2",
+          "segment": [
+            [
+              0,
+              487
+            ],
+            [
+              442,
+              487
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            2,
+            3
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "cut-2",
+          "segment": [
+            [
+              0,
+              487
+            ],
+            [
+              900,
+              487
+            ]
+          ],
+          "before_pair": [
+            4,
+            2
+          ],
+          "after_pair": null,
+          "kind": "removed"
+        },
+        {
+          "mother": "cut-2",
+          "segment": [
+            [
+              442,
+              487
+            ],
+            [
+              900,
+              487
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            4,
+            3
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "cut-3",
+          "segment": [
+            [
+              442,
+              357
+            ],
+            [
+              442,
+              487
+            ]
+          ],
+          "before_pair": null,
+          "after_pair": [
+            4,
+            2
+          ],
+          "kind": "added"
+        },
+        {
+          "mother": "frame",
+          "segment": [
+            [
+              0,
+              487
+            ],
+            [
+              0,
+              357
+            ]
+          ],
+          "before_pair": [
+            1,
+            4
+          ],
+          "after_pair": [
+            1,
+            2
+          ],
+          "kind": "renamed"
+        },
+        {
+          "mother": "frame",
+          "segment": [
+            [
+              0,
+              600
+            ],
+            [
+              0,
+              487
+            ]
+          ],
+          "before_pair": [
+            1,
+            2
+          ],
+          "after_pair": [
+            1,
+            3
+          ],
+          "kind": "renamed"
+        },
+        {
+          "mother": "frame",
+          "segment": [
+            [
+              900,
+              487
+            ],
+            [
+              900,
+              600
+            ]
+          ],
+          "before_pair": [
+            1,
+            2
+          ],
+          "after_pair": [
+            1,
+            3
+          ],
+          "kind": "renamed"
+        },
+        {
+          "mother": "frame",
+          "segment": [
+            [
+              900,
+              600
+            ],
+            [
+              0,
+              600
+            ]
+          ],
+          "before_pair": [
+            1,
+            2
+          ],
+          "after_pair": [
+            1,
+            3
+          ],
+          "kind": "renamed"
+        }
+      ],
+      "touched_mothers": [
+        "cut-1",
+        "cut-2",
+        "cut-3",
+        "frame"
+      ],
+      "touched_existing_mother_count": 3,
+      "case": "C",
+      "seed": 20260960,
+      "original_inherit": "right",
+      "stopped_step": 3,
+      "input_state": {
+        "width": 900,
+        "height": 600,
+        "cuts": [
+          [
+            [
+              0,
+              357
+            ],
+            [
+              900,
+              357
+            ]
+          ],
+          [
+            [
+              0,
+              487
+            ],
+            [
+              900,
+              487
+            ]
+          ]
+        ],
+        "sides": [
+          {
+            "id": "root.l",
+            "bounds": [
+              0,
+              0,
+              900,
+              357
+            ],
+            "symbol": 3
+          },
+          {
+            "id": "root.r.l",
+            "bounds": [
+              0,
+              357,
+              900,
+              487
+            ],
+            "symbol": 4
+          },
+          {
+            "id": "root.r.r",
+            "bounds": [
+              0,
+              487,
+              900,
+              600
+            ],
+            "symbol": 2
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,9013 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-19T05:56:37.055366+00:00",
+  "purpose": "Already-seen diagnostic tuning and regression selection",
+  "unseen_holdout": false,
+  "production_solver_executed": false,
+  "old_colors_read": false,
+  "reference_policy": "stage-anchored-level-sides-v3",
+  "source_evidence": {
+    "filename": "staged-levels-full-2026-09-19.json.gz",
+    "sha256": "87250016644ba5c9c25573e0894af563eb451cd43915c11bad73927308af4910"
+  },
+  "selection_script_sha256": "c646d372550fe71bf8625bfa090ad81c8377546508d829217422954cb3c4bb9b",
+  "preserved_theory_evidence": {
+    "docs/STAGED_LEVEL_CONFLICTS-2026-09-19.md": "63c24b351a1087c1b711822b4c4064d7c3fc526e3b773a4055f43711f0f955ac",
+    "outputs/staged-levels-failure-diagnosis-2026-09-19.json": "38178ce7766a2875f4d924b6a44d894e3c1d48be6ee02a2ac9bba0654381d818"
+  },
+  "selection_rule": {
+    "core": "All four v3 failures, all seven prior diagnostics, all 25 failed-history prefixes",
+    "control": "For each failure, same side count including outside; one solved control per cohort",
+    "tie_break": "Minimum SHA256 of canonical JSON [salt, failure key, cohort, control key]",
+    "salt": "peer-batch-size-matched-control-v1",
+    "excluded_histories_initially": [
+      "guillotine-20260962",
+      "guillotine-20261018",
+      "guillotine-20261059",
+      "guillotine-20261213",
+      "guillotine-20261220",
+      "heldout-guillotine-20261936"
+    ],
+    "exclude_repeated_control_histories": true,
+    "inspect_colors_or_trajectories": false
+  },
+  "counts": {
+    "distinct_drawings": 40,
+    "current_failures": 4,
+    "prior_diagnostics": 7,
+    "failed_history_prefix_references": 25,
+    "successful_controls": 8,
+    "reference_statuses": {
+      "solved": 36,
+      "conflict": 4
+    }
+  },
+  "selection_sha256": "fcf7338222accfce47c6ee1963beaacb6079868f6910124c463a0bafefb38b8a",
+  "selected_keys": [
+    "071b9a1fdbaeccb4925c1ca13da62dadcfea085a48c74a4dd273747bff28eb94",
+    "09045a40804e93567fa1f10579bad84f487405dbdaf7fc7d75175e4e2dc333ed",
+    "0b377f9603fa6ab5b13930edb52b7367e174d9c7c21deb9855e5739d11a10937",
+    "0f0c4e8e6851ad9f2a9815863a6a4c5231257ebec6c314afe6607aa0377f9ab5",
+    "16b2a5b4769d3711284ebae8f4a0782a30171acb22041a619fc5b8b363b4d6fd",
+    "1c1eac8fe9d1d22f491e0107fcde3e3bb40fb9586eb4bc26af273e26adc39b1e",
+    "22c90e6060a83a08b3adcb20abc69d96f340e93d498293c923b28207289c46cd",
+    "24a1e4a943b811f0c67889cea04fbdbfd6ba269e326bc7a952e07d6a98d3fafa",
+    "2809cbbeb493a0f328de9488cb1be7ecc30fd3ba919dc11df491acae3db79573",
+    "29f632296383b3af42eb97ce62a32ac0a9719fe03443d2d9a8d43fe93725bdb1",
+    "32e0aa0ab07884f28c4c4261844135cbc7c8474bede82290fdaa0cc0fd2e2ebe",
+    "3a04a25433017abf6f2ee9fcca7691e0e9a8e6f7ccfaa29398b7d2530932f102",
+    "4a5f785f229af5acc269388447c1766f75b45927f52758476c33d9e2755a94f2",
+    "5362a35401bc9275e2fb58fb29814cb0cf12af3bb22091754aefabba65e8c51d",
+    "561f328fce99aed750d68a40e7459da58dd10a97a1c5c7bfa52b8a872c4755db",
+    "5c11bb8769c95c0c214e62c4564a91299bd8a139baad5ac8b2ba714c406c9519",
+    "608793995ef430710a5e0595d9cbeeb74bc1d74aa4ce3fa72d969bc4c19515ce",
+    "6a1f945cb511a52627f8cd9bc06d2bbc4fd255582ae46e2e592d31cabac14d01",
+    "7122b39658d4634f5a526b13141fc502a40b25c00d23da980ebd88ac5f01d7f7",
+    "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132",
+    "82b950e0f36a11f99c01618da14261440b136a0af69d7e4f320091b9b8b86e65",
+    "90b4e4117ee02f0644b2a1157631884977740e2e0e3227f3b40a4df54687ede9",
+    "91279b808e76a6d7ff5a3787d0e89c9456f2e7d95b252e601bf8e916880b42b3",
+    "9f8211690f9b084b850340d04fd3cdb4652a5fafa9f138139ba22e8ec9639b4e",
+    "ac42e54e0c63c44a1b8a9af1c97c5c9663594a5482aa6141b64d01ac5ddc0103",
+    "ac69d0f7ac192b2988c1ee74fcb4b578721d59d1ee1c34bcad724cf580dc29db",
+    "b44373fbc22a9cc03fd4a9df70a17b8f3d99f673a37a2e6624cf9f1d8a9b35a3",
+    "b4fee2eaeb9186086575ebc3182717b69897797d7ee993837598467e8df9fb4f",
+    "b8c254718b0afd3b74fb0e523326ea58f73b61c3799994254c0153737af085f1",
+    "c0ac50852324a137e4950cfec3433a4b5f2c286471119927683a05691346410e",
+    "c3b32c0258e8b03bf1bac7d10373aec27f7529d2664601ff266c3ed54d16466c",
+    "cd9d36bb847eedf407bd9a79ce38876de78847fa1b28f51f92785c2f607e7f44",
+    "ce4a3dfba0231f0a54e8f389d144c9731f439ec74d129fd0c49239faca21797b",
+    "cfd3a491b7ebf87e24945fddda901ce39c2ded4cbe022a90e827e078920e7ab4",
+    "d68ddb3f083e0014ee7308d0ac9c2f391f39f47bcb9f663a2c73ec657688ca04",
+    "d6d0f89a6aba688f6d30579e7446db6748a5ac5a371c818c90970572b9b4a37d",
+    "dc362012434297f6e0f5d4e54e1ada32077b79528cefad8f181e23002bb7ddcf",
+    "dc961ac0b68d6f6296ed47c6bef4942f293a01b9475d9bf68324855ebe00fdb3",
+    "dc9cebec632a0762379de1441eea298761571ed5faf53f484d3672c4a6ce8739",
+    "f9247b5f7ade9c8c172188dcd9fa084d80c3540a216c0a09fc6697954dc8ae28"
+  ],
+  "roles": {
+    "071b9a1fdbaeccb4925c1ca13da62dadcfea085a48c74a4dd273747bff28eb94": [
+      "complete-failed-history-prefix"
+    ],
+    "09045a40804e93567fa1f10579bad84f487405dbdaf7fc7d75175e4e2dc333ed": [
+      "prior-seven-diagnostic"
+    ],
+    "0b377f9603fa6ab5b13930edb52b7367e174d9c7c21deb9855e5739d11a10937": [
+      "complete-failed-history-prefix"
+    ],
+    "0f0c4e8e6851ad9f2a9815863a6a4c5231257ebec6c314afe6607aa0377f9ab5": [
+      "prior-seven-diagnostic"
+    ],
+    "16b2a5b4769d3711284ebae8f4a0782a30171acb22041a619fc5b8b363b4d6fd": [
+      "size-matched-success-control"
+    ],
+    "1c1eac8fe9d1d22f491e0107fcde3e3bb40fb9586eb4bc26af273e26adc39b1e": [
+      "size-matched-success-control"
+    ],
+    "22c90e6060a83a08b3adcb20abc69d96f340e93d498293c923b28207289c46cd": [
+      "size-matched-success-control"
+    ],
+    "24a1e4a943b811f0c67889cea04fbdbfd6ba269e326bc7a952e07d6a98d3fafa": [
+      "complete-failed-history-prefix",
+      "current-v3-failure"
+    ],
+    "2809cbbeb493a0f328de9488cb1be7ecc30fd3ba919dc11df491acae3db79573": [
+      "complete-failed-history-prefix"
+    ],
+    "29f632296383b3af42eb97ce62a32ac0a9719fe03443d2d9a8d43fe93725bdb1": [
+      "complete-failed-history-prefix"
+    ],
+    "32e0aa0ab07884f28c4c4261844135cbc7c8474bede82290fdaa0cc0fd2e2ebe": [
+      "prior-seven-diagnostic"
+    ],
+    "3a04a25433017abf6f2ee9fcca7691e0e9a8e6f7ccfaa29398b7d2530932f102": [
+      "complete-failed-history-prefix",
+      "current-v3-failure"
+    ],
+    "4a5f785f229af5acc269388447c1766f75b45927f52758476c33d9e2755a94f2": [
+      "complete-failed-history-prefix"
+    ],
+    "5362a35401bc9275e2fb58fb29814cb0cf12af3bb22091754aefabba65e8c51d": [
+      "complete-failed-history-prefix"
+    ],
+    "561f328fce99aed750d68a40e7459da58dd10a97a1c5c7bfa52b8a872c4755db": [
+      "size-matched-success-control"
+    ],
+    "5c11bb8769c95c0c214e62c4564a91299bd8a139baad5ac8b2ba714c406c9519": [
+      "complete-failed-history-prefix"
+    ],
+    "608793995ef430710a5e0595d9cbeeb74bc1d74aa4ce3fa72d969bc4c19515ce": [
+      "size-matched-success-control"
+    ],
+    "6a1f945cb511a52627f8cd9bc06d2bbc4fd255582ae46e2e592d31cabac14d01": [
+      "complete-failed-history-prefix"
+    ],
+    "7122b39658d4634f5a526b13141fc502a40b25c00d23da980ebd88ac5f01d7f7": [
+      "complete-failed-history-prefix"
+    ],
+    "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132": [
+      "prior-seven-diagnostic"
+    ],
+    "82b950e0f36a11f99c01618da14261440b136a0af69d7e4f320091b9b8b86e65": [
+      "complete-failed-history-prefix"
+    ],
+    "90b4e4117ee02f0644b2a1157631884977740e2e0e3227f3b40a4df54687ede9": [
+      "size-matched-success-control"
+    ],
+    "91279b808e76a6d7ff5a3787d0e89c9456f2e7d95b252e601bf8e916880b42b3": [
+      "complete-failed-history-prefix"
+    ],
+    "9f8211690f9b084b850340d04fd3cdb4652a5fafa9f138139ba22e8ec9639b4e": [
+      "prior-seven-diagnostic"
+    ],
+    "ac42e54e0c63c44a1b8a9af1c97c5c9663594a5482aa6141b64d01ac5ddc0103": [
+      "size-matched-success-control"
+    ],
+    "ac69d0f7ac192b2988c1ee74fcb4b578721d59d1ee1c34bcad724cf580dc29db": [
+      "complete-failed-history-prefix"
+    ],
+    "b44373fbc22a9cc03fd4a9df70a17b8f3d99f673a37a2e6624cf9f1d8a9b35a3": [
+      "complete-failed-history-prefix"
+    ],
+    "b4fee2eaeb9186086575ebc3182717b69897797d7ee993837598467e8df9fb4f": [
+      "size-matched-success-control"
+    ],
+    "b8c254718b0afd3b74fb0e523326ea58f73b61c3799994254c0153737af085f1": [
+      "complete-failed-history-prefix"
+    ],
+    "c0ac50852324a137e4950cfec3433a4b5f2c286471119927683a05691346410e": [
+      "complete-failed-history-prefix",
+      "current-v3-failure"
+    ],
+    "c3b32c0258e8b03bf1bac7d10373aec27f7529d2664601ff266c3ed54d16466c": [
+      "prior-seven-diagnostic"
+    ],
+    "cd9d36bb847eedf407bd9a79ce38876de78847fa1b28f51f92785c2f607e7f44": [
+      "complete-failed-history-prefix"
+    ],
+    "ce4a3dfba0231f0a54e8f389d144c9731f439ec74d129fd0c49239faca21797b": [
+      "complete-failed-history-prefix"
+    ],
+    "cfd3a491b7ebf87e24945fddda901ce39c2ded4cbe022a90e827e078920e7ab4": [
+      "complete-failed-history-prefix"
+    ],
+    "d68ddb3f083e0014ee7308d0ac9c2f391f39f47bcb9f663a2c73ec657688ca04": [
+      "prior-seven-diagnostic"
+    ],
+    "d6d0f89a6aba688f6d30579e7446db6748a5ac5a371c818c90970572b9b4a37d": [
+      "complete-failed-history-prefix"
+    ],
+    "dc362012434297f6e0f5d4e54e1ada32077b79528cefad8f181e23002bb7ddcf": [
+      "complete-failed-history-prefix"
+    ],
+    "dc961ac0b68d6f6296ed47c6bef4942f293a01b9475d9bf68324855ebe00fdb3": [
+      "complete-failed-history-prefix"
+    ],
+    "dc9cebec632a0762379de1441eea298761571ed5faf53f484d3672c4a6ce8739": [
+      "complete-failed-history-prefix",
+      "current-v3-failure"
+    ],
+    "f9247b5f7ade9c8c172188dcd9fa084d80c3540a216c0a09fc6697954dc8ae28": [
+      "complete-failed-history-prefix"
+    ]
+  },
+  "controls": [
+    {
+      "failure_key": "dc9cebec632a0762379de1441eea298761571ed5faf53f484d3672c4a6ce8739",
+      "control_key": "ac42e54e0c63c44a1b8a9af1c97c5c9663594a5482aa6141b64d01ac5ddc0103",
+      "face_count": 18,
+      "cohort": "existing-corpus",
+      "control_histories": [
+        "guillotine-20260967"
+      ],
+      "eligible_count_before_selection": 215,
+      "rank_sha256": "022fdf9a7f83bd6ee2706850052fa39f555505e2755782ca91ac7331e87b013b"
+    },
+    {
+      "failure_key": "dc9cebec632a0762379de1441eea298761571ed5faf53f484d3672c4a6ce8739",
+      "control_key": "22c90e6060a83a08b3adcb20abc69d96f340e93d498293c923b28207289c46cd",
+      "face_count": 18,
+      "cohort": "new-seeds-20261901-20261940",
+      "control_histories": [
+        "heldout-guillotine-20261911"
+      ],
+      "eligible_count_before_selection": 39,
+      "rank_sha256": "001541dd8032b1af9ed42d489ddb242846571018557320967da537cae0685333"
+    },
+    {
+      "failure_key": "3a04a25433017abf6f2ee9fcca7691e0e9a8e6f7ccfaa29398b7d2530932f102",
+      "control_key": "16b2a5b4769d3711284ebae8f4a0782a30171acb22041a619fc5b8b363b4d6fd",
+      "face_count": 20,
+      "cohort": "existing-corpus",
+      "control_histories": [
+        "guillotine-20261034"
+      ],
+      "eligible_count_before_selection": 214,
+      "rank_sha256": "025fc376e451c5e27f48cc83c57d4a72c72aa4b8fb9a28a02db55fc0847c092d"
+    },
+    {
+      "failure_key": "3a04a25433017abf6f2ee9fcca7691e0e9a8e6f7ccfaa29398b7d2530932f102",
+      "control_key": "561f328fce99aed750d68a40e7459da58dd10a97a1c5c7bfa52b8a872c4755db",
+      "face_count": 20,
+      "cohort": "new-seeds-20261901-20261940",
+      "control_histories": [
+        "heldout-guillotine-20261916"
+      ],
+      "eligible_count_before_selection": 38,
+      "rank_sha256": "0e41b0fd6cd5c8444f5338b86ac859847d16181d07e79db36fb20e31dd816cd9"
+    },
+    {
+      "failure_key": "c0ac50852324a137e4950cfec3433a4b5f2c286471119927683a05691346410e",
+      "control_key": "1c1eac8fe9d1d22f491e0107fcde3e3bb40fb9586eb4bc26af273e26adc39b1e",
+      "face_count": 21,
+      "cohort": "existing-corpus",
+      "control_histories": [
+        "guillotine-20261063"
+      ],
+      "eligible_count_before_selection": 213,
+      "rank_sha256": "018bcdabcf0feb3769a9e8c80e06d7dd6697973298639c54cb78e45ed375683d"
+    },
+    {
+      "failure_key": "c0ac50852324a137e4950cfec3433a4b5f2c286471119927683a05691346410e",
+      "control_key": "90b4e4117ee02f0644b2a1157631884977740e2e0e3227f3b40a4df54687ede9",
+      "face_count": 21,
+      "cohort": "new-seeds-20261901-20261940",
+      "control_histories": [
+        "heldout-guillotine-20261907"
+      ],
+      "eligible_count_before_selection": 37,
+      "rank_sha256": "0df18f70b95d855749c6d43e4a1e5866bad60026197078182bd88acc19ab7230"
+    },
+    {
+      "failure_key": "24a1e4a943b811f0c67889cea04fbdbfd6ba269e326bc7a952e07d6a98d3fafa",
+      "control_key": "608793995ef430710a5e0595d9cbeeb74bc1d74aa4ce3fa72d969bc4c19515ce",
+      "face_count": 22,
+      "cohort": "existing-corpus",
+      "control_histories": [
+        "guillotine-20261017"
+      ],
+      "eligible_count_before_selection": 212,
+      "rank_sha256": "0008ef4be892ff6f1ae71993d207450a2bae1426da3019042280eebb9a028fa1"
+    },
+    {
+      "failure_key": "24a1e4a943b811f0c67889cea04fbdbfd6ba269e326bc7a952e07d6a98d3fafa",
+      "control_key": "b4fee2eaeb9186086575ebc3182717b69897797d7ee993837598467e8df9fb4f",
+      "face_count": 22,
+      "cohort": "new-seeds-20261901-20261940",
+      "control_histories": [
+        "heldout-guillotine-20261931"
+      ],
+      "eligible_count_before_selection": 36,
+      "rank_sha256": "00f0e0ffd38f42608d04879a9ccff6516dbb479e0c8d3c9487aefd56ca43cd46"
+    }
+  ],
+  "failed_histories": [
+    {
+      "key": "heldout-guillotine-20261936",
+      "family": "guillotine",
+      "seed": 20261936,
+      "prefix_keys": [
+        "5362a35401bc9275e2fb58fb29814cb0cf12af3bb22091754aefabba65e8c51d",
+        "b8c254718b0afd3b74fb0e523326ea58f73b61c3799994254c0153737af085f1",
+        "4a5f785f229af5acc269388447c1766f75b45927f52758476c33d9e2755a94f2",
+        "dc961ac0b68d6f6296ed47c6bef4942f293a01b9475d9bf68324855ebe00fdb3",
+        "f9247b5f7ade9c8c172188dcd9fa084d80c3540a216c0a09fc6697954dc8ae28",
+        "2809cbbeb493a0f328de9488cb1be7ecc30fd3ba919dc11df491acae3db79573",
+        "b44373fbc22a9cc03fd4a9df70a17b8f3d99f673a37a2e6624cf9f1d8a9b35a3",
+        "82b950e0f36a11f99c01618da14261440b136a0af69d7e4f320091b9b8b86e65",
+        "cfd3a491b7ebf87e24945fddda901ce39c2ded4cbe022a90e827e078920e7ab4",
+        "5c11bb8769c95c0c214e62c4564a91299bd8a139baad5ac8b2ba714c406c9519",
+        "071b9a1fdbaeccb4925c1ca13da62dadcfea085a48c74a4dd273747bff28eb94",
+        "ac69d0f7ac192b2988c1ee74fcb4b578721d59d1ee1c34bcad724cf580dc29db",
+        "7122b39658d4634f5a526b13141fc502a40b25c00d23da980ebd88ac5f01d7f7",
+        "91279b808e76a6d7ff5a3787d0e89c9456f2e7d95b252e601bf8e916880b42b3",
+        "ce4a3dfba0231f0a54e8f389d144c9731f439ec74d129fd0c49239faca21797b",
+        "0b377f9603fa6ab5b13930edb52b7367e174d9c7c21deb9855e5739d11a10937",
+        "dc9cebec632a0762379de1441eea298761571ed5faf53f484d3672c4a6ce8739",
+        "29f632296383b3af42eb97ce62a32ac0a9719fe03443d2d9a8d43fe93725bdb1",
+        "3a04a25433017abf6f2ee9fcca7691e0e9a8e6f7ccfaa29398b7d2530932f102",
+        "c0ac50852324a137e4950cfec3433a4b5f2c286471119927683a05691346410e",
+        "24a1e4a943b811f0c67889cea04fbdbfd6ba269e326bc7a952e07d6a98d3fafa",
+        "dc362012434297f6e0f5d4e54e1ada32077b79528cefad8f181e23002bb7ddcf",
+        "6a1f945cb511a52627f8cd9bc06d2bbc4fd255582ae46e2e592d31cabac14d01",
+        "d6d0f89a6aba688f6d30579e7446db6748a5ac5a371c818c90970572b9b4a37d",
+        "cd9d36bb847eedf407bd9a79ce38876de78847fa1b28f51f92785c2f607e7f44"
+      ],
+      "original_history_sha256": "ecafd39dd1204f4caef3dabcac92f33387399cf0b0606e6a2d01878286298816",
+      "original_aliases": [
+        {
+          "key": "heldout-guillotine-20261936",
+          "family": "guillotine",
+          "cohort": "new-seeds-20261901-20261940",
+          "seed": 20261936,
+          "kind": "predeclared-generator-history",
+          "source": "scripts/construction-experiments.mjs::generatedPaths"
+        }
+      ],
+      "initial_precolors_discarded": false,
+      "local_budget_discarded": 3,
+      "cohort": "new-seeds-20261901-20261940"
+    }
+  ],
+  "drawings": [
+    {
+      "key": "071b9a1fdbaeccb4925c1ca13da62dadcfea085a48c74a4dd273747bff28eb94",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              192
+            ],
+            "b": [
+              190,
+              192
+            ]
+          },
+          {
+            "a": [
+              73,
+              192
+            ],
+            "b": [
+              73,
+              600
+            ]
+          },
+          {
+            "a": [
+              190,
+              0
+            ],
+            "b": [
+              190,
+              600
+            ]
+          },
+          {
+            "a": [
+              190,
+              202
+            ],
+            "b": [
+              274,
+              202
+            ]
+          },
+          {
+            "a": [
+              190,
+              413
+            ],
+            "b": [
+              274,
+              413
+            ]
+          },
+          {
+            "a": [
+              190,
+              527
+            ],
+            "b": [
+              274,
+              527
+            ]
+          },
+          {
+            "a": [
+              190,
+              560
+            ],
+            "b": [
+              274,
+              560
+            ]
+          },
+          {
+            "a": [
+              244,
+              202
+            ],
+            "b": [
+              244,
+              413
+            ]
+          },
+          {
+            "a": [
+              274,
+              0
+            ],
+            "b": [
+              274,
+              600
+            ]
+          },
+          {
+            "a": [
+              551,
+              0
+            ],
+            "b": [
+              551,
+              600
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261936",
+          "step": 10
+        }
+      ],
+      "cohorts": [
+        "new-seeds-20261901-20261940"
+      ],
+      "geometry_sha256": "65eb4e779c4a6ac7a5924727e6148893aa42e4b1a05a3637eabe615d8a4f12c3",
+      "face_count": 12,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "complete-failed-history-prefix"
+      ],
+      "reference_status": "solved"
+    },
+    {
+      "key": "09045a40804e93567fa1f10579bad84f487405dbdaf7fc7d75175e4e2dc333ed",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              32
+            ],
+            "b": [
+              900,
+              32
+            ]
+          },
+          {
+            "a": [
+              0,
+              106
+            ],
+            "b": [
+              900,
+              106
+            ]
+          },
+          {
+            "a": [
+              0,
+              139
+            ],
+            "b": [
+              900,
+              139
+            ]
+          },
+          {
+            "a": [
+              0,
+              167
+            ],
+            "b": [
+              900,
+              167
+            ]
+          },
+          {
+            "a": [
+              0,
+              306
+            ],
+            "b": [
+              900,
+              306
+            ]
+          },
+          {
+            "a": [
+              0,
+              370
+            ],
+            "b": [
+              900,
+              370
+            ]
+          },
+          {
+            "a": [
+              0,
+              412
+            ],
+            "b": [
+              519,
+              412
+            ]
+          },
+          {
+            "a": [
+              0,
+              455
+            ],
+            "b": [
+              900,
+              455
+            ]
+          },
+          {
+            "a": [
+              0,
+              540
+            ],
+            "b": [
+              900,
+              540
+            ]
+          },
+          {
+            "a": [
+              176,
+              167
+            ],
+            "b": [
+              176,
+              306
+            ]
+          },
+          {
+            "a": [
+              278,
+              106
+            ],
+            "b": [
+              278,
+              139
+            ]
+          },
+          {
+            "a": [
+              306,
+              370
+            ],
+            "b": [
+              306,
+              412
+            ]
+          },
+          {
+            "a": [
+              366,
+              167
+            ],
+            "b": [
+              366,
+              306
+            ]
+          },
+          {
+            "a": [
+              411,
+              370
+            ],
+            "b": [
+              411,
+              412
+            ]
+          },
+          {
+            "a": [
+              519,
+              370
+            ],
+            "b": [
+              519,
+              455
+            ]
+          },
+          {
+            "a": [
+              519,
+              429
+            ],
+            "b": [
+              900,
+              429
+            ]
+          },
+          {
+            "a": [
+              519,
+              437
+            ],
+            "b": [
+              585,
+              437
+            ]
+          },
+          {
+            "a": [
+              529,
+              167
+            ],
+            "b": [
+              529,
+              306
+            ]
+          },
+          {
+            "a": [
+              529,
+              210
+            ],
+            "b": [
+              900,
+              210
+            ]
+          },
+          {
+            "a": [
+              585,
+              429
+            ],
+            "b": [
+              585,
+              455
+            ]
+          },
+          {
+            "a": [
+              624,
+              429
+            ],
+            "b": [
+              624,
+              455
+            ]
+          },
+          {
+            "a": [
+              657,
+              429
+            ],
+            "b": [
+              657,
+              455
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261059",
+          "step": 22
+        }
+      ],
+      "cohorts": [
+        "existing-corpus"
+      ],
+      "geometry_sha256": "9228feae5f6f118e5431bd4a775e619d32f6fa63bde95ba187a1f0523624b316",
+      "face_count": 24,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "prior-seven-diagnostic"
+      ],
+      "reference_status": "solved"
+    },
+    {
+      "key": "0b377f9603fa6ab5b13930edb52b7367e174d9c7c21deb9855e5739d11a10937",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              129
+            ],
+            "b": [
+              190,
+              129
+            ]
+          },
+          {
+            "a": [
+              0,
+              192
+            ],
+            "b": [
+              190,
+              192
+            ]
+          },
+          {
+            "a": [
+              73,
+              192
+            ],
+            "b": [
+              73,
+              600
+            ]
+          },
+          {
+            "a": [
+              154,
+              192
+            ],
+            "b": [
+              154,
+              600
+            ]
+          },
+          {
+            "a": [
+              190,
+              0
+            ],
+            "b": [
+              190,
+              600
+            ]
+          },
+          {
+            "a": [
+              190,
+              202
+            ],
+            "b": [
+              274,
+              202
+            ]
+          },
+          {
+            "a": [
+              190,
+              413
+            ],
+            "b": [
+              274,
+              413
+            ]
+          },
+          {
+            "a": [
+              190,
+              527
+            ],
+            "b": [
+              274,
+              527
+            ]
+          },
+          {
+            "a": [
+              190,
+              560
+            ],
+            "b": [
+              274,
+              560
+            ]
+          },
+          {
+            "a": [
+              222,
+              202
+            ],
+            "b": [
+              222,
+              413
+            ]
+          },
+          {
+            "a": [
+              244,
+              202
+            ],
+            "b": [
+              244,
+              413
+            ]
+          },
+          {
+            "a": [
+              274,
+              0
+            ],
+            "b": [
+              274,
+              600
+            ]
+          },
+          {
+            "a": [
+              551,
+              0
+            ],
+            "b": [
+              551,
+              600
+            ]
+          },
+          {
+            "a": [
+              708,
+              0
+            ],
+            "b": [
+              708,
+              600
+            ]
+          },
+          {
+            "a": [
+              817,
+              0
+            ],
+            "b": [
+              817,
+              600
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261936",
+          "step": 15
+        }
+      ],
+      "cohorts": [
+        "new-seeds-20261901-20261940"
+      ],
+      "geometry_sha256": "b960188ab377693dfde79c061fea801f5a688d928e710fd289f8b01c0f7f87c4",
+      "face_count": 17,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "complete-failed-history-prefix"
+      ],
+      "reference_status": "solved"
+    },
+    {
+      "key": "0f0c4e8e6851ad9f2a9815863a6a4c5231257ebec6c314afe6607aa0377f9ab5",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              288
+            ],
+            "b": [
+              900,
+              288
+            ]
+          },
+          {
+            "a": [
+              0,
+              394
+            ],
+            "b": [
+              426,
+              394
+            ]
+          },
+          {
+            "a": [
+              426,
+              288
+            ],
+            "b": [
+              426,
+              600
+            ]
+          },
+          {
+            "a": [
+              426,
+              331
+            ],
+            "b": [
+              516,
+              331
+            ]
+          },
+          {
+            "a": [
+              426,
+              381
+            ],
+            "b": [
+              516,
+              381
+            ]
+          },
+          {
+            "a": [
+              426,
+              426
+            ],
+            "b": [
+              516,
+              426
+            ]
+          },
+          {
+            "a": [
+              462,
+              288
+            ],
+            "b": [
+              462,
+              331
+            ]
+          },
+          {
+            "a": [
+              478,
+              426
+            ],
+            "b": [
+              478,
+              600
+            ]
+          },
+          {
+            "a": [
+              516,
+              288
+            ],
+            "b": [
+              516,
+              600
+            ]
+          },
+          {
+            "a": [
+              516,
+              503
+            ],
+            "b": [
+              615,
+              503
+            ]
+          },
+          {
+            "a": [
+              528,
+              288
+            ],
+            "b": [
+              528,
+              503
+            ]
+          },
+          {
+            "a": [
+              547,
+              288
+            ],
+            "b": [
+              547,
+              503
+            ]
+          },
+          {
+            "a": [
+              547,
+              353
+            ],
+            "b": [
+              615,
+              353
+            ]
+          },
+          {
+            "a": [
+              547,
+              409
+            ],
+            "b": [
+              615,
+              409
+            ]
+          },
+          {
+            "a": [
+              585,
+              409
+            ],
+            "b": [
+              585,
+              503
+            ]
+          },
+          {
+            "a": [
+              615,
+              288
+            ],
+            "b": [
+              615,
+              600
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261018",
+          "step": 16
+        }
+      ],
+      "cohorts": [
+        "existing-corpus"
+      ],
+      "geometry_sha256": "73a8cc4cfa63cea73d7ffada06b36fe333aa480acd35c78ae16e8bcc5bb33122",
+      "face_count": 18,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "prior-seven-diagnostic"
+      ],
+      "reference_status": "solved"
+    },
+    {
+      "key": "16b2a5b4769d3711284ebae8f4a0782a30171acb22041a619fc5b8b363b4d6fd",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              80
+            ],
+            "b": [
+              416,
+              80
+            ]
+          },
+          {
+            "a": [
+              0,
+              209
+            ],
+            "b": [
+              416,
+              209
+            ]
+          },
+          {
+            "a": [
+              0,
+              330
+            ],
+            "b": [
+              106,
+              330
+            ]
+          },
+          {
+            "a": [
+              0,
+              388
+            ],
+            "b": [
+              416,
+              388
+            ]
+          },
+          {
+            "a": [
+              106,
+              209
+            ],
+            "b": [
+              106,
+              388
+            ]
+          },
+          {
+            "a": [
+              106,
+              307
+            ],
+            "b": [
+              228,
+              307
+            ]
+          },
+          {
+            "a": [
+              106,
+              363
+            ],
+            "b": [
+              228,
+              363
+            ]
+          },
+          {
+            "a": [
+              146,
+              209
+            ],
+            "b": [
+              146,
+              307
+            ]
+          },
+          {
+            "a": [
+              164,
+              307
+            ],
+            "b": [
+              164,
+              363
+            ]
+          },
+          {
+            "a": [
+              201,
+              209
+            ],
+            "b": [
+              201,
+              307
+            ]
+          },
+          {
+            "a": [
+              228,
+              209
+            ],
+            "b": [
+              228,
+              388
+            ]
+          },
+          {
+            "a": [
+              228,
+              293
+            ],
+            "b": [
+              416,
+              293
+            ]
+          },
+          {
+            "a": [
+              416,
+              0
+            ],
+            "b": [
+              416,
+              600
+            ]
+          },
+          {
+            "a": [
+              416,
+              150
+            ],
+            "b": [
+              627,
+              150
+            ]
+          },
+          {
+            "a": [
+              416,
+              401
+            ],
+            "b": [
+              900,
+              401
+            ]
+          },
+          {
+            "a": [
+              627,
+              0
+            ],
+            "b": [
+              627,
+              401
+            ]
+          },
+          {
+            "a": [
+              627,
+              198
+            ],
+            "b": [
+              772,
+              198
+            ]
+          },
+          {
+            "a": [
+              772,
+              0
+            ],
+            "b": [
+              772,
+              401
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261034",
+          "step": 18
+        }
+      ],
+      "cohorts": [
+        "existing-corpus"
+      ],
+      "geometry_sha256": "75e8d9fda8e22155213e86b2347c6a513fedb477a03fd654a503a1d7ffae33ca",
+      "face_count": 20,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "size-matched-success-control"
+      ],
+      "reference_status": "solved"
+    },
+    {
+      "key": "1c1eac8fe9d1d22f491e0107fcde3e3bb40fb9586eb4bc26af273e26adc39b1e",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              97
+            ],
+            "b": [
+              900,
+              97
+            ]
+          },
+          {
+            "a": [
+              0,
+              186
+            ],
+            "b": [
+              900,
+              186
+            ]
+          },
+          {
+            "a": [
+              0,
+              243
+            ],
+            "b": [
+              900,
+              243
+            ]
+          },
+          {
+            "a": [
+              137,
+              0
+            ],
+            "b": [
+              137,
+              97
+            ]
+          },
+          {
+            "a": [
+              188,
+              0
+            ],
+            "b": [
+              188,
+              97
+            ]
+          },
+          {
+            "a": [
+              188,
+              51
+            ],
+            "b": [
+              231,
+              51
+            ]
+          },
+          {
+            "a": [
+              231,
+              0
+            ],
+            "b": [
+              231,
+              97
+            ]
+          },
+          {
+            "a": [
+              365,
+              0
+            ],
+            "b": [
+              365,
+              97
+            ]
+          },
+          {
+            "a": [
+              365,
+              15
+            ],
+            "b": [
+              900,
+              15
+            ]
+          },
+          {
+            "a": [
+              365,
+              48
+            ],
+            "b": [
+              900,
+              48
+            ]
+          },
+          {
+            "a": [
+              365,
+              63
+            ],
+            "b": [
+              900,
+              63
+            ]
+          },
+          {
+            "a": [
+              365,
+              86
+            ],
+            "b": [
+              900,
+              86
+            ]
+          },
+          {
+            "a": [
+              428,
+              97
+            ],
+            "b": [
+              428,
+              186
+            ]
+          },
+          {
+            "a": [
+              488,
+              243
+            ],
+            "b": [
+              488,
+              600
+            ]
+          },
+          {
+            "a": [
+              488,
+              282
+            ],
+            "b": [
+              900,
+              282
+            ]
+          },
+          {
+            "a": [
+              488,
+              307
+            ],
+            "b": [
+              900,
+              307
+            ]
+          },
+          {
+            "a": [
+              488,
+              335
+            ],
+            "b": [
+              900,
+              335
+            ]
+          },
+          {
+            "a": [
+              488,
+              475
+            ],
+            "b": [
+              900,
+              475
+            ]
+          },
+          {
+            "a": [
+              488,
+              535
+            ],
+            "b": [
+              900,
+              535
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261063",
+          "step": 19
+        }
+      ],
+      "cohorts": [
+        "existing-corpus"
+      ],
+      "geometry_sha256": "21bcbdbe6aa6cf69c12fec183378f6b8987b6b860cbc568908bd0ca11bf00796",
+      "face_count": 21,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "size-matched-success-control"
+      ],
+      "reference_status": "solved"
+    },
+    {
+      "key": "22c90e6060a83a08b3adcb20abc69d96f340e93d498293c923b28207289c46cd",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              127
+            ],
+            "b": [
+              366,
+              127
+            ]
+          },
+          {
+            "a": [
+              0,
+              255
+            ],
+            "b": [
+              366,
+              255
+            ]
+          },
+          {
+            "a": [
+              0,
+              301
+            ],
+            "b": [
+              366,
+              301
+            ]
+          },
+          {
+            "a": [
+              0,
+              395
+            ],
+            "b": [
+              900,
+              395
+            ]
+          },
+          {
+            "a": [
+              143,
+              127
+            ],
+            "b": [
+              143,
+              255
+            ]
+          },
+          {
+            "a": [
+              209,
+              255
+            ],
+            "b": [
+              209,
+              301
+            ]
+          },
+          {
+            "a": [
+              299,
+              255
+            ],
+            "b": [
+              299,
+              301
+            ]
+          },
+          {
+            "a": [
+              366,
+              0
+            ],
+            "b": [
+              366,
+              395
+            ]
+          },
+          {
+            "a": [
+              366,
+              154
+            ],
+            "b": [
+              900,
+              154
+            ]
+          },
+          {
+            "a": [
+              366,
+              225
+            ],
+            "b": [
+              900,
+              225
+            ]
+          },
+          {
+            "a": [
+              509,
+              395
+            ],
+            "b": [
+              509,
+              600
+            ]
+          },
+          {
+            "a": [
+              509,
+              536
+            ],
+            "b": [
+              900,
+              536
+            ]
+          },
+          {
+            "a": [
+              716,
+              536
+            ],
+            "b": [
+              716,
+              600
+            ]
+          },
+          {
+            "a": [
+              718,
+              0
+            ],
+            "b": [
+              718,
+              154
+            ]
+          },
+          {
+            "a": [
+              718,
+              103
+            ],
+            "b": [
+              900,
+              103
+            ]
+          },
+          {
+            "a": [
+              718,
+              121
+            ],
+            "b": [
+              900,
+              121
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261911",
+          "step": 16
+        }
+      ],
+      "cohorts": [
+        "new-seeds-20261901-20261940"
+      ],
+      "geometry_sha256": "d76985e08be5e23e4465bb1f556b7990bfd341c9788572b78bb850c7d88a9b63",
+      "face_count": 18,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "size-matched-success-control"
+      ],
+      "reference_status": "solved"
+    },
+    {
+      "key": "24a1e4a943b811f0c67889cea04fbdbfd6ba269e326bc7a952e07d6a98d3fafa",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              129
+            ],
+            "b": [
+              190,
+              129
+            ]
+          },
+          {
+            "a": [
+              0,
+              192
+            ],
+            "b": [
+              190,
+              192
+            ]
+          },
+          {
+            "a": [
+              73,
+              192
+            ],
+            "b": [
+              73,
+              600
+            ]
+          },
+          {
+            "a": [
+              103,
+              192
+            ],
+            "b": [
+              103,
+              600
+            ]
+          },
+          {
+            "a": [
+              154,
+              192
+            ],
+            "b": [
+              154,
+              600
+            ]
+          },
+          {
+            "a": [
+              190,
+              0
+            ],
+            "b": [
+              190,
+              600
+            ]
+          },
+          {
+            "a": [
+              190,
+              202
+            ],
+            "b": [
+              274,
+              202
+            ]
+          },
+          {
+            "a": [
+              190,
+              413
+            ],
+            "b": [
+              274,
+              413
+            ]
+          },
+          {
+            "a": [
+              190,
+              527
+            ],
+            "b": [
+              274,
+              527
+            ]
+          },
+          {
+            "a": [
+              190,
+              560
+            ],
+            "b": [
+              274,
+              560
+            ]
+          },
+          {
+            "a": [
+              222,
+              202
+            ],
+            "b": [
+              222,
+              413
+            ]
+          },
+          {
+            "a": [
+              238,
+              560
+            ],
+            "b": [
+              238,
+              600
+            ]
+          },
+          {
+            "a": [
+              244,
+              202
+            ],
+            "b": [
+              244,
+              413
+            ]
+          },
+          {
+            "a": [
+              261,
+              202
+            ],
+            "b": [
+              261,
+              413
+            ]
+          },
+          {
+            "a": [
+              263,
+              560
+            ],
+            "b": [
+              263,
+              600
+            ]
+          },
+          {
+            "a": [
+              274,
+              0
+            ],
+            "b": [
+              274,
+              600
+            ]
+          },
+          {
+            "a": [
+              551,
+              0
+            ],
+            "b": [
+              551,
+              600
+            ]
+          },
+          {
+            "a": [
+              551,
+              383
+            ],
+            "b": [
+              708,
+              383
+            ]
+          },
+          {
+            "a": [
+              708,
+              0
+            ],
+            "b": [
+              708,
+              600
+            ]
+          },
+          {
+            "a": [
+              817,
+              0
+            ],
+            "b": [
+              817,
+              600
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261936",
+          "step": 20
+        }
+      ],
+      "cohorts": [
+        "new-seeds-20261901-20261940"
+      ],
+      "geometry_sha256": "ca68577de1dd8f03c8d30db2ed6d9f723c368f44d0955e1d06076b7c41301d3d",
+      "face_count": 22,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "complete-failed-history-prefix",
+        "current-v3-failure"
+      ],
+      "reference_status": "conflict"
+    },
+    {
+      "key": "2809cbbeb493a0f328de9488cb1be7ecc30fd3ba919dc11df491acae3db79573",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              190,
+              0
+            ],
+            "b": [
+              190,
+              600
+            ]
+          },
+          {
+            "a": [
+              190,
+              202
+            ],
+            "b": [
+              274,
+              202
+            ]
+          },
+          {
+            "a": [
+              190,
+              413
+            ],
+            "b": [
+              274,
+              413
+            ]
+          },
+          {
+            "a": [
+              274,
+              0
+            ],
+            "b": [
+              274,
+              600
+            ]
+          },
+          {
+            "a": [
+              551,
+              0
+            ],
+            "b": [
+              551,
+              600
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261936",
+          "step": 5
+        }
+      ],
+      "cohorts": [
+        "new-seeds-20261901-20261940"
+      ],
+      "geometry_sha256": "8db308064a25dc72e7aaada3895b9f450aec2a831a89da22decacf83b86b962c",
+      "face_count": 7,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "complete-failed-history-prefix"
+      ],
+      "reference_status": "solved"
+    },
+    {
+      "key": "29f632296383b3af42eb97ce62a32ac0a9719fe03443d2d9a8d43fe93725bdb1",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              129
+            ],
+            "b": [
+              190,
+              129
+            ]
+          },
+          {
+            "a": [
+              0,
+              192
+            ],
+            "b": [
+              190,
+              192
+            ]
+          },
+          {
+            "a": [
+              73,
+              192
+            ],
+            "b": [
+              73,
+              600
+            ]
+          },
+          {
+            "a": [
+              154,
+              192
+            ],
+            "b": [
+              154,
+              600
+            ]
+          },
+          {
+            "a": [
+              190,
+              0
+            ],
+            "b": [
+              190,
+              600
+            ]
+          },
+          {
+            "a": [
+              190,
+              202
+            ],
+            "b": [
+              274,
+              202
+            ]
+          },
+          {
+            "a": [
+              190,
+              413
+            ],
+            "b": [
+              274,
+              413
+            ]
+          },
+          {
+            "a": [
+              190,
+              527
+            ],
+            "b": [
+              274,
+              527
+            ]
+          },
+          {
+            "a": [
+              190,
+              560
+            ],
+            "b": [
+              274,
+              560
+            ]
+          },
+          {
+            "a": [
+              222,
+              202
+            ],
+            "b": [
+              222,
+              413
+            ]
+          },
+          {
+            "a": [
+              238,
+              560
+            ],
+            "b": [
+              238,
+              600
+            ]
+          },
+          {
+            "a": [
+              244,
+              202
+            ],
+            "b": [
+              244,
+              413
+            ]
+          },
+          {
+            "a": [
+              261,
+              202
+            ],
+            "b": [
+              261,
+              413
+            ]
+          },
+          {
+            "a": [
+              274,
+              0
+            ],
+            "b": [
+              274,
+              600
+            ]
+          },
+          {
+            "a": [
+              551,
+              0
+            ],
+            "b": [
+              551,
+              600
+            ]
+          },
+          {
+            "a": [
+              708,
+              0
+            ],
+            "b": [
+              708,
+              600
+            ]
+          },
+          {
+            "a": [
+              817,
+              0
+            ],
+            "b": [
+              817,
+              600
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261936",
+          "step": 17
+        }
+      ],
+      "cohorts": [
+        "new-seeds-20261901-20261940"
+      ],
+      "geometry_sha256": "f9de78d4c9bd8656657d08212712c0521d2373798a314ce96d8dae1f841dd99f",
+      "face_count": 19,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "complete-failed-history-prefix"
+      ],
+      "reference_status": "solved"
+    },
+    {
+      "key": "32e0aa0ab07884f28c4c4261844135cbc7c8474bede82290fdaa0cc0fd2e2ebe",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              32
+            ],
+            "b": [
+              900,
+              32
+            ]
+          },
+          {
+            "a": [
+              0,
+              106
+            ],
+            "b": [
+              900,
+              106
+            ]
+          },
+          {
+            "a": [
+              0,
+              139
+            ],
+            "b": [
+              900,
+              139
+            ]
+          },
+          {
+            "a": [
+              0,
+              167
+            ],
+            "b": [
+              900,
+              167
+            ]
+          },
+          {
+            "a": [
+              0,
+              306
+            ],
+            "b": [
+              900,
+              306
+            ]
+          },
+          {
+            "a": [
+              0,
+              370
+            ],
+            "b": [
+              900,
+              370
+            ]
+          },
+          {
+            "a": [
+              0,
+              412
+            ],
+            "b": [
+              519,
+              412
+            ]
+          },
+          {
+            "a": [
+              0,
+              455
+            ],
+            "b": [
+              900,
+              455
+            ]
+          },
+          {
+            "a": [
+              0,
+              506
+            ],
+            "b": [
+              900,
+              506
+            ]
+          },
+          {
+            "a": [
+              0,
+              540
+            ],
+            "b": [
+              900,
+              540
+            ]
+          },
+          {
+            "a": [
+              176,
+              167
+            ],
+            "b": [
+              176,
+              306
+            ]
+          },
+          {
+            "a": [
+              278,
+              106
+            ],
+            "b": [
+              278,
+              139
+            ]
+          },
+          {
+            "a": [
+              306,
+              370
+            ],
+            "b": [
+              306,
+              412
+            ]
+          },
+          {
+            "a": [
+              366,
+              167
+            ],
+            "b": [
+              366,
+              306
+            ]
+          },
+          {
+            "a": [
+              411,
+              370
+            ],
+            "b": [
+              411,
+              412
+            ]
+          },
+          {
+            "a": [
+              519,
+              370
+            ],
+            "b": [
+              519,
+              455
+            ]
+          },
+          {
+            "a": [
+              519,
+              429
+            ],
+            "b": [
+              900,
+              429
+            ]
+          },
+          {
+            "a": [
+              519,
+              437
+            ],
+            "b": [
+              585,
+              437
+            ]
+          },
+          {
+            "a": [
+              529,
+              167
+            ],
+            "b": [
+              529,
+              306
+            ]
+          },
+          {
+            "a": [
+              529,
+              210
+            ],
+            "b": [
+              900,
+              210
+            ]
+          },
+          {
+            "a": [
+              585,
+              429
+            ],
+            "b": [
+              585,
+              455
+            ]
+          },
+          {
+            "a": [
+              624,
+              429
+            ],
+            "b": [
+              624,
+              455
+            ]
+          },
+          {
+            "a": [
+              657,
+              429
+            ],
+            "b": [
+              657,
+              455
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261059",
+          "step": 23
+        }
+      ],
+      "cohorts": [
+        "existing-corpus"
+      ],
+      "geometry_sha256": "b17b68f6b7703dfd95b5e0bc26dd447102227c06345e34183b6c43f637dbdb6d",
+      "face_count": 25,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "prior-seven-diagnostic"
+      ],
+      "reference_status": "solved"
+    },
+    {
+      "key": "3a04a25433017abf6f2ee9fcca7691e0e9a8e6f7ccfaa29398b7d2530932f102",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              129
+            ],
+            "b": [
+              190,
+              129
+            ]
+          },
+          {
+            "a": [
+              0,
+              192
+            ],
+            "b": [
+              190,
+              192
+            ]
+          },
+          {
+            "a": [
+              73,
+              192
+            ],
+            "b": [
+              73,
+              600
+            ]
+          },
+          {
+            "a": [
+              154,
+              192
+            ],
+            "b": [
+              154,
+              600
+            ]
+          },
+          {
+            "a": [
+              190,
+              0
+            ],
+            "b": [
+              190,
+              600
+            ]
+          },
+          {
+            "a": [
+              190,
+              202
+            ],
+            "b": [
+              274,
+              202
+            ]
+          },
+          {
+            "a": [
+              190,
+              413
+            ],
+            "b": [
+              274,
+              413
+            ]
+          },
+          {
+            "a": [
+              190,
+              527
+            ],
+            "b": [
+              274,
+              527
+            ]
+          },
+          {
+            "a": [
+              190,
+              560
+            ],
+            "b": [
+              274,
+              560
+            ]
+          },
+          {
+            "a": [
+              222,
+              202
+            ],
+            "b": [
+              222,
+              413
+            ]
+          },
+          {
+            "a": [
+              238,
+              560
+            ],
+            "b": [
+              238,
+              600
+            ]
+          },
+          {
+            "a": [
+              244,
+              202
+            ],
+            "b": [
+              244,
+              413
+            ]
+          },
+          {
+            "a": [
+              261,
+              202
+            ],
+            "b": [
+              261,
+              413
+            ]
+          },
+          {
+            "a": [
+              263,
+              560
+            ],
+            "b": [
+              263,
+              600
+            ]
+          },
+          {
+            "a": [
+              274,
+              0
+            ],
+            "b": [
+              274,
+              600
+            ]
+          },
+          {
+            "a": [
+              551,
+              0
+            ],
+            "b": [
+              551,
+              600
+            ]
+          },
+          {
+            "a": [
+              708,
+              0
+            ],
+            "b": [
+              708,
+              600
+            ]
+          },
+          {
+            "a": [
+              817,
+              0
+            ],
+            "b": [
+              817,
+              600
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261936",
+          "step": 18
+        }
+      ],
+      "cohorts": [
+        "new-seeds-20261901-20261940"
+      ],
+      "geometry_sha256": "15c5e634d5c5617a3e6ecad26832aa8a50329fcd60d5716a067a331c04ebdc44",
+      "face_count": 20,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "complete-failed-history-prefix",
+        "current-v3-failure"
+      ],
+      "reference_status": "conflict"
+    },
+    {
+      "key": "4a5f785f229af5acc269388447c1766f75b45927f52758476c33d9e2755a94f2",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              274,
+              0
+            ],
+            "b": [
+              274,
+              600
+            ]
+          },
+          {
+            "a": [
+              551,
+              0
+            ],
+            "b": [
+              551,
+              600
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261936",
+          "step": 2
+        }
+      ],
+      "cohorts": [
+        "new-seeds-20261901-20261940"
+      ],
+      "geometry_sha256": "46c73a87c8e20573da20271cb66c39faed032638f49ed98ad7ea128ccf7192f4",
+      "face_count": 4,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "complete-failed-history-prefix"
+      ],
+      "reference_status": "solved"
+    },
+    {
+      "key": "5362a35401bc9275e2fb58fb29814cb0cf12af3bb22091754aefabba65e8c51d",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": []
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260908",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260909",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260910",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260911",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260912",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260913",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260914",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260915",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260916",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260917",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260918",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260919",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260920",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260921",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260922",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260923",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260924",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260925",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260926",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260927",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260928",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260929",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260930",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260931",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260932",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260933",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260934",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260935",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260936",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260937",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260938",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260939",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260940",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260941",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260942",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260943",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260944",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260945",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260946",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260947",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260948",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260949",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260950",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260951",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260952",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260953",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260954",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260955",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260956",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260957",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260958",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260959",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260960",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260961",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260962",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260963",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260964",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260965",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260966",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260967",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260968",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260969",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260970",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260971",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260972",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260973",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260974",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260975",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260976",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260977",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260978",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260979",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260980",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260981",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260982",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260983",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260984",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260985",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260986",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260987",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260988",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260989",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260990",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260991",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260992",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260993",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260994",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260995",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260996",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260997",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260998",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260999",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261000",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261001",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261002",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261003",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261004",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261005",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261006",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261007",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261008",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261009",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261010",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261011",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261012",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261013",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261014",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261015",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261016",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261017",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261018",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261019",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261020",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261021",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261022",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261023",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261024",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261025",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261026",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261027",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261028",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261029",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261030",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261031",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261032",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261033",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261034",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261035",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261036",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261037",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261038",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261039",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261040",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261041",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261042",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261043",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261044",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261045",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261046",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261047",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261048",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261049",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261050",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261051",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261052",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261053",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261054",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261055",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261056",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261057",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261058",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261059",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261060",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261061",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261062",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261063",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261064",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261065",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261066",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261067",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "nested-rings-and-bridges-20261068",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "nested-rings-and-bridges-20261069",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "nested-rings-and-bridges-20261071",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "nested-rings-and-bridges-20261072",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "nested-rings-and-bridges-20261073",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "nested-rings-and-bridges-20261075",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "nested-rings-and-bridges-20261076",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "nested-rings-and-bridges-20261078",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "nested-rings-and-bridges-20261080",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "nested-rings-and-bridges-20261082",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "nested-rings-and-bridges-20261083",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "nested-rings-and-bridges-20261084",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "nested-rings-and-bridges-20261086",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "nested-rings-and-bridges-20261087",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "nested-rings-and-bridges-20261089",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "nested-rings-and-bridges-20261090",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261108",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261109",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261110",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261111",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261112",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261113",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261114",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261115",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261116",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261117",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261118",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261119",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261120",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261121",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261122",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261123",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261124",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261125",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261126",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261127",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261128",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261129",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261130",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261131",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261132",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261133",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261134",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261135",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261136",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261137",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261138",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261139",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261140",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261141",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261142",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261143",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261144",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261145",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261146",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261147",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261201",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261202",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261203",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261204",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261205",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261206",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261207",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261208",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261209",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261210",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261211",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261212",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261213",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261214",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261215",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261216",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261217",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261218",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261219",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261220",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261241",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261242",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261243",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261244",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261245",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261246",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261247",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261248",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261249",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261250",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261251",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261252",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261253",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261254",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261255",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261256",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261257",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261258",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261259",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "boundary-fan-20261260",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260918",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260919",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260920",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260921",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260922",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260923",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260924",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260925",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260926",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260927",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260928",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260929",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260930",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260931",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260932",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260933",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260934",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260935",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260936",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260937",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260938",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260939",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260940",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260941",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260942",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260943",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260944",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260945",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260946",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260947",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260948",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260949",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260950",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260951",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260952",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260953",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260954",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260955",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260956",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "two-anchor-strip-20260957",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "construction-tetrahedron",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "construction-order-blocked",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "construction-order-success",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "construction-horizontal",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "construction-polyline",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "construction-loop",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "construction-nested",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "construction-bridge",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "construction-free-end",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "construction-virtual-anchor",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "construction-crossing",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "construction-oblique-anchor",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "A_restart",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "B_restart",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "C_restart",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "D_restart",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "E_restart",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "user-three-inheritance-steps",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "parallel-three-cuts",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "user-sketch-with-final-cut",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261901",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261902",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261903",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261904",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261905",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261906",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261907",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261908",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261909",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261910",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261911",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261912",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261913",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261914",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261915",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261916",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261917",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261918",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261919",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261920",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261921",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261922",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261923",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261924",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261925",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261926",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261927",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261928",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261929",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261930",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261931",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261932",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261933",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261934",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261935",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261936",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261937",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261938",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261939",
+          "step": 0
+        },
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261940",
+          "step": 0
+        },
+        {
+          "kind": "static",
+          "source": "gallery-blank"
+        }
+      ],
+      "cohorts": [
+        "existing-corpus",
+        "new-seeds-20261901-20261940"
+      ],
+      "geometry_sha256": "8ec45c50c234d908aa34b15a798003989c3f9dbb99d580629d2d6bd51a590b64",
+      "face_count": 2,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "complete-failed-history-prefix"
+      ],
+      "reference_status": "solved"
+    },
+    {
+      "key": "561f328fce99aed750d68a40e7459da58dd10a97a1c5c7bfa52b8a872c4755db",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              127
+            ],
+            "b": [
+              385,
+              127
+            ]
+          },
+          {
+            "a": [
+              0,
+              198
+            ],
+            "b": [
+              385,
+              198
+            ]
+          },
+          {
+            "a": [
+              0,
+              277
+            ],
+            "b": [
+              385,
+              277
+            ]
+          },
+          {
+            "a": [
+              0,
+              478
+            ],
+            "b": [
+              385,
+              478
+            ]
+          },
+          {
+            "a": [
+              0,
+              517
+            ],
+            "b": [
+              385,
+              517
+            ]
+          },
+          {
+            "a": [
+              136,
+              127
+            ],
+            "b": [
+              136,
+              198
+            ]
+          },
+          {
+            "a": [
+              161,
+              277
+            ],
+            "b": [
+              161,
+              478
+            ]
+          },
+          {
+            "a": [
+              169,
+              517
+            ],
+            "b": [
+              169,
+              600
+            ]
+          },
+          {
+            "a": [
+              225,
+              478
+            ],
+            "b": [
+              225,
+              517
+            ]
+          },
+          {
+            "a": [
+              385,
+              0
+            ],
+            "b": [
+              385,
+              600
+            ]
+          },
+          {
+            "a": [
+              385,
+              181
+            ],
+            "b": [
+              900,
+              181
+            ]
+          },
+          {
+            "a": [
+              518,
+              0
+            ],
+            "b": [
+              518,
+              181
+            ]
+          },
+          {
+            "a": [
+              595,
+              0
+            ],
+            "b": [
+              595,
+              181
+            ]
+          },
+          {
+            "a": [
+              633,
+              0
+            ],
+            "b": [
+              633,
+              181
+            ]
+          },
+          {
+            "a": [
+              653,
+              0
+            ],
+            "b": [
+              653,
+              181
+            ]
+          },
+          {
+            "a": [
+              665,
+              0
+            ],
+            "b": [
+              665,
+              181
+            ]
+          },
+          {
+            "a": [
+              693,
+              0
+            ],
+            "b": [
+              693,
+              181
+            ]
+          },
+          {
+            "a": [
+              693,
+              84
+            ],
+            "b": [
+              900,
+              84
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261916",
+          "step": 18
+        }
+      ],
+      "cohorts": [
+        "new-seeds-20261901-20261940"
+      ],
+      "geometry_sha256": "e444830cd3b3de2de446f3718c8630bf981e2d0a4b800b03fe5d33197d6ace36",
+      "face_count": 20,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "size-matched-success-control"
+      ],
+      "reference_status": "solved"
+    },
+    {
+      "key": "5c11bb8769c95c0c214e62c4564a91299bd8a139baad5ac8b2ba714c406c9519",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              192
+            ],
+            "b": [
+              190,
+              192
+            ]
+          },
+          {
+            "a": [
+              73,
+              192
+            ],
+            "b": [
+              73,
+              600
+            ]
+          },
+          {
+            "a": [
+              190,
+              0
+            ],
+            "b": [
+              190,
+              600
+            ]
+          },
+          {
+            "a": [
+              190,
+              202
+            ],
+            "b": [
+              274,
+              202
+            ]
+          },
+          {
+            "a": [
+              190,
+              413
+            ],
+            "b": [
+              274,
+              413
+            ]
+          },
+          {
+            "a": [
+              190,
+              527
+            ],
+            "b": [
+              274,
+              527
+            ]
+          },
+          {
+            "a": [
+              244,
+              202
+            ],
+            "b": [
+              244,
+              413
+            ]
+          },
+          {
+            "a": [
+              274,
+              0
+            ],
+            "b": [
+              274,
+              600
+            ]
+          },
+          {
+            "a": [
+              551,
+              0
+            ],
+            "b": [
+              551,
+              600
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261936",
+          "step": 9
+        }
+      ],
+      "cohorts": [
+        "new-seeds-20261901-20261940"
+      ],
+      "geometry_sha256": "906e8e1451244a9c6a1cc91a8198e3489378e80e478df085ce0ee35327f8f204",
+      "face_count": 11,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "complete-failed-history-prefix"
+      ],
+      "reference_status": "solved"
+    },
+    {
+      "key": "608793995ef430710a5e0595d9cbeeb74bc1d74aa4ce3fa72d969bc4c19515ce",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              248
+            ],
+            "b": [
+              900,
+              248
+            ]
+          },
+          {
+            "a": [
+              0,
+              364
+            ],
+            "b": [
+              900,
+              364
+            ]
+          },
+          {
+            "a": [
+              0,
+              419
+            ],
+            "b": [
+              900,
+              419
+            ]
+          },
+          {
+            "a": [
+              0,
+              455
+            ],
+            "b": [
+              900,
+              455
+            ]
+          },
+          {
+            "a": [
+              0,
+              541
+            ],
+            "b": [
+              441,
+              541
+            ]
+          },
+          {
+            "a": [
+              0,
+              552
+            ],
+            "b": [
+              441,
+              552
+            ]
+          },
+          {
+            "a": [
+              0,
+              561
+            ],
+            "b": [
+              441,
+              561
+            ]
+          },
+          {
+            "a": [
+              0,
+              570
+            ],
+            "b": [
+              148,
+              570
+            ]
+          },
+          {
+            "a": [
+              0,
+              584
+            ],
+            "b": [
+              148,
+              584
+            ]
+          },
+          {
+            "a": [
+              148,
+              561
+            ],
+            "b": [
+              148,
+              600
+            ]
+          },
+          {
+            "a": [
+              350,
+              364
+            ],
+            "b": [
+              350,
+              419
+            ]
+          },
+          {
+            "a": [
+              350,
+              383
+            ],
+            "b": [
+              425,
+              383
+            ]
+          },
+          {
+            "a": [
+              350,
+              396
+            ],
+            "b": [
+              425,
+              396
+            ]
+          },
+          {
+            "a": [
+              425,
+              364
+            ],
+            "b": [
+              425,
+              419
+            ]
+          },
+          {
+            "a": [
+              425,
+              388
+            ],
+            "b": [
+              510,
+              388
+            ]
+          },
+          {
+            "a": [
+              425,
+              407
+            ],
+            "b": [
+              510,
+              407
+            ]
+          },
+          {
+            "a": [
+              441,
+              455
+            ],
+            "b": [
+              441,
+              600
+            ]
+          },
+          {
+            "a": [
+              441,
+              553
+            ],
+            "b": [
+              900,
+              553
+            ]
+          },
+          {
+            "a": [
+              507,
+              419
+            ],
+            "b": [
+              507,
+              455
+            ]
+          },
+          {
+            "a": [
+              510,
+              364
+            ],
+            "b": [
+              510,
+              419
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261017",
+          "step": 20
+        }
+      ],
+      "cohorts": [
+        "existing-corpus"
+      ],
+      "geometry_sha256": "5193725429fca197e01b1e48d2c03372d907630ad4a3ef602a77658c20403a31",
+      "face_count": 22,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "size-matched-success-control"
+      ],
+      "reference_status": "solved"
+    },
+    {
+      "key": "6a1f945cb511a52627f8cd9bc06d2bbc4fd255582ae46e2e592d31cabac14d01",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              129
+            ],
+            "b": [
+              190,
+              129
+            ]
+          },
+          {
+            "a": [
+              0,
+              171
+            ],
+            "b": [
+              190,
+              171
+            ]
+          },
+          {
+            "a": [
+              0,
+              192
+            ],
+            "b": [
+              190,
+              192
+            ]
+          },
+          {
+            "a": [
+              73,
+              192
+            ],
+            "b": [
+              73,
+              600
+            ]
+          },
+          {
+            "a": [
+              103,
+              192
+            ],
+            "b": [
+              103,
+              600
+            ]
+          },
+          {
+            "a": [
+              154,
+              192
+            ],
+            "b": [
+              154,
+              600
+            ]
+          },
+          {
+            "a": [
+              190,
+              0
+            ],
+            "b": [
+              190,
+              600
+            ]
+          },
+          {
+            "a": [
+              190,
+              202
+            ],
+            "b": [
+              274,
+              202
+            ]
+          },
+          {
+            "a": [
+              190,
+              413
+            ],
+            "b": [
+              274,
+              413
+            ]
+          },
+          {
+            "a": [
+              190,
+              527
+            ],
+            "b": [
+              274,
+              527
+            ]
+          },
+          {
+            "a": [
+              190,
+              560
+            ],
+            "b": [
+              274,
+              560
+            ]
+          },
+          {
+            "a": [
+              222,
+              202
+            ],
+            "b": [
+              222,
+              413
+            ]
+          },
+          {
+            "a": [
+              238,
+              560
+            ],
+            "b": [
+              238,
+              600
+            ]
+          },
+          {
+            "a": [
+              244,
+              202
+            ],
+            "b": [
+              244,
+              413
+            ]
+          },
+          {
+            "a": [
+              246,
+              560
+            ],
+            "b": [
+              246,
+              600
+            ]
+          },
+          {
+            "a": [
+              261,
+              202
+            ],
+            "b": [
+              261,
+              413
+            ]
+          },
+          {
+            "a": [
+              263,
+              560
+            ],
+            "b": [
+              263,
+              600
+            ]
+          },
+          {
+            "a": [
+              274,
+              0
+            ],
+            "b": [
+              274,
+              600
+            ]
+          },
+          {
+            "a": [
+              551,
+              0
+            ],
+            "b": [
+              551,
+              600
+            ]
+          },
+          {
+            "a": [
+              551,
+              383
+            ],
+            "b": [
+              708,
+              383
+            ]
+          },
+          {
+            "a": [
+              708,
+              0
+            ],
+            "b": [
+              708,
+              600
+            ]
+          },
+          {
+            "a": [
+              817,
+              0
+            ],
+            "b": [
+              817,
+              600
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261936",
+          "step": 22
+        }
+      ],
+      "cohorts": [
+        "new-seeds-20261901-20261940"
+      ],
+      "geometry_sha256": "64082868f9b9dcb8de4d2eedcad0b0a1b55115c4fb1801cfa4bf91937b908ba9",
+      "face_count": 24,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "complete-failed-history-prefix"
+      ],
+      "reference_status": "solved"
+    },
+    {
+      "key": "7122b39658d4634f5a526b13141fc502a40b25c00d23da980ebd88ac5f01d7f7",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              192
+            ],
+            "b": [
+              190,
+              192
+            ]
+          },
+          {
+            "a": [
+              73,
+              192
+            ],
+            "b": [
+              73,
+              600
+            ]
+          },
+          {
+            "a": [
+              154,
+              192
+            ],
+            "b": [
+              154,
+              600
+            ]
+          },
+          {
+            "a": [
+              190,
+              0
+            ],
+            "b": [
+              190,
+              600
+            ]
+          },
+          {
+            "a": [
+              190,
+              202
+            ],
+            "b": [
+              274,
+              202
+            ]
+          },
+          {
+            "a": [
+              190,
+              413
+            ],
+            "b": [
+              274,
+              413
+            ]
+          },
+          {
+            "a": [
+              190,
+              527
+            ],
+            "b": [
+              274,
+              527
+            ]
+          },
+          {
+            "a": [
+              190,
+              560
+            ],
+            "b": [
+              274,
+              560
+            ]
+          },
+          {
+            "a": [
+              222,
+              202
+            ],
+            "b": [
+              222,
+              413
+            ]
+          },
+          {
+            "a": [
+              244,
+              202
+            ],
+            "b": [
+              244,
+              413
+            ]
+          },
+          {
+            "a": [
+              274,
+              0
+            ],
+            "b": [
+              274,
+              600
+            ]
+          },
+          {
+            "a": [
+              551,
+              0
+            ],
+            "b": [
+              551,
+              600
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261936",
+          "step": 12
+        }
+      ],
+      "cohorts": [
+        "new-seeds-20261901-20261940"
+      ],
+      "geometry_sha256": "3908e2ba018d6cb8f786d5be52c982b38ce32774d7af773493c7a0a3aa70fd9c",
+      "face_count": 14,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "complete-failed-history-prefix"
+      ],
+      "reference_status": "solved"
+    },
+    {
+      "key": "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              72
+            ],
+            "b": [
+              544,
+              72
+            ]
+          },
+          {
+            "a": [
+              0,
+              134
+            ],
+            "b": [
+              544,
+              134
+            ]
+          },
+          {
+            "a": [
+              0,
+              412
+            ],
+            "b": [
+              900,
+              412
+            ]
+          },
+          {
+            "a": [
+              72,
+              134
+            ],
+            "b": [
+              72,
+              412
+            ]
+          },
+          {
+            "a": [
+              181,
+              134
+            ],
+            "b": [
+              181,
+              412
+            ]
+          },
+          {
+            "a": [
+              321,
+              72
+            ],
+            "b": [
+              321,
+              134
+            ]
+          },
+          {
+            "a": [
+              382,
+              134
+            ],
+            "b": [
+              382,
+              412
+            ]
+          },
+          {
+            "a": [
+              544,
+              0
+            ],
+            "b": [
+              544,
+              412
+            ]
+          },
+          {
+            "a": [
+              544,
+              31
+            ],
+            "b": [
+              633,
+              31
+            ]
+          },
+          {
+            "a": [
+              544,
+              101
+            ],
+            "b": [
+              721,
+              101
+            ]
+          },
+          {
+            "a": [
+              544,
+              154
+            ],
+            "b": [
+              900,
+              154
+            ]
+          },
+          {
+            "a": [
+              544,
+              332
+            ],
+            "b": [
+              900,
+              332
+            ]
+          },
+          {
+            "a": [
+              544,
+              360
+            ],
+            "b": [
+              900,
+              360
+            ]
+          },
+          {
+            "a": [
+              633,
+              0
+            ],
+            "b": [
+              633,
+              101
+            ]
+          },
+          {
+            "a": [
+              721,
+              0
+            ],
+            "b": [
+              721,
+              154
+            ]
+          },
+          {
+            "a": [
+              721,
+              47
+            ],
+            "b": [
+              900,
+              47
+            ]
+          },
+          {
+            "a": [
+              721,
+              113
+            ],
+            "b": [
+              900,
+              113
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261213",
+          "step": 17
+        }
+      ],
+      "cohorts": [
+        "existing-corpus"
+      ],
+      "geometry_sha256": "3e067e83428342a439e8b59cb6375252dfcb9223dd56fe4de18080559b97348c",
+      "face_count": 19,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "prior-seven-diagnostic"
+      ],
+      "reference_status": "solved"
+    },
+    {
+      "key": "82b950e0f36a11f99c01618da14261440b136a0af69d7e4f320091b9b8b86e65",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              192
+            ],
+            "b": [
+              190,
+              192
+            ]
+          },
+          {
+            "a": [
+              190,
+              0
+            ],
+            "b": [
+              190,
+              600
+            ]
+          },
+          {
+            "a": [
+              190,
+              202
+            ],
+            "b": [
+              274,
+              202
+            ]
+          },
+          {
+            "a": [
+              190,
+              413
+            ],
+            "b": [
+              274,
+              413
+            ]
+          },
+          {
+            "a": [
+              190,
+              527
+            ],
+            "b": [
+              274,
+              527
+            ]
+          },
+          {
+            "a": [
+              274,
+              0
+            ],
+            "b": [
+              274,
+              600
+            ]
+          },
+          {
+            "a": [
+              551,
+              0
+            ],
+            "b": [
+              551,
+              600
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261936",
+          "step": 7
+        }
+      ],
+      "cohorts": [
+        "new-seeds-20261901-20261940"
+      ],
+      "geometry_sha256": "389af024fa9112de3827db841bbab99dbaefa6c59af1ebd39abe238547705a99",
+      "face_count": 9,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "complete-failed-history-prefix"
+      ],
+      "reference_status": "solved"
+    },
+    {
+      "key": "90b4e4117ee02f0644b2a1157631884977740e2e0e3227f3b40a4df54687ede9",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              46
+            ],
+            "b": [
+              612,
+              46
+            ]
+          },
+          {
+            "a": [
+              0,
+              133
+            ],
+            "b": [
+              612,
+              133
+            ]
+          },
+          {
+            "a": [
+              0,
+              160
+            ],
+            "b": [
+              612,
+              160
+            ]
+          },
+          {
+            "a": [
+              0,
+              181
+            ],
+            "b": [
+              612,
+              181
+            ]
+          },
+          {
+            "a": [
+              0,
+              217
+            ],
+            "b": [
+              900,
+              217
+            ]
+          },
+          {
+            "a": [
+              0,
+              303
+            ],
+            "b": [
+              900,
+              303
+            ]
+          },
+          {
+            "a": [
+              0,
+              355
+            ],
+            "b": [
+              900,
+              355
+            ]
+          },
+          {
+            "a": [
+              0,
+              384
+            ],
+            "b": [
+              568,
+              384
+            ]
+          },
+          {
+            "a": [
+              0,
+              435
+            ],
+            "b": [
+              900,
+              435
+            ]
+          },
+          {
+            "a": [
+              0,
+              550
+            ],
+            "b": [
+              534,
+              550
+            ]
+          },
+          {
+            "a": [
+              262,
+              133
+            ],
+            "b": [
+              262,
+              160
+            ]
+          },
+          {
+            "a": [
+              490,
+              303
+            ],
+            "b": [
+              490,
+              355
+            ]
+          },
+          {
+            "a": [
+              534,
+              435
+            ],
+            "b": [
+              534,
+              600
+            ]
+          },
+          {
+            "a": [
+              568,
+              355
+            ],
+            "b": [
+              568,
+              435
+            ]
+          },
+          {
+            "a": [
+              610,
+              355
+            ],
+            "b": [
+              610,
+              435
+            ]
+          },
+          {
+            "a": [
+              612,
+              0
+            ],
+            "b": [
+              612,
+              217
+            ]
+          },
+          {
+            "a": [
+              642,
+              355
+            ],
+            "b": [
+              642,
+              435
+            ]
+          },
+          {
+            "a": [
+              685,
+              355
+            ],
+            "b": [
+              685,
+              435
+            ]
+          },
+          {
+            "a": [
+              694,
+              303
+            ],
+            "b": [
+              694,
+              355
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261907",
+          "step": 19
+        }
+      ],
+      "cohorts": [
+        "new-seeds-20261901-20261940"
+      ],
+      "geometry_sha256": "431585ea13025f6c5cf7747be415338094c3aeb7e2a80b2a8537e97af509866b",
+      "face_count": 21,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "size-matched-success-control"
+      ],
+      "reference_status": "solved"
+    },
+    {
+      "key": "91279b808e76a6d7ff5a3787d0e89c9456f2e7d95b252e601bf8e916880b42b3",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              192
+            ],
+            "b": [
+              190,
+              192
+            ]
+          },
+          {
+            "a": [
+              73,
+              192
+            ],
+            "b": [
+              73,
+              600
+            ]
+          },
+          {
+            "a": [
+              154,
+              192
+            ],
+            "b": [
+              154,
+              600
+            ]
+          },
+          {
+            "a": [
+              190,
+              0
+            ],
+            "b": [
+              190,
+              600
+            ]
+          },
+          {
+            "a": [
+              190,
+              202
+            ],
+            "b": [
+              274,
+              202
+            ]
+          },
+          {
+            "a": [
+              190,
+              413
+            ],
+            "b": [
+              274,
+              413
+            ]
+          },
+          {
+            "a": [
+              190,
+              527
+            ],
+            "b": [
+              274,
+              527
+            ]
+          },
+          {
+            "a": [
+              190,
+              560
+            ],
+            "b": [
+              274,
+              560
+            ]
+          },
+          {
+            "a": [
+              222,
+              202
+            ],
+            "b": [
+              222,
+              413
+            ]
+          },
+          {
+            "a": [
+              244,
+              202
+            ],
+            "b": [
+              244,
+              413
+            ]
+          },
+          {
+            "a": [
+              274,
+              0
+            ],
+            "b": [
+              274,
+              600
+            ]
+          },
+          {
+            "a": [
+              551,
+              0
+            ],
+            "b": [
+              551,
+              600
+            ]
+          },
+          {
+            "a": [
+              708,
+              0
+            ],
+            "b": [
+              708,
+              600
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261936",
+          "step": 13
+        }
+      ],
+      "cohorts": [
+        "new-seeds-20261901-20261940"
+      ],
+      "geometry_sha256": "7ec804825f21e04995cd3d7b256cf5bdc25834afd3f868f703c331c8111bc119",
+      "face_count": 15,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "complete-failed-history-prefix"
+      ],
+      "reference_status": "solved"
+    },
+    {
+      "key": "9f8211690f9b084b850340d04fd3cdb4652a5fafa9f138139ba22e8ec9639b4e",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              85
+            ],
+            "b": [
+              183,
+              85
+            ]
+          },
+          {
+            "a": [
+              0,
+              254
+            ],
+            "b": [
+              544,
+              254
+            ]
+          },
+          {
+            "a": [
+              0,
+              274
+            ],
+            "b": [
+              544,
+              274
+            ]
+          },
+          {
+            "a": [
+              0,
+              315
+            ],
+            "b": [
+              544,
+              315
+            ]
+          },
+          {
+            "a": [
+              0,
+              419
+            ],
+            "b": [
+              544,
+              419
+            ]
+          },
+          {
+            "a": [
+              125,
+              85
+            ],
+            "b": [
+              125,
+              254
+            ]
+          },
+          {
+            "a": [
+              183,
+              0
+            ],
+            "b": [
+              183,
+              254
+            ]
+          },
+          {
+            "a": [
+              277,
+              315
+            ],
+            "b": [
+              277,
+              419
+            ]
+          },
+          {
+            "a": [
+              277,
+              363
+            ],
+            "b": [
+              544,
+              363
+            ]
+          },
+          {
+            "a": [
+              277,
+              382
+            ],
+            "b": [
+              544,
+              382
+            ]
+          },
+          {
+            "a": [
+              325,
+              419
+            ],
+            "b": [
+              325,
+              600
+            ]
+          },
+          {
+            "a": [
+              383,
+              315
+            ],
+            "b": [
+              383,
+              363
+            ]
+          },
+          {
+            "a": [
+              474,
+              419
+            ],
+            "b": [
+              474,
+              600
+            ]
+          },
+          {
+            "a": [
+              544,
+              0
+            ],
+            "b": [
+              544,
+              600
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261220",
+          "step": 14
+        }
+      ],
+      "cohorts": [
+        "existing-corpus"
+      ],
+      "geometry_sha256": "482d6d04b237c9a339bf50b8196e52f3a4c558da05a4668c2b5c48971c235bb9",
+      "face_count": 16,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "prior-seven-diagnostic"
+      ],
+      "reference_status": "solved"
+    },
+    {
+      "key": "ac42e54e0c63c44a1b8a9af1c97c5c9663594a5482aa6141b64d01ac5ddc0103",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              177
+            ],
+            "b": [
+              291,
+              177
+            ]
+          },
+          {
+            "a": [
+              0,
+              271
+            ],
+            "b": [
+              291,
+              271
+            ]
+          },
+          {
+            "a": [
+              291,
+              0
+            ],
+            "b": [
+              291,
+              600
+            ]
+          },
+          {
+            "a": [
+              291,
+              65
+            ],
+            "b": [
+              461,
+              65
+            ]
+          },
+          {
+            "a": [
+              291,
+              189
+            ],
+            "b": [
+              461,
+              189
+            ]
+          },
+          {
+            "a": [
+              328,
+              189
+            ],
+            "b": [
+              328,
+              600
+            ]
+          },
+          {
+            "a": [
+              373,
+              65
+            ],
+            "b": [
+              373,
+              189
+            ]
+          },
+          {
+            "a": [
+              373,
+              113
+            ],
+            "b": [
+              461,
+              113
+            ]
+          },
+          {
+            "a": [
+              373,
+              158
+            ],
+            "b": [
+              461,
+              158
+            ]
+          },
+          {
+            "a": [
+              377,
+              189
+            ],
+            "b": [
+              377,
+              600
+            ]
+          },
+          {
+            "a": [
+              420,
+              189
+            ],
+            "b": [
+              420,
+              600
+            ]
+          },
+          {
+            "a": [
+              420,
+              388
+            ],
+            "b": [
+              461,
+              388
+            ]
+          },
+          {
+            "a": [
+              461,
+              0
+            ],
+            "b": [
+              461,
+              600
+            ]
+          },
+          {
+            "a": [
+              563,
+              0
+            ],
+            "b": [
+              563,
+              600
+            ]
+          },
+          {
+            "a": [
+              650,
+              0
+            ],
+            "b": [
+              650,
+              600
+            ]
+          },
+          {
+            "a": [
+              650,
+              368
+            ],
+            "b": [
+              900,
+              368
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260967",
+          "step": 16
+        }
+      ],
+      "cohorts": [
+        "existing-corpus"
+      ],
+      "geometry_sha256": "d2cd593e1eb9f9c64d8ba84a2b9ec0574b3eb7fe25f7f244ff14b81299925b5b",
+      "face_count": 18,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "size-matched-success-control"
+      ],
+      "reference_status": "solved"
+    },
+    {
+      "key": "ac69d0f7ac192b2988c1ee74fcb4b578721d59d1ee1c34bcad724cf580dc29db",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              192
+            ],
+            "b": [
+              190,
+              192
+            ]
+          },
+          {
+            "a": [
+              73,
+              192
+            ],
+            "b": [
+              73,
+              600
+            ]
+          },
+          {
+            "a": [
+              154,
+              192
+            ],
+            "b": [
+              154,
+              600
+            ]
+          },
+          {
+            "a": [
+              190,
+              0
+            ],
+            "b": [
+              190,
+              600
+            ]
+          },
+          {
+            "a": [
+              190,
+              202
+            ],
+            "b": [
+              274,
+              202
+            ]
+          },
+          {
+            "a": [
+              190,
+              413
+            ],
+            "b": [
+              274,
+              413
+            ]
+          },
+          {
+            "a": [
+              190,
+              527
+            ],
+            "b": [
+              274,
+              527
+            ]
+          },
+          {
+            "a": [
+              190,
+              560
+            ],
+            "b": [
+              274,
+              560
+            ]
+          },
+          {
+            "a": [
+              244,
+              202
+            ],
+            "b": [
+              244,
+              413
+            ]
+          },
+          {
+            "a": [
+              274,
+              0
+            ],
+            "b": [
+              274,
+              600
+            ]
+          },
+          {
+            "a": [
+              551,
+              0
+            ],
+            "b": [
+              551,
+              600
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261936",
+          "step": 11
+        }
+      ],
+      "cohorts": [
+        "new-seeds-20261901-20261940"
+      ],
+      "geometry_sha256": "503e43820ce9dfd0fe77ad9ab64dd8ff45b231b4078baccb083bec233abaf277",
+      "face_count": 13,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "complete-failed-history-prefix"
+      ],
+      "reference_status": "solved"
+    },
+    {
+      "key": "b44373fbc22a9cc03fd4a9df70a17b8f3d99f673a37a2e6624cf9f1d8a9b35a3",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              192
+            ],
+            "b": [
+              190,
+              192
+            ]
+          },
+          {
+            "a": [
+              190,
+              0
+            ],
+            "b": [
+              190,
+              600
+            ]
+          },
+          {
+            "a": [
+              190,
+              202
+            ],
+            "b": [
+              274,
+              202
+            ]
+          },
+          {
+            "a": [
+              190,
+              413
+            ],
+            "b": [
+              274,
+              413
+            ]
+          },
+          {
+            "a": [
+              274,
+              0
+            ],
+            "b": [
+              274,
+              600
+            ]
+          },
+          {
+            "a": [
+              551,
+              0
+            ],
+            "b": [
+              551,
+              600
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261936",
+          "step": 6
+        }
+      ],
+      "cohorts": [
+        "new-seeds-20261901-20261940"
+      ],
+      "geometry_sha256": "f35acc4c9c61cc5b5ccc8fbac0bea7be90a21bc7d124ca7998b46758d3b2f6dc",
+      "face_count": 8,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "complete-failed-history-prefix"
+      ],
+      "reference_status": "solved"
+    },
+    {
+      "key": "b4fee2eaeb9186086575ebc3182717b69897797d7ee993837598467e8df9fb4f",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              75
+            ],
+            "b": [
+              900,
+              75
+            ]
+          },
+          {
+            "a": [
+              0,
+              137
+            ],
+            "b": [
+              900,
+              137
+            ]
+          },
+          {
+            "a": [
+              0,
+              204
+            ],
+            "b": [
+              900,
+              204
+            ]
+          },
+          {
+            "a": [
+              0,
+              321
+            ],
+            "b": [
+              900,
+              321
+            ]
+          },
+          {
+            "a": [
+              0,
+              474
+            ],
+            "b": [
+              900,
+              474
+            ]
+          },
+          {
+            "a": [
+              0,
+              504
+            ],
+            "b": [
+              900,
+              504
+            ]
+          },
+          {
+            "a": [
+              0,
+              534
+            ],
+            "b": [
+              900,
+              534
+            ]
+          },
+          {
+            "a": [
+              0,
+              551
+            ],
+            "b": [
+              900,
+              551
+            ]
+          },
+          {
+            "a": [
+              0,
+              565
+            ],
+            "b": [
+              900,
+              565
+            ]
+          },
+          {
+            "a": [
+              0,
+              571
+            ],
+            "b": [
+              900,
+              571
+            ]
+          },
+          {
+            "a": [
+              0,
+              583
+            ],
+            "b": [
+              900,
+              583
+            ]
+          },
+          {
+            "a": [
+              157,
+              204
+            ],
+            "b": [
+              157,
+              321
+            ]
+          },
+          {
+            "a": [
+              210,
+              204
+            ],
+            "b": [
+              210,
+              321
+            ]
+          },
+          {
+            "a": [
+              226,
+              474
+            ],
+            "b": [
+              226,
+              504
+            ]
+          },
+          {
+            "a": [
+              319,
+              204
+            ],
+            "b": [
+              319,
+              321
+            ]
+          },
+          {
+            "a": [
+              346,
+              474
+            ],
+            "b": [
+              346,
+              504
+            ]
+          },
+          {
+            "a": [
+              505,
+              137
+            ],
+            "b": [
+              505,
+              204
+            ]
+          },
+          {
+            "a": [
+              615,
+              321
+            ],
+            "b": [
+              615,
+              474
+            ]
+          },
+          {
+            "a": [
+              737,
+              137
+            ],
+            "b": [
+              737,
+              204
+            ]
+          },
+          {
+            "a": [
+              808,
+              137
+            ],
+            "b": [
+              808,
+              204
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261931",
+          "step": 20
+        }
+      ],
+      "cohorts": [
+        "new-seeds-20261901-20261940"
+      ],
+      "geometry_sha256": "ad01a8d42d0076035c91b5953a1c28e77f30ffd89a13254d3e6a514988c98cc6",
+      "face_count": 22,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "size-matched-success-control"
+      ],
+      "reference_status": "solved"
+    },
+    {
+      "key": "b8c254718b0afd3b74fb0e523326ea58f73b61c3799994254c0153737af085f1",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              274,
+              0
+            ],
+            "b": [
+              274,
+              600
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261936",
+          "step": 1
+        }
+      ],
+      "cohorts": [
+        "new-seeds-20261901-20261940"
+      ],
+      "geometry_sha256": "9917509ac6261cee56bc5c2a94bf4dcf27a8beb26b2a23aea4f04b3e43c2182f",
+      "face_count": 3,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "complete-failed-history-prefix"
+      ],
+      "reference_status": "solved"
+    },
+    {
+      "key": "c0ac50852324a137e4950cfec3433a4b5f2c286471119927683a05691346410e",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              129
+            ],
+            "b": [
+              190,
+              129
+            ]
+          },
+          {
+            "a": [
+              0,
+              192
+            ],
+            "b": [
+              190,
+              192
+            ]
+          },
+          {
+            "a": [
+              73,
+              192
+            ],
+            "b": [
+              73,
+              600
+            ]
+          },
+          {
+            "a": [
+              103,
+              192
+            ],
+            "b": [
+              103,
+              600
+            ]
+          },
+          {
+            "a": [
+              154,
+              192
+            ],
+            "b": [
+              154,
+              600
+            ]
+          },
+          {
+            "a": [
+              190,
+              0
+            ],
+            "b": [
+              190,
+              600
+            ]
+          },
+          {
+            "a": [
+              190,
+              202
+            ],
+            "b": [
+              274,
+              202
+            ]
+          },
+          {
+            "a": [
+              190,
+              413
+            ],
+            "b": [
+              274,
+              413
+            ]
+          },
+          {
+            "a": [
+              190,
+              527
+            ],
+            "b": [
+              274,
+              527
+            ]
+          },
+          {
+            "a": [
+              190,
+              560
+            ],
+            "b": [
+              274,
+              560
+            ]
+          },
+          {
+            "a": [
+              222,
+              202
+            ],
+            "b": [
+              222,
+              413
+            ]
+          },
+          {
+            "a": [
+              238,
+              560
+            ],
+            "b": [
+              238,
+              600
+            ]
+          },
+          {
+            "a": [
+              244,
+              202
+            ],
+            "b": [
+              244,
+              413
+            ]
+          },
+          {
+            "a": [
+              261,
+              202
+            ],
+            "b": [
+              261,
+              413
+            ]
+          },
+          {
+            "a": [
+              263,
+              560
+            ],
+            "b": [
+              263,
+              600
+            ]
+          },
+          {
+            "a": [
+              274,
+              0
+            ],
+            "b": [
+              274,
+              600
+            ]
+          },
+          {
+            "a": [
+              551,
+              0
+            ],
+            "b": [
+              551,
+              600
+            ]
+          },
+          {
+            "a": [
+              708,
+              0
+            ],
+            "b": [
+              708,
+              600
+            ]
+          },
+          {
+            "a": [
+              817,
+              0
+            ],
+            "b": [
+              817,
+              600
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261936",
+          "step": 19
+        }
+      ],
+      "cohorts": [
+        "new-seeds-20261901-20261940"
+      ],
+      "geometry_sha256": "d5e810a1ea85494d4c9f0011e5b6c5c98a7616d301c288357fd9541b836a1343",
+      "face_count": 21,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "complete-failed-history-prefix",
+        "current-v3-failure"
+      ],
+      "reference_status": "conflict"
+    },
+    {
+      "key": "c3b32c0258e8b03bf1bac7d10373aec27f7529d2664601ff266c3ed54d16466c",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              288
+            ],
+            "b": [
+              900,
+              288
+            ]
+          },
+          {
+            "a": [
+              0,
+              394
+            ],
+            "b": [
+              426,
+              394
+            ]
+          },
+          {
+            "a": [
+              426,
+              288
+            ],
+            "b": [
+              426,
+              600
+            ]
+          },
+          {
+            "a": [
+              426,
+              331
+            ],
+            "b": [
+              516,
+              331
+            ]
+          },
+          {
+            "a": [
+              426,
+              381
+            ],
+            "b": [
+              516,
+              381
+            ]
+          },
+          {
+            "a": [
+              426,
+              426
+            ],
+            "b": [
+              516,
+              426
+            ]
+          },
+          {
+            "a": [
+              439,
+              288
+            ],
+            "b": [
+              439,
+              331
+            ]
+          },
+          {
+            "a": [
+              462,
+              288
+            ],
+            "b": [
+              462,
+              331
+            ]
+          },
+          {
+            "a": [
+              469,
+              331
+            ],
+            "b": [
+              469,
+              381
+            ]
+          },
+          {
+            "a": [
+              478,
+              426
+            ],
+            "b": [
+              478,
+              600
+            ]
+          },
+          {
+            "a": [
+              516,
+              288
+            ],
+            "b": [
+              516,
+              600
+            ]
+          },
+          {
+            "a": [
+              516,
+              503
+            ],
+            "b": [
+              615,
+              503
+            ]
+          },
+          {
+            "a": [
+              528,
+              288
+            ],
+            "b": [
+              528,
+              503
+            ]
+          },
+          {
+            "a": [
+              547,
+              288
+            ],
+            "b": [
+              547,
+              503
+            ]
+          },
+          {
+            "a": [
+              547,
+              353
+            ],
+            "b": [
+              615,
+              353
+            ]
+          },
+          {
+            "a": [
+              547,
+              409
+            ],
+            "b": [
+              615,
+              409
+            ]
+          },
+          {
+            "a": [
+              585,
+              409
+            ],
+            "b": [
+              585,
+              503
+            ]
+          },
+          {
+            "a": [
+              615,
+              288
+            ],
+            "b": [
+              615,
+              600
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20261018",
+          "step": 18
+        }
+      ],
+      "cohorts": [
+        "existing-corpus"
+      ],
+      "geometry_sha256": "f616f594c5fad3b7448d497e9c8c851fafe8980d9084010ff3d9c5f6671cdd72",
+      "face_count": 20,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "prior-seven-diagnostic"
+      ],
+      "reference_status": "solved"
+    },
+    {
+      "key": "cd9d36bb847eedf407bd9a79ce38876de78847fa1b28f51f92785c2f607e7f44",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              129
+            ],
+            "b": [
+              190,
+              129
+            ]
+          },
+          {
+            "a": [
+              0,
+              171
+            ],
+            "b": [
+              190,
+              171
+            ]
+          },
+          {
+            "a": [
+              0,
+              192
+            ],
+            "b": [
+              190,
+              192
+            ]
+          },
+          {
+            "a": [
+              73,
+              192
+            ],
+            "b": [
+              73,
+              600
+            ]
+          },
+          {
+            "a": [
+              73,
+              328
+            ],
+            "b": [
+              103,
+              328
+            ]
+          },
+          {
+            "a": [
+              103,
+              192
+            ],
+            "b": [
+              103,
+              600
+            ]
+          },
+          {
+            "a": [
+              154,
+              192
+            ],
+            "b": [
+              154,
+              600
+            ]
+          },
+          {
+            "a": [
+              190,
+              0
+            ],
+            "b": [
+              190,
+              600
+            ]
+          },
+          {
+            "a": [
+              190,
+              202
+            ],
+            "b": [
+              274,
+              202
+            ]
+          },
+          {
+            "a": [
+              190,
+              413
+            ],
+            "b": [
+              274,
+              413
+            ]
+          },
+          {
+            "a": [
+              190,
+              527
+            ],
+            "b": [
+              274,
+              527
+            ]
+          },
+          {
+            "a": [
+              190,
+              560
+            ],
+            "b": [
+              274,
+              560
+            ]
+          },
+          {
+            "a": [
+              222,
+              202
+            ],
+            "b": [
+              222,
+              413
+            ]
+          },
+          {
+            "a": [
+              238,
+              560
+            ],
+            "b": [
+              238,
+              600
+            ]
+          },
+          {
+            "a": [
+              244,
+              202
+            ],
+            "b": [
+              244,
+              413
+            ]
+          },
+          {
+            "a": [
+              246,
+              560
+            ],
+            "b": [
+              246,
+              600
+            ]
+          },
+          {
+            "a": [
+              261,
+              202
+            ],
+            "b": [
+              261,
+              413
+            ]
+          },
+          {
+            "a": [
+              263,
+              560
+            ],
+            "b": [
+              263,
+              600
+            ]
+          },
+          {
+            "a": [
+              274,
+              0
+            ],
+            "b": [
+              274,
+              600
+            ]
+          },
+          {
+            "a": [
+              551,
+              0
+            ],
+            "b": [
+              551,
+              600
+            ]
+          },
+          {
+            "a": [
+              551,
+              383
+            ],
+            "b": [
+              708,
+              383
+            ]
+          },
+          {
+            "a": [
+              551,
+              493
+            ],
+            "b": [
+              708,
+              493
+            ]
+          },
+          {
+            "a": [
+              708,
+              0
+            ],
+            "b": [
+              708,
+              600
+            ]
+          },
+          {
+            "a": [
+              817,
+              0
+            ],
+            "b": [
+              817,
+              600
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261936",
+          "step": 24
+        }
+      ],
+      "cohorts": [
+        "new-seeds-20261901-20261940"
+      ],
+      "geometry_sha256": "010bacc1eaa381de61067abfca2b42e0537b4b7bad9277ba1fb947363883c2e0",
+      "face_count": 26,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "complete-failed-history-prefix"
+      ],
+      "reference_status": "solved"
+    },
+    {
+      "key": "ce4a3dfba0231f0a54e8f389d144c9731f439ec74d129fd0c49239faca21797b",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              129
+            ],
+            "b": [
+              190,
+              129
+            ]
+          },
+          {
+            "a": [
+              0,
+              192
+            ],
+            "b": [
+              190,
+              192
+            ]
+          },
+          {
+            "a": [
+              73,
+              192
+            ],
+            "b": [
+              73,
+              600
+            ]
+          },
+          {
+            "a": [
+              154,
+              192
+            ],
+            "b": [
+              154,
+              600
+            ]
+          },
+          {
+            "a": [
+              190,
+              0
+            ],
+            "b": [
+              190,
+              600
+            ]
+          },
+          {
+            "a": [
+              190,
+              202
+            ],
+            "b": [
+              274,
+              202
+            ]
+          },
+          {
+            "a": [
+              190,
+              413
+            ],
+            "b": [
+              274,
+              413
+            ]
+          },
+          {
+            "a": [
+              190,
+              527
+            ],
+            "b": [
+              274,
+              527
+            ]
+          },
+          {
+            "a": [
+              190,
+              560
+            ],
+            "b": [
+              274,
+              560
+            ]
+          },
+          {
+            "a": [
+              222,
+              202
+            ],
+            "b": [
+              222,
+              413
+            ]
+          },
+          {
+            "a": [
+              244,
+              202
+            ],
+            "b": [
+              244,
+              413
+            ]
+          },
+          {
+            "a": [
+              274,
+              0
+            ],
+            "b": [
+              274,
+              600
+            ]
+          },
+          {
+            "a": [
+              551,
+              0
+            ],
+            "b": [
+              551,
+              600
+            ]
+          },
+          {
+            "a": [
+              708,
+              0
+            ],
+            "b": [
+              708,
+              600
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261936",
+          "step": 14
+        }
+      ],
+      "cohorts": [
+        "new-seeds-20261901-20261940"
+      ],
+      "geometry_sha256": "dc12d538c3ef643fd3242688ffdf82c302cdd3b588d387706a8a07ce2a6b1ad8",
+      "face_count": 16,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "complete-failed-history-prefix"
+      ],
+      "reference_status": "solved"
+    },
+    {
+      "key": "cfd3a491b7ebf87e24945fddda901ce39c2ded4cbe022a90e827e078920e7ab4",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              192
+            ],
+            "b": [
+              190,
+              192
+            ]
+          },
+          {
+            "a": [
+              190,
+              0
+            ],
+            "b": [
+              190,
+              600
+            ]
+          },
+          {
+            "a": [
+              190,
+              202
+            ],
+            "b": [
+              274,
+              202
+            ]
+          },
+          {
+            "a": [
+              190,
+              413
+            ],
+            "b": [
+              274,
+              413
+            ]
+          },
+          {
+            "a": [
+              190,
+              527
+            ],
+            "b": [
+              274,
+              527
+            ]
+          },
+          {
+            "a": [
+              244,
+              202
+            ],
+            "b": [
+              244,
+              413
+            ]
+          },
+          {
+            "a": [
+              274,
+              0
+            ],
+            "b": [
+              274,
+              600
+            ]
+          },
+          {
+            "a": [
+              551,
+              0
+            ],
+            "b": [
+              551,
+              600
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261936",
+          "step": 8
+        }
+      ],
+      "cohorts": [
+        "new-seeds-20261901-20261940"
+      ],
+      "geometry_sha256": "2fe8862681e42ac9ef888a62a26be1db97e8279dd34e2fbecda52fa539e86799",
+      "face_count": 10,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "complete-failed-history-prefix"
+      ],
+      "reference_status": "solved"
+    },
+    {
+      "key": "d68ddb3f083e0014ee7308d0ac9c2f391f39f47bcb9f663a2c73ec657688ca04",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              38
+            ],
+            "b": [
+              900,
+              38
+            ]
+          },
+          {
+            "a": [
+              0,
+              103
+            ],
+            "b": [
+              900,
+              103
+            ]
+          },
+          {
+            "a": [
+              0,
+              137
+            ],
+            "b": [
+              900,
+              137
+            ]
+          },
+          {
+            "a": [
+              0,
+              206
+            ],
+            "b": [
+              900,
+              206
+            ]
+          },
+          {
+            "a": [
+              0,
+              253
+            ],
+            "b": [
+              506,
+              253
+            ]
+          },
+          {
+            "a": [
+              0,
+              338
+            ],
+            "b": [
+              900,
+              338
+            ]
+          },
+          {
+            "a": [
+              359,
+              0
+            ],
+            "b": [
+              359,
+              38
+            ]
+          },
+          {
+            "a": [
+              359,
+              12
+            ],
+            "b": [
+              900,
+              12
+            ]
+          },
+          {
+            "a": [
+              425,
+              103
+            ],
+            "b": [
+              425,
+              137
+            ]
+          },
+          {
+            "a": [
+              506,
+              206
+            ],
+            "b": [
+              506,
+              338
+            ]
+          },
+          {
+            "a": [
+              506,
+              270
+            ],
+            "b": [
+              900,
+              270
+            ]
+          },
+          {
+            "a": [
+              506,
+              298
+            ],
+            "b": [
+              737,
+              298
+            ]
+          },
+          {
+            "a": [
+              737,
+              270
+            ],
+            "b": [
+              737,
+              338
+            ]
+          },
+          {
+            "a": [
+              851,
+              270
+            ],
+            "b": [
+              851,
+              338
+            ]
+          },
+          {
+            "a": [
+              874,
+              270
+            ],
+            "b": [
+              874,
+              338
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "guillotine-20260962",
+          "step": 15
+        }
+      ],
+      "cohorts": [
+        "existing-corpus"
+      ],
+      "geometry_sha256": "cc7aa448e33a8b29e44585379f9efc07a50d6da2b56a777bf19ff4d6db794812",
+      "face_count": 17,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "prior-seven-diagnostic"
+      ],
+      "reference_status": "solved"
+    },
+    {
+      "key": "d6d0f89a6aba688f6d30579e7446db6748a5ac5a371c818c90970572b9b4a37d",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              129
+            ],
+            "b": [
+              190,
+              129
+            ]
+          },
+          {
+            "a": [
+              0,
+              171
+            ],
+            "b": [
+              190,
+              171
+            ]
+          },
+          {
+            "a": [
+              0,
+              192
+            ],
+            "b": [
+              190,
+              192
+            ]
+          },
+          {
+            "a": [
+              73,
+              192
+            ],
+            "b": [
+              73,
+              600
+            ]
+          },
+          {
+            "a": [
+              73,
+              328
+            ],
+            "b": [
+              103,
+              328
+            ]
+          },
+          {
+            "a": [
+              103,
+              192
+            ],
+            "b": [
+              103,
+              600
+            ]
+          },
+          {
+            "a": [
+              154,
+              192
+            ],
+            "b": [
+              154,
+              600
+            ]
+          },
+          {
+            "a": [
+              190,
+              0
+            ],
+            "b": [
+              190,
+              600
+            ]
+          },
+          {
+            "a": [
+              190,
+              202
+            ],
+            "b": [
+              274,
+              202
+            ]
+          },
+          {
+            "a": [
+              190,
+              413
+            ],
+            "b": [
+              274,
+              413
+            ]
+          },
+          {
+            "a": [
+              190,
+              527
+            ],
+            "b": [
+              274,
+              527
+            ]
+          },
+          {
+            "a": [
+              190,
+              560
+            ],
+            "b": [
+              274,
+              560
+            ]
+          },
+          {
+            "a": [
+              222,
+              202
+            ],
+            "b": [
+              222,
+              413
+            ]
+          },
+          {
+            "a": [
+              238,
+              560
+            ],
+            "b": [
+              238,
+              600
+            ]
+          },
+          {
+            "a": [
+              244,
+              202
+            ],
+            "b": [
+              244,
+              413
+            ]
+          },
+          {
+            "a": [
+              246,
+              560
+            ],
+            "b": [
+              246,
+              600
+            ]
+          },
+          {
+            "a": [
+              261,
+              202
+            ],
+            "b": [
+              261,
+              413
+            ]
+          },
+          {
+            "a": [
+              263,
+              560
+            ],
+            "b": [
+              263,
+              600
+            ]
+          },
+          {
+            "a": [
+              274,
+              0
+            ],
+            "b": [
+              274,
+              600
+            ]
+          },
+          {
+            "a": [
+              551,
+              0
+            ],
+            "b": [
+              551,
+              600
+            ]
+          },
+          {
+            "a": [
+              551,
+              383
+            ],
+            "b": [
+              708,
+              383
+            ]
+          },
+          {
+            "a": [
+              708,
+              0
+            ],
+            "b": [
+              708,
+              600
+            ]
+          },
+          {
+            "a": [
+              817,
+              0
+            ],
+            "b": [
+              817,
+              600
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261936",
+          "step": 23
+        }
+      ],
+      "cohorts": [
+        "new-seeds-20261901-20261940"
+      ],
+      "geometry_sha256": "7538fb9509354d0db4bd46f37c6b83fa0c509911893f75cd28779424291b92af",
+      "face_count": 25,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "complete-failed-history-prefix"
+      ],
+      "reference_status": "solved"
+    },
+    {
+      "key": "dc362012434297f6e0f5d4e54e1ada32077b79528cefad8f181e23002bb7ddcf",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              129
+            ],
+            "b": [
+              190,
+              129
+            ]
+          },
+          {
+            "a": [
+              0,
+              192
+            ],
+            "b": [
+              190,
+              192
+            ]
+          },
+          {
+            "a": [
+              73,
+              192
+            ],
+            "b": [
+              73,
+              600
+            ]
+          },
+          {
+            "a": [
+              103,
+              192
+            ],
+            "b": [
+              103,
+              600
+            ]
+          },
+          {
+            "a": [
+              154,
+              192
+            ],
+            "b": [
+              154,
+              600
+            ]
+          },
+          {
+            "a": [
+              190,
+              0
+            ],
+            "b": [
+              190,
+              600
+            ]
+          },
+          {
+            "a": [
+              190,
+              202
+            ],
+            "b": [
+              274,
+              202
+            ]
+          },
+          {
+            "a": [
+              190,
+              413
+            ],
+            "b": [
+              274,
+              413
+            ]
+          },
+          {
+            "a": [
+              190,
+              527
+            ],
+            "b": [
+              274,
+              527
+            ]
+          },
+          {
+            "a": [
+              190,
+              560
+            ],
+            "b": [
+              274,
+              560
+            ]
+          },
+          {
+            "a": [
+              222,
+              202
+            ],
+            "b": [
+              222,
+              413
+            ]
+          },
+          {
+            "a": [
+              238,
+              560
+            ],
+            "b": [
+              238,
+              600
+            ]
+          },
+          {
+            "a": [
+              244,
+              202
+            ],
+            "b": [
+              244,
+              413
+            ]
+          },
+          {
+            "a": [
+              246,
+              560
+            ],
+            "b": [
+              246,
+              600
+            ]
+          },
+          {
+            "a": [
+              261,
+              202
+            ],
+            "b": [
+              261,
+              413
+            ]
+          },
+          {
+            "a": [
+              263,
+              560
+            ],
+            "b": [
+              263,
+              600
+            ]
+          },
+          {
+            "a": [
+              274,
+              0
+            ],
+            "b": [
+              274,
+              600
+            ]
+          },
+          {
+            "a": [
+              551,
+              0
+            ],
+            "b": [
+              551,
+              600
+            ]
+          },
+          {
+            "a": [
+              551,
+              383
+            ],
+            "b": [
+              708,
+              383
+            ]
+          },
+          {
+            "a": [
+              708,
+              0
+            ],
+            "b": [
+              708,
+              600
+            ]
+          },
+          {
+            "a": [
+              817,
+              0
+            ],
+            "b": [
+              817,
+              600
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261936",
+          "step": 21
+        }
+      ],
+      "cohorts": [
+        "new-seeds-20261901-20261940"
+      ],
+      "geometry_sha256": "83992022cfb90210c9a913938094d3e651fa497ff23f93d399e3dc238571555a",
+      "face_count": 23,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "complete-failed-history-prefix"
+      ],
+      "reference_status": "solved"
+    },
+    {
+      "key": "dc961ac0b68d6f6296ed47c6bef4942f293a01b9475d9bf68324855ebe00fdb3",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              190,
+              0
+            ],
+            "b": [
+              190,
+              600
+            ]
+          },
+          {
+            "a": [
+              274,
+              0
+            ],
+            "b": [
+              274,
+              600
+            ]
+          },
+          {
+            "a": [
+              551,
+              0
+            ],
+            "b": [
+              551,
+              600
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261936",
+          "step": 3
+        }
+      ],
+      "cohorts": [
+        "new-seeds-20261901-20261940"
+      ],
+      "geometry_sha256": "79a00ef5e34d944b680a16a064e36e7a5316555aa5f04552f35fae833dee7b61",
+      "face_count": 5,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "complete-failed-history-prefix"
+      ],
+      "reference_status": "solved"
+    },
+    {
+      "key": "dc9cebec632a0762379de1441eea298761571ed5faf53f484d3672c4a6ce8739",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              0,
+              129
+            ],
+            "b": [
+              190,
+              129
+            ]
+          },
+          {
+            "a": [
+              0,
+              192
+            ],
+            "b": [
+              190,
+              192
+            ]
+          },
+          {
+            "a": [
+              73,
+              192
+            ],
+            "b": [
+              73,
+              600
+            ]
+          },
+          {
+            "a": [
+              154,
+              192
+            ],
+            "b": [
+              154,
+              600
+            ]
+          },
+          {
+            "a": [
+              190,
+              0
+            ],
+            "b": [
+              190,
+              600
+            ]
+          },
+          {
+            "a": [
+              190,
+              202
+            ],
+            "b": [
+              274,
+              202
+            ]
+          },
+          {
+            "a": [
+              190,
+              413
+            ],
+            "b": [
+              274,
+              413
+            ]
+          },
+          {
+            "a": [
+              190,
+              527
+            ],
+            "b": [
+              274,
+              527
+            ]
+          },
+          {
+            "a": [
+              190,
+              560
+            ],
+            "b": [
+              274,
+              560
+            ]
+          },
+          {
+            "a": [
+              222,
+              202
+            ],
+            "b": [
+              222,
+              413
+            ]
+          },
+          {
+            "a": [
+              244,
+              202
+            ],
+            "b": [
+              244,
+              413
+            ]
+          },
+          {
+            "a": [
+              261,
+              202
+            ],
+            "b": [
+              261,
+              413
+            ]
+          },
+          {
+            "a": [
+              274,
+              0
+            ],
+            "b": [
+              274,
+              600
+            ]
+          },
+          {
+            "a": [
+              551,
+              0
+            ],
+            "b": [
+              551,
+              600
+            ]
+          },
+          {
+            "a": [
+              708,
+              0
+            ],
+            "b": [
+              708,
+              600
+            ]
+          },
+          {
+            "a": [
+              817,
+              0
+            ],
+            "b": [
+              817,
+              600
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261936",
+          "step": 16
+        }
+      ],
+      "cohorts": [
+        "new-seeds-20261901-20261940"
+      ],
+      "geometry_sha256": "d040f46ea832ed5702a208e93ae5987be3f499279c56f37d7b51514e1ef236ea",
+      "face_count": 18,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "complete-failed-history-prefix",
+        "current-v3-failure"
+      ],
+      "reference_status": "conflict"
+    },
+    {
+      "key": "f9247b5f7ade9c8c172188dcd9fa084d80c3540a216c0a09fc6697954dc8ae28",
+      "document": {
+        "frame": {
+          "width": 900,
+          "height": 600
+        },
+        "strokes": [
+          {
+            "a": [
+              190,
+              0
+            ],
+            "b": [
+              190,
+              600
+            ]
+          },
+          {
+            "a": [
+              190,
+              202
+            ],
+            "b": [
+              274,
+              202
+            ]
+          },
+          {
+            "a": [
+              274,
+              0
+            ],
+            "b": [
+              274,
+              600
+            ]
+          },
+          {
+            "a": [
+              551,
+              0
+            ],
+            "b": [
+              551,
+              600
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        {
+          "kind": "history_prefix",
+          "history": "heldout-guillotine-20261936",
+          "step": 4
+        }
+      ],
+      "cohorts": [
+        "new-seeds-20261901-20261940"
+      ],
+      "geometry_sha256": "6d86ccfeb9a0f1358b9c8638db435528b38758094879675298e1b36de2552ded",
+      "face_count": 6,
+      "real_bridge_count": 0,
+      "virtual_connector_count": 0,
+      "roles": [
+        "complete-failed-history-prefix"
+      ],
+      "reference_status": "solved"
+    }
+  ],
+  "limits": [
+    "All inputs have already been inspected; no unseen validation claim is justified.",
+    "Controls are chosen using old solved status and geometry size, not candidate outcomes.",
+    "Passing this set does not replace all 7069 drawings and 7678 historical-prefix references.",
+    "Stored old status labels are audit metadata, not allowed inputs to the new solver."
+  ]
+}

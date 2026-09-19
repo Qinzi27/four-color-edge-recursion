@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1050" viewBox="0 0 1200 1050">
+<rect width="100%" height="100%" fill="white"/>
+<text x="60" y="38" font-size="40" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">案例 A｜人工标记空白图</text>
+<text x="60" y="107" font-size="26" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">加入 L4 后，请填写线的两侧名字与母线继承关系。</text>
+<text x="60" y="163" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">旧名不锁定；若更换锚或命名顺序，请用箭头说明。</text>
+<polyline points="105,265 1095,265 1095,925 105,925 105,265" fill="none" stroke="#202831" stroke-width="5"/>
+<polyline points="561.5,265 561.5,925" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="105,707.2 561.5,707.2" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="361.3,707.2 361.3,925" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="310.7,265 310.7,279" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="310.7,288 310.7,302" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="310.7,311 310.7,325" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="310.7,334 310.7,348" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="310.7,357 310.7,371" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="310.7,380 310.7,394" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="310.7,403 310.7,417" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="310.7,426 310.7,440" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="310.7,449 310.7,463" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="310.7,472 310.7,486" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="310.7,495 310.7,509" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="310.7,518 310.7,532" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="310.7,541 310.7,555" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="310.7,564 310.7,578" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="310.7,587 310.7,601" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="310.7,610 310.7,624" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="310.7,633 310.7,647" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="310.7,656 310.7,670" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="310.7,679 310.7,693" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="310.7,702 310.7,707.2" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="105,978 119,978" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="128,978 142,978" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="151,978 165,978" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="174,978 175,978" fill="none" stroke="#B74400" stroke-width="5"/>
+<text x="195" y="964" font-size="26" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">新增 L4；实线为旧线。外侧名字也请标出。</text>
+</svg>

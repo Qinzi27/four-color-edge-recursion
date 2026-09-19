@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1450" height="1050" viewBox="0 0 1450 1050">
+<rect width="100%" height="100%" fill="white"/>
+<text x="55" y="28" font-size="38" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">同一张图：旧规则的合法结果（仅作对照）</text>
+<text x="55" y="97" font-size="26" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">不是本轮新算法的输出，也没有作为新算法输入。外侧1。</text>
+<rect x="55" y="218" width="625.6" height="82.8" fill="#CDE7F4"/>
+<rect x="680.6" y="218" width="102.35" height="35.65" fill="#DDCFE8"/>
+<rect x="782.95" y="218" width="101.2" height="116.15" fill="#FFE4AF"/>
+<rect x="884.15" y="218" width="205.85" height="54.05" fill="#CDE7F4"/>
+<rect x="884.15" y="272.05" width="205.85" height="75.9" fill="#DDCFE8"/>
+<rect x="884.15" y="347.95" width="205.85" height="47.15" fill="#FFE4AF"/>
+<rect x="680.6" y="395.1" width="409.4" height="204.7" fill="#DDCFE8"/>
+<rect x="680.6" y="599.8" width="409.4" height="32.2" fill="#CDE7F4"/>
+<rect x="680.6" y="632" width="409.4" height="59.8" fill="#DDCFE8"/>
+<rect x="55" y="691.8" width="1035" height="216.2" fill="#FFE4AF"/>
+<rect x="55" y="372.1" width="82.8" height="319.7" fill="#CDE7F4"/>
+<rect x="55" y="300.8" width="369.15" height="71.3" fill="#FFE4AF"/>
+<rect x="424.15" y="300.8" width="256.45" height="71.3" fill="#DDCFE8"/>
+<rect x="137.8" y="372.1" width="125.35" height="319.7" fill="#EEEEEE"/>
+<rect x="263.15" y="372.1" width="231.15" height="319.7" fill="#CDE7F4"/>
+<rect x="494.3" y="372.1" width="186.3" height="319.7" fill="#EEEEEE"/>
+<rect x="680.6" y="253.65" width="102.35" height="80.5" fill="#EEEEEE"/>
+<rect x="680.6" y="334.15" width="203.55" height="60.95" fill="#CDE7F4"/>
+<polyline points="55,218 1090,218 1090,908 55,908 55,218" fill="none" stroke="#202831" stroke-width="5"/>
+<polyline points="55,300.8 680.6,300.8" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="55,372.1 680.6,372.1" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="55,691.8 1090,691.8" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="137.8,372.1 137.8,691.8" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="263.15,372.1 263.15,691.8" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="424.15,300.8 424.15,372.1" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="494.3,372.1 494.3,691.8" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="680.6,218 680.6,691.8" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="680.6,253.65 782.95,253.65" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="680.6,334.15 884.15,334.15" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="680.6,395.1 1090,395.1" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="680.6,599.8 1090,599.8" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="680.6,632 1090,632" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="782.95,218 782.95,334.15" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="884.15,218 884.15,395.1" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="884.15,272.05 1090,272.05" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="884.15,347.95 1090,347.95" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="367.8" y="244.4" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="731.775" y="224.325" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<text x="833.55" y="261.075" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="987.075" y="230.025" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="987.075" y="295" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<text x="987.075" y="356.525" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="885.3" y="482.45" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<text x="885.3" y="605.9" font-size="20" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="885.3" y="646.9" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<text x="572.5" y="784.9" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="96.4" y="516.95" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="239.575" y="321.45" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="552.375" y="321.45" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<text x="200.475" y="516.95" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">1</text>
+<text x="378.725" y="516.95" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="587.45" y="516.95" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">1</text>
+<text x="731.775" y="278.9" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">1</text>
+<text x="782.375" y="349.625" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="55" y="955" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">全部实际共边及线轨道已重新独立检查；这张图本身仍可合法四色标名。</text>
+</svg>

@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "input": {
+    "filename": "marked-cases-2026-09-18.json",
+    "sha256": "151978607ea87821de459375727bac66ab2f1d858b94a69e8eb52222ea28679f"
+  },
+  "source_sha256": {
+    "scripts/render_marked_cases.py": "081ff013c917a6352870c144ca1af1bca4d94495bff27c4becb2ca72b1f9ac72",
+    "scripts/render_anchor_failure_cases.py": "8bdea94aa0f3f8ea101d1c139c47fcf6b645373d64e0da06ad0ea4a6fd8b7b5e"
+  },
+  "transform": "Uniform source scale 0.9; source x-right/y-down; no geometry edits.",
+  "cases": {
+    "A": "user_a_replay",
+    "B": "b_reverse"
+  },
+  "files": [
+    {
+      "filename": "marked-a-and-b.png",
+      "sha256": "7436deb6218913a0f6d1af5e01d70f58d96447d83a1eb64767d0d5b7e887061c",
+      "width_px": 1900,
+      "height_px": 1030
+    },
+    {
+      "filename": "marked-a-and-b.svg",
+      "sha256": "8aa5eb0ee79f6a59f71b9faebb96dbf7cbd512ee3b2cf44b34f098701d18f1f3",
+      "width_px": 1900,
+      "height_px": 1030
+    }
+  ]
+}

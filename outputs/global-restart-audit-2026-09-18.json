@@ -1,0 +1,673 @@
+{
+  "schema_version": 1,
+  "input": {
+    "filename": "global-restart-all-2026-09-18-v2.json.gz",
+    "sha256": "7f0f37a298baa7ff09ebd2917c772e4d4aaa5f58578ffbde05bb31bcee0b42dd",
+    "bytes": 2059062
+  },
+  "previous_report": {
+    "filename": "global-restart-all-2026-09-18.json.gz",
+    "sha256": "79f4d4dceb52642dbdb1e517804de23e1dc5ad4436466ed4056deaa5a0ba63f0",
+    "bytes": 1768563
+  },
+  "audit_script_sha256": "971a8a7a2f16301358ce8c8ac52942984f11f636e37c31048c039a65c3686461",
+  "current_source_validation": {
+    "sources_checked": 31,
+    "all_match": true
+  },
+  "mapping_and_summary_checks": {
+    "drawings": 6113,
+    "histories": 323,
+    "static_inputs": 302,
+    "history_prefix_references": 6678,
+    "total_alias_references": 6980,
+    "independent_checks": 24452,
+    "all_mappings_and_summaries_consistent": true
+  },
+  "unchanged_previous_policies": {
+    "policies": [
+      "whole-constraints",
+      "segment-constraints",
+      "shared-mother"
+    ],
+    "geometries": 6113,
+    "compact_results_compared": 18339,
+    "all_identical_including_status_domains_anchors_trace_hash": true
+  },
+  "policy_summaries": [
+    {
+      "policy": "whole-constraints",
+      "distinct_drawings": {
+        "solved": 5330,
+        "conflict": 783
+      },
+      "history_count": 323,
+      "all_prefixes": {
+        "has_failure": 153,
+        "all_solved": 170
+      },
+      "history_final_status": {
+        "solved": 240,
+        "conflict": 83
+      },
+      "history_families": {
+        "guillotine": {
+          "histories": 180,
+          "all_prefixes_solved": 27,
+          "final_status": {
+            "solved": 97,
+            "conflict": 83
+          }
+        },
+        "nested-rings-and-bridges": {
+          "histories": 16,
+          "all_prefixes_solved": 16,
+          "final_status": {
+            "solved": 16
+          }
+        },
+        "boundary-fan": {
+          "histories": 60,
+          "all_prefixes_solved": 60,
+          "final_status": {
+            "solved": 60
+          }
+        },
+        "two-anchor-strip": {
+          "histories": 40,
+          "all_prefixes_solved": 40,
+          "final_status": {
+            "solved": 40
+          }
+        },
+        "construction-gallery": {
+          "histories": 13,
+          "all_prefixes_solved": 13,
+          "final_status": {
+            "solved": 13
+          }
+        },
+        "teaching-A": {
+          "histories": 2,
+          "all_prefixes_solved": 2,
+          "final_status": {
+            "solved": 2
+          }
+        },
+        "teaching-B": {
+          "histories": 2,
+          "all_prefixes_solved": 2,
+          "final_status": {
+            "solved": 2
+          }
+        },
+        "teaching-C": {
+          "histories": 2,
+          "all_prefixes_solved": 2,
+          "final_status": {
+            "solved": 2
+          }
+        },
+        "teaching-D": {
+          "histories": 3,
+          "all_prefixes_solved": 3,
+          "final_status": {
+            "solved": 3
+          }
+        },
+        "teaching-E": {
+          "histories": 2,
+          "all_prefixes_solved": 2,
+          "final_status": {
+            "solved": 2
+          }
+        },
+        "symbolic-teaching": {
+          "histories": 3,
+          "all_prefixes_solved": 3,
+          "final_status": {
+            "solved": 3
+          }
+        }
+      },
+      "static_count": 302,
+      "static_status": {
+        "solved": 216,
+        "conflict": 86
+      }
+    },
+    {
+      "policy": "segment-constraints",
+      "distinct_drawings": {
+        "solved": 5641,
+        "conflict": 472
+      },
+      "history_count": 323,
+      "all_prefixes": {
+        "has_failure": 123,
+        "all_solved": 200
+      },
+      "history_final_status": {
+        "conflict": 56,
+        "solved": 267
+      },
+      "history_families": {
+        "guillotine": {
+          "histories": 180,
+          "all_prefixes_solved": 58,
+          "final_status": {
+            "conflict": 55,
+            "solved": 125
+          }
+        },
+        "nested-rings-and-bridges": {
+          "histories": 16,
+          "all_prefixes_solved": 16,
+          "final_status": {
+            "solved": 16
+          }
+        },
+        "boundary-fan": {
+          "histories": 60,
+          "all_prefixes_solved": 60,
+          "final_status": {
+            "solved": 60
+          }
+        },
+        "two-anchor-strip": {
+          "histories": 40,
+          "all_prefixes_solved": 40,
+          "final_status": {
+            "solved": 40
+          }
+        },
+        "construction-gallery": {
+          "histories": 13,
+          "all_prefixes_solved": 12,
+          "final_status": {
+            "solved": 12,
+            "conflict": 1
+          }
+        },
+        "teaching-A": {
+          "histories": 2,
+          "all_prefixes_solved": 2,
+          "final_status": {
+            "solved": 2
+          }
+        },
+        "teaching-B": {
+          "histories": 2,
+          "all_prefixes_solved": 2,
+          "final_status": {
+            "solved": 2
+          }
+        },
+        "teaching-C": {
+          "histories": 2,
+          "all_prefixes_solved": 2,
+          "final_status": {
+            "solved": 2
+          }
+        },
+        "teaching-D": {
+          "histories": 3,
+          "all_prefixes_solved": 3,
+          "final_status": {
+            "solved": 3
+          }
+        },
+        "teaching-E": {
+          "histories": 2,
+          "all_prefixes_solved": 2,
+          "final_status": {
+            "solved": 2
+          }
+        },
+        "symbolic-teaching": {
+          "histories": 3,
+          "all_prefixes_solved": 3,
+          "final_status": {
+            "solved": 3
+          }
+        }
+      },
+      "static_count": 302,
+      "static_status": {
+        "solved": 247,
+        "conflict": 55
+      }
+    },
+    {
+      "policy": "shared-mother",
+      "distinct_drawings": {
+        "solved": 5377,
+        "conflict": 736
+      },
+      "history_count": 323,
+      "all_prefixes": {
+        "has_failure": 146,
+        "all_solved": 177
+      },
+      "history_final_status": {
+        "conflict": 68,
+        "solved": 255
+      },
+      "history_families": {
+        "guillotine": {
+          "histories": 180,
+          "all_prefixes_solved": 35,
+          "final_status": {
+            "conflict": 67,
+            "solved": 113
+          }
+        },
+        "nested-rings-and-bridges": {
+          "histories": 16,
+          "all_prefixes_solved": 16,
+          "final_status": {
+            "solved": 16
+          }
+        },
+        "boundary-fan": {
+          "histories": 60,
+          "all_prefixes_solved": 60,
+          "final_status": {
+            "solved": 60
+          }
+        },
+        "two-anchor-strip": {
+          "histories": 40,
+          "all_prefixes_solved": 40,
+          "final_status": {
+            "solved": 40
+          }
+        },
+        "construction-gallery": {
+          "histories": 13,
+          "all_prefixes_solved": 12,
+          "final_status": {
+            "solved": 12,
+            "conflict": 1
+          }
+        },
+        "teaching-A": {
+          "histories": 2,
+          "all_prefixes_solved": 2,
+          "final_status": {
+            "solved": 2
+          }
+        },
+        "teaching-B": {
+          "histories": 2,
+          "all_prefixes_solved": 2,
+          "final_status": {
+            "solved": 2
+          }
+        },
+        "teaching-C": {
+          "histories": 2,
+          "all_prefixes_solved": 2,
+          "final_status": {
+            "solved": 2
+          }
+        },
+        "teaching-D": {
+          "histories": 3,
+          "all_prefixes_solved": 3,
+          "final_status": {
+            "solved": 3
+          }
+        },
+        "teaching-E": {
+          "histories": 2,
+          "all_prefixes_solved": 2,
+          "final_status": {
+            "solved": 2
+          }
+        },
+        "symbolic-teaching": {
+          "histories": 3,
+          "all_prefixes_solved": 3,
+          "final_status": {
+            "solved": 3
+          }
+        }
+      },
+      "static_count": 302,
+      "static_status": {
+        "solved": 235,
+        "conflict": 67
+      }
+    },
+    {
+      "policy": "closed-support",
+      "distinct_drawings": {
+        "solved": 5638,
+        "conflict": 475
+      },
+      "history_count": 323,
+      "all_prefixes": {
+        "has_failure": 124,
+        "all_solved": 199
+      },
+      "history_final_status": {
+        "conflict": 59,
+        "solved": 264
+      },
+      "history_families": {
+        "guillotine": {
+          "histories": 180,
+          "all_prefixes_solved": 57,
+          "final_status": {
+            "conflict": 58,
+            "solved": 122
+          }
+        },
+        "nested-rings-and-bridges": {
+          "histories": 16,
+          "all_prefixes_solved": 16,
+          "final_status": {
+            "solved": 16
+          }
+        },
+        "boundary-fan": {
+          "histories": 60,
+          "all_prefixes_solved": 60,
+          "final_status": {
+            "solved": 60
+          }
+        },
+        "two-anchor-strip": {
+          "histories": 40,
+          "all_prefixes_solved": 40,
+          "final_status": {
+            "solved": 40
+          }
+        },
+        "construction-gallery": {
+          "histories": 13,
+          "all_prefixes_solved": 12,
+          "final_status": {
+            "solved": 12,
+            "conflict": 1
+          }
+        },
+        "teaching-A": {
+          "histories": 2,
+          "all_prefixes_solved": 2,
+          "final_status": {
+            "solved": 2
+          }
+        },
+        "teaching-B": {
+          "histories": 2,
+          "all_prefixes_solved": 2,
+          "final_status": {
+            "solved": 2
+          }
+        },
+        "teaching-C": {
+          "histories": 2,
+          "all_prefixes_solved": 2,
+          "final_status": {
+            "solved": 2
+          }
+        },
+        "teaching-D": {
+          "histories": 3,
+          "all_prefixes_solved": 3,
+          "final_status": {
+            "solved": 3
+          }
+        },
+        "teaching-E": {
+          "histories": 2,
+          "all_prefixes_solved": 2,
+          "final_status": {
+            "solved": 2
+          }
+        },
+        "symbolic-teaching": {
+          "histories": 3,
+          "all_prefixes_solved": 3,
+          "final_status": {
+            "solved": 3
+          }
+        }
+      },
+      "static_count": 302,
+      "static_status": {
+        "solved": 244,
+        "conflict": 58
+      }
+    }
+  ],
+  "closed_vs_segment": {
+    "baseline": "segment-constraints",
+    "proposal": "closed-support",
+    "distinct_drawings": {
+      "improved": 9,
+      "regressed": 12,
+      "both_solved": 5629,
+      "neither_solved": 463
+    },
+    "history_all_prefixes": {
+      "improved": 0,
+      "regressed": 1,
+      "both_solved": 199,
+      "neither_solved": 123
+    },
+    "history_final": {
+      "improved": 0,
+      "regressed": 3,
+      "both_solved": 264,
+      "neither_solved": 56
+    },
+    "static_inputs": {
+      "improved": 0,
+      "regressed": 3,
+      "both_solved": 244,
+      "neither_solved": 55
+    },
+    "domains_differ": 118,
+    "anchors_differ": 159,
+    "warning": "Trace hashes differ when priority/closed-support metadata differ; that alone is not an ordering change."
+  },
+  "ordering_witnesses": {
+    "seed_history_results": {
+      "guillotine-20260908": {
+        "segment-constraints": {
+          "first_failed_prefix": 24,
+          "final_status": "conflict",
+          "all_prefixes_solved": false
+        },
+        "closed-support": {
+          "first_failed_prefix": 24,
+          "final_status": "conflict",
+          "all_prefixes_solved": false
+        }
+      },
+      "guillotine-20260943": {
+        "segment-constraints": {
+          "first_failed_prefix": 22,
+          "final_status": "conflict",
+          "all_prefixes_solved": false
+        },
+        "closed-support": {
+          "first_failed_prefix": 22,
+          "final_status": "conflict",
+          "all_prefixes_solved": false
+        }
+      }
+    },
+    "bounded_replayed_drawings": 4,
+    "drawings_with_actual_choice_changes": 1,
+    "witnesses": [
+      {
+        "geometry_key": "53d8f440dba4d0dcfde2e0c663b04d05695fcff0e45635912c029207795e8fb3",
+        "references": [
+          {
+            "history": "guillotine-20260908",
+            "prefix": 7
+          }
+        ],
+        "statuses": {
+          "segment-constraints": "solved",
+          "closed-support": "solved"
+        },
+        "selection_sequences_differ": false,
+        "trace_hashes_match_saved_full_run": true,
+        "first_actual_choice_difference": null
+      },
+      {
+        "geometry_key": "9274f343fb3f3930d42c59de5949661a22834cfe2a8befe45fb90e3518bb621c",
+        "references": [
+          {
+            "history": "guillotine-20260943",
+            "prefix": 4
+          }
+        ],
+        "statuses": {
+          "segment-constraints": "solved",
+          "closed-support": "solved"
+        },
+        "selection_sequences_differ": false,
+        "trace_hashes_match_saved_full_run": true,
+        "first_actual_choice_difference": null
+      },
+      {
+        "geometry_key": "a7037b6725093f8a5f43040a51b764c87a2551da3230d9a5d599dfc685551ab7",
+        "references": [
+          {
+            "history": "guillotine-20260908",
+            "prefix": 24
+          },
+          {
+            "history": "guillotine-20260908",
+            "prefix": 24
+          }
+        ],
+        "statuses": {
+          "segment-constraints": "conflict",
+          "closed-support": "conflict"
+        },
+        "selection_sequences_differ": false,
+        "trace_hashes_match_saved_full_run": true,
+        "first_actual_choice_difference": null
+      },
+      {
+        "geometry_key": "15509a35e995478ac39a7f5ca1c969beda640d241b8c05a9760e7c9185db02ec",
+        "references": [
+          {
+            "selection": "first_saved_status_disagreement"
+          }
+        ],
+        "statuses": {
+          "segment-constraints": "solved",
+          "closed-support": "conflict"
+        },
+        "selection_sequences_differ": true,
+        "trace_hashes_match_saved_full_run": true,
+        "first_actual_choice_difference": {
+          "choice_index_one_based": 3,
+          "segment-constraints": {
+            "unit": "L:0,145>900,145@0.513333333333:0.624444444444",
+            "mother": "L:0,145>900,145",
+            "unresolved_shores": [
+              12,
+              3
+            ],
+            "same_single_mother": false,
+            "constraint_weight": 3,
+            "priority": [
+              0,
+              3
+            ],
+            "tied_units": [
+              "L:0,145>900,145@0.513333333333:0.624444444444",
+              "L:0,145>900,145@0.624444444444:0.716666666667",
+              "L:0,272>900,272@0:1",
+              "L:462,106>645,106@0:0.546448087432",
+              "L:462,106>645,106@0.546448087432:1"
+            ],
+            "dart": 44,
+            "side": 12,
+            "domain": [
+              1,
+              2,
+              4
+            ],
+            "used_names": [
+              1,
+              2,
+              3
+            ],
+            "symbol": 1
+          },
+          "closed-support": {
+            "unit": "L:0,272>900,272@0:1",
+            "mother": "L:0,272>900,272",
+            "unresolved_shores": [
+              3,
+              4
+            ],
+            "same_single_mother": true,
+            "constraint_weight": 3,
+            "priority": [
+              3,
+              1
+            ],
+            "closed_support": {
+              "supported": true,
+              "block_edge_ids": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17
+              ],
+              "endpoint_vertices": [
+                "15",
+                "4"
+              ]
+            },
+            "tied_units": [
+              "L:0,272>900,272@0:1"
+            ],
+            "dart": 50,
+            "side": 3,
+            "domain": [
+              2,
+              4
+            ],
+            "used_names": [
+              1,
+              2,
+              3
+            ],
+            "symbol": 2
+          }
+        }
+      }
+    ]
+  },
+  "limits": [
+    "Saved-report audit plus bounded exact trace replays, not another full corpus run.",
+    "Related prefixes are not independent statistical samples; four remains the input palette.",
+    "Success gains and regressions are both retained; a changed ordering is not itself an improvement."
+  ]
+}

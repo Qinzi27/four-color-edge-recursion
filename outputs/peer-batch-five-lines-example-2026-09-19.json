@@ -1,0 +1,5315 @@
+{
+  "schema_version": 1,
+  "policy": "peer-batch-ready-sides-v4",
+  "key": "c4f904c7c5c68be58b768f47e87c7fd662c4db85105298baf230de1f8b4c05fe",
+  "document": {
+    "frame": {
+      "width": 900,
+      "height": 600
+    },
+    "strokes": [
+      {
+        "a": [
+          0,
+          250
+        ],
+        "b": [
+          150,
+          250
+        ]
+      },
+      {
+        "a": [
+          150,
+          0
+        ],
+        "b": [
+          150,
+          600
+        ]
+      },
+      {
+        "a": [
+          150,
+          400
+        ],
+        "b": [
+          300,
+          400
+        ]
+      },
+      {
+        "a": [
+          300,
+          0
+        ],
+        "b": [
+          300,
+          600
+        ]
+      },
+      {
+        "a": [
+          450,
+          0
+        ],
+        "b": [
+          450,
+          600
+        ]
+      },
+      {
+        "a": [
+          600,
+          0
+        ],
+        "b": [
+          600,
+          600
+        ]
+      },
+      {
+        "a": [
+          750,
+          0
+        ],
+        "b": [
+          750,
+          600
+        ]
+      }
+    ]
+  },
+  "geometry": {
+    "vertices": [
+      [
+        0,
+        0
+      ],
+      [
+        150,
+        0
+      ],
+      [
+        300,
+        0
+      ],
+      [
+        450,
+        0
+      ],
+      [
+        600,
+        0
+      ],
+      [
+        750,
+        0
+      ],
+      [
+        900,
+        0
+      ],
+      [
+        900,
+        600
+      ],
+      [
+        750,
+        600
+      ],
+      [
+        600,
+        600
+      ],
+      [
+        450,
+        600
+      ],
+      [
+        300,
+        600
+      ],
+      [
+        150,
+        600
+      ],
+      [
+        0,
+        600
+      ],
+      [
+        0,
+        250
+      ],
+      [
+        150,
+        250
+      ],
+      [
+        150,
+        400
+      ],
+      [
+        300,
+        400
+      ]
+    ],
+    "edges": [
+      {
+        "a": 0,
+        "b": 1,
+        "virtual": false,
+        "frame": true,
+        "sources": []
+      },
+      {
+        "a": 1,
+        "b": 2,
+        "virtual": false,
+        "frame": true,
+        "sources": []
+      },
+      {
+        "a": 2,
+        "b": 3,
+        "virtual": false,
+        "frame": true,
+        "sources": []
+      },
+      {
+        "a": 3,
+        "b": 4,
+        "virtual": false,
+        "frame": true,
+        "sources": []
+      },
+      {
+        "a": 4,
+        "b": 5,
+        "virtual": false,
+        "frame": true,
+        "sources": []
+      },
+      {
+        "a": 5,
+        "b": 6,
+        "virtual": false,
+        "frame": true,
+        "sources": []
+      },
+      {
+        "a": 6,
+        "b": 7,
+        "virtual": false,
+        "frame": true,
+        "sources": []
+      },
+      {
+        "a": 7,
+        "b": 8,
+        "virtual": false,
+        "frame": true,
+        "sources": []
+      },
+      {
+        "a": 8,
+        "b": 9,
+        "virtual": false,
+        "frame": true,
+        "sources": []
+      },
+      {
+        "a": 9,
+        "b": 10,
+        "virtual": false,
+        "frame": true,
+        "sources": []
+      },
+      {
+        "a": 10,
+        "b": 11,
+        "virtual": false,
+        "frame": true,
+        "sources": []
+      },
+      {
+        "a": 11,
+        "b": 12,
+        "virtual": false,
+        "frame": true,
+        "sources": []
+      },
+      {
+        "a": 12,
+        "b": 13,
+        "virtual": false,
+        "frame": true,
+        "sources": []
+      },
+      {
+        "a": 13,
+        "b": 14,
+        "virtual": false,
+        "frame": true,
+        "sources": []
+      },
+      {
+        "a": 14,
+        "b": 0,
+        "virtual": false,
+        "frame": true,
+        "sources": []
+      },
+      {
+        "a": 14,
+        "b": 15,
+        "virtual": false,
+        "frame": false,
+        "sources": [
+          0
+        ]
+      },
+      {
+        "a": 1,
+        "b": 15,
+        "virtual": false,
+        "frame": false,
+        "sources": [
+          1
+        ]
+      },
+      {
+        "a": 15,
+        "b": 16,
+        "virtual": false,
+        "frame": false,
+        "sources": [
+          1
+        ]
+      },
+      {
+        "a": 16,
+        "b": 12,
+        "virtual": false,
+        "frame": false,
+        "sources": [
+          1
+        ]
+      },
+      {
+        "a": 16,
+        "b": 17,
+        "virtual": false,
+        "frame": false,
+        "sources": [
+          2
+        ]
+      },
+      {
+        "a": 2,
+        "b": 17,
+        "virtual": false,
+        "frame": false,
+        "sources": [
+          3
+        ]
+      },
+      {
+        "a": 17,
+        "b": 11,
+        "virtual": false,
+        "frame": false,
+        "sources": [
+          3
+        ]
+      },
+      {
+        "a": 3,
+        "b": 10,
+        "virtual": false,
+        "frame": false,
+        "sources": [
+          4
+        ]
+      },
+      {
+        "a": 4,
+        "b": 9,
+        "virtual": false,
+        "frame": false,
+        "sources": [
+          5
+        ]
+      },
+      {
+        "a": 5,
+        "b": 8,
+        "virtual": false,
+        "frame": false,
+        "sources": [
+          6
+        ]
+      }
+    ],
+    "rotation": [
+      [
+        29,
+        0
+      ],
+      [
+        1,
+        32,
+        2
+      ],
+      [
+        3,
+        40,
+        4
+      ],
+      [
+        5,
+        44,
+        6
+      ],
+      [
+        7,
+        46,
+        8
+      ],
+      [
+        9,
+        48,
+        10
+      ],
+      [
+        11,
+        12
+      ],
+      [
+        14,
+        13
+      ],
+      [
+        16,
+        15,
+        49
+      ],
+      [
+        18,
+        17,
+        47
+      ],
+      [
+        20,
+        19,
+        45
+      ],
+      [
+        22,
+        21,
+        43
+      ],
+      [
+        24,
+        23,
+        37
+      ],
+      [
+        25,
+        26
+      ],
+      [
+        27,
+        30,
+        28
+      ],
+      [
+        31,
+        34,
+        33
+      ],
+      [
+        36,
+        38,
+        35
+      ],
+      [
+        39,
+        42,
+        41
+      ]
+    ],
+    "faceOfDart": [
+      0,
+      1,
+      0,
+      2,
+      0,
+      3,
+      0,
+      4,
+      0,
+      5,
+      0,
+      6,
+      0,
+      6,
+      0,
+      6,
+      0,
+      5,
+      0,
+      4,
+      0,
+      3,
+      0,
+      7,
+      0,
+      8,
+      0,
+      8,
+      0,
+      1,
+      1,
+      8,
+      2,
+      1,
+      2,
+      8,
+      7,
+      8,
+      2,
+      7,
+      3,
+      2,
+      3,
+      7,
+      4,
+      3,
+      5,
+      4,
+      6,
+      5
+    ],
+    "faces": [
+      [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28
+      ],
+      [
+        1,
+        29,
+        30,
+        33
+      ],
+      [
+        3,
+        32,
+        34,
+        38,
+        41
+      ],
+      [
+        5,
+        40,
+        42,
+        21,
+        45
+      ],
+      [
+        7,
+        44,
+        19,
+        47
+      ],
+      [
+        9,
+        46,
+        17,
+        49
+      ],
+      [
+        11,
+        48,
+        15,
+        13
+      ],
+      [
+        23,
+        43,
+        39,
+        36
+      ],
+      [
+        25,
+        37,
+        35,
+        31,
+        27
+      ]
+    ],
+    "outerFace": 0,
+    "original": {
+      "vertices": 18,
+      "edges": 25,
+      "components": 1
+    },
+    "same_shore_edges": [],
+    "real_bridge_edge_ids": [],
+    "virtual_bridge_edge_ids": []
+  },
+  "geometry_sha256": "c6a1a2e3659fe8eee61f1c4514133d86a5a293a692f2aa044fa89a044fd859eb",
+  "outcome": {
+    "status": "solved",
+    "policy": "peer-batch-ready-sides-v4",
+    "domains": [
+      [
+        1
+      ],
+      [
+        4
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        3
+      ]
+    ],
+    "levels": {
+      "frame": {
+        "level": 1,
+        "parents": [
+          [],
+          []
+        ],
+        "endpoint_contacts": [
+          [],
+          []
+        ],
+        "endpoints": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      "L:0,250>150,250": {
+        "level": 3,
+        "parents": [
+          [
+            "frame"
+          ],
+          [
+            "L:150,0>150,600"
+          ]
+        ],
+        "endpoint_contacts": [
+          [
+            "frame"
+          ],
+          [
+            "L:150,0>150,600"
+          ]
+        ],
+        "endpoints": [
+          [
+            0,
+            250
+          ],
+          [
+            150,
+            250
+          ]
+        ]
+      },
+      "L:150,0>150,600": {
+        "level": 2,
+        "parents": [
+          [
+            "frame"
+          ],
+          [
+            "frame"
+          ]
+        ],
+        "endpoint_contacts": [
+          [
+            "frame"
+          ],
+          [
+            "frame"
+          ]
+        ],
+        "endpoints": [
+          [
+            150,
+            0
+          ],
+          [
+            150,
+            600
+          ]
+        ]
+      },
+      "L:150,400>300,400": {
+        "level": 3,
+        "parents": [
+          [
+            "L:150,0>150,600"
+          ],
+          [
+            "L:300,0>300,600"
+          ]
+        ],
+        "endpoint_contacts": [
+          [
+            "L:150,0>150,600"
+          ],
+          [
+            "L:300,0>300,600"
+          ]
+        ],
+        "endpoints": [
+          [
+            150,
+            400
+          ],
+          [
+            300,
+            400
+          ]
+        ]
+      },
+      "L:300,0>300,600": {
+        "level": 2,
+        "parents": [
+          [
+            "frame"
+          ],
+          [
+            "frame"
+          ]
+        ],
+        "endpoint_contacts": [
+          [
+            "frame"
+          ],
+          [
+            "frame"
+          ]
+        ],
+        "endpoints": [
+          [
+            300,
+            0
+          ],
+          [
+            300,
+            600
+          ]
+        ]
+      },
+      "L:450,0>450,600": {
+        "level": 2,
+        "parents": [
+          [
+            "frame"
+          ],
+          [
+            "frame"
+          ]
+        ],
+        "endpoint_contacts": [
+          [
+            "frame"
+          ],
+          [
+            "frame"
+          ]
+        ],
+        "endpoints": [
+          [
+            450,
+            0
+          ],
+          [
+            450,
+            600
+          ]
+        ]
+      },
+      "L:600,0>600,600": {
+        "level": 2,
+        "parents": [
+          [
+            "frame"
+          ],
+          [
+            "frame"
+          ]
+        ],
+        "endpoint_contacts": [
+          [
+            "frame"
+          ],
+          [
+            "frame"
+          ]
+        ],
+        "endpoints": [
+          [
+            600,
+            0
+          ],
+          [
+            600,
+            600
+          ]
+        ]
+      },
+      "L:750,0>750,600": {
+        "level": 2,
+        "parents": [
+          [
+            "frame"
+          ],
+          [
+            "frame"
+          ]
+        ],
+        "endpoint_contacts": [
+          [
+            "frame"
+          ],
+          [
+            "frame"
+          ]
+        ],
+        "endpoints": [
+          [
+            750,
+            0
+          ],
+          [
+            750,
+            600
+          ]
+        ]
+      }
+    },
+    "unranked_mothers": [],
+    "units": [
+      {
+        "id": "frame@0:0.05",
+        "mother": "frame",
+        "t0": 0.0,
+        "t1": 0.05,
+        "endpoint_mothers": [
+          [],
+          [
+            "L:150,0>150,600"
+          ]
+        ],
+        "same_single_mother": false,
+        "frame_endpoint_count": 0,
+        "edges": [
+          0
+        ],
+        "occurrences": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "frame@0.05:0.1",
+        "mother": "frame",
+        "t0": 0.05,
+        "t1": 0.1,
+        "endpoint_mothers": [
+          [
+            "L:150,0>150,600"
+          ],
+          [
+            "L:300,0>300,600"
+          ]
+        ],
+        "same_single_mother": false,
+        "frame_endpoint_count": 0,
+        "edges": [
+          1
+        ],
+        "occurrences": [
+          [
+            0,
+            2
+          ],
+          [
+            2,
+            3
+          ]
+        ]
+      },
+      {
+        "id": "frame@0.1:0.15",
+        "mother": "frame",
+        "t0": 0.1,
+        "t1": 0.15,
+        "endpoint_mothers": [
+          [
+            "L:300,0>300,600"
+          ],
+          [
+            "L:450,0>450,600"
+          ]
+        ],
+        "same_single_mother": false,
+        "frame_endpoint_count": 0,
+        "edges": [
+          2
+        ],
+        "occurrences": [
+          [
+            0,
+            4
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      },
+      {
+        "id": "frame@0.15:0.2",
+        "mother": "frame",
+        "t0": 0.15,
+        "t1": 0.2,
+        "endpoint_mothers": [
+          [
+            "L:450,0>450,600"
+          ],
+          [
+            "L:600,0>600,600"
+          ]
+        ],
+        "same_single_mother": false,
+        "frame_endpoint_count": 0,
+        "edges": [
+          3
+        ],
+        "occurrences": [
+          [
+            0,
+            6
+          ],
+          [
+            4,
+            7
+          ]
+        ]
+      },
+      {
+        "id": "frame@0.2:0.25",
+        "mother": "frame",
+        "t0": 0.2,
+        "t1": 0.25,
+        "endpoint_mothers": [
+          [
+            "L:600,0>600,600"
+          ],
+          [
+            "L:750,0>750,600"
+          ]
+        ],
+        "same_single_mother": false,
+        "frame_endpoint_count": 0,
+        "edges": [
+          4
+        ],
+        "occurrences": [
+          [
+            0,
+            8
+          ],
+          [
+            5,
+            9
+          ]
+        ]
+      },
+      {
+        "id": "frame@0.25:0.55",
+        "mother": "frame",
+        "t0": 0.25,
+        "t1": 0.55,
+        "endpoint_mothers": [
+          [
+            "L:750,0>750,600"
+          ],
+          [
+            "L:750,0>750,600"
+          ]
+        ],
+        "same_single_mother": false,
+        "frame_endpoint_count": 0,
+        "edges": [
+          5,
+          6,
+          7
+        ],
+        "occurrences": [
+          [
+            0,
+            10
+          ],
+          [
+            6,
+            11
+          ]
+        ]
+      },
+      {
+        "id": "frame@0.55:0.6",
+        "mother": "frame",
+        "t0": 0.55,
+        "t1": 0.6,
+        "endpoint_mothers": [
+          [
+            "L:750,0>750,600"
+          ],
+          [
+            "L:600,0>600,600"
+          ]
+        ],
+        "same_single_mother": false,
+        "frame_endpoint_count": 0,
+        "edges": [
+          8
+        ],
+        "occurrences": [
+          [
+            0,
+            16
+          ],
+          [
+            5,
+            17
+          ]
+        ]
+      },
+      {
+        "id": "frame@0.6:0.65",
+        "mother": "frame",
+        "t0": 0.6,
+        "t1": 0.65,
+        "endpoint_mothers": [
+          [
+            "L:600,0>600,600"
+          ],
+          [
+            "L:450,0>450,600"
+          ]
+        ],
+        "same_single_mother": false,
+        "frame_endpoint_count": 0,
+        "edges": [
+          9
+        ],
+        "occurrences": [
+          [
+            0,
+            18
+          ],
+          [
+            4,
+            19
+          ]
+        ]
+      },
+      {
+        "id": "frame@0.65:0.7",
+        "mother": "frame",
+        "t0": 0.65,
+        "t1": 0.7,
+        "endpoint_mothers": [
+          [
+            "L:450,0>450,600"
+          ],
+          [
+            "L:300,0>300,600"
+          ]
+        ],
+        "same_single_mother": false,
+        "frame_endpoint_count": 0,
+        "edges": [
+          10
+        ],
+        "occurrences": [
+          [
+            0,
+            20
+          ],
+          [
+            3,
+            21
+          ]
+        ]
+      },
+      {
+        "id": "frame@0.7:0.75",
+        "mother": "frame",
+        "t0": 0.7,
+        "t1": 0.75,
+        "endpoint_mothers": [
+          [
+            "L:300,0>300,600"
+          ],
+          [
+            "L:150,0>150,600"
+          ]
+        ],
+        "same_single_mother": false,
+        "frame_endpoint_count": 0,
+        "edges": [
+          11
+        ],
+        "occurrences": [
+          [
+            0,
+            22
+          ],
+          [
+            7,
+            23
+          ]
+        ]
+      },
+      {
+        "id": "frame@0.75:0.916666666667",
+        "mother": "frame",
+        "t0": 0.75,
+        "t1": 0.9166666666666666,
+        "endpoint_mothers": [
+          [
+            "L:150,0>150,600"
+          ],
+          [
+            "L:0,250>150,250"
+          ]
+        ],
+        "same_single_mother": false,
+        "frame_endpoint_count": 0,
+        "edges": [
+          12,
+          13
+        ],
+        "occurrences": [
+          [
+            0,
+            24
+          ],
+          [
+            8,
+            25
+          ]
+        ]
+      },
+      {
+        "id": "frame@0.916666666667:1",
+        "mother": "frame",
+        "t0": 0.9166666666666666,
+        "t1": 1.0,
+        "endpoint_mothers": [
+          [
+            "L:0,250>150,250"
+          ],
+          []
+        ],
+        "same_single_mother": false,
+        "frame_endpoint_count": 0,
+        "edges": [
+          14
+        ],
+        "occurrences": [
+          [
+            0,
+            28
+          ],
+          [
+            1,
+            29
+          ]
+        ]
+      },
+      {
+        "id": "L:0,250>150,250@0:1",
+        "mother": "L:0,250>150,250",
+        "t0": 0.0,
+        "t1": 1.0,
+        "endpoint_mothers": [
+          [
+            "frame"
+          ],
+          [
+            "L:150,0>150,600"
+          ]
+        ],
+        "same_single_mother": false,
+        "frame_endpoint_count": 1,
+        "edges": [
+          15
+        ],
+        "occurrences": [
+          [
+            1,
+            30
+          ],
+          [
+            8,
+            31
+          ]
+        ]
+      },
+      {
+        "id": "L:150,0>150,600@0:0.416666666667",
+        "mother": "L:150,0>150,600",
+        "t0": 0.0,
+        "t1": 0.4166666666666667,
+        "endpoint_mothers": [
+          [
+            "frame"
+          ],
+          [
+            "L:0,250>150,250"
+          ]
+        ],
+        "same_single_mother": false,
+        "frame_endpoint_count": 1,
+        "edges": [
+          16
+        ],
+        "occurrences": [
+          [
+            2,
+            32
+          ],
+          [
+            1,
+            33
+          ]
+        ]
+      },
+      {
+        "id": "L:150,0>150,600@0.416666666667:0.666666666667",
+        "mother": "L:150,0>150,600",
+        "t0": 0.4166666666666667,
+        "t1": 0.6666666666666666,
+        "endpoint_mothers": [
+          [
+            "L:0,250>150,250"
+          ],
+          [
+            "L:150,400>300,400"
+          ]
+        ],
+        "same_single_mother": false,
+        "frame_endpoint_count": 0,
+        "edges": [
+          17
+        ],
+        "occurrences": [
+          [
+            2,
+            34
+          ],
+          [
+            8,
+            35
+          ]
+        ]
+      },
+      {
+        "id": "L:150,0>150,600@0.666666666667:1",
+        "mother": "L:150,0>150,600",
+        "t0": 0.6666666666666666,
+        "t1": 1.0,
+        "endpoint_mothers": [
+          [
+            "L:150,400>300,400"
+          ],
+          [
+            "frame"
+          ]
+        ],
+        "same_single_mother": false,
+        "frame_endpoint_count": 1,
+        "edges": [
+          18
+        ],
+        "occurrences": [
+          [
+            7,
+            36
+          ],
+          [
+            8,
+            37
+          ]
+        ]
+      },
+      {
+        "id": "L:150,400>300,400@0:1",
+        "mother": "L:150,400>300,400",
+        "t0": 0.0,
+        "t1": 1.0,
+        "endpoint_mothers": [
+          [
+            "L:150,0>150,600"
+          ],
+          [
+            "L:300,0>300,600"
+          ]
+        ],
+        "same_single_mother": false,
+        "frame_endpoint_count": 0,
+        "edges": [
+          19
+        ],
+        "occurrences": [
+          [
+            2,
+            38
+          ],
+          [
+            7,
+            39
+          ]
+        ]
+      },
+      {
+        "id": "L:300,0>300,600@0:0.666666666667",
+        "mother": "L:300,0>300,600",
+        "t0": 0.0,
+        "t1": 0.6666666666666666,
+        "endpoint_mothers": [
+          [
+            "frame"
+          ],
+          [
+            "L:150,400>300,400"
+          ]
+        ],
+        "same_single_mother": false,
+        "frame_endpoint_count": 1,
+        "edges": [
+          20
+        ],
+        "occurrences": [
+          [
+            3,
+            40
+          ],
+          [
+            2,
+            41
+          ]
+        ]
+      },
+      {
+        "id": "L:300,0>300,600@0.666666666667:1",
+        "mother": "L:300,0>300,600",
+        "t0": 0.6666666666666666,
+        "t1": 1.0,
+        "endpoint_mothers": [
+          [
+            "L:150,400>300,400"
+          ],
+          [
+            "frame"
+          ]
+        ],
+        "same_single_mother": false,
+        "frame_endpoint_count": 1,
+        "edges": [
+          21
+        ],
+        "occurrences": [
+          [
+            3,
+            42
+          ],
+          [
+            7,
+            43
+          ]
+        ]
+      },
+      {
+        "id": "L:450,0>450,600@0:1",
+        "mother": "L:450,0>450,600",
+        "t0": 0.0,
+        "t1": 1.0,
+        "endpoint_mothers": [
+          [
+            "frame"
+          ],
+          [
+            "frame"
+          ]
+        ],
+        "same_single_mother": true,
+        "frame_endpoint_count": 2,
+        "edges": [
+          22
+        ],
+        "occurrences": [
+          [
+            4,
+            44
+          ],
+          [
+            3,
+            45
+          ]
+        ]
+      },
+      {
+        "id": "L:600,0>600,600@0:1",
+        "mother": "L:600,0>600,600",
+        "t0": 0.0,
+        "t1": 1.0,
+        "endpoint_mothers": [
+          [
+            "frame"
+          ],
+          [
+            "frame"
+          ]
+        ],
+        "same_single_mother": true,
+        "frame_endpoint_count": 2,
+        "edges": [
+          23
+        ],
+        "occurrences": [
+          [
+            5,
+            46
+          ],
+          [
+            4,
+            47
+          ]
+        ]
+      },
+      {
+        "id": "L:750,0>750,600@0:1",
+        "mother": "L:750,0>750,600",
+        "t0": 0.0,
+        "t1": 1.0,
+        "endpoint_mothers": [
+          [
+            "frame"
+          ],
+          [
+            "frame"
+          ]
+        ],
+        "same_single_mother": true,
+        "frame_endpoint_count": 2,
+        "edges": [
+          24
+        ],
+        "occurrences": [
+          [
+            6,
+            48
+          ],
+          [
+            5,
+            49
+          ]
+        ]
+      }
+    ],
+    "batch_geometry": {
+      "mother_stages": {
+        "frame": 1,
+        "L:0,250>150,250": 3,
+        "L:150,0>150,600": 2,
+        "L:150,400>300,400": 3,
+        "L:300,0>300,600": 2,
+        "L:450,0>450,600": 2,
+        "L:600,0>600,600": 2,
+        "L:750,0>750,600": 2
+      },
+      "unranked_stage": null,
+      "stages": [
+        {
+          "stage": 1,
+          "new_mothers": [
+            "frame"
+          ],
+          "active_mothers": [
+            "frame"
+          ],
+          "coarse_cells": [
+            [
+              0
+            ],
+            [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ]
+          ],
+          "ready_sides": [
+            0
+          ],
+          "newly_ready_sides": [
+            0
+          ]
+        },
+        {
+          "stage": 2,
+          "new_mothers": [
+            "L:150,0>150,600",
+            "L:300,0>300,600",
+            "L:450,0>450,600",
+            "L:600,0>600,600",
+            "L:750,0>750,600"
+          ],
+          "active_mothers": [
+            "L:150,0>150,600",
+            "L:300,0>300,600",
+            "L:450,0>450,600",
+            "L:600,0>600,600",
+            "L:750,0>750,600",
+            "frame"
+          ],
+          "coarse_cells": [
+            [
+              0
+            ],
+            [
+              1,
+              8
+            ],
+            [
+              2,
+              7
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ]
+          ],
+          "ready_sides": [
+            0,
+            3,
+            4,
+            5,
+            6
+          ],
+          "newly_ready_sides": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "stage": 3,
+          "new_mothers": [
+            "L:0,250>150,250",
+            "L:150,400>300,400"
+          ],
+          "active_mothers": [
+            "L:0,250>150,250",
+            "L:150,0>150,600",
+            "L:150,400>300,400",
+            "L:300,0>300,600",
+            "L:450,0>450,600",
+            "L:600,0>600,600",
+            "L:750,0>750,600",
+            "frame"
+          ],
+          "coarse_cells": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              8
+            ]
+          ],
+          "ready_sides": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "newly_ready_sides": [
+            1,
+            2,
+            7,
+            8
+          ]
+        }
+      ],
+      "side_ready_stage": [
+        1,
+        3,
+        3,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3
+      ]
+    },
+    "initialization": {
+      "mode": "first-through-mother-retained-side",
+      "eligible_mothers": [
+        "L:150,0>150,600",
+        "L:300,0>300,600",
+        "L:450,0>450,600",
+        "L:600,0>600,600",
+        "L:750,0>750,600"
+      ],
+      "mother": "L:150,0>150,600",
+      "side": 2,
+      "dart": 32,
+      "frame_boundary_edges": [
+        1
+      ],
+      "domain_before": [
+        2,
+        3,
+        4
+      ],
+      "symbol": 2,
+      "historical_frame_pair": [
+        1,
+        2
+      ],
+      "coarse_split_pair_unordered": [
+        2,
+        3
+      ],
+      "birth_pair_is_not_a_final_profile_constraint": true,
+      "outside_dart": 0,
+      "outside_side": 0,
+      "prebound_final_inner_anchor": false
+    },
+    "initial_anchors_by_dart": {
+      "0": [
+        1
+      ]
+    },
+    "anchors_by_dart": {
+      "0": [
+        1
+      ],
+      "32": [
+        2
+      ],
+      "42": [
+        3
+      ],
+      "44": [
+        2
+      ],
+      "46": [
+        3
+      ],
+      "48": [
+        2
+      ]
+    },
+    "trace": [
+      {
+        "unit": "L:150,0>150,600@0:0.416666666667",
+        "mother": "L:150,0>150,600",
+        "side": 2,
+        "dart": 32,
+        "unresolved_shores": [
+          2,
+          1
+        ],
+        "urgency": 1,
+        "unresolved_neighbors": 4,
+        "constraint_weight": 2,
+        "including_named_weight": 2,
+        "closed_support": {
+          "supported": false,
+          "block_edge_ids": [],
+          "endpoint_vertices": [
+            "1",
+            "15"
+          ]
+        },
+        "priority": [
+          1,
+          4,
+          2,
+          0
+        ],
+        "level": 2,
+        "parents": [
+          [
+            "frame"
+          ],
+          [
+            "frame"
+          ]
+        ],
+        "selection_group": "initial-retained",
+        "frame_boundary_edges": [
+          1
+        ],
+        "tied_units": [
+          "L:150,0>150,600@0:0.416666666667",
+          "L:150,0>150,600@0.416666666667:0.666666666667"
+        ],
+        "domain": [
+          2,
+          3,
+          4
+        ],
+        "symbol": 2,
+        "boundary": {
+          "sources": [
+            {
+              "edge": 1,
+              "mother": "frame",
+              "interval": [
+                0.05,
+                0.1
+              ],
+              "neighbor": 0,
+              "neighbor_domain": [
+                1
+              ]
+            },
+            {
+              "edge": 16,
+              "mother": "L:150,0>150,600",
+              "interval": [
+                0.0,
+                0.4166666666666667
+              ],
+              "neighbor": 1,
+              "neighbor_domain": [
+                2,
+                3,
+                4
+              ]
+            },
+            {
+              "edge": 17,
+              "mother": "L:150,0>150,600",
+              "interval": [
+                0.4166666666666667,
+                0.6666666666666666
+              ],
+              "neighbor": 8,
+              "neighbor_domain": [
+                2,
+                3,
+                4
+              ]
+            },
+            {
+              "edge": 19,
+              "mother": "L:150,400>300,400",
+              "interval": [
+                0.0,
+                1.0
+              ],
+              "neighbor": 7,
+              "neighbor_domain": [
+                2,
+                3,
+                4
+              ]
+            },
+            {
+              "edge": 20,
+              "mother": "L:300,0>300,600",
+              "interval": [
+                0.0,
+                0.6666666666666666
+              ],
+              "neighbor": 3,
+              "neighbor_domain": [
+                2,
+                3,
+                4
+              ]
+            }
+          ],
+          "direct_forbidden": [
+            1
+          ],
+          "local_candidates": [
+            2,
+            3,
+            4
+          ],
+          "derived_exclusions": [],
+          "one_allowed": false
+        },
+        "choice_kind": "initial-retained-name"
+      },
+      {
+        "unit": "L:300,0>300,600@0.666666666667:1",
+        "mother": "L:300,0>300,600",
+        "side": 3,
+        "dart": 42,
+        "unresolved_shores": [
+          3,
+          7
+        ],
+        "urgency": 2,
+        "unresolved_neighbors": 2,
+        "constraint_weight": 4,
+        "including_named_weight": 4,
+        "closed_support": {
+          "supported": false,
+          "block_edge_ids": [],
+          "endpoint_vertices": [
+            "17",
+            "11"
+          ]
+        },
+        "priority": [
+          2,
+          2,
+          4,
+          0
+        ],
+        "ready_stage": 2,
+        "active_stage": 2,
+        "eligible_side_ids": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "coarse_cell": [
+          3
+        ],
+        "tied_units": [
+          "L:300,0>300,600@0.666666666667:1"
+        ],
+        "level": 2,
+        "parents": [
+          [
+            "frame"
+          ],
+          [
+            "frame"
+          ]
+        ],
+        "selection_group": "rooted",
+        "domain": [
+          3,
+          4
+        ],
+        "symbol": 3,
+        "boundary": {
+          "sources": [
+            {
+              "edge": 2,
+              "mother": "frame",
+              "interval": [
+                0.1,
+                0.15
+              ],
+              "neighbor": 0,
+              "neighbor_domain": [
+                1
+              ]
+            },
+            {
+              "edge": 10,
+              "mother": "frame",
+              "interval": [
+                0.65,
+                0.7
+              ],
+              "neighbor": 0,
+              "neighbor_domain": [
+                1
+              ]
+            },
+            {
+              "edge": 20,
+              "mother": "L:300,0>300,600",
+              "interval": [
+                0.0,
+                0.6666666666666666
+              ],
+              "neighbor": 2,
+              "neighbor_domain": [
+                2
+              ]
+            },
+            {
+              "edge": 21,
+              "mother": "L:300,0>300,600",
+              "interval": [
+                0.6666666666666666,
+                1.0
+              ],
+              "neighbor": 7,
+              "neighbor_domain": [
+                3,
+                4
+              ]
+            },
+            {
+              "edge": 22,
+              "mother": "L:450,0>450,600",
+              "interval": [
+                0.0,
+                1.0
+              ],
+              "neighbor": 4,
+              "neighbor_domain": [
+                2,
+                3,
+                4
+              ]
+            }
+          ],
+          "direct_forbidden": [
+            1,
+            2
+          ],
+          "local_candidates": [
+            3,
+            4
+          ],
+          "derived_exclusions": [],
+          "one_allowed": false
+        },
+        "choice_kind": "greedy-not-a-proved-safe-extension"
+      },
+      {
+        "unit": "L:450,0>450,600@0:1",
+        "mother": "L:450,0>450,600",
+        "side": 4,
+        "dart": 44,
+        "unresolved_shores": [
+          4
+        ],
+        "urgency": 2,
+        "unresolved_neighbors": 1,
+        "constraint_weight": 2,
+        "including_named_weight": 5,
+        "closed_support": {
+          "supported": true,
+          "block_edge_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21
+          ],
+          "endpoint_vertices": [
+            "3",
+            "10"
+          ]
+        },
+        "priority": [
+          2,
+          1,
+          2,
+          1
+        ],
+        "ready_stage": 2,
+        "active_stage": 2,
+        "eligible_side_ids": [
+          4,
+          5,
+          6
+        ],
+        "coarse_cell": [
+          4
+        ],
+        "tied_units": [
+          "L:450,0>450,600@0:1"
+        ],
+        "level": 2,
+        "parents": [
+          [
+            "frame"
+          ],
+          [
+            "frame"
+          ]
+        ],
+        "selection_group": "rooted",
+        "domain": [
+          2,
+          4
+        ],
+        "symbol": 2,
+        "boundary": {
+          "sources": [
+            {
+              "edge": 3,
+              "mother": "frame",
+              "interval": [
+                0.15,
+                0.2
+              ],
+              "neighbor": 0,
+              "neighbor_domain": [
+                1
+              ]
+            },
+            {
+              "edge": 9,
+              "mother": "frame",
+              "interval": [
+                0.6,
+                0.65
+              ],
+              "neighbor": 0,
+              "neighbor_domain": [
+                1
+              ]
+            },
+            {
+              "edge": 22,
+              "mother": "L:450,0>450,600",
+              "interval": [
+                0.0,
+                1.0
+              ],
+              "neighbor": 3,
+              "neighbor_domain": [
+                3
+              ]
+            },
+            {
+              "edge": 23,
+              "mother": "L:600,0>600,600",
+              "interval": [
+                0.0,
+                1.0
+              ],
+              "neighbor": 5,
+              "neighbor_domain": [
+                2,
+                3,
+                4
+              ]
+            }
+          ],
+          "direct_forbidden": [
+            1,
+            3
+          ],
+          "local_candidates": [
+            2,
+            4
+          ],
+          "derived_exclusions": [],
+          "one_allowed": false
+        },
+        "choice_kind": "greedy-not-a-proved-safe-extension"
+      },
+      {
+        "unit": "L:600,0>600,600@0:1",
+        "mother": "L:600,0>600,600",
+        "side": 5,
+        "dart": 46,
+        "unresolved_shores": [
+          5
+        ],
+        "urgency": 2,
+        "unresolved_neighbors": 1,
+        "constraint_weight": 2,
+        "including_named_weight": 5,
+        "closed_support": {
+          "supported": true,
+          "block_edge_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+          ],
+          "endpoint_vertices": [
+            "4",
+            "9"
+          ]
+        },
+        "priority": [
+          2,
+          1,
+          2,
+          1
+        ],
+        "ready_stage": 2,
+        "active_stage": 2,
+        "eligible_side_ids": [
+          5,
+          6
+        ],
+        "coarse_cell": [
+          5
+        ],
+        "tied_units": [
+          "L:600,0>600,600@0:1"
+        ],
+        "level": 2,
+        "parents": [
+          [
+            "frame"
+          ],
+          [
+            "frame"
+          ]
+        ],
+        "selection_group": "rooted",
+        "domain": [
+          3,
+          4
+        ],
+        "symbol": 3,
+        "boundary": {
+          "sources": [
+            {
+              "edge": 4,
+              "mother": "frame",
+              "interval": [
+                0.2,
+                0.25
+              ],
+              "neighbor": 0,
+              "neighbor_domain": [
+                1
+              ]
+            },
+            {
+              "edge": 8,
+              "mother": "frame",
+              "interval": [
+                0.55,
+                0.6
+              ],
+              "neighbor": 0,
+              "neighbor_domain": [
+                1
+              ]
+            },
+            {
+              "edge": 23,
+              "mother": "L:600,0>600,600",
+              "interval": [
+                0.0,
+                1.0
+              ],
+              "neighbor": 4,
+              "neighbor_domain": [
+                2
+              ]
+            },
+            {
+              "edge": 24,
+              "mother": "L:750,0>750,600",
+              "interval": [
+                0.0,
+                1.0
+              ],
+              "neighbor": 6,
+              "neighbor_domain": [
+                2,
+                3,
+                4
+              ]
+            }
+          ],
+          "direct_forbidden": [
+            1,
+            2
+          ],
+          "local_candidates": [
+            3,
+            4
+          ],
+          "derived_exclusions": [],
+          "one_allowed": false
+        },
+        "choice_kind": "greedy-not-a-proved-safe-extension"
+      },
+      {
+        "unit": "L:750,0>750,600@0:1",
+        "mother": "L:750,0>750,600",
+        "side": 6,
+        "dart": 48,
+        "unresolved_shores": [
+          6
+        ],
+        "urgency": 2,
+        "unresolved_neighbors": 0,
+        "constraint_weight": 2,
+        "including_named_weight": 5,
+        "closed_support": {
+          "supported": true,
+          "block_edge_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "endpoint_vertices": [
+            "5",
+            "8"
+          ]
+        },
+        "priority": [
+          2,
+          0,
+          2,
+          1
+        ],
+        "ready_stage": 2,
+        "active_stage": 2,
+        "eligible_side_ids": [
+          6
+        ],
+        "coarse_cell": [
+          6
+        ],
+        "tied_units": [
+          "L:750,0>750,600@0:1"
+        ],
+        "level": 2,
+        "parents": [
+          [
+            "frame"
+          ],
+          [
+            "frame"
+          ]
+        ],
+        "selection_group": "rooted",
+        "domain": [
+          2,
+          4
+        ],
+        "symbol": 2,
+        "boundary": {
+          "sources": [
+            {
+              "edge": 5,
+              "mother": "frame",
+              "interval": [
+                0.25,
+                0.3
+              ],
+              "neighbor": 0,
+              "neighbor_domain": [
+                1
+              ]
+            },
+            {
+              "edge": 6,
+              "mother": "frame",
+              "interval": [
+                0.3,
+                0.5
+              ],
+              "neighbor": 0,
+              "neighbor_domain": [
+                1
+              ]
+            },
+            {
+              "edge": 7,
+              "mother": "frame",
+              "interval": [
+                0.5,
+                0.55
+              ],
+              "neighbor": 0,
+              "neighbor_domain": [
+                1
+              ]
+            },
+            {
+              "edge": 24,
+              "mother": "L:750,0>750,600",
+              "interval": [
+                0.0,
+                1.0
+              ],
+              "neighbor": 5,
+              "neighbor_domain": [
+                3
+              ]
+            }
+          ],
+          "direct_forbidden": [
+            1,
+            3
+          ],
+          "local_candidates": [
+            2,
+            4
+          ],
+          "derived_exclusions": [],
+          "one_allowed": false
+        },
+        "choice_kind": "greedy-not-a-proved-safe-extension"
+      }
+    ],
+    "choices": 5,
+    "backtracks": 0,
+    "old_colors_read": false,
+    "local_budget": null,
+    "relations": [
+      [
+        1,
+        8,
+        2,
+        4,
+        2,
+        4,
+        2,
+        8,
+        4
+      ],
+      [
+        4096,
+        32768,
+        8192,
+        16384,
+        8192,
+        16384,
+        8192,
+        32768,
+        16384
+      ],
+      [
+        16,
+        128,
+        32,
+        64,
+        32,
+        64,
+        32,
+        128,
+        64
+      ],
+      [
+        256,
+        2048,
+        512,
+        1024,
+        512,
+        1024,
+        512,
+        2048,
+        1024
+      ],
+      [
+        16,
+        128,
+        32,
+        64,
+        32,
+        64,
+        32,
+        128,
+        64
+      ],
+      [
+        256,
+        2048,
+        512,
+        1024,
+        512,
+        1024,
+        512,
+        2048,
+        1024
+      ],
+      [
+        16,
+        128,
+        32,
+        64,
+        32,
+        64,
+        32,
+        128,
+        64
+      ],
+      [
+        4096,
+        32768,
+        8192,
+        16384,
+        8192,
+        16384,
+        8192,
+        32768,
+        16384
+      ],
+      [
+        256,
+        2048,
+        512,
+        1024,
+        512,
+        1024,
+        512,
+        2048,
+        1024
+      ]
+    ],
+    "propagation_phases": [
+      {
+        "anchors_by_dart": {
+          "0": [
+            1
+          ]
+        },
+        "outcome": {
+          "status": "underdetermined",
+          "domains": [
+            [
+              1
+            ],
+            [
+              2,
+              3,
+              4
+            ],
+            [
+              2,
+              3,
+              4
+            ],
+            [
+              2,
+              3,
+              4
+            ],
+            [
+              2,
+              3,
+              4
+            ],
+            [
+              2,
+              3,
+              4
+            ],
+            [
+              2,
+              3,
+              4
+            ],
+            [
+              2,
+              3,
+              4
+            ],
+            [
+              2,
+              3,
+              4
+            ]
+          ],
+          "relations": [
+            [
+              1,
+              14,
+              14,
+              14,
+              14,
+              14,
+              14,
+              14,
+              14
+            ],
+            [
+              4368,
+              33824,
+              27328,
+              61152,
+              61152,
+              61152,
+              61152,
+              61152,
+              27328
+            ],
+            [
+              4368,
+              27328,
+              33824,
+              27328,
+              61152,
+              61152,
+              61152,
+              27328,
+              27328
+            ],
+            [
+              4368,
+              61152,
+              27328,
+              33824,
+              27328,
+              61152,
+              61152,
+              27328,
+              61152
+            ],
+            [
+              4368,
+              61152,
+              61152,
+              27328,
+              33824,
+              27328,
+              61152,
+              61152,
+              61152
+            ],
+            [
+              4368,
+              61152,
+              61152,
+              61152,
+              27328,
+              33824,
+              27328,
+              61152,
+              61152
+            ],
+            [
+              4368,
+              61152,
+              61152,
+              61152,
+              61152,
+              27328,
+              33824,
+              61152,
+              61152
+            ],
+            [
+              4368,
+              61152,
+              27328,
+              27328,
+              61152,
+              61152,
+              61152,
+              33824,
+              27328
+            ],
+            [
+              4368,
+              27328,
+              27328,
+              61152,
+              61152,
+              61152,
+              61152,
+              27328,
+              33824
+            ]
+          ],
+          "phases": [
+            {
+              "hall_input_anchors": {
+                "0": [
+                  1
+                ]
+              },
+              "hall_status": "underdetermined",
+              "hall_domains": [
+                [
+                  1
+                ],
+                [
+                  2,
+                  3,
+                  4
+                ],
+                [
+                  2,
+                  3,
+                  4
+                ],
+                [
+                  2,
+                  3,
+                  4
+                ],
+                [
+                  2,
+                  3,
+                  4
+                ],
+                [
+                  2,
+                  3,
+                  4
+                ],
+                [
+                  2,
+                  3,
+                  4
+                ],
+                [
+                  2,
+                  3,
+                  4
+                ],
+                [
+                  2,
+                  3,
+                  4
+                ]
+              ],
+              "hall_trace": [
+                {
+                  "from_side": 0,
+                  "to_side": 1,
+                  "edge": 0,
+                  "whole_line": "frame",
+                  "removed": 1
+                },
+                {
+                  "from_side": 0,
+                  "to_side": 2,
+                  "edge": 1,
+                  "whole_line": "frame",
+                  "removed": 1
+                },
+                {
+                  "from_side": 0,
+                  "to_side": 3,
+                  "edge": 2,
+                  "whole_line": "frame",
+                  "removed": 1
+                },
+                {
+                  "from_side": 0,
+                  "to_side": 4,
+                  "edge": 3,
+                  "whole_line": "frame",
+                  "removed": 1
+                },
+                {
+                  "from_side": 0,
+                  "to_side": 5,
+                  "edge": 4,
+                  "whole_line": "frame",
+                  "removed": 1
+                },
+                {
+                  "from_side": 0,
+                  "to_side": 6,
+                  "edge": 5,
+                  "whole_line": "frame",
+                  "removed": 1
+                },
+                {
+                  "from_side": 0,
+                  "to_side": 7,
+                  "edge": 11,
+                  "whole_line": "frame",
+                  "removed": 1
+                },
+                {
+                  "from_side": 0,
+                  "to_side": 8,
+                  "edge": 12,
+                  "whole_line": "frame",
+                  "removed": 1
+                }
+              ],
+              "hall_conflict": null,
+              "relation_input": [
+                [
+                  1,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14
+                ],
+                [
+                  4368,
+                  33824,
+                  27328,
+                  61152,
+                  61152,
+                  61152,
+                  61152,
+                  61152,
+                  27328
+                ],
+                [
+                  4368,
+                  27328,
+                  33824,
+                  27328,
+                  61152,
+                  61152,
+                  61152,
+                  27328,
+                  27328
+                ],
+                [
+                  4368,
+                  61152,
+                  27328,
+                  33824,
+                  27328,
+                  61152,
+                  61152,
+                  27328,
+                  61152
+                ],
+                [
+                  4368,
+                  61152,
+                  61152,
+                  27328,
+                  33824,
+                  27328,
+                  61152,
+                  61152,
+                  61152
+                ],
+                [
+                  4368,
+                  61152,
+                  61152,
+                  61152,
+                  27328,
+                  33824,
+                  27328,
+                  61152,
+                  61152
+                ],
+                [
+                  4368,
+                  61152,
+                  61152,
+                  61152,
+                  61152,
+                  27328,
+                  33824,
+                  61152,
+                  61152
+                ],
+                [
+                  4368,
+                  61152,
+                  27328,
+                  27328,
+                  61152,
+                  61152,
+                  61152,
+                  33824,
+                  27328
+                ],
+                [
+                  4368,
+                  27328,
+                  27328,
+                  61152,
+                  61152,
+                  61152,
+                  61152,
+                  27328,
+                  33824
+                ]
+              ],
+              "relation_trace": [],
+              "relation_conflict": false
+            }
+          ],
+          "revisions": 1458,
+          "hall_conflict": null,
+          "backtracks": 0,
+          "choices": 0,
+          "palette": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      },
+      {
+        "anchors_by_dart": {
+          "0": [
+            1
+          ],
+          "32": [
+            2
+          ]
+        },
+        "outcome": {
+          "status": "underdetermined",
+          "domains": [
+            [
+              1
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              2
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              2,
+              3,
+              4
+            ],
+            [
+              2,
+              3,
+              4
+            ],
+            [
+              2,
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "relations": [
+            [
+              1,
+              12,
+              2,
+              12,
+              14,
+              14,
+              14,
+              12,
+              12
+            ],
+            [
+              4352,
+              33792,
+              8704,
+              18432,
+              42496,
+              60928,
+              60928,
+              33792,
+              18432
+            ],
+            [
+              16,
+              192,
+              32,
+              192,
+              224,
+              224,
+              224,
+              192,
+              192
+            ],
+            [
+              4352,
+              18432,
+              8704,
+              33792,
+              27136,
+              60928,
+              60928,
+              18432,
+              33792
+            ],
+            [
+              4368,
+              33984,
+              8736,
+              18624,
+              33824,
+              27328,
+              61152,
+              33984,
+              18624
+            ],
+            [
+              4368,
+              52416,
+              8736,
+              52416,
+              27328,
+              33824,
+              27328,
+              52416,
+              52416
+            ],
+            [
+              4368,
+              52416,
+              8736,
+              52416,
+              61152,
+              27328,
+              33824,
+              52416,
+              52416
+            ],
+            [
+              4352,
+              33792,
+              8704,
+              18432,
+              42496,
+              60928,
+              60928,
+              33792,
+              18432
+            ],
+            [
+              4352,
+              18432,
+              8704,
+              33792,
+              27136,
+              60928,
+              60928,
+              18432,
+              33792
+            ]
+          ],
+          "phases": [
+            {
+              "hall_input_anchors": {
+                "0": [
+                  1
+                ],
+                "32": [
+                  2
+                ]
+              },
+              "hall_status": "underdetermined",
+              "hall_domains": [
+                [
+                  1
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  2
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  2,
+                  3,
+                  4
+                ],
+                [
+                  2,
+                  3,
+                  4
+                ],
+                [
+                  2,
+                  3,
+                  4
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  3,
+                  4
+                ]
+              ],
+              "hall_trace": [
+                {
+                  "from_side": 0,
+                  "to_side": 1,
+                  "edge": 0,
+                  "whole_line": "frame",
+                  "removed": 1
+                },
+                {
+                  "from_side": 0,
+                  "to_side": 3,
+                  "edge": 2,
+                  "whole_line": "frame",
+                  "removed": 1
+                },
+                {
+                  "from_side": 0,
+                  "to_side": 4,
+                  "edge": 3,
+                  "whole_line": "frame",
+                  "removed": 1
+                },
+                {
+                  "from_side": 0,
+                  "to_side": 5,
+                  "edge": 4,
+                  "whole_line": "frame",
+                  "removed": 1
+                },
+                {
+                  "from_side": 0,
+                  "to_side": 6,
+                  "edge": 5,
+                  "whole_line": "frame",
+                  "removed": 1
+                },
+                {
+                  "from_side": 0,
+                  "to_side": 7,
+                  "edge": 11,
+                  "whole_line": "frame",
+                  "removed": 1
+                },
+                {
+                  "from_side": 0,
+                  "to_side": 8,
+                  "edge": 12,
+                  "whole_line": "frame",
+                  "removed": 1
+                },
+                {
+                  "from_side": 2,
+                  "to_side": 1,
+                  "edge": 16,
+                  "whole_line": "L:150,0>150,600",
+                  "removed": 2
+                },
+                {
+                  "from_side": 2,
+                  "to_side": 8,
+                  "edge": 17,
+                  "whole_line": "L:150,0>150,600",
+                  "removed": 2
+                },
+                {
+                  "from_side": 2,
+                  "to_side": 7,
+                  "edge": 19,
+                  "whole_line": "L:150,400>300,400",
+                  "removed": 2
+                },
+                {
+                  "from_side": 2,
+                  "to_side": 3,
+                  "edge": 20,
+                  "whole_line": "L:300,0>300,600",
+                  "removed": 2
+                }
+              ],
+              "hall_conflict": null,
+              "relation_input": [
+                [
+                  1,
+                  12,
+                  2,
+                  12,
+                  14,
+                  14,
+                  14,
+                  12,
+                  12
+                ],
+                [
+                  4352,
+                  33792,
+                  8704,
+                  52224,
+                  60928,
+                  60928,
+                  60928,
+                  52224,
+                  18432
+                ],
+                [
+                  16,
+                  192,
+                  32,
+                  192,
+                  224,
+                  224,
+                  224,
+                  192,
+                  192
+                ],
+                [
+                  4352,
+                  52224,
+                  8704,
+                  33792,
+                  27136,
+                  60928,
+                  60928,
+                  18432,
+                  52224
+                ],
+                [
+                  4368,
+                  52416,
+                  8736,
+                  18624,
+                  33824,
+                  27328,
+                  61152,
+                  52416,
+                  52416
+                ],
+                [
+                  4368,
+                  52416,
+                  8736,
+                  52416,
+                  27328,
+                  33824,
+                  27328,
+                  52416,
+                  52416
+                ],
+                [
+                  4368,
+                  52416,
+                  8736,
+                  52416,
+                  61152,
+                  27328,
+                  33824,
+                  52416,
+                  52416
+                ],
+                [
+                  4352,
+                  52224,
+                  8704,
+                  18432,
+                  60928,
+                  60928,
+                  60928,
+                  33792,
+                  18432
+                ],
+                [
+                  4352,
+                  18432,
+                  8704,
+                  52224,
+                  60928,
+                  60928,
+                  60928,
+                  18432,
+                  33792
+                ]
+              ],
+              "relation_trace": [
+                {
+                  "i": 1,
+                  "j": 7,
+                  "via": 8,
+                  "before": 52224,
+                  "left": 18432,
+                  "right": 18432,
+                  "after": 33792,
+                  "removed": 18432
+                },
+                {
+                  "i": 7,
+                  "j": 4,
+                  "via": 3,
+                  "before": 60928,
+                  "left": 18432,
+                  "right": 27136,
+                  "after": 42496,
+                  "removed": 18432
+                },
+                {
+                  "i": 3,
+                  "j": 1,
+                  "via": 7,
+                  "before": 52224,
+                  "left": 18432,
+                  "right": 33792,
+                  "after": 18432,
+                  "removed": 33792
+                },
+                {
+                  "i": 3,
+                  "j": 8,
+                  "via": 7,
+                  "before": 52224,
+                  "left": 18432,
+                  "right": 18432,
+                  "after": 33792,
+                  "removed": 18432
+                },
+                {
+                  "i": 4,
+                  "j": 8,
+                  "via": 3,
+                  "before": 52416,
+                  "left": 18624,
+                  "right": 33792,
+                  "after": 18624,
+                  "removed": 33792
+                },
+                {
+                  "i": 4,
+                  "j": 1,
+                  "via": 3,
+                  "before": 52416,
+                  "left": 18624,
+                  "right": 18432,
+                  "after": 33984,
+                  "removed": 18432
+                }
+              ],
+              "relation_conflict": false
+            }
+          ],
+          "revisions": 1548,
+          "hall_conflict": null,
+          "backtracks": 0,
+          "choices": 0,
+          "palette": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      },
+      {
+        "anchors_by_dart": {
+          "0": [
+            1
+          ],
+          "32": [
+            2
+          ],
+          "42": [
+            3
+          ]
+        },
+        "outcome": {
+          "status": "underdetermined",
+          "domains": [
+            [
+              1
+            ],
+            [
+              4
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              3,
+              4
+            ],
+            [
+              2,
+              3,
+              4
+            ],
+            [
+              4
+            ],
+            [
+              3
+            ]
+          ],
+          "relations": [
+            [
+              1,
+              8,
+              2,
+              4,
+              10,
+              14,
+              14,
+              8,
+              4
+            ],
+            [
+              4096,
+              32768,
+              8192,
+              16384,
+              40960,
+              57344,
+              57344,
+              32768,
+              16384
+            ],
+            [
+              16,
+              128,
+              32,
+              64,
+              160,
+              224,
+              224,
+              128,
+              64
+            ],
+            [
+              256,
+              2048,
+              512,
+              1024,
+              2560,
+              3584,
+              3584,
+              2048,
+              1024
+            ],
+            [
+              4112,
+              32896,
+              8224,
+              16448,
+              32800,
+              24768,
+              57568,
+              32896,
+              16448
+            ],
+            [
+              4368,
+              34944,
+              8736,
+              17472,
+              10880,
+              33824,
+              27328,
+              34944,
+              17472
+            ],
+            [
+              4368,
+              34944,
+              8736,
+              17472,
+              43680,
+              27328,
+              33824,
+              34944,
+              17472
+            ],
+            [
+              4096,
+              32768,
+              8192,
+              16384,
+              40960,
+              57344,
+              57344,
+              32768,
+              16384
+            ],
+            [
+              256,
+              2048,
+              512,
+              1024,
+              2560,
+              3584,
+              3584,
+              2048,
+              1024
+            ]
+          ],
+          "phases": [
+            {
+              "hall_input_anchors": {
+                "0": [
+                  1
+                ],
+                "32": [
+                  2
+                ],
+                "42": [
+                  3
+                ]
+              },
+              "hall_status": "underdetermined",
+              "hall_domains": [
+                [
+                  1
+                ],
+                [
+                  4
+                ],
+                [
+                  2
+                ],
+                [
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  2,
+                  3,
+                  4
+                ],
+                [
+                  2,
+                  3,
+                  4
+                ],
+                [
+                  4
+                ],
+                [
+                  3
+                ]
+              ],
+              "hall_trace": [
+                {
+                  "from_side": 0,
+                  "to_side": 1,
+                  "edge": 0,
+                  "whole_line": "frame",
+                  "removed": 1
+                },
+                {
+                  "from_side": 0,
+                  "to_side": 4,
+                  "edge": 3,
+                  "whole_line": "frame",
+                  "removed": 1
+                },
+                {
+                  "from_side": 0,
+                  "to_side": 5,
+                  "edge": 4,
+                  "whole_line": "frame",
+                  "removed": 1
+                },
+                {
+                  "from_side": 0,
+                  "to_side": 6,
+                  "edge": 5,
+                  "whole_line": "frame",
+                  "removed": 1
+                },
+                {
+                  "from_side": 0,
+                  "to_side": 7,
+                  "edge": 11,
+                  "whole_line": "frame",
+                  "removed": 1
+                },
+                {
+                  "from_side": 0,
+                  "to_side": 8,
+                  "edge": 12,
+                  "whole_line": "frame",
+                  "removed": 1
+                },
+                {
+                  "from_side": 2,
+                  "to_side": 1,
+                  "edge": 16,
+                  "whole_line": "L:150,0>150,600",
+                  "removed": 2
+                },
+                {
+                  "from_side": 2,
+                  "to_side": 8,
+                  "edge": 17,
+                  "whole_line": "L:150,0>150,600",
+                  "removed": 2
+                },
+                {
+                  "from_side": 2,
+                  "to_side": 7,
+                  "edge": 19,
+                  "whole_line": "L:150,400>300,400",
+                  "removed": 2
+                },
+                {
+                  "from_side": 3,
+                  "to_side": 7,
+                  "edge": 21,
+                  "whole_line": "L:300,0>300,600",
+                  "removed": 3
+                },
+                {
+                  "from_side": 3,
+                  "to_side": 4,
+                  "edge": 22,
+                  "whole_line": "L:450,0>450,600",
+                  "removed": 3
+                },
+                {
+                  "from_side": 7,
+                  "to_side": 8,
+                  "edge": 18,
+                  "whole_line": "L:150,0>150,600",
+                  "removed": 4
+                },
+                {
+                  "from_side": 8,
+                  "to_side": 1,
+                  "edge": 15,
+                  "whole_line": "L:0,250>150,250",
+                  "removed": 3
+                }
+              ],
+              "hall_conflict": null,
+              "relation_input": [
+                [
+                  1,
+                  8,
+                  2,
+                  4,
+                  10,
+                  14,
+                  14,
+                  8,
+                  4
+                ],
+                [
+                  4096,
+                  32768,
+                  8192,
+                  16384,
+                  40960,
+                  57344,
+                  57344,
+                  32768,
+                  16384
+                ],
+                [
+                  16,
+                  128,
+                  32,
+                  64,
+                  160,
+                  224,
+                  224,
+                  128,
+                  64
+                ],
+                [
+                  256,
+                  2048,
+                  512,
+                  1024,
+                  2560,
+                  3584,
+                  3584,
+                  2048,
+                  1024
+                ],
+                [
+                  4112,
+                  32896,
+                  8224,
+                  16448,
+                  32800,
+                  24768,
+                  57568,
+                  32896,
+                  16448
+                ],
+                [
+                  4368,
+                  34944,
+                  8736,
+                  17472,
+                  10880,
+                  33824,
+                  27328,
+                  34944,
+                  17472
+                ],
+                [
+                  4368,
+                  34944,
+                  8736,
+                  17472,
+                  43680,
+                  27328,
+                  33824,
+                  34944,
+                  17472
+                ],
+                [
+                  4096,
+                  32768,
+                  8192,
+                  16384,
+                  40960,
+                  57344,
+                  57344,
+                  32768,
+                  16384
+                ],
+                [
+                  256,
+                  2048,
+                  512,
+                  1024,
+                  2560,
+                  3584,
+                  3584,
+                  2048,
+                  1024
+                ]
+              ],
+              "relation_trace": [],
+              "relation_conflict": false
+            }
+          ],
+          "revisions": 1458,
+          "hall_conflict": null,
+          "backtracks": 0,
+          "choices": 0,
+          "palette": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      },
+      {
+        "anchors_by_dart": {
+          "0": [
+            1
+          ],
+          "32": [
+            2
+          ],
+          "42": [
+            3
+          ],
+          "44": [
+            2
+          ]
+        },
+        "outcome": {
+          "status": "underdetermined",
+          "domains": [
+            [
+              1
+            ],
+            [
+              4
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              2
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              2,
+              3,
+              4
+            ],
+            [
+              4
+            ],
+            [
+              3
+            ]
+          ],
+          "relations": [
+            [
+              1,
+              8,
+              2,
+              4,
+              2,
+              12,
+              14,
+              8,
+              4
+            ],
+            [
+              4096,
+              32768,
+              8192,
+              16384,
+              8192,
+              49152,
+              57344,
+              32768,
+              16384
+            ],
+            [
+              16,
+              128,
+              32,
+              64,
+              32,
+              192,
+              224,
+              128,
+              64
+            ],
+            [
+              256,
+              2048,
+              512,
+              1024,
+              512,
+              3072,
+              3584,
+              2048,
+              1024
+            ],
+            [
+              16,
+              128,
+              32,
+              64,
+              32,
+              192,
+              224,
+              128,
+              64
+            ],
+            [
+              4352,
+              34816,
+              8704,
+              17408,
+              8704,
+              33792,
+              27136,
+              34816,
+              17408
+            ],
+            [
+              4368,
+              34944,
+              8736,
+              17472,
+              8736,
+              18624,
+              33824,
+              34944,
+              17472
+            ],
+            [
+              4096,
+              32768,
+              8192,
+              16384,
+              8192,
+              49152,
+              57344,
+              32768,
+              16384
+            ],
+            [
+              256,
+              2048,
+              512,
+              1024,
+              512,
+              3072,
+              3584,
+              2048,
+              1024
+            ]
+          ],
+          "phases": [
+            {
+              "hall_input_anchors": {
+                "0": [
+                  1
+                ],
+                "32": [
+                  2
+                ],
+                "42": [
+                  3
+                ],
+                "44": [
+                  2
+                ]
+              },
+              "hall_status": "underdetermined",
+              "hall_domains": [
+                [
+                  1
+                ],
+                [
+                  4
+                ],
+                [
+                  2
+                ],
+                [
+                  3
+                ],
+                [
+                  2
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  2,
+                  3,
+                  4
+                ],
+                [
+                  4
+                ],
+                [
+                  3
+                ]
+              ],
+              "hall_trace": [
+                {
+                  "from_side": 0,
+                  "to_side": 1,
+                  "edge": 0,
+                  "whole_line": "frame",
+                  "removed": 1
+                },
+                {
+                  "from_side": 0,
+                  "to_side": 5,
+                  "edge": 4,
+                  "whole_line": "frame",
+                  "removed": 1
+                },
+                {
+                  "from_side": 0,
+                  "to_side": 6,
+                  "edge": 5,
+                  "whole_line": "frame",
+                  "removed": 1
+                },
+                {
+                  "from_side": 0,
+                  "to_side": 7,
+                  "edge": 11,
+                  "whole_line": "frame",
+                  "removed": 1
+                },
+                {
+                  "from_side": 0,
+                  "to_side": 8,
+                  "edge": 12,
+                  "whole_line": "frame",
+                  "removed": 1
+                },
+                {
+                  "from_side": 2,
+                  "to_side": 1,
+                  "edge": 16,
+                  "whole_line": "L:150,0>150,600",
+                  "removed": 2
+                },
+                {
+                  "from_side": 2,
+                  "to_side": 8,
+                  "edge": 17,
+                  "whole_line": "L:150,0>150,600",
+                  "removed": 2
+                },
+                {
+                  "from_side": 2,
+                  "to_side": 7,
+                  "edge": 19,
+                  "whole_line": "L:150,400>300,400",
+                  "removed": 2
+                },
+                {
+                  "from_side": 3,
+                  "to_side": 7,
+                  "edge": 21,
+                  "whole_line": "L:300,0>300,600",
+                  "removed": 3
+                },
+                {
+                  "from_side": 4,
+                  "to_side": 5,
+                  "edge": 23,
+                  "whole_line": "L:600,0>600,600",
+                  "removed": 2
+                },
+                {
+                  "from_side": 7,
+                  "to_side": 8,
+                  "edge": 18,
+                  "whole_line": "L:150,0>150,600",
+                  "removed": 4
+                },
+                {
+                  "from_side": 8,
+                  "to_side": 1,
+                  "edge": 15,
+                  "whole_line": "L:0,250>150,250",
+                  "removed": 3
+                }
+              ],
+              "hall_conflict": null,
+              "relation_input": [
+                [
+                  1,
+                  8,
+                  2,
+                  4,
+                  2,
+                  12,
+                  14,
+                  8,
+                  4
+                ],
+                [
+                  4096,
+                  32768,
+                  8192,
+                  16384,
+                  8192,
+                  49152,
+                  57344,
+                  32768,
+                  16384
+                ],
+                [
+                  16,
+                  128,
+                  32,
+                  64,
+                  32,
+                  192,
+                  224,
+                  128,
+                  64
+                ],
+                [
+                  256,
+                  2048,
+                  512,
+                  1024,
+                  512,
+                  3072,
+                  3584,
+                  2048,
+                  1024
+                ],
+                [
+                  16,
+                  128,
+                  32,
+                  64,
+                  32,
+                  192,
+                  224,
+                  128,
+                  64
+                ],
+                [
+                  4352,
+                  34816,
+                  8704,
+                  17408,
+                  8704,
+                  33792,
+                  27136,
+                  34816,
+                  17408
+                ],
+                [
+                  4368,
+                  34944,
+                  8736,
+                  17472,
+                  8736,
+                  18624,
+                  33824,
+                  34944,
+                  17472
+                ],
+                [
+                  4096,
+                  32768,
+                  8192,
+                  16384,
+                  8192,
+                  49152,
+                  57344,
+                  32768,
+                  16384
+                ],
+                [
+                  256,
+                  2048,
+                  512,
+                  1024,
+                  512,
+                  3072,
+                  3584,
+                  2048,
+                  1024
+                ]
+              ],
+              "relation_trace": [],
+              "relation_conflict": false
+            }
+          ],
+          "revisions": 1458,
+          "hall_conflict": null,
+          "backtracks": 0,
+          "choices": 0,
+          "palette": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      },
+      {
+        "anchors_by_dart": {
+          "0": [
+            1
+          ],
+          "32": [
+            2
+          ],
+          "42": [
+            3
+          ],
+          "44": [
+            2
+          ],
+          "46": [
+            3
+          ]
+        },
+        "outcome": {
+          "status": "underdetermined",
+          "domains": [
+            [
+              1
+            ],
+            [
+              4
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              4
+            ],
+            [
+              3
+            ]
+          ],
+          "relations": [
+            [
+              1,
+              8,
+              2,
+              4,
+              2,
+              4,
+              10,
+              8,
+              4
+            ],
+            [
+              4096,
+              32768,
+              8192,
+              16384,
+              8192,
+              16384,
+              40960,
+              32768,
+              16384
+            ],
+            [
+              16,
+              128,
+              32,
+              64,
+              32,
+              64,
+              160,
+              128,
+              64
+            ],
+            [
+              256,
+              2048,
+              512,
+              1024,
+              512,
+              1024,
+              2560,
+              2048,
+              1024
+            ],
+            [
+              16,
+              128,
+              32,
+              64,
+              32,
+              64,
+              160,
+              128,
+              64
+            ],
+            [
+              256,
+              2048,
+              512,
+              1024,
+              512,
+              1024,
+              2560,
+              2048,
+              1024
+            ],
+            [
+              4112,
+              32896,
+              8224,
+              16448,
+              8224,
+              16448,
+              32800,
+              32896,
+              16448
+            ],
+            [
+              4096,
+              32768,
+              8192,
+              16384,
+              8192,
+              16384,
+              40960,
+              32768,
+              16384
+            ],
+            [
+              256,
+              2048,
+              512,
+              1024,
+              512,
+              1024,
+              2560,
+              2048,
+              1024
+            ]
+          ],
+          "phases": [
+            {
+              "hall_input_anchors": {
+                "0": [
+                  1
+                ],
+                "32": [
+                  2
+                ],
+                "42": [
+                  3
+                ],
+                "44": [
+                  2
+                ],
+                "46": [
+                  3
+                ]
+              },
+              "hall_status": "underdetermined",
+              "hall_domains": [
+                [
+                  1
+                ],
+                [
+                  4
+                ],
+                [
+                  2
+                ],
+                [
+                  3
+                ],
+                [
+                  2
+                ],
+                [
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  4
+                ],
+                [
+                  3
+                ]
+              ],
+              "hall_trace": [
+                {
+                  "from_side": 0,
+                  "to_side": 1,
+                  "edge": 0,
+                  "whole_line": "frame",
+                  "removed": 1
+                },
+                {
+                  "from_side": 0,
+                  "to_side": 6,
+                  "edge": 5,
+                  "whole_line": "frame",
+                  "removed": 1
+                },
+                {
+                  "from_side": 0,
+                  "to_side": 7,
+                  "edge": 11,
+                  "whole_line": "frame",
+                  "removed": 1
+                },
+                {
+                  "from_side": 0,
+                  "to_side": 8,
+                  "edge": 12,
+                  "whole_line": "frame",
+                  "removed": 1
+                },
+                {
+                  "from_side": 2,
+                  "to_side": 1,
+                  "edge": 16,
+                  "whole_line": "L:150,0>150,600",
+                  "removed": 2
+                },
+                {
+                  "from_side": 2,
+                  "to_side": 8,
+                  "edge": 17,
+                  "whole_line": "L:150,0>150,600",
+                  "removed": 2
+                },
+                {
+                  "from_side": 2,
+                  "to_side": 7,
+                  "edge": 19,
+                  "whole_line": "L:150,400>300,400",
+                  "removed": 2
+                },
+                {
+                  "from_side": 3,
+                  "to_side": 7,
+                  "edge": 21,
+                  "whole_line": "L:300,0>300,600",
+                  "removed": 3
+                },
+                {
+                  "from_side": 5,
+                  "to_side": 6,
+                  "edge": 24,
+                  "whole_line": "L:750,0>750,600",
+                  "removed": 3
+                },
+                {
+                  "from_side": 7,
+                  "to_side": 8,
+                  "edge": 18,
+                  "whole_line": "L:150,0>150,600",
+                  "removed": 4
+                },
+                {
+                  "from_side": 8,
+                  "to_side": 1,
+                  "edge": 15,
+                  "whole_line": "L:0,250>150,250",
+                  "removed": 3
+                }
+              ],
+              "hall_conflict": null,
+              "relation_input": [
+                [
+                  1,
+                  8,
+                  2,
+                  4,
+                  2,
+                  4,
+                  10,
+                  8,
+                  4
+                ],
+                [
+                  4096,
+                  32768,
+                  8192,
+                  16384,
+                  8192,
+                  16384,
+                  40960,
+                  32768,
+                  16384
+                ],
+                [
+                  16,
+                  128,
+                  32,
+                  64,
+                  32,
+                  64,
+                  160,
+                  128,
+                  64
+                ],
+                [
+                  256,
+                  2048,
+                  512,
+                  1024,
+                  512,
+                  1024,
+                  2560,
+                  2048,
+                  1024
+                ],
+                [
+                  16,
+                  128,
+                  32,
+                  64,
+                  32,
+                  64,
+                  160,
+                  128,
+                  64
+                ],
+                [
+                  256,
+                  2048,
+                  512,
+                  1024,
+                  512,
+                  1024,
+                  2560,
+                  2048,
+                  1024
+                ],
+                [
+                  4112,
+                  32896,
+                  8224,
+                  16448,
+                  8224,
+                  16448,
+                  32800,
+                  32896,
+                  16448
+                ],
+                [
+                  4096,
+                  32768,
+                  8192,
+                  16384,
+                  8192,
+                  16384,
+                  40960,
+                  32768,
+                  16384
+                ],
+                [
+                  256,
+                  2048,
+                  512,
+                  1024,
+                  512,
+                  1024,
+                  2560,
+                  2048,
+                  1024
+                ]
+              ],
+              "relation_trace": [],
+              "relation_conflict": false
+            }
+          ],
+          "revisions": 1458,
+          "hall_conflict": null,
+          "backtracks": 0,
+          "choices": 0,
+          "palette": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      },
+      {
+        "anchors_by_dart": {
+          "0": [
+            1
+          ],
+          "32": [
+            2
+          ],
+          "42": [
+            3
+          ],
+          "44": [
+            2
+          ],
+          "46": [
+            3
+          ],
+          "48": [
+            2
+          ]
+        },
+        "outcome": {
+          "status": "solved",
+          "domains": [
+            [
+              1
+            ],
+            [
+              4
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              2
+            ],
+            [
+              4
+            ],
+            [
+              3
+            ]
+          ],
+          "relations": [
+            [
+              1,
+              8,
+              2,
+              4,
+              2,
+              4,
+              2,
+              8,
+              4
+            ],
+            [
+              4096,
+              32768,
+              8192,
+              16384,
+              8192,
+              16384,
+              8192,
+              32768,
+              16384
+            ],
+            [
+              16,
+              128,
+              32,
+              64,
+              32,
+              64,
+              32,
+              128,
+              64
+            ],
+            [
+              256,
+              2048,
+              512,
+              1024,
+              512,
+              1024,
+              512,
+              2048,
+              1024
+            ],
+            [
+              16,
+              128,
+              32,
+              64,
+              32,
+              64,
+              32,
+              128,
+              64
+            ],
+            [
+              256,
+              2048,
+              512,
+              1024,
+              512,
+              1024,
+              512,
+              2048,
+              1024
+            ],
+            [
+              16,
+              128,
+              32,
+              64,
+              32,
+              64,
+              32,
+              128,
+              64
+            ],
+            [
+              4096,
+              32768,
+              8192,
+              16384,
+              8192,
+              16384,
+              8192,
+              32768,
+              16384
+            ],
+            [
+              256,
+              2048,
+              512,
+              1024,
+              512,
+              1024,
+              512,
+              2048,
+              1024
+            ]
+          ],
+          "phases": [
+            {
+              "hall_input_anchors": {
+                "0": [
+                  1
+                ],
+                "32": [
+                  2
+                ],
+                "42": [
+                  3
+                ],
+                "44": [
+                  2
+                ],
+                "46": [
+                  3
+                ],
+                "48": [
+                  2
+                ]
+              },
+              "hall_status": "solved",
+              "hall_domains": [
+                [
+                  1
+                ],
+                [
+                  4
+                ],
+                [
+                  2
+                ],
+                [
+                  3
+                ],
+                [
+                  2
+                ],
+                [
+                  3
+                ],
+                [
+                  2
+                ],
+                [
+                  4
+                ],
+                [
+                  3
+                ]
+              ],
+              "hall_trace": [
+                {
+                  "from_side": 0,
+                  "to_side": 1,
+                  "edge": 0,
+                  "whole_line": "frame",
+                  "removed": 1
+                },
+                {
+                  "from_side": 0,
+                  "to_side": 7,
+                  "edge": 11,
+                  "whole_line": "frame",
+                  "removed": 1
+                },
+                {
+                  "from_side": 0,
+                  "to_side": 8,
+                  "edge": 12,
+                  "whole_line": "frame",
+                  "removed": 1
+                },
+                {
+                  "from_side": 2,
+                  "to_side": 1,
+                  "edge": 16,
+                  "whole_line": "L:150,0>150,600",
+                  "removed": 2
+                },
+                {
+                  "from_side": 2,
+                  "to_side": 8,
+                  "edge": 17,
+                  "whole_line": "L:150,0>150,600",
+                  "removed": 2
+                },
+                {
+                  "from_side": 2,
+                  "to_side": 7,
+                  "edge": 19,
+                  "whole_line": "L:150,400>300,400",
+                  "removed": 2
+                },
+                {
+                  "from_side": 3,
+                  "to_side": 7,
+                  "edge": 21,
+                  "whole_line": "L:300,0>300,600",
+                  "removed": 3
+                },
+                {
+                  "from_side": 7,
+                  "to_side": 8,
+                  "edge": 18,
+                  "whole_line": "L:150,0>150,600",
+                  "removed": 4
+                },
+                {
+                  "from_side": 8,
+                  "to_side": 1,
+                  "edge": 15,
+                  "whole_line": "L:0,250>150,250",
+                  "removed": 3
+                }
+              ],
+              "hall_conflict": null,
+              "relation_input": [
+                [
+                  1,
+                  8,
+                  2,
+                  4,
+                  2,
+                  4,
+                  2,
+                  8,
+                  4
+                ],
+                [
+                  4096,
+                  32768,
+                  8192,
+                  16384,
+                  8192,
+                  16384,
+                  8192,
+                  32768,
+                  16384
+                ],
+                [
+                  16,
+                  128,
+                  32,
+                  64,
+                  32,
+                  64,
+                  32,
+                  128,
+                  64
+                ],
+                [
+                  256,
+                  2048,
+                  512,
+                  1024,
+                  512,
+                  1024,
+                  512,
+                  2048,
+                  1024
+                ],
+                [
+                  16,
+                  128,
+                  32,
+                  64,
+                  32,
+                  64,
+                  32,
+                  128,
+                  64
+                ],
+                [
+                  256,
+                  2048,
+                  512,
+                  1024,
+                  512,
+                  1024,
+                  512,
+                  2048,
+                  1024
+                ],
+                [
+                  16,
+                  128,
+                  32,
+                  64,
+                  32,
+                  64,
+                  32,
+                  128,
+                  64
+                ],
+                [
+                  4096,
+                  32768,
+                  8192,
+                  16384,
+                  8192,
+                  16384,
+                  8192,
+                  32768,
+                  16384
+                ],
+                [
+                  256,
+                  2048,
+                  512,
+                  1024,
+                  512,
+                  1024,
+                  512,
+                  2048,
+                  1024
+                ]
+              ],
+              "relation_trace": [],
+              "relation_conflict": false
+            }
+          ],
+          "revisions": 1458,
+          "hall_conflict": null,
+          "backtracks": 0,
+          "choices": 0,
+          "palette": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      }
+    ],
+    "hall_conflict": null,
+    "colors": [
+      1,
+      4,
+      2,
+      3,
+      2,
+      3,
+      2,
+      4,
+      3
+    ],
+    "scope": "Geometry-only equal-level activation, singleton coarse-cell readiness, and one prior safe normalization. No coarse-descendant equality constraints, old colors, probes, retries or backtracking. Four remains an input palette."
+  },
+  "verification": {
+    "passed": true,
+    "claim": "complete-proper-four-names",
+    "method": "independent-bfs-coarse-batches-ready-scheduling-and-set-proof-replay",
+    "final_legality": {
+      "passed": true,
+      "method": "direct-coloring-and-line-orbits",
+      "claim": "complete-proper-four-names",
+      "line_names_sha256": "e30d93a2b1e1827a131324a3f8faf7d45d8f858701a3fb3fd96bf4eb2b68e6f6",
+      "shore_count": 9,
+      "edge_count": 25
+    },
+    "hall_events": 64,
+    "filter_phases": 6,
+    "relation_events": 6,
+    "ordered_pair_deletions_replayed": 12
+  },
+  "final_line_profiles": [
+    {
+      "mother": "frame",
+      "intervals": [
+        {
+          "edge": 0,
+          "dart": 0,
+          "t0": 0.0,
+          "t1": 0.05,
+          "left_side": 0,
+          "right_side": 1,
+          "left_name": 1,
+          "right_name": 4
+        },
+        {
+          "edge": 1,
+          "dart": 2,
+          "t0": 0.05,
+          "t1": 0.1,
+          "left_side": 0,
+          "right_side": 2,
+          "left_name": 1,
+          "right_name": 2
+        },
+        {
+          "edge": 2,
+          "dart": 4,
+          "t0": 0.1,
+          "t1": 0.15,
+          "left_side": 0,
+          "right_side": 3,
+          "left_name": 1,
+          "right_name": 3
+        },
+        {
+          "edge": 3,
+          "dart": 6,
+          "t0": 0.15,
+          "t1": 0.2,
+          "left_side": 0,
+          "right_side": 4,
+          "left_name": 1,
+          "right_name": 2
+        },
+        {
+          "edge": 4,
+          "dart": 8,
+          "t0": 0.2,
+          "t1": 0.25,
+          "left_side": 0,
+          "right_side": 5,
+          "left_name": 1,
+          "right_name": 3
+        },
+        {
+          "edge": 5,
+          "dart": 10,
+          "t0": 0.25,
+          "t1": 0.3,
+          "left_side": 0,
+          "right_side": 6,
+          "left_name": 1,
+          "right_name": 2
+        },
+        {
+          "edge": 6,
+          "dart": 12,
+          "t0": 0.3,
+          "t1": 0.5,
+          "left_side": 0,
+          "right_side": 6,
+          "left_name": 1,
+          "right_name": 2
+        },
+        {
+          "edge": 7,
+          "dart": 14,
+          "t0": 0.5,
+          "t1": 0.55,
+          "left_side": 0,
+          "right_side": 6,
+          "left_name": 1,
+          "right_name": 2
+        },
+        {
+          "edge": 8,
+          "dart": 16,
+          "t0": 0.55,
+          "t1": 0.6,
+          "left_side": 0,
+          "right_side": 5,
+          "left_name": 1,
+          "right_name": 3
+        },
+        {
+          "edge": 9,
+          "dart": 18,
+          "t0": 0.6,
+          "t1": 0.65,
+          "left_side": 0,
+          "right_side": 4,
+          "left_name": 1,
+          "right_name": 2
+        },
+        {
+          "edge": 10,
+          "dart": 20,
+          "t0": 0.65,
+          "t1": 0.7,
+          "left_side": 0,
+          "right_side": 3,
+          "left_name": 1,
+          "right_name": 3
+        },
+        {
+          "edge": 11,
+          "dart": 22,
+          "t0": 0.7,
+          "t1": 0.75,
+          "left_side": 0,
+          "right_side": 7,
+          "left_name": 1,
+          "right_name": 4
+        },
+        {
+          "edge": 12,
+          "dart": 24,
+          "t0": 0.75,
+          "t1": 0.8,
+          "left_side": 0,
+          "right_side": 8,
+          "left_name": 1,
+          "right_name": 3
+        },
+        {
+          "edge": 13,
+          "dart": 26,
+          "t0": 0.8,
+          "t1": 0.9166666666666666,
+          "left_side": 0,
+          "right_side": 8,
+          "left_name": 1,
+          "right_name": 3
+        },
+        {
+          "edge": 14,
+          "dart": 28,
+          "t0": 0.9166666666666666,
+          "t1": 1.0,
+          "left_side": 0,
+          "right_side": 1,
+          "left_name": 1,
+          "right_name": 4
+        }
+      ]
+    },
+    {
+      "mother": "L:0,250>150,250",
+      "intervals": [
+        {
+          "edge": 15,
+          "dart": 30,
+          "t0": 0.0,
+          "t1": 1.0,
+          "left_side": 1,
+          "right_side": 8,
+          "left_name": 4,
+          "right_name": 3
+        }
+      ]
+    },
+    {
+      "mother": "L:150,0>150,600",
+      "intervals": [
+        {
+          "edge": 16,
+          "dart": 32,
+          "t0": 0.0,
+          "t1": 0.4166666666666667,
+          "left_side": 2,
+          "right_side": 1,
+          "left_name": 2,
+          "right_name": 4
+        },
+        {
+          "edge": 17,
+          "dart": 34,
+          "t0": 0.4166666666666667,
+          "t1": 0.6666666666666666,
+          "left_side": 2,
+          "right_side": 8,
+          "left_name": 2,
+          "right_name": 3
+        },
+        {
+          "edge": 18,
+          "dart": 36,
+          "t0": 0.6666666666666666,
+          "t1": 1.0,
+          "left_side": 7,
+          "right_side": 8,
+          "left_name": 4,
+          "right_name": 3
+        }
+      ]
+    },
+    {
+      "mother": "L:150,400>300,400",
+      "intervals": [
+        {
+          "edge": 19,
+          "dart": 38,
+          "t0": 0.0,
+          "t1": 1.0,
+          "left_side": 2,
+          "right_side": 7,
+          "left_name": 2,
+          "right_name": 4
+        }
+      ]
+    },
+    {
+      "mother": "L:300,0>300,600",
+      "intervals": [
+        {
+          "edge": 20,
+          "dart": 40,
+          "t0": 0.0,
+          "t1": 0.6666666666666666,
+          "left_side": 3,
+          "right_side": 2,
+          "left_name": 3,
+          "right_name": 2
+        },
+        {
+          "edge": 21,
+          "dart": 42,
+          "t0": 0.6666666666666666,
+          "t1": 1.0,
+          "left_side": 3,
+          "right_side": 7,
+          "left_name": 3,
+          "right_name": 4
+        }
+      ]
+    },
+    {
+      "mother": "L:450,0>450,600",
+      "intervals": [
+        {
+          "edge": 22,
+          "dart": 44,
+          "t0": 0.0,
+          "t1": 1.0,
+          "left_side": 4,
+          "right_side": 3,
+          "left_name": 2,
+          "right_name": 3
+        }
+      ]
+    },
+    {
+      "mother": "L:600,0>600,600",
+      "intervals": [
+        {
+          "edge": 23,
+          "dart": 46,
+          "t0": 0.0,
+          "t1": 1.0,
+          "left_side": 5,
+          "right_side": 4,
+          "left_name": 3,
+          "right_name": 2
+        }
+      ]
+    },
+    {
+      "mother": "L:750,0>750,600",
+      "intervals": [
+        {
+          "edge": 24,
+          "dart": 48,
+          "t0": 0.0,
+          "t1": 1.0,
+          "left_side": 6,
+          "right_side": 5,
+          "left_name": 2,
+          "right_name": 3
+        }
+      ]
+    }
+  ],
+  "production_attempts": 1,
+  "old_colors_read": false,
+  "ignored_top_level_fields": [],
+  "scope": "Current framed geometric adapter; deterministic finite experiment, not a general four-color completeness proof.",
+  "generated_at_utc": "2026-09-19T06:10:44.685312+00:00",
+  "input_filename": "peer-batch-five-lines.json",
+  "input_sha256": "b040d441adb3b28dda0d793a111ac6b48367c316e4c563fc571b3d2b7e728ea7",
+  "source_sha256": {
+    "fourcolor/relation_frontier.py": "9d385da99c36e0b9f59c3d2182b697cd8d2b27734014cf97b0314c4ef785e316",
+    "fourcolor/relation_names.py": "cc6566e959ab87c47d670dc8113d856f64e77132e5542c6d6ec8e98cec28d8cf",
+    "fourcolor/frontier_restart.py": "2b82e9de0ecad888b5248602d039997889becac1718282f5c4a5eaa6d8c1c533",
+    "fourcolor/global_restart.py": "56aafff2632cf4c02cc20c7a056d02b9932f65f700311846d7d81c1cb32b3cbb",
+    "fourcolor/closed_support.py": "0a95dd2802d16654a4342332ae9f9825944a26c4fe2cad182de0a214fbfc56f1",
+    "fourcolor/whole_lines.py": "5bd54516c18ff74c2dcba2a5e89a27b1af7e3c0277fb3aa8e12f0efa55f9312c",
+    "fourcolor/joint_lines.py": "7d0fa2df82b719ceba514818f27d4b155f7e96d47b3c173743e3adf44b930e88",
+    "fourcolor/weighted_lines.py": "21cf5484a0504807463dafaa54992bf2cd6b1a4924e80b5a4ad29d3381ddd389",
+    "fourcolor/embedding.py": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+    "fourcolor/line_names.py": "8fdfb7019d89edd01643bb5e1554a3aba8480dfbc032f34c72039782c620ce33",
+    "web/engine.js": "1451287b703e6f90765a1ed96acd2c4c5fc30d467be6c207da81f4b982035d84",
+    "scripts/restart-geometry.mjs": "66d72196c12e56e2ca63b6debb06b661e6dc9a110be6c4f236d9f8f32653897e",
+    "scripts/validate_relation_frontier.py": "d572cdb030021d3d080e7cf277f688e80c2a5af87b7a52cab3d1991f75b4248e",
+    "scripts/validate_frontier_restart.py": "74b0d487b04ee218c3328cdbf566801812472cbe47a71b4f78bbda580aae39a7",
+    "scripts/validate_global_restart.py": "2807c3ce904e42e4fb2bd194f773724c6bf7364f592d8cc730dfecc856601c18",
+    "scripts/validate_relation_frontier_full.py": "d5e06a138f26a8275358ee1c9473cac697e63407ba43c551132b3c72fb3dca69",
+    "fourcolor/level_sides.py": "222a8f752722e95c646d5ec58bbbcfc6ff94108d1d893d00806c960a25fd45ba",
+    "scripts/validate_level_sides.py": "b3fc714c0d07e7159c10ae14a92a787aeff3a499470917429b3bee20058ecff8",
+    "scripts/analyze_line_generations.py": "48058342337b5a7c5ec523df42e16d447ccf1009dd4ffdf9f1924e06c1e57bd6",
+    "fourcolor/level_sides_peer.py": "a1b1add2d97d34ab29c35e6fab7f5a665aa6841742080907ea95b5d4002a5c56",
+    "scripts/validate_level_sides_peer.py": "1226941d2a95b632eec0532581b21d775afd25eb24a38b05a039d485528e803f",
+    "scripts/validate_level_sides_peer_full.py": "d2ccbcbed7530ff1a996e288816c26afdb3668fa6e810adc68df64583911e41e",
+    "fourcolor/staged_levels.py": "50eba883b5ba20b3af578695a27d6f30ccea43de4abd8e63f7942492ca381e4c",
+    "scripts/validate_staged_levels.py": "e907b0a37c622c6df297b439ba69b6725117aecd2b3630021ae8bf8c1f86f67e",
+    "scripts/validate_staged_levels_full.py": "f072a43e562809afe8eece8a43189693fcf667e9d18405988fadf997d57cd76f",
+    "docs/STAGED_LEVEL_RULES-2026-09-19.md": "6a28aed30001660adf29daafb36635f9be7748ec96c69b6e0b7c8fe71b8c4029",
+    "fourcolor/peer_batches.py": "ad8bc0ffcb9b658da6b56ed0c32d18685996f9639f0b01598e37031f620333ff",
+    "scripts/validate_peer_batches.py": "fad48ad5a875e03901fc2a2de1c833e8c360bb11c84513272388ac1a00bb8e58",
+    "scripts/validate_peer_batches_full.py": "4c1a329e0cebe2f19494c8689f14af8e52bb38efc4383879ec0e0b64ec17931c",
+    "docs/PEER_BATCH_RULES-2026-09-19.md": "c44d2247f3c3356de5e5a82ed0ed81f3be6fad6bc7edfd1d31bb531dea7ef9a3",
+    "scripts/name_peer_batch_map.py": "1c93e223fd4c68147c5ea6435145b26257fcf659fbfc696fcb4582923cde4054"
+  }
+}

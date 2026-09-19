@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1650" height="960" viewBox="0 0 1650 960">
+<rect width="100%" height="100%" fill="white"/>
+<text x="60" y="30" font-size="42" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">仍受阻的例子｜共同接口不能单独释放</text>
+<text x="60" y="100" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">seed 20260908，第 7 刀；从外圈按当前规则重算，非旧命名截图。</text>
+<text x="60" y="177" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">外侧 1；图中数字是加线前合法名字</text>
+<polyline points="60,230 960,230 960,830 60,830 60,230" fill="none" stroke="#202831" stroke-width="5"/>
+<polyline points="60,442 960,442" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="60,669 960,669" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="60,719 960,719" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="368,230 368,442" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="748,230 748,442" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="483,719 483,830" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="451,669 451,683" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="451,692 451,706" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="451,715 451,719" fill="none" stroke="#B74400" stroke-width="5"/>
+<text x="510" y="538.5" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="510" y="677" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="214" y="319" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<text x="854" y="319" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<text x="558" y="319" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="721.5" y="757.5" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="271.5" y="757.5" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<text x="1020" y="250" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">待分母侧：3</text>
+<text x="1020" y="307" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">两子侧旧邻名均为</text>
+<text x="1020" y="364" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">{1, 2, 4}</text>
+<text x="1020" y="421" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">因此直接候选都为空。</text>
+<text x="1020" y="478" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">内部共同接口也没有</text>
+<text x="1020" y="535" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">合法的单侧换名动作。</text>
+<text x="1020" y="592" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">下一步需要联合改名，</text>
+<text x="1020" y="649" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">或更强的继承选择规则。</text>
+<text x="1020" y="706" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">这不是需要第五名的证明。</text>
+<text x="60" y="886" font-size="26" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">橙色虚线：待加入的第 7 刀，未提交。可在这张真实几何上人工标记完整修改方案。</text>
+</svg>

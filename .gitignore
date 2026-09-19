@@ -20,3 +20,7 @@ _local/
 *.log
 .DS_Store
 Thumbs.db
+
+# First local profile trace repeats full mother records; the v2 report retains
+# replay inputs and hashes compactly. Preserve the raw trace, but do not publish it.
+/outputs/retained-profiles-2026-09-18.json

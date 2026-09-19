@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="980" viewBox="0 0 1900 980">
+<rect width="100%" height="100%" fill="white"/>
+<text x="60" y="30" font-size="40" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">已澄清的过强解释｜同母线不应无条件压过其他约束</text>
+<text x="60" y="103" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">seed 20260943，第 4 刀；两边都全图重启，左图仅保留为旧的绝对优先对照。</text>
+<text x="60" y="177" font-size="28" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">同母线绝对优先：未得到合法终态</text>
+<text x="60" y="221" font-size="22" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">空白问号供人工标记，不显示冲突草稿为彩图</text>
+<polyline points="60,275 870,275 870,815 60,815 60,275" fill="none" stroke="#202831" stroke-width="5"/>
+<polyline points="60,616.1 239.1,616.1" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="119.4,275 119.4,616.1" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="239.1,275 239.1,815" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="334.5,275 334.5,815" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="89.7" y="429.55" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="179.25" y="429.55" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="286.8" y="529" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="602.25" y="529" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="149.55" y="699.55" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<polyline points="334.5,275 334.5,815" fill="none" stroke="#00618A" stroke-width="6"/>
+<text x="1010" y="177" font-size="28" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">当前约束数优先：得到合法四名结果</text>
+<text x="1010" y="221" font-size="22" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">这是独立对照，不是失败后的自动后备</text>
+<rect x="1010" y="275" width="59.4" height="341.1" fill="#CDE7F4"/>
+<rect x="1069.4" y="275" width="119.7" height="341.1" fill="#FFE4AF"/>
+<rect x="1189.1" y="275" width="95.4" height="540" fill="#CDE7F4"/>
+<rect x="1284.5" y="275" width="535.5" height="540" fill="#FFE4AF"/>
+<rect x="1010" y="616.1" width="179.1" height="198.9" fill="#DDCFE8"/>
+<polyline points="1010,275 1820,275 1820,815 1010,815 1010,275" fill="none" stroke="#202831" stroke-width="5"/>
+<polyline points="1010,616.1 1189.1,616.1" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1069.4,275 1069.4,616.1" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1189.1,275 1189.1,815" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1284.5,275 1284.5,815" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="1039.7" y="429.55" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="1129.25" y="429.55" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="1236.8" y="529" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="1552.25" y="529" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="1099.55" y="699.55" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<text x="60" y="850" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">左图蓝线两端均接外圈；它先命名并立即承诺最小名，随后遇到空候选。</text>
+<text x="60" y="900" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">需区分：先分析这条线，是否等于立即固定其两侧名字？本图不否定更灵活的母线规则。</text>
+</svg>

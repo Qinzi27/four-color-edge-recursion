@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "input": {
+    "filename": "c-restart-2026-09-18-v2.json",
+    "sha256": "38a60687889ab17823c44e35d8ed64853e599dfd2e755e9cdf934350285e9691"
+  },
+  "code_sha256": {
+    "scripts/render_c_restart.py": "bfee3fcce0731a27f767f79a27a3b4ee7685c098e09c7ade57f17967ae044f24",
+    "scripts/render_anchor_failure_cases.py": "8bdea94aa0f3f8ea101d1c139c47fcf6b645373d64e0da06ad0ea4a6fd8b7b5e"
+  },
+  "source_case": {
+    "filename": "anchor-forest-continuation-2026-09-18-v2.json",
+    "sha256": "5a9c74f3225df4b4e72452f4671ded285f41616a03fd47fe1f28d7d642ad76ad",
+    "family": "guillotine",
+    "seed": 20260960,
+    "inherit": "right"
+  },
+  "before": {
+    "width": 900,
+    "height": 600,
+    "cuts": [
+      [
+        [
+          0,
+          357
+        ],
+        [
+          900,
+          357
+        ]
+      ],
+      [
+        [
+          0,
+          487
+        ],
+        [
+          900,
+          487
+        ]
+      ]
+    ],
+    "sides": [
+      {
+        "id": "root.l",
+        "bounds": [
+          0,
+          0,
+          900,
+          357
+        ],
+        "symbol": 2
+      },
+      {
+        "id": "root.r.l",
+        "bounds": [
+          0,
+          357,
+          900,
+          487
+        ],
+        "symbol": 3
+      },
+      {
+        "id": "root.r.r",
+        "bounds": [
+          0,
+          487,
+          900,
+          600
+        ],
+        "symbol": 2
+      }
+    ]
+  },
+  "after": {
+    "width": 900,
+    "height": 600,
+    "cuts": [
+      [
+        [
+          0,
+          357
+        ],
+        [
+          900,
+          357
+        ]
+      ],
+      [
+        [
+          0,
+          487
+        ],
+        [
+          900,
+          487
+        ]
+      ],
+      [
+        [
+          442,
+          357
+        ],
+        [
+          442,
+          487
+        ]
+      ]
+    ],
+    "sides": [
+      {
+        "id": "root.l",
+        "bounds": [
+          0,
+          0,
+          900,
+          357
+        ],
+        "symbol": 2
+      },
+      {
+        "id": "root.r.r",
+        "bounds": [
+          0,
+          487,
+          900,
+          600
+        ],
+        "symbol": 2
+      },
+      {
+        "id": "root.r.l.l",
+        "bounds": [
+          442,
+          357,
+          900,
+          487
+        ],
+        "symbol": 3
+      },
+      {
+        "id": "root.r.l.r",
+        "bounds": [
+          0,
+          357,
+          442,
+          487
+        ],
+        "symbol": 4
+      }
+    ]
+  },
+  "transform": "Exact uniform scale 0.9; source x-right/y-down; no source-photo edits.",
+  "semantics": "Numbers are side names; L1/L2/L3 are distinct geometric line identities.",
+  "font": "msyh.ttc",
+  "files": [
+    {
+      "filename": "case-c-restarted.png",
+      "sha256": "d86a10d23588fcbc768d8607124faf900643b14916f6bd89fa4c40bf4abdd906",
+      "width_px": 1900,
+      "height_px": 960
+    },
+    {
+      "filename": "case-c-restarted.svg",
+      "sha256": "a532362add8c90f62eae16c6030fa9e82b9e1f5e2a707b952a3757461c800b21",
+      "width_px": 1900,
+      "height_px": 960
+    }
+  ]
+}

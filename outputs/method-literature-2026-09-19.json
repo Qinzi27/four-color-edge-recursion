@@ -1,0 +1,453 @@
+{
+  "access_date": "2026-09-19",
+  "time_zone": "Asia/Shanghai",
+  "scope": "Bounded prior-work screen, not a systematic review or originality certification.",
+  "production_algorithm_changed": false,
+  "apis": [
+    {
+      "provider": "arXiv",
+      "endpoint": "https://export.arxiv.org/api/query",
+      "parameters": {
+        "search_query": "(ti:\"four color\" OR ti:\"map color\") AND (all:grammar OR all:recursive OR all:boundary)",
+        "max_results": 10,
+        "sortBy": "submittedDate",
+        "sortOrder": "descending"
+      },
+      "payload_checked": "Atom feed, no Error entry",
+      "returned": 4,
+      "total_results": 4,
+      "ids": [
+        "2602.16996v9",
+        "2104.14399v1",
+        "1603.05130v1",
+        "1006.1324v2"
+      ],
+      "initial_attempt": "Local network restriction; retried successfully with reviewed network access. Initial failure was not interpreted as no literature."
+    },
+    {
+      "provider": "arXiv",
+      "endpoint": "https://export.arxiv.org/api/query",
+      "parameters": {
+        "id_list": "math/0112266,1006.1324,1108.5690,1907.04066,2312.13061,2603.24880",
+        "max_results": 6
+      },
+      "payload_checked": "Bundled arxiv_atom parser accepted Atom feed; legacy ID manually corrected from authoritative URL.",
+      "result_metadata": {
+        "total_results": 6,
+        "returned": 6,
+        "query_as_executed": "arXiv Query: search_query=&id_list=math/0112266,1006.1324,1108.5690,1907.04066,2312.13061,2603.24880&start=0&max_results=6",
+        "entries": [
+          {
+            "arxiv_id": "1907.04066",
+            "arxiv_id_versioned": "1907.04066v2",
+            "version": "2",
+            "title": "Coloring count cones of planar graphs",
+            "authors": [
+              "Zdeněk Dvořák",
+              "Bernard Lidický"
+            ],
+            "published": "2019-07-09T10:11:39Z",
+            "updated": "2021-10-25T12:15:11Z",
+            "primary_category": "math.CO",
+            "categories": [
+              "math.CO"
+            ],
+            "doi": "10.1002/jgt.22767",
+            "journal_ref": null,
+            "comment": "18 pages, 9 figures",
+            "abstract_url": "https://arxiv.org/abs/1907.04066v2",
+            "pdf_url": "https://arxiv.org/pdf/1907.04066v2"
+          },
+          {
+            "arxiv_id": "1108.5690",
+            "arxiv_id_versioned": "1108.5690v2",
+            "version": "2",
+            "title": "On a Subposet of the Tamari Lattice",
+            "authors": [
+              "Sebastian A. Csar",
+              "Rik Sengupta",
+              "Warut Suksompong"
+            ],
+            "published": "2011-08-29T18:22:13Z",
+            "updated": "2013-09-15T01:44:08Z",
+            "primary_category": "math.CO",
+            "categories": [
+              "math.CO"
+            ],
+            "doi": "10.1007/s11083-013-9305-5",
+            "journal_ref": "Order (2014) 31:337-363",
+            "comment": "21 pages",
+            "abstract_url": "https://arxiv.org/abs/1108.5690v2",
+            "pdf_url": "https://arxiv.org/pdf/1108.5690v2"
+          },
+          {
+            "arxiv_id": "math/0112266",
+            "arxiv_id_versioned": "math/0112266v2",
+            "version": "2",
+            "title": "Reformulating the Map Color Theorem",
+            "authors": [
+              "Louis H. Kauffman"
+            ],
+            "published": "2001-12-23T23:40:44Z",
+            "updated": "2003-07-02T02:17:01Z",
+            "primary_category": "math.CO",
+            "categories": [
+              "math.CO"
+            ],
+            "doi": null,
+            "journal_ref": null,
+            "comment": "40 pages, 28 figures, LaTeX graphics",
+            "abstract_url": "https://arxiv.org/abs/math/0112266v2",
+            "pdf_url": "https://arxiv.org/pdf/math/0112266v2",
+            "parser_original_id": "0112266",
+            "normalization_note": "Restored legacy math/ prefix from the authoritative alternate URL; helper otherwise drops it."
+          },
+          {
+            "arxiv_id": "2603.24880",
+            "arxiv_id_versioned": "2603.24880v2",
+            "version": "2",
+            "title": "The Four Color Theorem with Linearly Many Reducible Configurations and Near-Linear Time Coloring",
+            "authors": [
+              "Yuta Inoue",
+              "Ken-ichi Kawarabayashi",
+              "Atsuyuki Miyashita",
+              "Bojan Mohar",
+              "Carsten Thomassen",
+              "Mikkel Thorup"
+            ],
+            "published": "2026-03-25T23:51:40Z",
+            "updated": "2026-05-07T08:01:39Z",
+            "primary_category": "math.CO",
+            "categories": [
+              "math.CO",
+              "cs.CG",
+              "cs.DM",
+              "cs.DS"
+            ],
+            "doi": null,
+            "journal_ref": null,
+            "comment": "Source files are available at Github: https://github.com/near-linear-4ct/",
+            "abstract_url": "https://arxiv.org/abs/2603.24880v2",
+            "pdf_url": "https://arxiv.org/pdf/2603.24880v2"
+          },
+          {
+            "arxiv_id": "1006.1324",
+            "arxiv_id_versioned": "1006.1324v2",
+            "version": "2",
+            "title": "Toward a language theoretic proof of the four color theorem",
+            "authors": [
+              "Bobbe Cooper",
+              "Eric Rowland",
+              "Doron Zeilberger"
+            ],
+            "published": "2010-06-07T18:33:52Z",
+            "updated": "2011-12-10T02:46:59Z",
+            "primary_category": "math.CO",
+            "categories": [
+              "math.CO"
+            ],
+            "doi": "10.1016/j.aam.2011.11.002",
+            "journal_ref": "Advances in Applied Mathematics 48 (2012) 414-431",
+            "comment": "18 pages, many images; final version",
+            "abstract_url": "https://arxiv.org/abs/1006.1324v2",
+            "pdf_url": "https://arxiv.org/pdf/1006.1324v2"
+          },
+          {
+            "arxiv_id": "2312.13061",
+            "arxiv_id_versioned": "2312.13061v1",
+            "version": "1",
+            "title": "Precoloring extension in planar near-Eulerian-triangulations",
+            "authors": [
+              "Zdeněk Dvořák",
+              "Benjamin Moore",
+              "Michaela Seifrtová",
+              "Robert Šámal"
+            ],
+            "published": "2023-12-20T14:37:41Z",
+            "updated": "2023-12-20T14:37:41Z",
+            "primary_category": "math.CO",
+            "categories": [
+              "math.CO"
+            ],
+            "doi": null,
+            "journal_ref": null,
+            "comment": "20 pages, 3 figures, extended abstract appeared in EuroComb 2023",
+            "abstract_url": "https://arxiv.org/abs/2312.13061v1",
+            "pdf_url": "https://arxiv.org/pdf/2312.13061v1"
+          }
+        ]
+      }
+    },
+    {
+      "provider": "Crossref",
+      "endpoint": "https://api.crossref.org/works",
+      "parameters": {
+        "query.bibliographic": "Toward a language theoretic proof of the four color theorem",
+        "rows": 2,
+        "select": "DOI,title,author,published,container-title,volume,issue,page,URL"
+      },
+      "payload_status": "ok",
+      "returned_dois": [
+        "10.1016/j.aam.2011.11.002",
+        "10.2139/ssrn.4624633"
+      ],
+      "selected_doi": "10.1016/j.aam.2011.11.002"
+    },
+    {
+      "provider": "Crossref",
+      "endpoint_template": "https://api.crossref.org/works/{urlencoded_doi}",
+      "result_metadata": [
+        {
+          "requested_doi": "10.1016/j.disc.2004.07.031",
+          "DOI": "10.1016/j.disc.2004.07.031",
+          "title": [
+            "Reformulating the map color theorem"
+          ],
+          "author": [
+            {
+              "given": "Louis H.",
+              "family": "Kauffman"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2005,
+                10
+              ]
+            ]
+          },
+          "container": [
+            "Discrete Mathematics"
+          ],
+          "volume": "302",
+          "issue": "1-3",
+          "page": "145-172",
+          "URL": "https://doi.org/10.1016/j.disc.2004.07.031"
+        },
+        {
+          "requested_doi": "10.1007/s11083-013-9305-5",
+          "DOI": "10.1007/s11083-013-9305-5",
+          "title": [
+            "On a Subposet of the Tamari Lattice"
+          ],
+          "author": [
+            {
+              "given": "Sebastian A.",
+              "family": "Csar"
+            },
+            {
+              "given": "Rik",
+              "family": "Sengupta"
+            },
+            {
+              "given": "Warut",
+              "family": "Suksompong"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2013,
+                10,
+                3
+              ]
+            ]
+          },
+          "container": [
+            "Order"
+          ],
+          "volume": "31",
+          "issue": "3",
+          "page": "337-363",
+          "URL": "https://doi.org/10.1007/s11083-013-9305-5"
+        },
+        {
+          "requested_doi": "10.1006/jctb.1997.1750",
+          "DOI": "10.1006/jctb.1997.1750",
+          "title": [
+            "The Four-Colour Theorem"
+          ],
+          "author": [
+            {
+              "given": "Neil",
+              "family": "Robertson"
+            },
+            {
+              "given": "Daniel",
+              "family": "Sanders"
+            },
+            {
+              "given": "Paul",
+              "family": "Seymour"
+            },
+            {
+              "given": "Robin",
+              "family": "Thomas"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                1997,
+                5
+              ]
+            ]
+          },
+          "container": [
+            "Journal of Combinatorial Theory, Series B"
+          ],
+          "volume": "70",
+          "issue": "1",
+          "page": "2-44",
+          "URL": "https://doi.org/10.1006/jctb.1997.1750"
+        },
+        {
+          "requested_doi": "10.1007/BFb0022655",
+          "DOI": "10.1007/bfb0022655",
+          "title": [
+            "Colourings of planar maps and the equality of two languages"
+          ],
+          "author": [
+            {
+              "given": "R.",
+              "family": "Cori"
+            },
+            {
+              "given": "S.",
+              "family": "Dulucq"
+            }
+          ],
+          "container": [
+            "Lecture Notes in Computer Science",
+            "CAAP '86"
+          ],
+          "page": "6-16",
+          "URL": "https://doi.org/10.1007/bfb0022655"
+        }
+      ]
+    },
+    {
+      "provider": "Crossref",
+      "endpoint": "https://api.crossref.org/works/10.20382%2Fjocg.v16i1a8",
+      "payload_error": "Resource not found.",
+      "interpretation": "API retrieval failure, not absence of publication. Verified from journal official page.",
+      "fallback_url": "https://jocg.org/index.php/jocg/article/view/4763"
+    }
+  ],
+  "web_queries": [
+    "\"four color\" \"mother line\" coloring",
+    "\"four colour\" \"side labels\" recursive",
+    "\"four-color\" \"slicing\" coloring",
+    "\"Scientific Agent Skills\" \"Kassis\"",
+    "\"four color theorem\" \"line\" \"recursive\" coloring boundary",
+    "\"四色\" \"母线\" 命名",
+    "\"four color\" \"inheritance\" coloring graph",
+    "\"four coloring\" \"guillotine\"",
+    "\"The Four Color Theorem with Linearly Many Reducible Configurations and Near-Linear Time Coloring\"",
+    "\"Planar Graph Homologies and the 4-Color Theorem\"",
+    "\"Toward a language theoretic proof\" \"four color\" follow up",
+    "\"Cooper\" \"Rowland\" \"Zeilberger\" \"Conjecture 19\"",
+    "\"common parse words\" \"four color\"",
+    "\"four color\" \"parse words\" 2020 2021 2022 2023 2024 2025",
+    "\"Sengupta\" \"Suksompong\" \"comb poset\" journal",
+    "\"Colouring of Planar Maps and the Equality of Two Languages\"",
+    "site.math.princeton.edu Seymour four colour theorem ring colourings reducible configurations pdf",
+    "site.arxiv.org four coloring precoloring extension planar graph boundary cycle",
+    "slicing floorplans guillotine nonslicing floorplans binary tree original paper pdf",
+    "Robin Thomas Four Color theorem free completion ring coloring reducibility pdf",
+    "site.arxiv.org planar graph four coloring reconfiguration Kempe recoloring",
+    "\"Modeling non-slicing floorplans with binary trees\" Balasa 2000 doi IEEE",
+    "\"Reconfiguration of colorings in triangulations of the sphere\" journal 2023 2024 2025",
+    "\"Complexity and approximability results for slicing floorplan designs\" pdf",
+    "\"Modeling Non-Slicing Floorplans\" Balasa pdf -site:eurekamag.com -site:researchgate.net -site:cecs.uci.edu"
+  ],
+  "sources": [
+    {
+      "id": "Kauffman2005",
+      "url": "https://homepages.math.uic.edu/~kauffman/MapReform.pdf",
+      "depth": "Selected full-text sections 2-3 and 7, journal pp146-150 and166-172",
+      "doi": "10.1016/j.disc.2004.07.031"
+    },
+    {
+      "id": "CRZ2012",
+      "url": "https://sites.math.rutgers.edu/~zeilberg/mamarim/mamarimPDF/4ct.pdf",
+      "depth": "Selected full-text sections1-3 and6, propositions10-11",
+      "doi": "10.1016/j.aam.2011.11.002"
+    },
+    {
+      "id": "CoriDulucq1986",
+      "url": "https://sites.math.rutgers.edu/~zeilberg/akherim/CoriDulucq86.pdf",
+      "depth": "Metadata and CRZ author-page acknowledgement only. Scanned text and screenshot unavailable; not full-text reviewed.",
+      "author_acknowledgement": "https://sites.math.rutgers.edu/~zeilberg/mamarim/mamarimhtml/4ct.html",
+      "doi": "10.1007/BFb0022655"
+    },
+    {
+      "id": "Csar2014",
+      "url": "https://arxiv.org/pdf/1108.5690",
+      "depth": "21-page preprint section7, Theorems7.6,7.7,7.9; publisher metadata",
+      "doi": "10.1007/s11083-013-9305-5",
+      "publication_note": "Online2013-10-03, journal volume year2014; conference2012 version has different theorem numbering."
+    },
+    {
+      "id": "RSST1997",
+      "url": "https://thomas.math.gatech.edu/PAP/fc.pdf",
+      "depth": "Sections2(2.4) and3, printed pp5-9; not a full proof audit",
+      "doi": "10.1006/jctb.1997.1750"
+    },
+    {
+      "id": "Ito2025",
+      "url": "https://jocg.org/index.php/jocg/article/view/4763",
+      "depth": "Official2025 journal metadata and abstract;2022 preprint introduction/results pp1-3",
+      "preprint": "https://arxiv.org/abs/2210.17105",
+      "doi": "10.20382/jocg.v16i1a8"
+    },
+    {
+      "id": "Inoue2026",
+      "url": "https://arxiv.org/abs/2603.24880",
+      "depth": "Metadata, abstract, introduction and HTML section13.2; no independent rerun of computer checks",
+      "html": "https://arxiv.org/html/2603.24880v2",
+      "publication_type": "Preprint",
+      "version_metadata": "v2, updated2026-05-07"
+    },
+    {
+      "id": "CGoGN",
+      "url": "https://cgogn.github.io/combinatorial_maps.html",
+      "depth": "Official documentation on darts, orbits and embeddings"
+    },
+    {
+      "id": "DvorakLidicky",
+      "url": "https://arxiv.org/abs/1907.04066",
+      "depth": "Current API metadata and abstract; older full-text comparison retained separately"
+    },
+    {
+      "id": "DvorakEtAl2023",
+      "url": "https://arxiv.org/abs/2312.13061",
+      "depth": "Current API metadata and abstract"
+    },
+    {
+      "id": "Axenovich2011",
+      "url": "https://arxiv.org/pdf/1006.5596",
+      "depth": "Introduction, Definition1 and Theorems1-2, pp1-3; five-list scope only"
+    },
+    {
+      "id": "Balasa2000",
+      "url": "https://cecs.uci.edu/~papers/compendium94-03/papers/2000/iccad00/pdffiles/01a_3.pdf",
+      "depth": "Title and indexed abstract only; broken text extraction and screenshot failure; not used as theorem evidence"
+    },
+    {
+      "id": "Kassis2026",
+      "url": "https://arxiv.org/abs/2609.00065",
+      "depth": "Current metadata and abstract; workflow attribution only",
+      "version_metadata": "v2",
+      "mathematical_evidence": false
+    }
+  ],
+  "limitations": [
+    "No exhaustive citation chaining or non-English database coverage.",
+    "No exact-match negative result establishes originality.",
+    "No current resolution of CRZ Conjecture19 verified.",
+    "Other self-published four-color proof claims were only screened at metadata/abstract level and remain unaudited.",
+    "Existing whole-library test and later single-map diagnosis are not merged into a new all-pass result."
+  ]
+}

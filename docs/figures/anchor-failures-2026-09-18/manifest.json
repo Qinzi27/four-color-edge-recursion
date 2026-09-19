@@ -1,0 +1,306 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-18T13:34:29.203035+00:00",
+  "input": {
+    "filename": "anchor-forest-continuation-2026-09-18-v2.json",
+    "sha256": "5a9c74f3225df4b4e72452f4671ded285f41616a03fd47fe1f28d7d642ad76ad"
+  },
+  "script_sha256": "8bdea94aa0f3f8ea101d1c139c47fcf6b645373d64e0da06ad0ea4a6fd8b7b5e",
+  "pillow_version": "12.3.0",
+  "font_family": [
+    "Microsoft YaHei",
+    "Regular"
+  ],
+  "coordinates": "Source x-right, y-down; exact uniform scaling, no geometric simplification.",
+  "cases": [
+    {
+      "case": "A",
+      "family": "guillotine",
+      "seed": 20260923,
+      "inherit": "right",
+      "stopped_step": 4,
+      "category": "common_anchor_only_in_new_child",
+      "current_committed_state": {
+        "width": 900,
+        "height": 600,
+        "cuts": [
+          [
+            [
+              415,
+              0
+            ],
+            [
+              415,
+              600
+            ]
+          ],
+          [
+            [
+              0,
+              402
+            ],
+            [
+              415,
+              402
+            ]
+          ],
+          [
+            [
+              233,
+              402
+            ],
+            [
+              233,
+              600
+            ]
+          ]
+        ],
+        "sides": [
+          {
+            "id": "root.l",
+            "bounds": [
+              415,
+              0,
+              900,
+              600
+            ],
+            "symbol": 2
+          },
+          {
+            "id": "root.r.l",
+            "bounds": [
+              0,
+              0,
+              415,
+              402
+            ],
+            "symbol": 4
+          },
+          {
+            "id": "root.r.r.l",
+            "bounds": [
+              233,
+              402,
+              415,
+              600
+            ],
+            "symbol": 3
+          },
+          {
+            "id": "root.r.r.r",
+            "bounds": [
+              0,
+              402,
+              233,
+              600
+            ],
+            "symbol": 2
+          }
+        ]
+      },
+      "pending_cut": [
+        [
+          187,
+          0
+        ],
+        [
+          187,
+          402
+        ]
+      ],
+      "stop_structure": {
+        "outside_missing": [],
+        "outside_missing_bounds": [],
+        "universal_old_ids": []
+      },
+      "new_child_anchor_ids": [
+        "root.r.l.l"
+      ],
+      "presentation": "Old names shown only before the cut; new geometry is blank. No diagnostic fifth name drawn.",
+      "files": [
+        {
+          "filename": "case-a-overview.png",
+          "sha256": "9e80c6c34ec2127d7faf8f140cd0f0fc7755d50d3e14a7138f1612ea56cab9e5",
+          "width_px": 1900,
+          "height_px": 920
+        },
+        {
+          "filename": "case-a-overview.svg",
+          "sha256": "2ee3d4520fc5ea8f2f75d59c28be194fa66a127c834531d3367e3758b83a17ac",
+          "width_px": 1900,
+          "height_px": 920
+        },
+        {
+          "filename": "case-a-blank.png",
+          "sha256": "a305a57bceed6dcde703ca819d1879ea13a6a8c14de5ebd28a5e14cfd6db9df4",
+          "width_px": 1200,
+          "height_px": 1050
+        },
+        {
+          "filename": "case-a-blank.svg",
+          "sha256": "09c1369d8f3144b3397a10af64b470b2bf0a7d33c57f321e603703c29b2c1781",
+          "width_px": 1200,
+          "height_px": 1050
+        }
+      ]
+    },
+    {
+      "case": "B",
+      "family": "guillotine",
+      "seed": 20261027,
+      "inherit": "left",
+      "stopped_step": 5,
+      "category": "outside_not_universal",
+      "current_committed_state": {
+        "width": 900,
+        "height": 600,
+        "cuts": [
+          [
+            [
+              0,
+              327
+            ],
+            [
+              900,
+              327
+            ]
+          ],
+          [
+            [
+              518,
+              0
+            ],
+            [
+              518,
+              327
+            ]
+          ],
+          [
+            [
+              0,
+              172
+            ],
+            [
+              518,
+              172
+            ]
+          ],
+          [
+            [
+              279,
+              0
+            ],
+            [
+              279,
+              172
+            ]
+          ]
+        ],
+        "sides": [
+          {
+            "id": "root.r",
+            "bounds": [
+              0,
+              327,
+              900,
+              600
+            ],
+            "symbol": 3
+          },
+          {
+            "id": "root.l.l",
+            "bounds": [
+              518,
+              0,
+              900,
+              327
+            ],
+            "symbol": 2
+          },
+          {
+            "id": "root.l.r.r",
+            "bounds": [
+              0,
+              172,
+              518,
+              327
+            ],
+            "symbol": 4
+          },
+          {
+            "id": "root.l.r.l.l",
+            "bounds": [
+              279,
+              0,
+              518,
+              172
+            ],
+            "symbol": 3
+          },
+          {
+            "id": "root.l.r.l.r",
+            "bounds": [
+              0,
+              0,
+              279,
+              172
+            ],
+            "symbol": 2
+          }
+        ]
+      },
+      "pending_cut": [
+        [
+          160,
+          172
+        ],
+        [
+          160,
+          327
+        ]
+      ],
+      "stop_structure": {
+        "outside_missing": [
+          "root.l.r.r.l"
+        ],
+        "outside_missing_bounds": [
+          [
+            160,
+            172,
+            518,
+            327
+          ]
+        ],
+        "universal_old_ids": []
+      },
+      "new_child_anchor_ids": [],
+      "presentation": "Old names shown only before the cut; new geometry is blank. No diagnostic fifth name drawn.",
+      "files": [
+        {
+          "filename": "case-b-overview.png",
+          "sha256": "76909d52a78833b1ceb0e1d93d2b257874741f3401065c12cc343119facfce5c",
+          "width_px": 1900,
+          "height_px": 920
+        },
+        {
+          "filename": "case-b-overview.svg",
+          "sha256": "cb607b046d26ab39dc3fdab5fecd2f1c55a08bacfd72ac6e976ae954f6f55f3e",
+          "width_px": 1900,
+          "height_px": 920
+        },
+        {
+          "filename": "case-b-blank.png",
+          "sha256": "1287fe5f25f440250f8ae017d67b717801ec5f43b8652a3b5c85b096093e9939",
+          "width_px": 1200,
+          "height_px": 1050
+        },
+        {
+          "filename": "case-b-blank.svg",
+          "sha256": "bdb43569d6d1093508e01f56ab32055fff2fa2e781689243b1fd5d7c29a44b27",
+          "width_px": 1200,
+          "height_px": 1050
+        }
+      ]
+    }
+  ]
+}

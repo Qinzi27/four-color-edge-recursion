@@ -1,5 +1,24 @@
 # Changelog
 
+## 2026-09-19 — Complete research archive and reproducibility
+
+- Published the accumulated research chronology, bilingual navigation, mathematical
+  notes, implementations, original map inputs, conflict certificates, and full
+  experiment/checkpoint records. See [research history](docs/RESEARCH_HISTORY-2026-09-19.md).
+- Preserved negative results and initialization corrections: v3 completes
+  7065/7069 drawings; v4 completes 7060/7069, fixes all four v3 failures and
+  introduces nine regressions. Different methods are not combined into a success claim.
+- Recorded the proved nine-side implicit-inequality template and its 3/9 coverage
+  of the fatal v4 decisions, separately from full-map coloring success.
+- Added an [external reproduction guide](docs/REPRODUCING_RESEARCH.md), optional
+  Pillow test dependency, complete JavaScript regression checks, and byte-preserving
+  Git attributes for hash-bound research evidence.
+- Kept private attachments and local workflow metadata out of the public archive.
+  This publication does not change the frozen algorithms or the website's default method.
+- Ten early JSON reports had previously been normalized by Git. Their verified
+  working-file bytes are now stored without EOL conversion; parsed mathematical
+  contents are unchanged. The publication-index check checks every evidence blob.
+
 ## 2026-09-07 — Public Pages and method-fidelity clarification
 
 - Added GitHub Pages deployment of validated static assets and the theory explainer.

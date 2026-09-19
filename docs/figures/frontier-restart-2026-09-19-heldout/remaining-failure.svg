@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1050" viewBox="0 0 1600 1050">
+<rect width="100%" height="100%" fill="white"/>
+<text x="55" y="27" font-size="40" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">新规则仍受阻的完整线网｜供人工标记</text>
+<text x="55" y="100" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">新种子 20261937，第 6 刀｜tight-hall｜这是具体策略失败，不是第五色证明。</text>
+<text x="55" y="171" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">外侧1；内部 ? 全部留白，不把失败过程的名字当成正确答案。</text>
+<polyline points="55,238 955,238 955,838 55,838 55,238" fill="none" stroke="#202831" stroke-width="5"/>
+<polyline points="576,238 576,838" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="576,443 955,443" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="691,238 691,443" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="691,365 764,365" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="691,390 764,390" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="764,238 764,443" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="315.5" y="522" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="633.5" y="324.5" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="727.5" y="285.5" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="859.5" y="324.5" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="765.5" y="624.5" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="727.5" y="400.5" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<text x="727.5" y="361.5" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">?</text>
+<polyline points="691,390 764,390" fill="none" stroke="#B74400" stroke-width="5"/>
+<text x="1005" y="265" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#B74400">橙色：最后加入的线</text>
+<text x="1005" y="340" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">已对完整新图从头重标。</text>
+<text x="1005" y="413" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">请优先标注：</text>
+<text x="1005" y="465" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">① 先处理哪条母线</text>
+<text x="1005" y="521" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">② 先固定哪个局部侧</text>
+<text x="1005" y="577" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">③ 哪组名字应先保留</text>
+<text x="1005" y="633" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">④ 哪一步应延迟定名</text>
+<text x="55" y="894" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">图中线位置、交点和外框均来自正式测试输入；没有删线或简化拓扑。</text>
+<text x="55" y="958" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">若你给出命名顺序，可以逐步和程序的候选表核对，找出仍缺少的约束。</text>
+</svg>

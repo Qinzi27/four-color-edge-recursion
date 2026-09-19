@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1730" height="1190" viewBox="0 0 1730 1190">
+<rect width="100%" height="100%" fill="white"/>
+<text x="50" y="30" font-size="38" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">同级先展开：五条贯通母线，六个框内粗区域</text>
+<text x="50" y="95" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">原第16步受阻图｜这里只画几何阶段2，不把粗区域涂成最终色名。</text>
+<text x="50" y="150" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">C = 粗区域编号；s = 最终侧编号。背景浅绿表示已就绪，不代表颜色2或3。</text>
+<rect x="50" y="235" width="228" height="720" fill="#F5F5F5"/>
+<text x="164" y="198" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">C1</text>
+<rect x="278" y="235" width="100.8" height="720" fill="#F5F5F5"/>
+<text x="328.4" y="198" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">C2</text>
+<rect x="378.8" y="235" width="332.4" height="720" fill="#E4F0EC"/>
+<text x="545" y="198" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">C3</text>
+<text x="545" y="547" font-size="28" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">s3</text>
+<text x="545" y="601" font-size="22" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">就绪</text>
+<rect x="711.2" y="235" width="188.4" height="720" fill="#E4F0EC"/>
+<text x="805.4" y="198" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">C4</text>
+<text x="805.4" y="547" font-size="28" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">s4</text>
+<text x="805.4" y="601" font-size="22" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">就绪</text>
+<rect x="899.6" y="235" width="130.8" height="720" fill="#E4F0EC"/>
+<text x="965" y="198" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">C5</text>
+<text x="965" y="547" font-size="28" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">s5</text>
+<text x="965" y="601" font-size="22" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">就绪</text>
+<rect x="1030.4" y="235" width="99.6" height="720" fill="#E4F0EC"/>
+<text x="1080.2" y="198" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">C6</text>
+<text x="1080.2" y="547" font-size="28" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">s6</text>
+<text x="1080.2" y="601" font-size="22" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">就绪</text>
+<polyline points="50,389.8 64,389.8" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="73,389.8 87,389.8" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="96,389.8 110,389.8" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="119,389.8 133,389.8" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="142,389.8 156,389.8" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="165,389.8 179,389.8" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="188,389.8 202,389.8" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="211,389.8 225,389.8" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="234,389.8 248,389.8" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="257,389.8 271,389.8" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="50,465.4 64,465.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="73,465.4 87,465.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="96,465.4 110,465.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="119,465.4 133,465.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="142,465.4 156,465.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="165,465.4 179,465.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="188,465.4 202,465.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="211,465.4 225,465.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="234,465.4 248,465.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="257,465.4 271,465.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="234.8,465.4 234.8,479.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="234.8,488.4 234.8,502.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="234.8,511.4 234.8,525.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="234.8,534.4 234.8,548.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="234.8,557.4 234.8,571.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="234.8,580.4 234.8,594.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="234.8,603.4 234.8,617.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="234.8,626.4 234.8,640.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="234.8,649.4 234.8,663.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="234.8,672.4 234.8,686.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="234.8,695.4 234.8,709.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="234.8,718.4 234.8,732.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="234.8,741.4 234.8,755.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="234.8,764.4 234.8,778.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="234.8,787.4 234.8,801.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="234.8,810.4 234.8,824.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="234.8,833.4 234.8,847.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="234.8,856.4 234.8,870.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="234.8,879.4 234.8,893.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="234.8,902.4 234.8,916.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="234.8,925.4 234.8,939.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="234.8,948.4 234.8,955" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="278,477.4 292,477.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="301,477.4 315,477.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="324,477.4 338,477.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="347,477.4 361,477.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="370,477.4 378.8,477.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="278,730.6 292,730.6" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="301,730.6 315,730.6" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="324,730.6 338,730.6" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="347,730.6 361,730.6" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="370,730.6 378.8,730.6" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="278,867.4 292,867.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="301,867.4 315,867.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="324,867.4 338,867.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="347,867.4 361,867.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="370,867.4 378.8,867.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="278,907 292,907" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="301,907 315,907" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="324,907 338,907" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="347,907 361,907" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="370,907 378.8,907" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="316.4,477.4 316.4,491.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="316.4,500.4 316.4,514.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="316.4,523.4 316.4,537.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="316.4,546.4 316.4,560.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="316.4,569.4 316.4,583.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="316.4,592.4 316.4,606.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="316.4,615.4 316.4,629.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="316.4,638.4 316.4,652.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="316.4,661.4 316.4,675.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="316.4,684.4 316.4,698.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="316.4,707.4 316.4,721.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="316.4,730.4 316.4,730.6" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="342.8,477.4 342.8,491.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="342.8,500.4 342.8,514.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="342.8,523.4 342.8,537.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="342.8,546.4 342.8,560.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="342.8,569.4 342.8,583.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="342.8,592.4 342.8,606.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="342.8,615.4 342.8,629.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="342.8,638.4 342.8,652.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="342.8,661.4 342.8,675.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="342.8,684.4 342.8,698.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="342.8,707.4 342.8,721.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="342.8,730.4 342.8,730.6" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="363.2,477.4 363.2,491.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="363.2,500.4 363.2,514.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="363.2,523.4 363.2,537.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="363.2,546.4 363.2,560.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="363.2,569.4 363.2,583.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="363.2,592.4 363.2,606.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="363.2,615.4 363.2,629.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="363.2,638.4 363.2,652.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="363.2,661.4 363.2,675.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="363.2,684.4 363.2,698.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="363.2,707.4 363.2,721.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="363.2,730.4 363.2,730.6" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="137.6,465.4 137.6,479.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="137.6,488.4 137.6,502.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="137.6,511.4 137.6,525.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="137.6,534.4 137.6,548.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="137.6,557.4 137.6,571.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="137.6,580.4 137.6,594.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="137.6,603.4 137.6,617.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="137.6,626.4 137.6,640.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="137.6,649.4 137.6,663.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="137.6,672.4 137.6,686.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="137.6,695.4 137.6,709.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="137.6,718.4 137.6,732.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="137.6,741.4 137.6,755.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="137.6,764.4 137.6,778.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="137.6,787.4 137.6,801.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="137.6,810.4 137.6,824.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="137.6,833.4 137.6,847.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="137.6,856.4 137.6,870.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="137.6,879.4 137.6,893.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="137.6,902.4 137.6,916.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="137.6,925.4 137.6,939.4" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="137.6,948.4 137.6,955" fill="none" stroke="#737B83" stroke-width="2"/>
+<polyline points="278,235 278,955" fill="none" stroke="#00618A" stroke-width="5"/>
+<polyline points="378.8,235 378.8,955" fill="none" stroke="#00618A" stroke-width="5"/>
+<polyline points="711.2,235 711.2,955" fill="none" stroke="#00618A" stroke-width="5"/>
+<polyline points="899.6,235 899.6,955" fill="none" stroke="#00618A" stroke-width="5"/>
+<polyline points="1030.4,235 1030.4,955" fill="none" stroke="#00618A" stroke-width="5"/>
+<polyline points="50,235 1130,235 1130,955 50,955 50,235" fill="none" stroke="#202831" stroke-width="5"/>
+<polyline points="278,730.6 378.8,730.6 378.8,867.4 278,867.4 278,730.6" fill="none" stroke="#B74400" stroke-width="4"/>
+<text x="328.4" y="779" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#B74400">s13</text>
+<text x="328.4" y="334.2" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#00618A">s2</text>
+<text x="328.4" y="369.2" font-size="20" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#00618A">初锚2</text>
+<polyline points="1180,256 1235,256" fill="none" stroke="#00618A" stroke-width="4"/>
+<text x="1255" y="243" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">已激活：五条整母线</text>
+<polyline points="1180,316 1194,316" fill="none" stroke="#737B83" stroke-width="4"/>
+<polyline points="1203,316 1217,316" fill="none" stroke="#737B83" stroke-width="4"/>
+<polyline points="1226,316 1235,316" fill="none" stroke="#737B83" stroke-width="4"/>
+<text x="1255" y="303" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#737B83">未激活：后续细分保留</text>
+<polyline points="1180,376 1235,376" fill="none" stroke="#B74400" stroke-width="4"/>
+<text x="1255" y="363" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#B74400">橙框：旧致命侧 s13</text>
+<text x="1180" y="435" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">第2阶段：s3、s4、s5、s6 就绪</text>
+<text x="1180" y="491" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">s13 的边界到第3阶段才齐全。</text>
+<text x="1180" y="547" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">先处理右侧已就绪区域，</text>
+<text x="1180" y="591" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">再决定左侧更深分割的名字。</text>
+<text x="1180" y="663" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">初始化 s2 = 2 是唯一提前例外：</text>
+<text x="1180" y="707" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">由外侧保持1的全局名字置换保证；</text>
+<text x="1180" y="751" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">不强迫整个 C2 的后代同色。</text>
+<text x="1180" y="823" font-size="22" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">同级不等于同色；粗区域不是最终侧。</text>
+<text x="50" y="1002" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">r(F) = 最后一个真实共边激活的阶段。母线浅，不代表它沿线的每个最终侧都浅。</text>
+<text x="50" y="1059" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">全部线使用正式输入原坐标；灰虚线只表示暂未激活，没有删除或移动任何细线。</text>
+<text x="50" y="1111" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">该判据证明几何就绪与分区细化，不证明后续每个最小候选都能延伸成完整配色。</text>
+</svg>
