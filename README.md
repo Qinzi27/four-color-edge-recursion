@@ -6,6 +6,61 @@ and verifiable Klein-four-group flow repair.**
 [中文说明](README.zh-CN.md) · [Mathematical foundations](docs/FOUNDATIONS.en.md) · [数学基础](docs/FOUNDATIONS.md)
 · [Research questions](docs/RESEARCH_PLAN.md) · [Related work](docs/RELATED_WORK.md)
 
+## Why study this idea?
+
+**Which boundary relations must a line-side construction retain so that a locally legal naming decision still admits a complete coloring?**
+Qinzi27's initiating idea describes regions through the left/right names of directed
+lines and tracks each complete construction line (a *mother line*) as its sides are
+subdivided. The research question is precise: **when does “no conflict now” imply
+“a completion still exists”?**
+
+The project currently supports three concrete uses:
+
+- **Explain and replay constructions:** distinguish line identity, face identity,
+  current names and split history, and inspect the justification for each decision.
+- **Extract conditions from failures:** locate the first non-extendable commitment,
+  retain legal comparator witnesses and certify local implications. A nine-side
+  inequality lemma already provides independently checkable certificates.
+- **Compare rules and identify provable scope:** record both repairs and regressions
+  on fixed inputs, and investigate sufficient boundary states, safe choices and
+  the extent of synchronized renaming.
+
+These are usable tools for rule experiments, counterexample analysis and teaching.
+**No speed advantage, smaller sufficient state space or general completeness has
+been established.**
+
+### Has related work already been done?
+
+**Yes; some underlying principles directly overlap with prior work.** Close
+precedents include [Kauffman's map-color reformulations](https://homepages.math.uic.edu/~kauffman/MapReform.pdf),
+[Cooper–Rowland–Zeilberger's binary-tree grammar](https://sites.math.rutgers.edu/~zeilberg/mamarim/mamarimPDF/4ct.pdf)
+and [Dvořák–Lidický's boundary-coloring extension counts](https://arxiv.org/html/1907.04066v2).
+Ordered pairs, parentheses, trees, Klein-four differences and boundary states are
+therefore not novelty claims. Equivalence of the complete mother-line state and
+operations to an existing method still requires an explicit correspondence; a
+bounded literature search cannot certify originality.
+
+One concrete correspondence is now verified: identifying the two supposedly equal
+sides of the nine-side lemma produces `K₁ ∨ Moser spindle`. The lemma thus applies a
+[classical four-chromatic graph](https://doc.sagemath.org/html/en/reference/graphs/sage/graphs/generators/smallgraphs.html#sage.graphs.generators.smallgraphs.MoserSpindle);
+the project's work is its extraction and certification in actual failure cases,
+not discovery of that fixed obstruction.
+
+A potential new contribution would be a theorem for a specified graph class:
+**a smaller sufficient interface, a guaranteed safe choice, or a new bound on
+renaming.** At present, this is a **reproducible framework for line-side recursive
+naming and experiments with construction rules**.
+
+**Evidence snapshot (2026-09-19):** frozen v4 completes 7060 of 7069 deduplicated
+inputs in the existing corpus, with nine conflicts. It repairs all four v3 failures
+but introduces nine regressions. The nine-side lemma excludes the recorded fatal
+candidate in three cases; it is not integrated into v4 and does not establish that
+those maps are solved. These counts are neither a random-map success probability
+nor a universal proof.
+
+[Detailed research value, precedents and next-step criteria (中文)](docs/RESEARCH_VALUE-2026-09-19.md)
+· [Latest experiments and failure evidence](docs/PEER_BATCH_RESULTS-2026-09-19.md)
+
 ## Complete research archive
 
 [Chronological methods, results and obstructions (中文)](docs/RESEARCH_HISTORY-2026-09-19.md)

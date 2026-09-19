@@ -1,0 +1,447 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-19T11:06:33.607181+00:00",
+  "passed": true,
+  "purpose": "Independent fixed-graph correspondence and coloring check",
+  "source_sha256": {
+    "scripts/verify_spindle_correspondence.py": "b938e9b27abbdc96c8cbc70e58d54487af8e4831d619e4441bc7b8bbdaeb03ba",
+    "fourcolor/implicit_inequality.py": "f69df9171708f6c6102d155b6e39e7a8f8d2356013e7053a4713f1ea84d12662"
+  },
+  "source_hashes_unchanged": true,
+  "sources": [
+    {
+      "title": "SageMath official MoserSpindle graph documentation and generator",
+      "checked_date": "2026-09-19",
+      "documentation_url": "https://doc.sagemath.org/html/en/reference/graphs/sage/graphs/generators/smallgraphs.html#sage.graphs.generators.smallgraphs.MoserSpindle",
+      "source_url": "https://raw.githubusercontent.com/sagemath/sage/refs/heads/develop/src/sage/graphs/generators/smallgraphs.py",
+      "copied_material": "Mathematical eleven-edge graph set only; no SageMath code",
+      "retrieval_scope": "Source edge set independently checked during research; this script makes no network requests"
+    }
+  ],
+  "reproducibility": {
+    "randomness": "None; exhaustive deterministic enumeration",
+    "random_seed": null,
+    "graph_scope": "One nine-vertex nineteen-edge template and its fixed seven-vertex remainder",
+    "assignment_bounds": {
+      "remainder_three_colors": 2187,
+      "remainder_four_colors": 16384,
+      "original_four_colors": 262144
+    }
+  },
+  "original_template": {
+    "vertices": [
+      "O",
+      "A",
+      "B",
+      "p",
+      "q",
+      "r",
+      "s",
+      "t",
+      "u"
+    ],
+    "edges": [
+      [
+        "A",
+        "O"
+      ],
+      [
+        "A",
+        "p"
+      ],
+      [
+        "A",
+        "r"
+      ],
+      [
+        "A",
+        "s"
+      ],
+      [
+        "B",
+        "O"
+      ],
+      [
+        "B",
+        "q"
+      ],
+      [
+        "B",
+        "t"
+      ],
+      [
+        "B",
+        "u"
+      ],
+      [
+        "O",
+        "p"
+      ],
+      [
+        "O",
+        "q"
+      ],
+      [
+        "O",
+        "t"
+      ],
+      [
+        "p",
+        "q"
+      ],
+      [
+        "p",
+        "r"
+      ],
+      [
+        "q",
+        "r"
+      ],
+      [
+        "r",
+        "s"
+      ],
+      [
+        "r",
+        "u"
+      ],
+      [
+        "s",
+        "t"
+      ],
+      [
+        "s",
+        "u"
+      ],
+      [
+        "t",
+        "u"
+      ]
+    ],
+    "production_edge_set_equal": true
+  },
+  "quotient": {
+    "operation": "Identify nonadjacent A and B as a; deduplicate undirected edges",
+    "identification": {
+      "O": "O",
+      "A": "a",
+      "B": "a",
+      "p": "p",
+      "q": "q",
+      "r": "r",
+      "s": "s",
+      "t": "t",
+      "u": "u"
+    },
+    "vertices": [
+      "O",
+      "a",
+      "p",
+      "q",
+      "r",
+      "s",
+      "t",
+      "u"
+    ],
+    "edges": [
+      [
+        "O",
+        "a"
+      ],
+      [
+        "O",
+        "p"
+      ],
+      [
+        "O",
+        "q"
+      ],
+      [
+        "O",
+        "t"
+      ],
+      [
+        "a",
+        "p"
+      ],
+      [
+        "a",
+        "q"
+      ],
+      [
+        "a",
+        "r"
+      ],
+      [
+        "a",
+        "s"
+      ],
+      [
+        "a",
+        "t"
+      ],
+      [
+        "a",
+        "u"
+      ],
+      [
+        "p",
+        "q"
+      ],
+      [
+        "p",
+        "r"
+      ],
+      [
+        "q",
+        "r"
+      ],
+      [
+        "r",
+        "s"
+      ],
+      [
+        "r",
+        "u"
+      ],
+      [
+        "s",
+        "t"
+      ],
+      [
+        "s",
+        "u"
+      ],
+      [
+        "t",
+        "u"
+      ]
+    ],
+    "vertex_count": 8,
+    "edge_count": 18,
+    "universal_vertex": "a",
+    "universal_neighbors": [
+      "O",
+      "p",
+      "q",
+      "r",
+      "s",
+      "t",
+      "u"
+    ],
+    "graph_description": "K1 join Moser spindle",
+    "chromatic_number": 5,
+    "interpretation": "Vertex identification is not contraction of an existing edge and need not preserve planarity"
+  },
+  "remainder": {
+    "vertices": [
+      "O",
+      "p",
+      "q",
+      "r",
+      "s",
+      "t",
+      "u"
+    ],
+    "edges": [
+      [
+        "O",
+        "p"
+      ],
+      [
+        "O",
+        "q"
+      ],
+      [
+        "O",
+        "t"
+      ],
+      [
+        "p",
+        "q"
+      ],
+      [
+        "p",
+        "r"
+      ],
+      [
+        "q",
+        "r"
+      ],
+      [
+        "r",
+        "s"
+      ],
+      [
+        "r",
+        "u"
+      ],
+      [
+        "s",
+        "t"
+      ],
+      [
+        "s",
+        "u"
+      ],
+      [
+        "t",
+        "u"
+      ]
+    ],
+    "vertex_count": 7,
+    "edge_count": 11,
+    "mapping_to_sage_vertices": {
+      "O": 0,
+      "p": 4,
+      "q": 6,
+      "r": 3,
+      "s": 2,
+      "t": 1,
+      "u": 5
+    },
+    "mapped_edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        4,
+        6
+      ]
+    ],
+    "sage_spindle_edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        4,
+        6
+      ]
+    ],
+    "exact_edge_set_equal": true,
+    "three_color_enumeration": {
+      "palette_size": 3,
+      "vertex_count": 7,
+      "assignments_checked": 2187,
+      "proper_colorings": 0
+    },
+    "four_color_enumeration": {
+      "palette_size": 4,
+      "vertex_count": 7,
+      "assignments_checked": 16384,
+      "proper_colorings": 384
+    },
+    "explicit_four_color_witness": {
+      "O": 1,
+      "p": 2,
+      "q": 3,
+      "r": 1,
+      "s": 2,
+      "u": 3,
+      "t": 4
+    },
+    "explicit_witness_valid": true,
+    "chromatic_number": 4
+  },
+  "original_four_color_enumeration": {
+    "palette_size": 4,
+    "vertex_count": 9,
+    "assignments_checked": 262144,
+    "proper_colorings": 312,
+    "equality_pair": [
+      "A",
+      "B"
+    ],
+    "proper_colorings_with_equal_targets": 0
+  },
+  "direct_proof": [
+    "In three colors, the diamond on O,p,q,r forces O=r because adjacent p,q use two distinct colors.",
+    "The diamond on r,s,u,t similarly forces r=t because adjacent s,u use two distinct colors.",
+    "The real edge O-t forbids O=t, so the seven-vertex remainder is not three-colorable.",
+    "The explicit four-color witness proves that the remainder has chromatic number exactly four.",
+    "The universal vertex a requires a fifth color in the quotient; conversely adding one fresh color suffices.",
+    "Any proper four-coloring of the original with A=B would induce a proper four-coloring of this quotient, which is impossible."
+  ],
+  "production_solver_changed": false,
+  "limits": [
+    "This is an application and exact structural correspondence of an established graph, not a new Moser-spindle discovery.",
+    "The quotient is an abstract proof device, not a modified input map or new geometric edge.",
+    "Finite enumeration checks this one template only and proves no general naming algorithm complete.",
+    "No assignments are supplied to any frozen naming solver and no failed map is repaired here.",
+    "The report does not claim that all constraints in the research framework are equivalent to this one template."
+  ]
+}

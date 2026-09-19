@@ -7,12 +7,25 @@
   <link rel="canonical" href="https://qinzi27.github.io/four-color-edge-recursion/">
   <title>四色地图实验室 · Four Color Map Lab</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./research-intro.css">
 </head>
 <body>
   <header class="topbar">
     <a class="brand" href="./"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>四色地图实验室<small>FOUR COLOR MAP LAB</small></span></a>
     <nav><a href="./rules.html">新：线名构造台</a><a href="./model.html">递归模型图解</a><a href="https://github.com/Qinzi27/four-color-edge-recursion" target="_blank" rel="noreferrer">研究仓库 ↗</a><button id="help" type="button">使用说明</button></nav>
   </header>
+  <section class="research-intro" aria-labelledby="research-title">
+    <p class="research-kicker">QINZI27 · 研究定位 · 2026-09-19</p>
+    <h2 id="research-title">从线的两侧出发，研究局部选择何时能够完成全图。</h2>
+    <p class="research-lead">这个想法沿整条分割线追踪左右名字与分段关系，把直观画线变成一个可检验的问题：<strong>需要保留哪些边界信息，才能保证“此刻没有冲突”的取名在后续仍然有解？</strong></p>
+    <div class="research-grid">
+      <div><h3>研究意义</h3><p>厘清线、面、名字和分割历史的关系，寻找安全取名与同步改名的条件。目标是在明确图类上形成可证明、可比较的构造规则。</p></div>
+      <div><h3>现在有什么用</h3><p>重放一次构造、检查证书、定位第一次错误决定，并比较新规则修复了什么、又在哪里退步。失败案例已经帮助提炼出有直接证明的局部异名条件。</p></div>
+      <div><h3>是否已有类似研究</h3><p>有。<a href="https://sites.math.rutgers.edu/~zeilberg/mamarim/mamarimPDF/4ct.pdf">二叉树文法</a>、<a href="https://arxiv.org/html/1907.04066v2">边界着色延拓</a>及色差表示都有先例；九侧引理也可归结到经典 Moser spindle 障碍。整套方法的等价性仍待逐项比较，尚未证明一般完备性或效率优势。</p></div>
+    </div>
+    <p class="research-evidence">证据快照：最新 Python 候选 v4 在既有 7069 图中完成 7060 图、冲突 9 图；修复旧 4 例却新增 9 例退步。这是指定样本的结果，不是一般成功概率或新的四色定理证明。下方保留早期交互实验。</p>
+    <p class="research-links"><a href="https://github.com/Qinzi27/four-color-edge-recursion/blob/main/docs/RESEARCH_VALUE-2026-09-19.md">研究意义与具体文献对照 ↗</a><a href="https://github.com/Qinzi27/four-color-edge-recursion/blob/main/docs/PEER_BATCH_RESULTS-2026-09-19.md">查看最新实验与失败证据 ↗</a><a href="#map-title">进入下方画板 ↓</a></p>
+  </section>
   <main>
     <aside class="gallery" aria-label="地图案例">
       <div class="section-label">从一个案例开始</div>

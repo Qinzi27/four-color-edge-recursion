@@ -1,0 +1,14 @@
+/* Shared research introduction; scoped selectors preserve both drawing labs. */
+.research-intro{max-width:1440px;margin:24px auto 0;padding:24px 28px;background:#fff;border:1px solid #d0dce8;border-radius:12px;color:#18314c}
+.research-intro .research-kicker{margin:0 0 8px;color:#526b80;font-size:12px;font-weight:700;letter-spacing:.08em}
+.research-intro h2{margin:0 0 12px;font-size:clamp(22px,2.3vw,30px);line-height:1.4}
+.research-intro .research-lead{max-width:1060px;margin:0 0 20px;line-height:1.8}
+.research-intro .research-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.research-intro .research-grid h3{font-size:16px;margin:0 0 7px}
+.research-intro .research-grid p{font-size:14px;margin:0;line-height:1.8;color:#3e566d}
+.research-intro .research-evidence{margin:20px 0 12px;padding-top:14px;border-top:1px solid #d0dce8;font-size:13px;line-height:1.8;color:#526b80}
+.research-intro .research-links{display:flex;flex-wrap:wrap;gap:10px 24px;margin:0;font-size:14px}
+.research-intro a{color:#145ecc;text-decoration:underline;text-underline-offset:3px}
+.research-intro a:focus-visible{outline:3px solid #d28b00;outline-offset:3px}
+@media(max-width:1500px){.research-intro{margin:20px 24px 0}}
+@media(max-width:760px){.research-intro{margin:12px;padding:20px 18px}.research-intro .research-grid{grid-template-columns:1fr;gap:18px}.research-intro .research-lead{font-size:15px}}
