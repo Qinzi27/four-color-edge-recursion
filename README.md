@@ -8,6 +8,33 @@ and verifiable Klein-four-group flow repair.**
 
 ## Research progress — 2026-09-20
 
+**Latest audit: restore effective earlier operations; the existing exact boundary
+programs solve all nine v4 failure cases.**
+
+- **Correct the baseline:** frozen runs on the same 7069 maps completed **7068
+  with v2**, **7065 with v3**, and **7060 with v4**. A later version was not stronger;
+  all earlier code and negative results remain available.
+- **Fixed comparison:** eight declared configurations on the same 49 maps gave
+  **392 runs**, including 147 exact reproductions of earlier baselines. Restoring
+  v2 gave **48 completions / 1 conflict**. Integrating the earlier nine-side lemma
+  into v4 gave **43 / 6**, repairing three cases without regressing the controls.
+  These are diagnostic-set results, not a new 7069-map run.
+- **Complete-state route:** the unchanged `orbit` and `two-port` entry points each
+  solved **9 / 9** cases; all 18 witnesses were checked against the original map
+  edges. Both entry points share one exact core. This does not prove that v4's
+  greedy commitments are safe or establish a general speed advantage.
+- **Negative result retained:** the preceding joint-boundary filter added local
+  information but still gave 40 completions / 9 conflicts. Results from different
+  strategies are not combined into a single algorithm score.
+
+[Latest results and commands (中文)](docs/PRIOR_OPERATIONS_RESULTS-2026-09-20.md)
+· [Audit of earlier operations](docs/PRIOR_OPERATIONS_AUDIT-2026-09-20.md)
+· [Closed interfaces and orbit compression](docs/CLOSED_INTERFACE_OPTIMIZATION-2026-09-20.md)
+· [Two-port generalization and three-port obstruction](docs/TWO_PORT_GENERALIZATION-2026-09-20.md)
+· [Joint-boundary negative results](docs/JOINT_BOUNDARY_RESULTS-2026-09-20.md)
+
+### Earlier stage: starting from an innermost closed component
+
 **Starting inside can provably reduce the required interface on a specified graph
 class; it does not guarantee a faster general coloring method.**
 
@@ -78,8 +105,9 @@ naming and experiments with construction rules**.
 **Frozen baseline snapshot (2026-09-19):** v4 completes 7060 of 7069 deduplicated
 inputs in the existing corpus, with nine conflicts. It repairs all four v3 failures
 but introduces nine regressions. The nine-side lemma excludes the recorded fatal
-candidate in three cases; it is not integrated into v4 and does not establish that
-those maps are solved. These counts are neither a random-map success probability
+candidate in three cases; at that stage it was not integrated into v4. The later
+49-map integration experiment is linked above; this frozen baseline is unchanged.
+These counts are neither a random-map success probability
 nor a universal proof.
 
 [Detailed research value, precedents and next-step criteria (中文)](docs/RESEARCH_VALUE-2026-09-19.md)
@@ -106,8 +134,8 @@ nine regressions. It is not a uniformly stronger replacement or a general method
 All prefixes succeed for 358/363 histories; 362 final maps and 301/302 static references
 succeed. Independent full-corpus audits pass; failures remain preserved.
 A [proved nine-side implication](docs/IMPLICIT_INEQUALITY-2026-09-19.md) can exclude
-the fatal candidate in 3/9 new failures. It is not integrated into v4 and does not
-establish that those three maps have been rerun successfully.
+the fatal candidate in 3/9 new failures. At that stage it was not integrated into
+v4; the later complete repairs are documented in the latest results above.
 Run a single drawing with `python scripts/name_peer_batch_map.py examples/peer-batch-five-lines.json --output outputs/my-peer-example.json`.
 The output preserves interval-wise mother-line names and independently checked proofs.
 No website replacement or publication; all prior evidence remains intact.

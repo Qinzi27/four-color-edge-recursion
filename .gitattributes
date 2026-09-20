@@ -17,3 +17,6 @@
 # Some original JSON has CRLF; preserve original bytes on add and checkout.
 outputs/** -text
 docs/figures/** -text
+
+# Preserve the exact input bytes cited by the frozen orbit example report.
+examples/prior-v4-least-failure-graph.json -text

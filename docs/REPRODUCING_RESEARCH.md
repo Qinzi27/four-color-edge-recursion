@@ -3,7 +3,32 @@
 本指南包含截至 2026-09-20 的研究记录。发起思路属于 Qinzi27。
 这里公开的是可复现的候选方法、成功和负结果，不是一份新的四色定理证明。
 
-## 最新补充：内起点顺序与最少颜色控制（2026-09-20）
+## 最新补充：有效旧操作与完整边界状态（2026-09-20）
+
+[最新复核](PRIOR_OPERATIONS_RESULTS-2026-09-20.md)分别保存三种不同口径：
+历史 7069 图的 v2/v3/v4 冻结结果、49 图 × 8 组合的 392 次新运行，以及原精确程序对 v4 九个失败的 9／9 求解。
+新程序和证据已公开，旧报告中的“未上传”“未改网页”是各轮结束时的历史状态。
+
+先复现一张图：以下精确入口接受**面邻接图 JSON**，不是画板的 `frame/strokes` 几何格式。
+它保留完整边界状态并恢复见证，不使用旧配色或 v4 的贪心承诺。
+
+```text
+python -X utf8 scripts/solve_closed_interfaces.py --input examples/prior-v4-least-failure-graph.json --mode orbit --output outputs/my-prior-orbit.json
+python -X utf8 scripts/check_prior_exact_failures.py --output outputs/my-prior-exact.json
+python -X utf8 scripts/compare_prior_operations.py --output outputs/my-prior-operations.json.gz --summary outputs/my-prior-operations-summary.json
+```
+
+输出必须使用未占用的路径。第二条对同九图运行两个共享精确核心的入口，独立核验真实共边；
+第三条运行预设的全部八组合，并检查旧基线的完整轨迹与传播哈希。
+它不会按图选择最佳策略，也不是新的全库成绩或独立速度基准。
+
+此前三轮的程序、数学边界和完整复现命令分别见：
+[闭合接口／轨道压缩](CLOSED_INTERFACE_OPTIMIZATION-2026-09-20.md)、
+[双接口推广](TWO_PORT_GENERALIZATION-2026-09-20.md)、
+[联合边界过滤及负结果](JOINT_BOUNDARY_RESULTS-2026-09-20.md)。
+最新保存的完整验证为 **674 项 Python 测试，0 失败、0 错误**；测试通过不表示所有贪心案例成功。
+
+## 此前补充：内起点顺序与最少颜色控制（2026-09-20）
 
 新增 [圈的 rank 与固定层补全](CIRCLE_RANK-2026-09-20.md)、
 [圈层修复](CIRCLE_LAYER_REPAIR-2026-09-20.md) 和
@@ -29,11 +54,13 @@ python -X utf8 scripts/render_inside_out.py --input outputs/my-inside-out.json -
 本轮新增 17 项测试，合计 577 项 Python 测试及综合验证通过。完整代码、逐步状态、
 最优连通宽度、负结果与来源哈希均随仓库发布；数字是有限实现核验，不是一般性能保证。
 
-## 1. 先区分四种工作
+## 1. 先区分不同工作
 
 | 工作 | 入口 | 能说明什么 |
 | --- | --- | --- |
-| 给自己画的一张图标色 | `scripts/name_peer_batch_map.py` | 固定 v4 规则的一次成功或冲突 |
+| 用精确边界程序求面邻接图配色 | `scripts/solve_closed_interfaces.py --mode orbit` | 完整状态与合法见证；成本取决于边界状态规模 |
+| 研究画板几何的一次性贪心取色 | `scripts/name_peer_batch_map.py` | 固定 v4 规则的一次成功或冲突；它不是历史最强基线 |
+| 对照此前初始化、调度与旧引理 | `scripts/compare_prior_operations.py` | 固定 49 图八组合，分别记录修复与退步 |
 | 重新运行完整样本库 | `scripts/validate_peer_batches_full.py` | 同一规则在 7069 个去重输入上的实际结果 |
 | 审计已存完整实验 | `scripts/audit_peer_batches_full.py` | 统计、输入、分片、色名与推导证书是否一致 |
 | 浏览历史网页演示 | `npm run dev`、`npm run build` | 历史交互实现；并未接入最新 v4 或隐含异名模板 |

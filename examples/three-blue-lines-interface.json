@@ -1,0 +1,7 @@
+{
+  "description": "Constraint graph of the complete three-blue-line map: ports 0,1,2 are exterior and two islands; internal faces 3,4 are adjacent.",
+  "n": 5,
+  "edges": [[3, 4], [0, 3], [0, 4], [1, 3], [1, 4], [2, 3], [2, 4]],
+  "terminals": [0, 1, 2],
+  "palette_size": 4
+}

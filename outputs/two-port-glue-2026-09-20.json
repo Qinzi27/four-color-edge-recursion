@@ -1,0 +1,309 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-20T10:24:42.226066+00:00",
+  "mode": "glue",
+  "input_sha256": "8aa6fc77cc78d305b1235fa4e6acd1ff808ee4862bf1781646002e2ee21877cc",
+  "source_sha256": {
+    "scripts/solve_two_port.py": "f3c5ed0f3308630e5ea4db478cab9cb83a26a62e363139c2dbe37789e730131c",
+    "fourcolor/interface_signatures.py": "47e142a462034e3358acba38238ed85a10c01e9c7d1225643edb9fcc165802c2",
+    "fourcolor/two_port_reduction.py": "b5bc8580804d83275d73ecd139d8e7721f228e05a37b56e7af704778ec82d558",
+    "fourcolor/orbit_frontier.py": "13067029f33fc13961cbb79d12b7d2252432493b63ce26776d44794363375d00",
+    "fourcolor/frontier_order.py": "9fd9abe4d17101f5938bf269ff2f8dc72f57a0fc0f4f3c12118e9975a0a80f98"
+  },
+  "result": {
+    "n": 3,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "palette_size": 2,
+    "terminals": [
+      0,
+      1
+    ],
+    "mask": 0,
+    "selected_pattern": null,
+    "feasible": false,
+    "one_coloring": null,
+    "pieces": [
+      {
+        "n": 2,
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "terminals": [
+          0,
+          1
+        ],
+        "palette_size": 2,
+        "order": [
+          0,
+          1
+        ],
+        "patterns": [
+          [
+            0,
+            1
+          ]
+        ],
+        "feasible": true,
+        "named_boundary_assignments": 2,
+        "queries": [
+          {
+            "pattern": [
+              0,
+              0
+            ],
+            "feasible": false,
+            "one_coloring": null,
+            "query_classes": [
+              [
+                0,
+                1
+              ]
+            ],
+            "query_edges": [
+              [
+                0,
+                0
+              ]
+            ],
+            "query_order": [
+              0
+            ],
+            "solver_summary": {
+              "eliminated_vertices": 0,
+              "core_vertices": 1,
+              "core_classes": 0,
+              "core_edges": 0,
+              "peak_states": 0,
+              "peak_width": 0,
+              "attempted_transitions": 0,
+              "accepted_transitions": 0,
+              "relation_compositions": 0,
+              "relation_intersections": 0,
+              "unary_support_checks": 0,
+              "reconstruction_attempts": 0,
+              "heap_pops": 0
+            }
+          },
+          {
+            "pattern": [
+              0,
+              1
+            ],
+            "feasible": true,
+            "one_coloring": [
+              0,
+              1
+            ],
+            "query_classes": [
+              [
+                0
+              ],
+              [
+                1
+              ]
+            ],
+            "query_edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "query_order": [
+              0,
+              1
+            ],
+            "solver_summary": {
+              "eliminated_vertices": 2,
+              "core_vertices": 0,
+              "core_classes": 0,
+              "core_edges": 0,
+              "peak_states": 0,
+              "peak_width": 0,
+              "attempted_transitions": 0,
+              "accepted_transitions": 0,
+              "relation_compositions": 0,
+              "relation_intersections": 0,
+              "unary_support_checks": 2,
+              "reconstruction_attempts": 3,
+              "heap_pops": 2
+            }
+          }
+        ],
+        "summary": {
+          "pattern_queries": 2,
+          "feasible_patterns": 1
+        },
+        "mask": 2
+      },
+      {
+        "n": 3,
+        "edges": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "terminals": [
+          0,
+          1
+        ],
+        "palette_size": 2,
+        "order": [
+          0,
+          1,
+          2
+        ],
+        "patterns": [
+          [
+            0,
+            0
+          ]
+        ],
+        "feasible": true,
+        "named_boundary_assignments": 2,
+        "queries": [
+          {
+            "pattern": [
+              0,
+              0
+            ],
+            "feasible": true,
+            "one_coloring": [
+              0,
+              0,
+              1
+            ],
+            "query_classes": [
+              [
+                0,
+                1
+              ],
+              [
+                2
+              ]
+            ],
+            "query_edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "query_order": [
+              0,
+              1
+            ],
+            "solver_summary": {
+              "eliminated_vertices": 2,
+              "core_vertices": 0,
+              "core_classes": 0,
+              "core_edges": 0,
+              "peak_states": 0,
+              "peak_width": 0,
+              "attempted_transitions": 0,
+              "accepted_transitions": 0,
+              "relation_compositions": 0,
+              "relation_intersections": 0,
+              "unary_support_checks": 2,
+              "reconstruction_attempts": 3,
+              "heap_pops": 2
+            }
+          },
+          {
+            "pattern": [
+              0,
+              1
+            ],
+            "feasible": false,
+            "one_coloring": null,
+            "query_classes": [
+              [
+                0
+              ],
+              [
+                1
+              ],
+              [
+                2
+              ]
+            ],
+            "query_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "query_order": [
+              0,
+              1,
+              2
+            ],
+            "solver_summary": {
+              "eliminated_vertices": 1,
+              "core_vertices": 2,
+              "core_classes": 0,
+              "core_edges": 0,
+              "peak_states": 0,
+              "peak_width": 0,
+              "attempted_transitions": 0,
+              "accepted_transitions": 0,
+              "relation_compositions": 1,
+              "relation_intersections": 1,
+              "unary_support_checks": 0,
+              "reconstruction_attempts": 0,
+              "heap_pops": 1
+            }
+          }
+        ],
+        "summary": {
+          "pattern_queries": 2,
+          "feasible_patterns": 1
+        },
+        "mask": 1
+      }
+    ],
+    "local_to_global": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        2
+      ]
+    ],
+    "summary": {
+      "pieces": 2,
+      "pattern_queries": 4,
+      "gluing_search_calls": 0
+    }
+  }
+}

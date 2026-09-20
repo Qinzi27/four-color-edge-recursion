@@ -1,0 +1,8 @@
+{
+  "description": "Both pieces are two-colorable, but one requires different terminal colors and the other equal colors.",
+  "palette_size": 2,
+  "pieces": [
+    {"n": 2, "edges": [[0, 1]], "terminals": [0, 1]},
+    {"n": 3, "edges": [[0, 2], [2, 1]], "terminals": [0, 1]}
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "description": "Two triangular constraint blocks share face 2; each block needs three colors.",
+  "vertex_semantics": "face variables in a supplied adjacency constraint graph",
+  "n": 5,
+  "edges": [[0, 1], [1, 2], [2, 0], [2, 3], [3, 4], [4, 2]],
+  "order": [0, 1, 2, 3, 4],
+  "palette_size": 3
+}

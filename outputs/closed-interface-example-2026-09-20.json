@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-20T07:37:44.418771+00:00",
+  "mode": "blocks",
+  "input_sha256": "336f244a650b6cfd19543937b521dc7cb7394fcc71eb36b793f6fdd45f1dbc2c",
+  "source_sha256": {
+    "scripts/solve_closed_interfaces.py": "ccadbf1e31f17a718762cb343bf6e3a8973ac15751b44e30666a3b9726c9d88c",
+    "fourcolor/frontier_order.py": "9fd9abe4d17101f5938bf269ff2f8dc72f57a0fc0f4f3c12118e9975a0a80f98",
+    "fourcolor/orbit_frontier.py": "13067029f33fc13961cbb79d12b7d2252432493b63ce26776d44794363375d00",
+    "fourcolor/closed_interfaces.py": "5572a3dcd31218215347acff8f0f398a148124c4105e95242089a86c8a9b992f"
+  },
+  "scope": "fixed ordinary graph coloring; no precolors, lists, counting or repair costs",
+  "result": {
+    "n": 5,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "palette_size": 3,
+    "feasible": true,
+    "one_coloring": [
+      0,
+      1,
+      2,
+      1,
+      0
+    ],
+    "blocks": [
+      {
+        "id": 0,
+        "vertices": [
+          0,
+          1,
+          2
+        ],
+        "parent": null,
+        "port": null,
+        "order": [
+          0,
+          1,
+          2
+        ],
+        "feasible": true,
+        "one_coloring": [
+          0,
+          1,
+          2
+        ],
+        "interface_relation": "feasible_empty",
+        "summary": {
+          "peak_width": 2,
+          "peak_states": 1,
+          "cumulative_states": 3,
+          "attempted_transitions": 6,
+          "accepted_transitions": 3
+        }
+      },
+      {
+        "id": 1,
+        "vertices": [
+          2,
+          3,
+          4
+        ],
+        "parent": 0,
+        "port": 2,
+        "order": [
+          2,
+          3,
+          4
+        ],
+        "feasible": true,
+        "one_coloring": [
+          0,
+          1,
+          2
+        ],
+        "interface_relation": "all_colors",
+        "summary": {
+          "peak_width": 2,
+          "peak_states": 1,
+          "cumulative_states": 3,
+          "attempted_transitions": 6,
+          "accepted_transitions": 3
+        }
+      }
+    ],
+    "computation_order": [
+      1,
+      0
+    ],
+    "assembly_order": [
+      0,
+      1
+    ],
+    "summary": {
+      "block_count": 2,
+      "largest_block": 3,
+      "single_port_blocks": 1,
+      "peak_states": 1,
+      "attempted_transitions": 12,
+      "accepted_transitions": 6
+    }
+  }
+}
