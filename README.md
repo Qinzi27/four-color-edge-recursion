@@ -6,6 +6,30 @@ and verifiable Klein-four-group flow repair.**
 [中文说明](README.zh-CN.md) · [Mathematical foundations](docs/FOUNDATIONS.en.md) · [数学基础](docs/FOUNDATIONS.md)
 · [Research questions](docs/RESEARCH_PLAN.md) · [Related work](docs/RELATED_WORK.md)
 
+## Research progress — 2026-09-20
+
+**Starting inside can provably reduce the required interface on a specified graph
+class; it does not guarantee a faster general coloring method.**
+
+- **Proved scope:** for two nested-circle arms, each at least two face-adjacency
+  steps long, the optimal interface width over connected-prefix orders is **2
+  from the exterior versus 1 from an innermost end**. This is a fixed-start
+  optimum, not just a favorable traversal example.
+- **Matched experiments:** 63 maps, **1,917 runs with four available colors**, plus
+  **1,917 minimum-palette runs using exactly the same orders**. Improvements and
+  regressions are both retained.
+- **An important control:** all 891 minimum-palette runs on the 37 nested trees
+  retain a peak of just **two labeled states**. Their four-color state-count
+  advantage disappears at two colors, while the interface-width result remains.
+
+These are restricted proofs and independent diagnostics. They do not establish a
+universal speedup or an improvement to the original greedy mother-line algorithm.
+
+[Proofs, experiments and limits](docs/INSIDE_OUT_EXPERIMENT-2026-09-20.md)
+· [Current comparison figure](docs/figures/inside-out-2026-09-20-v2/inside-out.png)
+· [Circle-layer repairs and counterexamples](docs/CIRCLE_LAYER_REPAIR-2026-09-20.md)
+· [Circle rank and two-layer formulation](docs/CIRCLE_RANK-2026-09-20.md)
+
 ## Why study this idea?
 
 **Which boundary relations must a line-side construction retain so that a locally legal naming decision still admits a complete coloring?**
@@ -26,8 +50,8 @@ The project currently supports three concrete uses:
   the extent of synchronized renaming.
 
 These are usable tools for rule experiments, counterexample analysis and teaching.
-**No speed advantage, smaller sufficient state space or general completeness has
-been established.**
+**No general speed advantage, smaller sufficient representation for the mother-line
+method, or completeness guarantee has been established.**
 
 ### Has related work already been done?
 
@@ -51,7 +75,7 @@ A potential new contribution would be a theorem for a specified graph class:
 renaming.** At present, this is a **reproducible framework for line-side recursive
 naming and experiments with construction rules**.
 
-**Evidence snapshot (2026-09-19):** frozen v4 completes 7060 of 7069 deduplicated
+**Frozen baseline snapshot (2026-09-19):** v4 completes 7060 of 7069 deduplicated
 inputs in the existing corpus, with nine conflicts. It repairs all four v3 failures
 but introduces nine regressions. The nine-side lemma excludes the recorded fatal
 candidate in three cases; it is not integrated into v4 and does not establish that
@@ -59,7 +83,7 @@ those maps are solved. These counts are neither a random-map success probability
 nor a universal proof.
 
 [Detailed research value, precedents and next-step criteria (中文)](docs/RESEARCH_VALUE-2026-09-19.md)
-· [Latest experiments and failure evidence](docs/PEER_BATCH_RESULTS-2026-09-19.md)
+· [Earlier frozen-rule experiments and failure evidence](docs/PEER_BATCH_RESULTS-2026-09-19.md)
 
 ## Complete research archive
 
@@ -67,7 +91,8 @@ nor a universal proof.
 · [English research history](docs/RESEARCH_HISTORY.en.md)
 · [Reproduce from a clean checkout](docs/REPRODUCING_RESEARCH.md)
 
-This archive records the research through 2026-09-19: changing definitions,
+The historical archive below records the research through 2026-09-19; the
+2026-09-20 additions are linked above. It covers changing definitions,
 implementations, finite experiments, repaired examples, remaining obstructions,
 and regressions. Different versions and test denominators must not be combined.
 There is no new general proof or uniformly successful candidate algorithm.
@@ -75,7 +100,7 @@ Historical statements such as “not uploaded” describe the status at that sta
 this archive publishes the preserved work. The interactive website remains the
 earlier construction lab, not an interface to the latest Python candidates.
 
-Latest research experiment (2026-09-19): [peer-batch geometry, full rerun and implicit inequalities](docs/PEER_BATCH_RESULTS-2026-09-19.md).
+Earlier frozen baseline (2026-09-19): [peer-batch geometry, full rerun and implicit inequalities](docs/PEER_BATCH_RESULTS-2026-09-19.md).
 The frozen v4 solves 7060/7069 drawings, repairing all four v3 failures but introducing
 nine regressions. It is not a uniformly stronger replacement or a general method.
 All prefixes succeed for 358/363 histories; 362 final maps and 301/302 static references

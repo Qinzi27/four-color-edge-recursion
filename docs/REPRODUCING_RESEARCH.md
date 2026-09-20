@@ -1,7 +1,33 @@
 # 外部复现：算法、完整实验、证书与图件
 
-本指南对应 2026-09-19 的研究记录。发起思路属于 Qinzi27。
+本指南包含截至 2026-09-20 的研究记录。发起思路属于 Qinzi27。
 这里公开的是可复现的候选方法、成功和负结果，不是一份新的四色定理证明。
+
+## 最新补充：内起点顺序与最少颜色控制（2026-09-20）
+
+新增 [圈的 rank 与固定层补全](CIRCLE_RANK-2026-09-20.md)、
+[圈层修复](CIRCLE_LAYER_REPAIR-2026-09-20.md) 和
+[内外起点对照](INSIDE_OUT_EXPERIMENT-2026-09-20.md)。它们是独立研究模块，
+不会替换下面的 v4 单图入口或改写其冻结成绩。
+
+内外起点主实验固定四种可用色名；控制实验保持所有顺序不变，使用各图最少颜色。
+63 图各做 1917 次运行。嵌套树的二色控制消除了状态数收益，边界宽度差异仍在。
+完整命令如下，输出均须使用未占用的新文件名：
+
+```text
+python -X utf8 scripts/validate_inside_out.py --output outputs/my-inside-out.json
+python -X utf8 scripts/validate_inside_out_palette.py --input outputs/my-inside-out.json --output outputs/my-inside-out-palette.json
+```
+
+这两条命令及其核心模块只使用标准库，需完整仓库中的原图报告作为输入。
+若重新绘图，使用已安装的 Pillow 与本机可用的中文字体：
+
+```text
+python -X utf8 scripts/render_inside_out.py --input outputs/my-inside-out.json --palette-control outputs/my-inside-out-palette.json --output-dir docs/figures/my-inside-out --font /path/to/NotoSansCJK-Regular.ttc
+```
+
+本轮新增 17 项测试，合计 577 项 Python 测试及综合验证通过。完整代码、逐步状态、
+最优连通宽度、负结果与来源哈希均随仓库发布；数字是有限实现核验，不是一般性能保证。
 
 ## 1. 先区分四种工作
 

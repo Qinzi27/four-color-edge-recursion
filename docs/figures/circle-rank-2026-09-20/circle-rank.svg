@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1370" viewBox="0 0 1900 1370">
+<rect width="100%" height="100%" fill="white"/>
+<text x="55" y="30" font-size="43" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">先连通，再闭合：三条蓝线怎样把两色变成三色</text>
+<text x="55" y="100" font-size="26" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">按粉色为原边界、蓝色为新增边界、绿色为辅助圈理解；以下是拓扑示意，非原图描摹。</text>
+<text x="55" y="165" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">① 没有蓝线</text>
+<polygon points="55,255 595,255 595,615 55,615" fill="#D9E8F5" fill-rule="evenodd"/>
+<polygon points="235,363 163,363 163,489 235,489" fill="#FFFFFF" fill-rule="evenodd"/>
+<polygon points="487,363 415,363 415,489 487,489" fill="#FFFFFF" fill-rule="evenodd"/>
+<polyline points="55,255 595,255" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="595,255 595,363" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="595,363 595,615" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="595,615 55,615" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="55,615 55,255" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="163,363 235,363" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="235,363 235,489" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="235,489 163,489" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="163,489 163,363" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="415,363 487,363" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="487,363 487,489" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="487,489 415,489" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="415,489 415,363" fill="none" stroke="#963572" stroke-width="4"/>
+<text x="199" y="414" font-size="35" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">1</text>
+<text x="451" y="414" font-size="35" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">1</text>
+<text x="325" y="315" font-size="35" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="325" y="540" font-size="35" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="55" y="217" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">外面也计入着色：1</text>
+<text x="55" y="635" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">3 个连通分量 · 4 个面 · 最少 2 色</text>
+<text x="680" y="165" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">② 已有两条蓝线</text>
+<polygon points="680,255 1220,255 1220,615 680,615" fill="#D9E8F5" fill-rule="evenodd"/>
+<polygon points="860,363 788,363 788,423 788,489 860,489 860,423" fill="#FFFFFF" fill-rule="evenodd"/>
+<polygon points="1112,363 1040,363 1040,423 1040,489 1112,489" fill="#FFFFFF" fill-rule="evenodd"/>
+<polyline points="680,255 1220,255" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="1220,255 1220,615" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="1220,615 680,615" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="680,615 680,423" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="680,423 680,255" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="788,363 860,363" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="860,363 860,423" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="860,423 860,489" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="860,489 788,489" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="788,489 788,423" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="788,423 788,363" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="1040,363 1112,363" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="1112,363 1112,489" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="1112,489 1040,489" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="1040,489 1040,423" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="1040,423 1040,363" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="680,423 788,423" fill="none" stroke="#0066AE" stroke-width="4"/>
+<polyline points="860,423 1040,423" fill="none" stroke="#0066AE" stroke-width="4"/>
+<text x="824" y="414" font-size="35" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">1</text>
+<text x="1076" y="414" font-size="35" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">1</text>
+<text x="950" y="315" font-size="35" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="950" y="540" font-size="35" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="680" y="217" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">外面也计入着色：1</text>
+<text x="680" y="635" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">1 个连通分量 · 4 个面 · 最少 2 色</text>
+<text x="1305" y="165" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">③ 三条蓝线齐全</text>
+<polygon points="1305,255 1845,255 1845,615 1305,615" fill="#D9E8F5" fill-rule="evenodd"/>
+<polygon points="1845,255 1305,255 1305,423 1413,423 1413,363 1485,363 1485,423 1665,423 1665,363 1737,363 1737,423 1845,423" fill="#F6DEAA" fill-rule="evenodd"/>
+<polygon points="1485,363 1413,363 1413,423 1413,489 1485,489 1485,423" fill="#FFFFFF" fill-rule="evenodd"/>
+<polygon points="1737,363 1665,363 1665,423 1665,489 1737,489 1737,423" fill="#FFFFFF" fill-rule="evenodd"/>
+<polyline points="1305,255 1845,255" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="1845,255 1845,423" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="1845,423 1845,615" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="1845,615 1305,615" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="1305,615 1305,423" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="1305,423 1305,255" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="1413,363 1485,363" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="1485,363 1485,423" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="1485,423 1485,489" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="1485,489 1413,489" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="1413,489 1413,423" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="1413,423 1413,363" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="1665,363 1737,363" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="1737,363 1737,423" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="1737,423 1737,489" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="1737,489 1665,489" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="1665,489 1665,423" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="1665,423 1665,363" fill="none" stroke="#963572" stroke-width="4"/>
+<polyline points="1305,423 1413,423" fill="none" stroke="#0066AE" stroke-width="4"/>
+<polyline points="1485,423 1665,423" fill="none" stroke="#0066AE" stroke-width="4"/>
+<polyline points="1737,423 1845,423" fill="none" stroke="#0066AE" stroke-width="4"/>
+<text x="1449" y="414" font-size="35" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">1</text>
+<text x="1701" y="414" font-size="35" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">1</text>
+<text x="1575" y="315" font-size="35" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="1575" y="540" font-size="35" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="1305" y="217" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">外面也计入着色：1</text>
+<text x="1305" y="635" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">1 个连通分量 · 5 个面 · 最少 3 色</text>
+<text x="55" y="682" font-size="26" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">两条蓝线都是桥：仍可绕过缺口，上下是同一个面。最后一条闭合后，三条蓝线才都成为面分界。</text>
+<polyline points="55,740 1845,740" fill="none" stroke="#D3D7DC" stroke-width="2"/>
+<text x="55" y="775" font-size="34" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">把圈作为二进制边界层：跨过该层，翻转对应的一位</text>
+<text x="55" y="840" font-size="28" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#963572">层 A：三个粉圈的并集</text>
+<text x="680" y="840" font-size="28" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#007861">层 B：上方面的完整边界</text>
+<polyline points="55,900 595,900" fill="none" stroke="#963572" stroke-width="7"/>
+<polyline points="595,900 595,1068" fill="none" stroke="#963572" stroke-width="7"/>
+<polyline points="595,1068 595,1260" fill="none" stroke="#963572" stroke-width="7"/>
+<polyline points="595,1260 55,1260" fill="none" stroke="#963572" stroke-width="7"/>
+<polyline points="55,1260 55,1068" fill="none" stroke="#963572" stroke-width="7"/>
+<polyline points="55,1068 55,900" fill="none" stroke="#963572" stroke-width="7"/>
+<polyline points="163,1008 235,1008" fill="none" stroke="#963572" stroke-width="7"/>
+<polyline points="235,1008 235,1068" fill="none" stroke="#963572" stroke-width="7"/>
+<polyline points="235,1068 235,1134" fill="none" stroke="#963572" stroke-width="7"/>
+<polyline points="235,1134 163,1134" fill="none" stroke="#963572" stroke-width="7"/>
+<polyline points="163,1134 163,1068" fill="none" stroke="#963572" stroke-width="7"/>
+<polyline points="163,1068 163,1008" fill="none" stroke="#963572" stroke-width="7"/>
+<polyline points="415,1008 487,1008" fill="none" stroke="#963572" stroke-width="7"/>
+<polyline points="487,1008 487,1068" fill="none" stroke="#963572" stroke-width="7"/>
+<polyline points="487,1068 487,1134" fill="none" stroke="#963572" stroke-width="7"/>
+<polyline points="487,1134 415,1134" fill="none" stroke="#963572" stroke-width="7"/>
+<polyline points="415,1134 415,1068" fill="none" stroke="#963572" stroke-width="7"/>
+<polyline points="415,1068 415,1008" fill="none" stroke="#963572" stroke-width="7"/>
+<polyline points="55,1068 163,1068" fill="none" stroke="#BBC1C7" stroke-width="3"/>
+<polyline points="235,1068 415,1068" fill="none" stroke="#BBC1C7" stroke-width="3"/>
+<polyline points="487,1068 595,1068" fill="none" stroke="#BBC1C7" stroke-width="3"/>
+<polyline points="680,900 1220,900" fill="none" stroke="#007861" stroke-width="7"/>
+<polyline points="1220,900 1220,1068" fill="none" stroke="#007861" stroke-width="7"/>
+<polyline points="1220,1068 1220,1260" fill="none" stroke="#BBC1C7" stroke-width="3"/>
+<polyline points="1220,1260 680,1260" fill="none" stroke="#BBC1C7" stroke-width="3"/>
+<polyline points="680,1260 680,1068" fill="none" stroke="#BBC1C7" stroke-width="3"/>
+<polyline points="680,1068 680,900" fill="none" stroke="#007861" stroke-width="7"/>
+<polyline points="788,1008 860,1008" fill="none" stroke="#007861" stroke-width="7"/>
+<polyline points="860,1008 860,1068" fill="none" stroke="#007861" stroke-width="7"/>
+<polyline points="860,1068 860,1134" fill="none" stroke="#BBC1C7" stroke-width="3"/>
+<polyline points="860,1134 788,1134" fill="none" stroke="#BBC1C7" stroke-width="3"/>
+<polyline points="788,1134 788,1068" fill="none" stroke="#BBC1C7" stroke-width="3"/>
+<polyline points="788,1068 788,1008" fill="none" stroke="#007861" stroke-width="7"/>
+<polyline points="1040,1008 1112,1008" fill="none" stroke="#007861" stroke-width="7"/>
+<polyline points="1112,1008 1112,1068" fill="none" stroke="#007861" stroke-width="7"/>
+<polyline points="1112,1068 1112,1134" fill="none" stroke="#BBC1C7" stroke-width="3"/>
+<polyline points="1112,1134 1040,1134" fill="none" stroke="#BBC1C7" stroke-width="3"/>
+<polyline points="1040,1134 1040,1068" fill="none" stroke="#BBC1C7" stroke-width="3"/>
+<polyline points="1040,1068 1040,1008" fill="none" stroke="#007861" stroke-width="7"/>
+<polyline points="680,1068 788,1068" fill="none" stroke="#007861" stroke-width="7"/>
+<polyline points="860,1068 1040,1068" fill="none" stroke="#007861" stroke-width="7"/>
+<polyline points="1112,1068 1220,1068" fill="none" stroke="#007861" stroke-width="7"/>
+<text x="1305" y="850" font-size="28" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">跨圈奇偶 → 色块身份</text>
+<text x="1305" y="920" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">外面、两个小岛</text>
+<text x="1585" y="920" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">00 → 颜色 1</text>
+<text x="1305" y="1000" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">下方背景</text>
+<text x="1585" y="1000" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">10 → 颜色 2</text>
+<text x="1305" y="1080" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">上方背景</text>
+<text x="1585" y="1080" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">11 → 颜色 3</text>
+<text x="1305" y="1170" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">独立环数 β = 4</text>
+<text x="1305" y="1210" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">边界层数 = 2，实际颜色数 = 3</text>
+<text x="55" y="1300" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">绿色描的是已有边的组合，不增加新边。两层最多表示四种颜色；本图只用到其中三种。</text>
+</svg>

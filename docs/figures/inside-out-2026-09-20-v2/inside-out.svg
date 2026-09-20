@@ -1,0 +1,271 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1570" viewBox="0 0 1900 1570">
+<rect width="100%" height="100%" fill="white"/>
+<text x="55" y="30" font-size="43" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">从内侧起步：收益取决于分支结构和推进顺序</text>
+<text x="55" y="102" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">固定 4 种可用色名；原编号的广度优先（BFS）。纵轴是状态数，不是颜色数；各面板纵轴尺度不同。</text>
+<text x="325" y="170" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">15 面嵌套分支</text>
+<polyline points="105,585 570,585" fill="none" stroke="#E1E5EA" stroke-width="2"/>
+<text x="89" y="572" font-size="20" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">0</text>
+<polyline points="105,475 570,475" fill="none" stroke="#E1E5EA" stroke-width="2"/>
+<text x="89" y="462" font-size="20" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">100</text>
+<polyline points="105,365 570,365" fill="none" stroke="#E1E5EA" stroke-width="2"/>
+<text x="89" y="352" font-size="20" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">200</text>
+<polyline points="105,255 570,255" fill="none" stroke="#E1E5EA" stroke-width="2"/>
+<text x="89" y="242" font-size="20" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">300</text>
+<polyline points="105,255 105,585 570,585" fill="none" stroke="#505B67" stroke-width="2"/>
+<text x="105" y="597" font-size="22" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">1</text>
+<text x="337.5" y="597" font-size="22" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">8</text>
+<text x="570" y="597" font-size="22" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">15</text>
+<polyline points="105,580.6 138.214,571.8" fill="none" stroke="#B74400" stroke-width="4"/>
+<polyline points="138.214,571.8 171.429,567.4" fill="none" stroke="#B74400" stroke-width="4"/>
+<polyline points="171.429,567.4 204.643,532.2" fill="none" stroke="#B74400" stroke-width="4"/>
+<polyline points="204.643,532.2 237.857,514.6" fill="none" stroke="#B74400" stroke-width="4"/>
+<polyline points="237.857,514.6 271.071,373.8" fill="none" stroke="#B74400" stroke-width="4"/>
+<polyline points="271.071,373.8 304.286,303.4" fill="none" stroke="#B74400" stroke-width="4"/>
+<polyline points="304.286,303.4 337.5,303.4" fill="none" stroke="#B74400" stroke-width="4"/>
+<polyline points="337.5,303.4 370.714,514.6" fill="none" stroke="#B74400" stroke-width="4"/>
+<polyline points="370.714,514.6 403.929,514.6" fill="none" stroke="#B74400" stroke-width="4"/>
+<polyline points="403.929,514.6 437.143,567.4" fill="none" stroke="#B74400" stroke-width="4"/>
+<polyline points="437.143,567.4 470.357,567.4" fill="none" stroke="#B74400" stroke-width="4"/>
+<polyline points="470.357,567.4 503.571,580.6" fill="none" stroke="#B74400" stroke-width="4"/>
+<polyline points="503.571,580.6 536.786,580.6" fill="none" stroke="#B74400" stroke-width="4"/>
+<polyline points="536.786,580.6 570,583.9" fill="none" stroke="#B74400" stroke-width="4"/>
+<circle cx="105.0" cy="580.6" r="4" fill="#B74400"/>
+<circle cx="138.21428571428572" cy="571.8" r="4" fill="#B74400"/>
+<circle cx="171.42857142857144" cy="567.4" r="4" fill="#B74400"/>
+<circle cx="204.64285714285714" cy="532.2" r="4" fill="#B74400"/>
+<circle cx="237.85714285714286" cy="514.5999999999999" r="4" fill="#B74400"/>
+<circle cx="271.07142857142856" cy="373.8" r="4" fill="#B74400"/>
+<circle cx="304.2857142857143" cy="303.4" r="4" fill="#B74400"/>
+<circle cx="337.5" cy="303.4" r="4" fill="#B74400"/>
+<circle cx="370.7142857142857" cy="514.5999999999999" r="4" fill="#B74400"/>
+<circle cx="403.92857142857144" cy="514.5999999999999" r="4" fill="#B74400"/>
+<circle cx="437.14285714285717" cy="567.4" r="4" fill="#B74400"/>
+<circle cx="470.35714285714283" cy="567.4" r="4" fill="#B74400"/>
+<circle cx="503.57142857142856" cy="580.6" r="4" fill="#B74400"/>
+<circle cx="536.7857142857142" cy="580.6" r="4" fill="#B74400"/>
+<circle cx="570.0" cy="583.9000000000001" r="4" fill="#B74400"/>
+<polyline points="105,580.6 119,580.6" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="128,580.6 138.214,580.6" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="138.214,580.6 151.747,577.014" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="160.447,574.709 171.429,571.8" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="171.429,571.8 184.962,575.386" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="193.661,577.691 204.643,580.6" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="204.643,580.6 218.176,577.014" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="226.876,574.709 237.857,571.8" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="237.857,571.8 251.736,569.961" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="260.658,568.78 271.071,567.4" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="271.071,567.4 285.071,567.4" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="294.071,567.4 304.286,567.4" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="304.286,567.4 318.286,567.4" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="327.286,567.4 337.5,567.4" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="337.5,567.4 350.51,572.571" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="358.874,575.894 370.714,580.6" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="370.714,580.6 384.247,577.014" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="392.947,574.709 403.929,571.8" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="403.929,571.8 417.807,569.961" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="426.729,568.78 437.143,567.4" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="437.143,567.4 451.143,567.4" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="460.143,567.4 470.357,567.4" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="470.357,567.4 483.367,572.571" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="491.731,575.894 503.571,580.6" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="503.571,580.6 517.571,580.6" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="526.571,580.6 536.786,580.6" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="536.786,580.6 550.717,581.984" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="559.673,582.874 570,583.9" fill="none" stroke="#00618A" stroke-width="4"/>
+<rect x="101.0" y="576.6" width="8" height="8" fill="#00618A"/>
+<rect x="134.21428571428572" y="576.6" width="8" height="8" fill="#00618A"/>
+<rect x="167.42857142857144" y="567.8" width="8" height="8" fill="#00618A"/>
+<rect x="200.64285714285714" y="576.6" width="8" height="8" fill="#00618A"/>
+<rect x="233.85714285714286" y="567.8" width="8" height="8" fill="#00618A"/>
+<rect x="267.07142857142856" y="563.4" width="8" height="8" fill="#00618A"/>
+<rect x="300.2857142857143" y="563.4" width="8" height="8" fill="#00618A"/>
+<rect x="333.5" y="563.4" width="8" height="8" fill="#00618A"/>
+<rect x="366.7142857142857" y="576.6" width="8" height="8" fill="#00618A"/>
+<rect x="399.92857142857144" y="567.8" width="8" height="8" fill="#00618A"/>
+<rect x="433.14285714285717" y="563.4" width="8" height="8" fill="#00618A"/>
+<rect x="466.35714285714283" y="563.4" width="8" height="8" fill="#00618A"/>
+<rect x="499.57142857142856" y="576.6" width="8" height="8" fill="#00618A"/>
+<rect x="532.7857142857142" y="576.6" width="8" height="8" fill="#00618A"/>
+<rect x="566.0" y="579.9000000000001" width="8" height="8" fill="#00618A"/>
+<text x="325" y="650" font-size="28" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">峰值赋值数：256 → 16</text>
+<text x="325" y="696" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">候选扩展次数：4068 → 564</text>
+<text x="945" y="170" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3×3 格地图（含外面共 10 面）</text>
+<polyline points="725,585 1190,585" fill="none" stroke="#E1E5EA" stroke-width="2"/>
+<text x="709" y="572" font-size="20" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">0</text>
+<polyline points="725,475 1190,475" fill="none" stroke="#E1E5EA" stroke-width="2"/>
+<text x="709" y="462" font-size="20" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">200</text>
+<polyline points="725,365 1190,365" fill="none" stroke="#E1E5EA" stroke-width="2"/>
+<text x="709" y="352" font-size="20" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">400</text>
+<polyline points="725,255 1190,255" fill="none" stroke="#E1E5EA" stroke-width="2"/>
+<text x="709" y="242" font-size="20" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">600</text>
+<polyline points="725,255 725,585 1190,585" fill="none" stroke="#505B67" stroke-width="2"/>
+<text x="725" y="597" font-size="22" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">1</text>
+<text x="931.667" y="597" font-size="22" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">5</text>
+<text x="1190" y="597" font-size="22" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">10</text>
+<polyline points="725,582.8 776.667,578.4" fill="none" stroke="#B74400" stroke-width="4"/>
+<polyline points="776.667,578.4 828.333,571.8" fill="none" stroke="#B74400" stroke-width="4"/>
+<polyline points="828.333,571.8 880,558.6" fill="none" stroke="#B74400" stroke-width="4"/>
+<polyline points="880,558.6 931.667,545.4" fill="none" stroke="#B74400" stroke-width="4"/>
+<polyline points="931.667,545.4 983.333,525.6" fill="none" stroke="#B74400" stroke-width="4"/>
+<polyline points="983.333,525.6 1035,466.2" fill="none" stroke="#B74400" stroke-width="4"/>
+<polyline points="1035,466.2 1086.67,406.8" fill="none" stroke="#B74400" stroke-width="4"/>
+<polyline points="1086.67,406.8 1138.33,457.4" fill="none" stroke="#B74400" stroke-width="4"/>
+<polyline points="1138.33,457.4 1190,584.45" fill="none" stroke="#B74400" stroke-width="4"/>
+<circle cx="725.0" cy="582.8" r="4" fill="#B74400"/>
+<circle cx="776.6666666666666" cy="578.4" r="4" fill="#B74400"/>
+<circle cx="828.3333333333334" cy="571.8" r="4" fill="#B74400"/>
+<circle cx="880.0" cy="558.6" r="4" fill="#B74400"/>
+<circle cx="931.6666666666666" cy="545.4" r="4" fill="#B74400"/>
+<circle cx="983.3333333333333" cy="525.6" r="4" fill="#B74400"/>
+<circle cx="1035.0" cy="466.20000000000005" r="4" fill="#B74400"/>
+<circle cx="1086.6666666666667" cy="406.79999999999995" r="4" fill="#B74400"/>
+<circle cx="1138.3333333333333" cy="457.4" r="4" fill="#B74400"/>
+<circle cx="1190.0" cy="584.45" r="4" fill="#B74400"/>
+<polyline points="725,582.8 738.95,581.612" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="747.917,580.848 761.867,579.66" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="770.834,578.897 776.667,578.4" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="776.667,578.4 790.231,574.935" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="798.951,572.707 812.515,569.241" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="821.235,567.013 828.333,565.2" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="828.333,565.2 839.445,556.683" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="846.588,551.209 857.7,542.692" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="864.843,537.217 875.955,528.701" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="880,525.6 888.454,514.441" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="893.889,507.267 902.343,496.108" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="907.777,488.934 916.231,477.774" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="921.666,470.601 930.12,459.441" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="931.667,457.4 935.902,444.056" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="938.624,435.478 942.859,422.133" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="945.581,413.555 949.816,400.211" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="952.539,391.633 956.774,378.288" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="959.496,369.71 963.731,356.366" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="966.454,347.788 970.688,334.444" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="973.411,325.865 977.646,312.521" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="980.368,303.943 983.333,294.6" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="983.333,294.6 989.189,307.317" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="992.954,315.491 998.809,328.208" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1002.57,336.383 1008.43,349.099" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1012.19,357.274 1018.05,369.991" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1021.81,378.166 1027.67,390.882" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1031.43,399.057 1035,406.8" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1035,406.8 1040.58,419.638" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1044.17,427.892 1049.76,440.73" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1053.35,448.983 1058.93,461.822" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1062.52,470.075 1068.1,482.913" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1071.69,491.167 1077.27,504.005" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1080.86,512.258 1086.45,525.097" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1086.67,525.6 1097.78,534.117" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1104.92,539.591 1116.03,548.108" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1123.18,553.583 1134.29,562.099" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1138.33,565.2 1151.45,570.088" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1159.89,573.23 1173.01,578.118" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1181.44,581.26 1190,584.45" fill="none" stroke="#00618A" stroke-width="4"/>
+<rect x="721.0" y="578.8" width="8" height="8" fill="#00618A"/>
+<rect x="772.6666666666666" y="574.4" width="8" height="8" fill="#00618A"/>
+<rect x="824.3333333333334" y="561.2" width="8" height="8" fill="#00618A"/>
+<rect x="876.0" y="521.6" width="8" height="8" fill="#00618A"/>
+<rect x="927.6666666666666" y="453.4" width="8" height="8" fill="#00618A"/>
+<rect x="979.3333333333333" y="290.6" width="8" height="8" fill="#00618A"/>
+<rect x="1031.0" y="402.79999999999995" width="8" height="8" fill="#00618A"/>
+<rect x="1082.6666666666667" y="521.6" width="8" height="8" fill="#00618A"/>
+<rect x="1134.3333333333333" y="561.2" width="8" height="8" fill="#00618A"/>
+<rect x="1186.0" y="580.45" width="8" height="8" fill="#00618A"/>
+<text x="945" y="650" font-size="28" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">峰值赋值数：324 → 528</text>
+<text x="945" y="696" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">候选扩展次数：4164 → 5556</text>
+<text x="1565" y="170" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">原图：三条蓝线齐全</text>
+<polyline points="1345,585 1810,585" fill="none" stroke="#E1E5EA" stroke-width="2"/>
+<text x="1329" y="572" font-size="20" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">0</text>
+<polyline points="1345,502.5 1810,502.5" fill="none" stroke="#E1E5EA" stroke-width="2"/>
+<text x="1329" y="489.5" font-size="20" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<polyline points="1345,420 1810,420" fill="none" stroke="#E1E5EA" stroke-width="2"/>
+<text x="1329" y="407" font-size="20" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">8</text>
+<polyline points="1345,337.5 1810,337.5" fill="none" stroke="#E1E5EA" stroke-width="2"/>
+<text x="1329" y="324.5" font-size="20" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">12</text>
+<polyline points="1345,255 1810,255" fill="none" stroke="#E1E5EA" stroke-width="2"/>
+<text x="1329" y="242" font-size="20" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">16</text>
+<polyline points="1345,255 1345,585 1810,585" fill="none" stroke="#505B67" stroke-width="2"/>
+<text x="1345" y="597" font-size="22" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">1</text>
+<text x="1577.5" y="597" font-size="22" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="1810" y="597" font-size="22" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">5</text>
+<polyline points="1345,502.5 1461.25,337.5" fill="none" stroke="#B74400" stroke-width="4"/>
+<polyline points="1461.25,337.5 1577.5,337.5" fill="none" stroke="#B74400" stroke-width="4"/>
+<polyline points="1577.5,337.5 1693.75,337.5" fill="none" stroke="#B74400" stroke-width="4"/>
+<polyline points="1693.75,337.5 1810,564.375" fill="none" stroke="#B74400" stroke-width="4"/>
+<circle cx="1345.0" cy="502.5" r="4" fill="#B74400"/>
+<circle cx="1461.25" cy="337.5" r="4" fill="#B74400"/>
+<circle cx="1577.5" cy="337.5" r="4" fill="#B74400"/>
+<circle cx="1693.75" cy="337.5" r="4" fill="#B74400"/>
+<circle cx="1810.0" cy="564.375" r="4" fill="#B74400"/>
+<polyline points="1345,502.5 1353.06,491.055" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1358.25,483.698 1366.31,472.253" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1371.49,464.896 1379.56,453.451" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1384.74,446.094 1392.8,434.649" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1397.99,427.292 1406.05,415.847" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1411.23,408.49 1419.3,397.045" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1424.48,389.687 1432.54,378.243" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1437.73,370.885 1445.79,359.441" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1450.98,352.083 1459.04,340.638" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1461.25,337.5 1475.25,337.5" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1484.25,337.5 1498.25,337.5" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1507.25,337.5 1521.25,337.5" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1530.25,337.5 1544.25,337.5" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1553.25,337.5 1567.25,337.5" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1576.25,337.5 1577.5,337.5" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1577.5,337.5 1591.5,337.5" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1600.5,337.5 1614.5,337.5" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1623.5,337.5 1637.5,337.5" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1646.5,337.5 1660.5,337.5" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1669.5,337.5 1683.5,337.5" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1692.5,337.5 1693.75,337.5" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1693.75,337.5 1700.13,349.96" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1704.24,357.969 1710.62,370.429" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1714.73,378.439 1721.11,390.898" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1725.22,398.908 1731.6,411.368" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1735.7,419.377 1742.09,431.837" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1746.19,439.847 1752.58,452.306" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1756.68,460.316 1763.06,472.776" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1767.17,480.785 1773.55,493.245" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1777.66,501.255 1784.04,513.714" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1788.15,521.724 1794.53,534.183" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1798.63,542.193 1805.02,554.653" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="1809.12,562.663 1810,564.375" fill="none" stroke="#00618A" stroke-width="4"/>
+<rect x="1341.0" y="498.5" width="8" height="8" fill="#00618A"/>
+<rect x="1457.25" y="333.5" width="8" height="8" fill="#00618A"/>
+<rect x="1573.5" y="333.5" width="8" height="8" fill="#00618A"/>
+<rect x="1689.75" y="333.5" width="8" height="8" fill="#00618A"/>
+<rect x="1806.0" y="560.375" width="8" height="8" fill="#00618A"/>
+<text x="1565" y="650" font-size="28" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">峰值赋值数：12 → 12</text>
+<text x="1565" y="696" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">候选扩展次数：164 → 164</text>
+<text x="940" y="760" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#505B67">横轴：已处理的面数</text>
+<polyline points="560,814 615,814" fill="none" stroke="#B74400" stroke-width="4"/>
+<circle cx="588" cy="814" r="4" fill="#B74400"/>
+<text x="630" y="798" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">外面起步</text>
+<polyline points="940,814 954,814" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="963,814 977,814" fill="none" stroke="#00618A" stroke-width="4"/>
+<polyline points="986,814 995,814" fill="none" stroke="#00618A" stroke-width="4"/>
+<rect x="964" y="810" width="8" height="8" fill="#00618A"/>
+<text x="1010" y="798" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">最深面起步</text>
+<polyline points="55,870 1845,870" fill="none" stroke="#E1E5EA" stroke-width="2"/>
+<text x="55" y="900" font-size="34" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">怎样改进推进顺序：先完成局部分支，再向外连接</text>
+<text x="55" y="963" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">下图是真实包含关系的示意：6 条独立闭环，共 7 个面。数字是面 ID。</text>
+<polyline points="80,1050 355,1050 355,1265 80,1265 80,1050" fill="none" stroke="#596774" stroke-width="4"/>
+<text x="220" y="1080" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">1</text>
+<polyline points="107,1140 195,1140 195,1224 107,1224 107,1140" fill="none" stroke="#596774" stroke-width="4"/>
+<text x="151" y="1164" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<polyline points="240,1140 328,1140 328,1224 240,1224 240,1140" fill="none" stroke="#596774" stroke-width="4"/>
+<text x="284" y="1164" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<polyline points="400,1050 675,1050 675,1265 400,1265 400,1050" fill="none" stroke="#596774" stroke-width="4"/>
+<text x="540" y="1080" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<polyline points="427,1140 515,1140 515,1224 427,1224 427,1140" fill="none" stroke="#596774" stroke-width="4"/>
+<text x="471" y="1164" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">5</text>
+<polyline points="560,1140 648,1140 648,1224 560,1224 560,1140" fill="none" stroke="#596774" stroke-width="4"/>
+<text x="604" y="1164" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">6</text>
+<text x="380" y="1286" font-size="26" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">0：整个无界外面</text>
+<text x="785" y="1038" font-size="32" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">可行顺序：3 → 1 → 4 → 0 → 2 → 5 → 6</text>
+<text x="785" y="1110" font-size="28" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">先完成左侧系统；每步最多保留 1 个对外边界面。</text>
+<text x="785" y="1170" font-size="28" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">精确最小峰值宽度：外面起步 2；最内起步 1。</text>
+<text x="785" y="1230" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">这给出了起点的真实优势，仍需选择合适的后续顺序。</text>
+<text x="55" y="1370" font-size="26" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">证据范围：63 图、1,917 次运行；完整状态诊断，不是线命名贪心算法的完备性证明。</text>
+<text x="55" y="1430" font-size="28" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">关键对照：嵌套树若只用最少的 2 色，内外起点的状态峰值都为 2，候选扩展次数也相同。</text>
+<text x="55" y="1488" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">因此，边界宽度的差异真实存在；状态数收益还取决于允许多少色名。</text>
+</svg>

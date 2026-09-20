@@ -1,0 +1,29 @@
+{
+  "generated_at_utc": "2026-09-20T04:40:22.706584+00:00",
+  "input": {
+    "filename": "circle-repair-2026-09-20.json",
+    "sha256": "de7eab95ee433e7fd8f558894628a3c68dece62c3122704c1d14c648ab2b60e5"
+  },
+  "source_sha256": {
+    "scripts/render_circle_repair.py": "e4f4a750fa09fb29a2109fd02bb2559b729a1571dc22d8df68cdf2961d770eaf",
+    "scripts/render_anchor_failure_cases.py": "8bdea94aa0f3f8ea101d1c139c47fcf6b645373d64e0da06ad0ea4a6fd8b7b5e"
+  },
+  "coordinates": "schematic equal-angle y-down layouts; outer radius150, inner radius75; not edge costs",
+  "semantics": "edge membership in A, not final face coloring; q is odd-component count",
+  "font": "msyh.ttc",
+  "pillow_version": "12.3.0",
+  "artifacts": [
+    {
+      "filename": "circle-repair.png",
+      "sha256": "028c55c228879bdcc46a23d1f61b1069c0af926d0f8427d93b85ec1ac832333f",
+      "width_px": 1900,
+      "height_px": 1410
+    },
+    {
+      "filename": "circle-repair.svg",
+      "sha256": "eca818688666c126c24d9106ebd230ddebdd551648dfc5d64c535a507faa9b9d",
+      "width_px": 1900,
+      "height_px": 1410
+    }
+  ]
+}

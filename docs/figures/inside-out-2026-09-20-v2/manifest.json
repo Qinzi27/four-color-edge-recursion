@@ -1,0 +1,34 @@
+{
+  "generated_at_utc": "2026-09-20T05:46:47.027018+00:00",
+  "input": {
+    "filename": "inside-out-experiment-2026-09-20.json",
+    "sha256": "e9427ba7d9701e04a20a83a34fd1a35af2734e772dc2fd0eae73d871b8c4104e"
+  },
+  "palette_control": {
+    "filename": "inside-out-palette-2026-09-20.json",
+    "sha256": "8a0fd6d368fa1401e8b18f0675e17d00546111f42d9b8d833963d95db3081f47"
+  },
+  "source_sha256": {
+    "scripts/render_inside_out.py": "b8b8f93d4e030c92b3b4b097aa20f9d43e1fae6373096dd16b13161642fe5784",
+    "scripts/render_anchor_failure_cases.py": "8bdea94aa0f3f8ea101d1c139c47fcf6b645373d64e0da06ad0ea4a6fd8b7b5e"
+  },
+  "selection": "Three explicit examples; original-label BFS, smallest declared inner ID (not best score)",
+  "axes": "Linear, zero-based y axes with different visible ranges; x is processed face count",
+  "lower_diagram": "Schematic nested rectangles with face IDs; not vertex/color labels or measurements",
+  "font": "msyh.ttc",
+  "pillow_version": "12.3.0",
+  "artifacts": [
+    {
+      "filename": "inside-out.png",
+      "sha256": "3dd7e29254b5619dc9a6758f6bac4f63212a7107733851cac8292dcb6f994c8c",
+      "width_px": 1900,
+      "height_px": 1570
+    },
+    {
+      "filename": "inside-out.svg",
+      "sha256": "8f5d4430e21843f79fd48b734fb3c6cbb275fd2956fd6a4641f3b8b3fec14263",
+      "width_px": 1900,
+      "height_px": 1570
+    }
+  ]
+}

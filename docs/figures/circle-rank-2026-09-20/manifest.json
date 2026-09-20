@@ -1,0 +1,44 @@
+{
+  "generated_at_utc": "2026-09-20T01:17:42.642813+00:00",
+  "figure_kind": "schematic topology from an explicit eight-case geometry report",
+  "assumption": "Pink and blue are map boundaries; green is an auxiliary contour",
+  "coordinate_system": "arbitrary schematic units; y down; uniform scale 0.6",
+  "photo_policy": "No screenshot pixels edited or traced; no metric measurements inferred",
+  "input": {
+    "filename": "circle-rank-2026-09-20.json",
+    "sha256": "4ce518e58105c5d9ff93ab862b887f38f3a90c9766c1693408c6e9049907bc04"
+  },
+  "source_sha256": {
+    "scripts/render_circle_rank.py": "794cae596bfa52dd5045788c9f332c43a2eba812ec3a1f0de5737634e01a65bd",
+    "scripts/render_anchor_failure_cases.py": "8bdea94aa0f3f8ea101d1c139c47fcf6b645373d64e0da06ad0ea4a6fd8b7b5e"
+  },
+  "cases": [
+    0,
+    3,
+    7
+  ],
+  "font": "msyh.ttc",
+  "pillow_version": "12.3.0",
+  "colors": {
+    "pink_boundary": "#963572",
+    "blue_connector": "#0066AE",
+    "green_layer": "#007861",
+    "face_1": "#FFFFFF",
+    "face_2": "#D9E8F5",
+    "face_3": "#F6DEAA"
+  },
+  "artifacts": [
+    {
+      "filename": "circle-rank.png",
+      "sha256": "89629cc8826dafc6b3d4e7455fe8b3fdb4d8631bd99cd7494f3ad84bae93e880",
+      "width_px": 1900,
+      "height_px": 1370
+    },
+    {
+      "filename": "circle-rank.svg",
+      "sha256": "d9cb8cea7c8e615e21ffc7702669a5ef1b123996c717d35f18457a013a505eba",
+      "width_px": 1900,
+      "height_px": 1370
+    }
+  ]
+}

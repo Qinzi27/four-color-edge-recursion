@@ -1,0 +1,212 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1410" viewBox="0 0 1900 1410">
+<rect width="100%" height="100%" fill="white"/>
+<text x="55" y="30" font-size="42" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">圈可以怎样重组：一个可证明的修复，以及一条失败的规则</text>
+<text x="55" y="101" font-size="26" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">粉线＝第一层 A；灰线＝其他已有边。q 是无法配对的奇分量数，q＝0 才能补出第二层。</text>
+<text x="55" y="160" font-size="34" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">① 两圈＋奇数条径向连接：翻一个环带面就能修好</text>
+<text x="315" y="225" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">两个原圈：q＝2</text>
+<text x="950" y="225" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">移出两段圈弧，加入两条径向边</text>
+<text x="1585" y="225" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">合为大圈：q＝0</text>
+<polyline points="315,305 457.658,408.647" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="457.658,408.647 403.168,576.353" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="403.168,576.353 226.832,576.353" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="226.832,576.353 172.342,408.647" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="172.342,408.647 315,305" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="315,380 386.329,431.824" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="386.329,431.824 359.084,515.676" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="359.084,515.676 270.916,515.676" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="270.916,515.676 243.671,431.824" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="243.671,431.824 315,380" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="315,305 315,380" fill="none" stroke="#B8C0C8" stroke-width="3"/>
+<polyline points="457.658,408.647 386.329,431.824" fill="none" stroke="#B8C0C8" stroke-width="3"/>
+<polyline points="403.168,576.353 359.084,515.676" fill="none" stroke="#B8C0C8" stroke-width="3"/>
+<polyline points="226.832,576.353 270.916,515.676" fill="none" stroke="#B8C0C8" stroke-width="3"/>
+<polyline points="172.342,408.647 243.671,431.824" fill="none" stroke="#B8C0C8" stroke-width="3"/>
+<circle cx="315" cy="305" r="4" fill="#25323D"/>
+<circle cx="457.658" cy="408.647" r="4" fill="#25323D"/>
+<circle cx="403.168" cy="576.353" r="4" fill="#25323D"/>
+<circle cx="226.832" cy="576.353" r="4" fill="#25323D"/>
+<circle cx="172.342" cy="408.647" r="4" fill="#25323D"/>
+<circle cx="315" cy="380" r="4" fill="#25323D"/>
+<circle cx="386.329" cy="431.824" r="4" fill="#25323D"/>
+<circle cx="359.084" cy="515.676" r="4" fill="#25323D"/>
+<circle cx="270.916" cy="515.676" r="4" fill="#25323D"/>
+<circle cx="243.671" cy="431.824" r="4" fill="#25323D"/>
+<polyline points="950,305 1092.66,408.647" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="1092.66,408.647 1038.17,576.353" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="1038.17,576.353 861.832,576.353" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="861.832,576.353 807.342,408.647" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="807.342,408.647 950,305" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="950,380 1021.33,431.824" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="1021.33,431.824 994.084,515.676" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="994.084,515.676 905.916,515.676" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="905.916,515.676 878.671,431.824" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="878.671,431.824 950,380" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="950,305 950,380" fill="none" stroke="#B8C0C8" stroke-width="3"/>
+<polyline points="1092.66,408.647 1021.33,431.824" fill="none" stroke="#B8C0C8" stroke-width="3"/>
+<polyline points="1038.17,576.353 994.084,515.676" fill="none" stroke="#B8C0C8" stroke-width="3"/>
+<polyline points="861.832,576.353 905.916,515.676" fill="none" stroke="#B8C0C8" stroke-width="3"/>
+<polyline points="807.342,408.647 878.671,431.824" fill="none" stroke="#B8C0C8" stroke-width="3"/>
+<polyline points="950,305 961.326,313.229" fill="none" stroke="#B74400" stroke-width="7"/>
+<polyline points="968.607,318.519 979.934,326.748" fill="none" stroke="#B74400" stroke-width="7"/>
+<polyline points="987.215,332.038 998.541,340.267" fill="none" stroke="#B74400" stroke-width="7"/>
+<polyline points="1005.82,345.557 1017.15,353.786" fill="none" stroke="#B74400" stroke-width="7"/>
+<polyline points="1024.43,359.076 1035.76,367.305" fill="none" stroke="#B74400" stroke-width="7"/>
+<polyline points="1043.04,372.595 1054.36,380.824" fill="none" stroke="#B74400" stroke-width="7"/>
+<polyline points="1061.64,386.114 1072.97,394.343" fill="none" stroke="#B74400" stroke-width="7"/>
+<polyline points="1080.25,399.633 1091.58,407.862" fill="none" stroke="#B74400" stroke-width="7"/>
+<polyline points="950,380 961.326,388.229" fill="none" stroke="#B74400" stroke-width="7"/>
+<polyline points="968.607,393.519 979.934,401.748" fill="none" stroke="#B74400" stroke-width="7"/>
+<polyline points="987.215,407.038 998.541,415.267" fill="none" stroke="#B74400" stroke-width="7"/>
+<polyline points="1005.82,420.557 1017.15,428.786" fill="none" stroke="#B74400" stroke-width="7"/>
+<polyline points="950,305 950,380" fill="none" stroke="#007861" stroke-width="7"/>
+<polyline points="1092.66,408.647 1021.33,431.824" fill="none" stroke="#007861" stroke-width="7"/>
+<circle cx="950" cy="305" r="4" fill="#25323D"/>
+<circle cx="1092.66" cy="408.647" r="4" fill="#25323D"/>
+<circle cx="1038.17" cy="576.353" r="4" fill="#25323D"/>
+<circle cx="861.832" cy="576.353" r="4" fill="#25323D"/>
+<circle cx="807.342" cy="408.647" r="4" fill="#25323D"/>
+<circle cx="950" cy="380" r="4" fill="#25323D"/>
+<circle cx="1021.33" cy="431.824" r="4" fill="#25323D"/>
+<circle cx="994.084" cy="515.676" r="4" fill="#25323D"/>
+<circle cx="905.916" cy="515.676" r="4" fill="#25323D"/>
+<circle cx="878.671" cy="431.824" r="4" fill="#25323D"/>
+<polyline points="1585,305 1727.66,408.647" fill="none" stroke="#B8C0C8" stroke-width="3"/>
+<polyline points="1727.66,408.647 1673.17,576.353" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="1673.17,576.353 1496.83,576.353" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="1496.83,576.353 1442.34,408.647" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="1442.34,408.647 1585,305" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="1585,380 1656.33,431.824" fill="none" stroke="#B8C0C8" stroke-width="3"/>
+<polyline points="1656.33,431.824 1629.08,515.676" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="1629.08,515.676 1540.92,515.676" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="1540.92,515.676 1513.67,431.824" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="1513.67,431.824 1585,380" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="1585,305 1585,380" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="1727.66,408.647 1656.33,431.824" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="1673.17,576.353 1629.08,515.676" fill="none" stroke="#B8C0C8" stroke-width="3"/>
+<polyline points="1496.83,576.353 1540.92,515.676" fill="none" stroke="#B8C0C8" stroke-width="3"/>
+<polyline points="1442.34,408.647 1513.67,431.824" fill="none" stroke="#B8C0C8" stroke-width="3"/>
+<circle cx="1585" cy="305" r="4" fill="#25323D"/>
+<circle cx="1727.66" cy="408.647" r="4" fill="#25323D"/>
+<circle cx="1673.17" cy="576.353" r="4" fill="#25323D"/>
+<circle cx="1496.83" cy="576.353" r="4" fill="#25323D"/>
+<circle cx="1442.34" cy="408.647" r="4" fill="#25323D"/>
+<circle cx="1585" cy="380" r="4" fill="#25323D"/>
+<circle cx="1656.33" cy="431.824" r="4" fill="#25323D"/>
+<circle cx="1629.08" cy="515.676" r="4" fill="#25323D"/>
+<circle cx="1540.92" cy="515.676" r="4" fill="#25323D"/>
+<circle cx="1513.67" cy="431.824" r="4" fill="#25323D"/>
+<text x="315" y="635" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">图示 k＝5；结论适用于任意奇数 k≥3</text>
+<text x="950" y="635" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">橙虚线：移出 A　　绿实线：加入 A</text>
+<text x="1585" y="635" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">未细分、单位代价时：最少改 4 条边</text>
+<polyline points="55,700 1845,700" fill="none" stroke="#D4D9DE" stroke-width="2"/>
+<text x="55" y="735" font-size="34" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">② 八轮缘轮图：需要跨过平台，或同时翻转两个面</text>
+<text x="315" y="804" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">初始：q＝2</text>
+<text x="950" y="804" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">先翻三角面 2–3–8：q 仍为 2</text>
+<text x="1585" y="804" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">再翻三角面 6–7–8：q＝0</text>
+<polyline points="315,885 421.066,928.934" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="421.066,928.934 465,1035" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="465,1035 421.066,1141.07" fill="none" stroke="#B8C0C8" stroke-width="3"/>
+<polyline points="421.066,1141.07 315,1185" fill="none" stroke="#B8C0C8" stroke-width="3"/>
+<polyline points="315,1185 208.934,1141.07" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="208.934,1141.07 165,1035" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="165,1035 208.934,928.934" fill="none" stroke="#B8C0C8" stroke-width="3"/>
+<polyline points="208.934,928.934 315,885" fill="none" stroke="#B8C0C8" stroke-width="3"/>
+<polyline points="315,885 315,1035" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="421.066,928.934 315,1035" fill="none" stroke="#B8C0C8" stroke-width="3"/>
+<polyline points="465,1035 315,1035" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="421.066,1141.07 315,1035" fill="none" stroke="#B8C0C8" stroke-width="3"/>
+<polyline points="315,1185 315,1035" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="208.934,1141.07 315,1035" fill="none" stroke="#B8C0C8" stroke-width="3"/>
+<polyline points="165,1035 315,1035" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="208.934,928.934 315,1035" fill="none" stroke="#B8C0C8" stroke-width="3"/>
+<circle cx="315" cy="885" r="4" fill="#25323D"/>
+<text x="315" y="849" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">0</text>
+<circle cx="421.066" cy="928.934" r="4" fill="#25323D"/>
+<text x="438.037" y="899.963" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">1</text>
+<circle cx="465" cy="1035" r="4" fill="#25323D"/>
+<text x="489" y="1023" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<circle cx="421.066" cy="1141.07" r="7" fill="#B74400"/>
+<text x="438.037" y="1146.04" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<circle cx="315" cy="1185" r="4" fill="#25323D"/>
+<text x="315" y="1197" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<circle cx="208.934" cy="1141.07" r="4" fill="#25323D"/>
+<text x="191.963" y="1146.04" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">5</text>
+<circle cx="165" cy="1035" r="4" fill="#25323D"/>
+<text x="141" y="1023" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">6</text>
+<circle cx="208.934" cy="928.934" r="7" fill="#B74400"/>
+<text x="191.963" y="899.963" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">7</text>
+<circle cx="315" cy="1035" r="4" fill="#25323D"/>
+<text x="336" y="1001" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">8</text>
+<polyline points="950,885 1056.07,928.934" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="1056.07,928.934 1100,1035" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="1100,1035 1056.07,1141.07" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="1056.07,1141.07 950,1185" fill="none" stroke="#B8C0C8" stroke-width="3"/>
+<polyline points="950,1185 843.934,1141.07" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="843.934,1141.07 800,1035" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="800,1035 843.934,928.934" fill="none" stroke="#B8C0C8" stroke-width="3"/>
+<polyline points="843.934,928.934 950,885" fill="none" stroke="#B8C0C8" stroke-width="3"/>
+<polyline points="950,885 950,1035" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="1056.07,928.934 950,1035" fill="none" stroke="#B8C0C8" stroke-width="3"/>
+<polyline points="1100,1035 950,1035" fill="none" stroke="#B8C0C8" stroke-width="3"/>
+<polyline points="1056.07,1141.07 950,1035" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="950,1185 950,1035" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="843.934,1141.07 950,1035" fill="none" stroke="#B8C0C8" stroke-width="3"/>
+<polyline points="800,1035 950,1035" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="843.934,928.934 950,1035" fill="none" stroke="#B8C0C8" stroke-width="3"/>
+<circle cx="950" cy="885" r="4" fill="#25323D"/>
+<text x="950" y="849" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">0</text>
+<circle cx="1056.07" cy="928.934" r="4" fill="#25323D"/>
+<text x="1073.04" y="899.963" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">1</text>
+<circle cx="1100" cy="1035" r="4" fill="#25323D"/>
+<text x="1124" y="1023" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<circle cx="1056.07" cy="1141.07" r="4" fill="#25323D"/>
+<text x="1073.04" y="1146.04" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<circle cx="950" cy="1185" r="4" fill="#25323D"/>
+<text x="950" y="1197" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<circle cx="843.934" cy="1141.07" r="4" fill="#25323D"/>
+<text x="826.963" y="1146.04" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">5</text>
+<circle cx="800" cy="1035" r="4" fill="#25323D"/>
+<text x="776" y="1023" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">6</text>
+<circle cx="843.934" cy="928.934" r="7" fill="#B74400"/>
+<text x="826.963" y="899.963" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">7</text>
+<circle cx="950" cy="1035" r="4" fill="#25323D"/>
+<text x="971" y="1001" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">8</text>
+<polyline points="1585,885 1691.07,928.934" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="1691.07,928.934 1735,1035" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="1735,1035 1691.07,1141.07" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="1691.07,1141.07 1585,1185" fill="none" stroke="#B8C0C8" stroke-width="3"/>
+<polyline points="1585,1185 1478.93,1141.07" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="1478.93,1141.07 1435,1035" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="1435,1035 1478.93,928.934" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="1478.93,928.934 1585,885" fill="none" stroke="#B8C0C8" stroke-width="3"/>
+<polyline points="1585,885 1585,1035" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="1691.07,928.934 1585,1035" fill="none" stroke="#B8C0C8" stroke-width="3"/>
+<polyline points="1735,1035 1585,1035" fill="none" stroke="#B8C0C8" stroke-width="3"/>
+<polyline points="1691.07,1141.07 1585,1035" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="1585,1185 1585,1035" fill="none" stroke="#973A79" stroke-width="6"/>
+<polyline points="1478.93,1141.07 1585,1035" fill="none" stroke="#B8C0C8" stroke-width="3"/>
+<polyline points="1435,1035 1585,1035" fill="none" stroke="#B8C0C8" stroke-width="3"/>
+<polyline points="1478.93,928.934 1585,1035" fill="none" stroke="#973A79" stroke-width="6"/>
+<circle cx="1585" cy="885" r="4" fill="#25323D"/>
+<text x="1585" y="849" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">0</text>
+<circle cx="1691.07" cy="928.934" r="4" fill="#25323D"/>
+<text x="1708.04" y="899.963" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">1</text>
+<circle cx="1735" cy="1035" r="4" fill="#25323D"/>
+<text x="1759" y="1023" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<circle cx="1691.07" cy="1141.07" r="4" fill="#25323D"/>
+<text x="1708.04" y="1146.04" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<circle cx="1585" cy="1185" r="4" fill="#25323D"/>
+<text x="1585" y="1197" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<circle cx="1478.93" cy="1141.07" r="4" fill="#25323D"/>
+<text x="1461.96" y="1146.04" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">5</text>
+<circle cx="1435" cy="1035" r="4" fill="#25323D"/>
+<text x="1411" y="1023" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">6</text>
+<circle cx="1478.93" cy="928.934" r="4" fill="#25323D"/>
+<text x="1461.96" y="899.963" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">7</text>
+<circle cx="1585" cy="1035" r="4" fill="#25323D"/>
+<text x="1606" y="1001" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">8</text>
+<text x="315" y="1230" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">全部 57 个单简单圈：没有严格改善</text>
+<text x="950" y="1230" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">奇孤点 7 仍在；连通大块也变成奇分量</text>
+<text x="1585" y="1230" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">两面只共中心；最少净改动恰为 6 条边</text>
+<text x="55" y="1320" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">边界：图类定理与明确反例；不代表任意地图都可局部修复。坐标仅作示意，不用于长度或权重测量。</text>
+</svg>

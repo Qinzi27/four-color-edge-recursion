@@ -11,16 +11,23 @@
 <body>
 <header><a class="brand" href="./rules.html">线名构造台 <small>QINZI27 / LINE-FIRST LAB</small></a><nav><a href="./model.html">模型图解</a><a href="./">旧算法对照</a><a href="https://github.com/Qinzi27/four-color-edge-recursion">GitHub ↗</a></nav></header>
 <section class="research-intro" aria-labelledby="research-title">
-  <p class="research-kicker">QINZI27 · 研究定位 · 2026-09-19</p>
+  <p class="research-kicker">QINZI27 · 研究定位与最新进展 · 2026-09-20</p>
   <h2 id="research-title">从线的两侧出发，研究局部选择何时能够完成全图。</h2>
   <p class="research-lead">这个想法沿整条分割线追踪左右名字与分段关系，把直观画线变成一个可检验的问题：<strong>需要保留哪些边界信息，才能保证“此刻没有冲突”的取名在后续仍然有解？</strong></p>
+  <div class="research-update" aria-labelledby="inside-out-title">
+    <h3 id="inside-out-title">最新进展：从最内闭环起步，什么时候能减少接口？</h3>
+    <p><strong>已经证明一个受限结果：</strong>面邻接为双臂链、且外面两侧都至少有两个面时，固定外起点的最优活动边界宽度为 2，最内端点起步为 1。这是起点带来的真实接口差异。</p>
+    <p><strong>63 图、两组对照共 3834 次运行：</strong>固定允许四色时，有收益也有退步；嵌套树若只用最少的两色，内外起点的状态峰值都为 2。接口更小并不自动意味着状态更少或运行更快。</p>
+    <p>本轮推进了受限条件、实验核验与失败分析；尚未证明原线命名算法普遍加速或一般完备。原蓝线图也尚未观察到顺序收益。</p>
+    <p class="research-links"><a href="https://github.com/Qinzi27/four-color-edge-recursion/blob/main/docs/INSIDE_OUT_EXPERIMENT-2026-09-20.md">查看证明、实验图与最少颜色对照 ↗</a><a href="https://github.com/Qinzi27/four-color-edge-recursion/blob/main/docs/CIRCLE_LAYER_REPAIR-2026-09-20.md">圈层修复与明确反例 ↗</a></p>
+  </div>
   <div class="research-grid">
     <div><h3>研究意义</h3><p>厘清线、面、名字和分割历史的关系，寻找安全取名与同步改名的条件。目标是在明确图类上形成可证明、可比较的构造规则。</p></div>
     <div><h3>现在有什么用</h3><p>重放一次构造、检查证书、定位第一次错误决定，并比较新规则修复了什么、又在哪里退步。失败案例已经帮助提炼出有直接证明的局部异名条件。</p></div>
     <div><h3>是否已有类似研究</h3><p>有。<a href="https://sites.math.rutgers.edu/~zeilberg/mamarim/mamarimPDF/4ct.pdf">二叉树文法</a>、<a href="https://arxiv.org/html/1907.04066v2">边界着色延拓</a>及色差表示都有先例；九侧引理也可归结到经典 Moser spindle 障碍。整套方法的等价性仍待逐项比较，尚未证明一般完备性或效率优势。</p></div>
   </div>
-  <p class="research-evidence">证据快照：最新 Python 候选 v4 在既有 7069 图中完成 7060 图、冲突 9 图；修复旧 4 例却新增 9 例退步。这是指定样本的结果，不是一般成功概率或新的四色定理证明。下方保留早期交互实验。</p>
-  <p class="research-links"><a href="https://github.com/Qinzi27/four-color-edge-recursion/blob/main/docs/RESEARCH_VALUE-2026-09-19.md">研究意义与具体文献对照 ↗</a><a href="https://github.com/Qinzi27/four-color-edge-recursion/blob/main/docs/PEER_BATCH_RESULTS-2026-09-19.md">查看最新实验与失败证据 ↗</a><a href="#title">进入下方构造台 ↓</a></p>
+  <p class="research-evidence">历史算法基线（2026-09-19）：Python 候选 v4 在既有 7069 图中完成 7060 图、冲突 9 图；修复旧 4 例却新增 9 例退步。本轮接口顺序实验不改变这些成绩，也不是一般成功概率或新的四色定理证明。下方保留早期交互实验。</p>
+  <p class="research-links"><a href="https://github.com/Qinzi27/four-color-edge-recursion/blob/main/docs/RESEARCH_VALUE-2026-09-19.md">研究意义与具体文献对照 ↗</a><a href="https://github.com/Qinzi27/four-color-edge-recursion/blob/main/docs/PEER_BATCH_RESULTS-2026-09-19.md">查看 v4 基线与失败证据 ↗</a><a href="#title">进入下方构造台 ↓</a></p>
 </section>
 <main>
   <aside><p class="eyebrow">01 / 构造案例</p><div id="cases"></div><p class="note">每一步先完成几何连接，再直接选标。阻塞也是实验结果，不会偷偷换用其他算法。</p><p class="note"><a href="https://github.com/Qinzi27/four-color-edge-recursion/blob/main/outputs/construction-validation-2026-09-08.json">查看 240 个生成案例与失败报告 ↗</a></p><button id="blank">新建空白</button></aside>
