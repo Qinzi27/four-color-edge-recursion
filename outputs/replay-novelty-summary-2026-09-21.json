@@ -1,0 +1,259 @@
+{
+  "schema_version": 1,
+  "reports": [
+    {
+      "source": "outputs/triangle-chain-replay-2026-09-21.json.gz",
+      "source_sha256": "ddccbc32f6c97f63fbb6df88278396d590aa77fcdf53ed80bd02d96c64e2a678",
+      "source_bytes": 4405604,
+      "all_passed": true,
+      "current_source_hashes_verified": 22,
+      "summary": [
+        {
+          "policy": "forest",
+          "inherit": "left",
+          "histories": 64,
+          "completed": 0,
+          "reached_final_parent": 0,
+          "target_initial_matches_up_to_permutation": 0,
+          "actual_blocked_minimum_costs": {
+            "0": 16,
+            "1": 48
+          },
+          "blocked_with_single_kempe_repair": 64
+        },
+        {
+          "policy": "forest",
+          "inherit": "right",
+          "histories": 64,
+          "completed": 0,
+          "reached_final_parent": 0,
+          "target_initial_matches_up_to_permutation": 0,
+          "actual_blocked_minimum_costs": {
+            "0": 16,
+            "1": 48
+          },
+          "blocked_with_single_kempe_repair": 64
+        },
+        {
+          "policy": "plain",
+          "inherit": "left",
+          "histories": 64,
+          "completed": 0,
+          "reached_final_parent": 0,
+          "target_initial_matches_up_to_permutation": 0,
+          "actual_blocked_minimum_costs": {
+            "0": 48,
+            "1": 16
+          },
+          "blocked_with_single_kempe_repair": 64
+        },
+        {
+          "policy": "plain",
+          "inherit": "right",
+          "histories": 64,
+          "completed": 0,
+          "reached_final_parent": 0,
+          "target_initial_matches_up_to_permutation": 0,
+          "actual_blocked_minimum_costs": {
+            "0": 48,
+            "1": 16
+          },
+          "blocked_with_single_kempe_repair": 64
+        },
+        {
+          "policy": "strip",
+          "inherit": "left",
+          "histories": 64,
+          "completed": 0,
+          "reached_final_parent": 0,
+          "target_initial_matches_up_to_permutation": 0,
+          "actual_blocked_minimum_costs": {
+            "0": 16,
+            "1": 48
+          },
+          "blocked_with_single_kempe_repair": 64
+        },
+        {
+          "policy": "strip",
+          "inherit": "right",
+          "histories": 64,
+          "completed": 0,
+          "reached_final_parent": 0,
+          "target_initial_matches_up_to_permutation": 0,
+          "actual_blocked_minimum_costs": {
+            "0": 16,
+            "1": 48
+          },
+          "blocked_with_single_kempe_repair": 64
+        },
+        {
+          "policy": "web_commitPath",
+          "inherit": "automatic",
+          "histories": 64,
+          "completed": 0,
+          "reached_final_parent": 0,
+          "target_initial_matches_up_to_permutation": 0,
+          "actual_blocked_minimum_costs": {
+            "1": 64
+          },
+          "blocked_with_single_kempe_repair": 64
+        }
+      ],
+      "histories": 448,
+      "attempted_cuts": 6240,
+      "successful_cuts": 5792
+    },
+    {
+      "source": "outputs/kempe-history-continuation-2026-09-21.json.gz",
+      "source_sha256": "2f1c4341cd8887c16bf93362682d2a9f28322f42d52b8f1ed158d9d83e88de1a",
+      "source_bytes": 12957748,
+      "all_passed": true,
+      "current_source_hashes_verified": 27,
+      "summary": {
+        "histories": 128,
+        "completed": 128,
+        "reached_final_parent": 128,
+        "final_initial_matches_up_to_permutation": 128,
+        "fallback_attempts": 1792,
+        "fallback_successes": 1792,
+        "fallback_cost_minus_global_minimum": {
+          "0": 1792
+        },
+        "by_m": [
+          {
+            "m": 1,
+            "histories": 16,
+            "completed": 16,
+            "final_cut_minimum_costs": [
+              2
+            ],
+            "final_cut_actual_costs": [
+              2
+            ],
+            "cumulative_history_cost_range": [
+              4,
+              4
+            ]
+          },
+          {
+            "m": 2,
+            "histories": 16,
+            "completed": 16,
+            "final_cut_minimum_costs": [
+              4
+            ],
+            "final_cut_actual_costs": [
+              4
+            ],
+            "cumulative_history_cost_range": [
+              9,
+              13
+            ]
+          },
+          {
+            "m": 3,
+            "histories": 16,
+            "completed": 16,
+            "final_cut_minimum_costs": [
+              6
+            ],
+            "final_cut_actual_costs": [
+              6
+            ],
+            "cumulative_history_cost_range": [
+              21,
+              21
+            ]
+          },
+          {
+            "m": 4,
+            "histories": 16,
+            "completed": 16,
+            "final_cut_minimum_costs": [
+              8
+            ],
+            "final_cut_actual_costs": [
+              8
+            ],
+            "cumulative_history_cost_range": [
+              33,
+              37
+            ]
+          },
+          {
+            "m": 5,
+            "histories": 16,
+            "completed": 16,
+            "final_cut_minimum_costs": [
+              10
+            ],
+            "final_cut_actual_costs": [
+              10
+            ],
+            "cumulative_history_cost_range": [
+              52,
+              53
+            ]
+          },
+          {
+            "m": 6,
+            "histories": 16,
+            "completed": 16,
+            "final_cut_minimum_costs": [
+              12
+            ],
+            "final_cut_actual_costs": [
+              12
+            ],
+            "cumulative_history_cost_range": [
+              69,
+              76
+            ]
+          },
+          {
+            "m": 7,
+            "histories": 16,
+            "completed": 16,
+            "final_cut_minimum_costs": [
+              14
+            ],
+            "final_cut_actual_costs": [
+              14
+            ],
+            "cumulative_history_cost_range": [
+              95,
+              96
+            ]
+          },
+          {
+            "m": 8,
+            "histories": 16,
+            "completed": 16,
+            "final_cut_minimum_costs": [
+              16
+            ],
+            "final_cut_actual_costs": [
+              16
+            ],
+            "cumulative_history_cost_range": [
+              119,
+              127
+            ]
+          }
+        ]
+      },
+      "histories": 128,
+      "attempted_cuts": 3712,
+      "successful_cuts": 3712
+    },
+    {
+      "source": "outputs/triangle-chain-parent-rigidity-2026-09-21.json",
+      "source_sha256": "6b129abd75572a627f458ccae441a6d1c9c0b8b07bf3f6742cbcb478f44453ff",
+      "source_bytes": 187642,
+      "all_passed": true,
+      "current_source_hashes_verified": 3,
+      "summary": null
+    }
+  ],
+  "scope": "source-backed compact report index, not an additional experiment"
+}

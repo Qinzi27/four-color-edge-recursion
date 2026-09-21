@@ -6,9 +6,74 @@ and verifiable Klein-four-group flow repair.**
 [中文说明](README.zh-CN.md) · [Mathematical foundations](docs/FOUNDATIONS.en.md) · [数学基础](docs/FOUNDATIONS.md)
 · [Research questions](docs/RESEARCH_PLAN.md) · [Related work](docs/RELATED_WORK.md)
 
-## Research progress — 2026-09-20
+## Research progress — 2026-09-21
 
-**Latest audit: restore effective earlier operations; the existing exact boundary
+**The line-side restart route now checks a proposed name reuse before committing
+it. One fixed candidate completes the entire 7069-map corpus.**
+
+- **Full matched comparison:** the frozen v2 baseline completes **7068/7069**
+  distinct geometries; `mother-peer-structural-reuse-v1` completes **7069/7069**,
+  repairing the one failure with no regressions. All prefixes now complete in
+  **363/363 histories**, versus 362/363 for v2. Both policies already complete all
+  363 final maps and 302 static references. The baseline is a hash-bound archived
+  result; all 7069 new-policy runs were executed and independently audited.
+- **Predeclared new seeds:** among **479 geometries absent from the old corpus**,
+  v2 completes **478/479** and the new rule **479/479**. The full new-seed set has
+  481 distinct geometries, including two old overlaps, from 500 prefix references
+  across 20 histories. Both policies were rerun: all-prefix completion improves
+  from **19/20 to 20/20**. These are new seeds from the same guillotine generator,
+  not an independent graph family or independent statistical samples.
+- **A proved preservation property:** with identical initialization and the same
+  no-learning selection process, sound propagation and refutation, cumulative
+  commitments, and no resource interruption, **every successful v2 trajectory is
+  preserved**, with the same names and zero learned relations. This does not
+  guarantee repair of every old failure, a speed advantage, or originality.
+- **What changed:** two nonadjacent sides can be forced to have different names
+  by the surrounding line network. The new rule derives such relations from real
+  boundaries before a commitment; it still starts from current geometry and reads
+  no old coloring. Shared-triangle equality reasoning is established prior work.
+- **Local validation:** **831 Python tests** and the complete `scripts/validate.py`
+  checks pass. A clean publication export also passes **107 Node tests**, the web
+  build and the single-map command. The browser implementation and its default
+  naming rule are unchanged.
+
+[Results, scope and reproduction](docs/STRUCTURAL_RESTART_RESULTS-2026-09-21.md)
+· [Frozen rule](docs/STRUCTURAL_RESTART_RULES-2026-09-21.md)
+· [Success-preservation proof](docs/STRUCTURAL_RESTART_SUCCESS_PRESERVATION-2026-09-21.md)
+· [First fatal choice and geometric proof](docs/V2_FAILURE_DIAGNOSIS-2026-09-21.md)
+
+![The same geometry: blank side identities at the old failure, and the new rule's independently checked complete naming](docs/figures/structural-restart-2026-09-21/same-name-before-commit.png)
+
+Run the original failed drawing through the new Python candidate, using a new
+output filename:
+
+```sh
+python -X utf8 scripts/name_structural_map.py examples/structural-v2-failure-map-2026-09-21.json --output outputs/my-structural-map.json
+```
+
+This is finite full-corpus success plus a conditional preservation theorem,
+**not a general completeness guarantee or a new proof of the Four-Color Theorem**.
+
+### Separate branch: recoloring costs and continuous repair
+
+The September 20–21 Kempe experiments study a different question: repair after
+a split while counting changed old sides. A forest-plus-single-Kempe policy
+completes **128 paired histories**, with **3,712 committed cuts** and **1,792
+fallback repairs**, each attaining that step's checked minimum old-side cost.
+It is not the structural restart candidate above. For a specified staggered
+rectangle family with the exterior fixed and new children excluded from cost,
+every legal parent coloring has minimum net old-side cost exactly **2m** at the
+final split; a Kempe move attains the bound. This does not prove
+optimal cumulative history cost or general policy completion.
+
+[Initial Kempe cost experiment](docs/KEMPE_SPLIT_COST-2026-09-20.md)
+· [Continuous replay](docs/TRIANGLE_CHAIN_REPLAY-2026-09-21.md)
+· [Parent-map rigidity and the cost proof](docs/TRIANGLE_CHAIN_PARENT_RIGIDITY-2026-09-21.md)
+· [Prior-art assessment and limits](docs/NOVELTY_ASSESSMENT-2026-09-21.md)
+
+## Earlier research progress — 2026-09-20
+
+**Earlier audit: restore effective earlier operations; the existing exact boundary
 programs solve all nine v4 failure cases.**
 
 - **Correct the baseline:** frozen runs on the same 7069 maps completed **7068
@@ -27,7 +92,7 @@ programs solve all nine v4 failure cases.**
   information but still gave 40 completions / 9 conflicts. Results from different
   strategies are not combined into a single algorithm score.
 
-[Latest results and commands (中文)](docs/PRIOR_OPERATIONS_RESULTS-2026-09-20.md)
+[September 20 results and commands (中文)](docs/PRIOR_OPERATIONS_RESULTS-2026-09-20.md)
 · [Audit of earlier operations](docs/PRIOR_OPERATIONS_AUDIT-2026-09-20.md)
 · [Closed interfaces and orbit compression](docs/CLOSED_INTERFACE_OPTIMIZATION-2026-09-20.md)
 · [Two-port generalization and three-port obstruction](docs/TWO_PORT_GENERALIZATION-2026-09-20.md)
@@ -119,13 +184,14 @@ nor a universal proof.
 · [English research history](docs/RESEARCH_HISTORY.en.md)
 · [Reproduce from a clean checkout](docs/REPRODUCING_RESEARCH.md)
 
-The historical archive below records the research through 2026-09-19; the
-2026-09-20 additions are linked above. It covers changing definitions,
+The archive includes research through **2026-09-21**. The September 20–21 additions
+are linked above; the chronology below preserves the earlier stages. It covers changing definitions,
 implementations, finite experiments, repaired examples, remaining obstructions,
 and regressions. Different versions and test denominators must not be combined.
-There is no new general proof or uniformly successful candidate algorithm.
+The latest fixed candidate completes the finite full corpus; no general
+completeness guarantee or new proof of the Four-Color Theorem is established.
 Historical statements such as “not uploaded” describe the status at that stage;
-this archive publishes the preserved work. The interactive website remains the
+the current archive includes that preserved work. The interactive website remains the
 earlier construction lab, not an interface to the latest Python candidates.
 
 Earlier frozen baseline (2026-09-19): [peer-batch geometry, full rerun and implicit inequalities](docs/PEER_BATCH_RESULTS-2026-09-19.md).

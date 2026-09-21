@@ -1,0 +1,128 @@
+{
+  "schema": "fourcolor.novelty_dynamic_notes.v1",
+  "access_date": "2026-09-21",
+  "scope": "bounded targeted prior-art search, not exhaustive novelty certification",
+  "private_material_uploaded": false,
+  "network_tool_calls": {"web": 9, "raw_arxiv_api_attempts": 1, "is_http_request_count": false},
+  "queries": [
+    "dynamic graph coloring recourse lower bound edge insertion recoloring vertices fixed number colors",
+    "minimum recoloring single edge insertion graph coloring local search reoptimization Kempe weighted",
+    "\"minimum recoloring\" \"edge\" graph insertion",
+    "\"Kempe\" \"shortest\" \"sequence\" coloring complexity",
+    "graph coloring repair minimum changes local search parameterized edge insertion",
+    "\"Fixing improper colorings of graphs\" publication DOI",
+    "\"recoloring\" \"minimum\" \"Kempe\" \"weight\"",
+    "\"Kempe\" \"minimum\" \"recoloring cost\"",
+    "\"graph coloring\" \"minimum\" \"recoloring\" \"weights\"",
+    "\"guillotine\" \"recoloring\"",
+    "\"rectangular\" \"coloring\" \"recourse\""
+  ],
+  "api_attempt": {
+    "endpoint": "https://export.arxiv.org/api/query",
+    "parameters": {"search_query": "all:\"dynamic graph coloring\"", "start": 0, "max_results": 8},
+    "parser": "paper-lookup/scripts/arxiv_atom.py",
+    "curl_exit": 7,
+    "parser_result": "input was empty",
+    "interpretation": "connection failure, not zero matches",
+    "fallback": "publisher, Dagstuhl and arXiv full-text web pages"
+  },
+  "sources": [
+    {
+      "id": "garnero2018",
+      "title": "Fixing improper colorings of graphs",
+      "authors": ["Valentin Garnero", "Konstanty Junosza-Szaniawski", "Mathieu Liedloff", "Pedro Montealegre", "Paweł Rzążewski"],
+      "year": 2018,
+      "doi": "10.1016/j.tcs.2017.11.013",
+      "url": "https://doi.org/10.1016/j.tcs.2017.11.013",
+      "full_text_url": "https://arxiv.org/html/1607.06911",
+      "full_text_version": "v2, 2017-11-14",
+      "access": "full_text",
+      "locations": ["Section 2.1 Hamming-distance objective", "Section 3.1 List-Fix", "Section 4.1 Algorithm 1 and Theorem 15", "Section 4.2 Theorem 23"],
+      "quote": "to be their Hamming distance",
+      "quote_translation_zh": "将两种着色的距离定义为汉明距离",
+      "known_overlap": ["minimum changed vertices", "conflict-edge branching", "tree-decomposition color-state dynamic programming"],
+      "nonimplications": ["no general legal intermediate path from endpoint optimum", "do not transfer 6^budget to arbitrary zero-weight vertices"]
+    },
+    {
+      "id": "barba2019",
+      "title": "Dynamic Graph Coloring",
+      "authors": ["Luis Barba", "Jean Cardinal", "Matias Korman", "Stefan Langerman", "André van Renssen", "Marcel Roeloffzen", "Sander Verdonschot"],
+      "year": 2019,
+      "online_year": 2018,
+      "doi": "10.1007/s00453-018-0473-y",
+      "url": "https://link.springer.com/article/10.1007/s00453-018-0473-y",
+      "access": "full_text",
+      "locations": ["Section 1.2 three-star example", "Section 4 lower bound"],
+      "quote": "we force the algorithm to recolor at least n/3 vertices",
+      "quote_translation_zh": "迫使算法至少改变 n/3 个顶点的颜色",
+      "known_overlap": ["one edge update may require many recolorings", "tradeoff between colors and recourse"],
+      "nonimplications": ["does not establish the project's exact guillotine 2m formula", "adversarial update sequence and specified initial coloring have different quantifiers"]
+    },
+    {
+      "id": "bonamy2020",
+      "title": "Shortest Reconfiguration of Colorings Under Kempe Changes",
+      "authors": ["Marthe Bonamy", "Marc Heinrich", "Takehiro Ito", "Yusuke Kobayashi", "Haruka Mizuta", "Moritz Mühlenthaler", "Akira Suzuki", "Kunihiro Wasa"],
+      "year": 2020,
+      "doi": "10.4230/LIPIcs.STACS.2020.35",
+      "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.STACS.2020.35",
+      "full_text_url": "https://drops.dagstuhl.de/storage/00lipics/lipics-vol154-stacs2020/LIPIcs.STACS.2020.35/LIPIcs.STACS.2020.35.pdf",
+      "access": "full_text",
+      "locations": ["Theorem 2 page 35:6", "Theorem 12 page 35:11"],
+      "quote": "Kempe Distance on stars is NP-complete.",
+      "quote_translation_zh": "星图上的 Kempe 距离问题是 NP 完全的",
+      "known_overlap": ["minimum Kempe operation count"],
+      "nonimplications": ["target coloring is specified", "star NP-completeness has color count in input, not a proved fixed-four-color claim"]
+    },
+    {
+      "id": "bossek2021",
+      "title": "Time Complexity Analysis of Randomized Search Heuristics for the Dynamic Graph Coloring Problem",
+      "authors": ["Jakob Bossek", "Frank Neumann", "Pan Peng", "Dirk Sudholt"],
+      "year": 2021,
+      "doi": "10.1007/s00453-021-00838-3",
+      "url": "https://link.springer.com/article/10.1007/s00453-021-00838-3",
+      "access": "full_text",
+      "locations": ["Section 1", "Section 3.3", "Section 5"],
+      "known_overlap": ["repair after edge insertion", "Kempe-based reoptimization and hard instances"],
+      "nonimplications": ["heuristic running time is not endpoint recoloring cost"]
+    },
+    {
+      "id": "hardy2018",
+      "title": "Tackling the edge dynamic graph colouring problem with and without future adjacency information",
+      "authors": ["Bradley Hardy", "Rhyd Lewis", "Jonathan Thompson"],
+      "year": 2018,
+      "online_year": 2017,
+      "doi": "10.1007/s10732-017-9327-z",
+      "url": "https://link.springer.com/article/10.1007/s10732-017-9327-z",
+      "access": "full_text",
+      "locations": ["Section 4 future adjacency", "Section 4.1.1 Kempe-chain interchange", "Section 5.2 future adjacency reduction"],
+      "known_overlap": ["proactively reduce future conflicts while maintaining proper coloring"],
+      "nonimplications": ["not a fixed-four-color guillotine minimum-recourse guarantee"]
+    },
+    {
+      "id": "bosek2022",
+      "title": "Dynamic Coloring of Unit Interval Graphs with Limited Recourse Budget",
+      "authors": ["Bartłomiej Bosek", "Anna Zych-Pawlewicz"],
+      "year": 2022,
+      "doi": "10.4230/LIPIcs.ESA.2022.25",
+      "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ESA.2022.25",
+      "access": "abstract_and_metadata_only",
+      "locations": ["Abstract"],
+      "known_overlap": ["geometric dynamic coloring and recourse"],
+      "nonimplications": ["interval insertion/deletion differs from rectangular face split"]
+    }
+  ],
+  "workflow_source": {
+    "title": "Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents",
+    "authors": ["Timothy Kassis", "Vinayak Agarwal", "Yuhuan He", "Darshil Patel", "Aubrey M. Brueckner"],
+    "year": 2026,
+    "url": "https://arxiv.org/abs/2609.00065",
+    "latest_version_observed": "v2",
+    "use": "retrieval workflow only, not graph-theoretic evidence"
+  },
+  "conclusion": {
+    "overall_novelty": "not_established",
+    "known_components": ["Color-Fixing objective", "conflict-edge budget search", "boundary-state coloring DP", "large recourse under edge updates", "Kempe shortest reconfiguration", "future-adjacency prevention"],
+    "exact_guillotine_2m_statement": "no exact matching formulation confirmed in this bounded search",
+    "warning": "not finding a matching formulation does not prove novelty; graph isomorphism and differently named equivalent results remain possible"
+  }
+}

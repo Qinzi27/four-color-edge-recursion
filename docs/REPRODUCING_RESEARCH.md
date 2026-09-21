@@ -1,11 +1,102 @@
 # 外部复现：算法、完整实验、证书与图件
 
-本指南包含截至 2026-09-20 的研究记录。发起思路属于 Qinzi27。
+本指南包含截至 2026-09-21 的研究记录。发起思路属于 Qinzi27。
 这里公开的是可复现的候选方法、成功和负结果，不是一份新的四色定理证明。
 
-## 最新补充：有效旧操作与完整边界状态（2026-09-20）
+## 当前主线：结构反证与整图重启（2026-09-21）
 
-[最新复核](PRIOR_OPERATIONS_RESULTS-2026-09-20.md)分别保存三种不同口径：
+从完整仓库根目录执行以下命令；环境要求见第2节，所有输出与目录均须使用尚未占用的路径。
+先重现旧 v2 唯一失败的真实 `frame/strokes` 几何：
+
+```text
+python -X utf8 scripts/name_structural_map.py examples/structural-v2-failure-map-2026-09-21.json --output outputs/my-structural-map.json
+```
+
+入口只把当前几何交给一次 `mother-peer-structural-reuse-v1` 命名与独立审计，输入中的旧名字等额外字段不参与选择。
+但命令行仍读取正式旧 v2 报告核对来源，所以需要完整仓库证据，不能仅复制单个 Python 文件。
+这份实例预期成功并保存 S1≠S10 的反证证书；成功退出码0，策略冲突退出码2，已有输出拒绝覆盖。
+它保留母线、点到点几何、辅助层级和最小候选，只在当前复用提议被结构证书反驳时改变流程。
+`inconclusive` 是未找到反证，不是当前提议已获可延伸保证。
+
+重跑全部旧库，以及运行前固定的新种子双策略配对实验：
+
+```text
+python -X utf8 scripts/validate_structural_restart_full.py --workers 4 --batch-size 25 --output outputs/my-structural-full.json.gz --summary outputs/my-structural-summary.json --checkpoints outputs/my-structural-checkpoints
+python -X utf8 scripts/validate_structural_restart_new_seeds.py --workers 4 --batch-size 25 --output outputs/my-structural-new-seeds.json.gz --summary outputs/my-structural-new-seeds-summary.json --checkpoints outputs/my-structural-new-seeds-evidence
+```
+
+第一条对7069张旧库去重几何各新跑一次候选规则，并逐次独立全审计；v2对照来自绑定哈希的旧归档。
+第二条完整生成 `20262101..20262120` 共20条 guillotine 历史，每条24刀及初态，共500引用、481去重图；
+每图旧 v2 和新规则各新跑一次，分别用已有独立核验器与结构证书审计器检查。
+与旧库重叠2图、未见479图分别统计，全部前缀和最终图分别统计，不挑选成功前缀，不称独立图族。
+两条命令的 `--limit` 只适合明确标注的小规模 smoke；正式成绩未使用该参数。
+检查器验证原边、商图分区、强制合并、冲突证书、查询覆盖及无结论时的规则饱和，不能只读取成功总数。
+
+正式结果为旧库7069/7069，新种子481/481，其中未见479/479；两批分别修复旧 v2 的1个失败，0退步。
+在[成功保持命题](STRUCTURAL_RESTART_SUCCESS_PRESERVATION-2026-09-21.md)的明确前提下，旧成功轨迹必保留；
+这不保证任意旧失败都能修复，也不保证资源开销不增加。完整解释见[冻结规则](STRUCTURAL_RESTART_RULES-2026-09-21.md)和[结果](STRUCTURAL_RESTART_RESULTS-2026-09-21.md)。
+
+| 正式证据 | 作用 |
+| --- | --- |
+| [旧库完整 gzip](../outputs/structural-restart-full-2026-09-21.json.gz)及[摘要](../outputs/structural-restart-summary-2026-09-21.json) | 7069次新候选运行、完整审计统计、旧基线及逐图对照 |
+| [旧库 checkpoints](../outputs/structural-restart-checkpoints-2026-09-21/) | 全部批次结果、来源与校验记录 |
+| [新种子完整 gzip](../outputs/structural-restart-new-seeds-2026-09-21.json.gz)及[摘要](../outputs/structural-restart-new-seeds-summary-2026-09-21.json) | 481图两策略新运行、novel/overlap及历史口径配对统计 |
+| [新种子 evidence](../outputs/structural-restart-new-seeds-2026-09-21-evidence/) | 全部配对批次、生成清单及校验记录 |
+| [旧失败诊断](../outputs/v2-failure-diagnosis-2026-09-21.json) | 实际几何与可独立重放的结构证书 |
+
+所有学习／失败案例保留完整执行记录；其余案例实际完整执行并审计后保存轨迹哈希及具体名字。
+旧库与新种子分别核对31项、35项输入／源码起止哈希。主 gzip 的 SHA-256 分别是
+`bc692056ee5395168bb39ceae9d3b24d5f5b2d289180bc3261a918c52c7daeca` 和
+`62699d8f2953f77336e938f1ca4bde8be2fa65b4eb594b3bd19442e4b5efc49e`。
+压缩文件本身、分片、源码清单及其独立审计承担不同核验职责，不能用一个摘要代替全部证据。
+
+## 另一路线：Kempe 修复、重标成本与连续历史（2026-09-20—21）
+
+这些程序研究“给定合法旧配色后加入一刀”的修复及成本，与上面的当前整图清空旧名重启分开。
+固定160个首次受阻快照不是160条完整历史；最少 Kempe 操作数、最少净改旧侧数与累计成本也分开。
+
+```text
+python -X utf8 scripts/validate_kempe_split.py --output outputs/my-kempe-split.json
+python -X utf8 scripts/validate_kempe_progress.py --output outputs/my-kempe-progress.json
+python -X utf8 scripts/validate_recoloring_obstructions.py --output outputs/my-recoloring-obstructions.json
+python -X utf8 scripts/validate_triangle_chain_replay.py --output outputs/my-triangle-chain-replay.json
+python -X utf8 scripts/validate_kempe_history_continuation.py --output outputs/my-kempe-history-continuation.json.gz
+python -X utf8 scripts/validate_triangle_chain_parent_rigidity.py --output outputs/my-parent-rigidity.json
+```
+
+各运行器默认读取它声明的正式归档输入；上面的 `my-` 输出不会自动成为下一条命令的输入。
+应先阅读脚本的输入常量、源哈希与对应阶段文档。初次 `kempe-split-2026-09-20.json` 和
+`kempe-progress-2026-09-20.json` 保留为历史记录；验证器及依赖清单补强后，当前源码复现使用
+[split 的 `-v2` 报告](../outputs/kempe-split-2026-09-20-v2.json)与[progress 的 `-v2` 报告](../outputs/kempe-progress-2026-09-20-v2.json)，
+不要把初次报告中已不匹配的旧源码哈希当成当前实现凭证。
+
+[成本实验](KEMPE_SPLIT_COST-2026-09-20.md)保持95/160单次修复覆盖，降低已有成功的改名成本；
+[多步实验](KEMPE_PROGRESS-2026-09-20.md)区分有界操作路径与精确终点成本；
+[障碍构造](RECOLORING_OBSTRUCTIONS-2026-09-21.md)给出指定家族最后一刀至少改 `2m` 个旧侧的结论。
+[连续修复](TRIANGLE_CHAIN_REPLAY-2026-09-21.md)的128条历史完成3712刀、1792次单 Kempe 后备修复；
+每次后备的净旧侧成本最优不等于整条历史累计成本最优。
+[父图刚性](TRIANGLE_CHAIN_PARENT_RIGIDITY-2026-09-21.md)把该家族最后一刀的 `2m` 下界推广到任意合法旧父图标色，
+没有推广成任意图、任意历史或整图重启算法的下界。
+
+完整证据包括[障碍 JSON](../outputs/recoloring-obstructions-2026-09-21.json)、
+[对照重放 gzip](../outputs/triangle-chain-replay-2026-09-21.json.gz)、
+[连续修复 gzip](../outputs/kempe-history-continuation-2026-09-21.json.gz)、
+[父图刚性 JSON](../outputs/triangle-chain-parent-rigidity-2026-09-21.json)及[摘要](../outputs/replay-novelty-summary-2026-09-21.json)。
+对照重放的约128MB明文文件不随本次归档发布；gzip 解压字节与该原始 JSON 完全相同。
+**当前 `validate_kempe_history_continuation.py` 直接读取 gzip，无需解压。**
+如历史代码要求旧 `.json` 路径，可用标准库显式恢复，先核对原始字节哈希，并以 `xb` 拒绝覆盖已有原件：
+
+```text
+python -X utf8 -c "import gzip, hashlib; from pathlib import Path; data = gzip.decompress(Path('outputs/triangle-chain-replay-2026-09-21.json.gz').read_bytes()); assert hashlib.sha256(data).hexdigest() == '727e72fe27de386c830fc2b4d5025b2a7d1ce7fe510d7d51efc710815e6e42b6'; stream = Path('outputs/triangle-chain-replay-2026-09-21.json').open('xb'); stream.write(data); stream.close()"
+```
+
+压缩文件自身 SHA-256 为 `ddccbc32f6c97f63fbb6df88278396d590aa77fcdf53ed80bd02d96c64e2a678`。
+恢复出的明文用于兼容历史输入，不应再次提交为重复大文件。gzip 是完整证据压缩，不是删减版摘要。
+上述代码中的断言必须开启，不能使用 `python -O`。
+
+## 此前补充：有效旧操作与完整边界状态（2026-09-20）
+
+[该阶段复核](PRIOR_OPERATIONS_RESULTS-2026-09-20.md)分别保存三种不同口径：
 历史 7069 图的 v2/v3/v4 冻结结果、49 图 × 8 组合的 392 次新运行，以及原精确程序对 v4 九个失败的 9／9 求解。
 新程序和证据已公开，旧报告中的“未上传”“未改网页”是各轮结束时的历史状态。
 
@@ -26,7 +117,7 @@ python -X utf8 scripts/compare_prior_operations.py --output outputs/my-prior-ope
 [闭合接口／轨道压缩](CLOSED_INTERFACE_OPTIMIZATION-2026-09-20.md)、
 [双接口推广](TWO_PORT_GENERALIZATION-2026-09-20.md)、
 [联合边界过滤及负结果](JOINT_BOUNDARY_RESULTS-2026-09-20.md)。
-最新保存的完整验证为 **674 项 Python 测试，0 失败、0 错误**；测试通过不表示所有贪心案例成功。
+该阶段保存的完整验证为 **674 项 Python 测试，0 失败、0 错误**；测试通过不表示所有贪心案例成功。
 
 ## 此前补充：内起点顺序与最少颜色控制（2026-09-20）
 
@@ -58,11 +149,14 @@ python -X utf8 scripts/render_inside_out.py --input outputs/my-inside-out.json -
 
 | 工作 | 入口 | 能说明什么 |
 | --- | --- | --- |
+| 按需结构反证后对当前整图重新命名 | `scripts/name_structural_map.py` | 当前候选一次运行、完整证书审计；反证无结论仍可能提交后受阻 |
+| 新主线完整旧库实验 | `scripts/validate_structural_restart_full.py` | 固定规则在7069个去重输入上的新运行，旧 v2 为归档对照 |
+| 预声明新种子配对实验 | `scripts/validate_structural_restart_new_seeds.py` | 每图两策略均新跑，分别统计重叠与未见几何、全前缀与终图 |
 | 用精确边界程序求面邻接图配色 | `scripts/solve_closed_interfaces.py --mode orbit` | 完整状态与合法见证；成本取决于边界状态规模 |
 | 研究画板几何的一次性贪心取色 | `scripts/name_peer_batch_map.py` | 固定 v4 规则的一次成功或冲突；它不是历史最强基线 |
 | 对照此前初始化、调度与旧引理 | `scripts/compare_prior_operations.py` | 固定 49 图八组合，分别记录修复与退步 |
-| 重新运行完整样本库 | `scripts/validate_peer_batches_full.py` | 同一规则在 7069 个去重输入上的实际结果 |
-| 审计已存完整实验 | `scripts/audit_peer_batches_full.py` | 统计、输入、分片、色名与推导证书是否一致 |
+| 重新运行旧 v4 完整样本库 | `scripts/validate_peer_batches_full.py` | 固定旧 v4 在 7069 个去重输入上的实际结果 |
+| 审计旧 v4 已存完整实验 | `scripts/audit_peer_batches_full.py` | 统计、输入、分片、色名与推导证书是否一致 |
 | 浏览历史网页演示 | `npm run dev`、`npm run build` | 历史交互实现；并未接入最新 v4 或隐含异名模板 |
 
 不要把“审计通过”理解为所有地图均标色成功。v4 正式记录是 **7060 成功、9 冲突**；
@@ -99,7 +193,7 @@ Linux/macOS 为 `.venv/bin/python -m pip install -r requirements-research.txt`�
 
 不要用 `python -O`：部分独立证书检查依赖断言，正式运行器也会拒绝关闭断言的解释器。
 
-## 3. 最短单图复现
+## 3. 旧 v4 单图复现（历史对照）
 
 从仓库根目录执行，输出使用一个尚不存在的文件名：
 
@@ -144,15 +238,17 @@ python -X utf8 scripts/validate.py --output outputs/my-validation.json
 
 `validate.py` 自身也执行完整 Python 单元测试，再做有限数学检查；
 因此前一条独立 `unittest` 不是必要的重复工作，只是便于分开观察失败。
-2026-09-19 研究快照记录为 536 项 Python 测试和 107 项 Node 测试通过；
-后续发布维护可能增加测试，应看当前实际输出，不硬编码这个数目。
+2026-09-19 研究快照记录为536项 Python 和107项 Node 测试通过；
+9月21日连续修复阶段为786项 Python 与107项 Node；最新结构主线为 **831项 Python及综合验证通过**。
+结构阶段实际调用 Node 几何引擎，但未重跑整套网页测试。发布时另做的干净副本及远端检查以
+[发布日志](PUBLICATION-2026-09-21.md)和实际工作流状态为准，不把前次记录当成本次 CI 结果。
 
 完整测试导入 Pillow，但绘图单元测试用记录画布核对坐标，不实际加载 Windows 的 `msyh.ttc`。
 仅跑软件测试不需要安装这个字体。真正重新生成 PNG 时才需要可用的中文字体。
 
 部分有限数学单元测试使用小图枚举作为独立 oracle；不能据此说生产 v4 隐藏枚举了整张地图配色。
 
-## 5. 新版完整运行与独立审计
+## 5. 旧 v4 完整运行与独立审计
 
 下面的三个输出位置都必须是新名字：
 
@@ -217,13 +313,14 @@ python -X utf8 -m unittest tests.test_implicit_inequality -v
 - 保留 `.gitattributes`；证据目录中某些 JSON 原始字节含 CRLF，自动转 LF、重新缩进或重新 gzip 都会改变档案哈希。
 - 不改名正式输入及 `*-full-parts-2026-09-19/` 分片目录。完整审计还要查 `.sha256.json` sidecar 与 `manifest.json`，不是只有主 `.json.gz` 就足够。
 - `outputs/peer-batches-full-parts-2026-09-19/` 等完整运行目录各有 283 个 gzip 分片与相应校验文件。源报告的 `execution.checkpoint_directory` 指向这些相对位置。
+- 新结构主线的 `outputs/structural-restart-checkpoints-2026-09-21/` 与 `outputs/structural-restart-new-seeds-2026-09-21-evidence/` 也完整保留；不因主报告已压缩就省略这些执行证据。
 - 文档中有几份较大的历史 JSON。网页不能预览全文时应克隆或下载 Raw 文件；不要把网页预览文本复制成替代输入。
 - 大图 PNG 是便于阅读的预览，SVG 保留精确矢量线，图件 `manifest.json` 还保留输入、色名、坐标与哈希。
 
 “字节不一致”首先意味着无法确认是原来那份证据，不等于发现了数学反例。
 新运行的时间戳、计时和压缩文件哈希也不必与旧运行相同；需要匹配的是声明输入、规则、几何、决策与被检查结论。
 
-Git checkout 还可检查当前索引是否逐字节保留证据及冻结的30份源码：
+Git checkout 还可检查当前索引是否逐字节保留证据及检查器声明的冻结源码：
 
 ```text
 python -X utf8 scripts/check_publication_archive.py --output outputs/my-publication-check.json
@@ -235,7 +332,12 @@ python -X utf8 scripts/check_publication_archive.py --output outputs/my-publicat
 
 历史结果按各次实验当时的规则和统计口径引用，具体复现与源码哈希核验范围依各 runner/audit 的声明。
 部分历史同名脚本后来经过修订，当前 checkout 不保证能逐字节重算所有历史版本；
-最新发布索引检查仅绑定 v4 的 30 份冻结源码及索引证据字节，不代表每个历史版本都已重新运行或其原源码哈希均与当前同名文件相同。
+此前发布索引检查绑定 v4 的30份冻结源码及索引证据字节；新主线另按各运行器清单绑定31／35项来源。
+发布索引检查的实际覆盖以脚本与新输出为准，不代表每个历史版本都已重新运行或其原源码哈希均与当前同名文件相同。
+
+本次归档范围见[9月21日发布说明](PUBLICATION-2026-09-21.md)：完整正式报告与分片保留，
+结构 smoke、本地文本日志、重复大明文 JSON 和早期 inside-out 草图不发布；本地原件均保留。
+旧报告里的“未上传”“未发布”是当时状态，不为本次归档改写，也不由本指南预先宣称远端推送或 CI 成功。
 
 私人参考附件保存在被忽略的 `_local/`，不公开、不执行，也不是以上任何测试或计算的依赖。
 私人机器路径、账号凭证、聊天记录与压缩附件不属于公开复现输入。
@@ -263,6 +365,7 @@ npm run build
 本地开发服务器默认在 `http://127.0.0.1:4173/`，根目录与 `rules.html` 是历史交互演示。
 `model.html` 是既有理论解释页。构建产物放在 `dist/`，用于 GitHub Pages。
 
-最新 v4 的完整实验、负结果、独立证书和隐含异名引理属于 Python 研究部分；
-**此次整理公开研究材料，不等于网页默认算法已经升级到 v4，也不等于隐含异名模板已经接入 v4。**
-相关状态应以 [v4 结果报告](PEER_BATCH_RESULTS-2026-09-19.md)和[隐含异名引理](IMPLICIT_INEQUALITY-2026-09-19.md)为准。
+v4 的完整实验、负结果和固定隐含异名引理，以及最新结构反证主线，属于分别冻结的 Python 研究部分；
+**此次整理公开研究材料，没有把网页默认命名器替换为这些研究策略。**
+旧 v4 状态以其[结果报告](PEER_BATCH_RESULTS-2026-09-19.md)和[隐含异名引理](IMPLICIT_INEQUALITY-2026-09-19.md)为准；
+最新主线以[结构重启结果](STRUCTURAL_RESTART_RESULTS-2026-09-21.md)及其单独命令行为准。

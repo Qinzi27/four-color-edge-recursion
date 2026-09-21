@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1640" height="1010" viewBox="0 0 1640 1010">
+<rect width="100%" height="100%" fill="white"/>
+<text x="55" y="30" font-size="39" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">先证明两个侧能否同名，再落下具体名字</text>
+<text x="55" y="96" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">guillotine-20261213，第17步｜同一几何、同一初始规范化｜回到线侧重新命名主线</text>
+<text x="55" y="153" font-size="29" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">A  旧 v2：同名提议导致冲突</text>
+<text x="855" y="153" font-size="29" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">B  加入结构关系：完成合法命名</text>
+<text x="55" y="205" font-size="25" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#B74400">旧尝试：S1=2，S10=2 → 冲突</text>
+<text x="855" y="205" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">已证 c1≠c10；实际取 S1=2，S10=3</text>
+<text x="55" y="251" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">外侧 S0 的名字为1；内部仅显示侧身份</text>
+<text x="855" y="251" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">外侧名字为1；内部数字为实际名字</text>
+<polyline points="55,300 766,300 766,774 55,774 55,300" fill="none" stroke="#202831" stroke-width="5"/>
+<polyline points="55,356.88 484.76,356.88" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="55,405.86 484.76,405.86" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="55,625.48 766,625.48" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="111.88,405.86 111.88,625.48" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="197.99,405.86 197.99,625.48" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="308.59,356.88 308.59,405.86" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="356.78,405.86 356.78,625.48" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="484.76,300 484.76,625.48" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="484.76,324.49 555.07,324.49" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="484.76,379.79 624.59,379.79" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="484.76,421.66 766,421.66" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="484.76,562.28 766,562.28" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="484.76,584.4 766,584.4" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="555.07,300 555.07,379.79" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="624.59,300 624.59,421.66" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="624.59,337.13 766,337.13" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="624.59,389.27 766,389.27" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="269.88" y="313.44" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">S1</text>
+<text x="519.915" y="304.745" font-size="15" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">S2</text>
+<text x="589.83" y="324.895" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">S3</text>
+<text x="695.295" y="306.565" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">S4</text>
+<text x="695.295" y="348.2" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">S5</text>
+<text x="695.295" y="394.965" font-size="21" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">S6</text>
+<text x="625.38" y="476.97" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">S7</text>
+<text x="625.38" y="566.34" font-size="14" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">S8</text>
+<text x="625.38" y="591.94" font-size="26" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">S9</text>
+<text x="410.5" y="684.74" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">S10</text>
+<text x="83.44" y="500.67" font-size="28" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">S11</text>
+<text x="181.795" y="366.37" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">S12</text>
+<text x="396.675" y="366.37" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">S13</text>
+<text x="154.935" y="500.67" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">S14</text>
+<text x="277.385" y="500.67" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">S15</text>
+<text x="420.77" y="500.67" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">S16</text>
+<text x="519.915" y="337.14" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">S17</text>
+<text x="554.675" y="387.225" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">S18</text>
+<rect x="855" y="300" width="429.76" height="56.88" fill="#CDE7F4"/>
+<rect x="1284.76" y="300" width="70.31" height="24.49" fill="#FFE4AF"/>
+<rect x="1355.07" y="300" width="69.52" height="79.79" fill="#DDCFE8"/>
+<rect x="1424.59" y="300" width="141.41" height="37.13" fill="#CDE7F4"/>
+<rect x="1424.59" y="337.13" width="141.41" height="52.14" fill="#FFE4AF"/>
+<rect x="1424.59" y="389.27" width="141.41" height="32.39" fill="#DDCFE8"/>
+<rect x="1284.76" y="421.66" width="281.24" height="140.62" fill="#FFE4AF"/>
+<rect x="1284.76" y="562.28" width="281.24" height="22.12" fill="#DDCFE8"/>
+<rect x="1284.76" y="584.4" width="281.24" height="41.08" fill="#CDE7F4"/>
+<rect x="855" y="625.48" width="711" height="148.52" fill="#FFE4AF"/>
+<rect x="855" y="405.86" width="56.88" height="219.62" fill="#CDE7F4"/>
+<rect x="855" y="356.88" width="253.59" height="48.98" fill="#DDCFE8"/>
+<rect x="1108.59" y="356.88" width="176.17" height="48.98" fill="#FFE4AF"/>
+<rect x="911.88" y="405.86" width="86.11" height="219.62" fill="#EEEEEE"/>
+<rect x="997.99" y="405.86" width="158.79" height="219.62" fill="#CDE7F4"/>
+<rect x="1156.78" y="405.86" width="127.98" height="219.62" fill="#EEEEEE"/>
+<rect x="1284.76" y="324.49" width="70.31" height="55.3" fill="#EEEEEE"/>
+<rect x="1284.76" y="379.79" width="139.83" height="41.87" fill="#CDE7F4"/>
+<polyline points="855,300 1566,300 1566,774 855,774 855,300" fill="none" stroke="#202831" stroke-width="5"/>
+<polyline points="855,356.88 1284.76,356.88" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="855,405.86 1284.76,405.86" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="855,625.48 1566,625.48" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="911.88,405.86 911.88,625.48" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="997.99,405.86 997.99,625.48" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1108.59,356.88 1108.59,405.86" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1156.78,405.86 1156.78,625.48" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1284.76,300 1284.76,625.48" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1284.76,324.49 1355.07,324.49" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1284.76,379.79 1424.59,379.79" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1284.76,421.66 1566,421.66" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1284.76,562.28 1566,562.28" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1284.76,584.4 1566,584.4" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1355.07,300 1355.07,379.79" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1424.59,300 1424.59,421.66" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1424.59,337.13 1566,337.13" fill="none" stroke="#202831" stroke-width="4"/>
+<polyline points="1424.59,389.27 1566,389.27" fill="none" stroke="#202831" stroke-width="4"/>
+<text x="1069.88" y="313.44" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="1319.91" y="304.745" font-size="15" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="1389.83" y="324.895" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<text x="1495.3" y="306.565" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="1495.3" y="348.2" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="1495.3" y="394.965" font-size="21" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<text x="1425.38" y="476.97" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="1425.38" y="566.34" font-size="14" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<text x="1425.38" y="591.94" font-size="26" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="1210.5" y="684.74" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="883.44" y="500.67" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="981.795" y="366.37" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">4</text>
+<text x="1196.67" y="366.37" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">3</text>
+<text x="954.935" y="500.67" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">1</text>
+<text x="1077.38" y="500.67" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<text x="1220.77" y="500.67" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">1</text>
+<text x="1319.91" y="337.14" font-size="30" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">1</text>
+<text x="1354.67" y="387.225" font-size="27" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge" fill="#202831">2</text>
+<polyline points="55,300 484.76,300 484.76,356.88 55,356.88 55,300" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="55,625.48 766,625.48 766,774 55,774 55,625.48" fill="none" stroke="#B74400" stroke-width="5"/>
+<polyline points="855,300 1284.76,300 1284.76,356.88 855,356.88 855,300" fill="none" stroke="#B74400" stroke-width="5"/>
+<text x="865" y="307" font-size="20" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#B74400">S1</text>
+<polyline points="855,625.48 1566,625.48 1566,774 855,774 855,625.48" fill="none" stroke="#B74400" stroke-width="5"/>
+<text x="865" y="632.48" font-size="20" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#B74400">S10</text>
+<text x="55" y="806" font-size="29" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#00618A">关键关系：S1 与 S10 没有直接共边，但整张线网迫使它们异名。</text>
+<text x="55" y="863" font-size="26" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#202831">左图保持未命名状态；右图从该几何实际生成，并逐条核验全部真实边界。</text>
+<text x="55" y="916" font-size="24" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">橙框仅标出同一对侧。两个面板等比例绘制；浅色与数字共同表示右图的名字。</text>
+<text x="55" y="959" font-size="23" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge" fill="#505B67">单图演示｜19个侧（含外侧），55条原边｜不据此主张一般完备性或原创性。</text>
+</svg>

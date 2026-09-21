@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-21T11:05:13.365929+00:00",
+  "kind": "publication-index-and-raw-byte-check",
+  "mathematical_full_audit": false,
+  "read_only_repository_check": true,
+  "passed": true,
+  "head_commit": "9bb476638315afd753267a04d25e4b5a7f85b747",
+  "counts": {
+    "indexed_entries": 4454,
+    "staged_evidence_files": 4057,
+    "raw_evidence_bytes_checked": 522871617,
+    "index_blob_comparisons": 4087,
+    "frozen_source_files": 30,
+    "source_sha256_comparisons": 30
+  },
+  "frozen_report": {
+    "file": "outputs/peer-batches-full-2026-09-19.json.gz",
+    "sha256": "fb004374e06ee0ace87328a8559e108b23e0e9b71663e1a35158738a5e3ad543"
+  },
+  "errors": [],
+  "limits": [
+    "Checks indexed publication paths, raw evidence bytes and the frozen report's source hashes.",
+    "Does not rerun mathematics, scan secrets, stage files, create commits or publish anything.",
+    "Untracked evidence is not implicitly included; the frozen report and all declared sources must be indexed."
+  ]
+}

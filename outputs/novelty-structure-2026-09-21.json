@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "access_date": "2026-09-21",
+  "scope": "bounded prior-art lookup for triangle equality contraction, uniquely 3-colorable path-square family and per-vertex recoloring costs",
+  "exhaustive": false,
+  "call_count": {"web_run": 10, "crossref_curl_attempt": 1, "arxiv_api": 0},
+  "queries": [
+    "\"uniquely colorable\" \"2-tree\"",
+    "graph coloring \"implicit identity\" vertices",
+    "\"guillotine\" \"recoloring\" graph",
+    "\"uniquely 3-colorable\" triangle chain",
+    "Chartrand Geller 1969 uniquely colorable planar graphs pdf",
+    "\"Solving Hard Computational Problems Efficiently\" \"diamond\"",
+    "\"Minimum Cost Homomorphisms\" \"cost\" coloring vertices fixed target graph",
+    "\"recoloring\" \"guillotine\" coloring rectangular",
+    "\"rectangular\" \"partition\" \"recolouring\"",
+    "\"guillotine\" \"coloring\" graph rectangles",
+    "\"coloring\" \"diamond contraction\" graph",
+    "\"triangle chain\" \"recoloring\"",
+    "\"Minimum Cost Homomorphisms to Proper Interval Graphs and Bigraphs\" DOI",
+    "\"On colouring and the chromatic polynomial of k-trees\" Borowiecki Patil pdf",
+    "\"Graph-Chromatic Implicit Relations\" Martin arxiv",
+    "\"Minimal non-extensible precolorings and implicit-relations\"",
+    "\"A dichotomy for minimum cost graph homomorphisms\" DOI",
+    "\"guillotine\" \"minimum\" \"recoloring\""
+  ],
+  "sources": [
+    {
+      "id": "martin2013",
+      "authors": ["Jose Antonio Martin H."],
+      "year": 2013,
+      "title": "Solving Hard Computational Problems Efficiently: Asymptotic Parametric Complexity 3-Coloring Algorithm",
+      "doi": "10.1371/journal.pone.0053437",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0053437",
+      "pdf_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0053437&type=printable",
+      "access_level": "publisher_full_text",
+      "locator": "PDF page 3, Definitions 1-2 and Algorithm 1 steps 1-3",
+      "quotes": [
+        "Contract every u,v of a diamond subgraph until no more diamond subgraphs exist",
+        "return the current contraction sequence (i.e., a legal 3-coloring)."
+      ],
+      "supports": "diamond equality contraction and contraction certificates precede this project",
+      "not_audited": "stronger distributional complexity claims in this article"
+    },
+    {
+      "id": "martin2011",
+      "authors": ["Jose Antonio Martin H."],
+      "year": 2011,
+      "title": "Minimal non-extensible precolorings and implicit-relations",
+      "arxiv_id": "1104.0510",
+      "url": "https://arxiv.org/pdf/1104.0510",
+      "access_level": "author_preprint_full_text",
+      "locator": "PDF page 5, Definition 3.3",
+      "supports": "implicit identity is the pre-existing relation requiring same colors in every legal coloring"
+    },
+    {
+      "id": "brown_flesch2014",
+      "authors": ["David E. Brown", "Breeann M. Flesch"],
+      "year": 2014,
+      "title": "A Characterization of 2-Tree Proper Interval 3-Graphs",
+      "doi": "10.1155/2014/143809",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1155/2014/143809",
+      "access_level": "publisher_full_text",
+      "locator": "Section 2, Theorem 2; fact (i) in the list after Theorem 4",
+      "quote": "a 2-tree is uniquely 3-colorable",
+      "supports": "unique 3-colorability of 2-trees is known",
+      "backward_reference": "Borowiecki and Patil (1986), On colouring and the chromatic polynomial of k-trees, not directly accessed"
+    },
+    {
+      "id": "matsumoto2019",
+      "authors": ["Naoki Matsumoto"],
+      "year": 2019,
+      "title": "Triangles in uniquely 3-colorable graphs on surfaces",
+      "url": "https://ajc.maths.uq.edu.au/pdf/75/ajc_v75_p017.pdf",
+      "access_level": "journal_full_text",
+      "locator": "printed pages 18-19, definition and Theorem 1.2(b)",
+      "supports": "unique coloring terminology and explicit attribution of outerplanar theorem to Chartrand-Geller"
+    },
+    {
+      "id": "chartrand_geller1969",
+      "authors": ["G. Chartrand", "D. Geller"],
+      "year": 1969,
+      "title": "On uniquely colorable planar graphs",
+      "doi": "10.1016/S0021-9800(69)80087-6",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0021980069800876",
+      "access_level": "publisher_abstract_only",
+      "warning": "full-text page and pdf access returned tool errors; original theorem not directly checked"
+    },
+    {
+      "id": "gutin_hell_rafiey_yeo2008",
+      "authors": ["Gregory Gutin", "Pavol Hell", "Arash Rafiey", "Anders Yeo"],
+      "year": 2008,
+      "title": "A dichotomy for minimum cost graph homomorphisms",
+      "doi": "10.1016/j.ejc.2007.11.012",
+      "url": "https://cs.indstate.edu/~arash/publication/mincost060919.pdf",
+      "access_level": "author_hosted_published_full_text",
+      "locator": "printed page 901, Section 1 cost definition; page 902 complete target graph specialization",
+      "quote": "each possible assignment of a value to a variable has an associated cost.",
+      "supports": "per-vertex per-color costs and minimum cost proper coloring already have a standard general model",
+      "preprint_also_read": "https://arxiv.org/pdf/cs/0602038"
+    },
+    {
+      "id": "horev_katz_krakovski_loffler2009",
+      "authors": ["Elad Horev", "Matthew J. Katz", "Roi Krakovski", "Maarten Loffler"],
+      "year": 2009,
+      "title": "Polychromatic 4-Coloring of Guillotine Subdivisions",
+      "doi": "10.1016/j.ipl.2009.03.006",
+      "url": "https://webspace.science.uu.nl/~loffl001/publications/html/Polychromatic_4-Coloring_of_Guillotine_Subdivisions",
+      "access_level": "author_abstract_only",
+      "relevance": "nearby geometry but different coloring object: geometric vertices and all colors on each face boundary",
+      "does_not_establish": "same problem as proper face coloring or a net face-recoloring lower bound"
+    }
+  ],
+  "api_attempts": [
+    {
+      "endpoint": "https://api.crossref.org/works",
+      "parameters": {
+        "query.bibliographic": "On uniquely colorable planar graphs Chartrand Geller",
+        "rows": 3,
+        "select": "DOI,title,author,published,URL"
+      },
+      "status": "connection_failed",
+      "curl_exit": 7,
+      "records_retrieved": 0,
+      "fallback": "publisher and author primary full text via web tool"
+    }
+  ],
+  "access_warnings": [
+    "PMC 3544923 showed a CAPTCHA; publisher PLOS full text was used instead",
+    "1969 ScienceDirect full-text open and pdf open failed",
+    "No exhaustive pagination or backward/forward citation closure",
+    "Search result publication ages were not treated as publication dates",
+    "No exact matching guillotine 2m cost theorem was identified in accessed texts; this is not evidence of novelty"
+  ],
+  "assessment": {
+    "known_foundations": ["diamond equality contraction", "unique 3-colorability of 2-trees", "minimum-cost coloring with literal-color unary costs"],
+    "project_specific_verified_elsewhere": "explicit two-row guillotine geometry and exact 2m cost under stated legal initial coloring",
+    "novelty_status": "unestablished",
+    "next_question": "whether the specific existing online naming policy produces the hard initial coloring, and whether a maintainable invariant avoids it",
+    "claims_not_made": ["first known construction", "new coloring primitive", "general polynomial algorithm", "new proof of Four-Color Theorem"]
+  }
+}

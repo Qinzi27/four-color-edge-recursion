@@ -1,0 +1,2996 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-21T11:07:04.810538+00:00",
+  "passed": true,
+  "mathematical_rerun": false,
+  "basis": "Declared hashes in staged new reports checked against working bytes and index blob identities",
+  "current_report_bindings": [
+    {
+      "report": "docs/figures/structural-restart-2026-09-21/manifest.json",
+      "report_sha256": "e6b1bdaac4ee3b6341ea30c0a5e3c5b54a77bd01eefce6eee7d1c80aeb02e8cb",
+      "hash_field": "source_sha256",
+      "source_checks": [
+        {
+          "file": "docs/STRUCTURAL_RESTART_RULES-2026-09-21.md",
+          "expected_sha256": "fc0fa642730d1bc4ff728243f41aa9ffee6ac66b041f764bc1c1d3b5fd07b9b8",
+          "actual_sha256": "fc0fa642730d1bc4ff728243f41aa9ffee6ac66b041f764bc1c1d3b5fd07b9b8",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/closed_support.py",
+          "expected_sha256": "0a95dd2802d16654a4342332ae9f9825944a26c4fe2cad182de0a214fbfc56f1",
+          "actual_sha256": "0a95dd2802d16654a4342332ae9f9825944a26c4fe2cad182de0a214fbfc56f1",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/embedding.py",
+          "expected_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+          "actual_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/frontier_restart.py",
+          "expected_sha256": "2b82e9de0ecad888b5248602d039997889becac1718282f5c4a5eaa6d8c1c533",
+          "actual_sha256": "2b82e9de0ecad888b5248602d039997889becac1718282f5c4a5eaa6d8c1c533",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/global_restart.py",
+          "expected_sha256": "56aafff2632cf4c02cc20c7a056d02b9932f65f700311846d7d81c1cb32b3cbb",
+          "actual_sha256": "56aafff2632cf4c02cc20c7a056d02b9932f65f700311846d7d81c1cb32b3cbb",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/joint_lines.py",
+          "expected_sha256": "7d0fa2df82b719ceba514818f27d4b155f7e96d47b3c173743e3adf44b930e88",
+          "actual_sha256": "7d0fa2df82b719ceba514818f27d4b155f7e96d47b3c173743e3adf44b930e88",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/level_sides.py",
+          "expected_sha256": "222a8f752722e95c646d5ec58bbbcfc6ff94108d1d893d00806c960a25fd45ba",
+          "actual_sha256": "222a8f752722e95c646d5ec58bbbcfc6ff94108d1d893d00806c960a25fd45ba",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/level_sides_peer.py",
+          "expected_sha256": "a1b1add2d97d34ab29c35e6fab7f5a665aa6841742080907ea95b5d4002a5c56",
+          "actual_sha256": "a1b1add2d97d34ab29c35e6fab7f5a665aa6841742080907ea95b5d4002a5c56",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/line_names.py",
+          "expected_sha256": "8fdfb7019d89edd01643bb5e1554a3aba8480dfbc032f34c72039782c620ce33",
+          "actual_sha256": "8fdfb7019d89edd01643bb5e1554a3aba8480dfbc032f34c72039782c620ce33",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/relation_frontier.py",
+          "expected_sha256": "9d385da99c36e0b9f59c3d2182b697cd8d2b27734014cf97b0314c4ef785e316",
+          "actual_sha256": "9d385da99c36e0b9f59c3d2182b697cd8d2b27734014cf97b0314c4ef785e316",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/relation_names.py",
+          "expected_sha256": "cc6566e959ab87c47d670dc8113d856f64e77132e5542c6d6ec8e98cec28d8cf",
+          "actual_sha256": "cc6566e959ab87c47d670dc8113d856f64e77132e5542c6d6ec8e98cec28d8cf",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/structural_name_relations.py",
+          "expected_sha256": "20b7a71008ca6f85d5a785e5fd354778da55e032e7848603992b399cc157015f",
+          "actual_sha256": "20b7a71008ca6f85d5a785e5fd354778da55e032e7848603992b399cc157015f",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/structural_restart.py",
+          "expected_sha256": "de75e46c09f9bf981c5dd04af6e7b572a809630ca93552b96d0841b925a41a34",
+          "actual_sha256": "de75e46c09f9bf981c5dd04af6e7b572a809630ca93552b96d0841b925a41a34",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/weighted_lines.py",
+          "expected_sha256": "21cf5484a0504807463dafaa54992bf2cd6b1a4924e80b5a4ad29d3381ddd389",
+          "actual_sha256": "21cf5484a0504807463dafaa54992bf2cd6b1a4924e80b5a4ad29d3381ddd389",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/whole_lines.py",
+          "expected_sha256": "5bd54516c18ff74c2dcba2a5e89a27b1af7e3c0277fb3aa8e12f0efa55f9312c",
+          "actual_sha256": "5bd54516c18ff74c2dcba2a5e89a27b1af7e3c0277fb3aa8e12f0efa55f9312c",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/analyze_line_generations.py",
+          "expected_sha256": "48058342337b5a7c5ec523df42e16d447ccf1009dd4ffdf9f1924e06c1e57bd6",
+          "actual_sha256": "48058342337b5a7c5ec523df42e16d447ccf1009dd4ffdf9f1924e06c1e57bd6",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/render_anchor_failure_cases.py",
+          "expected_sha256": "8bdea94aa0f3f8ea101d1c139c47fcf6b645373d64e0da06ad0ea4a6fd8b7b5e",
+          "actual_sha256": "8bdea94aa0f3f8ea101d1c139c47fcf6b645373d64e0da06ad0ea4a6fd8b7b5e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/render_frontier_restart.py",
+          "expected_sha256": "119ab6c5aa18fa8477e34461f079f8305e6293f57582bb9ffd1851026236f78b",
+          "actual_sha256": "119ab6c5aa18fa8477e34461f079f8305e6293f57582bb9ffd1851026236f78b",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/render_global_restart.py",
+          "expected_sha256": "164e4e03456ebb0796d5e66b6660b57dcfb4e8562fae27b0eae8b771f083b75d",
+          "actual_sha256": "164e4e03456ebb0796d5e66b6660b57dcfb4e8562fae27b0eae8b771f083b75d",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/render_structural_restart.py",
+          "expected_sha256": "95c067ff5a2cb513b09d458c7bfcefff3e4c1e6cf5a507477ccc1461f12ef164",
+          "actual_sha256": "95c067ff5a2cb513b09d458c7bfcefff3e4c1e6cf5a507477ccc1461f12ef164",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/restart-geometry.mjs",
+          "expected_sha256": "66d72196c12e56e2ca63b6debb06b661e6dc9a110be6c4f236d9f8f32653897e",
+          "actual_sha256": "66d72196c12e56e2ca63b6debb06b661e6dc9a110be6c4f236d9f8f32653897e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_frontier_restart.py",
+          "expected_sha256": "74b0d487b04ee218c3328cdbf566801812472cbe47a71b4f78bbda580aae39a7",
+          "actual_sha256": "74b0d487b04ee218c3328cdbf566801812472cbe47a71b4f78bbda580aae39a7",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_global_restart.py",
+          "expected_sha256": "2807c3ce904e42e4fb2bd194f773724c6bf7364f592d8cc730dfecc856601c18",
+          "actual_sha256": "2807c3ce904e42e4fb2bd194f773724c6bf7364f592d8cc730dfecc856601c18",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_level_sides.py",
+          "expected_sha256": "b3fc714c0d07e7159c10ae14a92a787aeff3a499470917429b3bee20058ecff8",
+          "actual_sha256": "b3fc714c0d07e7159c10ae14a92a787aeff3a499470917429b3bee20058ecff8",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_level_sides_peer.py",
+          "expected_sha256": "1226941d2a95b632eec0532581b21d775afd25eb24a38b05a039d485528e803f",
+          "actual_sha256": "1226941d2a95b632eec0532581b21d775afd25eb24a38b05a039d485528e803f",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_level_sides_peer_full.py",
+          "expected_sha256": "d2ccbcbed7530ff1a996e288816c26afdb3668fa6e810adc68df64583911e41e",
+          "actual_sha256": "d2ccbcbed7530ff1a996e288816c26afdb3668fa6e810adc68df64583911e41e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_relation_frontier.py",
+          "expected_sha256": "d572cdb030021d3d080e7cf277f688e80c2a5af87b7a52cab3d1991f75b4248e",
+          "actual_sha256": "d572cdb030021d3d080e7cf277f688e80c2a5af87b7a52cab3d1991f75b4248e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_relation_frontier_full.py",
+          "expected_sha256": "d5e06a138f26a8275358ee1c9473cac697e63407ba43c551132b3c72fb3dca69",
+          "actual_sha256": "d5e06a138f26a8275358ee1c9473cac697e63407ba43c551132b3c72fb3dca69",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_structural_restart.py",
+          "expected_sha256": "3900b1bbe98f46e068f485e1297cb7c08299bac3468a06609c8378d63b866c05",
+          "actual_sha256": "3900b1bbe98f46e068f485e1297cb7c08299bac3468a06609c8378d63b866c05",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_structural_restart_full.py",
+          "expected_sha256": "f668082657fb7943ab211f4ac4abe31a06e5acb3275ee6dcb5a284586841226f",
+          "actual_sha256": "f668082657fb7943ab211f4ac4abe31a06e5acb3275ee6dcb5a284586841226f",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_structural_name_relations.py",
+          "expected_sha256": "2d6b81cedb62eafedaa26e6ba92603d77655a273e2d8f0dbeb473c29c3a20940",
+          "actual_sha256": "2d6b81cedb62eafedaa26e6ba92603d77655a273e2d8f0dbeb473c29c3a20940",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_structural_restart.py",
+          "expected_sha256": "1eacd6e81f8341df0b24a13f3d080e78a617a25250988680111e1f4d72cd98b8",
+          "actual_sha256": "1eacd6e81f8341df0b24a13f3d080e78a617a25250988680111e1f4d72cd98b8",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_structural_restart_full.py",
+          "expected_sha256": "1d2d9769d2295036ac692df3a2ead79168d0d6d2d399acf92d604d508ab40bff",
+          "actual_sha256": "1d2d9769d2295036ac692df3a2ead79168d0d6d2d399acf92d604d508ab40bff",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_structural_restart_validation.py",
+          "expected_sha256": "c64d4700628d2e145a122ffeacd366ef252ccbc3e0090faaa0e329bb8e5d425a",
+          "actual_sha256": "c64d4700628d2e145a122ffeacd366ef252ccbc3e0090faaa0e329bb8e5d425a",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "web/engine.js",
+          "expected_sha256": "1451287b703e6f90765a1ed96acd2c4c5fc30d467be6c207da81f4b982035d84",
+          "actual_sha256": "1451287b703e6f90765a1ed96acd2c4c5fc30d467be6c207da81f4b982035d84",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        }
+      ]
+    },
+    {
+      "report": "outputs/kempe-history-continuation-2026-09-21.json.gz",
+      "report_sha256": "2f1c4341cd8887c16bf93362682d2a9f28322f42d52b8f1ed158d9d83e88de1a",
+      "hash_field": "input_and_source_sha256",
+      "source_checks": [
+        {
+          "file": "fourcolor/anchor_forest.py",
+          "expected_sha256": "6bf04f6365d8fbfd086e77d65a9cd845f4b0d8965b4ff861576c41e226f1d42e",
+          "actual_sha256": "6bf04f6365d8fbfd086e77d65a9cd845f4b0d8965b4ff861576c41e226f1d42e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/apex_triangle_cost.py",
+          "expected_sha256": "94ef396c2e665ac670c9a1de63c1f2ab64d4801ebaa20fe1ba4c9a658fb6cc6c",
+          "actual_sha256": "94ef396c2e665ac670c9a1de63c1f2ab64d4801ebaa20fe1ba4c9a658fb6cc6c",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/conservative_recoloring.py",
+          "expected_sha256": "26956dbc1bb5e56a4e05ebb5132cc869ec3737e74261e1e71ae7da387315ff10",
+          "actual_sha256": "26956dbc1bb5e56a4e05ebb5132cc869ec3737e74261e1e71ae7da387315ff10",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/embedding.py",
+          "expected_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+          "actual_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/inherited_names.py",
+          "expected_sha256": "235751061bc97b7cac9036890a29971c3d11688cad4aa628ceafa09412fd4c14",
+          "actual_sha256": "235751061bc97b7cac9036890a29971c3d11688cad4aa628ceafa09412fd4c14",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/kempe_history_policy.py",
+          "expected_sha256": "0f26efa5a90def334831c973e6965e417c3ae811c5abbe0622f9cd6baa4d6d5a",
+          "actual_sha256": "0f26efa5a90def334831c973e6965e417c3ae811c5abbe0622f9cd6baa4d6d5a",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/kempe_split.py",
+          "expected_sha256": "b5264dfcde5953f38a976bedf5d1684bd6fe347e93aab8517047c53785d4eb30",
+          "actual_sha256": "b5264dfcde5953f38a976bedf5d1684bd6fe347e93aab8517047c53785d4eb30",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/recoloring_boundary.py",
+          "expected_sha256": "16c525cdcdac35a26e53e7429a0130b435d65929aeb4633c112f47bf62ff21ae",
+          "actual_sha256": "16c525cdcdac35a26e53e7429a0130b435d65929aeb4633c112f47bf62ff21ae",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/retained_profiles.py",
+          "expected_sha256": "5caed3fe79850cd7bd66a142ada98e5732e3af058325adfc2772fc2da5faec47",
+          "actual_sha256": "5caed3fe79850cd7bd66a142ada98e5732e3af058325adfc2772fc2da5faec47",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/strip_chain.py",
+          "expected_sha256": "30f33bb5f988d34b8ab5a68f6887b6dfa13dadb7cf1ca7a550f6c9098be67d1c",
+          "actual_sha256": "30f33bb5f988d34b8ab5a68f6887b6dfa13dadb7cf1ca7a550f6c9098be67d1c",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/target_renaming.py",
+          "expected_sha256": "8d0a44ced52a63f9878cd57444d2a1f53812a3f0c05a5d9f20001032f7e9ce5a",
+          "actual_sha256": "8d0a44ced52a63f9878cd57444d2a1f53812a3f0c05a5d9f20001032f7e9ce5a",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/triangle_chain_family.py",
+          "expected_sha256": "93d58a2a13c6d401fea55e9c1bde804b2fbea921420be79cb4fc4410595d94ec",
+          "actual_sha256": "93d58a2a13c6d401fea55e9c1bde804b2fbea921420be79cb4fc4410595d94ec",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/triangle_chain_replay.py",
+          "expected_sha256": "f36652e6d99018e0b64a7a547b249cf5a5bb0dadee1bcc3f98af0d412aaa2864",
+          "actual_sha256": "f36652e6d99018e0b64a7a547b249cf5a5bb0dadee1bcc3f98af0d412aaa2864",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "outputs/recoloring-obstructions-2026-09-21.json",
+          "expected_sha256": "a1a10b9fab64565426744f022dfb6af7ea4d50eaa96726c2547bde44dd94598e",
+          "actual_sha256": "a1a10b9fab64565426744f022dfb6af7ea4d50eaa96726c2547bde44dd94598e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "outputs/triangle-chain-replay-2026-09-21.json.gz",
+          "expected_sha256": "ddccbc32f6c97f63fbb6df88278396d590aa77fcdf53ed80bd02d96c64e2a678",
+          "actual_sha256": "ddccbc32f6c97f63fbb6df88278396d590aa77fcdf53ed80bd02d96c64e2a678",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/replay_triangle_chain_web.mjs",
+          "expected_sha256": "98451e2938b09fc8e3c401abb3751a2462424a1b2f604053d68f30be8bab4266",
+          "actual_sha256": "98451e2938b09fc8e3c401abb3751a2462424a1b2f604053d68f30be8bab4266",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_kempe_history_continuation.py",
+          "expected_sha256": "d929db66b6b04e1b89df3052738c7b2e74b8f61c7822df09d4ba90f5c6c184d4",
+          "actual_sha256": "d929db66b6b04e1b89df3052738c7b2e74b8f61c7822df09d4ba90f5c6c184d4",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_kempe_split.py",
+          "expected_sha256": "737f9fa3e9fff4480f5e74719f08750afbc8f67d739a8b7ee6e3cf18cae6a643",
+          "actual_sha256": "737f9fa3e9fff4480f5e74719f08750afbc8f67d739a8b7ee6e3cf18cae6a643",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_recoloring_obstructions.py",
+          "expected_sha256": "7fb0b1345b9c89376150c1b1eca82d26c22f161015e340c7047137d2626575e1",
+          "actual_sha256": "7fb0b1345b9c89376150c1b1eca82d26c22f161015e340c7047137d2626575e1",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_renaming.py",
+          "expected_sha256": "17690acc2278ab535193781f29e7eb41cd895526189fc0b81ea5944aeb61a7b9",
+          "actual_sha256": "17690acc2278ab535193781f29e7eb41cd895526189fc0b81ea5944aeb61a7b9",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_triangle_chain_replay.py",
+          "expected_sha256": "52725875770daeaf751aa12f648749956d8aa4cf2d0d232eb3e2b84c5764c993",
+          "actual_sha256": "52725875770daeaf751aa12f648749956d8aa4cf2d0d232eb3e2b84c5764c993",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_kempe_history_continuation_validation.py",
+          "expected_sha256": "6a404777ac3b13eba38525b8e81c50f4c615c61c70d4d045089fb7bde7f50df2",
+          "actual_sha256": "6a404777ac3b13eba38525b8e81c50f4c615c61c70d4d045089fb7bde7f50df2",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_kempe_history_policy.py",
+          "expected_sha256": "825ab678666b4c63f75e0f2ce0ce94675a2bbbbbaa7209fdc7c7ebd2d661bf8c",
+          "actual_sha256": "825ab678666b4c63f75e0f2ce0ce94675a2bbbbbaa7209fdc7c7ebd2d661bf8c",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_triangle_chain_replay.py",
+          "expected_sha256": "f21643d7af5bdc2169abf9d15fbd2bb99a48e0aa00984b64dedc6684b55cd9f9",
+          "actual_sha256": "f21643d7af5bdc2169abf9d15fbd2bb99a48e0aa00984b64dedc6684b55cd9f9",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_triangle_chain_replay_validation.py",
+          "expected_sha256": "94edc2aa49279a007114a39958d215aa8c31eab82a92b057ffdec56ea853a8a8",
+          "actual_sha256": "94edc2aa49279a007114a39958d215aa8c31eab82a92b057ffdec56ea853a8a8",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "web/construction.js",
+          "expected_sha256": "c79ae59a8f7d71bd5b4f8669e3720e2f49f634211a0d340f5aaec651615525f8",
+          "actual_sha256": "c79ae59a8f7d71bd5b4f8669e3720e2f49f634211a0d340f5aaec651615525f8",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "web/engine.js",
+          "expected_sha256": "1451287b703e6f90765a1ed96acd2c4c5fc30d467be6c207da81f4b982035d84",
+          "actual_sha256": "1451287b703e6f90765a1ed96acd2c4c5fc30d467be6c207da81f4b982035d84",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        }
+      ]
+    },
+    {
+      "report": "outputs/kempe-progress-2026-09-20-v2.json",
+      "report_sha256": "c22defc7bf3e170febbd7865cfe0485c9429d3f76d4f83d34b3cb638a4dca3bd",
+      "hash_field": "input_and_source_sha256",
+      "source_checks": [
+        {
+          "file": "fourcolor/conservative_recoloring.py",
+          "expected_sha256": "26956dbc1bb5e56a4e05ebb5132cc869ec3737e74261e1e71ae7da387315ff10",
+          "actual_sha256": "26956dbc1bb5e56a4e05ebb5132cc869ec3737e74261e1e71ae7da387315ff10",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/embedding.py",
+          "expected_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+          "actual_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/kempe_reconfiguration.py",
+          "expected_sha256": "cd1dd753532d19d02114fc31d55a47aaa2f995f5b6d156d4b3a8e2daccdf3c04",
+          "actual_sha256": "cd1dd753532d19d02114fc31d55a47aaa2f995f5b6d156d4b3a8e2daccdf3c04",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/kempe_split.py",
+          "expected_sha256": "b5264dfcde5953f38a976bedf5d1684bd6fe347e93aab8517047c53785d4eb30",
+          "actual_sha256": "b5264dfcde5953f38a976bedf5d1684bd6fe347e93aab8517047c53785d4eb30",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/target_renaming.py",
+          "expected_sha256": "8d0a44ced52a63f9878cd57444d2a1f53812a3f0c05a5d9f20001032f7e9ce5a",
+          "actual_sha256": "8d0a44ced52a63f9878cd57444d2a1f53812a3f0c05a5d9f20001032f7e9ce5a",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "outputs/kempe-split-2026-09-20-v2.json",
+          "expected_sha256": "944d2609d39ac410dc34ecba7ddfaa5640782a8bfeee92c540a58cecf8a7cd7e",
+          "actual_sha256": "944d2609d39ac410dc34ecba7ddfaa5640782a8bfeee92c540a58cecf8a7cd7e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "outputs/renaming-round-2026-09-18-v2.json",
+          "expected_sha256": "a9aba8d8d9fb2b579fb878dfee00f6e4c261a6c7d17cf85ccc84f98e2b8d29ce",
+          "actual_sha256": "a9aba8d8d9fb2b579fb878dfee00f6e4c261a6c7d17cf85ccc84f98e2b8d29ce",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_kempe_progress.py",
+          "expected_sha256": "202ee370ed87c1a0401fc9aebc50e7bd6187358a7b34b44ce22c3cad5943264a",
+          "actual_sha256": "202ee370ed87c1a0401fc9aebc50e7bd6187358a7b34b44ce22c3cad5943264a",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_kempe_split.py",
+          "expected_sha256": "737f9fa3e9fff4480f5e74719f08750afbc8f67d739a8b7ee6e3cf18cae6a643",
+          "actual_sha256": "737f9fa3e9fff4480f5e74719f08750afbc8f67d739a8b7ee6e3cf18cae6a643",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_renaming.py",
+          "expected_sha256": "17690acc2278ab535193781f29e7eb41cd895526189fc0b81ea5944aeb61a7b9",
+          "actual_sha256": "17690acc2278ab535193781f29e7eb41cd895526189fc0b81ea5944aeb61a7b9",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_conservative_recoloring.py",
+          "expected_sha256": "bf3ca3e19fc8316a7e660b44589117ad576ac221bec9fb1963d0aad237826129",
+          "actual_sha256": "bf3ca3e19fc8316a7e660b44589117ad576ac221bec9fb1963d0aad237826129",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_kempe_progress_validation.py",
+          "expected_sha256": "4db8a6871efe17166ba5b26a1a76c28a541ffa8117547693433efd905c08f480",
+          "actual_sha256": "4db8a6871efe17166ba5b26a1a76c28a541ffa8117547693433efd905c08f480",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_kempe_reconfiguration.py",
+          "expected_sha256": "371c3eb7f18071d200273f62c7890e4ef982ba1ae6be8f85fac5ef47bf12f7f4",
+          "actual_sha256": "371c3eb7f18071d200273f62c7890e4ef982ba1ae6be8f85fac5ef47bf12f7f4",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        }
+      ]
+    },
+    {
+      "report": "outputs/kempe-split-2026-09-20-v2.json",
+      "report_sha256": "944d2609d39ac410dc34ecba7ddfaa5640782a8bfeee92c540a58cecf8a7cd7e",
+      "hash_field": "input_and_source_sha256",
+      "source_checks": [
+        {
+          "file": "fourcolor/embedding.py",
+          "expected_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+          "actual_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/kempe_split.py",
+          "expected_sha256": "b5264dfcde5953f38a976bedf5d1684bd6fe347e93aab8517047c53785d4eb30",
+          "actual_sha256": "b5264dfcde5953f38a976bedf5d1684bd6fe347e93aab8517047c53785d4eb30",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/target_renaming.py",
+          "expected_sha256": "8d0a44ced52a63f9878cd57444d2a1f53812a3f0c05a5d9f20001032f7e9ce5a",
+          "actual_sha256": "8d0a44ced52a63f9878cd57444d2a1f53812a3f0c05a5d9f20001032f7e9ce5a",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "outputs/renaming-round-2026-09-18-v2.json",
+          "expected_sha256": "a9aba8d8d9fb2b579fb878dfee00f6e4c261a6c7d17cf85ccc84f98e2b8d29ce",
+          "actual_sha256": "a9aba8d8d9fb2b579fb878dfee00f6e4c261a6c7d17cf85ccc84f98e2b8d29ce",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "outputs/target-renaming-2026-09-18-v2.json",
+          "expected_sha256": "99f899159a26b4b8e31e7d83161fad45d75edbef2cd35b164a17b9f6f9d85cd0",
+          "actual_sha256": "99f899159a26b4b8e31e7d83161fad45d75edbef2cd35b164a17b9f6f9d85cd0",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/rename-diagnostics.mjs",
+          "expected_sha256": "331c766b3a5f3bc6e0a209182b8a562356d195e37a12d9d83142f1af31129e16",
+          "actual_sha256": "331c766b3a5f3bc6e0a209182b8a562356d195e37a12d9d83142f1af31129e16",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_kempe_split.py",
+          "expected_sha256": "737f9fa3e9fff4480f5e74719f08750afbc8f67d739a8b7ee6e3cf18cae6a643",
+          "actual_sha256": "737f9fa3e9fff4480f5e74719f08750afbc8f67d739a8b7ee6e3cf18cae6a643",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_renaming.py",
+          "expected_sha256": "17690acc2278ab535193781f29e7eb41cd895526189fc0b81ea5944aeb61a7b9",
+          "actual_sha256": "17690acc2278ab535193781f29e7eb41cd895526189fc0b81ea5944aeb61a7b9",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_kempe_split.py",
+          "expected_sha256": "128720d31c8b4066276a219396d14986bb317990f567201f764247b2f3c5a86d",
+          "actual_sha256": "128720d31c8b4066276a219396d14986bb317990f567201f764247b2f3c5a86d",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_kempe_split_validation.py",
+          "expected_sha256": "c725d2c2f270dcd30728411afc1c519778896a1d00cdbb2c599aa301cd5134a6",
+          "actual_sha256": "c725d2c2f270dcd30728411afc1c519778896a1d00cdbb2c599aa301cd5134a6",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        }
+      ]
+    },
+    {
+      "report": "outputs/recoloring-obstructions-2026-09-21.json",
+      "report_sha256": "a1a10b9fab64565426744f022dfb6af7ea4d50eaa96726c2547bde44dd94598e",
+      "hash_field": "input_and_source_sha256",
+      "source_checks": [
+        {
+          "file": "fourcolor/apex_triangle_cost.py",
+          "expected_sha256": "94ef396c2e665ac670c9a1de63c1f2ab64d4801ebaa20fe1ba4c9a658fb6cc6c",
+          "actual_sha256": "94ef396c2e665ac670c9a1de63c1f2ab64d4801ebaa20fe1ba4c9a658fb6cc6c",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/conservative_recoloring.py",
+          "expected_sha256": "26956dbc1bb5e56a4e05ebb5132cc869ec3737e74261e1e71ae7da387315ff10",
+          "actual_sha256": "26956dbc1bb5e56a4e05ebb5132cc869ec3737e74261e1e71ae7da387315ff10",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/embedding.py",
+          "expected_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+          "actual_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/kempe_split.py",
+          "expected_sha256": "b5264dfcde5953f38a976bedf5d1684bd6fe347e93aab8517047c53785d4eb30",
+          "actual_sha256": "b5264dfcde5953f38a976bedf5d1684bd6fe347e93aab8517047c53785d4eb30",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/recoloring_boundary.py",
+          "expected_sha256": "16c525cdcdac35a26e53e7429a0130b435d65929aeb4633c112f47bf62ff21ae",
+          "actual_sha256": "16c525cdcdac35a26e53e7429a0130b435d65929aeb4633c112f47bf62ff21ae",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/target_renaming.py",
+          "expected_sha256": "8d0a44ced52a63f9878cd57444d2a1f53812a3f0c05a5d9f20001032f7e9ce5a",
+          "actual_sha256": "8d0a44ced52a63f9878cd57444d2a1f53812a3f0c05a5d9f20001032f7e9ce5a",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/triangle_chain_family.py",
+          "expected_sha256": "93d58a2a13c6d401fea55e9c1bde804b2fbea921420be79cb4fc4410595d94ec",
+          "actual_sha256": "93d58a2a13c6d401fea55e9c1bde804b2fbea921420be79cb4fc4410595d94ec",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "outputs/kempe-progress-2026-09-20-v2.json",
+          "expected_sha256": "c22defc7bf3e170febbd7865cfe0485c9429d3f76d4f83d34b3cb638a4dca3bd",
+          "actual_sha256": "c22defc7bf3e170febbd7865cfe0485c9429d3f76d4f83d34b3cb638a4dca3bd",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "outputs/renaming-round-2026-09-18-v2.json",
+          "expected_sha256": "a9aba8d8d9fb2b579fb878dfee00f6e4c261a6c7d17cf85ccc84f98e2b8d29ce",
+          "actual_sha256": "a9aba8d8d9fb2b579fb878dfee00f6e4c261a6c7d17cf85ccc84f98e2b8d29ce",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_kempe_split.py",
+          "expected_sha256": "737f9fa3e9fff4480f5e74719f08750afbc8f67d739a8b7ee6e3cf18cae6a643",
+          "actual_sha256": "737f9fa3e9fff4480f5e74719f08750afbc8f67d739a8b7ee6e3cf18cae6a643",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_recoloring_obstructions.py",
+          "expected_sha256": "7fb0b1345b9c89376150c1b1eca82d26c22f161015e340c7047137d2626575e1",
+          "actual_sha256": "7fb0b1345b9c89376150c1b1eca82d26c22f161015e340c7047137d2626575e1",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_renaming.py",
+          "expected_sha256": "17690acc2278ab535193781f29e7eb41cd895526189fc0b81ea5944aeb61a7b9",
+          "actual_sha256": "17690acc2278ab535193781f29e7eb41cd895526189fc0b81ea5944aeb61a7b9",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_apex_triangle_cost.py",
+          "expected_sha256": "86d97b64f913c4fce8c4398c27ba19008febed61ea0135255bbcf1c3a04646b0",
+          "actual_sha256": "86d97b64f913c4fce8c4398c27ba19008febed61ea0135255bbcf1c3a04646b0",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_recoloring_boundary.py",
+          "expected_sha256": "36ff60601770da571285171908331e6b30283f1382bf089d4c6b13be8ab11f60",
+          "actual_sha256": "36ff60601770da571285171908331e6b30283f1382bf089d4c6b13be8ab11f60",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_recoloring_obstructions_validation.py",
+          "expected_sha256": "58794dcb0f0c69894ce0e62228b709f945271ff655b2e66fac855a81421059b9",
+          "actual_sha256": "58794dcb0f0c69894ce0e62228b709f945271ff655b2e66fac855a81421059b9",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_triangle_chain_family.py",
+          "expected_sha256": "4ebef5b05c4f21bb9c5b04530f49002ae88b81bf770d6a6067c3b4c1a50bd38b",
+          "actual_sha256": "4ebef5b05c4f21bb9c5b04530f49002ae88b81bf770d6a6067c3b4c1a50bd38b",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        }
+      ]
+    },
+    {
+      "report": "outputs/structural-restart-checkpoints-2026-09-21/manifest.json",
+      "report_sha256": "9856d8b598b8c697e2f5a1eeea2d4b01b761d316d51bac0e90ef237cf5492781",
+      "hash_field": "source_sha256",
+      "source_checks": [
+        {
+          "file": "docs/STRUCTURAL_RESTART_RULES-2026-09-21.md",
+          "expected_sha256": "fc0fa642730d1bc4ff728243f41aa9ffee6ac66b041f764bc1c1d3b5fd07b9b8",
+          "actual_sha256": "fc0fa642730d1bc4ff728243f41aa9ffee6ac66b041f764bc1c1d3b5fd07b9b8",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/closed_support.py",
+          "expected_sha256": "0a95dd2802d16654a4342332ae9f9825944a26c4fe2cad182de0a214fbfc56f1",
+          "actual_sha256": "0a95dd2802d16654a4342332ae9f9825944a26c4fe2cad182de0a214fbfc56f1",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/embedding.py",
+          "expected_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+          "actual_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/frontier_restart.py",
+          "expected_sha256": "2b82e9de0ecad888b5248602d039997889becac1718282f5c4a5eaa6d8c1c533",
+          "actual_sha256": "2b82e9de0ecad888b5248602d039997889becac1718282f5c4a5eaa6d8c1c533",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/global_restart.py",
+          "expected_sha256": "56aafff2632cf4c02cc20c7a056d02b9932f65f700311846d7d81c1cb32b3cbb",
+          "actual_sha256": "56aafff2632cf4c02cc20c7a056d02b9932f65f700311846d7d81c1cb32b3cbb",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/joint_lines.py",
+          "expected_sha256": "7d0fa2df82b719ceba514818f27d4b155f7e96d47b3c173743e3adf44b930e88",
+          "actual_sha256": "7d0fa2df82b719ceba514818f27d4b155f7e96d47b3c173743e3adf44b930e88",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/level_sides.py",
+          "expected_sha256": "222a8f752722e95c646d5ec58bbbcfc6ff94108d1d893d00806c960a25fd45ba",
+          "actual_sha256": "222a8f752722e95c646d5ec58bbbcfc6ff94108d1d893d00806c960a25fd45ba",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/level_sides_peer.py",
+          "expected_sha256": "a1b1add2d97d34ab29c35e6fab7f5a665aa6841742080907ea95b5d4002a5c56",
+          "actual_sha256": "a1b1add2d97d34ab29c35e6fab7f5a665aa6841742080907ea95b5d4002a5c56",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/line_names.py",
+          "expected_sha256": "8fdfb7019d89edd01643bb5e1554a3aba8480dfbc032f34c72039782c620ce33",
+          "actual_sha256": "8fdfb7019d89edd01643bb5e1554a3aba8480dfbc032f34c72039782c620ce33",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/relation_frontier.py",
+          "expected_sha256": "9d385da99c36e0b9f59c3d2182b697cd8d2b27734014cf97b0314c4ef785e316",
+          "actual_sha256": "9d385da99c36e0b9f59c3d2182b697cd8d2b27734014cf97b0314c4ef785e316",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/relation_names.py",
+          "expected_sha256": "cc6566e959ab87c47d670dc8113d856f64e77132e5542c6d6ec8e98cec28d8cf",
+          "actual_sha256": "cc6566e959ab87c47d670dc8113d856f64e77132e5542c6d6ec8e98cec28d8cf",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/structural_name_relations.py",
+          "expected_sha256": "20b7a71008ca6f85d5a785e5fd354778da55e032e7848603992b399cc157015f",
+          "actual_sha256": "20b7a71008ca6f85d5a785e5fd354778da55e032e7848603992b399cc157015f",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/structural_restart.py",
+          "expected_sha256": "de75e46c09f9bf981c5dd04af6e7b572a809630ca93552b96d0841b925a41a34",
+          "actual_sha256": "de75e46c09f9bf981c5dd04af6e7b572a809630ca93552b96d0841b925a41a34",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/weighted_lines.py",
+          "expected_sha256": "21cf5484a0504807463dafaa54992bf2cd6b1a4924e80b5a4ad29d3381ddd389",
+          "actual_sha256": "21cf5484a0504807463dafaa54992bf2cd6b1a4924e80b5a4ad29d3381ddd389",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/whole_lines.py",
+          "expected_sha256": "5bd54516c18ff74c2dcba2a5e89a27b1af7e3c0277fb3aa8e12f0efa55f9312c",
+          "actual_sha256": "5bd54516c18ff74c2dcba2a5e89a27b1af7e3c0277fb3aa8e12f0efa55f9312c",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/analyze_line_generations.py",
+          "expected_sha256": "48058342337b5a7c5ec523df42e16d447ccf1009dd4ffdf9f1924e06c1e57bd6",
+          "actual_sha256": "48058342337b5a7c5ec523df42e16d447ccf1009dd4ffdf9f1924e06c1e57bd6",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/restart-geometry.mjs",
+          "expected_sha256": "66d72196c12e56e2ca63b6debb06b661e6dc9a110be6c4f236d9f8f32653897e",
+          "actual_sha256": "66d72196c12e56e2ca63b6debb06b661e6dc9a110be6c4f236d9f8f32653897e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_frontier_restart.py",
+          "expected_sha256": "74b0d487b04ee218c3328cdbf566801812472cbe47a71b4f78bbda580aae39a7",
+          "actual_sha256": "74b0d487b04ee218c3328cdbf566801812472cbe47a71b4f78bbda580aae39a7",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_global_restart.py",
+          "expected_sha256": "2807c3ce904e42e4fb2bd194f773724c6bf7364f592d8cc730dfecc856601c18",
+          "actual_sha256": "2807c3ce904e42e4fb2bd194f773724c6bf7364f592d8cc730dfecc856601c18",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_level_sides.py",
+          "expected_sha256": "b3fc714c0d07e7159c10ae14a92a787aeff3a499470917429b3bee20058ecff8",
+          "actual_sha256": "b3fc714c0d07e7159c10ae14a92a787aeff3a499470917429b3bee20058ecff8",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_level_sides_peer.py",
+          "expected_sha256": "1226941d2a95b632eec0532581b21d775afd25eb24a38b05a039d485528e803f",
+          "actual_sha256": "1226941d2a95b632eec0532581b21d775afd25eb24a38b05a039d485528e803f",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_level_sides_peer_full.py",
+          "expected_sha256": "d2ccbcbed7530ff1a996e288816c26afdb3668fa6e810adc68df64583911e41e",
+          "actual_sha256": "d2ccbcbed7530ff1a996e288816c26afdb3668fa6e810adc68df64583911e41e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_relation_frontier.py",
+          "expected_sha256": "d572cdb030021d3d080e7cf277f688e80c2a5af87b7a52cab3d1991f75b4248e",
+          "actual_sha256": "d572cdb030021d3d080e7cf277f688e80c2a5af87b7a52cab3d1991f75b4248e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_relation_frontier_full.py",
+          "expected_sha256": "d5e06a138f26a8275358ee1c9473cac697e63407ba43c551132b3c72fb3dca69",
+          "actual_sha256": "d5e06a138f26a8275358ee1c9473cac697e63407ba43c551132b3c72fb3dca69",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_structural_restart.py",
+          "expected_sha256": "3900b1bbe98f46e068f485e1297cb7c08299bac3468a06609c8378d63b866c05",
+          "actual_sha256": "3900b1bbe98f46e068f485e1297cb7c08299bac3468a06609c8378d63b866c05",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_structural_restart_full.py",
+          "expected_sha256": "f668082657fb7943ab211f4ac4abe31a06e5acb3275ee6dcb5a284586841226f",
+          "actual_sha256": "f668082657fb7943ab211f4ac4abe31a06e5acb3275ee6dcb5a284586841226f",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_structural_name_relations.py",
+          "expected_sha256": "2d6b81cedb62eafedaa26e6ba92603d77655a273e2d8f0dbeb473c29c3a20940",
+          "actual_sha256": "2d6b81cedb62eafedaa26e6ba92603d77655a273e2d8f0dbeb473c29c3a20940",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_structural_restart.py",
+          "expected_sha256": "1eacd6e81f8341df0b24a13f3d080e78a617a25250988680111e1f4d72cd98b8",
+          "actual_sha256": "1eacd6e81f8341df0b24a13f3d080e78a617a25250988680111e1f4d72cd98b8",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_structural_restart_full.py",
+          "expected_sha256": "1d2d9769d2295036ac692df3a2ead79168d0d6d2d399acf92d604d508ab40bff",
+          "actual_sha256": "1d2d9769d2295036ac692df3a2ead79168d0d6d2d399acf92d604d508ab40bff",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_structural_restart_validation.py",
+          "expected_sha256": "c64d4700628d2e145a122ffeacd366ef252ccbc3e0090faaa0e329bb8e5d425a",
+          "actual_sha256": "c64d4700628d2e145a122ffeacd366ef252ccbc3e0090faaa0e329bb8e5d425a",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "web/engine.js",
+          "expected_sha256": "1451287b703e6f90765a1ed96acd2c4c5fc30d467be6c207da81f4b982035d84",
+          "actual_sha256": "1451287b703e6f90765a1ed96acd2c4c5fc30d467be6c207da81f4b982035d84",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        }
+      ]
+    },
+    {
+      "report": "outputs/structural-restart-full-2026-09-21.json.gz",
+      "report_sha256": "bc692056ee5395168bb39ceae9d3b24d5f5b2d289180bc3261a918c52c7daeca",
+      "hash_field": "source_sha256",
+      "source_checks": [
+        {
+          "file": "docs/STRUCTURAL_RESTART_RULES-2026-09-21.md",
+          "expected_sha256": "fc0fa642730d1bc4ff728243f41aa9ffee6ac66b041f764bc1c1d3b5fd07b9b8",
+          "actual_sha256": "fc0fa642730d1bc4ff728243f41aa9ffee6ac66b041f764bc1c1d3b5fd07b9b8",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/closed_support.py",
+          "expected_sha256": "0a95dd2802d16654a4342332ae9f9825944a26c4fe2cad182de0a214fbfc56f1",
+          "actual_sha256": "0a95dd2802d16654a4342332ae9f9825944a26c4fe2cad182de0a214fbfc56f1",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/embedding.py",
+          "expected_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+          "actual_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/frontier_restart.py",
+          "expected_sha256": "2b82e9de0ecad888b5248602d039997889becac1718282f5c4a5eaa6d8c1c533",
+          "actual_sha256": "2b82e9de0ecad888b5248602d039997889becac1718282f5c4a5eaa6d8c1c533",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/global_restart.py",
+          "expected_sha256": "56aafff2632cf4c02cc20c7a056d02b9932f65f700311846d7d81c1cb32b3cbb",
+          "actual_sha256": "56aafff2632cf4c02cc20c7a056d02b9932f65f700311846d7d81c1cb32b3cbb",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/joint_lines.py",
+          "expected_sha256": "7d0fa2df82b719ceba514818f27d4b155f7e96d47b3c173743e3adf44b930e88",
+          "actual_sha256": "7d0fa2df82b719ceba514818f27d4b155f7e96d47b3c173743e3adf44b930e88",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/level_sides.py",
+          "expected_sha256": "222a8f752722e95c646d5ec58bbbcfc6ff94108d1d893d00806c960a25fd45ba",
+          "actual_sha256": "222a8f752722e95c646d5ec58bbbcfc6ff94108d1d893d00806c960a25fd45ba",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/level_sides_peer.py",
+          "expected_sha256": "a1b1add2d97d34ab29c35e6fab7f5a665aa6841742080907ea95b5d4002a5c56",
+          "actual_sha256": "a1b1add2d97d34ab29c35e6fab7f5a665aa6841742080907ea95b5d4002a5c56",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/line_names.py",
+          "expected_sha256": "8fdfb7019d89edd01643bb5e1554a3aba8480dfbc032f34c72039782c620ce33",
+          "actual_sha256": "8fdfb7019d89edd01643bb5e1554a3aba8480dfbc032f34c72039782c620ce33",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/relation_frontier.py",
+          "expected_sha256": "9d385da99c36e0b9f59c3d2182b697cd8d2b27734014cf97b0314c4ef785e316",
+          "actual_sha256": "9d385da99c36e0b9f59c3d2182b697cd8d2b27734014cf97b0314c4ef785e316",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/relation_names.py",
+          "expected_sha256": "cc6566e959ab87c47d670dc8113d856f64e77132e5542c6d6ec8e98cec28d8cf",
+          "actual_sha256": "cc6566e959ab87c47d670dc8113d856f64e77132e5542c6d6ec8e98cec28d8cf",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/structural_name_relations.py",
+          "expected_sha256": "20b7a71008ca6f85d5a785e5fd354778da55e032e7848603992b399cc157015f",
+          "actual_sha256": "20b7a71008ca6f85d5a785e5fd354778da55e032e7848603992b399cc157015f",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/structural_restart.py",
+          "expected_sha256": "de75e46c09f9bf981c5dd04af6e7b572a809630ca93552b96d0841b925a41a34",
+          "actual_sha256": "de75e46c09f9bf981c5dd04af6e7b572a809630ca93552b96d0841b925a41a34",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/weighted_lines.py",
+          "expected_sha256": "21cf5484a0504807463dafaa54992bf2cd6b1a4924e80b5a4ad29d3381ddd389",
+          "actual_sha256": "21cf5484a0504807463dafaa54992bf2cd6b1a4924e80b5a4ad29d3381ddd389",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/whole_lines.py",
+          "expected_sha256": "5bd54516c18ff74c2dcba2a5e89a27b1af7e3c0277fb3aa8e12f0efa55f9312c",
+          "actual_sha256": "5bd54516c18ff74c2dcba2a5e89a27b1af7e3c0277fb3aa8e12f0efa55f9312c",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/analyze_line_generations.py",
+          "expected_sha256": "48058342337b5a7c5ec523df42e16d447ccf1009dd4ffdf9f1924e06c1e57bd6",
+          "actual_sha256": "48058342337b5a7c5ec523df42e16d447ccf1009dd4ffdf9f1924e06c1e57bd6",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/restart-geometry.mjs",
+          "expected_sha256": "66d72196c12e56e2ca63b6debb06b661e6dc9a110be6c4f236d9f8f32653897e",
+          "actual_sha256": "66d72196c12e56e2ca63b6debb06b661e6dc9a110be6c4f236d9f8f32653897e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_frontier_restart.py",
+          "expected_sha256": "74b0d487b04ee218c3328cdbf566801812472cbe47a71b4f78bbda580aae39a7",
+          "actual_sha256": "74b0d487b04ee218c3328cdbf566801812472cbe47a71b4f78bbda580aae39a7",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_global_restart.py",
+          "expected_sha256": "2807c3ce904e42e4fb2bd194f773724c6bf7364f592d8cc730dfecc856601c18",
+          "actual_sha256": "2807c3ce904e42e4fb2bd194f773724c6bf7364f592d8cc730dfecc856601c18",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_level_sides.py",
+          "expected_sha256": "b3fc714c0d07e7159c10ae14a92a787aeff3a499470917429b3bee20058ecff8",
+          "actual_sha256": "b3fc714c0d07e7159c10ae14a92a787aeff3a499470917429b3bee20058ecff8",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_level_sides_peer.py",
+          "expected_sha256": "1226941d2a95b632eec0532581b21d775afd25eb24a38b05a039d485528e803f",
+          "actual_sha256": "1226941d2a95b632eec0532581b21d775afd25eb24a38b05a039d485528e803f",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_level_sides_peer_full.py",
+          "expected_sha256": "d2ccbcbed7530ff1a996e288816c26afdb3668fa6e810adc68df64583911e41e",
+          "actual_sha256": "d2ccbcbed7530ff1a996e288816c26afdb3668fa6e810adc68df64583911e41e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_relation_frontier.py",
+          "expected_sha256": "d572cdb030021d3d080e7cf277f688e80c2a5af87b7a52cab3d1991f75b4248e",
+          "actual_sha256": "d572cdb030021d3d080e7cf277f688e80c2a5af87b7a52cab3d1991f75b4248e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_relation_frontier_full.py",
+          "expected_sha256": "d5e06a138f26a8275358ee1c9473cac697e63407ba43c551132b3c72fb3dca69",
+          "actual_sha256": "d5e06a138f26a8275358ee1c9473cac697e63407ba43c551132b3c72fb3dca69",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_structural_restart.py",
+          "expected_sha256": "3900b1bbe98f46e068f485e1297cb7c08299bac3468a06609c8378d63b866c05",
+          "actual_sha256": "3900b1bbe98f46e068f485e1297cb7c08299bac3468a06609c8378d63b866c05",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_structural_restart_full.py",
+          "expected_sha256": "f668082657fb7943ab211f4ac4abe31a06e5acb3275ee6dcb5a284586841226f",
+          "actual_sha256": "f668082657fb7943ab211f4ac4abe31a06e5acb3275ee6dcb5a284586841226f",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_structural_name_relations.py",
+          "expected_sha256": "2d6b81cedb62eafedaa26e6ba92603d77655a273e2d8f0dbeb473c29c3a20940",
+          "actual_sha256": "2d6b81cedb62eafedaa26e6ba92603d77655a273e2d8f0dbeb473c29c3a20940",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_structural_restart.py",
+          "expected_sha256": "1eacd6e81f8341df0b24a13f3d080e78a617a25250988680111e1f4d72cd98b8",
+          "actual_sha256": "1eacd6e81f8341df0b24a13f3d080e78a617a25250988680111e1f4d72cd98b8",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_structural_restart_full.py",
+          "expected_sha256": "1d2d9769d2295036ac692df3a2ead79168d0d6d2d399acf92d604d508ab40bff",
+          "actual_sha256": "1d2d9769d2295036ac692df3a2ead79168d0d6d2d399acf92d604d508ab40bff",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_structural_restart_validation.py",
+          "expected_sha256": "c64d4700628d2e145a122ffeacd366ef252ccbc3e0090faaa0e329bb8e5d425a",
+          "actual_sha256": "c64d4700628d2e145a122ffeacd366ef252ccbc3e0090faaa0e329bb8e5d425a",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "web/engine.js",
+          "expected_sha256": "1451287b703e6f90765a1ed96acd2c4c5fc30d467be6c207da81f4b982035d84",
+          "actual_sha256": "1451287b703e6f90765a1ed96acd2c4c5fc30d467be6c207da81f4b982035d84",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        }
+      ]
+    },
+    {
+      "report": "outputs/structural-restart-new-seeds-2026-09-21-evidence/manifest.json",
+      "report_sha256": "9ed2dae46dc38e1f5ddb72880871ecf5e7c5c0f9a5d610454a4e525f5136e5a1",
+      "hash_field": "source_sha256",
+      "source_checks": [
+        {
+          "file": "docs/STRUCTURAL_RESTART_RULES-2026-09-21.md",
+          "expected_sha256": "fc0fa642730d1bc4ff728243f41aa9ffee6ac66b041f764bc1c1d3b5fd07b9b8",
+          "actual_sha256": "fc0fa642730d1bc4ff728243f41aa9ffee6ac66b041f764bc1c1d3b5fd07b9b8",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/closed_support.py",
+          "expected_sha256": "0a95dd2802d16654a4342332ae9f9825944a26c4fe2cad182de0a214fbfc56f1",
+          "actual_sha256": "0a95dd2802d16654a4342332ae9f9825944a26c4fe2cad182de0a214fbfc56f1",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/embedding.py",
+          "expected_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+          "actual_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/frontier_restart.py",
+          "expected_sha256": "2b82e9de0ecad888b5248602d039997889becac1718282f5c4a5eaa6d8c1c533",
+          "actual_sha256": "2b82e9de0ecad888b5248602d039997889becac1718282f5c4a5eaa6d8c1c533",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/global_restart.py",
+          "expected_sha256": "56aafff2632cf4c02cc20c7a056d02b9932f65f700311846d7d81c1cb32b3cbb",
+          "actual_sha256": "56aafff2632cf4c02cc20c7a056d02b9932f65f700311846d7d81c1cb32b3cbb",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/joint_lines.py",
+          "expected_sha256": "7d0fa2df82b719ceba514818f27d4b155f7e96d47b3c173743e3adf44b930e88",
+          "actual_sha256": "7d0fa2df82b719ceba514818f27d4b155f7e96d47b3c173743e3adf44b930e88",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/level_sides.py",
+          "expected_sha256": "222a8f752722e95c646d5ec58bbbcfc6ff94108d1d893d00806c960a25fd45ba",
+          "actual_sha256": "222a8f752722e95c646d5ec58bbbcfc6ff94108d1d893d00806c960a25fd45ba",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/level_sides_peer.py",
+          "expected_sha256": "a1b1add2d97d34ab29c35e6fab7f5a665aa6841742080907ea95b5d4002a5c56",
+          "actual_sha256": "a1b1add2d97d34ab29c35e6fab7f5a665aa6841742080907ea95b5d4002a5c56",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/line_names.py",
+          "expected_sha256": "8fdfb7019d89edd01643bb5e1554a3aba8480dfbc032f34c72039782c620ce33",
+          "actual_sha256": "8fdfb7019d89edd01643bb5e1554a3aba8480dfbc032f34c72039782c620ce33",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/relation_frontier.py",
+          "expected_sha256": "9d385da99c36e0b9f59c3d2182b697cd8d2b27734014cf97b0314c4ef785e316",
+          "actual_sha256": "9d385da99c36e0b9f59c3d2182b697cd8d2b27734014cf97b0314c4ef785e316",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/relation_names.py",
+          "expected_sha256": "cc6566e959ab87c47d670dc8113d856f64e77132e5542c6d6ec8e98cec28d8cf",
+          "actual_sha256": "cc6566e959ab87c47d670dc8113d856f64e77132e5542c6d6ec8e98cec28d8cf",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/structural_name_relations.py",
+          "expected_sha256": "20b7a71008ca6f85d5a785e5fd354778da55e032e7848603992b399cc157015f",
+          "actual_sha256": "20b7a71008ca6f85d5a785e5fd354778da55e032e7848603992b399cc157015f",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/structural_restart.py",
+          "expected_sha256": "de75e46c09f9bf981c5dd04af6e7b572a809630ca93552b96d0841b925a41a34",
+          "actual_sha256": "de75e46c09f9bf981c5dd04af6e7b572a809630ca93552b96d0841b925a41a34",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/weighted_lines.py",
+          "expected_sha256": "21cf5484a0504807463dafaa54992bf2cd6b1a4924e80b5a4ad29d3381ddd389",
+          "actual_sha256": "21cf5484a0504807463dafaa54992bf2cd6b1a4924e80b5a4ad29d3381ddd389",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/whole_lines.py",
+          "expected_sha256": "5bd54516c18ff74c2dcba2a5e89a27b1af7e3c0277fb3aa8e12f0efa55f9312c",
+          "actual_sha256": "5bd54516c18ff74c2dcba2a5e89a27b1af7e3c0277fb3aa8e12f0efa55f9312c",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/analyze_line_generations.py",
+          "expected_sha256": "48058342337b5a7c5ec523df42e16d447ccf1009dd4ffdf9f1924e06c1e57bd6",
+          "actual_sha256": "48058342337b5a7c5ec523df42e16d447ccf1009dd4ffdf9f1924e06c1e57bd6",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/construction-experiments.mjs",
+          "expected_sha256": "094517ba881cdc70b9e4b7ab796af251af5e3eae73e5f71c561d2c47a1306e76",
+          "actual_sha256": "094517ba881cdc70b9e4b7ab796af251af5e3eae73e5f71c561d2c47a1306e76",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/current_corpus.py",
+          "expected_sha256": "f107a35500c84db4fbfc3b9b4c02b7dbd8dc49f0402309525066dd6d0023e519",
+          "actual_sha256": "f107a35500c84db4fbfc3b9b4c02b7dbd8dc49f0402309525066dd6d0023e519",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/restart-geometry.mjs",
+          "expected_sha256": "66d72196c12e56e2ca63b6debb06b661e6dc9a110be6c4f236d9f8f32653897e",
+          "actual_sha256": "66d72196c12e56e2ca63b6debb06b661e6dc9a110be6c4f236d9f8f32653897e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_frontier_restart.py",
+          "expected_sha256": "74b0d487b04ee218c3328cdbf566801812472cbe47a71b4f78bbda580aae39a7",
+          "actual_sha256": "74b0d487b04ee218c3328cdbf566801812472cbe47a71b4f78bbda580aae39a7",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_global_restart.py",
+          "expected_sha256": "2807c3ce904e42e4fb2bd194f773724c6bf7364f592d8cc730dfecc856601c18",
+          "actual_sha256": "2807c3ce904e42e4fb2bd194f773724c6bf7364f592d8cc730dfecc856601c18",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_level_sides.py",
+          "expected_sha256": "b3fc714c0d07e7159c10ae14a92a787aeff3a499470917429b3bee20058ecff8",
+          "actual_sha256": "b3fc714c0d07e7159c10ae14a92a787aeff3a499470917429b3bee20058ecff8",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_level_sides_peer.py",
+          "expected_sha256": "1226941d2a95b632eec0532581b21d775afd25eb24a38b05a039d485528e803f",
+          "actual_sha256": "1226941d2a95b632eec0532581b21d775afd25eb24a38b05a039d485528e803f",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_level_sides_peer_full.py",
+          "expected_sha256": "d2ccbcbed7530ff1a996e288816c26afdb3668fa6e810adc68df64583911e41e",
+          "actual_sha256": "d2ccbcbed7530ff1a996e288816c26afdb3668fa6e810adc68df64583911e41e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_relation_frontier.py",
+          "expected_sha256": "d572cdb030021d3d080e7cf277f688e80c2a5af87b7a52cab3d1991f75b4248e",
+          "actual_sha256": "d572cdb030021d3d080e7cf277f688e80c2a5af87b7a52cab3d1991f75b4248e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_relation_frontier_full.py",
+          "expected_sha256": "d5e06a138f26a8275358ee1c9473cac697e63407ba43c551132b3c72fb3dca69",
+          "actual_sha256": "d5e06a138f26a8275358ee1c9473cac697e63407ba43c551132b3c72fb3dca69",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_structural_restart.py",
+          "expected_sha256": "3900b1bbe98f46e068f485e1297cb7c08299bac3468a06609c8378d63b866c05",
+          "actual_sha256": "3900b1bbe98f46e068f485e1297cb7c08299bac3468a06609c8378d63b866c05",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_structural_restart_new_seeds.py",
+          "expected_sha256": "7f8200bee4508a4760f02a461fdde6717d2afe5ad2278d1c5a0dd39c19d832ea",
+          "actual_sha256": "7f8200bee4508a4760f02a461fdde6717d2afe5ad2278d1c5a0dd39c19d832ea",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_structural_name_relations.py",
+          "expected_sha256": "2d6b81cedb62eafedaa26e6ba92603d77655a273e2d8f0dbeb473c29c3a20940",
+          "actual_sha256": "2d6b81cedb62eafedaa26e6ba92603d77655a273e2d8f0dbeb473c29c3a20940",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_structural_restart.py",
+          "expected_sha256": "1eacd6e81f8341df0b24a13f3d080e78a617a25250988680111e1f4d72cd98b8",
+          "actual_sha256": "1eacd6e81f8341df0b24a13f3d080e78a617a25250988680111e1f4d72cd98b8",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_structural_restart_new_seeds.py",
+          "expected_sha256": "eac2a43906e1b031425f2506f83729e55746298017ee1f17afcdde53fa9e1fee",
+          "actual_sha256": "eac2a43906e1b031425f2506f83729e55746298017ee1f17afcdde53fa9e1fee",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_structural_restart_validation.py",
+          "expected_sha256": "c64d4700628d2e145a122ffeacd366ef252ccbc3e0090faaa0e329bb8e5d425a",
+          "actual_sha256": "c64d4700628d2e145a122ffeacd366ef252ccbc3e0090faaa0e329bb8e5d425a",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "web/construction-cases.js",
+          "expected_sha256": "c2f1735ca5d46c1a54c2f1c8321856766eb39fb20379fea6facdc18ec7ccefdb",
+          "actual_sha256": "c2f1735ca5d46c1a54c2f1c8321856766eb39fb20379fea6facdc18ec7ccefdb",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "web/construction.js",
+          "expected_sha256": "c79ae59a8f7d71bd5b4f8669e3720e2f49f634211a0d340f5aaec651615525f8",
+          "actual_sha256": "c79ae59a8f7d71bd5b4f8669e3720e2f49f634211a0d340f5aaec651615525f8",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "web/engine.js",
+          "expected_sha256": "1451287b703e6f90765a1ed96acd2c4c5fc30d467be6c207da81f4b982035d84",
+          "actual_sha256": "1451287b703e6f90765a1ed96acd2c4c5fc30d467be6c207da81f4b982035d84",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        }
+      ]
+    },
+    {
+      "report": "outputs/structural-restart-new-seeds-2026-09-21.json.gz",
+      "report_sha256": "62699d8f2953f77336e938f1ca4bde8be2fa65b4eb594b3bd19442e4b5efc49e",
+      "hash_field": "source_sha256",
+      "source_checks": [
+        {
+          "file": "docs/STRUCTURAL_RESTART_RULES-2026-09-21.md",
+          "expected_sha256": "fc0fa642730d1bc4ff728243f41aa9ffee6ac66b041f764bc1c1d3b5fd07b9b8",
+          "actual_sha256": "fc0fa642730d1bc4ff728243f41aa9ffee6ac66b041f764bc1c1d3b5fd07b9b8",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/closed_support.py",
+          "expected_sha256": "0a95dd2802d16654a4342332ae9f9825944a26c4fe2cad182de0a214fbfc56f1",
+          "actual_sha256": "0a95dd2802d16654a4342332ae9f9825944a26c4fe2cad182de0a214fbfc56f1",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/embedding.py",
+          "expected_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+          "actual_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/frontier_restart.py",
+          "expected_sha256": "2b82e9de0ecad888b5248602d039997889becac1718282f5c4a5eaa6d8c1c533",
+          "actual_sha256": "2b82e9de0ecad888b5248602d039997889becac1718282f5c4a5eaa6d8c1c533",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/global_restart.py",
+          "expected_sha256": "56aafff2632cf4c02cc20c7a056d02b9932f65f700311846d7d81c1cb32b3cbb",
+          "actual_sha256": "56aafff2632cf4c02cc20c7a056d02b9932f65f700311846d7d81c1cb32b3cbb",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/joint_lines.py",
+          "expected_sha256": "7d0fa2df82b719ceba514818f27d4b155f7e96d47b3c173743e3adf44b930e88",
+          "actual_sha256": "7d0fa2df82b719ceba514818f27d4b155f7e96d47b3c173743e3adf44b930e88",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/level_sides.py",
+          "expected_sha256": "222a8f752722e95c646d5ec58bbbcfc6ff94108d1d893d00806c960a25fd45ba",
+          "actual_sha256": "222a8f752722e95c646d5ec58bbbcfc6ff94108d1d893d00806c960a25fd45ba",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/level_sides_peer.py",
+          "expected_sha256": "a1b1add2d97d34ab29c35e6fab7f5a665aa6841742080907ea95b5d4002a5c56",
+          "actual_sha256": "a1b1add2d97d34ab29c35e6fab7f5a665aa6841742080907ea95b5d4002a5c56",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/line_names.py",
+          "expected_sha256": "8fdfb7019d89edd01643bb5e1554a3aba8480dfbc032f34c72039782c620ce33",
+          "actual_sha256": "8fdfb7019d89edd01643bb5e1554a3aba8480dfbc032f34c72039782c620ce33",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/relation_frontier.py",
+          "expected_sha256": "9d385da99c36e0b9f59c3d2182b697cd8d2b27734014cf97b0314c4ef785e316",
+          "actual_sha256": "9d385da99c36e0b9f59c3d2182b697cd8d2b27734014cf97b0314c4ef785e316",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/relation_names.py",
+          "expected_sha256": "cc6566e959ab87c47d670dc8113d856f64e77132e5542c6d6ec8e98cec28d8cf",
+          "actual_sha256": "cc6566e959ab87c47d670dc8113d856f64e77132e5542c6d6ec8e98cec28d8cf",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/structural_name_relations.py",
+          "expected_sha256": "20b7a71008ca6f85d5a785e5fd354778da55e032e7848603992b399cc157015f",
+          "actual_sha256": "20b7a71008ca6f85d5a785e5fd354778da55e032e7848603992b399cc157015f",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/structural_restart.py",
+          "expected_sha256": "de75e46c09f9bf981c5dd04af6e7b572a809630ca93552b96d0841b925a41a34",
+          "actual_sha256": "de75e46c09f9bf981c5dd04af6e7b572a809630ca93552b96d0841b925a41a34",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/weighted_lines.py",
+          "expected_sha256": "21cf5484a0504807463dafaa54992bf2cd6b1a4924e80b5a4ad29d3381ddd389",
+          "actual_sha256": "21cf5484a0504807463dafaa54992bf2cd6b1a4924e80b5a4ad29d3381ddd389",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/whole_lines.py",
+          "expected_sha256": "5bd54516c18ff74c2dcba2a5e89a27b1af7e3c0277fb3aa8e12f0efa55f9312c",
+          "actual_sha256": "5bd54516c18ff74c2dcba2a5e89a27b1af7e3c0277fb3aa8e12f0efa55f9312c",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/analyze_line_generations.py",
+          "expected_sha256": "48058342337b5a7c5ec523df42e16d447ccf1009dd4ffdf9f1924e06c1e57bd6",
+          "actual_sha256": "48058342337b5a7c5ec523df42e16d447ccf1009dd4ffdf9f1924e06c1e57bd6",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/construction-experiments.mjs",
+          "expected_sha256": "094517ba881cdc70b9e4b7ab796af251af5e3eae73e5f71c561d2c47a1306e76",
+          "actual_sha256": "094517ba881cdc70b9e4b7ab796af251af5e3eae73e5f71c561d2c47a1306e76",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/current_corpus.py",
+          "expected_sha256": "f107a35500c84db4fbfc3b9b4c02b7dbd8dc49f0402309525066dd6d0023e519",
+          "actual_sha256": "f107a35500c84db4fbfc3b9b4c02b7dbd8dc49f0402309525066dd6d0023e519",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/restart-geometry.mjs",
+          "expected_sha256": "66d72196c12e56e2ca63b6debb06b661e6dc9a110be6c4f236d9f8f32653897e",
+          "actual_sha256": "66d72196c12e56e2ca63b6debb06b661e6dc9a110be6c4f236d9f8f32653897e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_frontier_restart.py",
+          "expected_sha256": "74b0d487b04ee218c3328cdbf566801812472cbe47a71b4f78bbda580aae39a7",
+          "actual_sha256": "74b0d487b04ee218c3328cdbf566801812472cbe47a71b4f78bbda580aae39a7",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_global_restart.py",
+          "expected_sha256": "2807c3ce904e42e4fb2bd194f773724c6bf7364f592d8cc730dfecc856601c18",
+          "actual_sha256": "2807c3ce904e42e4fb2bd194f773724c6bf7364f592d8cc730dfecc856601c18",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_level_sides.py",
+          "expected_sha256": "b3fc714c0d07e7159c10ae14a92a787aeff3a499470917429b3bee20058ecff8",
+          "actual_sha256": "b3fc714c0d07e7159c10ae14a92a787aeff3a499470917429b3bee20058ecff8",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_level_sides_peer.py",
+          "expected_sha256": "1226941d2a95b632eec0532581b21d775afd25eb24a38b05a039d485528e803f",
+          "actual_sha256": "1226941d2a95b632eec0532581b21d775afd25eb24a38b05a039d485528e803f",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_level_sides_peer_full.py",
+          "expected_sha256": "d2ccbcbed7530ff1a996e288816c26afdb3668fa6e810adc68df64583911e41e",
+          "actual_sha256": "d2ccbcbed7530ff1a996e288816c26afdb3668fa6e810adc68df64583911e41e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_relation_frontier.py",
+          "expected_sha256": "d572cdb030021d3d080e7cf277f688e80c2a5af87b7a52cab3d1991f75b4248e",
+          "actual_sha256": "d572cdb030021d3d080e7cf277f688e80c2a5af87b7a52cab3d1991f75b4248e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_relation_frontier_full.py",
+          "expected_sha256": "d5e06a138f26a8275358ee1c9473cac697e63407ba43c551132b3c72fb3dca69",
+          "actual_sha256": "d5e06a138f26a8275358ee1c9473cac697e63407ba43c551132b3c72fb3dca69",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_structural_restart.py",
+          "expected_sha256": "3900b1bbe98f46e068f485e1297cb7c08299bac3468a06609c8378d63b866c05",
+          "actual_sha256": "3900b1bbe98f46e068f485e1297cb7c08299bac3468a06609c8378d63b866c05",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_structural_restart_new_seeds.py",
+          "expected_sha256": "7f8200bee4508a4760f02a461fdde6717d2afe5ad2278d1c5a0dd39c19d832ea",
+          "actual_sha256": "7f8200bee4508a4760f02a461fdde6717d2afe5ad2278d1c5a0dd39c19d832ea",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_structural_name_relations.py",
+          "expected_sha256": "2d6b81cedb62eafedaa26e6ba92603d77655a273e2d8f0dbeb473c29c3a20940",
+          "actual_sha256": "2d6b81cedb62eafedaa26e6ba92603d77655a273e2d8f0dbeb473c29c3a20940",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_structural_restart.py",
+          "expected_sha256": "1eacd6e81f8341df0b24a13f3d080e78a617a25250988680111e1f4d72cd98b8",
+          "actual_sha256": "1eacd6e81f8341df0b24a13f3d080e78a617a25250988680111e1f4d72cd98b8",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_structural_restart_new_seeds.py",
+          "expected_sha256": "eac2a43906e1b031425f2506f83729e55746298017ee1f17afcdde53fa9e1fee",
+          "actual_sha256": "eac2a43906e1b031425f2506f83729e55746298017ee1f17afcdde53fa9e1fee",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_structural_restart_validation.py",
+          "expected_sha256": "c64d4700628d2e145a122ffeacd366ef252ccbc3e0090faaa0e329bb8e5d425a",
+          "actual_sha256": "c64d4700628d2e145a122ffeacd366ef252ccbc3e0090faaa0e329bb8e5d425a",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "web/construction-cases.js",
+          "expected_sha256": "c2f1735ca5d46c1a54c2f1c8321856766eb39fb20379fea6facdc18ec7ccefdb",
+          "actual_sha256": "c2f1735ca5d46c1a54c2f1c8321856766eb39fb20379fea6facdc18ec7ccefdb",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "web/construction.js",
+          "expected_sha256": "c79ae59a8f7d71bd5b4f8669e3720e2f49f634211a0d340f5aaec651615525f8",
+          "actual_sha256": "c79ae59a8f7d71bd5b4f8669e3720e2f49f634211a0d340f5aaec651615525f8",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "web/engine.js",
+          "expected_sha256": "1451287b703e6f90765a1ed96acd2c4c5fc30d467be6c207da81f4b982035d84",
+          "actual_sha256": "1451287b703e6f90765a1ed96acd2c4c5fc30d467be6c207da81f4b982035d84",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        }
+      ]
+    },
+    {
+      "report": "outputs/structural-restart-new-seeds-summary-2026-09-21.json",
+      "report_sha256": "1fd3d94bb6c1a38db82013c0051210aceb5fb79773fd81e8f6723a3283e546b5",
+      "hash_field": "source_sha256",
+      "source_checks": [
+        {
+          "file": "docs/STRUCTURAL_RESTART_RULES-2026-09-21.md",
+          "expected_sha256": "fc0fa642730d1bc4ff728243f41aa9ffee6ac66b041f764bc1c1d3b5fd07b9b8",
+          "actual_sha256": "fc0fa642730d1bc4ff728243f41aa9ffee6ac66b041f764bc1c1d3b5fd07b9b8",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/closed_support.py",
+          "expected_sha256": "0a95dd2802d16654a4342332ae9f9825944a26c4fe2cad182de0a214fbfc56f1",
+          "actual_sha256": "0a95dd2802d16654a4342332ae9f9825944a26c4fe2cad182de0a214fbfc56f1",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/embedding.py",
+          "expected_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+          "actual_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/frontier_restart.py",
+          "expected_sha256": "2b82e9de0ecad888b5248602d039997889becac1718282f5c4a5eaa6d8c1c533",
+          "actual_sha256": "2b82e9de0ecad888b5248602d039997889becac1718282f5c4a5eaa6d8c1c533",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/global_restart.py",
+          "expected_sha256": "56aafff2632cf4c02cc20c7a056d02b9932f65f700311846d7d81c1cb32b3cbb",
+          "actual_sha256": "56aafff2632cf4c02cc20c7a056d02b9932f65f700311846d7d81c1cb32b3cbb",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/joint_lines.py",
+          "expected_sha256": "7d0fa2df82b719ceba514818f27d4b155f7e96d47b3c173743e3adf44b930e88",
+          "actual_sha256": "7d0fa2df82b719ceba514818f27d4b155f7e96d47b3c173743e3adf44b930e88",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/level_sides.py",
+          "expected_sha256": "222a8f752722e95c646d5ec58bbbcfc6ff94108d1d893d00806c960a25fd45ba",
+          "actual_sha256": "222a8f752722e95c646d5ec58bbbcfc6ff94108d1d893d00806c960a25fd45ba",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/level_sides_peer.py",
+          "expected_sha256": "a1b1add2d97d34ab29c35e6fab7f5a665aa6841742080907ea95b5d4002a5c56",
+          "actual_sha256": "a1b1add2d97d34ab29c35e6fab7f5a665aa6841742080907ea95b5d4002a5c56",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/line_names.py",
+          "expected_sha256": "8fdfb7019d89edd01643bb5e1554a3aba8480dfbc032f34c72039782c620ce33",
+          "actual_sha256": "8fdfb7019d89edd01643bb5e1554a3aba8480dfbc032f34c72039782c620ce33",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/relation_frontier.py",
+          "expected_sha256": "9d385da99c36e0b9f59c3d2182b697cd8d2b27734014cf97b0314c4ef785e316",
+          "actual_sha256": "9d385da99c36e0b9f59c3d2182b697cd8d2b27734014cf97b0314c4ef785e316",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/relation_names.py",
+          "expected_sha256": "cc6566e959ab87c47d670dc8113d856f64e77132e5542c6d6ec8e98cec28d8cf",
+          "actual_sha256": "cc6566e959ab87c47d670dc8113d856f64e77132e5542c6d6ec8e98cec28d8cf",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/structural_name_relations.py",
+          "expected_sha256": "20b7a71008ca6f85d5a785e5fd354778da55e032e7848603992b399cc157015f",
+          "actual_sha256": "20b7a71008ca6f85d5a785e5fd354778da55e032e7848603992b399cc157015f",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/structural_restart.py",
+          "expected_sha256": "de75e46c09f9bf981c5dd04af6e7b572a809630ca93552b96d0841b925a41a34",
+          "actual_sha256": "de75e46c09f9bf981c5dd04af6e7b572a809630ca93552b96d0841b925a41a34",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/weighted_lines.py",
+          "expected_sha256": "21cf5484a0504807463dafaa54992bf2cd6b1a4924e80b5a4ad29d3381ddd389",
+          "actual_sha256": "21cf5484a0504807463dafaa54992bf2cd6b1a4924e80b5a4ad29d3381ddd389",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/whole_lines.py",
+          "expected_sha256": "5bd54516c18ff74c2dcba2a5e89a27b1af7e3c0277fb3aa8e12f0efa55f9312c",
+          "actual_sha256": "5bd54516c18ff74c2dcba2a5e89a27b1af7e3c0277fb3aa8e12f0efa55f9312c",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/analyze_line_generations.py",
+          "expected_sha256": "48058342337b5a7c5ec523df42e16d447ccf1009dd4ffdf9f1924e06c1e57bd6",
+          "actual_sha256": "48058342337b5a7c5ec523df42e16d447ccf1009dd4ffdf9f1924e06c1e57bd6",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/construction-experiments.mjs",
+          "expected_sha256": "094517ba881cdc70b9e4b7ab796af251af5e3eae73e5f71c561d2c47a1306e76",
+          "actual_sha256": "094517ba881cdc70b9e4b7ab796af251af5e3eae73e5f71c561d2c47a1306e76",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/current_corpus.py",
+          "expected_sha256": "f107a35500c84db4fbfc3b9b4c02b7dbd8dc49f0402309525066dd6d0023e519",
+          "actual_sha256": "f107a35500c84db4fbfc3b9b4c02b7dbd8dc49f0402309525066dd6d0023e519",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/restart-geometry.mjs",
+          "expected_sha256": "66d72196c12e56e2ca63b6debb06b661e6dc9a110be6c4f236d9f8f32653897e",
+          "actual_sha256": "66d72196c12e56e2ca63b6debb06b661e6dc9a110be6c4f236d9f8f32653897e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_frontier_restart.py",
+          "expected_sha256": "74b0d487b04ee218c3328cdbf566801812472cbe47a71b4f78bbda580aae39a7",
+          "actual_sha256": "74b0d487b04ee218c3328cdbf566801812472cbe47a71b4f78bbda580aae39a7",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_global_restart.py",
+          "expected_sha256": "2807c3ce904e42e4fb2bd194f773724c6bf7364f592d8cc730dfecc856601c18",
+          "actual_sha256": "2807c3ce904e42e4fb2bd194f773724c6bf7364f592d8cc730dfecc856601c18",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_level_sides.py",
+          "expected_sha256": "b3fc714c0d07e7159c10ae14a92a787aeff3a499470917429b3bee20058ecff8",
+          "actual_sha256": "b3fc714c0d07e7159c10ae14a92a787aeff3a499470917429b3bee20058ecff8",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_level_sides_peer.py",
+          "expected_sha256": "1226941d2a95b632eec0532581b21d775afd25eb24a38b05a039d485528e803f",
+          "actual_sha256": "1226941d2a95b632eec0532581b21d775afd25eb24a38b05a039d485528e803f",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_level_sides_peer_full.py",
+          "expected_sha256": "d2ccbcbed7530ff1a996e288816c26afdb3668fa6e810adc68df64583911e41e",
+          "actual_sha256": "d2ccbcbed7530ff1a996e288816c26afdb3668fa6e810adc68df64583911e41e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_relation_frontier.py",
+          "expected_sha256": "d572cdb030021d3d080e7cf277f688e80c2a5af87b7a52cab3d1991f75b4248e",
+          "actual_sha256": "d572cdb030021d3d080e7cf277f688e80c2a5af87b7a52cab3d1991f75b4248e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_relation_frontier_full.py",
+          "expected_sha256": "d5e06a138f26a8275358ee1c9473cac697e63407ba43c551132b3c72fb3dca69",
+          "actual_sha256": "d5e06a138f26a8275358ee1c9473cac697e63407ba43c551132b3c72fb3dca69",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_structural_restart.py",
+          "expected_sha256": "3900b1bbe98f46e068f485e1297cb7c08299bac3468a06609c8378d63b866c05",
+          "actual_sha256": "3900b1bbe98f46e068f485e1297cb7c08299bac3468a06609c8378d63b866c05",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_structural_restart_new_seeds.py",
+          "expected_sha256": "7f8200bee4508a4760f02a461fdde6717d2afe5ad2278d1c5a0dd39c19d832ea",
+          "actual_sha256": "7f8200bee4508a4760f02a461fdde6717d2afe5ad2278d1c5a0dd39c19d832ea",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_structural_name_relations.py",
+          "expected_sha256": "2d6b81cedb62eafedaa26e6ba92603d77655a273e2d8f0dbeb473c29c3a20940",
+          "actual_sha256": "2d6b81cedb62eafedaa26e6ba92603d77655a273e2d8f0dbeb473c29c3a20940",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_structural_restart.py",
+          "expected_sha256": "1eacd6e81f8341df0b24a13f3d080e78a617a25250988680111e1f4d72cd98b8",
+          "actual_sha256": "1eacd6e81f8341df0b24a13f3d080e78a617a25250988680111e1f4d72cd98b8",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_structural_restart_new_seeds.py",
+          "expected_sha256": "eac2a43906e1b031425f2506f83729e55746298017ee1f17afcdde53fa9e1fee",
+          "actual_sha256": "eac2a43906e1b031425f2506f83729e55746298017ee1f17afcdde53fa9e1fee",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_structural_restart_validation.py",
+          "expected_sha256": "c64d4700628d2e145a122ffeacd366ef252ccbc3e0090faaa0e329bb8e5d425a",
+          "actual_sha256": "c64d4700628d2e145a122ffeacd366ef252ccbc3e0090faaa0e329bb8e5d425a",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "web/construction-cases.js",
+          "expected_sha256": "c2f1735ca5d46c1a54c2f1c8321856766eb39fb20379fea6facdc18ec7ccefdb",
+          "actual_sha256": "c2f1735ca5d46c1a54c2f1c8321856766eb39fb20379fea6facdc18ec7ccefdb",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "web/construction.js",
+          "expected_sha256": "c79ae59a8f7d71bd5b4f8669e3720e2f49f634211a0d340f5aaec651615525f8",
+          "actual_sha256": "c79ae59a8f7d71bd5b4f8669e3720e2f49f634211a0d340f5aaec651615525f8",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "web/engine.js",
+          "expected_sha256": "1451287b703e6f90765a1ed96acd2c4c5fc30d467be6c207da81f4b982035d84",
+          "actual_sha256": "1451287b703e6f90765a1ed96acd2c4c5fc30d467be6c207da81f4b982035d84",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        }
+      ]
+    },
+    {
+      "report": "outputs/structural-restart-summary-2026-09-21.json",
+      "report_sha256": "4837808f0ad1421d0f36044cef1310e42aeaa32ef2601cd3650f1a78beae3adf",
+      "hash_field": "source_sha256",
+      "source_checks": [
+        {
+          "file": "docs/STRUCTURAL_RESTART_RULES-2026-09-21.md",
+          "expected_sha256": "fc0fa642730d1bc4ff728243f41aa9ffee6ac66b041f764bc1c1d3b5fd07b9b8",
+          "actual_sha256": "fc0fa642730d1bc4ff728243f41aa9ffee6ac66b041f764bc1c1d3b5fd07b9b8",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/closed_support.py",
+          "expected_sha256": "0a95dd2802d16654a4342332ae9f9825944a26c4fe2cad182de0a214fbfc56f1",
+          "actual_sha256": "0a95dd2802d16654a4342332ae9f9825944a26c4fe2cad182de0a214fbfc56f1",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/embedding.py",
+          "expected_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+          "actual_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/frontier_restart.py",
+          "expected_sha256": "2b82e9de0ecad888b5248602d039997889becac1718282f5c4a5eaa6d8c1c533",
+          "actual_sha256": "2b82e9de0ecad888b5248602d039997889becac1718282f5c4a5eaa6d8c1c533",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/global_restart.py",
+          "expected_sha256": "56aafff2632cf4c02cc20c7a056d02b9932f65f700311846d7d81c1cb32b3cbb",
+          "actual_sha256": "56aafff2632cf4c02cc20c7a056d02b9932f65f700311846d7d81c1cb32b3cbb",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/joint_lines.py",
+          "expected_sha256": "7d0fa2df82b719ceba514818f27d4b155f7e96d47b3c173743e3adf44b930e88",
+          "actual_sha256": "7d0fa2df82b719ceba514818f27d4b155f7e96d47b3c173743e3adf44b930e88",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/level_sides.py",
+          "expected_sha256": "222a8f752722e95c646d5ec58bbbcfc6ff94108d1d893d00806c960a25fd45ba",
+          "actual_sha256": "222a8f752722e95c646d5ec58bbbcfc6ff94108d1d893d00806c960a25fd45ba",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/level_sides_peer.py",
+          "expected_sha256": "a1b1add2d97d34ab29c35e6fab7f5a665aa6841742080907ea95b5d4002a5c56",
+          "actual_sha256": "a1b1add2d97d34ab29c35e6fab7f5a665aa6841742080907ea95b5d4002a5c56",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/line_names.py",
+          "expected_sha256": "8fdfb7019d89edd01643bb5e1554a3aba8480dfbc032f34c72039782c620ce33",
+          "actual_sha256": "8fdfb7019d89edd01643bb5e1554a3aba8480dfbc032f34c72039782c620ce33",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/relation_frontier.py",
+          "expected_sha256": "9d385da99c36e0b9f59c3d2182b697cd8d2b27734014cf97b0314c4ef785e316",
+          "actual_sha256": "9d385da99c36e0b9f59c3d2182b697cd8d2b27734014cf97b0314c4ef785e316",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/relation_names.py",
+          "expected_sha256": "cc6566e959ab87c47d670dc8113d856f64e77132e5542c6d6ec8e98cec28d8cf",
+          "actual_sha256": "cc6566e959ab87c47d670dc8113d856f64e77132e5542c6d6ec8e98cec28d8cf",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/structural_name_relations.py",
+          "expected_sha256": "20b7a71008ca6f85d5a785e5fd354778da55e032e7848603992b399cc157015f",
+          "actual_sha256": "20b7a71008ca6f85d5a785e5fd354778da55e032e7848603992b399cc157015f",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/structural_restart.py",
+          "expected_sha256": "de75e46c09f9bf981c5dd04af6e7b572a809630ca93552b96d0841b925a41a34",
+          "actual_sha256": "de75e46c09f9bf981c5dd04af6e7b572a809630ca93552b96d0841b925a41a34",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/weighted_lines.py",
+          "expected_sha256": "21cf5484a0504807463dafaa54992bf2cd6b1a4924e80b5a4ad29d3381ddd389",
+          "actual_sha256": "21cf5484a0504807463dafaa54992bf2cd6b1a4924e80b5a4ad29d3381ddd389",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/whole_lines.py",
+          "expected_sha256": "5bd54516c18ff74c2dcba2a5e89a27b1af7e3c0277fb3aa8e12f0efa55f9312c",
+          "actual_sha256": "5bd54516c18ff74c2dcba2a5e89a27b1af7e3c0277fb3aa8e12f0efa55f9312c",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/analyze_line_generations.py",
+          "expected_sha256": "48058342337b5a7c5ec523df42e16d447ccf1009dd4ffdf9f1924e06c1e57bd6",
+          "actual_sha256": "48058342337b5a7c5ec523df42e16d447ccf1009dd4ffdf9f1924e06c1e57bd6",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/restart-geometry.mjs",
+          "expected_sha256": "66d72196c12e56e2ca63b6debb06b661e6dc9a110be6c4f236d9f8f32653897e",
+          "actual_sha256": "66d72196c12e56e2ca63b6debb06b661e6dc9a110be6c4f236d9f8f32653897e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_frontier_restart.py",
+          "expected_sha256": "74b0d487b04ee218c3328cdbf566801812472cbe47a71b4f78bbda580aae39a7",
+          "actual_sha256": "74b0d487b04ee218c3328cdbf566801812472cbe47a71b4f78bbda580aae39a7",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_global_restart.py",
+          "expected_sha256": "2807c3ce904e42e4fb2bd194f773724c6bf7364f592d8cc730dfecc856601c18",
+          "actual_sha256": "2807c3ce904e42e4fb2bd194f773724c6bf7364f592d8cc730dfecc856601c18",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_level_sides.py",
+          "expected_sha256": "b3fc714c0d07e7159c10ae14a92a787aeff3a499470917429b3bee20058ecff8",
+          "actual_sha256": "b3fc714c0d07e7159c10ae14a92a787aeff3a499470917429b3bee20058ecff8",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_level_sides_peer.py",
+          "expected_sha256": "1226941d2a95b632eec0532581b21d775afd25eb24a38b05a039d485528e803f",
+          "actual_sha256": "1226941d2a95b632eec0532581b21d775afd25eb24a38b05a039d485528e803f",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_level_sides_peer_full.py",
+          "expected_sha256": "d2ccbcbed7530ff1a996e288816c26afdb3668fa6e810adc68df64583911e41e",
+          "actual_sha256": "d2ccbcbed7530ff1a996e288816c26afdb3668fa6e810adc68df64583911e41e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_relation_frontier.py",
+          "expected_sha256": "d572cdb030021d3d080e7cf277f688e80c2a5af87b7a52cab3d1991f75b4248e",
+          "actual_sha256": "d572cdb030021d3d080e7cf277f688e80c2a5af87b7a52cab3d1991f75b4248e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_relation_frontier_full.py",
+          "expected_sha256": "d5e06a138f26a8275358ee1c9473cac697e63407ba43c551132b3c72fb3dca69",
+          "actual_sha256": "d5e06a138f26a8275358ee1c9473cac697e63407ba43c551132b3c72fb3dca69",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_structural_restart.py",
+          "expected_sha256": "3900b1bbe98f46e068f485e1297cb7c08299bac3468a06609c8378d63b866c05",
+          "actual_sha256": "3900b1bbe98f46e068f485e1297cb7c08299bac3468a06609c8378d63b866c05",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_structural_restart_full.py",
+          "expected_sha256": "f668082657fb7943ab211f4ac4abe31a06e5acb3275ee6dcb5a284586841226f",
+          "actual_sha256": "f668082657fb7943ab211f4ac4abe31a06e5acb3275ee6dcb5a284586841226f",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_structural_name_relations.py",
+          "expected_sha256": "2d6b81cedb62eafedaa26e6ba92603d77655a273e2d8f0dbeb473c29c3a20940",
+          "actual_sha256": "2d6b81cedb62eafedaa26e6ba92603d77655a273e2d8f0dbeb473c29c3a20940",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_structural_restart.py",
+          "expected_sha256": "1eacd6e81f8341df0b24a13f3d080e78a617a25250988680111e1f4d72cd98b8",
+          "actual_sha256": "1eacd6e81f8341df0b24a13f3d080e78a617a25250988680111e1f4d72cd98b8",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_structural_restart_full.py",
+          "expected_sha256": "1d2d9769d2295036ac692df3a2ead79168d0d6d2d399acf92d604d508ab40bff",
+          "actual_sha256": "1d2d9769d2295036ac692df3a2ead79168d0d6d2d399acf92d604d508ab40bff",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_structural_restart_validation.py",
+          "expected_sha256": "c64d4700628d2e145a122ffeacd366ef252ccbc3e0090faaa0e329bb8e5d425a",
+          "actual_sha256": "c64d4700628d2e145a122ffeacd366ef252ccbc3e0090faaa0e329bb8e5d425a",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "web/engine.js",
+          "expected_sha256": "1451287b703e6f90765a1ed96acd2c4c5fc30d467be6c207da81f4b982035d84",
+          "actual_sha256": "1451287b703e6f90765a1ed96acd2c4c5fc30d467be6c207da81f4b982035d84",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        }
+      ]
+    },
+    {
+      "report": "outputs/structural-single-map-2026-09-21.json",
+      "report_sha256": "9b6e5d9a79e386a0d1f30e81672b04cb11006ba8e7e0ddec1b030951970078f8",
+      "hash_field": "source_sha256",
+      "source_checks": [
+        {
+          "file": "docs/STRUCTURAL_RESTART_RULES-2026-09-21.md",
+          "expected_sha256": "fc0fa642730d1bc4ff728243f41aa9ffee6ac66b041f764bc1c1d3b5fd07b9b8",
+          "actual_sha256": "fc0fa642730d1bc4ff728243f41aa9ffee6ac66b041f764bc1c1d3b5fd07b9b8",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/closed_support.py",
+          "expected_sha256": "0a95dd2802d16654a4342332ae9f9825944a26c4fe2cad182de0a214fbfc56f1",
+          "actual_sha256": "0a95dd2802d16654a4342332ae9f9825944a26c4fe2cad182de0a214fbfc56f1",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/embedding.py",
+          "expected_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+          "actual_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/frontier_restart.py",
+          "expected_sha256": "2b82e9de0ecad888b5248602d039997889becac1718282f5c4a5eaa6d8c1c533",
+          "actual_sha256": "2b82e9de0ecad888b5248602d039997889becac1718282f5c4a5eaa6d8c1c533",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/global_restart.py",
+          "expected_sha256": "56aafff2632cf4c02cc20c7a056d02b9932f65f700311846d7d81c1cb32b3cbb",
+          "actual_sha256": "56aafff2632cf4c02cc20c7a056d02b9932f65f700311846d7d81c1cb32b3cbb",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/joint_lines.py",
+          "expected_sha256": "7d0fa2df82b719ceba514818f27d4b155f7e96d47b3c173743e3adf44b930e88",
+          "actual_sha256": "7d0fa2df82b719ceba514818f27d4b155f7e96d47b3c173743e3adf44b930e88",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/level_sides.py",
+          "expected_sha256": "222a8f752722e95c646d5ec58bbbcfc6ff94108d1d893d00806c960a25fd45ba",
+          "actual_sha256": "222a8f752722e95c646d5ec58bbbcfc6ff94108d1d893d00806c960a25fd45ba",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/level_sides_peer.py",
+          "expected_sha256": "a1b1add2d97d34ab29c35e6fab7f5a665aa6841742080907ea95b5d4002a5c56",
+          "actual_sha256": "a1b1add2d97d34ab29c35e6fab7f5a665aa6841742080907ea95b5d4002a5c56",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/line_names.py",
+          "expected_sha256": "8fdfb7019d89edd01643bb5e1554a3aba8480dfbc032f34c72039782c620ce33",
+          "actual_sha256": "8fdfb7019d89edd01643bb5e1554a3aba8480dfbc032f34c72039782c620ce33",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/relation_frontier.py",
+          "expected_sha256": "9d385da99c36e0b9f59c3d2182b697cd8d2b27734014cf97b0314c4ef785e316",
+          "actual_sha256": "9d385da99c36e0b9f59c3d2182b697cd8d2b27734014cf97b0314c4ef785e316",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/relation_names.py",
+          "expected_sha256": "cc6566e959ab87c47d670dc8113d856f64e77132e5542c6d6ec8e98cec28d8cf",
+          "actual_sha256": "cc6566e959ab87c47d670dc8113d856f64e77132e5542c6d6ec8e98cec28d8cf",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/structural_name_relations.py",
+          "expected_sha256": "20b7a71008ca6f85d5a785e5fd354778da55e032e7848603992b399cc157015f",
+          "actual_sha256": "20b7a71008ca6f85d5a785e5fd354778da55e032e7848603992b399cc157015f",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/structural_restart.py",
+          "expected_sha256": "de75e46c09f9bf981c5dd04af6e7b572a809630ca93552b96d0841b925a41a34",
+          "actual_sha256": "de75e46c09f9bf981c5dd04af6e7b572a809630ca93552b96d0841b925a41a34",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/weighted_lines.py",
+          "expected_sha256": "21cf5484a0504807463dafaa54992bf2cd6b1a4924e80b5a4ad29d3381ddd389",
+          "actual_sha256": "21cf5484a0504807463dafaa54992bf2cd6b1a4924e80b5a4ad29d3381ddd389",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/whole_lines.py",
+          "expected_sha256": "5bd54516c18ff74c2dcba2a5e89a27b1af7e3c0277fb3aa8e12f0efa55f9312c",
+          "actual_sha256": "5bd54516c18ff74c2dcba2a5e89a27b1af7e3c0277fb3aa8e12f0efa55f9312c",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/analyze_line_generations.py",
+          "expected_sha256": "48058342337b5a7c5ec523df42e16d447ccf1009dd4ffdf9f1924e06c1e57bd6",
+          "actual_sha256": "48058342337b5a7c5ec523df42e16d447ccf1009dd4ffdf9f1924e06c1e57bd6",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/name_peer_batch_map.py",
+          "expected_sha256": "1c93e223fd4c68147c5ea6435145b26257fcf659fbfc696fcb4582923cde4054",
+          "actual_sha256": "1c93e223fd4c68147c5ea6435145b26257fcf659fbfc696fcb4582923cde4054",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/name_structural_map.py",
+          "expected_sha256": "54ce4057d818624bee1faa4b9f935ffd59228e1bf1fa5bfc9e4d19f30d9435b3",
+          "actual_sha256": "54ce4057d818624bee1faa4b9f935ffd59228e1bf1fa5bfc9e4d19f30d9435b3",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/restart-geometry.mjs",
+          "expected_sha256": "66d72196c12e56e2ca63b6debb06b661e6dc9a110be6c4f236d9f8f32653897e",
+          "actual_sha256": "66d72196c12e56e2ca63b6debb06b661e6dc9a110be6c4f236d9f8f32653897e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_frontier_restart.py",
+          "expected_sha256": "74b0d487b04ee218c3328cdbf566801812472cbe47a71b4f78bbda580aae39a7",
+          "actual_sha256": "74b0d487b04ee218c3328cdbf566801812472cbe47a71b4f78bbda580aae39a7",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_global_restart.py",
+          "expected_sha256": "2807c3ce904e42e4fb2bd194f773724c6bf7364f592d8cc730dfecc856601c18",
+          "actual_sha256": "2807c3ce904e42e4fb2bd194f773724c6bf7364f592d8cc730dfecc856601c18",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_level_sides.py",
+          "expected_sha256": "b3fc714c0d07e7159c10ae14a92a787aeff3a499470917429b3bee20058ecff8",
+          "actual_sha256": "b3fc714c0d07e7159c10ae14a92a787aeff3a499470917429b3bee20058ecff8",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_level_sides_peer.py",
+          "expected_sha256": "1226941d2a95b632eec0532581b21d775afd25eb24a38b05a039d485528e803f",
+          "actual_sha256": "1226941d2a95b632eec0532581b21d775afd25eb24a38b05a039d485528e803f",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_level_sides_peer_full.py",
+          "expected_sha256": "d2ccbcbed7530ff1a996e288816c26afdb3668fa6e810adc68df64583911e41e",
+          "actual_sha256": "d2ccbcbed7530ff1a996e288816c26afdb3668fa6e810adc68df64583911e41e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_relation_frontier.py",
+          "expected_sha256": "d572cdb030021d3d080e7cf277f688e80c2a5af87b7a52cab3d1991f75b4248e",
+          "actual_sha256": "d572cdb030021d3d080e7cf277f688e80c2a5af87b7a52cab3d1991f75b4248e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_relation_frontier_full.py",
+          "expected_sha256": "d5e06a138f26a8275358ee1c9473cac697e63407ba43c551132b3c72fb3dca69",
+          "actual_sha256": "d5e06a138f26a8275358ee1c9473cac697e63407ba43c551132b3c72fb3dca69",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_structural_restart.py",
+          "expected_sha256": "3900b1bbe98f46e068f485e1297cb7c08299bac3468a06609c8378d63b866c05",
+          "actual_sha256": "3900b1bbe98f46e068f485e1297cb7c08299bac3468a06609c8378d63b866c05",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_structural_restart_full.py",
+          "expected_sha256": "f668082657fb7943ab211f4ac4abe31a06e5acb3275ee6dcb5a284586841226f",
+          "actual_sha256": "f668082657fb7943ab211f4ac4abe31a06e5acb3275ee6dcb5a284586841226f",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_structural_name_relations.py",
+          "expected_sha256": "2d6b81cedb62eafedaa26e6ba92603d77655a273e2d8f0dbeb473c29c3a20940",
+          "actual_sha256": "2d6b81cedb62eafedaa26e6ba92603d77655a273e2d8f0dbeb473c29c3a20940",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_structural_restart.py",
+          "expected_sha256": "1eacd6e81f8341df0b24a13f3d080e78a617a25250988680111e1f4d72cd98b8",
+          "actual_sha256": "1eacd6e81f8341df0b24a13f3d080e78a617a25250988680111e1f4d72cd98b8",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_structural_restart_full.py",
+          "expected_sha256": "1d2d9769d2295036ac692df3a2ead79168d0d6d2d399acf92d604d508ab40bff",
+          "actual_sha256": "1d2d9769d2295036ac692df3a2ead79168d0d6d2d399acf92d604d508ab40bff",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_structural_restart_validation.py",
+          "expected_sha256": "c64d4700628d2e145a122ffeacd366ef252ccbc3e0090faaa0e329bb8e5d425a",
+          "actual_sha256": "c64d4700628d2e145a122ffeacd366ef252ccbc3e0090faaa0e329bb8e5d425a",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "web/engine.js",
+          "expected_sha256": "1451287b703e6f90765a1ed96acd2c4c5fc30d467be6c207da81f4b982035d84",
+          "actual_sha256": "1451287b703e6f90765a1ed96acd2c4c5fc30d467be6c207da81f4b982035d84",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        }
+      ]
+    },
+    {
+      "report": "outputs/triangle-chain-parent-rigidity-2026-09-21.json",
+      "report_sha256": "6b129abd75572a627f458ccae441a6d1c9c0b8b07bf3f6742cbcb478f44453ff",
+      "hash_field": "source_sha256",
+      "source_checks": [
+        {
+          "file": "fourcolor/triangle_chain_family.py",
+          "expected_sha256": "93d58a2a13c6d401fea55e9c1bde804b2fbea921420be79cb4fc4410595d94ec",
+          "actual_sha256": "93d58a2a13c6d401fea55e9c1bde804b2fbea921420be79cb4fc4410595d94ec",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_triangle_chain_parent_rigidity.py",
+          "expected_sha256": "387757f3cd636a28f8cc71485d866a0c91835babf2ce2bc5614b653eccc948e9",
+          "actual_sha256": "387757f3cd636a28f8cc71485d866a0c91835babf2ce2bc5614b653eccc948e9",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_triangle_chain_parent_rigidity.py",
+          "expected_sha256": "f0ceba3cc6907933a5dd8b1849890c9bf5e53972e2a6ba26e3986b5c63b6026e",
+          "actual_sha256": "f0ceba3cc6907933a5dd8b1849890c9bf5e53972e2a6ba26e3986b5c63b6026e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        }
+      ]
+    },
+    {
+      "report": "outputs/triangle-chain-replay-2026-09-21.json.gz",
+      "report_sha256": "ddccbc32f6c97f63fbb6df88278396d590aa77fcdf53ed80bd02d96c64e2a678",
+      "hash_field": "input_and_source_sha256",
+      "source_checks": [
+        {
+          "file": "fourcolor/anchor_forest.py",
+          "expected_sha256": "6bf04f6365d8fbfd086e77d65a9cd845f4b0d8965b4ff861576c41e226f1d42e",
+          "actual_sha256": "6bf04f6365d8fbfd086e77d65a9cd845f4b0d8965b4ff861576c41e226f1d42e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/apex_triangle_cost.py",
+          "expected_sha256": "94ef396c2e665ac670c9a1de63c1f2ab64d4801ebaa20fe1ba4c9a658fb6cc6c",
+          "actual_sha256": "94ef396c2e665ac670c9a1de63c1f2ab64d4801ebaa20fe1ba4c9a658fb6cc6c",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/conservative_recoloring.py",
+          "expected_sha256": "26956dbc1bb5e56a4e05ebb5132cc869ec3737e74261e1e71ae7da387315ff10",
+          "actual_sha256": "26956dbc1bb5e56a4e05ebb5132cc869ec3737e74261e1e71ae7da387315ff10",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/embedding.py",
+          "expected_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+          "actual_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/inherited_names.py",
+          "expected_sha256": "235751061bc97b7cac9036890a29971c3d11688cad4aa628ceafa09412fd4c14",
+          "actual_sha256": "235751061bc97b7cac9036890a29971c3d11688cad4aa628ceafa09412fd4c14",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/kempe_split.py",
+          "expected_sha256": "b5264dfcde5953f38a976bedf5d1684bd6fe347e93aab8517047c53785d4eb30",
+          "actual_sha256": "b5264dfcde5953f38a976bedf5d1684bd6fe347e93aab8517047c53785d4eb30",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/recoloring_boundary.py",
+          "expected_sha256": "16c525cdcdac35a26e53e7429a0130b435d65929aeb4633c112f47bf62ff21ae",
+          "actual_sha256": "16c525cdcdac35a26e53e7429a0130b435d65929aeb4633c112f47bf62ff21ae",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/retained_profiles.py",
+          "expected_sha256": "5caed3fe79850cd7bd66a142ada98e5732e3af058325adfc2772fc2da5faec47",
+          "actual_sha256": "5caed3fe79850cd7bd66a142ada98e5732e3af058325adfc2772fc2da5faec47",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/strip_chain.py",
+          "expected_sha256": "30f33bb5f988d34b8ab5a68f6887b6dfa13dadb7cf1ca7a550f6c9098be67d1c",
+          "actual_sha256": "30f33bb5f988d34b8ab5a68f6887b6dfa13dadb7cf1ca7a550f6c9098be67d1c",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/target_renaming.py",
+          "expected_sha256": "8d0a44ced52a63f9878cd57444d2a1f53812a3f0c05a5d9f20001032f7e9ce5a",
+          "actual_sha256": "8d0a44ced52a63f9878cd57444d2a1f53812a3f0c05a5d9f20001032f7e9ce5a",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/triangle_chain_family.py",
+          "expected_sha256": "93d58a2a13c6d401fea55e9c1bde804b2fbea921420be79cb4fc4410595d94ec",
+          "actual_sha256": "93d58a2a13c6d401fea55e9c1bde804b2fbea921420be79cb4fc4410595d94ec",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/triangle_chain_replay.py",
+          "expected_sha256": "f36652e6d99018e0b64a7a547b249cf5a5bb0dadee1bcc3f98af0d412aaa2864",
+          "actual_sha256": "f36652e6d99018e0b64a7a547b249cf5a5bb0dadee1bcc3f98af0d412aaa2864",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "outputs/recoloring-obstructions-2026-09-21.json",
+          "expected_sha256": "a1a10b9fab64565426744f022dfb6af7ea4d50eaa96726c2547bde44dd94598e",
+          "actual_sha256": "a1a10b9fab64565426744f022dfb6af7ea4d50eaa96726c2547bde44dd94598e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/replay_triangle_chain_web.mjs",
+          "expected_sha256": "98451e2938b09fc8e3c401abb3751a2462424a1b2f604053d68f30be8bab4266",
+          "actual_sha256": "98451e2938b09fc8e3c401abb3751a2462424a1b2f604053d68f30be8bab4266",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_kempe_split.py",
+          "expected_sha256": "737f9fa3e9fff4480f5e74719f08750afbc8f67d739a8b7ee6e3cf18cae6a643",
+          "actual_sha256": "737f9fa3e9fff4480f5e74719f08750afbc8f67d739a8b7ee6e3cf18cae6a643",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_recoloring_obstructions.py",
+          "expected_sha256": "7fb0b1345b9c89376150c1b1eca82d26c22f161015e340c7047137d2626575e1",
+          "actual_sha256": "7fb0b1345b9c89376150c1b1eca82d26c22f161015e340c7047137d2626575e1",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_renaming.py",
+          "expected_sha256": "17690acc2278ab535193781f29e7eb41cd895526189fc0b81ea5944aeb61a7b9",
+          "actual_sha256": "17690acc2278ab535193781f29e7eb41cd895526189fc0b81ea5944aeb61a7b9",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_triangle_chain_replay.py",
+          "expected_sha256": "52725875770daeaf751aa12f648749956d8aa4cf2d0d232eb3e2b84c5764c993",
+          "actual_sha256": "52725875770daeaf751aa12f648749956d8aa4cf2d0d232eb3e2b84c5764c993",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_triangle_chain_replay.py",
+          "expected_sha256": "f21643d7af5bdc2169abf9d15fbd2bb99a48e0aa00984b64dedc6684b55cd9f9",
+          "actual_sha256": "f21643d7af5bdc2169abf9d15fbd2bb99a48e0aa00984b64dedc6684b55cd9f9",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_triangle_chain_replay_validation.py",
+          "expected_sha256": "94edc2aa49279a007114a39958d215aa8c31eab82a92b057ffdec56ea853a8a8",
+          "actual_sha256": "94edc2aa49279a007114a39958d215aa8c31eab82a92b057ffdec56ea853a8a8",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "web/construction.js",
+          "expected_sha256": "c79ae59a8f7d71bd5b4f8669e3720e2f49f634211a0d340f5aaec651615525f8",
+          "actual_sha256": "c79ae59a8f7d71bd5b4f8669e3720e2f49f634211a0d340f5aaec651615525f8",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "web/engine.js",
+          "expected_sha256": "1451287b703e6f90765a1ed96acd2c4c5fc30d467be6c207da81f4b982035d84",
+          "actual_sha256": "1451287b703e6f90765a1ed96acd2c4c5fc30d467be6c207da81f4b982035d84",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        }
+      ]
+    },
+    {
+      "report": "outputs/v2-failure-diagnosis-2026-09-21.json",
+      "report_sha256": "7ec2c76bc683e86909731179fc92e403c87dbaef5767db83d52b913b461832fe",
+      "hash_field": "source_sha256",
+      "source_checks": [
+        {
+          "file": "docs/STAGED_LEVEL_RULES-2026-09-19.md",
+          "expected_sha256": "6a28aed30001660adf29daafb36635f9be7748ec96c69b6e0b7c8fe71b8c4029",
+          "actual_sha256": "6a28aed30001660adf29daafb36635f9be7748ec96c69b6e0b7c8fe71b8c4029",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/closed_support.py",
+          "expected_sha256": "0a95dd2802d16654a4342332ae9f9825944a26c4fe2cad182de0a214fbfc56f1",
+          "actual_sha256": "0a95dd2802d16654a4342332ae9f9825944a26c4fe2cad182de0a214fbfc56f1",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/embedding.py",
+          "expected_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+          "actual_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/frontier_restart.py",
+          "expected_sha256": "2b82e9de0ecad888b5248602d039997889becac1718282f5c4a5eaa6d8c1c533",
+          "actual_sha256": "2b82e9de0ecad888b5248602d039997889becac1718282f5c4a5eaa6d8c1c533",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/global_restart.py",
+          "expected_sha256": "56aafff2632cf4c02cc20c7a056d02b9932f65f700311846d7d81c1cb32b3cbb",
+          "actual_sha256": "56aafff2632cf4c02cc20c7a056d02b9932f65f700311846d7d81c1cb32b3cbb",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/joint_lines.py",
+          "expected_sha256": "7d0fa2df82b719ceba514818f27d4b155f7e96d47b3c173743e3adf44b930e88",
+          "actual_sha256": "7d0fa2df82b719ceba514818f27d4b155f7e96d47b3c173743e3adf44b930e88",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/level_sides.py",
+          "expected_sha256": "222a8f752722e95c646d5ec58bbbcfc6ff94108d1d893d00806c960a25fd45ba",
+          "actual_sha256": "222a8f752722e95c646d5ec58bbbcfc6ff94108d1d893d00806c960a25fd45ba",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/level_sides_peer.py",
+          "expected_sha256": "a1b1add2d97d34ab29c35e6fab7f5a665aa6841742080907ea95b5d4002a5c56",
+          "actual_sha256": "a1b1add2d97d34ab29c35e6fab7f5a665aa6841742080907ea95b5d4002a5c56",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/line_names.py",
+          "expected_sha256": "8fdfb7019d89edd01643bb5e1554a3aba8480dfbc032f34c72039782c620ce33",
+          "actual_sha256": "8fdfb7019d89edd01643bb5e1554a3aba8480dfbc032f34c72039782c620ce33",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/relation_frontier.py",
+          "expected_sha256": "9d385da99c36e0b9f59c3d2182b697cd8d2b27734014cf97b0314c4ef785e316",
+          "actual_sha256": "9d385da99c36e0b9f59c3d2182b697cd8d2b27734014cf97b0314c4ef785e316",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/relation_names.py",
+          "expected_sha256": "cc6566e959ab87c47d670dc8113d856f64e77132e5542c6d6ec8e98cec28d8cf",
+          "actual_sha256": "cc6566e959ab87c47d670dc8113d856f64e77132e5542c6d6ec8e98cec28d8cf",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/staged_levels.py",
+          "expected_sha256": "50eba883b5ba20b3af578695a27d6f30ccea43de4abd8e63f7942492ca381e4c",
+          "actual_sha256": "50eba883b5ba20b3af578695a27d6f30ccea43de4abd8e63f7942492ca381e4c",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/weighted_lines.py",
+          "expected_sha256": "21cf5484a0504807463dafaa54992bf2cd6b1a4924e80b5a4ad29d3381ddd389",
+          "actual_sha256": "21cf5484a0504807463dafaa54992bf2cd6b1a4924e80b5a4ad29d3381ddd389",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/whole_lines.py",
+          "expected_sha256": "5bd54516c18ff74c2dcba2a5e89a27b1af7e3c0277fb3aa8e12f0efa55f9312c",
+          "actual_sha256": "5bd54516c18ff74c2dcba2a5e89a27b1af7e3c0277fb3aa8e12f0efa55f9312c",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/analyze_line_generations.py",
+          "expected_sha256": "48058342337b5a7c5ec523df42e16d447ccf1009dd4ffdf9f1924e06c1e57bd6",
+          "actual_sha256": "48058342337b5a7c5ec523df42e16d447ccf1009dd4ffdf9f1924e06c1e57bd6",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/diagnose_staged_levels_failures.py",
+          "expected_sha256": "c2aa313b6572d272bccdd9013ea6fd4646063963961337343d912eccb0aaea37",
+          "actual_sha256": "c2aa313b6572d272bccdd9013ea6fd4646063963961337343d912eccb0aaea37",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/diagnose_v2_failure_20260921.py",
+          "expected_sha256": "fdbc0df934eab43c4d18f4d9196fb948198804fb0bdec583b7a1ee9b2ac09791",
+          "actual_sha256": "fdbc0df934eab43c4d18f4d9196fb948198804fb0bdec583b7a1ee9b2ac09791",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/restart-geometry.mjs",
+          "expected_sha256": "66d72196c12e56e2ca63b6debb06b661e6dc9a110be6c4f236d9f8f32653897e",
+          "actual_sha256": "66d72196c12e56e2ca63b6debb06b661e6dc9a110be6c4f236d9f8f32653897e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_frontier_restart.py",
+          "expected_sha256": "74b0d487b04ee218c3328cdbf566801812472cbe47a71b4f78bbda580aae39a7",
+          "actual_sha256": "74b0d487b04ee218c3328cdbf566801812472cbe47a71b4f78bbda580aae39a7",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_global_restart.py",
+          "expected_sha256": "2807c3ce904e42e4fb2bd194f773724c6bf7364f592d8cc730dfecc856601c18",
+          "actual_sha256": "2807c3ce904e42e4fb2bd194f773724c6bf7364f592d8cc730dfecc856601c18",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_level_sides.py",
+          "expected_sha256": "b3fc714c0d07e7159c10ae14a92a787aeff3a499470917429b3bee20058ecff8",
+          "actual_sha256": "b3fc714c0d07e7159c10ae14a92a787aeff3a499470917429b3bee20058ecff8",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_level_sides_peer.py",
+          "expected_sha256": "1226941d2a95b632eec0532581b21d775afd25eb24a38b05a039d485528e803f",
+          "actual_sha256": "1226941d2a95b632eec0532581b21d775afd25eb24a38b05a039d485528e803f",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_level_sides_peer_full.py",
+          "expected_sha256": "d2ccbcbed7530ff1a996e288816c26afdb3668fa6e810adc68df64583911e41e",
+          "actual_sha256": "d2ccbcbed7530ff1a996e288816c26afdb3668fa6e810adc68df64583911e41e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_relation_frontier.py",
+          "expected_sha256": "d572cdb030021d3d080e7cf277f688e80c2a5af87b7a52cab3d1991f75b4248e",
+          "actual_sha256": "d572cdb030021d3d080e7cf277f688e80c2a5af87b7a52cab3d1991f75b4248e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_relation_frontier_full.py",
+          "expected_sha256": "d5e06a138f26a8275358ee1c9473cac697e63407ba43c551132b3c72fb3dca69",
+          "actual_sha256": "d5e06a138f26a8275358ee1c9473cac697e63407ba43c551132b3c72fb3dca69",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_staged_levels.py",
+          "expected_sha256": "e907b0a37c622c6df297b439ba69b6725117aecd2b3630021ae8bf8c1f86f67e",
+          "actual_sha256": "e907b0a37c622c6df297b439ba69b6725117aecd2b3630021ae8bf8c1f86f67e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_staged_levels_full.py",
+          "expected_sha256": "f072a43e562809afe8eece8a43189693fcf667e9d18405988fadf997d57cd76f",
+          "actual_sha256": "f072a43e562809afe8eece8a43189693fcf667e9d18405988fadf997d57cd76f",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_v2_failure_diagnosis.py",
+          "expected_sha256": "b5be2265ea4b465ff8992ae16fbe6f8b4425dd50242b5abfd7fdd44631096cd9",
+          "actual_sha256": "b5be2265ea4b465ff8992ae16fbe6f8b4425dd50242b5abfd7fdd44631096cd9",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "web/engine.js",
+          "expected_sha256": "1451287b703e6f90765a1ed96acd2c4c5fc30d467be6c207da81f4b982035d84",
+          "actual_sha256": "1451287b703e6f90765a1ed96acd2c4c5fc30d467be6c207da81f4b982035d84",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        }
+      ]
+    }
+  ],
+  "historical_superseded_reports": [
+    {
+      "report": "outputs/kempe-progress-2026-09-20.json",
+      "report_sha256": "ecd5dabb62b326f817ae667714f3ad40d7958258134cb031b52d0e84c1b02521",
+      "hash_field": "input_and_source_sha256",
+      "source_checks": [
+        {
+          "file": "fourcolor/conservative_recoloring.py",
+          "expected_sha256": "26956dbc1bb5e56a4e05ebb5132cc869ec3737e74261e1e71ae7da387315ff10",
+          "actual_sha256": "26956dbc1bb5e56a4e05ebb5132cc869ec3737e74261e1e71ae7da387315ff10",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/embedding.py",
+          "expected_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+          "actual_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/kempe_reconfiguration.py",
+          "expected_sha256": "cd1dd753532d19d02114fc31d55a47aaa2f995f5b6d156d4b3a8e2daccdf3c04",
+          "actual_sha256": "cd1dd753532d19d02114fc31d55a47aaa2f995f5b6d156d4b3a8e2daccdf3c04",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/target_renaming.py",
+          "expected_sha256": "8d0a44ced52a63f9878cd57444d2a1f53812a3f0c05a5d9f20001032f7e9ce5a",
+          "actual_sha256": "8d0a44ced52a63f9878cd57444d2a1f53812a3f0c05a5d9f20001032f7e9ce5a",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "outputs/kempe-split-2026-09-20-v2.json",
+          "expected_sha256": "944d2609d39ac410dc34ecba7ddfaa5640782a8bfeee92c540a58cecf8a7cd7e",
+          "actual_sha256": "944d2609d39ac410dc34ecba7ddfaa5640782a8bfeee92c540a58cecf8a7cd7e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "outputs/renaming-round-2026-09-18-v2.json",
+          "expected_sha256": "a9aba8d8d9fb2b579fb878dfee00f6e4c261a6c7d17cf85ccc84f98e2b8d29ce",
+          "actual_sha256": "a9aba8d8d9fb2b579fb878dfee00f6e4c261a6c7d17cf85ccc84f98e2b8d29ce",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_kempe_progress.py",
+          "expected_sha256": "333e9a3b232ca97fa39928a9195c91244d62b6451389be4ab7a58c6ba0396c15",
+          "actual_sha256": "202ee370ed87c1a0401fc9aebc50e7bd6187358a7b34b44ce22c3cad5943264a",
+          "source_matches": false,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_kempe_split.py",
+          "expected_sha256": "737f9fa3e9fff4480f5e74719f08750afbc8f67d739a8b7ee6e3cf18cae6a643",
+          "actual_sha256": "737f9fa3e9fff4480f5e74719f08750afbc8f67d739a8b7ee6e3cf18cae6a643",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_renaming.py",
+          "expected_sha256": "17690acc2278ab535193781f29e7eb41cd895526189fc0b81ea5944aeb61a7b9",
+          "actual_sha256": "17690acc2278ab535193781f29e7eb41cd895526189fc0b81ea5944aeb61a7b9",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_conservative_recoloring.py",
+          "expected_sha256": "bf3ca3e19fc8316a7e660b44589117ad576ac221bec9fb1963d0aad237826129",
+          "actual_sha256": "bf3ca3e19fc8316a7e660b44589117ad576ac221bec9fb1963d0aad237826129",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_kempe_progress_validation.py",
+          "expected_sha256": "edbe3777a730a3bdf0e028d4be6b3ec751ad968945dc72c0b726352b2dcbe82a",
+          "actual_sha256": "4db8a6871efe17166ba5b26a1a76c28a541ffa8117547693433efd905c08f480",
+          "source_matches": false,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_kempe_reconfiguration.py",
+          "expected_sha256": "deccc3f447d91035a41b715d93d07a886108ccebe0e23d7984c844c55ed99c4a",
+          "actual_sha256": "371c3eb7f18071d200273f62c7890e4ef982ba1ae6be8f85fac5ef47bf12f7f4",
+          "source_matches": false,
+          "index_matches_working_bytes": true
+        }
+      ]
+    },
+    {
+      "report": "outputs/kempe-split-2026-09-20.json",
+      "report_sha256": "bb05b50f18f33005fa10b64772ab62fd3c52427f34e1f5299ed7aee7f41b6010",
+      "hash_field": "input_and_source_sha256",
+      "source_checks": [
+        {
+          "file": "fourcolor/embedding.py",
+          "expected_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+          "actual_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/kempe_split.py",
+          "expected_sha256": "b5264dfcde5953f38a976bedf5d1684bd6fe347e93aab8517047c53785d4eb30",
+          "actual_sha256": "b5264dfcde5953f38a976bedf5d1684bd6fe347e93aab8517047c53785d4eb30",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "fourcolor/target_renaming.py",
+          "expected_sha256": "8d0a44ced52a63f9878cd57444d2a1f53812a3f0c05a5d9f20001032f7e9ce5a",
+          "actual_sha256": "8d0a44ced52a63f9878cd57444d2a1f53812a3f0c05a5d9f20001032f7e9ce5a",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "outputs/renaming-round-2026-09-18-v2.json",
+          "expected_sha256": "a9aba8d8d9fb2b579fb878dfee00f6e4c261a6c7d17cf85ccc84f98e2b8d29ce",
+          "actual_sha256": "a9aba8d8d9fb2b579fb878dfee00f6e4c261a6c7d17cf85ccc84f98e2b8d29ce",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "outputs/target-renaming-2026-09-18-v2.json",
+          "expected_sha256": "99f899159a26b4b8e31e7d83161fad45d75edbef2cd35b164a17b9f6f9d85cd0",
+          "actual_sha256": "99f899159a26b4b8e31e7d83161fad45d75edbef2cd35b164a17b9f6f9d85cd0",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/rename-diagnostics.mjs",
+          "expected_sha256": "331c766b3a5f3bc6e0a209182b8a562356d195e37a12d9d83142f1af31129e16",
+          "actual_sha256": "331c766b3a5f3bc6e0a209182b8a562356d195e37a12d9d83142f1af31129e16",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_kempe_split.py",
+          "expected_sha256": "c8d1587161ae33f34ced6c0314265316974771031e98e9b8569c5ab81d399646",
+          "actual_sha256": "737f9fa3e9fff4480f5e74719f08750afbc8f67d739a8b7ee6e3cf18cae6a643",
+          "source_matches": false,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "scripts/validate_renaming.py",
+          "expected_sha256": "17690acc2278ab535193781f29e7eb41cd895526189fc0b81ea5944aeb61a7b9",
+          "actual_sha256": "17690acc2278ab535193781f29e7eb41cd895526189fc0b81ea5944aeb61a7b9",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_kempe_split.py",
+          "expected_sha256": "128720d31c8b4066276a219396d14986bb317990f567201f764247b2f3c5a86d",
+          "actual_sha256": "128720d31c8b4066276a219396d14986bb317990f567201f764247b2f3c5a86d",
+          "source_matches": true,
+          "index_matches_working_bytes": true
+        },
+        {
+          "file": "tests/test_kempe_split_validation.py",
+          "expected_sha256": "d08cfd87a0c1cdf6b98a9ad90e2d8d79ecbb115ab8543dc6f4357e71d4bf783b",
+          "actual_sha256": "c725d2c2f270dcd30728411afc1c519778896a1d00cdbb2c599aa301cd5134a6",
+          "source_matches": false,
+          "index_matches_working_bytes": true
+        }
+      ]
+    }
+  ],
+  "historical_scope": "Initial reports retain run-time hashes; current reproduction uses the corresponding -v2 reports. Older mismatches are disclosed, not rewritten.",
+  "compressed_replay": {
+    "file": "outputs/triangle-chain-replay-2026-09-21.json.gz",
+    "uncompressed_sha256": "727e72fe27de386c830fc2b4d5025b2a7d1ce7fe510d7d51efc710815e6e42b6",
+    "equals_preserved_unpublished_original": true
+  },
+  "current_reports_checked": 15,
+  "unique_current_bound_files": 92,
+  "current_binding_checks": 386,
+  "errors": []
+}

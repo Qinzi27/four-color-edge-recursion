@@ -1,0 +1,73 @@
+{
+  "created_at_utc": "2026-09-21T04:37:54.893930+00:00",
+  "input": {
+    "name": "recoloring-obstructions-2026-09-21.json",
+    "sha256": "a1a10b9fab64565426744f022dfb6af7ea4d50eaa96726c2547bde44dd94598e"
+  },
+  "source": {
+    "name": "render_recoloring_obstruction.py",
+    "sha256": "693ad29070590f302c7ee49f858151ed647a53058616ea2d398e4fa3308fe4cb"
+  },
+  "python_version": "3.14.3",
+  "matplotlib_version": "3.10.9",
+  "destination": "general research explanation; publisher requirements unspecified",
+  "geometry": "untransformed exact coordinates from the formal m=2 record",
+  "transformations": [
+    "merge the two daughter boxes to show the pre-cut parent",
+    "choose the supplied residue-color target [1,2,3] and verify its full Kempe component",
+    "display growth parameters 1 through 8; retain every formal parameter in figure-data.json"
+  ],
+  "randomness": "none",
+  "uncertainty": "none; exact constructed-instance certificates",
+  "figure_sizes_inches": {
+    "geometry": [
+      14,
+      8.6
+    ],
+    "growth": [
+      8,
+      6.6
+    ]
+  },
+  "png_dpi": 200,
+  "svg_text": "editable text; font appearance depends on reader fonts",
+  "palette": {
+    "1": "#56B4E9",
+    "2": "#F0E442",
+    "3": "#CC79A7"
+  },
+  "redundant_encodings": "numeric colors, vertex labels, changed-old hatching, daughter outlines",
+  "scope": "specified legal initial colors; historical greedy reachability not established",
+  "artifacts": [
+    {
+      "name": "guillotine-recoloring-m2.png",
+      "bytes": 204429,
+      "sha256": "df5bef14485b203039b33b7a98e3cbc4703716d72faaf036d31ef829c358f17e"
+    },
+    {
+      "name": "guillotine-recoloring-m2.svg",
+      "bytes": 50903,
+      "sha256": "a844198a25830f6d47bf4ca8f0a3ee12f893cc30fb48cda8488b83fe766af521"
+    },
+    {
+      "name": "guillotine-recoloring-growth.png",
+      "bytes": 121571,
+      "sha256": "ddf84330b4ace51f5550853eb8556ba5a678f222d75bd9d2f39cb77dc58ff2f1"
+    },
+    {
+      "name": "guillotine-recoloring-growth.svg",
+      "bytes": 21967,
+      "sha256": "b2b02ce7b7c6354313a2ab2354c1a84f9bf7cf7406fa89eb9fd1e970584ceca2"
+    },
+    {
+      "name": "figure-data.json",
+      "bytes": 13465,
+      "sha256": "0015c79f1b40ebe176e300b95f5a8e53fe2c6c4fa5ab7c9970f22543c51d878a"
+    },
+    {
+      "name": "figure-caption.md",
+      "bytes": 1224,
+      "sha256": "e89bbf079cd1cab6743ab1d0d9a3f0bdde877922781a3fdd4f6010eee6a13ad0"
+    }
+  ]
+}

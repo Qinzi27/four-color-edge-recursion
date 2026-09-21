@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-21T11:09:54.082625+00:00",
+  "kind": "research-publication-clean-index-export-validation",
+  "passed": true,
+  "base_commit": "9bb476638315afd753267a04d25e4b5a7f85b747",
+  "branch": "main",
+  "verification_reports_sha256": {
+    "outputs/publication-index-2026-09-21.json": "fe56256339425cb71d1ca1d1c4c518225e164a8a508d9014ef6a27d83351a2cb",
+    "outputs/publication-source-bindings-2026-09-21.json": "33bbd7a06b5f2b8428eb1549eb663136298f19725d5d49c63ca939c94e32e6ae",
+    "outputs/validation-publication-2026-09-21.json": "8c10a23d2ee6c43565fe6c739cccc6002f50dda3aa200f6512d1d6b7bc1eeef1"
+  },
+  "clean_export": {
+    "source": "git checkout-index of the planned publication",
+    "indexed_files": 4454,
+    "unpublished_local_inputs_available": false,
+    "bound_inputs_and_sources_checked": 92
+  },
+  "checks": {
+    "python_unittest": {
+      "tests": 831,
+      "failures": 0,
+      "errors": 0,
+      "passed": true
+    },
+    "independent_validation": {
+      "tests": 831,
+      "failures": 0,
+      "errors": 0,
+      "passed": true
+    },
+    "node_tests": {
+      "tests": 107,
+      "failed": 0,
+      "passed": true
+    },
+    "web_build": {
+      "assets": 15,
+      "passed": true
+    },
+    "single_map_command": {
+      "status": "solved",
+      "learned_pairs": [
+        [
+          1,
+          10
+        ]
+      ],
+      "independent_check": true
+    },
+    "python_3_10_syntax": {
+      "files": 43,
+      "passed": true,
+      "runtime_on_python_3_10": "not_run_locally"
+    },
+    "code_and_markdown_whitespace": true
+  },
+  "limits": [
+    "Local validation of the staged code and research evidence; not a remote CI result.",
+    "Frozen generated evidence retains original bytes, including CRLF and renderer whitespace; source/Markdown whitespace check excludes outputs and figure artifacts.",
+    "Documentation-only navigation edits after the export do not change the tested code or byte-bound sources.",
+    "Old superseded report/source differences are disclosed in the source-binding report and publication note."
+  ]
+}
