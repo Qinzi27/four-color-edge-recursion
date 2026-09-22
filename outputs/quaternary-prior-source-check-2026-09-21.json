@@ -1,0 +1,23 @@
+{
+  "all_matched": true,
+  "checks": [
+    {
+      "manifest": "outputs/extendibility-guillotine-manifest-2026-09-21.json",
+      "manifest_sha256": "7ff68694b2d97da617dbe89d1a50424988351df33d2fd1934b2c3b4930cc4b29",
+      "source_count": 80,
+      "mismatches": []
+    },
+    {
+      "manifest": "outputs/extendibility-grid-subsets-manifest-2026-09-21.json",
+      "manifest_sha256": "4aff436269d3de1efb44510c91993749587c9171b17fa8141fc9db4aaf364cba",
+      "source_count": 80,
+      "mismatches": []
+    },
+    {
+      "manifest": "outputs/quaternary-contact-manifest-2026-09-21.json.gz",
+      "manifest_sha256": "83c7ce111c187fb6e9f7b2b91acb29efd45bcbeb41cd3231b2d3bc660e47c39f",
+      "source_count": 59,
+      "mismatches": []
+    }
+  ]
+}

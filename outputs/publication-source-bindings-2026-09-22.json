@@ -1,0 +1,4418 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-22T04:53:42.416086+00:00",
+  "passed": true,
+  "hash_bearing_artifacts": [
+    "outputs/extendibility-artifact-check-2026-09-21.json",
+    "outputs/extendibility-grid-subsets-manifest-2026-09-21.json",
+    "outputs/extendibility-guillotine-manifest-2026-09-21.json",
+    "outputs/grid-commitment-probe-2026-09-21/manifest.json",
+    "outputs/quaternary-contact-artifact-check-2026-09-21.json",
+    "outputs/quaternary-contact-manifest-2026-09-21.json.gz",
+    "outputs/quaternary-contact-manifest-v2-2026-09-21.json.gz",
+    "outputs/quaternary-geometry-artifact-check-2026-09-22.json",
+    "outputs/quaternary-geometry-manifest-2026-09-21.json.gz",
+    "outputs/quaternary-low-color-artifact-check-2026-09-22.json",
+    "outputs/quaternary-low-color-manifest-2026-09-22.json.gz",
+    "outputs/quaternary-reachability-artifact-check-2026-09-22.json",
+    "outputs/quaternary-reachability-manifest-2026-09-22.json.gz"
+  ],
+  "distinct_bound_files": 149,
+  "hash_declarations_checked": 729,
+  "files": [
+    {
+      "file": "docs/EXTENDIBILITY_PROTOCOL-2026-09-21.md",
+      "sha256": "e0468f0a722c49f051e16ed474d8fd59cfb7c0657fd65534dad942c03316a6f9",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "docs/QUATERNARY_CONTACT_AUDIT_V2-2026-09-21.md",
+      "sha256": "b6bf126079e0940f76ee3b25383835d449f4e61d35a0fba5f7334dea0cb79662",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "docs/QUATERNARY_CONTACT_PROTOCOL-2026-09-21.md",
+      "sha256": "12435b95a631d13ffc89c95d8979b1a2e36004603064797971b6714384cb66d1",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "docs/QUATERNARY_GEOMETRY_PROTOCOL-2026-09-21.md",
+      "sha256": "7967a54fc4a4a734ef3a0ccea2d5870cd092314844923e4011086a1eedf5e5d6",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "docs/QUATERNARY_LOW_COLOR_PROTOCOL-2026-09-22.md",
+      "sha256": "203ad7cc47bef5ae430221034fbe9eb553b8db63fd3c85de0aaeb92a27d66403",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "docs/QUATERNARY_REACHABILITY_PROTOCOL-2026-09-22.md",
+      "sha256": "1bb002de0aea1a73f3e4789c2e0001940b905b07ee7ec2faec01c9e85fbe8c09",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "docs/STRUCTURAL_RESTART_RULES-2026-09-21.md",
+      "sha256": "fc0fa642730d1bc4ff728243f41aa9ffee6ac66b041f764bc1c1d3b5fd07b9b8",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "examples/quaternary-contact-prototype-2026-09-21.json",
+      "sha256": "232aad292554854a0054831b9e3372284cbb9463f41160c2e9d368224e1b5186",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "examples/quaternary-real-regressions-2026-09-21.json",
+      "sha256": "05d924a26dcdfcf6db85d839d2db50191124ce0662ac0ec38962b2df33cf1d23",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/__init__.py",
+      "sha256": "dd3939384003ac2beb3abc6d0890b7d5feb5b7642c257a8e8c7b7a67940eba4f",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/__main__.py",
+      "sha256": "c1f15bb0a448700a1c9a9c66138d0075b0ac5ae78eda5e7a138af59746b3e60d",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/anchor_forest.py",
+      "sha256": "6bf04f6365d8fbfd086e77d65a9cd845f4b0d8965b4ff861576c41e226f1d42e",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/apex_triangle_cost.py",
+      "sha256": "94ef396c2e665ac670c9a1de63c1f2ab64d4801ebaa20fe1ba4c9a658fb6cc6c",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/circle_layer_repair.py",
+      "sha256": "f9f281b794c93df44df9b98008b99113268686f6090df6af651b5d6be3a90dcd",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/circle_layers.py",
+      "sha256": "a716db37fb9bf133e5e0218051ff90f662401329e4bf65e76260722ca7f385b1",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/closed_interfaces.py",
+      "sha256": "5572a3dcd31218215347acff8f0f398a148124c4105e95242089a86c8a9b992f",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/closed_support.py",
+      "sha256": "0a95dd2802d16654a4342332ae9f9825944a26c4fe2cad182de0a214fbfc56f1",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/coloring.py",
+      "sha256": "270cdd398002eadefbd8df0d2293c085e33a98fddd75e35a257c6cbe02e9e03c",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/conservative_recoloring.py",
+      "sha256": "26956dbc1bb5e56a4e05ebb5132cc869ec3737e74261e1e71ae7da387315ff10",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/current_geometry.py",
+      "sha256": "b782c4bf35f31363bfc3e70a60670e17b94041e4dc267a6a2a177196db0509ae",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/current_names.py",
+      "sha256": "6ed8422ff38e138e2d98d03d5da226a7b91ab3725bdab094349edee9d392d049",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/embedding.py",
+      "sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/examples.py",
+      "sha256": "2c0b5ae47b258bbb509ed0a6d0b8e9139304ac9128623ec1068a69150ff11b98",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/frontier_order.py",
+      "sha256": "9fd9abe4d17101f5938bf269ff2f8dc72f57a0fc0f4f3c12118e9975a0a80f98",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/frontier_restart.py",
+      "sha256": "2b82e9de0ecad888b5248602d039997889becac1718282f5c4a5eaa6d8c1c533",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/global_restart.py",
+      "sha256": "56aafff2632cf4c02cc20c7a056d02b9932f65f700311846d7d81c1cb32b3cbb",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/history.py",
+      "sha256": "20859575858700887da6524e8f9d743b4a454700d39f7d3aaf053a550317c17f",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/implicit_inequality.py",
+      "sha256": "f69df9171708f6c6102d155b6e39e7a8f8d2356013e7053a4713f1ea84d12662",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/inherited_names.py",
+      "sha256": "235751061bc97b7cac9036890a29971c3d11688cad4aa628ceafa09412fd4c14",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/interface_names.py",
+      "sha256": "cd3d468c3feb75b2e0aa319d95177307aed53b4ce50bb0105c9dbee215e742c4",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/interface_signatures.py",
+      "sha256": "47e142a462034e3358acba38238ed85a10c01e9c7d1225643edb9fcc165802c2",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/joint_boundary.py",
+      "sha256": "f2191d544d036ba904fe912d68327f9c3e6f14e41eaa686c01b4303b9353ed53",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/joint_boundary_restart.py",
+      "sha256": "3690431efde9bf437f1e0926bd87a3a26ff044f78e70df6162710e6e331648e6",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/joint_lines.py",
+      "sha256": "7d0fa2df82b719ceba514818f27d4b155f7e96d47b3c173743e3adf44b930e88",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/kempe_history_policy.py",
+      "sha256": "0f26efa5a90def334831c973e6965e417c3ae811c5abbe0622f9cd6baa4d6d5a",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/kempe_reconfiguration.py",
+      "sha256": "cd1dd753532d19d02114fc31d55a47aaa2f995f5b6d156d4b3a8e2daccdf3c04",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/kempe_split.py",
+      "sha256": "b5264dfcde5953f38a976bedf5d1684bd6fe347e93aab8517047c53785d4eb30",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/level_sides.py",
+      "sha256": "222a8f752722e95c646d5ec58bbbcfc6ff94108d1d893d00806c960a25fd45ba",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/level_sides_peer.py",
+      "sha256": "a1b1add2d97d34ab29c35e6fab7f5a665aa6841742080907ea95b5d4002a5c56",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/line_names.py",
+      "sha256": "8fdfb7019d89edd01643bb5e1554a3aba8480dfbc032f34c72039782c620ce33",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/local_reuse.py",
+      "sha256": "f16793e320bb446c2966a14b5c723158c908f13214ed00b94ba6a009e9b5f5e8",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/orbit_frontier.py",
+      "sha256": "13067029f33fc13961cbb79d12b7d2252432493b63ce26776d44794363375d00",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/peer_batches.py",
+      "sha256": "ad8bc0ffcb9b658da6b56ed0c32d18685996f9639f0b01598e37031f620333ff",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/prior_operation_restart.py",
+      "sha256": "d9432da1e9811055994ba0531c572e79e4deb0cb01292a1ca7501e7683ee237d",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/prior_rule_reuse.py",
+      "sha256": "315ac359efb51fa264b3bb866b0ee2272137ef7cceba03fdf10a7314a7e10e49",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/probabilistic_names.py",
+      "sha256": "ed1bf39e471319346c48a8e1a5daeae4f8a1433b398ff6a700701d83ad142764",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/recoloring_boundary.py",
+      "sha256": "16c525cdcdac35a26e53e7429a0130b435d65929aeb4633c112f47bf62ff21ae",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/relation_frontier.py",
+      "sha256": "9d385da99c36e0b9f59c3d2182b697cd8d2b27734014cf97b0314c4ef785e316",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/relation_names.py",
+      "sha256": "cc6566e959ab87c47d670dc8113d856f64e77132e5542c6d6ec8e98cec28d8cf",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/repair.py",
+      "sha256": "1e5dff45897ff5f83202b577ae9cebc4f58231143e8e02b10f5c34a0ef879cb6",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/retained_profiles.py",
+      "sha256": "5caed3fe79850cd7bd66a142ada98e5732e3af058325adfc2772fc2da5faec47",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/staged_levels.py",
+      "sha256": "50eba883b5ba20b3af578695a27d6f30ccea43de4abd8e63f7942492ca381e4c",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/strip_chain.py",
+      "sha256": "30f33bb5f988d34b8ab5a68f6887b6dfa13dadb7cf1ca7a550f6c9098be67d1c",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/structural_name_relations.py",
+      "sha256": "20b7a71008ca6f85d5a785e5fd354778da55e032e7848603992b399cc157015f",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/structural_restart.py",
+      "sha256": "de75e46c09f9bf981c5dd04af6e7b572a809630ca93552b96d0841b925a41a34",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/target_renaming.py",
+      "sha256": "8d0a44ced52a63f9878cd57444d2a1f53812a3f0c05a5d9f20001032f7e9ce5a",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/triangle_chain_family.py",
+      "sha256": "93d58a2a13c6d401fea55e9c1bde804b2fbea921420be79cb4fc4410595d94ec",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/triangle_chain_replay.py",
+      "sha256": "f36652e6d99018e0b64a7a547b249cf5a5bb0dadee1bcc3f98af0d412aaa2864",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/two_port_reduction.py",
+      "sha256": "b5bc8580804d83275d73ecd139d8e7721f228e05a37b56e7af704778ec82d558",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/weighted_lines.py",
+      "sha256": "21cf5484a0504807463dafaa54992bf2cd6b1a4924e80b5a4ad29d3381ddd389",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "fourcolor/whole_lines.py",
+      "sha256": "5bd54516c18ff74c2dcba2a5e89a27b1af7e3c0277fb3aa8e12f0efa55f9312c",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "outputs/extendibility-artifact-check-2026-09-21.json",
+      "sha256": "626c5ff2c02e16f25f6fc1be531119c4e91da105e4aa5ce1d41ff6dc7ccfb118",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "outputs/extendibility-grid-subsets-manifest-2026-09-21.json",
+      "sha256": "4aff436269d3de1efb44510c91993749587c9171b17fa8141fc9db4aaf364cba",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "outputs/extendibility-guillotine-manifest-2026-09-21.json",
+      "sha256": "7ff68694b2d97da617dbe89d1a50424988351df33d2fd1934b2c3b4930cc4b29",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "outputs/grid-commitment-probe-2026-09-21/manifest.json",
+      "sha256": "0a46242b1e813b9adeee0456a5559aecfb89bbaa191a0d1cfcf08d7469d7aea0",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "outputs/prior-operations-factorial-2026-09-20.json.gz",
+      "sha256": "945cff0ccdc1e23ccc078232ab9c7c238e97757a73505a33078bdc3177095c15",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "outputs/quaternary-contact-artifact-check-2026-09-21.json",
+      "sha256": "24a683c9f70629c3d029020efa026fd56e3bb6d5a305dac7f7d5346124910a19",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "outputs/quaternary-contact-example-2026-09-21.json",
+      "sha256": "f4b901dc2c4175061e60e6d3905af5aa3d546e2ff01d89ddfebd55214ce720d3",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "outputs/quaternary-contact-limitation-2026-09-21.json",
+      "sha256": "9e2beae2a8aebc828c87db0ca7c6aaa8975278ca4ca63b0f94f81a77e33963d0",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "outputs/quaternary-contact-manifest-2026-09-21.json.gz",
+      "sha256": "83c7ce111c187fb6e9f7b2b91acb29efd45bcbeb41cd3231b2d3bc660e47c39f",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "outputs/quaternary-contact-manifest-v2-2026-09-21.json.gz",
+      "sha256": "1faec96514110a3e0e88d2a4353dce7dd460937585afeadb8014d14f7df8d319",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "outputs/quaternary-contacts-2026-09-21.json.gz",
+      "sha256": "25dd54aea5828104a9c3bdb286f7f4a1913cf19fbef7c3baf9a70218693e8f3a",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "outputs/quaternary-contacts-v2-2026-09-21.json.gz",
+      "sha256": "7bd4c57a44ab60f06c91f116ca6f8a7fa56a724e2a449a9e636fd98e78e4f114",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "outputs/quaternary-geometry-artifact-check-2026-09-22.json",
+      "sha256": "c9916e9f152d296cf20a70c2a8c9f1d8e6ff3ed020d9461a294d8dec18ec14db",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "outputs/quaternary-geometry-manifest-2026-09-21.json.gz",
+      "sha256": "e69d290d675c9707879a6fe48f09149b22761c099f260b30114c38e766d80f7c",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "outputs/quaternary-low-color-2026-09-22.json.gz",
+      "sha256": "b882d137b5e0b1513ba5732fe6867a4174110c68d50a49709dd2d774f2b6de58",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "outputs/quaternary-low-color-artifact-check-2026-09-22.json",
+      "sha256": "c73b5d7d5693bda2dc5a462ec22f6e494f11d97c3af034398970aee082bfb5f6",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "outputs/quaternary-low-color-manifest-2026-09-22.json.gz",
+      "sha256": "8368881a0f963139e300ebf0b076548db1b181db02d05e68e12a92d59f7ad15c",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "outputs/quaternary-obstruction-state-scan-2026-09-22.json",
+      "sha256": "ea0938004e273ff3a7063b5f0959389d85a1c11517b0263116a1106ac428e32b",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "outputs/quaternary-reachability-2026-09-22.json.gz",
+      "sha256": "a43c7c339526477ea316668e4e53e972509c8458ef1b3b9c53435be94b6ce822",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "outputs/quaternary-reachability-artifact-check-2026-09-22.json",
+      "sha256": "62efdbd5dbfaec392d3fd3081fbc3b3d2c822d54624f8d23d9e2edaaf9b089f2",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "outputs/quaternary-reachability-manifest-2026-09-22.json.gz",
+      "sha256": "a0d5ad70b08592e849f49c271c2ab6fdc2ea53db88403bb59448c37967d06f3c",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "outputs/structural-restart-full-2026-09-21.json.gz",
+      "sha256": "bc692056ee5395168bb39ceae9d3b24d5f5b2d289180bc3261a918c52c7daeca",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/analyze_line_generations.py",
+      "sha256": "48058342337b5a7c5ec523df42e16d447ccf1009dd4ffdf9f1924e06c1e57bd6",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/audit_bare_bipyramid.py",
+      "sha256": "db72b23c3950989fcc837f4e8d0be7667f4fbfadaea66a3d56fca2737e635fcf",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/audit_commit_extendibility.py",
+      "sha256": "48b5fe0a6e0cfdf0af79557447810bc32810760e350ea8bdad2aa6bf719e64c7",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/audit_lifted_bipyramid.py",
+      "sha256": "7aab43c809d5f6c0641da50cd896798d37ba93c2dadfa22251f55134b7579b03",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/audit_quaternary_geometry.py",
+      "sha256": "58cc6019a952cb874ee4f37552c552ae0fef3276de16d67fff3669be4ecbaa41",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/audit_quaternary_low_color.py",
+      "sha256": "318b0a08f71630ef13ece61a9f90c94c31a5afb255f9a9a7e612eed2768cd436",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/audit_retained_blocks.py",
+      "sha256": "be76a3a94cc9e2a473045b8575283ad84264247ae6ad494b3387aa92808fdb19",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/check_quaternary_low_color_artifacts.py",
+      "sha256": "df33ebc9ca9b9945241af98608718ec6764f840b5c0430a8f21ab91f08418bfc",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/check_quaternary_reachability.py",
+      "sha256": "0d44e69161b5640990f58563a2a42ffabf763004b21016fb4056c495b6bbe963",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/check_quaternary_reachability_artifacts.py",
+      "sha256": "1b7f97a13584b17ecd286fa3067cbe5ee32bbcb4ff9ea697730c12719ff8e06d",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/compare_local_marks.py",
+      "sha256": "d77aca237830512b78127222c2c8a660bd50d418a6cfa47439bda7bee29cce73",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/construction-experiments.mjs",
+      "sha256": "094517ba881cdc70b9e4b7ab796af251af5e3eae73e5f71c561d2c47a1306e76",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/current_corpus.py",
+      "sha256": "f107a35500c84db4fbfc3b9b4c02b7dbd8dc49f0402309525066dd6d0023e519",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/exact_extendibility_oracle.py",
+      "sha256": "8e11354484b53c38446b5afab607064b6314ac46a1d6f2594089b11167f0ece2",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/exhaustive_grid_subsets.py",
+      "sha256": "1803f8cbaf1a3325d8913ac107a519c22cf79c295547280538514c07686eaa3f",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/exhaustive_rectangular_histories.py",
+      "sha256": "db5c9faecda0b5c2f4536fe55475c055d74c3c75aaa6b8997288832d4c24a702",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/probe_grid_commitments.py",
+      "sha256": "6043fc919e56927f383a475e902fea3d669055d10c983da4cf6087b5b82abe9f",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/quaternary_bipyramid_inputs.py",
+      "sha256": "c6f341a7e055571ca61be3ff9603fa8ec71b0e159ed3837ed99de3885b3e759e",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/quaternary_contact_model.py",
+      "sha256": "12bd29155a224d72484981033f2fa18ca3c6ac1c9193bd919602c78d929b9dd1",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/quaternary_geometry_adapter.py",
+      "sha256": "6219e8b66e65844fdb646ee2ea26dd1e2fd1e9981395db4b264b56f9a4499204",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/quaternary_lifted_obstruction_inputs.py",
+      "sha256": "0125228fe4d54b4aaf8405c867ef26863fa176294b359456eb8415302dcb1cd2",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/quaternary_low_color.py",
+      "sha256": "2e33ad1504d223dd4a37fcb22089b05c1fec23fdbedf5fc798888b1ad1e18a95",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/quaternary_low_color_inputs.py",
+      "sha256": "19fd01e7e4b8335bae3722c0c87ad029546b7945ed27b7215c2849763efbaf54",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/restart-geometry.mjs",
+      "sha256": "66d72196c12e56e2ca63b6debb06b661e6dc9a110be6c4f236d9f8f32653897e",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/scan_low_color_obstruction_states.py",
+      "sha256": "0b2faa973903cabe7af4bd35bf88c54a4eaacb2374c6a5d10793d2fa3f96c417",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/validate_frontier_restart.py",
+      "sha256": "74b0d487b04ee218c3328cdbf566801812472cbe47a71b4f78bbda580aae39a7",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/validate_global_restart.py",
+      "sha256": "2807c3ce904e42e4fb2bd194f773724c6bf7364f592d8cc730dfecc856601c18",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/validate_level_sides.py",
+      "sha256": "b3fc714c0d07e7159c10ae14a92a787aeff3a499470917429b3bee20058ecff8",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/validate_level_sides_peer.py",
+      "sha256": "1226941d2a95b632eec0532581b21d775afd25eb24a38b05a039d485528e803f",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/validate_level_sides_peer_full.py",
+      "sha256": "d2ccbcbed7530ff1a996e288816c26afdb3668fa6e810adc68df64583911e41e",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/validate_local_reuse.py",
+      "sha256": "4bd55b56a41ef7e3cea32a80293d4d2e8ab4a711bd20441fc376371b21aa350c",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/validate_quaternary_contacts.py",
+      "sha256": "cd348938078377136c41ae9bc3038b1ff524dc173eaacc2d1b02d354ba309a72",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/validate_quaternary_contacts_v2.py",
+      "sha256": "e5c6584c881d74a6189a301cb161e55c9b1533138bb4491aa4b819efbb4c3fc2",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/validate_quaternary_geometry.py",
+      "sha256": "3e104f5937cb0ffad9725d31ae3fe9dfc866f85a0e5121f0a0dc08ab2bd6e4da",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/validate_quaternary_low_color.py",
+      "sha256": "0e397257ce4ddcd1e81566be2884d15d83d9dcc832d5591be1d87c84ea9c3e52",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/validate_relation_frontier.py",
+      "sha256": "d572cdb030021d3d080e7cf277f688e80c2a5af87b7a52cab3d1991f75b4248e",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/validate_relation_frontier_full.py",
+      "sha256": "d5e06a138f26a8275358ee1c9473cac697e63407ba43c551132b3c72fb3dca69",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/validate_retained_profiles.py",
+      "sha256": "0a5d700d557bb0a54f401c3a8c7d7f8dc21d448720f24404ba195f2292c941c4",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/validate_structural_restart.py",
+      "sha256": "3900b1bbe98f46e068f485e1297cb7c08299bac3468a06609c8378d63b866c05",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/validate_structural_restart_full.py",
+      "sha256": "f668082657fb7943ab211f4ac4abe31a06e5acb3275ee6dcb5a284586841226f",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "scripts/validate_weighted_lines.py",
+      "sha256": "d4cd30cb02e5e269598d48599fcd090731c92c7d9903222bd581e81cdd6f0eea",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "tests/test_bare_bipyramid.py",
+      "sha256": "042ec665193c77fa71fa042f8d14c58566f9b19844e594ecc28b549cffec0e57",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "tests/test_commit_extendibility.py",
+      "sha256": "f4d13bd3f72ce0c4ab77f3c5e87ad202d8973cf4a775153bfec7156e39bdcb47",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "tests/test_exact_extendibility_oracle.py",
+      "sha256": "6d0810c3e27ff37dfeb454044d15ed7cc1107c7a777de962b0a0674fd0539722",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "tests/test_exhaustive_grid_subsets.py",
+      "sha256": "334da333257d0960b383bafc060b25ad1b3a229d0d1268dd735ae3ecd1aefdc4",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "tests/test_exhaustive_rectangular_histories.py",
+      "sha256": "3ad0f03df79ff3c85950cb4dd7f8132237fb263a04f4ae99b35db186fb093658",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "tests/test_lifted_bipyramid.py",
+      "sha256": "f58cf77f37a99f519679b54138ccc01e5b6f0b665ac2e1d43e4cb36726a4c382",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "tests/test_low_color_obstruction_states.py",
+      "sha256": "cda472a2f785af644578be560a103c58fa1ea96ea160254be75ad8fdab0a1d01",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "tests/test_quaternary_bipyramid_inputs.py",
+      "sha256": "3ed6e02ae64d1ab6b8235135b78dcc4453f9540d272f53882d3361db57c3a083",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "tests/test_quaternary_contact_audit.py",
+      "sha256": "81fbdabde00b70b19993563bf9d26871271e3786db52589cede359899510e2fc",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "tests/test_quaternary_contact_metadata.py",
+      "sha256": "726c09d9ca7bebcb0c98f7967a85cf486132a351d29d502f13119dd7c58f6b84",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "tests/test_quaternary_contact_model.py",
+      "sha256": "ddb0b4e5ff840f2760713ca1e2cdfb7920190d34c6a1176eda8e27d2c8d30698",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "tests/test_quaternary_geometry_adapter.py",
+      "sha256": "b71b0b46958e390c23085727a182d1993bd21851da17d8c1b45aa5d705a93931",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "tests/test_quaternary_geometry_audit.py",
+      "sha256": "460e9560ef80fe122c6087284fbee13d5717f5c1ade4e68f7b8b3d66a9d8b293",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "tests/test_quaternary_geometry_experiment.py",
+      "sha256": "a73c7877f1a963fe9bd8164c0d68f81e28a426e826ff63ef8e400b1b4bd12ff6",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "tests/test_quaternary_lifted_obstruction_inputs.py",
+      "sha256": "7e574718038ff912061d4268608774a4ca9a4d591303546ed2f102be7e41cb3e",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "tests/test_quaternary_low_color.py",
+      "sha256": "32b0c576ba4ea39d553c7167414fbfafc2c75ce36344d8e928fd88c84b3797fb",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "tests/test_quaternary_low_color_audit.py",
+      "sha256": "d184558d97dcc99b35c837d7df884460a84b403bc5efde47d8bdbbc45f5676df",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "tests/test_quaternary_low_color_experiment.py",
+      "sha256": "515666091e7ecbd1808ce64cd1dcf56afa465689889fccc9962598f1235f037c",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "tests/test_quaternary_low_color_inputs.py",
+      "sha256": "c51ae4b7b2fc9b4741182418176da2ccfa7c95a361af2c76e0ff50b1b0b3dcae",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "tests/test_quaternary_reachability.py",
+      "sha256": "d402dbc619f66ed97b6f7fbadf16d8d3859047bde17a57541a2f745b0bafb0bf",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "tests/test_quaternary_reachability_artifacts.py",
+      "sha256": "2397fcf951754d7878a9ada6f7d5c3374a6f134c6c9815721d1ab939de1d9270",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "tests/test_structural_name_relations.py",
+      "sha256": "2d6b81cedb62eafedaa26e6ba92603d77655a273e2d8f0dbeb473c29c3a20940",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "tests/test_structural_restart.py",
+      "sha256": "1eacd6e81f8341df0b24a13f3d080e78a617a25250988680111e1f4d72cd98b8",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "tests/test_structural_restart_full.py",
+      "sha256": "1d2d9769d2295036ac692df3a2ead79168d0d6d2d399acf92d604d508ab40bff",
+      "index_matches_working_bytes": true
+    },
+    {
+      "file": "tests/test_structural_restart_validation.py",
+      "sha256": "c64d4700628d2e145a122ffeacd366ef252ccbc3e0090faaa0e329bb8e5d425a",
+      "index_matches_working_bytes": true
+    }
+  ],
+  "declarations": [
+    {
+      "file": "docs/EXTENDIBILITY_PROTOCOL-2026-09-21.md",
+      "expected_sha256": "e0468f0a722c49f051e16ed474d8fd59cfb7c0657fd65534dad942c03316a6f9",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/__init__.py",
+      "expected_sha256": "dd3939384003ac2beb3abc6d0890b7d5feb5b7642c257a8e8c7b7a67940eba4f",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/__main__.py",
+      "expected_sha256": "c1f15bb0a448700a1c9a9c66138d0075b0ac5ae78eda5e7a138af59746b3e60d",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/anchor_forest.py",
+      "expected_sha256": "6bf04f6365d8fbfd086e77d65a9cd845f4b0d8965b4ff861576c41e226f1d42e",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/apex_triangle_cost.py",
+      "expected_sha256": "94ef396c2e665ac670c9a1de63c1f2ab64d4801ebaa20fe1ba4c9a658fb6cc6c",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/circle_layer_repair.py",
+      "expected_sha256": "f9f281b794c93df44df9b98008b99113268686f6090df6af651b5d6be3a90dcd",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/circle_layers.py",
+      "expected_sha256": "a716db37fb9bf133e5e0218051ff90f662401329e4bf65e76260722ca7f385b1",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/closed_interfaces.py",
+      "expected_sha256": "5572a3dcd31218215347acff8f0f398a148124c4105e95242089a86c8a9b992f",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/closed_support.py",
+      "expected_sha256": "0a95dd2802d16654a4342332ae9f9825944a26c4fe2cad182de0a214fbfc56f1",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/coloring.py",
+      "expected_sha256": "270cdd398002eadefbd8df0d2293c085e33a98fddd75e35a257c6cbe02e9e03c",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/conservative_recoloring.py",
+      "expected_sha256": "26956dbc1bb5e56a4e05ebb5132cc869ec3737e74261e1e71ae7da387315ff10",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/current_geometry.py",
+      "expected_sha256": "b782c4bf35f31363bfc3e70a60670e17b94041e4dc267a6a2a177196db0509ae",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/current_names.py",
+      "expected_sha256": "6ed8422ff38e138e2d98d03d5da226a7b91ab3725bdab094349edee9d392d049",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/embedding.py",
+      "expected_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/examples.py",
+      "expected_sha256": "2c0b5ae47b258bbb509ed0a6d0b8e9139304ac9128623ec1068a69150ff11b98",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/frontier_order.py",
+      "expected_sha256": "9fd9abe4d17101f5938bf269ff2f8dc72f57a0fc0f4f3c12118e9975a0a80f98",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/frontier_restart.py",
+      "expected_sha256": "2b82e9de0ecad888b5248602d039997889becac1718282f5c4a5eaa6d8c1c533",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/global_restart.py",
+      "expected_sha256": "56aafff2632cf4c02cc20c7a056d02b9932f65f700311846d7d81c1cb32b3cbb",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/history.py",
+      "expected_sha256": "20859575858700887da6524e8f9d743b4a454700d39f7d3aaf053a550317c17f",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/implicit_inequality.py",
+      "expected_sha256": "f69df9171708f6c6102d155b6e39e7a8f8d2356013e7053a4713f1ea84d12662",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/inherited_names.py",
+      "expected_sha256": "235751061bc97b7cac9036890a29971c3d11688cad4aa628ceafa09412fd4c14",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/interface_names.py",
+      "expected_sha256": "cd3d468c3feb75b2e0aa319d95177307aed53b4ce50bb0105c9dbee215e742c4",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/interface_signatures.py",
+      "expected_sha256": "47e142a462034e3358acba38238ed85a10c01e9c7d1225643edb9fcc165802c2",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/joint_boundary.py",
+      "expected_sha256": "f2191d544d036ba904fe912d68327f9c3e6f14e41eaa686c01b4303b9353ed53",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/joint_boundary_restart.py",
+      "expected_sha256": "3690431efde9bf437f1e0926bd87a3a26ff044f78e70df6162710e6e331648e6",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/joint_lines.py",
+      "expected_sha256": "7d0fa2df82b719ceba514818f27d4b155f7e96d47b3c173743e3adf44b930e88",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/kempe_history_policy.py",
+      "expected_sha256": "0f26efa5a90def334831c973e6965e417c3ae811c5abbe0622f9cd6baa4d6d5a",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/kempe_reconfiguration.py",
+      "expected_sha256": "cd1dd753532d19d02114fc31d55a47aaa2f995f5b6d156d4b3a8e2daccdf3c04",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/kempe_split.py",
+      "expected_sha256": "b5264dfcde5953f38a976bedf5d1684bd6fe347e93aab8517047c53785d4eb30",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/level_sides.py",
+      "expected_sha256": "222a8f752722e95c646d5ec58bbbcfc6ff94108d1d893d00806c960a25fd45ba",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/level_sides_peer.py",
+      "expected_sha256": "a1b1add2d97d34ab29c35e6fab7f5a665aa6841742080907ea95b5d4002a5c56",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/line_names.py",
+      "expected_sha256": "8fdfb7019d89edd01643bb5e1554a3aba8480dfbc032f34c72039782c620ce33",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/local_reuse.py",
+      "expected_sha256": "f16793e320bb446c2966a14b5c723158c908f13214ed00b94ba6a009e9b5f5e8",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/orbit_frontier.py",
+      "expected_sha256": "13067029f33fc13961cbb79d12b7d2252432493b63ce26776d44794363375d00",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/peer_batches.py",
+      "expected_sha256": "ad8bc0ffcb9b658da6b56ed0c32d18685996f9639f0b01598e37031f620333ff",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/prior_operation_restart.py",
+      "expected_sha256": "d9432da1e9811055994ba0531c572e79e4deb0cb01292a1ca7501e7683ee237d",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/prior_rule_reuse.py",
+      "expected_sha256": "315ac359efb51fa264b3bb866b0ee2272137ef7cceba03fdf10a7314a7e10e49",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/probabilistic_names.py",
+      "expected_sha256": "ed1bf39e471319346c48a8e1a5daeae4f8a1433b398ff6a700701d83ad142764",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/recoloring_boundary.py",
+      "expected_sha256": "16c525cdcdac35a26e53e7429a0130b435d65929aeb4633c112f47bf62ff21ae",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/relation_frontier.py",
+      "expected_sha256": "9d385da99c36e0b9f59c3d2182b697cd8d2b27734014cf97b0314c4ef785e316",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/relation_names.py",
+      "expected_sha256": "cc6566e959ab87c47d670dc8113d856f64e77132e5542c6d6ec8e98cec28d8cf",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/repair.py",
+      "expected_sha256": "1e5dff45897ff5f83202b577ae9cebc4f58231143e8e02b10f5c34a0ef879cb6",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/retained_profiles.py",
+      "expected_sha256": "5caed3fe79850cd7bd66a142ada98e5732e3af058325adfc2772fc2da5faec47",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/staged_levels.py",
+      "expected_sha256": "50eba883b5ba20b3af578695a27d6f30ccea43de4abd8e63f7942492ca381e4c",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/strip_chain.py",
+      "expected_sha256": "30f33bb5f988d34b8ab5a68f6887b6dfa13dadb7cf1ca7a550f6c9098be67d1c",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/structural_name_relations.py",
+      "expected_sha256": "20b7a71008ca6f85d5a785e5fd354778da55e032e7848603992b399cc157015f",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/structural_restart.py",
+      "expected_sha256": "de75e46c09f9bf981c5dd04af6e7b572a809630ca93552b96d0841b925a41a34",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/target_renaming.py",
+      "expected_sha256": "8d0a44ced52a63f9878cd57444d2a1f53812a3f0c05a5d9f20001032f7e9ce5a",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/triangle_chain_family.py",
+      "expected_sha256": "93d58a2a13c6d401fea55e9c1bde804b2fbea921420be79cb4fc4410595d94ec",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/triangle_chain_replay.py",
+      "expected_sha256": "f36652e6d99018e0b64a7a547b249cf5a5bb0dadee1bcc3f98af0d412aaa2864",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/two_port_reduction.py",
+      "expected_sha256": "b5bc8580804d83275d73ecd139d8e7721f228e05a37b56e7af704778ec82d558",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/weighted_lines.py",
+      "expected_sha256": "21cf5484a0504807463dafaa54992bf2cd6b1a4924e80b5a4ad29d3381ddd389",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/whole_lines.py",
+      "expected_sha256": "5bd54516c18ff74c2dcba2a5e89a27b1af7e3c0277fb3aa8e12f0efa55f9312c",
+      "matches": true
+    },
+    {
+      "file": "scripts/analyze_line_generations.py",
+      "expected_sha256": "48058342337b5a7c5ec523df42e16d447ccf1009dd4ffdf9f1924e06c1e57bd6",
+      "matches": true
+    },
+    {
+      "file": "scripts/audit_commit_extendibility.py",
+      "expected_sha256": "48b5fe0a6e0cfdf0af79557447810bc32810760e350ea8bdad2aa6bf719e64c7",
+      "matches": true
+    },
+    {
+      "file": "scripts/current_corpus.py",
+      "expected_sha256": "f107a35500c84db4fbfc3b9b4c02b7dbd8dc49f0402309525066dd6d0023e519",
+      "matches": true
+    },
+    {
+      "file": "scripts/exact_extendibility_oracle.py",
+      "expected_sha256": "8e11354484b53c38446b5afab607064b6314ac46a1d6f2594089b11167f0ece2",
+      "matches": true
+    },
+    {
+      "file": "scripts/exhaustive_grid_subsets.py",
+      "expected_sha256": "1803f8cbaf1a3325d8913ac107a519c22cf79c295547280538514c07686eaa3f",
+      "matches": true
+    },
+    {
+      "file": "scripts/exhaustive_rectangular_histories.py",
+      "expected_sha256": "db5c9faecda0b5c2f4536fe55475c055d74c3c75aaa6b8997288832d4c24a702",
+      "matches": true
+    },
+    {
+      "file": "scripts/restart-geometry.mjs",
+      "expected_sha256": "66d72196c12e56e2ca63b6debb06b661e6dc9a110be6c4f236d9f8f32653897e",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_frontier_restart.py",
+      "expected_sha256": "74b0d487b04ee218c3328cdbf566801812472cbe47a71b4f78bbda580aae39a7",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_global_restart.py",
+      "expected_sha256": "2807c3ce904e42e4fb2bd194f773724c6bf7364f592d8cc730dfecc856601c18",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_level_sides_peer.py",
+      "expected_sha256": "1226941d2a95b632eec0532581b21d775afd25eb24a38b05a039d485528e803f",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_relation_frontier.py",
+      "expected_sha256": "d572cdb030021d3d080e7cf277f688e80c2a5af87b7a52cab3d1991f75b4248e",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_structural_restart.py",
+      "expected_sha256": "3900b1bbe98f46e068f485e1297cb7c08299bac3468a06609c8378d63b866c05",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_weighted_lines.py",
+      "expected_sha256": "d4cd30cb02e5e269598d48599fcd090731c92c7d9903222bd581e81cdd6f0eea",
+      "matches": true
+    },
+    {
+      "file": "tests/test_commit_extendibility.py",
+      "expected_sha256": "f4d13bd3f72ce0c4ab77f3c5e87ad202d8973cf4a775153bfec7156e39bdcb47",
+      "matches": true
+    },
+    {
+      "file": "tests/test_exact_extendibility_oracle.py",
+      "expected_sha256": "6d0810c3e27ff37dfeb454044d15ed7cc1107c7a777de962b0a0674fd0539722",
+      "matches": true
+    },
+    {
+      "file": "tests/test_exhaustive_grid_subsets.py",
+      "expected_sha256": "334da333257d0960b383bafc060b25ad1b3a229d0d1268dd735ae3ecd1aefdc4",
+      "matches": true
+    },
+    {
+      "file": "tests/test_exhaustive_rectangular_histories.py",
+      "expected_sha256": "3ad0f03df79ff3c85950cb4dd7f8132237fb263a04f4ae99b35db186fb093658",
+      "matches": true
+    },
+    {
+      "file": "scripts/exhaustive_grid_subsets.py",
+      "expected_sha256": "1803f8cbaf1a3325d8913ac107a519c22cf79c295547280538514c07686eaa3f",
+      "matches": true
+    },
+    {
+      "file": "tests/test_exhaustive_grid_subsets.py",
+      "expected_sha256": "334da333257d0960b383bafc060b25ad1b3a229d0d1268dd735ae3ecd1aefdc4",
+      "matches": true
+    },
+    {
+      "file": "scripts/current_corpus.py",
+      "expected_sha256": "f107a35500c84db4fbfc3b9b4c02b7dbd8dc49f0402309525066dd6d0023e519",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_global_restart.py",
+      "expected_sha256": "2807c3ce904e42e4fb2bd194f773724c6bf7364f592d8cc730dfecc856601c18",
+      "matches": true
+    },
+    {
+      "file": "scripts/exhaustive_grid_subsets.py",
+      "expected_sha256": "1803f8cbaf1a3325d8913ac107a519c22cf79c295547280538514c07686eaa3f",
+      "matches": true
+    },
+    {
+      "file": "tests/test_exhaustive_grid_subsets.py",
+      "expected_sha256": "334da333257d0960b383bafc060b25ad1b3a229d0d1268dd735ae3ecd1aefdc4",
+      "matches": true
+    },
+    {
+      "file": "scripts/current_corpus.py",
+      "expected_sha256": "f107a35500c84db4fbfc3b9b4c02b7dbd8dc49f0402309525066dd6d0023e519",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_global_restart.py",
+      "expected_sha256": "2807c3ce904e42e4fb2bd194f773724c6bf7364f592d8cc730dfecc856601c18",
+      "matches": true
+    },
+    {
+      "file": "docs/EXTENDIBILITY_PROTOCOL-2026-09-21.md",
+      "expected_sha256": "e0468f0a722c49f051e16ed474d8fd59cfb7c0657fd65534dad942c03316a6f9",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/__init__.py",
+      "expected_sha256": "dd3939384003ac2beb3abc6d0890b7d5feb5b7642c257a8e8c7b7a67940eba4f",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/__main__.py",
+      "expected_sha256": "c1f15bb0a448700a1c9a9c66138d0075b0ac5ae78eda5e7a138af59746b3e60d",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/anchor_forest.py",
+      "expected_sha256": "6bf04f6365d8fbfd086e77d65a9cd845f4b0d8965b4ff861576c41e226f1d42e",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/apex_triangle_cost.py",
+      "expected_sha256": "94ef396c2e665ac670c9a1de63c1f2ab64d4801ebaa20fe1ba4c9a658fb6cc6c",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/circle_layer_repair.py",
+      "expected_sha256": "f9f281b794c93df44df9b98008b99113268686f6090df6af651b5d6be3a90dcd",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/circle_layers.py",
+      "expected_sha256": "a716db37fb9bf133e5e0218051ff90f662401329e4bf65e76260722ca7f385b1",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/closed_interfaces.py",
+      "expected_sha256": "5572a3dcd31218215347acff8f0f398a148124c4105e95242089a86c8a9b992f",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/closed_support.py",
+      "expected_sha256": "0a95dd2802d16654a4342332ae9f9825944a26c4fe2cad182de0a214fbfc56f1",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/coloring.py",
+      "expected_sha256": "270cdd398002eadefbd8df0d2293c085e33a98fddd75e35a257c6cbe02e9e03c",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/conservative_recoloring.py",
+      "expected_sha256": "26956dbc1bb5e56a4e05ebb5132cc869ec3737e74261e1e71ae7da387315ff10",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/current_geometry.py",
+      "expected_sha256": "b782c4bf35f31363bfc3e70a60670e17b94041e4dc267a6a2a177196db0509ae",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/current_names.py",
+      "expected_sha256": "6ed8422ff38e138e2d98d03d5da226a7b91ab3725bdab094349edee9d392d049",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/embedding.py",
+      "expected_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/examples.py",
+      "expected_sha256": "2c0b5ae47b258bbb509ed0a6d0b8e9139304ac9128623ec1068a69150ff11b98",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/frontier_order.py",
+      "expected_sha256": "9fd9abe4d17101f5938bf269ff2f8dc72f57a0fc0f4f3c12118e9975a0a80f98",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/frontier_restart.py",
+      "expected_sha256": "2b82e9de0ecad888b5248602d039997889becac1718282f5c4a5eaa6d8c1c533",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/global_restart.py",
+      "expected_sha256": "56aafff2632cf4c02cc20c7a056d02b9932f65f700311846d7d81c1cb32b3cbb",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/history.py",
+      "expected_sha256": "20859575858700887da6524e8f9d743b4a454700d39f7d3aaf053a550317c17f",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/implicit_inequality.py",
+      "expected_sha256": "f69df9171708f6c6102d155b6e39e7a8f8d2356013e7053a4713f1ea84d12662",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/inherited_names.py",
+      "expected_sha256": "235751061bc97b7cac9036890a29971c3d11688cad4aa628ceafa09412fd4c14",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/interface_names.py",
+      "expected_sha256": "cd3d468c3feb75b2e0aa319d95177307aed53b4ce50bb0105c9dbee215e742c4",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/interface_signatures.py",
+      "expected_sha256": "47e142a462034e3358acba38238ed85a10c01e9c7d1225643edb9fcc165802c2",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/joint_boundary.py",
+      "expected_sha256": "f2191d544d036ba904fe912d68327f9c3e6f14e41eaa686c01b4303b9353ed53",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/joint_boundary_restart.py",
+      "expected_sha256": "3690431efde9bf437f1e0926bd87a3a26ff044f78e70df6162710e6e331648e6",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/joint_lines.py",
+      "expected_sha256": "7d0fa2df82b719ceba514818f27d4b155f7e96d47b3c173743e3adf44b930e88",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/kempe_history_policy.py",
+      "expected_sha256": "0f26efa5a90def334831c973e6965e417c3ae811c5abbe0622f9cd6baa4d6d5a",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/kempe_reconfiguration.py",
+      "expected_sha256": "cd1dd753532d19d02114fc31d55a47aaa2f995f5b6d156d4b3a8e2daccdf3c04",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/kempe_split.py",
+      "expected_sha256": "b5264dfcde5953f38a976bedf5d1684bd6fe347e93aab8517047c53785d4eb30",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/level_sides.py",
+      "expected_sha256": "222a8f752722e95c646d5ec58bbbcfc6ff94108d1d893d00806c960a25fd45ba",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/level_sides_peer.py",
+      "expected_sha256": "a1b1add2d97d34ab29c35e6fab7f5a665aa6841742080907ea95b5d4002a5c56",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/line_names.py",
+      "expected_sha256": "8fdfb7019d89edd01643bb5e1554a3aba8480dfbc032f34c72039782c620ce33",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/local_reuse.py",
+      "expected_sha256": "f16793e320bb446c2966a14b5c723158c908f13214ed00b94ba6a009e9b5f5e8",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/orbit_frontier.py",
+      "expected_sha256": "13067029f33fc13961cbb79d12b7d2252432493b63ce26776d44794363375d00",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/peer_batches.py",
+      "expected_sha256": "ad8bc0ffcb9b658da6b56ed0c32d18685996f9639f0b01598e37031f620333ff",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/prior_operation_restart.py",
+      "expected_sha256": "d9432da1e9811055994ba0531c572e79e4deb0cb01292a1ca7501e7683ee237d",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/prior_rule_reuse.py",
+      "expected_sha256": "315ac359efb51fa264b3bb866b0ee2272137ef7cceba03fdf10a7314a7e10e49",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/probabilistic_names.py",
+      "expected_sha256": "ed1bf39e471319346c48a8e1a5daeae4f8a1433b398ff6a700701d83ad142764",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/recoloring_boundary.py",
+      "expected_sha256": "16c525cdcdac35a26e53e7429a0130b435d65929aeb4633c112f47bf62ff21ae",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/relation_frontier.py",
+      "expected_sha256": "9d385da99c36e0b9f59c3d2182b697cd8d2b27734014cf97b0314c4ef785e316",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/relation_names.py",
+      "expected_sha256": "cc6566e959ab87c47d670dc8113d856f64e77132e5542c6d6ec8e98cec28d8cf",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/repair.py",
+      "expected_sha256": "1e5dff45897ff5f83202b577ae9cebc4f58231143e8e02b10f5c34a0ef879cb6",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/retained_profiles.py",
+      "expected_sha256": "5caed3fe79850cd7bd66a142ada98e5732e3af058325adfc2772fc2da5faec47",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/staged_levels.py",
+      "expected_sha256": "50eba883b5ba20b3af578695a27d6f30ccea43de4abd8e63f7942492ca381e4c",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/strip_chain.py",
+      "expected_sha256": "30f33bb5f988d34b8ab5a68f6887b6dfa13dadb7cf1ca7a550f6c9098be67d1c",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/structural_name_relations.py",
+      "expected_sha256": "20b7a71008ca6f85d5a785e5fd354778da55e032e7848603992b399cc157015f",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/structural_restart.py",
+      "expected_sha256": "de75e46c09f9bf981c5dd04af6e7b572a809630ca93552b96d0841b925a41a34",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/target_renaming.py",
+      "expected_sha256": "8d0a44ced52a63f9878cd57444d2a1f53812a3f0c05a5d9f20001032f7e9ce5a",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/triangle_chain_family.py",
+      "expected_sha256": "93d58a2a13c6d401fea55e9c1bde804b2fbea921420be79cb4fc4410595d94ec",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/triangle_chain_replay.py",
+      "expected_sha256": "f36652e6d99018e0b64a7a547b249cf5a5bb0dadee1bcc3f98af0d412aaa2864",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/two_port_reduction.py",
+      "expected_sha256": "b5bc8580804d83275d73ecd139d8e7721f228e05a37b56e7af704778ec82d558",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/weighted_lines.py",
+      "expected_sha256": "21cf5484a0504807463dafaa54992bf2cd6b1a4924e80b5a4ad29d3381ddd389",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/whole_lines.py",
+      "expected_sha256": "5bd54516c18ff74c2dcba2a5e89a27b1af7e3c0277fb3aa8e12f0efa55f9312c",
+      "matches": true
+    },
+    {
+      "file": "scripts/analyze_line_generations.py",
+      "expected_sha256": "48058342337b5a7c5ec523df42e16d447ccf1009dd4ffdf9f1924e06c1e57bd6",
+      "matches": true
+    },
+    {
+      "file": "scripts/audit_commit_extendibility.py",
+      "expected_sha256": "48b5fe0a6e0cfdf0af79557447810bc32810760e350ea8bdad2aa6bf719e64c7",
+      "matches": true
+    },
+    {
+      "file": "scripts/current_corpus.py",
+      "expected_sha256": "f107a35500c84db4fbfc3b9b4c02b7dbd8dc49f0402309525066dd6d0023e519",
+      "matches": true
+    },
+    {
+      "file": "scripts/exact_extendibility_oracle.py",
+      "expected_sha256": "8e11354484b53c38446b5afab607064b6314ac46a1d6f2594089b11167f0ece2",
+      "matches": true
+    },
+    {
+      "file": "scripts/exhaustive_grid_subsets.py",
+      "expected_sha256": "1803f8cbaf1a3325d8913ac107a519c22cf79c295547280538514c07686eaa3f",
+      "matches": true
+    },
+    {
+      "file": "scripts/exhaustive_rectangular_histories.py",
+      "expected_sha256": "db5c9faecda0b5c2f4536fe55475c055d74c3c75aaa6b8997288832d4c24a702",
+      "matches": true
+    },
+    {
+      "file": "scripts/restart-geometry.mjs",
+      "expected_sha256": "66d72196c12e56e2ca63b6debb06b661e6dc9a110be6c4f236d9f8f32653897e",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_frontier_restart.py",
+      "expected_sha256": "74b0d487b04ee218c3328cdbf566801812472cbe47a71b4f78bbda580aae39a7",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_global_restart.py",
+      "expected_sha256": "2807c3ce904e42e4fb2bd194f773724c6bf7364f592d8cc730dfecc856601c18",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_level_sides_peer.py",
+      "expected_sha256": "1226941d2a95b632eec0532581b21d775afd25eb24a38b05a039d485528e803f",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_relation_frontier.py",
+      "expected_sha256": "d572cdb030021d3d080e7cf277f688e80c2a5af87b7a52cab3d1991f75b4248e",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_structural_restart.py",
+      "expected_sha256": "3900b1bbe98f46e068f485e1297cb7c08299bac3468a06609c8378d63b866c05",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_weighted_lines.py",
+      "expected_sha256": "d4cd30cb02e5e269598d48599fcd090731c92c7d9903222bd581e81cdd6f0eea",
+      "matches": true
+    },
+    {
+      "file": "tests/test_commit_extendibility.py",
+      "expected_sha256": "f4d13bd3f72ce0c4ab77f3c5e87ad202d8973cf4a775153bfec7156e39bdcb47",
+      "matches": true
+    },
+    {
+      "file": "tests/test_exact_extendibility_oracle.py",
+      "expected_sha256": "6d0810c3e27ff37dfeb454044d15ed7cc1107c7a777de962b0a0674fd0539722",
+      "matches": true
+    },
+    {
+      "file": "tests/test_exhaustive_grid_subsets.py",
+      "expected_sha256": "334da333257d0960b383bafc060b25ad1b3a229d0d1268dd735ae3ecd1aefdc4",
+      "matches": true
+    },
+    {
+      "file": "tests/test_exhaustive_rectangular_histories.py",
+      "expected_sha256": "3ad0f03df79ff3c85950cb4dd7f8132237fb263a04f4ae99b35db186fb093658",
+      "matches": true
+    },
+    {
+      "file": "scripts/exhaustive_rectangular_histories.py",
+      "expected_sha256": "db5c9faecda0b5c2f4536fe55475c055d74c3c75aaa6b8997288832d4c24a702",
+      "matches": true
+    },
+    {
+      "file": "scripts/current_corpus.py",
+      "expected_sha256": "f107a35500c84db4fbfc3b9b4c02b7dbd8dc49f0402309525066dd6d0023e519",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_global_restart.py",
+      "expected_sha256": "2807c3ce904e42e4fb2bd194f773724c6bf7364f592d8cc730dfecc856601c18",
+      "matches": true
+    },
+    {
+      "file": "tests/test_exhaustive_rectangular_histories.py",
+      "expected_sha256": "3ad0f03df79ff3c85950cb4dd7f8132237fb263a04f4ae99b35db186fb093658",
+      "matches": true
+    },
+    {
+      "file": "scripts/exhaustive_rectangular_histories.py",
+      "expected_sha256": "db5c9faecda0b5c2f4536fe55475c055d74c3c75aaa6b8997288832d4c24a702",
+      "matches": true
+    },
+    {
+      "file": "scripts/current_corpus.py",
+      "expected_sha256": "f107a35500c84db4fbfc3b9b4c02b7dbd8dc49f0402309525066dd6d0023e519",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_global_restart.py",
+      "expected_sha256": "2807c3ce904e42e4fb2bd194f773724c6bf7364f592d8cc730dfecc856601c18",
+      "matches": true
+    },
+    {
+      "file": "tests/test_exhaustive_rectangular_histories.py",
+      "expected_sha256": "3ad0f03df79ff3c85950cb4dd7f8132237fb263a04f4ae99b35db186fb093658",
+      "matches": true
+    },
+    {
+      "file": "docs/EXTENDIBILITY_PROTOCOL-2026-09-21.md",
+      "expected_sha256": "e0468f0a722c49f051e16ed474d8fd59cfb7c0657fd65534dad942c03316a6f9",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/__init__.py",
+      "expected_sha256": "dd3939384003ac2beb3abc6d0890b7d5feb5b7642c257a8e8c7b7a67940eba4f",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/__main__.py",
+      "expected_sha256": "c1f15bb0a448700a1c9a9c66138d0075b0ac5ae78eda5e7a138af59746b3e60d",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/anchor_forest.py",
+      "expected_sha256": "6bf04f6365d8fbfd086e77d65a9cd845f4b0d8965b4ff861576c41e226f1d42e",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/apex_triangle_cost.py",
+      "expected_sha256": "94ef396c2e665ac670c9a1de63c1f2ab64d4801ebaa20fe1ba4c9a658fb6cc6c",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/circle_layer_repair.py",
+      "expected_sha256": "f9f281b794c93df44df9b98008b99113268686f6090df6af651b5d6be3a90dcd",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/circle_layers.py",
+      "expected_sha256": "a716db37fb9bf133e5e0218051ff90f662401329e4bf65e76260722ca7f385b1",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/closed_interfaces.py",
+      "expected_sha256": "5572a3dcd31218215347acff8f0f398a148124c4105e95242089a86c8a9b992f",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/closed_support.py",
+      "expected_sha256": "0a95dd2802d16654a4342332ae9f9825944a26c4fe2cad182de0a214fbfc56f1",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/coloring.py",
+      "expected_sha256": "270cdd398002eadefbd8df0d2293c085e33a98fddd75e35a257c6cbe02e9e03c",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/conservative_recoloring.py",
+      "expected_sha256": "26956dbc1bb5e56a4e05ebb5132cc869ec3737e74261e1e71ae7da387315ff10",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/current_geometry.py",
+      "expected_sha256": "b782c4bf35f31363bfc3e70a60670e17b94041e4dc267a6a2a177196db0509ae",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/current_names.py",
+      "expected_sha256": "6ed8422ff38e138e2d98d03d5da226a7b91ab3725bdab094349edee9d392d049",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/embedding.py",
+      "expected_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/examples.py",
+      "expected_sha256": "2c0b5ae47b258bbb509ed0a6d0b8e9139304ac9128623ec1068a69150ff11b98",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/frontier_order.py",
+      "expected_sha256": "9fd9abe4d17101f5938bf269ff2f8dc72f57a0fc0f4f3c12118e9975a0a80f98",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/frontier_restart.py",
+      "expected_sha256": "2b82e9de0ecad888b5248602d039997889becac1718282f5c4a5eaa6d8c1c533",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/global_restart.py",
+      "expected_sha256": "56aafff2632cf4c02cc20c7a056d02b9932f65f700311846d7d81c1cb32b3cbb",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/history.py",
+      "expected_sha256": "20859575858700887da6524e8f9d743b4a454700d39f7d3aaf053a550317c17f",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/implicit_inequality.py",
+      "expected_sha256": "f69df9171708f6c6102d155b6e39e7a8f8d2356013e7053a4713f1ea84d12662",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/inherited_names.py",
+      "expected_sha256": "235751061bc97b7cac9036890a29971c3d11688cad4aa628ceafa09412fd4c14",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/interface_names.py",
+      "expected_sha256": "cd3d468c3feb75b2e0aa319d95177307aed53b4ce50bb0105c9dbee215e742c4",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/interface_signatures.py",
+      "expected_sha256": "47e142a462034e3358acba38238ed85a10c01e9c7d1225643edb9fcc165802c2",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/joint_boundary.py",
+      "expected_sha256": "f2191d544d036ba904fe912d68327f9c3e6f14e41eaa686c01b4303b9353ed53",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/joint_boundary_restart.py",
+      "expected_sha256": "3690431efde9bf437f1e0926bd87a3a26ff044f78e70df6162710e6e331648e6",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/joint_lines.py",
+      "expected_sha256": "7d0fa2df82b719ceba514818f27d4b155f7e96d47b3c173743e3adf44b930e88",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/kempe_history_policy.py",
+      "expected_sha256": "0f26efa5a90def334831c973e6965e417c3ae811c5abbe0622f9cd6baa4d6d5a",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/kempe_reconfiguration.py",
+      "expected_sha256": "cd1dd753532d19d02114fc31d55a47aaa2f995f5b6d156d4b3a8e2daccdf3c04",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/kempe_split.py",
+      "expected_sha256": "b5264dfcde5953f38a976bedf5d1684bd6fe347e93aab8517047c53785d4eb30",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/level_sides.py",
+      "expected_sha256": "222a8f752722e95c646d5ec58bbbcfc6ff94108d1d893d00806c960a25fd45ba",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/level_sides_peer.py",
+      "expected_sha256": "a1b1add2d97d34ab29c35e6fab7f5a665aa6841742080907ea95b5d4002a5c56",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/line_names.py",
+      "expected_sha256": "8fdfb7019d89edd01643bb5e1554a3aba8480dfbc032f34c72039782c620ce33",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/local_reuse.py",
+      "expected_sha256": "f16793e320bb446c2966a14b5c723158c908f13214ed00b94ba6a009e9b5f5e8",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/orbit_frontier.py",
+      "expected_sha256": "13067029f33fc13961cbb79d12b7d2252432493b63ce26776d44794363375d00",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/peer_batches.py",
+      "expected_sha256": "ad8bc0ffcb9b658da6b56ed0c32d18685996f9639f0b01598e37031f620333ff",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/prior_operation_restart.py",
+      "expected_sha256": "d9432da1e9811055994ba0531c572e79e4deb0cb01292a1ca7501e7683ee237d",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/prior_rule_reuse.py",
+      "expected_sha256": "315ac359efb51fa264b3bb866b0ee2272137ef7cceba03fdf10a7314a7e10e49",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/probabilistic_names.py",
+      "expected_sha256": "ed1bf39e471319346c48a8e1a5daeae4f8a1433b398ff6a700701d83ad142764",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/recoloring_boundary.py",
+      "expected_sha256": "16c525cdcdac35a26e53e7429a0130b435d65929aeb4633c112f47bf62ff21ae",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/relation_frontier.py",
+      "expected_sha256": "9d385da99c36e0b9f59c3d2182b697cd8d2b27734014cf97b0314c4ef785e316",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/relation_names.py",
+      "expected_sha256": "cc6566e959ab87c47d670dc8113d856f64e77132e5542c6d6ec8e98cec28d8cf",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/repair.py",
+      "expected_sha256": "1e5dff45897ff5f83202b577ae9cebc4f58231143e8e02b10f5c34a0ef879cb6",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/retained_profiles.py",
+      "expected_sha256": "5caed3fe79850cd7bd66a142ada98e5732e3af058325adfc2772fc2da5faec47",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/staged_levels.py",
+      "expected_sha256": "50eba883b5ba20b3af578695a27d6f30ccea43de4abd8e63f7942492ca381e4c",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/strip_chain.py",
+      "expected_sha256": "30f33bb5f988d34b8ab5a68f6887b6dfa13dadb7cf1ca7a550f6c9098be67d1c",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/structural_name_relations.py",
+      "expected_sha256": "20b7a71008ca6f85d5a785e5fd354778da55e032e7848603992b399cc157015f",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/structural_restart.py",
+      "expected_sha256": "de75e46c09f9bf981c5dd04af6e7b572a809630ca93552b96d0841b925a41a34",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/target_renaming.py",
+      "expected_sha256": "8d0a44ced52a63f9878cd57444d2a1f53812a3f0c05a5d9f20001032f7e9ce5a",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/triangle_chain_family.py",
+      "expected_sha256": "93d58a2a13c6d401fea55e9c1bde804b2fbea921420be79cb4fc4410595d94ec",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/triangle_chain_replay.py",
+      "expected_sha256": "f36652e6d99018e0b64a7a547b249cf5a5bb0dadee1bcc3f98af0d412aaa2864",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/two_port_reduction.py",
+      "expected_sha256": "b5bc8580804d83275d73ecd139d8e7721f228e05a37b56e7af704778ec82d558",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/weighted_lines.py",
+      "expected_sha256": "21cf5484a0504807463dafaa54992bf2cd6b1a4924e80b5a4ad29d3381ddd389",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/whole_lines.py",
+      "expected_sha256": "5bd54516c18ff74c2dcba2a5e89a27b1af7e3c0277fb3aa8e12f0efa55f9312c",
+      "matches": true
+    },
+    {
+      "file": "scripts/analyze_line_generations.py",
+      "expected_sha256": "48058342337b5a7c5ec523df42e16d447ccf1009dd4ffdf9f1924e06c1e57bd6",
+      "matches": true
+    },
+    {
+      "file": "scripts/audit_commit_extendibility.py",
+      "expected_sha256": "48b5fe0a6e0cfdf0af79557447810bc32810760e350ea8bdad2aa6bf719e64c7",
+      "matches": true
+    },
+    {
+      "file": "scripts/current_corpus.py",
+      "expected_sha256": "f107a35500c84db4fbfc3b9b4c02b7dbd8dc49f0402309525066dd6d0023e519",
+      "matches": true
+    },
+    {
+      "file": "scripts/exact_extendibility_oracle.py",
+      "expected_sha256": "8e11354484b53c38446b5afab607064b6314ac46a1d6f2594089b11167f0ece2",
+      "matches": true
+    },
+    {
+      "file": "scripts/exhaustive_grid_subsets.py",
+      "expected_sha256": "1803f8cbaf1a3325d8913ac107a519c22cf79c295547280538514c07686eaa3f",
+      "matches": true
+    },
+    {
+      "file": "scripts/exhaustive_rectangular_histories.py",
+      "expected_sha256": "db5c9faecda0b5c2f4536fe55475c055d74c3c75aaa6b8997288832d4c24a702",
+      "matches": true
+    },
+    {
+      "file": "scripts/restart-geometry.mjs",
+      "expected_sha256": "66d72196c12e56e2ca63b6debb06b661e6dc9a110be6c4f236d9f8f32653897e",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_frontier_restart.py",
+      "expected_sha256": "74b0d487b04ee218c3328cdbf566801812472cbe47a71b4f78bbda580aae39a7",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_global_restart.py",
+      "expected_sha256": "2807c3ce904e42e4fb2bd194f773724c6bf7364f592d8cc730dfecc856601c18",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_level_sides_peer.py",
+      "expected_sha256": "1226941d2a95b632eec0532581b21d775afd25eb24a38b05a039d485528e803f",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_relation_frontier.py",
+      "expected_sha256": "d572cdb030021d3d080e7cf277f688e80c2a5af87b7a52cab3d1991f75b4248e",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_structural_restart.py",
+      "expected_sha256": "3900b1bbe98f46e068f485e1297cb7c08299bac3468a06609c8378d63b866c05",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_weighted_lines.py",
+      "expected_sha256": "d4cd30cb02e5e269598d48599fcd090731c92c7d9903222bd581e81cdd6f0eea",
+      "matches": true
+    },
+    {
+      "file": "tests/test_commit_extendibility.py",
+      "expected_sha256": "f4d13bd3f72ce0c4ab77f3c5e87ad202d8973cf4a775153bfec7156e39bdcb47",
+      "matches": true
+    },
+    {
+      "file": "tests/test_exact_extendibility_oracle.py",
+      "expected_sha256": "6d0810c3e27ff37dfeb454044d15ed7cc1107c7a777de962b0a0674fd0539722",
+      "matches": true
+    },
+    {
+      "file": "tests/test_exhaustive_grid_subsets.py",
+      "expected_sha256": "334da333257d0960b383bafc060b25ad1b3a229d0d1268dd735ae3ecd1aefdc4",
+      "matches": true
+    },
+    {
+      "file": "tests/test_exhaustive_rectangular_histories.py",
+      "expected_sha256": "3ad0f03df79ff3c85950cb4dd7f8132237fb263a04f4ae99b35db186fb093658",
+      "matches": true
+    },
+    {
+      "file": "scripts/probe_grid_commitments.py",
+      "expected_sha256": "6043fc919e56927f383a475e902fea3d669055d10c983da4cf6087b5b82abe9f",
+      "matches": true
+    },
+    {
+      "file": "outputs/quaternary-contacts-2026-09-21.json.gz",
+      "expected_sha256": "25dd54aea5828104a9c3bdb286f7f4a1913cf19fbef7c3baf9a70218693e8f3a",
+      "matches": true
+    },
+    {
+      "file": "outputs/quaternary-contacts-v2-2026-09-21.json.gz",
+      "expected_sha256": "7bd4c57a44ab60f06c91f116ca6f8a7fa56a724e2a449a9e636fd98e78e4f114",
+      "matches": true
+    },
+    {
+      "file": "outputs/quaternary-contact-manifest-v2-2026-09-21.json.gz",
+      "expected_sha256": "1faec96514110a3e0e88d2a4353dce7dd460937585afeadb8014d14f7df8d319",
+      "matches": true
+    },
+    {
+      "file": "outputs/quaternary-contact-example-2026-09-21.json",
+      "expected_sha256": "f4b901dc2c4175061e60e6d3905af5aa3d546e2ff01d89ddfebd55214ce720d3",
+      "matches": true
+    },
+    {
+      "file": "outputs/quaternary-contact-limitation-2026-09-21.json",
+      "expected_sha256": "9e2beae2a8aebc828c87db0ca7c6aaa8975278ca4ca63b0f94f81a77e33963d0",
+      "matches": true
+    },
+    {
+      "file": "docs/QUATERNARY_CONTACT_PROTOCOL-2026-09-21.md",
+      "expected_sha256": "12435b95a631d13ffc89c95d8979b1a2e36004603064797971b6714384cb66d1",
+      "matches": true
+    },
+    {
+      "file": "examples/quaternary-contact-prototype-2026-09-21.json",
+      "expected_sha256": "232aad292554854a0054831b9e3372284cbb9463f41160c2e9d368224e1b5186",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/__init__.py",
+      "expected_sha256": "dd3939384003ac2beb3abc6d0890b7d5feb5b7642c257a8e8c7b7a67940eba4f",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/__main__.py",
+      "expected_sha256": "c1f15bb0a448700a1c9a9c66138d0075b0ac5ae78eda5e7a138af59746b3e60d",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/anchor_forest.py",
+      "expected_sha256": "6bf04f6365d8fbfd086e77d65a9cd845f4b0d8965b4ff861576c41e226f1d42e",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/apex_triangle_cost.py",
+      "expected_sha256": "94ef396c2e665ac670c9a1de63c1f2ab64d4801ebaa20fe1ba4c9a658fb6cc6c",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/circle_layer_repair.py",
+      "expected_sha256": "f9f281b794c93df44df9b98008b99113268686f6090df6af651b5d6be3a90dcd",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/circle_layers.py",
+      "expected_sha256": "a716db37fb9bf133e5e0218051ff90f662401329e4bf65e76260722ca7f385b1",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/closed_interfaces.py",
+      "expected_sha256": "5572a3dcd31218215347acff8f0f398a148124c4105e95242089a86c8a9b992f",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/closed_support.py",
+      "expected_sha256": "0a95dd2802d16654a4342332ae9f9825944a26c4fe2cad182de0a214fbfc56f1",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/coloring.py",
+      "expected_sha256": "270cdd398002eadefbd8df0d2293c085e33a98fddd75e35a257c6cbe02e9e03c",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/conservative_recoloring.py",
+      "expected_sha256": "26956dbc1bb5e56a4e05ebb5132cc869ec3737e74261e1e71ae7da387315ff10",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/current_geometry.py",
+      "expected_sha256": "b782c4bf35f31363bfc3e70a60670e17b94041e4dc267a6a2a177196db0509ae",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/current_names.py",
+      "expected_sha256": "6ed8422ff38e138e2d98d03d5da226a7b91ab3725bdab094349edee9d392d049",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/embedding.py",
+      "expected_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/examples.py",
+      "expected_sha256": "2c0b5ae47b258bbb509ed0a6d0b8e9139304ac9128623ec1068a69150ff11b98",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/frontier_order.py",
+      "expected_sha256": "9fd9abe4d17101f5938bf269ff2f8dc72f57a0fc0f4f3c12118e9975a0a80f98",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/frontier_restart.py",
+      "expected_sha256": "2b82e9de0ecad888b5248602d039997889becac1718282f5c4a5eaa6d8c1c533",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/global_restart.py",
+      "expected_sha256": "56aafff2632cf4c02cc20c7a056d02b9932f65f700311846d7d81c1cb32b3cbb",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/history.py",
+      "expected_sha256": "20859575858700887da6524e8f9d743b4a454700d39f7d3aaf053a550317c17f",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/implicit_inequality.py",
+      "expected_sha256": "f69df9171708f6c6102d155b6e39e7a8f8d2356013e7053a4713f1ea84d12662",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/inherited_names.py",
+      "expected_sha256": "235751061bc97b7cac9036890a29971c3d11688cad4aa628ceafa09412fd4c14",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/interface_names.py",
+      "expected_sha256": "cd3d468c3feb75b2e0aa319d95177307aed53b4ce50bb0105c9dbee215e742c4",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/interface_signatures.py",
+      "expected_sha256": "47e142a462034e3358acba38238ed85a10c01e9c7d1225643edb9fcc165802c2",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/joint_boundary.py",
+      "expected_sha256": "f2191d544d036ba904fe912d68327f9c3e6f14e41eaa686c01b4303b9353ed53",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/joint_boundary_restart.py",
+      "expected_sha256": "3690431efde9bf437f1e0926bd87a3a26ff044f78e70df6162710e6e331648e6",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/joint_lines.py",
+      "expected_sha256": "7d0fa2df82b719ceba514818f27d4b155f7e96d47b3c173743e3adf44b930e88",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/kempe_history_policy.py",
+      "expected_sha256": "0f26efa5a90def334831c973e6965e417c3ae811c5abbe0622f9cd6baa4d6d5a",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/kempe_reconfiguration.py",
+      "expected_sha256": "cd1dd753532d19d02114fc31d55a47aaa2f995f5b6d156d4b3a8e2daccdf3c04",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/kempe_split.py",
+      "expected_sha256": "b5264dfcde5953f38a976bedf5d1684bd6fe347e93aab8517047c53785d4eb30",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/level_sides.py",
+      "expected_sha256": "222a8f752722e95c646d5ec58bbbcfc6ff94108d1d893d00806c960a25fd45ba",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/level_sides_peer.py",
+      "expected_sha256": "a1b1add2d97d34ab29c35e6fab7f5a665aa6841742080907ea95b5d4002a5c56",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/line_names.py",
+      "expected_sha256": "8fdfb7019d89edd01643bb5e1554a3aba8480dfbc032f34c72039782c620ce33",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/local_reuse.py",
+      "expected_sha256": "f16793e320bb446c2966a14b5c723158c908f13214ed00b94ba6a009e9b5f5e8",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/orbit_frontier.py",
+      "expected_sha256": "13067029f33fc13961cbb79d12b7d2252432493b63ce26776d44794363375d00",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/peer_batches.py",
+      "expected_sha256": "ad8bc0ffcb9b658da6b56ed0c32d18685996f9639f0b01598e37031f620333ff",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/prior_operation_restart.py",
+      "expected_sha256": "d9432da1e9811055994ba0531c572e79e4deb0cb01292a1ca7501e7683ee237d",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/prior_rule_reuse.py",
+      "expected_sha256": "315ac359efb51fa264b3bb866b0ee2272137ef7cceba03fdf10a7314a7e10e49",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/probabilistic_names.py",
+      "expected_sha256": "ed1bf39e471319346c48a8e1a5daeae4f8a1433b398ff6a700701d83ad142764",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/recoloring_boundary.py",
+      "expected_sha256": "16c525cdcdac35a26e53e7429a0130b435d65929aeb4633c112f47bf62ff21ae",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/relation_frontier.py",
+      "expected_sha256": "9d385da99c36e0b9f59c3d2182b697cd8d2b27734014cf97b0314c4ef785e316",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/relation_names.py",
+      "expected_sha256": "cc6566e959ab87c47d670dc8113d856f64e77132e5542c6d6ec8e98cec28d8cf",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/repair.py",
+      "expected_sha256": "1e5dff45897ff5f83202b577ae9cebc4f58231143e8e02b10f5c34a0ef879cb6",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/retained_profiles.py",
+      "expected_sha256": "5caed3fe79850cd7bd66a142ada98e5732e3af058325adfc2772fc2da5faec47",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/staged_levels.py",
+      "expected_sha256": "50eba883b5ba20b3af578695a27d6f30ccea43de4abd8e63f7942492ca381e4c",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/strip_chain.py",
+      "expected_sha256": "30f33bb5f988d34b8ab5a68f6887b6dfa13dadb7cf1ca7a550f6c9098be67d1c",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/structural_name_relations.py",
+      "expected_sha256": "20b7a71008ca6f85d5a785e5fd354778da55e032e7848603992b399cc157015f",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/structural_restart.py",
+      "expected_sha256": "de75e46c09f9bf981c5dd04af6e7b572a809630ca93552b96d0841b925a41a34",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/target_renaming.py",
+      "expected_sha256": "8d0a44ced52a63f9878cd57444d2a1f53812a3f0c05a5d9f20001032f7e9ce5a",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/triangle_chain_family.py",
+      "expected_sha256": "93d58a2a13c6d401fea55e9c1bde804b2fbea921420be79cb4fc4410595d94ec",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/triangle_chain_replay.py",
+      "expected_sha256": "f36652e6d99018e0b64a7a547b249cf5a5bb0dadee1bcc3f98af0d412aaa2864",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/two_port_reduction.py",
+      "expected_sha256": "b5bc8580804d83275d73ecd139d8e7721f228e05a37b56e7af704778ec82d558",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/weighted_lines.py",
+      "expected_sha256": "21cf5484a0504807463dafaa54992bf2cd6b1a4924e80b5a4ad29d3381ddd389",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/whole_lines.py",
+      "expected_sha256": "5bd54516c18ff74c2dcba2a5e89a27b1af7e3c0277fb3aa8e12f0efa55f9312c",
+      "matches": true
+    },
+    {
+      "file": "scripts/quaternary_contact_model.py",
+      "expected_sha256": "12bd29155a224d72484981033f2fa18ca3c6ac1c9193bd919602c78d929b9dd1",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_global_restart.py",
+      "expected_sha256": "2807c3ce904e42e4fb2bd194f773724c6bf7364f592d8cc730dfecc856601c18",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_quaternary_contacts.py",
+      "expected_sha256": "cd348938078377136c41ae9bc3038b1ff524dc173eaacc2d1b02d354ba309a72",
+      "matches": true
+    },
+    {
+      "file": "tests/test_quaternary_contact_audit.py",
+      "expected_sha256": "81fbdabde00b70b19993563bf9d26871271e3786db52589cede359899510e2fc",
+      "matches": true
+    },
+    {
+      "file": "tests/test_quaternary_contact_model.py",
+      "expected_sha256": "ddb0b4e5ff840f2760713ca1e2cdfb7920190d34c6a1176eda8e27d2c8d30698",
+      "matches": true
+    },
+    {
+      "file": "docs/QUATERNARY_CONTACT_PROTOCOL-2026-09-21.md",
+      "expected_sha256": "12435b95a631d13ffc89c95d8979b1a2e36004603064797971b6714384cb66d1",
+      "matches": true
+    },
+    {
+      "file": "examples/quaternary-contact-prototype-2026-09-21.json",
+      "expected_sha256": "232aad292554854a0054831b9e3372284cbb9463f41160c2e9d368224e1b5186",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/__init__.py",
+      "expected_sha256": "dd3939384003ac2beb3abc6d0890b7d5feb5b7642c257a8e8c7b7a67940eba4f",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/__main__.py",
+      "expected_sha256": "c1f15bb0a448700a1c9a9c66138d0075b0ac5ae78eda5e7a138af59746b3e60d",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/anchor_forest.py",
+      "expected_sha256": "6bf04f6365d8fbfd086e77d65a9cd845f4b0d8965b4ff861576c41e226f1d42e",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/apex_triangle_cost.py",
+      "expected_sha256": "94ef396c2e665ac670c9a1de63c1f2ab64d4801ebaa20fe1ba4c9a658fb6cc6c",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/circle_layer_repair.py",
+      "expected_sha256": "f9f281b794c93df44df9b98008b99113268686f6090df6af651b5d6be3a90dcd",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/circle_layers.py",
+      "expected_sha256": "a716db37fb9bf133e5e0218051ff90f662401329e4bf65e76260722ca7f385b1",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/closed_interfaces.py",
+      "expected_sha256": "5572a3dcd31218215347acff8f0f398a148124c4105e95242089a86c8a9b992f",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/closed_support.py",
+      "expected_sha256": "0a95dd2802d16654a4342332ae9f9825944a26c4fe2cad182de0a214fbfc56f1",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/coloring.py",
+      "expected_sha256": "270cdd398002eadefbd8df0d2293c085e33a98fddd75e35a257c6cbe02e9e03c",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/conservative_recoloring.py",
+      "expected_sha256": "26956dbc1bb5e56a4e05ebb5132cc869ec3737e74261e1e71ae7da387315ff10",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/current_geometry.py",
+      "expected_sha256": "b782c4bf35f31363bfc3e70a60670e17b94041e4dc267a6a2a177196db0509ae",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/current_names.py",
+      "expected_sha256": "6ed8422ff38e138e2d98d03d5da226a7b91ab3725bdab094349edee9d392d049",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/embedding.py",
+      "expected_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/examples.py",
+      "expected_sha256": "2c0b5ae47b258bbb509ed0a6d0b8e9139304ac9128623ec1068a69150ff11b98",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/frontier_order.py",
+      "expected_sha256": "9fd9abe4d17101f5938bf269ff2f8dc72f57a0fc0f4f3c12118e9975a0a80f98",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/frontier_restart.py",
+      "expected_sha256": "2b82e9de0ecad888b5248602d039997889becac1718282f5c4a5eaa6d8c1c533",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/global_restart.py",
+      "expected_sha256": "56aafff2632cf4c02cc20c7a056d02b9932f65f700311846d7d81c1cb32b3cbb",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/history.py",
+      "expected_sha256": "20859575858700887da6524e8f9d743b4a454700d39f7d3aaf053a550317c17f",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/implicit_inequality.py",
+      "expected_sha256": "f69df9171708f6c6102d155b6e39e7a8f8d2356013e7053a4713f1ea84d12662",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/inherited_names.py",
+      "expected_sha256": "235751061bc97b7cac9036890a29971c3d11688cad4aa628ceafa09412fd4c14",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/interface_names.py",
+      "expected_sha256": "cd3d468c3feb75b2e0aa319d95177307aed53b4ce50bb0105c9dbee215e742c4",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/interface_signatures.py",
+      "expected_sha256": "47e142a462034e3358acba38238ed85a10c01e9c7d1225643edb9fcc165802c2",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/joint_boundary.py",
+      "expected_sha256": "f2191d544d036ba904fe912d68327f9c3e6f14e41eaa686c01b4303b9353ed53",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/joint_boundary_restart.py",
+      "expected_sha256": "3690431efde9bf437f1e0926bd87a3a26ff044f78e70df6162710e6e331648e6",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/joint_lines.py",
+      "expected_sha256": "7d0fa2df82b719ceba514818f27d4b155f7e96d47b3c173743e3adf44b930e88",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/kempe_history_policy.py",
+      "expected_sha256": "0f26efa5a90def334831c973e6965e417c3ae811c5abbe0622f9cd6baa4d6d5a",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/kempe_reconfiguration.py",
+      "expected_sha256": "cd1dd753532d19d02114fc31d55a47aaa2f995f5b6d156d4b3a8e2daccdf3c04",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/kempe_split.py",
+      "expected_sha256": "b5264dfcde5953f38a976bedf5d1684bd6fe347e93aab8517047c53785d4eb30",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/level_sides.py",
+      "expected_sha256": "222a8f752722e95c646d5ec58bbbcfc6ff94108d1d893d00806c960a25fd45ba",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/level_sides_peer.py",
+      "expected_sha256": "a1b1add2d97d34ab29c35e6fab7f5a665aa6841742080907ea95b5d4002a5c56",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/line_names.py",
+      "expected_sha256": "8fdfb7019d89edd01643bb5e1554a3aba8480dfbc032f34c72039782c620ce33",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/local_reuse.py",
+      "expected_sha256": "f16793e320bb446c2966a14b5c723158c908f13214ed00b94ba6a009e9b5f5e8",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/orbit_frontier.py",
+      "expected_sha256": "13067029f33fc13961cbb79d12b7d2252432493b63ce26776d44794363375d00",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/peer_batches.py",
+      "expected_sha256": "ad8bc0ffcb9b658da6b56ed0c32d18685996f9639f0b01598e37031f620333ff",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/prior_operation_restart.py",
+      "expected_sha256": "d9432da1e9811055994ba0531c572e79e4deb0cb01292a1ca7501e7683ee237d",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/prior_rule_reuse.py",
+      "expected_sha256": "315ac359efb51fa264b3bb866b0ee2272137ef7cceba03fdf10a7314a7e10e49",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/probabilistic_names.py",
+      "expected_sha256": "ed1bf39e471319346c48a8e1a5daeae4f8a1433b398ff6a700701d83ad142764",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/recoloring_boundary.py",
+      "expected_sha256": "16c525cdcdac35a26e53e7429a0130b435d65929aeb4633c112f47bf62ff21ae",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/relation_frontier.py",
+      "expected_sha256": "9d385da99c36e0b9f59c3d2182b697cd8d2b27734014cf97b0314c4ef785e316",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/relation_names.py",
+      "expected_sha256": "cc6566e959ab87c47d670dc8113d856f64e77132e5542c6d6ec8e98cec28d8cf",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/repair.py",
+      "expected_sha256": "1e5dff45897ff5f83202b577ae9cebc4f58231143e8e02b10f5c34a0ef879cb6",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/retained_profiles.py",
+      "expected_sha256": "5caed3fe79850cd7bd66a142ada98e5732e3af058325adfc2772fc2da5faec47",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/staged_levels.py",
+      "expected_sha256": "50eba883b5ba20b3af578695a27d6f30ccea43de4abd8e63f7942492ca381e4c",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/strip_chain.py",
+      "expected_sha256": "30f33bb5f988d34b8ab5a68f6887b6dfa13dadb7cf1ca7a550f6c9098be67d1c",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/structural_name_relations.py",
+      "expected_sha256": "20b7a71008ca6f85d5a785e5fd354778da55e032e7848603992b399cc157015f",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/structural_restart.py",
+      "expected_sha256": "de75e46c09f9bf981c5dd04af6e7b572a809630ca93552b96d0841b925a41a34",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/target_renaming.py",
+      "expected_sha256": "8d0a44ced52a63f9878cd57444d2a1f53812a3f0c05a5d9f20001032f7e9ce5a",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/triangle_chain_family.py",
+      "expected_sha256": "93d58a2a13c6d401fea55e9c1bde804b2fbea921420be79cb4fc4410595d94ec",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/triangle_chain_replay.py",
+      "expected_sha256": "f36652e6d99018e0b64a7a547b249cf5a5bb0dadee1bcc3f98af0d412aaa2864",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/two_port_reduction.py",
+      "expected_sha256": "b5bc8580804d83275d73ecd139d8e7721f228e05a37b56e7af704778ec82d558",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/weighted_lines.py",
+      "expected_sha256": "21cf5484a0504807463dafaa54992bf2cd6b1a4924e80b5a4ad29d3381ddd389",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/whole_lines.py",
+      "expected_sha256": "5bd54516c18ff74c2dcba2a5e89a27b1af7e3c0277fb3aa8e12f0efa55f9312c",
+      "matches": true
+    },
+    {
+      "file": "scripts/quaternary_contact_model.py",
+      "expected_sha256": "12bd29155a224d72484981033f2fa18ca3c6ac1c9193bd919602c78d929b9dd1",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_global_restart.py",
+      "expected_sha256": "2807c3ce904e42e4fb2bd194f773724c6bf7364f592d8cc730dfecc856601c18",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_quaternary_contacts.py",
+      "expected_sha256": "cd348938078377136c41ae9bc3038b1ff524dc173eaacc2d1b02d354ba309a72",
+      "matches": true
+    },
+    {
+      "file": "tests/test_quaternary_contact_audit.py",
+      "expected_sha256": "81fbdabde00b70b19993563bf9d26871271e3786db52589cede359899510e2fc",
+      "matches": true
+    },
+    {
+      "file": "tests/test_quaternary_contact_model.py",
+      "expected_sha256": "ddb0b4e5ff840f2760713ca1e2cdfb7920190d34c6a1176eda8e27d2c8d30698",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_quaternary_contacts_v2.py",
+      "expected_sha256": "e5c6584c881d74a6189a301cb161e55c9b1533138bb4491aa4b819efbb4c3fc2",
+      "matches": true
+    },
+    {
+      "file": "tests/test_quaternary_contact_metadata.py",
+      "expected_sha256": "726c09d9ca7bebcb0c98f7967a85cf486132a351d29d502f13119dd7c58f6b84",
+      "matches": true
+    },
+    {
+      "file": "docs/QUATERNARY_CONTACT_AUDIT_V2-2026-09-21.md",
+      "expected_sha256": "b6bf126079e0940f76ee3b25383835d449f4e61d35a0fba5f7334dea0cb79662",
+      "matches": true
+    },
+    {
+      "file": "docs/QUATERNARY_CONTACT_PROTOCOL-2026-09-21.md",
+      "expected_sha256": "12435b95a631d13ffc89c95d8979b1a2e36004603064797971b6714384cb66d1",
+      "matches": true
+    },
+    {
+      "file": "examples/quaternary-contact-prototype-2026-09-21.json",
+      "expected_sha256": "232aad292554854a0054831b9e3372284cbb9463f41160c2e9d368224e1b5186",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/__init__.py",
+      "expected_sha256": "dd3939384003ac2beb3abc6d0890b7d5feb5b7642c257a8e8c7b7a67940eba4f",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/__main__.py",
+      "expected_sha256": "c1f15bb0a448700a1c9a9c66138d0075b0ac5ae78eda5e7a138af59746b3e60d",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/anchor_forest.py",
+      "expected_sha256": "6bf04f6365d8fbfd086e77d65a9cd845f4b0d8965b4ff861576c41e226f1d42e",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/apex_triangle_cost.py",
+      "expected_sha256": "94ef396c2e665ac670c9a1de63c1f2ab64d4801ebaa20fe1ba4c9a658fb6cc6c",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/circle_layer_repair.py",
+      "expected_sha256": "f9f281b794c93df44df9b98008b99113268686f6090df6af651b5d6be3a90dcd",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/circle_layers.py",
+      "expected_sha256": "a716db37fb9bf133e5e0218051ff90f662401329e4bf65e76260722ca7f385b1",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/closed_interfaces.py",
+      "expected_sha256": "5572a3dcd31218215347acff8f0f398a148124c4105e95242089a86c8a9b992f",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/closed_support.py",
+      "expected_sha256": "0a95dd2802d16654a4342332ae9f9825944a26c4fe2cad182de0a214fbfc56f1",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/coloring.py",
+      "expected_sha256": "270cdd398002eadefbd8df0d2293c085e33a98fddd75e35a257c6cbe02e9e03c",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/conservative_recoloring.py",
+      "expected_sha256": "26956dbc1bb5e56a4e05ebb5132cc869ec3737e74261e1e71ae7da387315ff10",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/current_geometry.py",
+      "expected_sha256": "b782c4bf35f31363bfc3e70a60670e17b94041e4dc267a6a2a177196db0509ae",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/current_names.py",
+      "expected_sha256": "6ed8422ff38e138e2d98d03d5da226a7b91ab3725bdab094349edee9d392d049",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/embedding.py",
+      "expected_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/examples.py",
+      "expected_sha256": "2c0b5ae47b258bbb509ed0a6d0b8e9139304ac9128623ec1068a69150ff11b98",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/frontier_order.py",
+      "expected_sha256": "9fd9abe4d17101f5938bf269ff2f8dc72f57a0fc0f4f3c12118e9975a0a80f98",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/frontier_restart.py",
+      "expected_sha256": "2b82e9de0ecad888b5248602d039997889becac1718282f5c4a5eaa6d8c1c533",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/global_restart.py",
+      "expected_sha256": "56aafff2632cf4c02cc20c7a056d02b9932f65f700311846d7d81c1cb32b3cbb",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/history.py",
+      "expected_sha256": "20859575858700887da6524e8f9d743b4a454700d39f7d3aaf053a550317c17f",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/implicit_inequality.py",
+      "expected_sha256": "f69df9171708f6c6102d155b6e39e7a8f8d2356013e7053a4713f1ea84d12662",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/inherited_names.py",
+      "expected_sha256": "235751061bc97b7cac9036890a29971c3d11688cad4aa628ceafa09412fd4c14",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/interface_names.py",
+      "expected_sha256": "cd3d468c3feb75b2e0aa319d95177307aed53b4ce50bb0105c9dbee215e742c4",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/interface_signatures.py",
+      "expected_sha256": "47e142a462034e3358acba38238ed85a10c01e9c7d1225643edb9fcc165802c2",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/joint_boundary.py",
+      "expected_sha256": "f2191d544d036ba904fe912d68327f9c3e6f14e41eaa686c01b4303b9353ed53",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/joint_boundary_restart.py",
+      "expected_sha256": "3690431efde9bf437f1e0926bd87a3a26ff044f78e70df6162710e6e331648e6",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/joint_lines.py",
+      "expected_sha256": "7d0fa2df82b719ceba514818f27d4b155f7e96d47b3c173743e3adf44b930e88",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/kempe_history_policy.py",
+      "expected_sha256": "0f26efa5a90def334831c973e6965e417c3ae811c5abbe0622f9cd6baa4d6d5a",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/kempe_reconfiguration.py",
+      "expected_sha256": "cd1dd753532d19d02114fc31d55a47aaa2f995f5b6d156d4b3a8e2daccdf3c04",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/kempe_split.py",
+      "expected_sha256": "b5264dfcde5953f38a976bedf5d1684bd6fe347e93aab8517047c53785d4eb30",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/level_sides.py",
+      "expected_sha256": "222a8f752722e95c646d5ec58bbbcfc6ff94108d1d893d00806c960a25fd45ba",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/level_sides_peer.py",
+      "expected_sha256": "a1b1add2d97d34ab29c35e6fab7f5a665aa6841742080907ea95b5d4002a5c56",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/line_names.py",
+      "expected_sha256": "8fdfb7019d89edd01643bb5e1554a3aba8480dfbc032f34c72039782c620ce33",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/local_reuse.py",
+      "expected_sha256": "f16793e320bb446c2966a14b5c723158c908f13214ed00b94ba6a009e9b5f5e8",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/orbit_frontier.py",
+      "expected_sha256": "13067029f33fc13961cbb79d12b7d2252432493b63ce26776d44794363375d00",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/peer_batches.py",
+      "expected_sha256": "ad8bc0ffcb9b658da6b56ed0c32d18685996f9639f0b01598e37031f620333ff",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/prior_operation_restart.py",
+      "expected_sha256": "d9432da1e9811055994ba0531c572e79e4deb0cb01292a1ca7501e7683ee237d",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/prior_rule_reuse.py",
+      "expected_sha256": "315ac359efb51fa264b3bb866b0ee2272137ef7cceba03fdf10a7314a7e10e49",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/probabilistic_names.py",
+      "expected_sha256": "ed1bf39e471319346c48a8e1a5daeae4f8a1433b398ff6a700701d83ad142764",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/recoloring_boundary.py",
+      "expected_sha256": "16c525cdcdac35a26e53e7429a0130b435d65929aeb4633c112f47bf62ff21ae",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/relation_frontier.py",
+      "expected_sha256": "9d385da99c36e0b9f59c3d2182b697cd8d2b27734014cf97b0314c4ef785e316",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/relation_names.py",
+      "expected_sha256": "cc6566e959ab87c47d670dc8113d856f64e77132e5542c6d6ec8e98cec28d8cf",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/repair.py",
+      "expected_sha256": "1e5dff45897ff5f83202b577ae9cebc4f58231143e8e02b10f5c34a0ef879cb6",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/retained_profiles.py",
+      "expected_sha256": "5caed3fe79850cd7bd66a142ada98e5732e3af058325adfc2772fc2da5faec47",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/staged_levels.py",
+      "expected_sha256": "50eba883b5ba20b3af578695a27d6f30ccea43de4abd8e63f7942492ca381e4c",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/strip_chain.py",
+      "expected_sha256": "30f33bb5f988d34b8ab5a68f6887b6dfa13dadb7cf1ca7a550f6c9098be67d1c",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/structural_name_relations.py",
+      "expected_sha256": "20b7a71008ca6f85d5a785e5fd354778da55e032e7848603992b399cc157015f",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/structural_restart.py",
+      "expected_sha256": "de75e46c09f9bf981c5dd04af6e7b572a809630ca93552b96d0841b925a41a34",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/target_renaming.py",
+      "expected_sha256": "8d0a44ced52a63f9878cd57444d2a1f53812a3f0c05a5d9f20001032f7e9ce5a",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/triangle_chain_family.py",
+      "expected_sha256": "93d58a2a13c6d401fea55e9c1bde804b2fbea921420be79cb4fc4410595d94ec",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/triangle_chain_replay.py",
+      "expected_sha256": "f36652e6d99018e0b64a7a547b249cf5a5bb0dadee1bcc3f98af0d412aaa2864",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/two_port_reduction.py",
+      "expected_sha256": "b5bc8580804d83275d73ecd139d8e7721f228e05a37b56e7af704778ec82d558",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/weighted_lines.py",
+      "expected_sha256": "21cf5484a0504807463dafaa54992bf2cd6b1a4924e80b5a4ad29d3381ddd389",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/whole_lines.py",
+      "expected_sha256": "5bd54516c18ff74c2dcba2a5e89a27b1af7e3c0277fb3aa8e12f0efa55f9312c",
+      "matches": true
+    },
+    {
+      "file": "scripts/quaternary_contact_model.py",
+      "expected_sha256": "12bd29155a224d72484981033f2fa18ca3c6ac1c9193bd919602c78d929b9dd1",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_global_restart.py",
+      "expected_sha256": "2807c3ce904e42e4fb2bd194f773724c6bf7364f592d8cc730dfecc856601c18",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_quaternary_contacts.py",
+      "expected_sha256": "cd348938078377136c41ae9bc3038b1ff524dc173eaacc2d1b02d354ba309a72",
+      "matches": true
+    },
+    {
+      "file": "tests/test_quaternary_contact_audit.py",
+      "expected_sha256": "81fbdabde00b70b19993563bf9d26871271e3786db52589cede359899510e2fc",
+      "matches": true
+    },
+    {
+      "file": "tests/test_quaternary_contact_model.py",
+      "expected_sha256": "ddb0b4e5ff840f2760713ca1e2cdfb7920190d34c6a1176eda8e27d2c8d30698",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_quaternary_contacts_v2.py",
+      "expected_sha256": "e5c6584c881d74a6189a301cb161e55c9b1533138bb4491aa4b819efbb4c3fc2",
+      "matches": true
+    },
+    {
+      "file": "tests/test_quaternary_contact_metadata.py",
+      "expected_sha256": "726c09d9ca7bebcb0c98f7967a85cf486132a351d29d502f13119dd7c58f6b84",
+      "matches": true
+    },
+    {
+      "file": "docs/QUATERNARY_CONTACT_AUDIT_V2-2026-09-21.md",
+      "expected_sha256": "b6bf126079e0940f76ee3b25383835d449f4e61d35a0fba5f7334dea0cb79662",
+      "matches": true
+    },
+    {
+      "file": "docs/EXTENDIBILITY_PROTOCOL-2026-09-21.md",
+      "expected_sha256": "e0468f0a722c49f051e16ed474d8fd59cfb7c0657fd65534dad942c03316a6f9",
+      "matches": true
+    },
+    {
+      "file": "scripts/analyze_line_generations.py",
+      "expected_sha256": "48058342337b5a7c5ec523df42e16d447ccf1009dd4ffdf9f1924e06c1e57bd6",
+      "matches": true
+    },
+    {
+      "file": "scripts/audit_commit_extendibility.py",
+      "expected_sha256": "48b5fe0a6e0cfdf0af79557447810bc32810760e350ea8bdad2aa6bf719e64c7",
+      "matches": true
+    },
+    {
+      "file": "scripts/current_corpus.py",
+      "expected_sha256": "f107a35500c84db4fbfc3b9b4c02b7dbd8dc49f0402309525066dd6d0023e519",
+      "matches": true
+    },
+    {
+      "file": "scripts/exact_extendibility_oracle.py",
+      "expected_sha256": "8e11354484b53c38446b5afab607064b6314ac46a1d6f2594089b11167f0ece2",
+      "matches": true
+    },
+    {
+      "file": "scripts/exhaustive_grid_subsets.py",
+      "expected_sha256": "1803f8cbaf1a3325d8913ac107a519c22cf79c295547280538514c07686eaa3f",
+      "matches": true
+    },
+    {
+      "file": "scripts/exhaustive_rectangular_histories.py",
+      "expected_sha256": "db5c9faecda0b5c2f4536fe55475c055d74c3c75aaa6b8997288832d4c24a702",
+      "matches": true
+    },
+    {
+      "file": "scripts/restart-geometry.mjs",
+      "expected_sha256": "66d72196c12e56e2ca63b6debb06b661e6dc9a110be6c4f236d9f8f32653897e",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_frontier_restart.py",
+      "expected_sha256": "74b0d487b04ee218c3328cdbf566801812472cbe47a71b4f78bbda580aae39a7",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_level_sides_peer.py",
+      "expected_sha256": "1226941d2a95b632eec0532581b21d775afd25eb24a38b05a039d485528e803f",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_relation_frontier.py",
+      "expected_sha256": "d572cdb030021d3d080e7cf277f688e80c2a5af87b7a52cab3d1991f75b4248e",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_structural_restart.py",
+      "expected_sha256": "3900b1bbe98f46e068f485e1297cb7c08299bac3468a06609c8378d63b866c05",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_weighted_lines.py",
+      "expected_sha256": "d4cd30cb02e5e269598d48599fcd090731c92c7d9903222bd581e81cdd6f0eea",
+      "matches": true
+    },
+    {
+      "file": "tests/test_commit_extendibility.py",
+      "expected_sha256": "f4d13bd3f72ce0c4ab77f3c5e87ad202d8973cf4a775153bfec7156e39bdcb47",
+      "matches": true
+    },
+    {
+      "file": "tests/test_exact_extendibility_oracle.py",
+      "expected_sha256": "6d0810c3e27ff37dfeb454044d15ed7cc1107c7a777de962b0a0674fd0539722",
+      "matches": true
+    },
+    {
+      "file": "tests/test_exhaustive_grid_subsets.py",
+      "expected_sha256": "334da333257d0960b383bafc060b25ad1b3a229d0d1268dd735ae3ecd1aefdc4",
+      "matches": true
+    },
+    {
+      "file": "tests/test_exhaustive_rectangular_histories.py",
+      "expected_sha256": "3ad0f03df79ff3c85950cb4dd7f8132237fb263a04f4ae99b35db186fb093658",
+      "matches": true
+    },
+    {
+      "file": "docs/STRUCTURAL_RESTART_RULES-2026-09-21.md",
+      "expected_sha256": "fc0fa642730d1bc4ff728243f41aa9ffee6ac66b041f764bc1c1d3b5fd07b9b8",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_level_sides.py",
+      "expected_sha256": "b3fc714c0d07e7159c10ae14a92a787aeff3a499470917429b3bee20058ecff8",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_level_sides_peer_full.py",
+      "expected_sha256": "d2ccbcbed7530ff1a996e288816c26afdb3668fa6e810adc68df64583911e41e",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_relation_frontier_full.py",
+      "expected_sha256": "d5e06a138f26a8275358ee1c9473cac697e63407ba43c551132b3c72fb3dca69",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_structural_restart_full.py",
+      "expected_sha256": "f668082657fb7943ab211f4ac4abe31a06e5acb3275ee6dcb5a284586841226f",
+      "matches": true
+    },
+    {
+      "file": "tests/test_structural_name_relations.py",
+      "expected_sha256": "2d6b81cedb62eafedaa26e6ba92603d77655a273e2d8f0dbeb473c29c3a20940",
+      "matches": true
+    },
+    {
+      "file": "tests/test_structural_restart.py",
+      "expected_sha256": "1eacd6e81f8341df0b24a13f3d080e78a617a25250988680111e1f4d72cd98b8",
+      "matches": true
+    },
+    {
+      "file": "tests/test_structural_restart_full.py",
+      "expected_sha256": "1d2d9769d2295036ac692df3a2ead79168d0d6d2d399acf92d604d508ab40bff",
+      "matches": true
+    },
+    {
+      "file": "tests/test_structural_restart_validation.py",
+      "expected_sha256": "c64d4700628d2e145a122ffeacd366ef252ccbc3e0090faaa0e329bb8e5d425a",
+      "matches": true
+    },
+    {
+      "file": "scripts/quaternary_geometry_adapter.py",
+      "expected_sha256": "6219e8b66e65844fdb646ee2ea26dd1e2fd1e9981395db4b264b56f9a4499204",
+      "matches": true
+    },
+    {
+      "file": "scripts/audit_quaternary_geometry.py",
+      "expected_sha256": "58cc6019a952cb874ee4f37552c552ae0fef3276de16d67fff3669be4ecbaa41",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_quaternary_geometry.py",
+      "expected_sha256": "3e104f5937cb0ffad9725d31ae3fe9dfc866f85a0e5121f0a0dc08ab2bd6e4da",
+      "matches": true
+    },
+    {
+      "file": "tests/test_quaternary_geometry_adapter.py",
+      "expected_sha256": "b71b0b46958e390c23085727a182d1993bd21851da17d8c1b45aa5d705a93931",
+      "matches": true
+    },
+    {
+      "file": "tests/test_quaternary_geometry_audit.py",
+      "expected_sha256": "460e9560ef80fe122c6087284fbee13d5717f5c1ade4e68f7b8b3d66a9d8b293",
+      "matches": true
+    },
+    {
+      "file": "tests/test_quaternary_geometry_experiment.py",
+      "expected_sha256": "a73c7877f1a963fe9bd8164c0d68f81e28a426e826ff63ef8e400b1b4bd12ff6",
+      "matches": true
+    },
+    {
+      "file": "docs/QUATERNARY_GEOMETRY_PROTOCOL-2026-09-21.md",
+      "expected_sha256": "7967a54fc4a4a734ef3a0ccea2d5870cd092314844923e4011086a1eedf5e5d6",
+      "matches": true
+    },
+    {
+      "file": "examples/quaternary-real-regressions-2026-09-21.json",
+      "expected_sha256": "05d924a26dcdfcf6db85d839d2db50191124ce0662ac0ec38962b2df33cf1d23",
+      "matches": true
+    },
+    {
+      "file": "outputs/extendibility-grid-subsets-manifest-2026-09-21.json",
+      "expected_sha256": "4aff436269d3de1efb44510c91993749587c9171b17fa8141fc9db4aaf364cba",
+      "matches": true
+    },
+    {
+      "file": "outputs/prior-operations-factorial-2026-09-20.json.gz",
+      "expected_sha256": "945cff0ccdc1e23ccc078232ab9c7c238e97757a73505a33078bdc3177095c15",
+      "matches": true
+    },
+    {
+      "file": "outputs/structural-restart-full-2026-09-21.json.gz",
+      "expected_sha256": "bc692056ee5395168bb39ceae9d3b24d5f5b2d289180bc3261a918c52c7daeca",
+      "matches": true
+    },
+    {
+      "file": "examples/quaternary-real-regressions-2026-09-21.json",
+      "expected_sha256": "05d924a26dcdfcf6db85d839d2db50191124ce0662ac0ec38962b2df33cf1d23",
+      "matches": true
+    },
+    {
+      "file": "scripts/check_quaternary_low_color_artifacts.py",
+      "expected_sha256": "df33ebc9ca9b9945241af98608718ec6764f840b5c0430a8f21ab91f08418bfc",
+      "matches": true
+    },
+    {
+      "file": "docs/QUATERNARY_CONTACT_PROTOCOL-2026-09-21.md",
+      "expected_sha256": "12435b95a631d13ffc89c95d8979b1a2e36004603064797971b6714384cb66d1",
+      "matches": true
+    },
+    {
+      "file": "examples/quaternary-contact-prototype-2026-09-21.json",
+      "expected_sha256": "232aad292554854a0054831b9e3372284cbb9463f41160c2e9d368224e1b5186",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/__init__.py",
+      "expected_sha256": "dd3939384003ac2beb3abc6d0890b7d5feb5b7642c257a8e8c7b7a67940eba4f",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/__main__.py",
+      "expected_sha256": "c1f15bb0a448700a1c9a9c66138d0075b0ac5ae78eda5e7a138af59746b3e60d",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/anchor_forest.py",
+      "expected_sha256": "6bf04f6365d8fbfd086e77d65a9cd845f4b0d8965b4ff861576c41e226f1d42e",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/apex_triangle_cost.py",
+      "expected_sha256": "94ef396c2e665ac670c9a1de63c1f2ab64d4801ebaa20fe1ba4c9a658fb6cc6c",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/circle_layer_repair.py",
+      "expected_sha256": "f9f281b794c93df44df9b98008b99113268686f6090df6af651b5d6be3a90dcd",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/circle_layers.py",
+      "expected_sha256": "a716db37fb9bf133e5e0218051ff90f662401329e4bf65e76260722ca7f385b1",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/closed_interfaces.py",
+      "expected_sha256": "5572a3dcd31218215347acff8f0f398a148124c4105e95242089a86c8a9b992f",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/closed_support.py",
+      "expected_sha256": "0a95dd2802d16654a4342332ae9f9825944a26c4fe2cad182de0a214fbfc56f1",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/coloring.py",
+      "expected_sha256": "270cdd398002eadefbd8df0d2293c085e33a98fddd75e35a257c6cbe02e9e03c",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/conservative_recoloring.py",
+      "expected_sha256": "26956dbc1bb5e56a4e05ebb5132cc869ec3737e74261e1e71ae7da387315ff10",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/current_geometry.py",
+      "expected_sha256": "b782c4bf35f31363bfc3e70a60670e17b94041e4dc267a6a2a177196db0509ae",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/current_names.py",
+      "expected_sha256": "6ed8422ff38e138e2d98d03d5da226a7b91ab3725bdab094349edee9d392d049",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/embedding.py",
+      "expected_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/examples.py",
+      "expected_sha256": "2c0b5ae47b258bbb509ed0a6d0b8e9139304ac9128623ec1068a69150ff11b98",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/frontier_order.py",
+      "expected_sha256": "9fd9abe4d17101f5938bf269ff2f8dc72f57a0fc0f4f3c12118e9975a0a80f98",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/frontier_restart.py",
+      "expected_sha256": "2b82e9de0ecad888b5248602d039997889becac1718282f5c4a5eaa6d8c1c533",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/global_restart.py",
+      "expected_sha256": "56aafff2632cf4c02cc20c7a056d02b9932f65f700311846d7d81c1cb32b3cbb",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/history.py",
+      "expected_sha256": "20859575858700887da6524e8f9d743b4a454700d39f7d3aaf053a550317c17f",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/implicit_inequality.py",
+      "expected_sha256": "f69df9171708f6c6102d155b6e39e7a8f8d2356013e7053a4713f1ea84d12662",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/inherited_names.py",
+      "expected_sha256": "235751061bc97b7cac9036890a29971c3d11688cad4aa628ceafa09412fd4c14",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/interface_names.py",
+      "expected_sha256": "cd3d468c3feb75b2e0aa319d95177307aed53b4ce50bb0105c9dbee215e742c4",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/interface_signatures.py",
+      "expected_sha256": "47e142a462034e3358acba38238ed85a10c01e9c7d1225643edb9fcc165802c2",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/joint_boundary.py",
+      "expected_sha256": "f2191d544d036ba904fe912d68327f9c3e6f14e41eaa686c01b4303b9353ed53",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/joint_boundary_restart.py",
+      "expected_sha256": "3690431efde9bf437f1e0926bd87a3a26ff044f78e70df6162710e6e331648e6",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/joint_lines.py",
+      "expected_sha256": "7d0fa2df82b719ceba514818f27d4b155f7e96d47b3c173743e3adf44b930e88",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/kempe_history_policy.py",
+      "expected_sha256": "0f26efa5a90def334831c973e6965e417c3ae811c5abbe0622f9cd6baa4d6d5a",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/kempe_reconfiguration.py",
+      "expected_sha256": "cd1dd753532d19d02114fc31d55a47aaa2f995f5b6d156d4b3a8e2daccdf3c04",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/kempe_split.py",
+      "expected_sha256": "b5264dfcde5953f38a976bedf5d1684bd6fe347e93aab8517047c53785d4eb30",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/level_sides.py",
+      "expected_sha256": "222a8f752722e95c646d5ec58bbbcfc6ff94108d1d893d00806c960a25fd45ba",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/level_sides_peer.py",
+      "expected_sha256": "a1b1add2d97d34ab29c35e6fab7f5a665aa6841742080907ea95b5d4002a5c56",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/line_names.py",
+      "expected_sha256": "8fdfb7019d89edd01643bb5e1554a3aba8480dfbc032f34c72039782c620ce33",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/local_reuse.py",
+      "expected_sha256": "f16793e320bb446c2966a14b5c723158c908f13214ed00b94ba6a009e9b5f5e8",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/orbit_frontier.py",
+      "expected_sha256": "13067029f33fc13961cbb79d12b7d2252432493b63ce26776d44794363375d00",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/peer_batches.py",
+      "expected_sha256": "ad8bc0ffcb9b658da6b56ed0c32d18685996f9639f0b01598e37031f620333ff",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/prior_operation_restart.py",
+      "expected_sha256": "d9432da1e9811055994ba0531c572e79e4deb0cb01292a1ca7501e7683ee237d",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/prior_rule_reuse.py",
+      "expected_sha256": "315ac359efb51fa264b3bb866b0ee2272137ef7cceba03fdf10a7314a7e10e49",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/probabilistic_names.py",
+      "expected_sha256": "ed1bf39e471319346c48a8e1a5daeae4f8a1433b398ff6a700701d83ad142764",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/recoloring_boundary.py",
+      "expected_sha256": "16c525cdcdac35a26e53e7429a0130b435d65929aeb4633c112f47bf62ff21ae",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/relation_frontier.py",
+      "expected_sha256": "9d385da99c36e0b9f59c3d2182b697cd8d2b27734014cf97b0314c4ef785e316",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/relation_names.py",
+      "expected_sha256": "cc6566e959ab87c47d670dc8113d856f64e77132e5542c6d6ec8e98cec28d8cf",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/repair.py",
+      "expected_sha256": "1e5dff45897ff5f83202b577ae9cebc4f58231143e8e02b10f5c34a0ef879cb6",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/retained_profiles.py",
+      "expected_sha256": "5caed3fe79850cd7bd66a142ada98e5732e3af058325adfc2772fc2da5faec47",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/staged_levels.py",
+      "expected_sha256": "50eba883b5ba20b3af578695a27d6f30ccea43de4abd8e63f7942492ca381e4c",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/strip_chain.py",
+      "expected_sha256": "30f33bb5f988d34b8ab5a68f6887b6dfa13dadb7cf1ca7a550f6c9098be67d1c",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/structural_name_relations.py",
+      "expected_sha256": "20b7a71008ca6f85d5a785e5fd354778da55e032e7848603992b399cc157015f",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/structural_restart.py",
+      "expected_sha256": "de75e46c09f9bf981c5dd04af6e7b572a809630ca93552b96d0841b925a41a34",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/target_renaming.py",
+      "expected_sha256": "8d0a44ced52a63f9878cd57444d2a1f53812a3f0c05a5d9f20001032f7e9ce5a",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/triangle_chain_family.py",
+      "expected_sha256": "93d58a2a13c6d401fea55e9c1bde804b2fbea921420be79cb4fc4410595d94ec",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/triangle_chain_replay.py",
+      "expected_sha256": "f36652e6d99018e0b64a7a547b249cf5a5bb0dadee1bcc3f98af0d412aaa2864",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/two_port_reduction.py",
+      "expected_sha256": "b5bc8580804d83275d73ecd139d8e7721f228e05a37b56e7af704778ec82d558",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/weighted_lines.py",
+      "expected_sha256": "21cf5484a0504807463dafaa54992bf2cd6b1a4924e80b5a4ad29d3381ddd389",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/whole_lines.py",
+      "expected_sha256": "5bd54516c18ff74c2dcba2a5e89a27b1af7e3c0277fb3aa8e12f0efa55f9312c",
+      "matches": true
+    },
+    {
+      "file": "scripts/quaternary_contact_model.py",
+      "expected_sha256": "12bd29155a224d72484981033f2fa18ca3c6ac1c9193bd919602c78d929b9dd1",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_global_restart.py",
+      "expected_sha256": "2807c3ce904e42e4fb2bd194f773724c6bf7364f592d8cc730dfecc856601c18",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_quaternary_contacts.py",
+      "expected_sha256": "cd348938078377136c41ae9bc3038b1ff524dc173eaacc2d1b02d354ba309a72",
+      "matches": true
+    },
+    {
+      "file": "tests/test_quaternary_contact_audit.py",
+      "expected_sha256": "81fbdabde00b70b19993563bf9d26871271e3786db52589cede359899510e2fc",
+      "matches": true
+    },
+    {
+      "file": "tests/test_quaternary_contact_model.py",
+      "expected_sha256": "ddb0b4e5ff840f2760713ca1e2cdfb7920190d34c6a1176eda8e27d2c8d30698",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_quaternary_contacts_v2.py",
+      "expected_sha256": "e5c6584c881d74a6189a301cb161e55c9b1533138bb4491aa4b819efbb4c3fc2",
+      "matches": true
+    },
+    {
+      "file": "tests/test_quaternary_contact_metadata.py",
+      "expected_sha256": "726c09d9ca7bebcb0c98f7967a85cf486132a351d29d502f13119dd7c58f6b84",
+      "matches": true
+    },
+    {
+      "file": "docs/QUATERNARY_CONTACT_AUDIT_V2-2026-09-21.md",
+      "expected_sha256": "b6bf126079e0940f76ee3b25383835d449f4e61d35a0fba5f7334dea0cb79662",
+      "matches": true
+    },
+    {
+      "file": "docs/EXTENDIBILITY_PROTOCOL-2026-09-21.md",
+      "expected_sha256": "e0468f0a722c49f051e16ed474d8fd59cfb7c0657fd65534dad942c03316a6f9",
+      "matches": true
+    },
+    {
+      "file": "scripts/analyze_line_generations.py",
+      "expected_sha256": "48058342337b5a7c5ec523df42e16d447ccf1009dd4ffdf9f1924e06c1e57bd6",
+      "matches": true
+    },
+    {
+      "file": "scripts/audit_commit_extendibility.py",
+      "expected_sha256": "48b5fe0a6e0cfdf0af79557447810bc32810760e350ea8bdad2aa6bf719e64c7",
+      "matches": true
+    },
+    {
+      "file": "scripts/current_corpus.py",
+      "expected_sha256": "f107a35500c84db4fbfc3b9b4c02b7dbd8dc49f0402309525066dd6d0023e519",
+      "matches": true
+    },
+    {
+      "file": "scripts/exact_extendibility_oracle.py",
+      "expected_sha256": "8e11354484b53c38446b5afab607064b6314ac46a1d6f2594089b11167f0ece2",
+      "matches": true
+    },
+    {
+      "file": "scripts/exhaustive_grid_subsets.py",
+      "expected_sha256": "1803f8cbaf1a3325d8913ac107a519c22cf79c295547280538514c07686eaa3f",
+      "matches": true
+    },
+    {
+      "file": "scripts/exhaustive_rectangular_histories.py",
+      "expected_sha256": "db5c9faecda0b5c2f4536fe55475c055d74c3c75aaa6b8997288832d4c24a702",
+      "matches": true
+    },
+    {
+      "file": "scripts/restart-geometry.mjs",
+      "expected_sha256": "66d72196c12e56e2ca63b6debb06b661e6dc9a110be6c4f236d9f8f32653897e",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_frontier_restart.py",
+      "expected_sha256": "74b0d487b04ee218c3328cdbf566801812472cbe47a71b4f78bbda580aae39a7",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_level_sides_peer.py",
+      "expected_sha256": "1226941d2a95b632eec0532581b21d775afd25eb24a38b05a039d485528e803f",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_relation_frontier.py",
+      "expected_sha256": "d572cdb030021d3d080e7cf277f688e80c2a5af87b7a52cab3d1991f75b4248e",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_structural_restart.py",
+      "expected_sha256": "3900b1bbe98f46e068f485e1297cb7c08299bac3468a06609c8378d63b866c05",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_weighted_lines.py",
+      "expected_sha256": "d4cd30cb02e5e269598d48599fcd090731c92c7d9903222bd581e81cdd6f0eea",
+      "matches": true
+    },
+    {
+      "file": "tests/test_commit_extendibility.py",
+      "expected_sha256": "f4d13bd3f72ce0c4ab77f3c5e87ad202d8973cf4a775153bfec7156e39bdcb47",
+      "matches": true
+    },
+    {
+      "file": "tests/test_exact_extendibility_oracle.py",
+      "expected_sha256": "6d0810c3e27ff37dfeb454044d15ed7cc1107c7a777de962b0a0674fd0539722",
+      "matches": true
+    },
+    {
+      "file": "tests/test_exhaustive_grid_subsets.py",
+      "expected_sha256": "334da333257d0960b383bafc060b25ad1b3a229d0d1268dd735ae3ecd1aefdc4",
+      "matches": true
+    },
+    {
+      "file": "tests/test_exhaustive_rectangular_histories.py",
+      "expected_sha256": "3ad0f03df79ff3c85950cb4dd7f8132237fb263a04f4ae99b35db186fb093658",
+      "matches": true
+    },
+    {
+      "file": "docs/STRUCTURAL_RESTART_RULES-2026-09-21.md",
+      "expected_sha256": "fc0fa642730d1bc4ff728243f41aa9ffee6ac66b041f764bc1c1d3b5fd07b9b8",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_level_sides.py",
+      "expected_sha256": "b3fc714c0d07e7159c10ae14a92a787aeff3a499470917429b3bee20058ecff8",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_level_sides_peer_full.py",
+      "expected_sha256": "d2ccbcbed7530ff1a996e288816c26afdb3668fa6e810adc68df64583911e41e",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_relation_frontier_full.py",
+      "expected_sha256": "d5e06a138f26a8275358ee1c9473cac697e63407ba43c551132b3c72fb3dca69",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_structural_restart_full.py",
+      "expected_sha256": "f668082657fb7943ab211f4ac4abe31a06e5acb3275ee6dcb5a284586841226f",
+      "matches": true
+    },
+    {
+      "file": "tests/test_structural_name_relations.py",
+      "expected_sha256": "2d6b81cedb62eafedaa26e6ba92603d77655a273e2d8f0dbeb473c29c3a20940",
+      "matches": true
+    },
+    {
+      "file": "tests/test_structural_restart.py",
+      "expected_sha256": "1eacd6e81f8341df0b24a13f3d080e78a617a25250988680111e1f4d72cd98b8",
+      "matches": true
+    },
+    {
+      "file": "tests/test_structural_restart_full.py",
+      "expected_sha256": "1d2d9769d2295036ac692df3a2ead79168d0d6d2d399acf92d604d508ab40bff",
+      "matches": true
+    },
+    {
+      "file": "tests/test_structural_restart_validation.py",
+      "expected_sha256": "c64d4700628d2e145a122ffeacd366ef252ccbc3e0090faaa0e329bb8e5d425a",
+      "matches": true
+    },
+    {
+      "file": "scripts/quaternary_geometry_adapter.py",
+      "expected_sha256": "6219e8b66e65844fdb646ee2ea26dd1e2fd1e9981395db4b264b56f9a4499204",
+      "matches": true
+    },
+    {
+      "file": "scripts/audit_quaternary_geometry.py",
+      "expected_sha256": "58cc6019a952cb874ee4f37552c552ae0fef3276de16d67fff3669be4ecbaa41",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_quaternary_geometry.py",
+      "expected_sha256": "3e104f5937cb0ffad9725d31ae3fe9dfc866f85a0e5121f0a0dc08ab2bd6e4da",
+      "matches": true
+    },
+    {
+      "file": "tests/test_quaternary_geometry_adapter.py",
+      "expected_sha256": "b71b0b46958e390c23085727a182d1993bd21851da17d8c1b45aa5d705a93931",
+      "matches": true
+    },
+    {
+      "file": "tests/test_quaternary_geometry_audit.py",
+      "expected_sha256": "460e9560ef80fe122c6087284fbee13d5717f5c1ade4e68f7b8b3d66a9d8b293",
+      "matches": true
+    },
+    {
+      "file": "tests/test_quaternary_geometry_experiment.py",
+      "expected_sha256": "a73c7877f1a963fe9bd8164c0d68f81e28a426e826ff63ef8e400b1b4bd12ff6",
+      "matches": true
+    },
+    {
+      "file": "docs/QUATERNARY_GEOMETRY_PROTOCOL-2026-09-21.md",
+      "expected_sha256": "7967a54fc4a4a734ef3a0ccea2d5870cd092314844923e4011086a1eedf5e5d6",
+      "matches": true
+    },
+    {
+      "file": "examples/quaternary-real-regressions-2026-09-21.json",
+      "expected_sha256": "05d924a26dcdfcf6db85d839d2db50191124ce0662ac0ec38962b2df33cf1d23",
+      "matches": true
+    },
+    {
+      "file": "scripts/audit_quaternary_low_color.py",
+      "expected_sha256": "318b0a08f71630ef13ece61a9f90c94c31a5afb255f9a9a7e612eed2768cd436",
+      "matches": true
+    },
+    {
+      "file": "scripts/quaternary_low_color.py",
+      "expected_sha256": "2e33ad1504d223dd4a37fcb22089b05c1fec23fdbedf5fc798888b1ad1e18a95",
+      "matches": true
+    },
+    {
+      "file": "scripts/construction-experiments.mjs",
+      "expected_sha256": "094517ba881cdc70b9e4b7ab796af251af5e3eae73e5f71c561d2c47a1306e76",
+      "matches": true
+    },
+    {
+      "file": "docs/QUATERNARY_LOW_COLOR_PROTOCOL-2026-09-22.md",
+      "expected_sha256": "203ad7cc47bef5ae430221034fbe9eb553b8db63fd3c85de0aaeb92a27d66403",
+      "matches": true
+    },
+    {
+      "file": "tests/test_quaternary_low_color_experiment.py",
+      "expected_sha256": "515666091e7ecbd1808ce64cd1dcf56afa465689889fccc9962598f1235f037c",
+      "matches": true
+    },
+    {
+      "file": "tests/test_quaternary_low_color.py",
+      "expected_sha256": "32b0c576ba4ea39d553c7167414fbfafc2c75ce36344d8e928fd88c84b3797fb",
+      "matches": true
+    },
+    {
+      "file": "tests/test_quaternary_low_color_audit.py",
+      "expected_sha256": "d184558d97dcc99b35c837d7df884460a84b403bc5efde47d8bdbbc45f5676df",
+      "matches": true
+    },
+    {
+      "file": "tests/test_quaternary_low_color_inputs.py",
+      "expected_sha256": "c51ae4b7b2fc9b4741182418176da2ccfa7c95a361af2c76e0ff50b1b0b3dcae",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_quaternary_low_color.py",
+      "expected_sha256": "0e397257ce4ddcd1e81566be2884d15d83d9dcc832d5591be1d87c84ea9c3e52",
+      "matches": true
+    },
+    {
+      "file": "scripts/quaternary_low_color_inputs.py",
+      "expected_sha256": "19fd01e7e4b8335bae3722c0c87ad029546b7945ed27b7215c2849763efbaf54",
+      "matches": true
+    },
+    {
+      "file": "outputs/quaternary-geometry-manifest-2026-09-21.json.gz",
+      "expected_sha256": "e69d290d675c9707879a6fe48f09149b22761c099f260b30114c38e766d80f7c",
+      "matches": true
+    },
+    {
+      "file": "outputs/quaternary-reachability-manifest-2026-09-22.json.gz",
+      "expected_sha256": "a0d5ad70b08592e849f49c271c2ab6fdc2ea53db88403bb59448c37967d06f3c",
+      "matches": true
+    },
+    {
+      "file": "outputs/quaternary-reachability-2026-09-22.json.gz",
+      "expected_sha256": "a43c7c339526477ea316668e4e53e972509c8458ef1b3b9c53435be94b6ce822",
+      "matches": true
+    },
+    {
+      "file": "outputs/quaternary-obstruction-state-scan-2026-09-22.json",
+      "expected_sha256": "ea0938004e273ff3a7063b5f0959389d85a1c11517b0263116a1106ac428e32b",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/__init__.py",
+      "expected_sha256": "dd3939384003ac2beb3abc6d0890b7d5feb5b7642c257a8e8c7b7a67940eba4f",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/anchor_forest.py",
+      "expected_sha256": "6bf04f6365d8fbfd086e77d65a9cd845f4b0d8965b4ff861576c41e226f1d42e",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/closed_support.py",
+      "expected_sha256": "0a95dd2802d16654a4342332ae9f9825944a26c4fe2cad182de0a214fbfc56f1",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/embedding.py",
+      "expected_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/frontier_restart.py",
+      "expected_sha256": "2b82e9de0ecad888b5248602d039997889becac1718282f5c4a5eaa6d8c1c533",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/global_restart.py",
+      "expected_sha256": "56aafff2632cf4c02cc20c7a056d02b9932f65f700311846d7d81c1cb32b3cbb",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/inherited_names.py",
+      "expected_sha256": "235751061bc97b7cac9036890a29971c3d11688cad4aa628ceafa09412fd4c14",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/joint_lines.py",
+      "expected_sha256": "7d0fa2df82b719ceba514818f27d4b155f7e96d47b3c173743e3adf44b930e88",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/level_sides.py",
+      "expected_sha256": "222a8f752722e95c646d5ec58bbbcfc6ff94108d1d893d00806c960a25fd45ba",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/level_sides_peer.py",
+      "expected_sha256": "a1b1add2d97d34ab29c35e6fab7f5a665aa6841742080907ea95b5d4002a5c56",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/line_names.py",
+      "expected_sha256": "8fdfb7019d89edd01643bb5e1554a3aba8480dfbc032f34c72039782c620ce33",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/local_reuse.py",
+      "expected_sha256": "f16793e320bb446c2966a14b5c723158c908f13214ed00b94ba6a009e9b5f5e8",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/relation_frontier.py",
+      "expected_sha256": "9d385da99c36e0b9f59c3d2182b697cd8d2b27734014cf97b0314c4ef785e316",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/relation_names.py",
+      "expected_sha256": "cc6566e959ab87c47d670dc8113d856f64e77132e5542c6d6ec8e98cec28d8cf",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/retained_profiles.py",
+      "expected_sha256": "5caed3fe79850cd7bd66a142ada98e5732e3af058325adfc2772fc2da5faec47",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/strip_chain.py",
+      "expected_sha256": "30f33bb5f988d34b8ab5a68f6887b6dfa13dadb7cf1ca7a550f6c9098be67d1c",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/weighted_lines.py",
+      "expected_sha256": "21cf5484a0504807463dafaa54992bf2cd6b1a4924e80b5a4ad29d3381ddd389",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/whole_lines.py",
+      "expected_sha256": "5bd54516c18ff74c2dcba2a5e89a27b1af7e3c0277fb3aa8e12f0efa55f9312c",
+      "matches": true
+    },
+    {
+      "file": "scripts/audit_bare_bipyramid.py",
+      "expected_sha256": "db72b23c3950989fcc837f4e8d0be7667f4fbfadaea66a3d56fca2737e635fcf",
+      "matches": true
+    },
+    {
+      "file": "scripts/audit_lifted_bipyramid.py",
+      "expected_sha256": "7aab43c809d5f6c0641da50cd896798d37ba93c2dadfa22251f55134b7579b03",
+      "matches": true
+    },
+    {
+      "file": "scripts/audit_quaternary_geometry.py",
+      "expected_sha256": "58cc6019a952cb874ee4f37552c552ae0fef3276de16d67fff3669be4ecbaa41",
+      "matches": true
+    },
+    {
+      "file": "scripts/audit_quaternary_low_color.py",
+      "expected_sha256": "318b0a08f71630ef13ece61a9f90c94c31a5afb255f9a9a7e612eed2768cd436",
+      "matches": true
+    },
+    {
+      "file": "scripts/audit_retained_blocks.py",
+      "expected_sha256": "be76a3a94cc9e2a473045b8575283ad84264247ae6ad494b3387aa92808fdb19",
+      "matches": true
+    },
+    {
+      "file": "scripts/check_quaternary_low_color_artifacts.py",
+      "expected_sha256": "df33ebc9ca9b9945241af98608718ec6764f840b5c0430a8f21ab91f08418bfc",
+      "matches": true
+    },
+    {
+      "file": "scripts/check_quaternary_reachability.py",
+      "expected_sha256": "0d44e69161b5640990f58563a2a42ffabf763004b21016fb4056c495b6bbe963",
+      "matches": true
+    },
+    {
+      "file": "scripts/check_quaternary_reachability_artifacts.py",
+      "expected_sha256": "1b7f97a13584b17ecd286fa3067cbe5ee32bbcb4ff9ea697730c12719ff8e06d",
+      "matches": true
+    },
+    {
+      "file": "scripts/compare_local_marks.py",
+      "expected_sha256": "d77aca237830512b78127222c2c8a660bd50d418a6cfa47439bda7bee29cce73",
+      "matches": true
+    },
+    {
+      "file": "scripts/current_corpus.py",
+      "expected_sha256": "f107a35500c84db4fbfc3b9b4c02b7dbd8dc49f0402309525066dd6d0023e519",
+      "matches": true
+    },
+    {
+      "file": "scripts/exact_extendibility_oracle.py",
+      "expected_sha256": "8e11354484b53c38446b5afab607064b6314ac46a1d6f2594089b11167f0ece2",
+      "matches": true
+    },
+    {
+      "file": "scripts/quaternary_bipyramid_inputs.py",
+      "expected_sha256": "c6f341a7e055571ca61be3ff9603fa8ec71b0e159ed3837ed99de3885b3e759e",
+      "matches": true
+    },
+    {
+      "file": "scripts/quaternary_contact_model.py",
+      "expected_sha256": "12bd29155a224d72484981033f2fa18ca3c6ac1c9193bd919602c78d929b9dd1",
+      "matches": true
+    },
+    {
+      "file": "scripts/quaternary_geometry_adapter.py",
+      "expected_sha256": "6219e8b66e65844fdb646ee2ea26dd1e2fd1e9981395db4b264b56f9a4499204",
+      "matches": true
+    },
+    {
+      "file": "scripts/quaternary_lifted_obstruction_inputs.py",
+      "expected_sha256": "0125228fe4d54b4aaf8405c867ef26863fa176294b359456eb8415302dcb1cd2",
+      "matches": true
+    },
+    {
+      "file": "scripts/quaternary_low_color.py",
+      "expected_sha256": "2e33ad1504d223dd4a37fcb22089b05c1fec23fdbedf5fc798888b1ad1e18a95",
+      "matches": true
+    },
+    {
+      "file": "scripts/scan_low_color_obstruction_states.py",
+      "expected_sha256": "0b2faa973903cabe7af4bd35bf88c54a4eaacb2374c6a5d10793d2fa3f96c417",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_global_restart.py",
+      "expected_sha256": "2807c3ce904e42e4fb2bd194f773724c6bf7364f592d8cc730dfecc856601c18",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_local_reuse.py",
+      "expected_sha256": "4bd55b56a41ef7e3cea32a80293d4d2e8ab4a711bd20441fc376371b21aa350c",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_quaternary_contacts.py",
+      "expected_sha256": "cd348938078377136c41ae9bc3038b1ff524dc173eaacc2d1b02d354ba309a72",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_quaternary_contacts_v2.py",
+      "expected_sha256": "e5c6584c881d74a6189a301cb161e55c9b1533138bb4491aa4b819efbb4c3fc2",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_quaternary_geometry.py",
+      "expected_sha256": "3e104f5937cb0ffad9725d31ae3fe9dfc866f85a0e5121f0a0dc08ab2bd6e4da",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_quaternary_low_color.py",
+      "expected_sha256": "0e397257ce4ddcd1e81566be2884d15d83d9dcc832d5591be1d87c84ea9c3e52",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_retained_profiles.py",
+      "expected_sha256": "0a5d700d557bb0a54f401c3a8c7d7f8dc21d448720f24404ba195f2292c941c4",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_weighted_lines.py",
+      "expected_sha256": "d4cd30cb02e5e269598d48599fcd090731c92c7d9903222bd581e81cdd6f0eea",
+      "matches": true
+    },
+    {
+      "file": "tests/test_quaternary_reachability_artifacts.py",
+      "expected_sha256": "2397fcf951754d7878a9ada6f7d5c3374a6f134c6c9815721d1ab939de1d9270",
+      "matches": true
+    },
+    {
+      "file": "docs/QUATERNARY_CONTACT_PROTOCOL-2026-09-21.md",
+      "expected_sha256": "12435b95a631d13ffc89c95d8979b1a2e36004603064797971b6714384cb66d1",
+      "matches": true
+    },
+    {
+      "file": "examples/quaternary-contact-prototype-2026-09-21.json",
+      "expected_sha256": "232aad292554854a0054831b9e3372284cbb9463f41160c2e9d368224e1b5186",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/__init__.py",
+      "expected_sha256": "dd3939384003ac2beb3abc6d0890b7d5feb5b7642c257a8e8c7b7a67940eba4f",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/__main__.py",
+      "expected_sha256": "c1f15bb0a448700a1c9a9c66138d0075b0ac5ae78eda5e7a138af59746b3e60d",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/anchor_forest.py",
+      "expected_sha256": "6bf04f6365d8fbfd086e77d65a9cd845f4b0d8965b4ff861576c41e226f1d42e",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/apex_triangle_cost.py",
+      "expected_sha256": "94ef396c2e665ac670c9a1de63c1f2ab64d4801ebaa20fe1ba4c9a658fb6cc6c",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/circle_layer_repair.py",
+      "expected_sha256": "f9f281b794c93df44df9b98008b99113268686f6090df6af651b5d6be3a90dcd",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/circle_layers.py",
+      "expected_sha256": "a716db37fb9bf133e5e0218051ff90f662401329e4bf65e76260722ca7f385b1",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/closed_interfaces.py",
+      "expected_sha256": "5572a3dcd31218215347acff8f0f398a148124c4105e95242089a86c8a9b992f",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/closed_support.py",
+      "expected_sha256": "0a95dd2802d16654a4342332ae9f9825944a26c4fe2cad182de0a214fbfc56f1",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/coloring.py",
+      "expected_sha256": "270cdd398002eadefbd8df0d2293c085e33a98fddd75e35a257c6cbe02e9e03c",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/conservative_recoloring.py",
+      "expected_sha256": "26956dbc1bb5e56a4e05ebb5132cc869ec3737e74261e1e71ae7da387315ff10",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/current_geometry.py",
+      "expected_sha256": "b782c4bf35f31363bfc3e70a60670e17b94041e4dc267a6a2a177196db0509ae",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/current_names.py",
+      "expected_sha256": "6ed8422ff38e138e2d98d03d5da226a7b91ab3725bdab094349edee9d392d049",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/embedding.py",
+      "expected_sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/examples.py",
+      "expected_sha256": "2c0b5ae47b258bbb509ed0a6d0b8e9139304ac9128623ec1068a69150ff11b98",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/frontier_order.py",
+      "expected_sha256": "9fd9abe4d17101f5938bf269ff2f8dc72f57a0fc0f4f3c12118e9975a0a80f98",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/frontier_restart.py",
+      "expected_sha256": "2b82e9de0ecad888b5248602d039997889becac1718282f5c4a5eaa6d8c1c533",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/global_restart.py",
+      "expected_sha256": "56aafff2632cf4c02cc20c7a056d02b9932f65f700311846d7d81c1cb32b3cbb",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/history.py",
+      "expected_sha256": "20859575858700887da6524e8f9d743b4a454700d39f7d3aaf053a550317c17f",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/implicit_inequality.py",
+      "expected_sha256": "f69df9171708f6c6102d155b6e39e7a8f8d2356013e7053a4713f1ea84d12662",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/inherited_names.py",
+      "expected_sha256": "235751061bc97b7cac9036890a29971c3d11688cad4aa628ceafa09412fd4c14",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/interface_names.py",
+      "expected_sha256": "cd3d468c3feb75b2e0aa319d95177307aed53b4ce50bb0105c9dbee215e742c4",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/interface_signatures.py",
+      "expected_sha256": "47e142a462034e3358acba38238ed85a10c01e9c7d1225643edb9fcc165802c2",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/joint_boundary.py",
+      "expected_sha256": "f2191d544d036ba904fe912d68327f9c3e6f14e41eaa686c01b4303b9353ed53",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/joint_boundary_restart.py",
+      "expected_sha256": "3690431efde9bf437f1e0926bd87a3a26ff044f78e70df6162710e6e331648e6",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/joint_lines.py",
+      "expected_sha256": "7d0fa2df82b719ceba514818f27d4b155f7e96d47b3c173743e3adf44b930e88",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/kempe_history_policy.py",
+      "expected_sha256": "0f26efa5a90def334831c973e6965e417c3ae811c5abbe0622f9cd6baa4d6d5a",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/kempe_reconfiguration.py",
+      "expected_sha256": "cd1dd753532d19d02114fc31d55a47aaa2f995f5b6d156d4b3a8e2daccdf3c04",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/kempe_split.py",
+      "expected_sha256": "b5264dfcde5953f38a976bedf5d1684bd6fe347e93aab8517047c53785d4eb30",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/level_sides.py",
+      "expected_sha256": "222a8f752722e95c646d5ec58bbbcfc6ff94108d1d893d00806c960a25fd45ba",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/level_sides_peer.py",
+      "expected_sha256": "a1b1add2d97d34ab29c35e6fab7f5a665aa6841742080907ea95b5d4002a5c56",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/line_names.py",
+      "expected_sha256": "8fdfb7019d89edd01643bb5e1554a3aba8480dfbc032f34c72039782c620ce33",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/local_reuse.py",
+      "expected_sha256": "f16793e320bb446c2966a14b5c723158c908f13214ed00b94ba6a009e9b5f5e8",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/orbit_frontier.py",
+      "expected_sha256": "13067029f33fc13961cbb79d12b7d2252432493b63ce26776d44794363375d00",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/peer_batches.py",
+      "expected_sha256": "ad8bc0ffcb9b658da6b56ed0c32d18685996f9639f0b01598e37031f620333ff",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/prior_operation_restart.py",
+      "expected_sha256": "d9432da1e9811055994ba0531c572e79e4deb0cb01292a1ca7501e7683ee237d",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/prior_rule_reuse.py",
+      "expected_sha256": "315ac359efb51fa264b3bb866b0ee2272137ef7cceba03fdf10a7314a7e10e49",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/probabilistic_names.py",
+      "expected_sha256": "ed1bf39e471319346c48a8e1a5daeae4f8a1433b398ff6a700701d83ad142764",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/recoloring_boundary.py",
+      "expected_sha256": "16c525cdcdac35a26e53e7429a0130b435d65929aeb4633c112f47bf62ff21ae",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/relation_frontier.py",
+      "expected_sha256": "9d385da99c36e0b9f59c3d2182b697cd8d2b27734014cf97b0314c4ef785e316",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/relation_names.py",
+      "expected_sha256": "cc6566e959ab87c47d670dc8113d856f64e77132e5542c6d6ec8e98cec28d8cf",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/repair.py",
+      "expected_sha256": "1e5dff45897ff5f83202b577ae9cebc4f58231143e8e02b10f5c34a0ef879cb6",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/retained_profiles.py",
+      "expected_sha256": "5caed3fe79850cd7bd66a142ada98e5732e3af058325adfc2772fc2da5faec47",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/staged_levels.py",
+      "expected_sha256": "50eba883b5ba20b3af578695a27d6f30ccea43de4abd8e63f7942492ca381e4c",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/strip_chain.py",
+      "expected_sha256": "30f33bb5f988d34b8ab5a68f6887b6dfa13dadb7cf1ca7a550f6c9098be67d1c",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/structural_name_relations.py",
+      "expected_sha256": "20b7a71008ca6f85d5a785e5fd354778da55e032e7848603992b399cc157015f",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/structural_restart.py",
+      "expected_sha256": "de75e46c09f9bf981c5dd04af6e7b572a809630ca93552b96d0841b925a41a34",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/target_renaming.py",
+      "expected_sha256": "8d0a44ced52a63f9878cd57444d2a1f53812a3f0c05a5d9f20001032f7e9ce5a",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/triangle_chain_family.py",
+      "expected_sha256": "93d58a2a13c6d401fea55e9c1bde804b2fbea921420be79cb4fc4410595d94ec",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/triangle_chain_replay.py",
+      "expected_sha256": "f36652e6d99018e0b64a7a547b249cf5a5bb0dadee1bcc3f98af0d412aaa2864",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/two_port_reduction.py",
+      "expected_sha256": "b5bc8580804d83275d73ecd139d8e7721f228e05a37b56e7af704778ec82d558",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/weighted_lines.py",
+      "expected_sha256": "21cf5484a0504807463dafaa54992bf2cd6b1a4924e80b5a4ad29d3381ddd389",
+      "matches": true
+    },
+    {
+      "file": "fourcolor/whole_lines.py",
+      "expected_sha256": "5bd54516c18ff74c2dcba2a5e89a27b1af7e3c0277fb3aa8e12f0efa55f9312c",
+      "matches": true
+    },
+    {
+      "file": "scripts/quaternary_contact_model.py",
+      "expected_sha256": "12bd29155a224d72484981033f2fa18ca3c6ac1c9193bd919602c78d929b9dd1",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_global_restart.py",
+      "expected_sha256": "2807c3ce904e42e4fb2bd194f773724c6bf7364f592d8cc730dfecc856601c18",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_quaternary_contacts.py",
+      "expected_sha256": "cd348938078377136c41ae9bc3038b1ff524dc173eaacc2d1b02d354ba309a72",
+      "matches": true
+    },
+    {
+      "file": "tests/test_quaternary_contact_audit.py",
+      "expected_sha256": "81fbdabde00b70b19993563bf9d26871271e3786db52589cede359899510e2fc",
+      "matches": true
+    },
+    {
+      "file": "tests/test_quaternary_contact_model.py",
+      "expected_sha256": "ddb0b4e5ff840f2760713ca1e2cdfb7920190d34c6a1176eda8e27d2c8d30698",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_quaternary_contacts_v2.py",
+      "expected_sha256": "e5c6584c881d74a6189a301cb161e55c9b1533138bb4491aa4b819efbb4c3fc2",
+      "matches": true
+    },
+    {
+      "file": "tests/test_quaternary_contact_metadata.py",
+      "expected_sha256": "726c09d9ca7bebcb0c98f7967a85cf486132a351d29d502f13119dd7c58f6b84",
+      "matches": true
+    },
+    {
+      "file": "docs/QUATERNARY_CONTACT_AUDIT_V2-2026-09-21.md",
+      "expected_sha256": "b6bf126079e0940f76ee3b25383835d449f4e61d35a0fba5f7334dea0cb79662",
+      "matches": true
+    },
+    {
+      "file": "docs/EXTENDIBILITY_PROTOCOL-2026-09-21.md",
+      "expected_sha256": "e0468f0a722c49f051e16ed474d8fd59cfb7c0657fd65534dad942c03316a6f9",
+      "matches": true
+    },
+    {
+      "file": "scripts/analyze_line_generations.py",
+      "expected_sha256": "48058342337b5a7c5ec523df42e16d447ccf1009dd4ffdf9f1924e06c1e57bd6",
+      "matches": true
+    },
+    {
+      "file": "scripts/audit_commit_extendibility.py",
+      "expected_sha256": "48b5fe0a6e0cfdf0af79557447810bc32810760e350ea8bdad2aa6bf719e64c7",
+      "matches": true
+    },
+    {
+      "file": "scripts/current_corpus.py",
+      "expected_sha256": "f107a35500c84db4fbfc3b9b4c02b7dbd8dc49f0402309525066dd6d0023e519",
+      "matches": true
+    },
+    {
+      "file": "scripts/exact_extendibility_oracle.py",
+      "expected_sha256": "8e11354484b53c38446b5afab607064b6314ac46a1d6f2594089b11167f0ece2",
+      "matches": true
+    },
+    {
+      "file": "scripts/exhaustive_grid_subsets.py",
+      "expected_sha256": "1803f8cbaf1a3325d8913ac107a519c22cf79c295547280538514c07686eaa3f",
+      "matches": true
+    },
+    {
+      "file": "scripts/exhaustive_rectangular_histories.py",
+      "expected_sha256": "db5c9faecda0b5c2f4536fe55475c055d74c3c75aaa6b8997288832d4c24a702",
+      "matches": true
+    },
+    {
+      "file": "scripts/restart-geometry.mjs",
+      "expected_sha256": "66d72196c12e56e2ca63b6debb06b661e6dc9a110be6c4f236d9f8f32653897e",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_frontier_restart.py",
+      "expected_sha256": "74b0d487b04ee218c3328cdbf566801812472cbe47a71b4f78bbda580aae39a7",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_level_sides_peer.py",
+      "expected_sha256": "1226941d2a95b632eec0532581b21d775afd25eb24a38b05a039d485528e803f",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_relation_frontier.py",
+      "expected_sha256": "d572cdb030021d3d080e7cf277f688e80c2a5af87b7a52cab3d1991f75b4248e",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_structural_restart.py",
+      "expected_sha256": "3900b1bbe98f46e068f485e1297cb7c08299bac3468a06609c8378d63b866c05",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_weighted_lines.py",
+      "expected_sha256": "d4cd30cb02e5e269598d48599fcd090731c92c7d9903222bd581e81cdd6f0eea",
+      "matches": true
+    },
+    {
+      "file": "tests/test_commit_extendibility.py",
+      "expected_sha256": "f4d13bd3f72ce0c4ab77f3c5e87ad202d8973cf4a775153bfec7156e39bdcb47",
+      "matches": true
+    },
+    {
+      "file": "tests/test_exact_extendibility_oracle.py",
+      "expected_sha256": "6d0810c3e27ff37dfeb454044d15ed7cc1107c7a777de962b0a0674fd0539722",
+      "matches": true
+    },
+    {
+      "file": "tests/test_exhaustive_grid_subsets.py",
+      "expected_sha256": "334da333257d0960b383bafc060b25ad1b3a229d0d1268dd735ae3ecd1aefdc4",
+      "matches": true
+    },
+    {
+      "file": "tests/test_exhaustive_rectangular_histories.py",
+      "expected_sha256": "3ad0f03df79ff3c85950cb4dd7f8132237fb263a04f4ae99b35db186fb093658",
+      "matches": true
+    },
+    {
+      "file": "docs/STRUCTURAL_RESTART_RULES-2026-09-21.md",
+      "expected_sha256": "fc0fa642730d1bc4ff728243f41aa9ffee6ac66b041f764bc1c1d3b5fd07b9b8",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_level_sides.py",
+      "expected_sha256": "b3fc714c0d07e7159c10ae14a92a787aeff3a499470917429b3bee20058ecff8",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_level_sides_peer_full.py",
+      "expected_sha256": "d2ccbcbed7530ff1a996e288816c26afdb3668fa6e810adc68df64583911e41e",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_relation_frontier_full.py",
+      "expected_sha256": "d5e06a138f26a8275358ee1c9473cac697e63407ba43c551132b3c72fb3dca69",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_structural_restart_full.py",
+      "expected_sha256": "f668082657fb7943ab211f4ac4abe31a06e5acb3275ee6dcb5a284586841226f",
+      "matches": true
+    },
+    {
+      "file": "tests/test_structural_name_relations.py",
+      "expected_sha256": "2d6b81cedb62eafedaa26e6ba92603d77655a273e2d8f0dbeb473c29c3a20940",
+      "matches": true
+    },
+    {
+      "file": "tests/test_structural_restart.py",
+      "expected_sha256": "1eacd6e81f8341df0b24a13f3d080e78a617a25250988680111e1f4d72cd98b8",
+      "matches": true
+    },
+    {
+      "file": "tests/test_structural_restart_full.py",
+      "expected_sha256": "1d2d9769d2295036ac692df3a2ead79168d0d6d2d399acf92d604d508ab40bff",
+      "matches": true
+    },
+    {
+      "file": "tests/test_structural_restart_validation.py",
+      "expected_sha256": "c64d4700628d2e145a122ffeacd366ef252ccbc3e0090faaa0e329bb8e5d425a",
+      "matches": true
+    },
+    {
+      "file": "scripts/quaternary_geometry_adapter.py",
+      "expected_sha256": "6219e8b66e65844fdb646ee2ea26dd1e2fd1e9981395db4b264b56f9a4499204",
+      "matches": true
+    },
+    {
+      "file": "scripts/audit_quaternary_geometry.py",
+      "expected_sha256": "58cc6019a952cb874ee4f37552c552ae0fef3276de16d67fff3669be4ecbaa41",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_quaternary_geometry.py",
+      "expected_sha256": "3e104f5937cb0ffad9725d31ae3fe9dfc866f85a0e5121f0a0dc08ab2bd6e4da",
+      "matches": true
+    },
+    {
+      "file": "tests/test_quaternary_geometry_adapter.py",
+      "expected_sha256": "b71b0b46958e390c23085727a182d1993bd21851da17d8c1b45aa5d705a93931",
+      "matches": true
+    },
+    {
+      "file": "tests/test_quaternary_geometry_audit.py",
+      "expected_sha256": "460e9560ef80fe122c6087284fbee13d5717f5c1ade4e68f7b8b3d66a9d8b293",
+      "matches": true
+    },
+    {
+      "file": "tests/test_quaternary_geometry_experiment.py",
+      "expected_sha256": "a73c7877f1a963fe9bd8164c0d68f81e28a426e826ff63ef8e400b1b4bd12ff6",
+      "matches": true
+    },
+    {
+      "file": "docs/QUATERNARY_GEOMETRY_PROTOCOL-2026-09-21.md",
+      "expected_sha256": "7967a54fc4a4a734ef3a0ccea2d5870cd092314844923e4011086a1eedf5e5d6",
+      "matches": true
+    },
+    {
+      "file": "examples/quaternary-real-regressions-2026-09-21.json",
+      "expected_sha256": "05d924a26dcdfcf6db85d839d2db50191124ce0662ac0ec38962b2df33cf1d23",
+      "matches": true
+    },
+    {
+      "file": "scripts/audit_quaternary_low_color.py",
+      "expected_sha256": "318b0a08f71630ef13ece61a9f90c94c31a5afb255f9a9a7e612eed2768cd436",
+      "matches": true
+    },
+    {
+      "file": "scripts/quaternary_low_color.py",
+      "expected_sha256": "2e33ad1504d223dd4a37fcb22089b05c1fec23fdbedf5fc798888b1ad1e18a95",
+      "matches": true
+    },
+    {
+      "file": "scripts/validate_quaternary_low_color.py",
+      "expected_sha256": "0e397257ce4ddcd1e81566be2884d15d83d9dcc832d5591be1d87c84ea9c3e52",
+      "matches": true
+    },
+    {
+      "file": "tests/test_quaternary_low_color_audit.py",
+      "expected_sha256": "d184558d97dcc99b35c837d7df884460a84b403bc5efde47d8bdbbc45f5676df",
+      "matches": true
+    },
+    {
+      "file": "tests/test_quaternary_low_color.py",
+      "expected_sha256": "32b0c576ba4ea39d553c7167414fbfafc2c75ce36344d8e928fd88c84b3797fb",
+      "matches": true
+    },
+    {
+      "file": "tests/test_quaternary_low_color_inputs.py",
+      "expected_sha256": "c51ae4b7b2fc9b4741182418176da2ccfa7c95a361af2c76e0ff50b1b0b3dcae",
+      "matches": true
+    },
+    {
+      "file": "scripts/construction-experiments.mjs",
+      "expected_sha256": "094517ba881cdc70b9e4b7ab796af251af5e3eae73e5f71c561d2c47a1306e76",
+      "matches": true
+    },
+    {
+      "file": "docs/QUATERNARY_LOW_COLOR_PROTOCOL-2026-09-22.md",
+      "expected_sha256": "203ad7cc47bef5ae430221034fbe9eb553b8db63fd3c85de0aaeb92a27d66403",
+      "matches": true
+    },
+    {
+      "file": "tests/test_quaternary_low_color_experiment.py",
+      "expected_sha256": "515666091e7ecbd1808ce64cd1dcf56afa465689889fccc9962598f1235f037c",
+      "matches": true
+    },
+    {
+      "file": "scripts/quaternary_low_color_inputs.py",
+      "expected_sha256": "19fd01e7e4b8335bae3722c0c87ad029546b7945ed27b7215c2849763efbaf54",
+      "matches": true
+    },
+    {
+      "file": "scripts/scan_low_color_obstruction_states.py",
+      "expected_sha256": "0b2faa973903cabe7af4bd35bf88c54a4eaacb2374c6a5d10793d2fa3f96c417",
+      "matches": true
+    },
+    {
+      "file": "tests/test_quaternary_reachability.py",
+      "expected_sha256": "d402dbc619f66ed97b6f7fbadf16d8d3859047bde17a57541a2f745b0bafb0bf",
+      "matches": true
+    },
+    {
+      "file": "scripts/audit_bare_bipyramid.py",
+      "expected_sha256": "db72b23c3950989fcc837f4e8d0be7667f4fbfadaea66a3d56fca2737e635fcf",
+      "matches": true
+    },
+    {
+      "file": "docs/QUATERNARY_REACHABILITY_PROTOCOL-2026-09-22.md",
+      "expected_sha256": "1bb002de0aea1a73f3e4789c2e0001940b905b07ee7ec2faec01c9e85fbe8c09",
+      "matches": true
+    },
+    {
+      "file": "tests/test_low_color_obstruction_states.py",
+      "expected_sha256": "cda472a2f785af644578be560a103c58fa1ea96ea160254be75ad8fdab0a1d01",
+      "matches": true
+    },
+    {
+      "file": "tests/test_quaternary_bipyramid_inputs.py",
+      "expected_sha256": "3ed6e02ae64d1ab6b8235135b78dcc4453f9540d272f53882d3361db57c3a083",
+      "matches": true
+    },
+    {
+      "file": "scripts/audit_lifted_bipyramid.py",
+      "expected_sha256": "7aab43c809d5f6c0641da50cd896798d37ba93c2dadfa22251f55134b7579b03",
+      "matches": true
+    },
+    {
+      "file": "scripts/quaternary_bipyramid_inputs.py",
+      "expected_sha256": "c6f341a7e055571ca61be3ff9603fa8ec71b0e159ed3837ed99de3885b3e759e",
+      "matches": true
+    },
+    {
+      "file": "tests/test_lifted_bipyramid.py",
+      "expected_sha256": "f58cf77f37a99f519679b54138ccc01e5b6f0b665ac2e1d43e4cb36726a4c382",
+      "matches": true
+    },
+    {
+      "file": "tests/test_quaternary_lifted_obstruction_inputs.py",
+      "expected_sha256": "7e574718038ff912061d4268608774a4ca9a4d591303546ed2f102be7e41cb3e",
+      "matches": true
+    },
+    {
+      "file": "scripts/check_quaternary_reachability.py",
+      "expected_sha256": "0d44e69161b5640990f58563a2a42ffabf763004b21016fb4056c495b6bbe963",
+      "matches": true
+    },
+    {
+      "file": "scripts/quaternary_lifted_obstruction_inputs.py",
+      "expected_sha256": "0125228fe4d54b4aaf8405c867ef26863fa176294b359456eb8415302dcb1cd2",
+      "matches": true
+    },
+    {
+      "file": "tests/test_bare_bipyramid.py",
+      "expected_sha256": "042ec665193c77fa71fa042f8d14c58566f9b19844e594ecc28b549cffec0e57",
+      "matches": true
+    },
+    {
+      "file": "outputs/quaternary-low-color-manifest-2026-09-22.json.gz",
+      "expected_sha256": "8368881a0f963139e300ebf0b076548db1b181db02d05e68e12a92d59f7ad15c",
+      "matches": true
+    },
+    {
+      "file": "outputs/quaternary-low-color-2026-09-22.json.gz",
+      "expected_sha256": "b882d137b5e0b1513ba5732fe6867a4174110c68d50a49709dd2d774f2b6de58",
+      "matches": true
+    }
+  ],
+  "errors": [],
+  "scope": "Exact index/source/input hash bindings; no new mathematical experiment."
+}

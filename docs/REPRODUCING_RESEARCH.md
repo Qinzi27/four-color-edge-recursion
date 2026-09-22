@@ -1,9 +1,87 @@
 # 外部复现：算法、完整实验、证书与图件
 
-本指南包含截至 2026-09-21 的研究记录。发起思路属于 Qinzi27。
+本指南包含截至 2026-09-22 的研究记录。发起思路属于 Qinzi27。
 这里公开的是可复现的候选方法、成功和负结果，不是一份新的四色定理证明。
 
-## 当前主线：结构反证与整图重启（2026-09-21）
+## 当前检查：逐步延拓、四进制候选与危险域可达性（2026-09-21—22）
+
+以下五阶段各自冻结输入、规则和来源。它们不是同一算法逐次相加的成功数。
+从完整仓库根目录运行，使用Python 3.10+及现有Node；环境见第2节。
+所有`my-`输出及检查点目录必须尚不存在，正式归档不覆盖。完整几何运行包含
+离线oracle及有限赋值枚举，资源成本不同于只运行生产算法。
+
+### A. 固定结构重启版的每次承诺检查
+
+```text
+python -X utf8 scripts/audit_commit_extendibility.py prepare --family guillotine --max-cuts 5 --assignment-limit 65536 --manifest outputs/my-guillotine-manifest.json
+python -X utf8 scripts/audit_commit_extendibility.py run --manifest outputs/my-guillotine-manifest.json --output outputs/my-guillotine-audit.json.gz
+python -X utf8 scripts/audit_commit_extendibility.py prepare --family grid-subsets --assignment-limit 65536 --manifest outputs/my-grid-manifest.json
+python -X utf8 scripts/audit_commit_extendibility.py run --manifest outputs/my-grid-manifest.json --output outputs/my-grid-audit.json.gz
+```
+
+[正式结果](EXTENDIBILITY_RESULTS-2026-09-21.md)分别是357图/872次承诺和4,096图/6,114次承诺均可延拓。
+前者穷举指定网格最多5刀的2,145条有序贯穿切分历史；后者穷举12条单位边的子集，
+每个子集仅取一条代表顺序。独立求解器在候选运行后检查原始邻接及承诺，不反馈选色。
+
+### B. 四进制候选原型的可靠性
+
+```text
+python -X utf8 scripts/validate_quaternary_contacts_v2.py prepare --manifest outputs/my-contact-manifest.json.gz
+python -X utf8 scripts/validate_quaternary_contacts_v2.py run --manifest outputs/my-contact-manifest.json.gz --output outputs/my-contact-run.json.gz
+python -X utf8 scripts/validate_quaternary_contacts_v2.py example --id two-neighbors-same-minimum --output outputs/my-contact-example.json
+```
+
+[41,847模型核查](QUATERNARY_CONTACT_RESULTS-2026-09-21.md)区分候选`0111={2,3,4}`与承诺2，
+检查合法赋值保留，不把冲突/未决模型混成求解成功率。v1审计缺口与v2补强均保留；
+当前复现使用v2入口。这个原型没有主动选色。
+
+### C. 接入真实绘图几何
+
+```text
+python -X utf8 scripts/validate_quaternary_geometry.py map examples/structural-v2-failure-map-2026-09-21.json --output outputs/my-quaternary-map.json
+python -X utf8 scripts/validate_quaternary_geometry.py run --manifest outputs/quaternary-geometry-manifest-2026-09-21.json.gz --output outputs/my-quaternary-geometry.json.gz --checkpoint-dir outputs/my-quaternary-geometry-parts
+python -X utf8 scripts/check_quaternary_geometry_artifacts.py --manifest outputs/quaternary-geometry-manifest-2026-09-21.json.gz --report outputs/quaternary-geometry-2026-09-21.json.gz --checkpoint-dir outputs/quaternary-geometry-checkpoints-2026-09-21 --output outputs/my-quaternary-geometry-check.json
+```
+
+[正式结果](QUATERNARY_GEOMETRY_RESULTS-2026-09-22.md)覆盖4,144图、8,339场景。
+该版本单锚全部未决，49份完整旧配色仅为往返证书；oracle见证不可冒充原型输出。
+第三条核查保存的正式归档，与前一条新运行的`my-`输出分开；它不是再次生产求解。
+真实桥、点触和虚拟连接的区别，及共享Node平面化的独立性边界见结果说明。
+
+### D. 低色优先和提交前条件传播
+
+```text
+python -X utf8 scripts/validate_quaternary_low_color.py run --manifest outputs/quaternary-low-color-manifest-2026-09-22.json.gz --output outputs/my-low-color-run.json.gz --checkpoint-dir outputs/my-low-color-parts
+python -X utf8 scripts/check_quaternary_low_color_artifacts.py --manifest outputs/quaternary-low-color-manifest-2026-09-22.json.gz --report outputs/quaternary-low-color-2026-09-22.json.gz --checkpoint-dir outputs/quaternary-low-color-checkpoints-2026-09-22 --output outputs/my-low-color-check.json
+```
+
+[4,272图对照](QUATERNARY_LOW_COLOR_RESULTS-2026-09-22.md)中，旧双锚完成数由plain的4,271
+提高到guarded的4,272，单锚两版均完成。正式17,092次运行含4次具名诊断运行，
+诊断重现同一旧失败不能另算修复。常规guarded有18,743次已核查安全提交；
+后续发现的抽象顺序反例表明这不是普遍安全性证明。128个新输入两版均完成，无新增修复收益。
+
+### E. 危险候选域是否能由实际流程产生
+
+```text
+python -X utf8 scripts/check_quaternary_reachability.py prepare --manifest outputs/my-reachability-manifest.json.gz
+python -X utf8 scripts/check_quaternary_reachability.py run --manifest outputs/my-reachability-manifest.json.gz --output outputs/my-reachability-run.json.gz
+python -X utf8 scripts/scan_low_color_obstruction_states.py --manifest outputs/quaternary-low-color-manifest-2026-09-22.json.gz --report outputs/quaternary-low-color-2026-09-22.json.gz --checkpoint-dir outputs/quaternary-low-color-checkpoints-2026-09-22 --output outputs/my-obstruction-scan.json
+python -X utf8 scripts/check_quaternary_reachability_artifacts.py --manifest outputs/quaternary-reachability-manifest-2026-09-22.json.gz --report outputs/quaternary-reachability-2026-09-22.json.gz --scan outputs/quaternary-obstruction-state-scan-2026-09-22.json --output outputs/my-reachability-artifact-check.json
+```
+
+[正式结果](QUATERNARY_REACHABILITY_RESULTS-2026-09-22.md)的两个几何群体共314次运行、
+763次可延拓承诺，0次拒绝候选；两群可能共享前缀，不称157张全局不同图。
+六线段群覆盖全部720顺序，提升构造只覆盖4种表示的固定顺序、93个去重前缀。
+同一报告另保留10顶点单锚抽象顺序下第4次提交A1的首错，完整解6→0；
+相关11面实际母线轨迹先处理E，再传播固定A=E，未走到该危险状态。
+第三条只读扫描上轮归档，第四条只复核保存证据；均不向生产策略提供候选或补救。
+核查`passed`包括正确确认负结果，不表示被核查算法的每条路径都成功。
+
+以上报告保留来源/输入哈希、完整证据及枚举与超限范围。后续改规则须另立版本再比较；
+当前下一步是检查母线顺序的保护条件，另行评估共同三角形同名证书，而非把四进制本身当作证明。
+发布与远端CI状态应查看实际提交及工作流，不能由这些本地研究记录预先推定。
+
+## 已冻结主线：结构反证与整图重启（2026-09-21）
 
 从完整仓库根目录执行以下命令；环境要求见第2节，所有输出与目录均须使用尚未占用的路径。
 先重现旧 v2 唯一失败的真实 `frame/strokes` 几何：
@@ -149,6 +227,11 @@ python -X utf8 scripts/render_inside_out.py --input outputs/my-inside-out.json -
 
 | 工作 | 入口 | 能说明什么 |
 | --- | --- | --- |
+| 核查每次主动承诺是否有延拓 | `scripts/audit_commit_extendibility.py` | 指定小规模合法输入及固定结构规则；oracle只作离线核查 |
+| 保留四进制候选及真实共边 | `scripts/validate_quaternary_geometry.py` | 几何/传播适配与证书；无主动选色版本可保持未决 |
+| 同条件比较plain与guarded低色策略 | `scripts/validate_quaternary_low_color.py` | 固定4,272图及具名诊断，分别记录修复、退步和实际承诺 |
+| 检查危险域的实际可达性 | `scripts/check_quaternary_reachability.py` | 真实母线有限运行与抽象顺序反例分开保存 |
+| 只读复核可达性研究产物 | `scripts/check_quaternary_reachability_artifacts.py` | 已保存证据、输入覆盖与哈希；不重新运行生产器 |
 | 按需结构反证后对当前整图重新命名 | `scripts/name_structural_map.py` | 当前候选一次运行、完整证书审计；反证无结论仍可能提交后受阻 |
 | 新主线完整旧库实验 | `scripts/validate_structural_restart_full.py` | 固定规则在7069个去重输入上的新运行，旧 v2 为归档对照 |
 | 预声明新种子配对实验 | `scripts/validate_structural_restart_new_seeds.py` | 每图两策略均新跑，分别统计重叠与未见几何、全前缀与终图 |
@@ -239,7 +322,10 @@ python -X utf8 scripts/validate.py --output outputs/my-validation.json
 `validate.py` 自身也执行完整 Python 单元测试，再做有限数学检查；
 因此前一条独立 `unittest` 不是必要的重复工作，只是便于分开观察失败。
 2026-09-19 研究快照记录为536项 Python 和107项 Node 测试通过；
-9月21日连续修复阶段为786项 Python 与107项 Node；最新结构主线为 **831项 Python及综合验证通过**。
+9月21日连续修复阶段为786项 Python 与107项 Node；结构主线阶段为 **831项 Python及综合验证通过**。
+后续研究检查点依次为逐步延拓869项、候选原型908项、真实几何940项、低色对照982项，
+9月22日可达性研究最终为 **1,029项Python测试及综合验证通过**，详见[当轮结果末尾](QUATERNARY_REACHABILITY_RESULTS-2026-09-22.md)。
+这些是各自保存的本地检查点，不是本次发布的远端CI成绩，也不等于各算法均已普遍安全。
 结构阶段实际调用 Node 几何引擎，但未重跑整套网页测试。发布时另做的干净副本及远端检查以
 [发布日志](PUBLICATION-2026-09-21.md)和实际工作流状态为准，不把前次记录当成本次 CI 结果。
 

@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "scope": "Small declared contact models inspired by the inner-circle explanation, not an automatic transcription of every junction in the handwritten drawing.",
+  "cases": [
+    {
+      "id": "inner-one-outer-non-one",
+      "description": "The outer display 2 represents all of 2,3,4; it is not a commitment.",
+      "document": {"sides": ["I", "A"], "anchors": {"I": 1}, "lines": [{"id": "arc", "left": "I", "right": "A", "kind": "separator"}]}
+    },
+    {
+      "id": "two-neighbors-same-minimum",
+      "description": "A and B both display 2 but remain distinct adjacent variables with six allowed ordered pairs.",
+      "document": {"sides": ["I", "A", "B"], "anchors": {"I": 1}, "lines": [{"id": "inner-a", "left": "I", "right": "A", "kind": "separator"}, {"id": "inner-b", "left": "I", "right": "B", "kind": "separator"}, {"id": "a-b", "left": "A", "right": "B", "kind": "separator"}]}
+    },
+    {
+      "id": "explicit-two-is-a-different-input",
+      "description": "Only an explicit A=2 anchor removes 2 from its neighbor B.",
+      "document": {"sides": ["I", "A", "B"], "anchors": {"I": 1, "A": 2}, "lines": [{"id": "inner-a", "left": "I", "right": "A", "kind": "separator"}, {"id": "inner-b", "left": "I", "right": "B", "kind": "separator"}, {"id": "a-b", "left": "A", "right": "B", "kind": "separator"}]}
+    },
+    {
+      "id": "point-touch-is-not-a-shared-boundary",
+      "description": "Point-only contact permits the same fixed name on two distinct sides.",
+      "document": {"sides": ["A", "B"], "anchors": {"A": 2, "B": 2}, "lines": [], "point_contacts": [{"sides": ["A", "B"]}]}
+    },
+    {
+      "id": "real-boundary-rejects-two-fixed-twos",
+      "description": "Two actual equal commitments on a separating line are a conflict.",
+      "document": {"sides": ["A", "B"], "anchors": {"A": 2, "B": 2}, "lines": [{"id": "a-b", "left": "A", "right": "B", "kind": "separator"}]}
+    },
+    {
+      "id": "bridge-has-one-side-identity",
+      "description": "A dangling bridge has the same side on both shores; it does not ban that name.",
+      "document": {"sides": ["A"], "anchors": {"A": 1}, "lines": [{"id": "bridge", "left": "A", "right": "A", "kind": "bridge"}]}
+    },
+    {
+      "id": "logical-equality-keeps-two-identities",
+      "description": "A supplied equality constraint propagates a name but does not merge geometric IDs.",
+      "document": {"sides": ["A", "B"], "anchors": {"A": 1}, "lines": [], "equal_names": [["A", "B"]]}
+    },
+    {
+      "id": "two-quaternary-domain-words",
+      "description": "Both 0011 words mean candidates 3,4; their real boundary keeps (3,4) and (4,3).",
+      "document": {"sides": ["A", "B"], "states": {"A": "0011", "B": "0011"}, "lines": [{"id": "a-b", "left": "A", "right": "B", "kind": "separator"}]}
+    }
+  ]
+}

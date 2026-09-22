@@ -1,0 +1,1241 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-09-21T11:31:24.392962+00:00",
+  "all_passed": true,
+  "experiment_kind": "exploratory_abstract_conditional_obstruction",
+  "problem": {
+    "n": 8,
+    "cycle_size": 5,
+    "labels": [
+      "U",
+      "V",
+      "t0",
+      "t1",
+      "t2",
+      "t3",
+      "t4",
+      "z"
+    ],
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        6
+      ]
+    ],
+    "rotation_by_vertex": {
+      "0": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "1": [
+        6,
+        5,
+        4,
+        3,
+        2
+      ],
+      "7": [
+        2
+      ],
+      "2": [
+        0,
+        6,
+        1,
+        3,
+        7
+      ],
+      "3": [
+        0,
+        2,
+        1,
+        4
+      ],
+      "4": [
+        0,
+        3,
+        1,
+        5
+      ],
+      "5": [
+        0,
+        4,
+        1,
+        6
+      ],
+      "6": [
+        0,
+        5,
+        1,
+        2
+      ]
+    },
+    "anchors": {
+      "0": 2,
+      "7": 1
+    },
+    "proposal": {
+      "vertex": 1,
+      "color": 1
+    },
+    "same_name_query": [
+      1,
+      7
+    ]
+  },
+  "embedding_audit": {
+    "passed": true,
+    "vertices": 8,
+    "edges": 16,
+    "faces": [
+      [
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          6
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          6,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          4
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          5
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          6
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          5,
+          1
+        ]
+      ]
+    ],
+    "euler_characteristic": 2,
+    "scope": "abstract constraint-graph planar embedding only"
+  },
+  "before_commit": {
+    "schema_version": 1,
+    "method": "independent-mrv-literal-four-colors-v1",
+    "palette": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "input_sha256": "db416011ae68cf803e7b24221416e7e3d28c25f5bc5c7ee17662419aba3347ea",
+    "status": "sat",
+    "witness": [
+      2,
+      2,
+      3,
+      1,
+      3,
+      1,
+      4,
+      1
+    ],
+    "certificate": null,
+    "nodes": 7,
+    "node_limit": 1000000,
+    "reason": null
+  },
+  "after_commit": {
+    "schema_version": 1,
+    "method": "independent-mrv-literal-four-colors-v1",
+    "palette": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "input_sha256": "9d6eef4e22ca7d7ca2736223470d50dbf479ec8566031d6553993109f1fee7e4",
+    "status": "unsat",
+    "witness": null,
+    "certificate": {
+      "kind": "branch",
+      "vertex": 2,
+      "children": [
+        {
+          "color": 3,
+          "child": {
+            "kind": "branch",
+            "vertex": 3,
+            "children": [
+              {
+                "color": 4,
+                "child": {
+                  "kind": "branch",
+                  "vertex": 4,
+                  "children": [
+                    {
+                      "color": 3,
+                      "child": {
+                        "kind": "branch",
+                        "vertex": 5,
+                        "children": [
+                          {
+                            "color": 4,
+                            "child": {
+                              "kind": "dead_end",
+                              "vertex": 6,
+                              "blockers": [
+                                {
+                                  "color": 1,
+                                  "neighbor": 1
+                                },
+                                {
+                                  "color": 2,
+                                  "neighbor": 0
+                                },
+                                {
+                                  "color": 3,
+                                  "neighbor": 2
+                                },
+                                {
+                                  "color": 4,
+                                  "neighbor": 5
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "color": 4,
+          "child": {
+            "kind": "branch",
+            "vertex": 3,
+            "children": [
+              {
+                "color": 3,
+                "child": {
+                  "kind": "branch",
+                  "vertex": 4,
+                  "children": [
+                    {
+                      "color": 4,
+                      "child": {
+                        "kind": "branch",
+                        "vertex": 5,
+                        "children": [
+                          {
+                            "color": 3,
+                            "child": {
+                              "kind": "dead_end",
+                              "vertex": 6,
+                              "blockers": [
+                                {
+                                  "color": 1,
+                                  "neighbor": 1
+                                },
+                                {
+                                  "color": 2,
+                                  "neighbor": 0
+                                },
+                                {
+                                  "color": 3,
+                                  "neighbor": 5
+                                },
+                                {
+                                  "color": 4,
+                                  "neighbor": 2
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "nodes": 9,
+    "node_limit": 1000000,
+    "reason": null
+  },
+  "unconditional_same_name_witness": {
+    "schema_version": 1,
+    "method": "independent-mrv-literal-four-colors-v1",
+    "palette": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "input_sha256": "887516383d747c9bfe8c1bda846a1cdd2ec34828c03fe2fd28910f775eff0425",
+    "status": "sat",
+    "witness": [
+      1,
+      1,
+      2,
+      3,
+      2,
+      3,
+      4,
+      1
+    ],
+    "certificate": null,
+    "nodes": 7,
+    "node_limit": 1000000,
+    "reason": null
+  },
+  "exact_audits": [
+    {
+      "passed": true,
+      "status": "sat",
+      "conclusive": true,
+      "claim": "complete-four-name-witness",
+      "edges_checked": 16,
+      "anchors_checked": 2,
+      "nodes_independently_counted": null
+    },
+    {
+      "passed": true,
+      "status": "unsat",
+      "conclusive": true,
+      "claim": "complete-literal-four-name-unsat-tree",
+      "leaves_checked": 2,
+      "nodes_independently_counted": 9
+    },
+    {
+      "passed": true,
+      "status": "sat",
+      "conclusive": true,
+      "claim": "complete-four-name-witness",
+      "edges_checked": 16,
+      "anchors_checked": 2,
+      "nodes_independently_counted": null
+    }
+  ],
+  "propagation": {
+    "relations": [
+      [
+        32,
+        48,
+        192,
+        208,
+        208,
+        208,
+        208,
+        16
+      ],
+      [
+        34,
+        33,
+        204,
+        220,
+        220,
+        220,
+        220,
+        17
+      ],
+      [
+        8704,
+        13056,
+        33792,
+        22784,
+        56576,
+        56576,
+        22784,
+        4352
+      ],
+      [
+        8706,
+        13058,
+        18444,
+        33793,
+        22796,
+        56589,
+        38157,
+        4353
+      ],
+      [
+        8706,
+        13058,
+        52236,
+        22796,
+        33793,
+        22796,
+        56589,
+        4353
+      ],
+      [
+        8706,
+        13058,
+        52236,
+        56589,
+        22796,
+        33793,
+        22796,
+        4353
+      ],
+      [
+        8706,
+        13058,
+        18444,
+        38157,
+        56589,
+        22796,
+        33793,
+        4353
+      ],
+      [
+        2,
+        3,
+        12,
+        13,
+        13,
+        13,
+        13,
+        1
+      ]
+    ],
+    "trace": [
+      {
+        "i": 2,
+        "j": 1,
+        "via": 0,
+        "before": 31710,
+        "left": 8706,
+        "right": 240,
+        "after": 31502,
+        "removed": 208
+      },
+      {
+        "i": 3,
+        "j": 1,
+        "via": 0,
+        "before": 31710,
+        "left": 8706,
+        "right": 240,
+        "after": 31502,
+        "removed": 208
+      },
+      {
+        "i": 4,
+        "j": 1,
+        "via": 0,
+        "before": 31710,
+        "left": 8706,
+        "right": 240,
+        "after": 31502,
+        "removed": 208
+      },
+      {
+        "i": 5,
+        "j": 1,
+        "via": 0,
+        "before": 31710,
+        "left": 8706,
+        "right": 240,
+        "after": 31502,
+        "removed": 208
+      },
+      {
+        "i": 6,
+        "j": 1,
+        "via": 0,
+        "before": 31710,
+        "left": 8706,
+        "right": 240,
+        "after": 31502,
+        "removed": 208
+      },
+      {
+        "i": 2,
+        "j": 2,
+        "via": 0,
+        "before": 33825,
+        "left": 8706,
+        "right": 208,
+        "after": 33793,
+        "removed": 32
+      },
+      {
+        "i": 3,
+        "j": 2,
+        "via": 0,
+        "before": 31710,
+        "left": 8706,
+        "right": 208,
+        "after": 22796,
+        "removed": 8914
+      },
+      {
+        "i": 4,
+        "j": 2,
+        "via": 0,
+        "before": 65535,
+        "left": 8706,
+        "right": 208,
+        "after": 56589,
+        "removed": 8946
+      },
+      {
+        "i": 5,
+        "j": 2,
+        "via": 0,
+        "before": 65535,
+        "left": 8706,
+        "right": 208,
+        "after": 56589,
+        "removed": 8946
+      },
+      {
+        "i": 6,
+        "j": 2,
+        "via": 0,
+        "before": 31710,
+        "left": 8706,
+        "right": 208,
+        "after": 22796,
+        "removed": 8914
+      },
+      {
+        "i": 7,
+        "j": 2,
+        "via": 0,
+        "before": 14,
+        "left": 2,
+        "right": 208,
+        "after": 12,
+        "removed": 2
+      },
+      {
+        "i": 3,
+        "j": 3,
+        "via": 0,
+        "before": 33825,
+        "left": 8706,
+        "right": 208,
+        "after": 33793,
+        "removed": 32
+      },
+      {
+        "i": 4,
+        "j": 3,
+        "via": 0,
+        "before": 31710,
+        "left": 8706,
+        "right": 208,
+        "after": 22796,
+        "removed": 8914
+      },
+      {
+        "i": 5,
+        "j": 3,
+        "via": 0,
+        "before": 65535,
+        "left": 8706,
+        "right": 208,
+        "after": 56589,
+        "removed": 8946
+      },
+      {
+        "i": 6,
+        "j": 3,
+        "via": 0,
+        "before": 65535,
+        "left": 8706,
+        "right": 208,
+        "after": 56589,
+        "removed": 8946
+      },
+      {
+        "i": 7,
+        "j": 3,
+        "via": 0,
+        "before": 15,
+        "left": 2,
+        "right": 208,
+        "after": 13,
+        "removed": 2
+      },
+      {
+        "i": 4,
+        "j": 4,
+        "via": 0,
+        "before": 33825,
+        "left": 8706,
+        "right": 208,
+        "after": 33793,
+        "removed": 32
+      },
+      {
+        "i": 5,
+        "j": 4,
+        "via": 0,
+        "before": 31710,
+        "left": 8706,
+        "right": 208,
+        "after": 22796,
+        "removed": 8914
+      },
+      {
+        "i": 6,
+        "j": 4,
+        "via": 0,
+        "before": 65535,
+        "left": 8706,
+        "right": 208,
+        "after": 56589,
+        "removed": 8946
+      },
+      {
+        "i": 7,
+        "j": 4,
+        "via": 0,
+        "before": 15,
+        "left": 2,
+        "right": 208,
+        "after": 13,
+        "removed": 2
+      },
+      {
+        "i": 5,
+        "j": 5,
+        "via": 0,
+        "before": 33825,
+        "left": 8706,
+        "right": 208,
+        "after": 33793,
+        "removed": 32
+      },
+      {
+        "i": 6,
+        "j": 5,
+        "via": 0,
+        "before": 31710,
+        "left": 8706,
+        "right": 208,
+        "after": 22796,
+        "removed": 8914
+      },
+      {
+        "i": 7,
+        "j": 5,
+        "via": 0,
+        "before": 15,
+        "left": 2,
+        "right": 208,
+        "after": 13,
+        "removed": 2
+      },
+      {
+        "i": 6,
+        "j": 6,
+        "via": 0,
+        "before": 33825,
+        "left": 8706,
+        "right": 208,
+        "after": 33793,
+        "removed": 32
+      },
+      {
+        "i": 7,
+        "j": 6,
+        "via": 0,
+        "before": 15,
+        "left": 2,
+        "right": 208,
+        "after": 13,
+        "removed": 2
+      },
+      {
+        "i": 0,
+        "j": 2,
+        "via": 7,
+        "before": 208,
+        "left": 16,
+        "right": 12,
+        "after": 192,
+        "removed": 16
+      },
+      {
+        "i": 1,
+        "j": 2,
+        "via": 0,
+        "before": 23004,
+        "left": 8738,
+        "right": 192,
+        "after": 18636,
+        "removed": 4368
+      },
+      {
+        "i": 2,
+        "j": 2,
+        "via": 1,
+        "before": 33793,
+        "left": 31488,
+        "right": 18636,
+        "after": 33792,
+        "removed": 1
+      },
+      {
+        "i": 1,
+        "j": 3,
+        "via": 2,
+        "before": 23004,
+        "left": 18636,
+        "right": 22796,
+        "after": 4572,
+        "removed": 18432
+      },
+      {
+        "i": 3,
+        "j": 2,
+        "via": 1,
+        "before": 22796,
+        "left": 13070,
+        "right": 18636,
+        "after": 18444,
+        "removed": 4352
+      },
+      {
+        "i": 4,
+        "j": 2,
+        "via": 1,
+        "before": 56589,
+        "left": 31502,
+        "right": 18636,
+        "after": 52236,
+        "removed": 4353
+      },
+      {
+        "i": 5,
+        "j": 2,
+        "via": 1,
+        "before": 56589,
+        "left": 31502,
+        "right": 18636,
+        "after": 52236,
+        "removed": 4353
+      },
+      {
+        "i": 1,
+        "j": 6,
+        "via": 2,
+        "before": 23004,
+        "left": 18636,
+        "right": 22796,
+        "after": 4572,
+        "removed": 18432
+      },
+      {
+        "i": 6,
+        "j": 2,
+        "via": 1,
+        "before": 22796,
+        "left": 13070,
+        "right": 18636,
+        "after": 18444,
+        "removed": 4352
+      },
+      {
+        "i": 1,
+        "j": 4,
+        "via": 3,
+        "before": 23004,
+        "left": 4572,
+        "right": 22796,
+        "after": 18652,
+        "removed": 4352
+      },
+      {
+        "i": 1,
+        "j": 5,
+        "via": 4,
+        "before": 23004,
+        "left": 18652,
+        "right": 22796,
+        "after": 4572,
+        "removed": 18432
+      },
+      {
+        "i": 1,
+        "j": 6,
+        "via": 5,
+        "before": 4572,
+        "left": 4572,
+        "right": 22796,
+        "after": 220,
+        "removed": 4352
+      },
+      {
+        "i": 1,
+        "j": 0,
+        "via": 6,
+        "before": 8738,
+        "left": 220,
+        "right": 8706,
+        "after": 34,
+        "removed": 8704
+      },
+      {
+        "i": 1,
+        "j": 1,
+        "via": 6,
+        "before": 33825,
+        "left": 220,
+        "right": 13058,
+        "after": 33,
+        "removed": 33792
+      },
+      {
+        "i": 1,
+        "j": 2,
+        "via": 6,
+        "before": 18636,
+        "left": 220,
+        "right": 18444,
+        "after": 204,
+        "removed": 18432
+      },
+      {
+        "i": 1,
+        "j": 3,
+        "via": 6,
+        "before": 4572,
+        "left": 220,
+        "right": 56589,
+        "after": 220,
+        "removed": 4352
+      },
+      {
+        "i": 1,
+        "j": 4,
+        "via": 6,
+        "before": 18652,
+        "left": 220,
+        "right": 56589,
+        "after": 220,
+        "removed": 18432
+      },
+      {
+        "i": 1,
+        "j": 5,
+        "via": 6,
+        "before": 4572,
+        "left": 220,
+        "right": 22796,
+        "after": 220,
+        "removed": 4352
+      },
+      {
+        "i": 1,
+        "j": 7,
+        "via": 6,
+        "before": 4369,
+        "left": 220,
+        "right": 4353,
+        "after": 17,
+        "removed": 4352
+      },
+      {
+        "i": 6,
+        "j": 3,
+        "via": 2,
+        "before": 56589,
+        "left": 18444,
+        "right": 22784,
+        "after": 38157,
+        "removed": 18432
+      }
+    ],
+    "conflict": false,
+    "revisions": 1152
+  },
+  "domains_before_commit": [
+    [
+      2
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      1,
+      3,
+      4
+    ],
+    [
+      1,
+      3,
+      4
+    ],
+    [
+      1,
+      3,
+      4
+    ],
+    [
+      1,
+      3,
+      4
+    ],
+    [
+      1
+    ]
+  ],
+  "hall_stability": {
+    "passed": true,
+    "clique_subsets_checked": 118,
+    "further_deletions": 0
+  },
+  "same_name_query": {
+    "schema_version": 1,
+    "rule": "four-name-shared-triangle-refutation-v1",
+    "palette_size": 4,
+    "vertex_count": 8,
+    "assumed_equal": [
+      1,
+      7
+    ],
+    "status": "inconclusive",
+    "merges": [],
+    "contradiction": null,
+    "final_classes": [
+      [
+        0
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [
+        6
+      ]
+    ],
+    "statistics": {
+      "input_edges": 16,
+      "passes": 1,
+      "triangles_examined": 10,
+      "forced_merges": 0,
+      "final_class_count": 7
+    },
+    "scope": "Four-name conditional equality closure on constraint identities; inconclusive does not mean equal names extend. Derived inequality is not a geometric edge or a complete four-coloring algorithm."
+  },
+  "global_equality_certificate": {
+    "status": "proved_equal",
+    "palette_size": 4,
+    "pair": [
+      0,
+      1
+    ],
+    "odd_cycle": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "cycle_edges": [
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        6,
+        2
+      ]
+    ],
+    "common_neighbor_edges": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ]
+    ],
+    "proof": "different apex colors leave two colors for an odd common-neighbor cycle",
+    "scope": "elementary unconditional equality certificate; diagnostic only; policy unchanged"
+  },
+  "complete_enumeration": {
+    "assignments_checked": 4096,
+    "target_count": 20,
+    "targets_by_proposed_vertex_color": {
+      "1": 0,
+      "2": 20,
+      "3": 0,
+      "4": 0
+    }
+  },
+  "source_sha256": {
+    "scripts/diagnose_conditional_obstruction.py": "85ee047e7053ff4fd5ab82bde392487ec68c885a35ea061b096bdb83f34fc0de",
+    "scripts/exact_extendibility_oracle.py": "8e11354484b53c38446b5afab607064b6314ac46a1d6f2594089b11167f0ece2",
+    "fourcolor/structural_name_relations.py": "20b7a71008ca6f85d5a785e5fd354778da55e032e7848603992b399cc157015f",
+    "fourcolor/relation_names.py": "cc6566e959ab87c47d670dc8113d856f64e77132e5542c6d6ec8e98cec28d8cf"
+  },
+  "current_policy_reachability": "not_established",
+  "geometric_mother_drawing": "not_supplied",
+  "claims_not_made": [
+    "failure reached by current policy",
+    "failure of a full drawing run",
+    "novelty of the graph or implication",
+    "general impossibility of conditional reasoning",
+    "insufficiency of all unconditional equalities plus inequalities"
+  ]
+}

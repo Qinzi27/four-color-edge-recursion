@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-22T04:58:01.980083+00:00",
+  "passed": true,
+  "basis": "Clean export of reviewed Git index; no unstaged research files used",
+  "python_unittest": {
+    "tests_run": 1029,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": true
+  },
+  "validate_py_passed": true,
+  "node_tests": {
+    "passed": 107,
+    "failed": 0
+  },
+  "static_assets": [
+    {
+      "file": "app.js",
+      "sha256": "90faedfe01694890cf6e604b810a5a2d98ac360211aa57c0c7723ce837c0ab2d"
+    },
+    {
+      "file": "cases.js",
+      "sha256": "55bb239e396e8d6020ad16b3815bead6b6a285ae9384a438cc116038d3543493"
+    },
+    {
+      "file": "construction-cases.js",
+      "sha256": "c2f1735ca5d46c1a54c2f1c8321856766eb39fb20379fea6facdc18ec7ccefdb"
+    },
+    {
+      "file": "construction.js",
+      "sha256": "c79ae59a8f7d71bd5b4f8669e3720e2f49f634211a0d340f5aaec651615525f8"
+    },
+    {
+      "file": "engine.js",
+      "sha256": "1451287b703e6f90765a1ed96acd2c4c5fc30d467be6c207da81f4b982035d84"
+    },
+    {
+      "file": "index.html",
+      "sha256": "2ac86f755f9f8dfc77adfb21876802f701876a4e6afec8ef59e77dc97178edeb"
+    },
+    {
+      "file": "model.html",
+      "sha256": "3a197fe9c6dd939bb9ab3e1c819ce21a8aac133471205d7fe46c7a2a7a0f0c82"
+    },
+    {
+      "file": "priority-names.js",
+      "sha256": "50181d9d0ae7b1dfe61b98fb3754f980a49d2398c0fef1bd9234c44ebe74f8c0"
+    },
+    {
+      "file": "research-intro.css",
+      "sha256": "d949237309d8c66453871171dcdd9ddfef0aa6e8f378fe63b03f2468450ceb31"
+    },
+    {
+      "file": "rules-app.js",
+      "sha256": "c85e70542916d8e1923931ce93336f7e71a8cd76dfc0009023bb2ff917e9ee5b"
+    },
+    {
+      "file": "rules.css",
+      "sha256": "8fdaf5b8db3379b4009fce2d839f6c27f604cc571c570ef1c2e4053c90c98922"
+    },
+    {
+      "file": "rules.html",
+      "sha256": "81fd79d569c016e37b599c77d3f8c6f056a1239eb42aaa672f55b0bd14ef5297"
+    },
+    {
+      "file": "style.css",
+      "sha256": "370060e728bbaad041e2f9d2922b9f878fbdfa72f0037501fe037ea02e7913dd"
+    },
+    {
+      "file": "webmcp.js",
+      "sha256": "84964c5863ba415462e552c1a34bc343359a21948d6b9628dfe86fd7e55ece12"
+    },
+    {
+      "file": "worker.js",
+      "sha256": "d5d41927a36af40b74017fb6153a793d9f4a0b09dab80211b482f6fc9e2b5885"
+    }
+  ],
+  "frozen_current_sources_matched": 129,
+  "new_bindings": {
+    "distinct_files": 149,
+    "hash_declarations": 729,
+    "passed": true
+  },
+  "full_index_byte_check": "outputs/publication-index-2026-09-22.json",
+  "source_bindings": "outputs/publication-source-bindings-2026-09-22.json",
+  "validation_sha256": "8c46bf706f55184b9016e5e79a962a420a2cffeaf595747d060482cea273f129",
+  "scope": "Publication completeness and clean-export regression checks, not a new mathematical experiment or proof."
+}

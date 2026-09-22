@@ -6,7 +6,41 @@ and verifiable Klein-four-group flow repair.**
 [中文说明](README.zh-CN.md) · [Mathematical foundations](docs/FOUNDATIONS.en.md) · [数学基础](docs/FOUNDATIONS.md)
 · [Research questions](docs/RESEARCH_PLAN.md) · [Related work](docs/RELATED_WORK.md)
 
-## Research progress — 2026-09-21
+## Research progress — 2026-09-22
+
+**The current question is whether a low-color commitment preserves a complete
+coloring. Real-geometry tests pass within their declared scope; a preserved
+abstract-order counterexample shows that conditional propagation alone is not
+a general safety guarantee.**
+
+- [Stepwise extendibility checks](docs/EXTENDIBILITY_RESULTS-2026-09-21.md)
+  audit the unchanged structural restart rule: **872 commitments on 357 drawings**
+  and **6,114 on 4,096 grid-subset drawings** all preserve a complete solution.
+  The two finite families are reported separately, not as independent samples.
+- [Quaternary candidate encoding](docs/QUATERNARY_CONTACT_RESULTS-2026-09-21.md)
+  distinguishes `0111 = {2,3,4}` from committing to 2. Its **41,847-model** audit
+  checks soundness. [Real-geometry integration](docs/QUATERNARY_GEOMETRY_RESULTS-2026-09-22.md)
+  covers **4,144 drawings / 8,339 scenarios**; all one-anchor prototype runs remain
+  unresolved because that version makes no active choices.
+- [Low-color conditional propagation](docs/QUATERNARY_LOW_COLOR_RESULTS-2026-09-22.md)
+  compares two policies on **4,272 drawings**. Under old two-anchor initialization,
+  completion rises from **4,271 to 4,272**, with one repair and no regressions;
+  both policies already complete all one-anchor cases. The guarded policy's
+  **18,743 ordinary commitments** are independently extendible. This is a separate
+  branch, not evidence of improvement over the earlier structural restart rule.
+- [Reachability diagnostics](docs/QUATERNARY_REACHABILITY_RESULTS-2026-09-22.md)
+  add **314 real-geometry runs / 763 extendible commitments** with no candidate
+  rejections. A ten-vertex graph with one initial anchor nevertheless produces an
+  unsafe fourth commitment under a specified abstract input order. Its related
+  eleven-face drawing avoids that state in four tested representations by naming
+  the outer core region first. General mother-line reachability remains open.
+
+For preserved evidence, fresh-output commands and audit boundaries, see the
+[reproduction guide](docs/REPRODUCING_RESEARCH.md). The next step is to test that
+ordering condition and separately evaluate certified equal-name relations; no
+general completeness, speed advantage or originality is claimed.
+
+## Earlier research progress — 2026-09-21
 
 **The line-side restart route now checks a proposed name reuse before committing
 it. One fixed candidate completes the entire 7069-map corpus.**
@@ -184,11 +218,12 @@ nor a universal proof.
 · [English research history](docs/RESEARCH_HISTORY.en.md)
 · [Reproduce from a clean checkout](docs/REPRODUCING_RESEARCH.md)
 
-The archive includes research through **2026-09-21**. The September 20–21 additions
+The archive includes research through **2026-09-22**. The September 20–22 additions
 are linked above; the chronology below preserves the earlier stages. It covers changing definitions,
 implementations, finite experiments, repaired examples, remaining obstructions,
 and regressions. Different versions and test denominators must not be combined.
-The latest fixed candidate completes the finite full corpus; no general
+The structural restart candidate completes its finite full corpus; the separate
+quaternary branch preserves its abstract-order safety counterexample. No general
 completeness guarantee or new proof of the Four-Color Theorem is established.
 Historical statements such as “not uploaded” describe the status at that stage;
 the current archive includes that preserved work. The interactive website remains the

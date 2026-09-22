@@ -1,0 +1,4729 @@
+{
+  "schema_version": 1,
+  "diagnostic_version": "low-color-external-domain-obstruction-v1",
+  "generated_at_utc": "2026-09-22T03:47:00.300466+00:00",
+  "diagnostic_status": "expected-unsafe-commit-confirmed",
+  "audit_passed": true,
+  "source_sha256": {
+    "fourcolor/__init__.py": "dd3939384003ac2beb3abc6d0890b7d5feb5b7642c257a8e8c7b7a67940eba4f",
+    "fourcolor/anchor_forest.py": "6bf04f6365d8fbfd086e77d65a9cd845f4b0d8965b4ff861576c41e226f1d42e",
+    "fourcolor/closed_support.py": "0a95dd2802d16654a4342332ae9f9825944a26c4fe2cad182de0a214fbfc56f1",
+    "fourcolor/embedding.py": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+    "fourcolor/frontier_restart.py": "2b82e9de0ecad888b5248602d039997889becac1718282f5c4a5eaa6d8c1c533",
+    "fourcolor/global_restart.py": "56aafff2632cf4c02cc20c7a056d02b9932f65f700311846d7d81c1cb32b3cbb",
+    "fourcolor/inherited_names.py": "235751061bc97b7cac9036890a29971c3d11688cad4aa628ceafa09412fd4c14",
+    "fourcolor/joint_lines.py": "7d0fa2df82b719ceba514818f27d4b155f7e96d47b3c173743e3adf44b930e88",
+    "fourcolor/level_sides.py": "222a8f752722e95c646d5ec58bbbcfc6ff94108d1d893d00806c960a25fd45ba",
+    "fourcolor/level_sides_peer.py": "a1b1add2d97d34ab29c35e6fab7f5a665aa6841742080907ea95b5d4002a5c56",
+    "fourcolor/line_names.py": "8fdfb7019d89edd01643bb5e1554a3aba8480dfbc032f34c72039782c620ce33",
+    "fourcolor/local_reuse.py": "f16793e320bb446c2966a14b5c723158c908f13214ed00b94ba6a009e9b5f5e8",
+    "fourcolor/relation_frontier.py": "9d385da99c36e0b9f59c3d2182b697cd8d2b27734014cf97b0314c4ef785e316",
+    "fourcolor/relation_names.py": "cc6566e959ab87c47d670dc8113d856f64e77132e5542c6d6ec8e98cec28d8cf",
+    "fourcolor/retained_profiles.py": "5caed3fe79850cd7bd66a142ada98e5732e3af058325adfc2772fc2da5faec47",
+    "fourcolor/strip_chain.py": "30f33bb5f988d34b8ab5a68f6887b6dfa13dadb7cf1ca7a550f6c9098be67d1c",
+    "fourcolor/weighted_lines.py": "21cf5484a0504807463dafaa54992bf2cd6b1a4924e80b5a4ad29d3381ddd389",
+    "fourcolor/whole_lines.py": "5bd54516c18ff74c2dcba2a5e89a27b1af7e3c0277fb3aa8e12f0efa55f9312c",
+    "scripts/audit_quaternary_geometry.py": "58cc6019a952cb874ee4f37552c552ae0fef3276de16d67fff3669be4ecbaa41",
+    "scripts/audit_retained_blocks.py": "be76a3a94cc9e2a473045b8575283ad84264247ae6ad494b3387aa92808fdb19",
+    "scripts/compare_local_marks.py": "d77aca237830512b78127222c2c8a660bd50d418a6cfa47439bda7bee29cce73",
+    "scripts/current_corpus.py": "f107a35500c84db4fbfc3b9b4c02b7dbd8dc49f0402309525066dd6d0023e519",
+    "scripts/diagnose_low_color_domain_obstruction.py": "bc9cc190c6d384868e350e1dad6db30e4f02ff7f5594f0a3c5d65110aa9a5d9b",
+    "scripts/exact_extendibility_oracle.py": "8e11354484b53c38446b5afab607064b6314ac46a1d6f2594089b11167f0ece2",
+    "scripts/quaternary_contact_model.py": "12bd29155a224d72484981033f2fa18ca3c6ac1c9193bd919602c78d929b9dd1",
+    "scripts/quaternary_low_color.py": "2e33ad1504d223dd4a37fcb22089b05c1fec23fdbedf5fc798888b1ad1e18a95",
+    "scripts/validate_global_restart.py": "2807c3ce904e42e4fb2bd194f773724c6bf7364f592d8cc730dfecc856601c18",
+    "scripts/validate_local_reuse.py": "4bd55b56a41ef7e3cea32a80293d4d2e8ab4a711bd20441fc376371b21aa350c",
+    "scripts/validate_quaternary_contacts.py": "cd348938078377136c41ae9bc3038b1ff524dc173eaacc2d1b02d354ba309a72",
+    "scripts/validate_quaternary_contacts_v2.py": "e5c6584c881d74a6189a301cb161e55c9b1533138bb4491aa4b819efbb4c3fc2",
+    "scripts/validate_retained_profiles.py": "0a5d700d557bb0a54f401c3a8c7d7f8dc21d448720f24404ba195f2292c941c4",
+    "scripts/validate_weighted_lines.py": "d4cd30cb02e5e269598d48599fcd090731c92c7d9903222bd581e81cdd6f0eea"
+  },
+  "original_input": {
+    "sides": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "lines": [
+      {
+        "id": "E0",
+        "left": "B",
+        "right": "C",
+        "kind": "separator"
+      },
+      {
+        "id": "E1",
+        "left": "B",
+        "right": "D",
+        "kind": "separator"
+      },
+      {
+        "id": "E2",
+        "left": "C",
+        "right": "D",
+        "kind": "separator"
+      },
+      {
+        "id": "E3",
+        "left": "A",
+        "right": "B",
+        "kind": "separator"
+      },
+      {
+        "id": "E4",
+        "left": "A",
+        "right": "C",
+        "kind": "separator"
+      },
+      {
+        "id": "E5",
+        "left": "A",
+        "right": "D",
+        "kind": "separator"
+      },
+      {
+        "id": "E6",
+        "left": "E",
+        "right": "B",
+        "kind": "separator"
+      },
+      {
+        "id": "E7",
+        "left": "E",
+        "right": "C",
+        "kind": "separator"
+      },
+      {
+        "id": "E8",
+        "left": "E",
+        "right": "D",
+        "kind": "separator"
+      }
+    ],
+    "anchors": {},
+    "states": {
+      "A": "1100",
+      "E": "0111"
+    }
+  },
+  "result": {
+    "schema_version": 1,
+    "policy": "quaternary-low-color-conditional-propagation-v1",
+    "probe": true,
+    "schedule": "first-unresolved-input-order-v1",
+    "original_input": {
+      "sides": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "lines": [
+        {
+          "id": "E0",
+          "left": "B",
+          "right": "C",
+          "kind": "separator"
+        },
+        {
+          "id": "E1",
+          "left": "B",
+          "right": "D",
+          "kind": "separator"
+        },
+        {
+          "id": "E2",
+          "left": "C",
+          "right": "D",
+          "kind": "separator"
+        },
+        {
+          "id": "E3",
+          "left": "A",
+          "right": "B",
+          "kind": "separator"
+        },
+        {
+          "id": "E4",
+          "left": "A",
+          "right": "C",
+          "kind": "separator"
+        },
+        {
+          "id": "E5",
+          "left": "A",
+          "right": "D",
+          "kind": "separator"
+        },
+        {
+          "id": "E6",
+          "left": "E",
+          "right": "B",
+          "kind": "separator"
+        },
+        {
+          "id": "E7",
+          "left": "E",
+          "right": "C",
+          "kind": "separator"
+        },
+        {
+          "id": "E8",
+          "left": "E",
+          "right": "D",
+          "kind": "separator"
+        }
+      ],
+      "anchors": {},
+      "states": {
+        "A": "1100",
+        "E": "0111"
+      }
+    },
+    "phases": [
+      {
+        "kind": "main",
+        "document": {
+          "sides": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "lines": [
+            {
+              "id": "E0",
+              "left": "B",
+              "right": "C",
+              "kind": "separator"
+            },
+            {
+              "id": "E1",
+              "left": "B",
+              "right": "D",
+              "kind": "separator"
+            },
+            {
+              "id": "E2",
+              "left": "C",
+              "right": "D",
+              "kind": "separator"
+            },
+            {
+              "id": "E3",
+              "left": "A",
+              "right": "B",
+              "kind": "separator"
+            },
+            {
+              "id": "E4",
+              "left": "A",
+              "right": "C",
+              "kind": "separator"
+            },
+            {
+              "id": "E5",
+              "left": "A",
+              "right": "D",
+              "kind": "separator"
+            },
+            {
+              "id": "E6",
+              "left": "E",
+              "right": "B",
+              "kind": "separator"
+            },
+            {
+              "id": "E7",
+              "left": "E",
+              "right": "C",
+              "kind": "separator"
+            },
+            {
+              "id": "E8",
+              "left": "E",
+              "right": "D",
+              "kind": "separator"
+            }
+          ],
+          "anchors": {},
+          "states": {
+            "A": "1100",
+            "E": "0111"
+          }
+        },
+        "outcome": {
+          "schema_version": 1,
+          "model": "quaternary-contact-relations-v1",
+          "status": "underdetermined",
+          "original_input": {
+            "sides": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E"
+            ],
+            "lines": [
+              {
+                "id": "E0",
+                "left": "B",
+                "right": "C",
+                "kind": "separator"
+              },
+              {
+                "id": "E1",
+                "left": "B",
+                "right": "D",
+                "kind": "separator"
+              },
+              {
+                "id": "E2",
+                "left": "C",
+                "right": "D",
+                "kind": "separator"
+              },
+              {
+                "id": "E3",
+                "left": "A",
+                "right": "B",
+                "kind": "separator"
+              },
+              {
+                "id": "E4",
+                "left": "A",
+                "right": "C",
+                "kind": "separator"
+              },
+              {
+                "id": "E5",
+                "left": "A",
+                "right": "D",
+                "kind": "separator"
+              },
+              {
+                "id": "E6",
+                "left": "E",
+                "right": "B",
+                "kind": "separator"
+              },
+              {
+                "id": "E7",
+                "left": "E",
+                "right": "C",
+                "kind": "separator"
+              },
+              {
+                "id": "E8",
+                "left": "E",
+                "right": "D",
+                "kind": "separator"
+              }
+            ],
+            "anchors": {},
+            "states": {
+              "A": "1100",
+              "E": "0111"
+            }
+          },
+          "side_order": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "initial_domains": [
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2,
+              3,
+              4
+            ],
+            [
+              1,
+              2,
+              3,
+              4
+            ],
+            [
+              1,
+              2,
+              3,
+              4
+            ],
+            [
+              2,
+              3,
+              4
+            ]
+          ],
+          "initial_states": {
+            "A": {
+              "code": 80,
+              "quaternary": "1100",
+              "candidates": [
+                1,
+                2
+              ],
+              "candidate_mask": 3,
+              "representative": 1,
+              "anchored": false
+            },
+            "B": {
+              "code": 85,
+              "quaternary": "1111",
+              "candidates": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "candidate_mask": 15,
+              "representative": 1,
+              "anchored": false
+            },
+            "C": {
+              "code": 85,
+              "quaternary": "1111",
+              "candidates": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "candidate_mask": 15,
+              "representative": 1,
+              "anchored": false
+            },
+            "D": {
+              "code": 85,
+              "quaternary": "1111",
+              "candidates": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "candidate_mask": 15,
+              "representative": 1,
+              "anchored": false
+            },
+            "E": {
+              "code": 21,
+              "quaternary": "0111",
+              "candidates": [
+                2,
+                3,
+                4
+              ],
+              "candidate_mask": 14,
+              "representative": 2,
+              "anchored": false
+            }
+          },
+          "explicit_anchor_sources": {
+            "A": [],
+            "B": [],
+            "C": [],
+            "D": [],
+            "E": []
+          },
+          "name_states": {
+            "A": {
+              "code": 80,
+              "quaternary": "1100",
+              "candidates": [
+                1,
+                2
+              ],
+              "candidate_mask": 3,
+              "representative": 1,
+              "anchored": false
+            },
+            "B": {
+              "code": 85,
+              "quaternary": "1111",
+              "candidates": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "candidate_mask": 15,
+              "representative": 1,
+              "anchored": false
+            },
+            "C": {
+              "code": 85,
+              "quaternary": "1111",
+              "candidates": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "candidate_mask": 15,
+              "representative": 1,
+              "anchored": false
+            },
+            "D": {
+              "code": 85,
+              "quaternary": "1111",
+              "candidates": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "candidate_mask": 15,
+              "representative": 1,
+              "anchored": false
+            },
+            "E": {
+              "code": 21,
+              "quaternary": "0111",
+              "candidates": [
+                2,
+                3,
+                4
+              ],
+              "candidate_mask": 14,
+              "representative": 2,
+              "anchored": false
+            }
+          },
+          "domains": [
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2,
+              3,
+              4
+            ],
+            [
+              1,
+              2,
+              3,
+              4
+            ],
+            [
+              1,
+              2,
+              3,
+              4
+            ],
+            [
+              2,
+              3,
+              4
+            ]
+          ],
+          "colors": null,
+          "initial_relations": [
+            [
+              33,
+              222,
+              222,
+              222,
+              238
+            ],
+            [
+              13074,
+              33825,
+              31710,
+              31710,
+              27342
+            ],
+            [
+              13074,
+              31710,
+              33825,
+              31710,
+              27342
+            ],
+            [
+              13074,
+              31710,
+              31710,
+              33825,
+              27342
+            ],
+            [
+              13104,
+              31696,
+              31696,
+              31696,
+              33824
+            ]
+          ],
+          "relations": [
+            [
+              33,
+              222,
+              222,
+              222,
+              238
+            ],
+            [
+              13074,
+              33825,
+              31692,
+              31692,
+              27342
+            ],
+            [
+              13074,
+              31692,
+              33825,
+              31692,
+              27342
+            ],
+            [
+              13074,
+              31692,
+              31692,
+              33825,
+              27342
+            ],
+            [
+              13104,
+              31696,
+              31696,
+              31696,
+              33824
+            ]
+          ],
+          "trace": [
+            {
+              "i": 2,
+              "j": 1,
+              "via": 0,
+              "before": 31710,
+              "left": 13074,
+              "right": 222,
+              "after": 31692,
+              "removed": 18
+            },
+            {
+              "i": 3,
+              "j": 1,
+              "via": 0,
+              "before": 31710,
+              "left": 13074,
+              "right": 222,
+              "after": 31692,
+              "removed": 18
+            },
+            {
+              "i": 3,
+              "j": 2,
+              "via": 0,
+              "before": 31710,
+              "left": 13074,
+              "right": 222,
+              "after": 31692,
+              "removed": 18
+            }
+          ],
+          "revisions": 250,
+          "lines": [
+            {
+              "id": "E0",
+              "left": "B",
+              "right": "C",
+              "kind": "separator",
+              "allowed_pairs": [
+                [
+                  1,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  1
+                ],
+                [
+                  3,
+                  2
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  1
+                ],
+                [
+                  4,
+                  2
+                ],
+                [
+                  4,
+                  3
+                ]
+              ],
+              "relation_mask": 31692,
+              "relation_code": "13233030",
+              "reverse": {
+                "left": "C",
+                "right": "B",
+                "allowed_pairs": [
+                  [
+                    1,
+                    3
+                  ],
+                  [
+                    1,
+                    4
+                  ],
+                  [
+                    2,
+                    3
+                  ],
+                  [
+                    2,
+                    4
+                  ],
+                  [
+                    3,
+                    1
+                  ],
+                  [
+                    3,
+                    2
+                  ],
+                  [
+                    3,
+                    4
+                  ],
+                  [
+                    4,
+                    1
+                  ],
+                  [
+                    4,
+                    2
+                  ],
+                  [
+                    4,
+                    3
+                  ]
+                ],
+                "relation_mask": 31692,
+                "relation_code": "13233030"
+              }
+            },
+            {
+              "id": "E1",
+              "left": "B",
+              "right": "D",
+              "kind": "separator",
+              "allowed_pairs": [
+                [
+                  1,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  1
+                ],
+                [
+                  3,
+                  2
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  1
+                ],
+                [
+                  4,
+                  2
+                ],
+                [
+                  4,
+                  3
+                ]
+              ],
+              "relation_mask": 31692,
+              "relation_code": "13233030",
+              "reverse": {
+                "left": "D",
+                "right": "B",
+                "allowed_pairs": [
+                  [
+                    1,
+                    3
+                  ],
+                  [
+                    1,
+                    4
+                  ],
+                  [
+                    2,
+                    3
+                  ],
+                  [
+                    2,
+                    4
+                  ],
+                  [
+                    3,
+                    1
+                  ],
+                  [
+                    3,
+                    2
+                  ],
+                  [
+                    3,
+                    4
+                  ],
+                  [
+                    4,
+                    1
+                  ],
+                  [
+                    4,
+                    2
+                  ],
+                  [
+                    4,
+                    3
+                  ]
+                ],
+                "relation_mask": 31692,
+                "relation_code": "13233030"
+              }
+            },
+            {
+              "id": "E2",
+              "left": "C",
+              "right": "D",
+              "kind": "separator",
+              "allowed_pairs": [
+                [
+                  1,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  1
+                ],
+                [
+                  3,
+                  2
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  1
+                ],
+                [
+                  4,
+                  2
+                ],
+                [
+                  4,
+                  3
+                ]
+              ],
+              "relation_mask": 31692,
+              "relation_code": "13233030",
+              "reverse": {
+                "left": "D",
+                "right": "C",
+                "allowed_pairs": [
+                  [
+                    1,
+                    3
+                  ],
+                  [
+                    1,
+                    4
+                  ],
+                  [
+                    2,
+                    3
+                  ],
+                  [
+                    2,
+                    4
+                  ],
+                  [
+                    3,
+                    1
+                  ],
+                  [
+                    3,
+                    2
+                  ],
+                  [
+                    3,
+                    4
+                  ],
+                  [
+                    4,
+                    1
+                  ],
+                  [
+                    4,
+                    2
+                  ],
+                  [
+                    4,
+                    3
+                  ]
+                ],
+                "relation_mask": 31692,
+                "relation_code": "13233030"
+              }
+            },
+            {
+              "id": "E3",
+              "left": "A",
+              "right": "B",
+              "kind": "separator",
+              "allowed_pairs": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  1,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  1
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ]
+              ],
+              "relation_mask": 222,
+              "relation_code": "00003132",
+              "reverse": {
+                "left": "B",
+                "right": "A",
+                "allowed_pairs": [
+                  [
+                    1,
+                    2
+                  ],
+                  [
+                    2,
+                    1
+                  ],
+                  [
+                    3,
+                    1
+                  ],
+                  [
+                    3,
+                    2
+                  ],
+                  [
+                    4,
+                    1
+                  ],
+                  [
+                    4,
+                    2
+                  ]
+                ],
+                "relation_mask": 13074,
+                "relation_code": "03030102"
+              }
+            },
+            {
+              "id": "E4",
+              "left": "A",
+              "right": "C",
+              "kind": "separator",
+              "allowed_pairs": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  1,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  1
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ]
+              ],
+              "relation_mask": 222,
+              "relation_code": "00003132",
+              "reverse": {
+                "left": "C",
+                "right": "A",
+                "allowed_pairs": [
+                  [
+                    1,
+                    2
+                  ],
+                  [
+                    2,
+                    1
+                  ],
+                  [
+                    3,
+                    1
+                  ],
+                  [
+                    3,
+                    2
+                  ],
+                  [
+                    4,
+                    1
+                  ],
+                  [
+                    4,
+                    2
+                  ]
+                ],
+                "relation_mask": 13074,
+                "relation_code": "03030102"
+              }
+            },
+            {
+              "id": "E5",
+              "left": "A",
+              "right": "D",
+              "kind": "separator",
+              "allowed_pairs": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  1,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  1
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ]
+              ],
+              "relation_mask": 222,
+              "relation_code": "00003132",
+              "reverse": {
+                "left": "D",
+                "right": "A",
+                "allowed_pairs": [
+                  [
+                    1,
+                    2
+                  ],
+                  [
+                    2,
+                    1
+                  ],
+                  [
+                    3,
+                    1
+                  ],
+                  [
+                    3,
+                    2
+                  ],
+                  [
+                    4,
+                    1
+                  ],
+                  [
+                    4,
+                    2
+                  ]
+                ],
+                "relation_mask": 13074,
+                "relation_code": "03030102"
+              }
+            },
+            {
+              "id": "E6",
+              "left": "E",
+              "right": "B",
+              "kind": "separator",
+              "allowed_pairs": [
+                [
+                  2,
+                  1
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  1
+                ],
+                [
+                  3,
+                  2
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  1
+                ],
+                [
+                  4,
+                  2
+                ],
+                [
+                  4,
+                  3
+                ]
+              ],
+              "relation_mask": 31696,
+              "relation_code": "13233100",
+              "reverse": {
+                "left": "B",
+                "right": "E",
+                "allowed_pairs": [
+                  [
+                    1,
+                    2
+                  ],
+                  [
+                    1,
+                    3
+                  ],
+                  [
+                    1,
+                    4
+                  ],
+                  [
+                    2,
+                    3
+                  ],
+                  [
+                    2,
+                    4
+                  ],
+                  [
+                    3,
+                    2
+                  ],
+                  [
+                    3,
+                    4
+                  ],
+                  [
+                    4,
+                    2
+                  ],
+                  [
+                    4,
+                    3
+                  ]
+                ],
+                "relation_mask": 27342,
+                "relation_code": "12223032"
+              }
+            },
+            {
+              "id": "E7",
+              "left": "E",
+              "right": "C",
+              "kind": "separator",
+              "allowed_pairs": [
+                [
+                  2,
+                  1
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  1
+                ],
+                [
+                  3,
+                  2
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  1
+                ],
+                [
+                  4,
+                  2
+                ],
+                [
+                  4,
+                  3
+                ]
+              ],
+              "relation_mask": 31696,
+              "relation_code": "13233100",
+              "reverse": {
+                "left": "C",
+                "right": "E",
+                "allowed_pairs": [
+                  [
+                    1,
+                    2
+                  ],
+                  [
+                    1,
+                    3
+                  ],
+                  [
+                    1,
+                    4
+                  ],
+                  [
+                    2,
+                    3
+                  ],
+                  [
+                    2,
+                    4
+                  ],
+                  [
+                    3,
+                    2
+                  ],
+                  [
+                    3,
+                    4
+                  ],
+                  [
+                    4,
+                    2
+                  ],
+                  [
+                    4,
+                    3
+                  ]
+                ],
+                "relation_mask": 27342,
+                "relation_code": "12223032"
+              }
+            },
+            {
+              "id": "E8",
+              "left": "E",
+              "right": "D",
+              "kind": "separator",
+              "allowed_pairs": [
+                [
+                  2,
+                  1
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  1
+                ],
+                [
+                  3,
+                  2
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  1
+                ],
+                [
+                  4,
+                  2
+                ],
+                [
+                  4,
+                  3
+                ]
+              ],
+              "relation_mask": 31696,
+              "relation_code": "13233100",
+              "reverse": {
+                "left": "D",
+                "right": "E",
+                "allowed_pairs": [
+                  [
+                    1,
+                    2
+                  ],
+                  [
+                    1,
+                    3
+                  ],
+                  [
+                    1,
+                    4
+                  ],
+                  [
+                    2,
+                    3
+                  ],
+                  [
+                    2,
+                    4
+                  ],
+                  [
+                    3,
+                    2
+                  ],
+                  [
+                    3,
+                    4
+                  ],
+                  [
+                    4,
+                    2
+                  ],
+                  [
+                    4,
+                    3
+                  ]
+                ],
+                "relation_mask": 27342,
+                "relation_code": "12223032"
+              }
+            }
+          ],
+          "point_contacts": [],
+          "equal_names": [],
+          "choices": 0,
+          "backtracks": 0,
+          "representatives_are_assignments": false,
+          "scope": "Declared contact constraints only; no greedy choice, DFS, or recoloring. Singletons are checked against the original constraints before solved. Underdetermined representatives are not a complete coloring, and nonempty binary relations do not certify global extendibility."
+        }
+      },
+      {
+        "kind": "trial",
+        "document": {
+          "sides": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "lines": [
+            {
+              "id": "E0",
+              "left": "B",
+              "right": "C",
+              "kind": "separator"
+            },
+            {
+              "id": "E1",
+              "left": "B",
+              "right": "D",
+              "kind": "separator"
+            },
+            {
+              "id": "E2",
+              "left": "C",
+              "right": "D",
+              "kind": "separator"
+            },
+            {
+              "id": "E3",
+              "left": "A",
+              "right": "B",
+              "kind": "separator"
+            },
+            {
+              "id": "E4",
+              "left": "A",
+              "right": "C",
+              "kind": "separator"
+            },
+            {
+              "id": "E5",
+              "left": "A",
+              "right": "D",
+              "kind": "separator"
+            },
+            {
+              "id": "E6",
+              "left": "E",
+              "right": "B",
+              "kind": "separator"
+            },
+            {
+              "id": "E7",
+              "left": "E",
+              "right": "C",
+              "kind": "separator"
+            },
+            {
+              "id": "E8",
+              "left": "E",
+              "right": "D",
+              "kind": "separator"
+            }
+          ],
+          "anchors": {
+            "A": 1
+          },
+          "states": {
+            "A": "1100",
+            "E": "0111"
+          }
+        },
+        "outcome": {
+          "schema_version": 1,
+          "model": "quaternary-contact-relations-v1",
+          "status": "underdetermined",
+          "original_input": {
+            "sides": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E"
+            ],
+            "lines": [
+              {
+                "id": "E0",
+                "left": "B",
+                "right": "C",
+                "kind": "separator"
+              },
+              {
+                "id": "E1",
+                "left": "B",
+                "right": "D",
+                "kind": "separator"
+              },
+              {
+                "id": "E2",
+                "left": "C",
+                "right": "D",
+                "kind": "separator"
+              },
+              {
+                "id": "E3",
+                "left": "A",
+                "right": "B",
+                "kind": "separator"
+              },
+              {
+                "id": "E4",
+                "left": "A",
+                "right": "C",
+                "kind": "separator"
+              },
+              {
+                "id": "E5",
+                "left": "A",
+                "right": "D",
+                "kind": "separator"
+              },
+              {
+                "id": "E6",
+                "left": "E",
+                "right": "B",
+                "kind": "separator"
+              },
+              {
+                "id": "E7",
+                "left": "E",
+                "right": "C",
+                "kind": "separator"
+              },
+              {
+                "id": "E8",
+                "left": "E",
+                "right": "D",
+                "kind": "separator"
+              }
+            ],
+            "anchors": {
+              "A": 1
+            },
+            "states": {
+              "A": "1100",
+              "E": "0111"
+            }
+          },
+          "side_order": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "initial_domains": [
+            [
+              1
+            ],
+            [
+              1,
+              2,
+              3,
+              4
+            ],
+            [
+              1,
+              2,
+              3,
+              4
+            ],
+            [
+              1,
+              2,
+              3,
+              4
+            ],
+            [
+              2,
+              3,
+              4
+            ]
+          ],
+          "initial_states": {
+            "A": {
+              "code": 192,
+              "quaternary": "3000",
+              "candidates": [
+                1
+              ],
+              "candidate_mask": 1,
+              "representative": 1,
+              "anchored": true
+            },
+            "B": {
+              "code": 85,
+              "quaternary": "1111",
+              "candidates": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "candidate_mask": 15,
+              "representative": 1,
+              "anchored": false
+            },
+            "C": {
+              "code": 85,
+              "quaternary": "1111",
+              "candidates": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "candidate_mask": 15,
+              "representative": 1,
+              "anchored": false
+            },
+            "D": {
+              "code": 85,
+              "quaternary": "1111",
+              "candidates": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "candidate_mask": 15,
+              "representative": 1,
+              "anchored": false
+            },
+            "E": {
+              "code": 21,
+              "quaternary": "0111",
+              "candidates": [
+                2,
+                3,
+                4
+              ],
+              "candidate_mask": 14,
+              "representative": 2,
+              "anchored": false
+            }
+          },
+          "explicit_anchor_sources": {
+            "A": [
+              {
+                "source": "anchors",
+                "name": 1
+              }
+            ],
+            "B": [],
+            "C": [],
+            "D": [],
+            "E": []
+          },
+          "name_states": {
+            "A": {
+              "code": 192,
+              "quaternary": "3000",
+              "candidates": [
+                1
+              ],
+              "candidate_mask": 1,
+              "representative": 1,
+              "anchored": true
+            },
+            "B": {
+              "code": 21,
+              "quaternary": "0111",
+              "candidates": [
+                2,
+                3,
+                4
+              ],
+              "candidate_mask": 14,
+              "representative": 2,
+              "anchored": false
+            },
+            "C": {
+              "code": 21,
+              "quaternary": "0111",
+              "candidates": [
+                2,
+                3,
+                4
+              ],
+              "candidate_mask": 14,
+              "representative": 2,
+              "anchored": false
+            },
+            "D": {
+              "code": 21,
+              "quaternary": "0111",
+              "candidates": [
+                2,
+                3,
+                4
+              ],
+              "candidate_mask": 14,
+              "representative": 2,
+              "anchored": false
+            },
+            "E": {
+              "code": 21,
+              "quaternary": "0111",
+              "candidates": [
+                2,
+                3,
+                4
+              ],
+              "candidate_mask": 14,
+              "representative": 2,
+              "anchored": false
+            }
+          },
+          "domains": [
+            [
+              1
+            ],
+            [
+              2,
+              3,
+              4
+            ],
+            [
+              2,
+              3,
+              4
+            ],
+            [
+              2,
+              3,
+              4
+            ],
+            [
+              2,
+              3,
+              4
+            ]
+          ],
+          "colors": null,
+          "initial_relations": [
+            [
+              1,
+              14,
+              14,
+              14,
+              14
+            ],
+            [
+              4368,
+              33825,
+              31710,
+              31710,
+              27342
+            ],
+            [
+              4368,
+              31710,
+              33825,
+              31710,
+              27342
+            ],
+            [
+              4368,
+              31710,
+              31710,
+              33825,
+              27342
+            ],
+            [
+              4368,
+              31696,
+              31696,
+              31696,
+              33824
+            ]
+          ],
+          "relations": [
+            [
+              1,
+              14,
+              14,
+              14,
+              14
+            ],
+            [
+              4368,
+              33824,
+              27328,
+              27328,
+              27328
+            ],
+            [
+              4368,
+              27328,
+              33824,
+              27328,
+              27328
+            ],
+            [
+              4368,
+              27328,
+              27328,
+              33824,
+              27328
+            ],
+            [
+              4368,
+              27328,
+              27328,
+              27328,
+              33824
+            ]
+          ],
+          "trace": [
+            {
+              "i": 1,
+              "j": 1,
+              "via": 0,
+              "before": 33825,
+              "left": 4368,
+              "right": 14,
+              "after": 33824,
+              "removed": 1
+            },
+            {
+              "i": 2,
+              "j": 1,
+              "via": 0,
+              "before": 31710,
+              "left": 4368,
+              "right": 14,
+              "after": 27328,
+              "removed": 4382
+            },
+            {
+              "i": 3,
+              "j": 1,
+              "via": 0,
+              "before": 31710,
+              "left": 4368,
+              "right": 14,
+              "after": 27328,
+              "removed": 4382
+            },
+            {
+              "i": 4,
+              "j": 1,
+              "via": 0,
+              "before": 31696,
+              "left": 4368,
+              "right": 14,
+              "after": 27328,
+              "removed": 4368
+            },
+            {
+              "i": 2,
+              "j": 2,
+              "via": 0,
+              "before": 33825,
+              "left": 4368,
+              "right": 14,
+              "after": 33824,
+              "removed": 1
+            },
+            {
+              "i": 3,
+              "j": 2,
+              "via": 0,
+              "before": 31710,
+              "left": 4368,
+              "right": 14,
+              "after": 27328,
+              "removed": 4382
+            },
+            {
+              "i": 4,
+              "j": 2,
+              "via": 0,
+              "before": 31696,
+              "left": 4368,
+              "right": 14,
+              "after": 27328,
+              "removed": 4368
+            },
+            {
+              "i": 3,
+              "j": 3,
+              "via": 0,
+              "before": 33825,
+              "left": 4368,
+              "right": 14,
+              "after": 33824,
+              "removed": 1
+            },
+            {
+              "i": 4,
+              "j": 3,
+              "via": 0,
+              "before": 31696,
+              "left": 4368,
+              "right": 14,
+              "after": 27328,
+              "removed": 4368
+            }
+          ],
+          "revisions": 250,
+          "lines": [
+            {
+              "id": "E0",
+              "left": "B",
+              "right": "C",
+              "kind": "separator",
+              "allowed_pairs": [
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  2
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  2
+                ],
+                [
+                  4,
+                  3
+                ]
+              ],
+              "relation_mask": 27328,
+              "relation_code": "12223000",
+              "reverse": {
+                "left": "C",
+                "right": "B",
+                "allowed_pairs": [
+                  [
+                    2,
+                    3
+                  ],
+                  [
+                    2,
+                    4
+                  ],
+                  [
+                    3,
+                    2
+                  ],
+                  [
+                    3,
+                    4
+                  ],
+                  [
+                    4,
+                    2
+                  ],
+                  [
+                    4,
+                    3
+                  ]
+                ],
+                "relation_mask": 27328,
+                "relation_code": "12223000"
+              }
+            },
+            {
+              "id": "E1",
+              "left": "B",
+              "right": "D",
+              "kind": "separator",
+              "allowed_pairs": [
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  2
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  2
+                ],
+                [
+                  4,
+                  3
+                ]
+              ],
+              "relation_mask": 27328,
+              "relation_code": "12223000",
+              "reverse": {
+                "left": "D",
+                "right": "B",
+                "allowed_pairs": [
+                  [
+                    2,
+                    3
+                  ],
+                  [
+                    2,
+                    4
+                  ],
+                  [
+                    3,
+                    2
+                  ],
+                  [
+                    3,
+                    4
+                  ],
+                  [
+                    4,
+                    2
+                  ],
+                  [
+                    4,
+                    3
+                  ]
+                ],
+                "relation_mask": 27328,
+                "relation_code": "12223000"
+              }
+            },
+            {
+              "id": "E2",
+              "left": "C",
+              "right": "D",
+              "kind": "separator",
+              "allowed_pairs": [
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  2
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  2
+                ],
+                [
+                  4,
+                  3
+                ]
+              ],
+              "relation_mask": 27328,
+              "relation_code": "12223000",
+              "reverse": {
+                "left": "D",
+                "right": "C",
+                "allowed_pairs": [
+                  [
+                    2,
+                    3
+                  ],
+                  [
+                    2,
+                    4
+                  ],
+                  [
+                    3,
+                    2
+                  ],
+                  [
+                    3,
+                    4
+                  ],
+                  [
+                    4,
+                    2
+                  ],
+                  [
+                    4,
+                    3
+                  ]
+                ],
+                "relation_mask": 27328,
+                "relation_code": "12223000"
+              }
+            },
+            {
+              "id": "E3",
+              "left": "A",
+              "right": "B",
+              "kind": "separator",
+              "allowed_pairs": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  1,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ]
+              ],
+              "relation_mask": 14,
+              "relation_code": "00000032",
+              "reverse": {
+                "left": "B",
+                "right": "A",
+                "allowed_pairs": [
+                  [
+                    2,
+                    1
+                  ],
+                  [
+                    3,
+                    1
+                  ],
+                  [
+                    4,
+                    1
+                  ]
+                ],
+                "relation_mask": 4368,
+                "relation_code": "01010100"
+              }
+            },
+            {
+              "id": "E4",
+              "left": "A",
+              "right": "C",
+              "kind": "separator",
+              "allowed_pairs": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  1,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ]
+              ],
+              "relation_mask": 14,
+              "relation_code": "00000032",
+              "reverse": {
+                "left": "C",
+                "right": "A",
+                "allowed_pairs": [
+                  [
+                    2,
+                    1
+                  ],
+                  [
+                    3,
+                    1
+                  ],
+                  [
+                    4,
+                    1
+                  ]
+                ],
+                "relation_mask": 4368,
+                "relation_code": "01010100"
+              }
+            },
+            {
+              "id": "E5",
+              "left": "A",
+              "right": "D",
+              "kind": "separator",
+              "allowed_pairs": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  1,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ]
+              ],
+              "relation_mask": 14,
+              "relation_code": "00000032",
+              "reverse": {
+                "left": "D",
+                "right": "A",
+                "allowed_pairs": [
+                  [
+                    2,
+                    1
+                  ],
+                  [
+                    3,
+                    1
+                  ],
+                  [
+                    4,
+                    1
+                  ]
+                ],
+                "relation_mask": 4368,
+                "relation_code": "01010100"
+              }
+            },
+            {
+              "id": "E6",
+              "left": "E",
+              "right": "B",
+              "kind": "separator",
+              "allowed_pairs": [
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  2
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  2
+                ],
+                [
+                  4,
+                  3
+                ]
+              ],
+              "relation_mask": 27328,
+              "relation_code": "12223000",
+              "reverse": {
+                "left": "B",
+                "right": "E",
+                "allowed_pairs": [
+                  [
+                    2,
+                    3
+                  ],
+                  [
+                    2,
+                    4
+                  ],
+                  [
+                    3,
+                    2
+                  ],
+                  [
+                    3,
+                    4
+                  ],
+                  [
+                    4,
+                    2
+                  ],
+                  [
+                    4,
+                    3
+                  ]
+                ],
+                "relation_mask": 27328,
+                "relation_code": "12223000"
+              }
+            },
+            {
+              "id": "E7",
+              "left": "E",
+              "right": "C",
+              "kind": "separator",
+              "allowed_pairs": [
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  2
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  2
+                ],
+                [
+                  4,
+                  3
+                ]
+              ],
+              "relation_mask": 27328,
+              "relation_code": "12223000",
+              "reverse": {
+                "left": "C",
+                "right": "E",
+                "allowed_pairs": [
+                  [
+                    2,
+                    3
+                  ],
+                  [
+                    2,
+                    4
+                  ],
+                  [
+                    3,
+                    2
+                  ],
+                  [
+                    3,
+                    4
+                  ],
+                  [
+                    4,
+                    2
+                  ],
+                  [
+                    4,
+                    3
+                  ]
+                ],
+                "relation_mask": 27328,
+                "relation_code": "12223000"
+              }
+            },
+            {
+              "id": "E8",
+              "left": "E",
+              "right": "D",
+              "kind": "separator",
+              "allowed_pairs": [
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  2
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  2
+                ],
+                [
+                  4,
+                  3
+                ]
+              ],
+              "relation_mask": 27328,
+              "relation_code": "12223000",
+              "reverse": {
+                "left": "D",
+                "right": "E",
+                "allowed_pairs": [
+                  [
+                    2,
+                    3
+                  ],
+                  [
+                    2,
+                    4
+                  ],
+                  [
+                    3,
+                    2
+                  ],
+                  [
+                    3,
+                    4
+                  ],
+                  [
+                    4,
+                    2
+                  ],
+                  [
+                    4,
+                    3
+                  ]
+                ],
+                "relation_mask": 27328,
+                "relation_code": "12223000"
+              }
+            }
+          ],
+          "point_contacts": [],
+          "equal_names": [],
+          "choices": 0,
+          "backtracks": 0,
+          "representatives_are_assignments": false,
+          "scope": "Declared contact constraints only; no greedy choice, DFS, or recoloring. Singletons are checked against the original constraints before solved. Underdetermined representatives are not a complete coloring, and nonempty binary relations do not certify global extendibility."
+        }
+      },
+      {
+        "kind": "trial",
+        "document": {
+          "sides": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "lines": [
+            {
+              "id": "E0",
+              "left": "B",
+              "right": "C",
+              "kind": "separator"
+            },
+            {
+              "id": "E1",
+              "left": "B",
+              "right": "D",
+              "kind": "separator"
+            },
+            {
+              "id": "E2",
+              "left": "C",
+              "right": "D",
+              "kind": "separator"
+            },
+            {
+              "id": "E3",
+              "left": "A",
+              "right": "B",
+              "kind": "separator"
+            },
+            {
+              "id": "E4",
+              "left": "A",
+              "right": "C",
+              "kind": "separator"
+            },
+            {
+              "id": "E5",
+              "left": "A",
+              "right": "D",
+              "kind": "separator"
+            },
+            {
+              "id": "E6",
+              "left": "E",
+              "right": "B",
+              "kind": "separator"
+            },
+            {
+              "id": "E7",
+              "left": "E",
+              "right": "C",
+              "kind": "separator"
+            },
+            {
+              "id": "E8",
+              "left": "E",
+              "right": "D",
+              "kind": "separator"
+            }
+          ],
+          "anchors": {
+            "A": 1,
+            "B": 2
+          },
+          "states": {
+            "A": "1100",
+            "E": "0111"
+          }
+        },
+        "outcome": {
+          "schema_version": 1,
+          "model": "quaternary-contact-relations-v1",
+          "status": "conflict",
+          "original_input": {
+            "sides": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E"
+            ],
+            "lines": [
+              {
+                "id": "E0",
+                "left": "B",
+                "right": "C",
+                "kind": "separator"
+              },
+              {
+                "id": "E1",
+                "left": "B",
+                "right": "D",
+                "kind": "separator"
+              },
+              {
+                "id": "E2",
+                "left": "C",
+                "right": "D",
+                "kind": "separator"
+              },
+              {
+                "id": "E3",
+                "left": "A",
+                "right": "B",
+                "kind": "separator"
+              },
+              {
+                "id": "E4",
+                "left": "A",
+                "right": "C",
+                "kind": "separator"
+              },
+              {
+                "id": "E5",
+                "left": "A",
+                "right": "D",
+                "kind": "separator"
+              },
+              {
+                "id": "E6",
+                "left": "E",
+                "right": "B",
+                "kind": "separator"
+              },
+              {
+                "id": "E7",
+                "left": "E",
+                "right": "C",
+                "kind": "separator"
+              },
+              {
+                "id": "E8",
+                "left": "E",
+                "right": "D",
+                "kind": "separator"
+              }
+            ],
+            "anchors": {
+              "A": 1,
+              "B": 2
+            },
+            "states": {
+              "A": "1100",
+              "E": "0111"
+            }
+          },
+          "side_order": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "initial_domains": [
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              1,
+              2,
+              3,
+              4
+            ],
+            [
+              1,
+              2,
+              3,
+              4
+            ],
+            [
+              2,
+              3,
+              4
+            ]
+          ],
+          "initial_states": {
+            "A": {
+              "code": 192,
+              "quaternary": "3000",
+              "candidates": [
+                1
+              ],
+              "candidate_mask": 1,
+              "representative": 1,
+              "anchored": true
+            },
+            "B": {
+              "code": 48,
+              "quaternary": "0300",
+              "candidates": [
+                2
+              ],
+              "candidate_mask": 2,
+              "representative": 2,
+              "anchored": true
+            },
+            "C": {
+              "code": 85,
+              "quaternary": "1111",
+              "candidates": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "candidate_mask": 15,
+              "representative": 1,
+              "anchored": false
+            },
+            "D": {
+              "code": 85,
+              "quaternary": "1111",
+              "candidates": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "candidate_mask": 15,
+              "representative": 1,
+              "anchored": false
+            },
+            "E": {
+              "code": 21,
+              "quaternary": "0111",
+              "candidates": [
+                2,
+                3,
+                4
+              ],
+              "candidate_mask": 14,
+              "representative": 2,
+              "anchored": false
+            }
+          },
+          "explicit_anchor_sources": {
+            "A": [
+              {
+                "source": "anchors",
+                "name": 1
+              }
+            ],
+            "B": [
+              {
+                "source": "anchors",
+                "name": 2
+              }
+            ],
+            "C": [],
+            "D": [],
+            "E": []
+          },
+          "name_states": {
+            "A": {
+              "code": 192,
+              "quaternary": "3000",
+              "candidates": [
+                1
+              ],
+              "candidate_mask": 1,
+              "representative": 1,
+              "anchored": true
+            },
+            "B": {
+              "code": 48,
+              "quaternary": "0300",
+              "candidates": [
+                2
+              ],
+              "candidate_mask": 2,
+              "representative": 2,
+              "anchored": true
+            },
+            "C": {
+              "code": 5,
+              "quaternary": "0011",
+              "candidates": [
+                3,
+                4
+              ],
+              "candidate_mask": 12,
+              "representative": 3,
+              "anchored": false
+            },
+            "D": {
+              "code": 5,
+              "quaternary": "0011",
+              "candidates": [
+                3,
+                4
+              ],
+              "candidate_mask": 12,
+              "representative": 3,
+              "anchored": false
+            },
+            "E": {
+              "code": 5,
+              "quaternary": "0011",
+              "candidates": [
+                3,
+                4
+              ],
+              "candidate_mask": 12,
+              "representative": 3,
+              "anchored": false
+            }
+          },
+          "domains": [
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "colors": null,
+          "initial_relations": [
+            [
+              1,
+              2,
+              14,
+              14,
+              14
+            ],
+            [
+              16,
+              32,
+              208,
+              208,
+              192
+            ],
+            [
+              4368,
+              8706,
+              33825,
+              31710,
+              27342
+            ],
+            [
+              4368,
+              8706,
+              31710,
+              33825,
+              27342
+            ],
+            [
+              4368,
+              8704,
+              31696,
+              31696,
+              33824
+            ]
+          ],
+          "relations": [
+            [
+              1,
+              2,
+              12,
+              12,
+              12
+            ],
+            [
+              16,
+              32,
+              192,
+              192,
+              192
+            ],
+            [
+              4352,
+              8704,
+              33792,
+              18432,
+              0
+            ],
+            [
+              4352,
+              8704,
+              18432,
+              33792,
+              18432
+            ],
+            [
+              4352,
+              8704,
+              0,
+              18432,
+              33792
+            ]
+          ],
+          "trace": [
+            {
+              "i": 0,
+              "j": 2,
+              "via": 1,
+              "before": 14,
+              "left": 2,
+              "right": 208,
+              "after": 12,
+              "removed": 2
+            },
+            {
+              "i": 2,
+              "j": 1,
+              "via": 0,
+              "before": 8706,
+              "left": 4352,
+              "right": 2,
+              "after": 8704,
+              "removed": 2
+            },
+            {
+              "i": 0,
+              "j": 3,
+              "via": 1,
+              "before": 14,
+              "left": 2,
+              "right": 208,
+              "after": 12,
+              "removed": 2
+            },
+            {
+              "i": 3,
+              "j": 1,
+              "via": 0,
+              "before": 8706,
+              "left": 4352,
+              "right": 2,
+              "after": 8704,
+              "removed": 2
+            },
+            {
+              "i": 0,
+              "j": 4,
+              "via": 1,
+              "before": 14,
+              "left": 2,
+              "right": 192,
+              "after": 12,
+              "removed": 2
+            },
+            {
+              "i": 2,
+              "j": 2,
+              "via": 0,
+              "before": 33825,
+              "left": 4352,
+              "right": 12,
+              "after": 33792,
+              "removed": 33
+            },
+            {
+              "i": 3,
+              "j": 2,
+              "via": 0,
+              "before": 31710,
+              "left": 4352,
+              "right": 12,
+              "after": 18432,
+              "removed": 13278
+            },
+            {
+              "i": 4,
+              "j": 2,
+              "via": 0,
+              "before": 31696,
+              "left": 4352,
+              "right": 12,
+              "after": 18432,
+              "removed": 13264
+            },
+            {
+              "i": 3,
+              "j": 3,
+              "via": 0,
+              "before": 33825,
+              "left": 4352,
+              "right": 12,
+              "after": 33792,
+              "removed": 33
+            },
+            {
+              "i": 4,
+              "j": 3,
+              "via": 0,
+              "before": 31696,
+              "left": 4352,
+              "right": 12,
+              "after": 18432,
+              "removed": 13264
+            },
+            {
+              "i": 4,
+              "j": 4,
+              "via": 0,
+              "before": 33824,
+              "left": 4352,
+              "right": 12,
+              "after": 33792,
+              "removed": 32
+            },
+            {
+              "i": 2,
+              "j": 4,
+              "via": 3,
+              "before": 18432,
+              "left": 18432,
+              "right": 18432,
+              "after": 0,
+              "removed": 18432
+            }
+          ],
+          "revisions": 139,
+          "lines": [
+            {
+              "id": "E0",
+              "left": "B",
+              "right": "C",
+              "kind": "separator",
+              "allowed_pairs": [
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ]
+              ],
+              "relation_mask": 192,
+              "relation_code": "00003000",
+              "reverse": {
+                "left": "C",
+                "right": "B",
+                "allowed_pairs": [
+                  [
+                    3,
+                    2
+                  ],
+                  [
+                    4,
+                    2
+                  ]
+                ],
+                "relation_mask": 8704,
+                "relation_code": "02020000"
+              }
+            },
+            {
+              "id": "E1",
+              "left": "B",
+              "right": "D",
+              "kind": "separator",
+              "allowed_pairs": [
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ]
+              ],
+              "relation_mask": 192,
+              "relation_code": "00003000",
+              "reverse": {
+                "left": "D",
+                "right": "B",
+                "allowed_pairs": [
+                  [
+                    3,
+                    2
+                  ],
+                  [
+                    4,
+                    2
+                  ]
+                ],
+                "relation_mask": 8704,
+                "relation_code": "02020000"
+              }
+            },
+            {
+              "id": "E2",
+              "left": "C",
+              "right": "D",
+              "kind": "separator",
+              "allowed_pairs": [
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  3
+                ]
+              ],
+              "relation_mask": 18432,
+              "relation_code": "10200000",
+              "reverse": {
+                "left": "D",
+                "right": "C",
+                "allowed_pairs": [
+                  [
+                    3,
+                    4
+                  ],
+                  [
+                    4,
+                    3
+                  ]
+                ],
+                "relation_mask": 18432,
+                "relation_code": "10200000"
+              }
+            },
+            {
+              "id": "E3",
+              "left": "A",
+              "right": "B",
+              "kind": "separator",
+              "allowed_pairs": [
+                [
+                  1,
+                  2
+                ]
+              ],
+              "relation_mask": 2,
+              "relation_code": "00000002",
+              "reverse": {
+                "left": "B",
+                "right": "A",
+                "allowed_pairs": [
+                  [
+                    2,
+                    1
+                  ]
+                ],
+                "relation_mask": 16,
+                "relation_code": "00000100"
+              }
+            },
+            {
+              "id": "E4",
+              "left": "A",
+              "right": "C",
+              "kind": "separator",
+              "allowed_pairs": [
+                [
+                  1,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ]
+              ],
+              "relation_mask": 12,
+              "relation_code": "00000030",
+              "reverse": {
+                "left": "C",
+                "right": "A",
+                "allowed_pairs": [
+                  [
+                    3,
+                    1
+                  ],
+                  [
+                    4,
+                    1
+                  ]
+                ],
+                "relation_mask": 4352,
+                "relation_code": "01010000"
+              }
+            },
+            {
+              "id": "E5",
+              "left": "A",
+              "right": "D",
+              "kind": "separator",
+              "allowed_pairs": [
+                [
+                  1,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ]
+              ],
+              "relation_mask": 12,
+              "relation_code": "00000030",
+              "reverse": {
+                "left": "D",
+                "right": "A",
+                "allowed_pairs": [
+                  [
+                    3,
+                    1
+                  ],
+                  [
+                    4,
+                    1
+                  ]
+                ],
+                "relation_mask": 4352,
+                "relation_code": "01010000"
+              }
+            },
+            {
+              "id": "E6",
+              "left": "E",
+              "right": "B",
+              "kind": "separator",
+              "allowed_pairs": [
+                [
+                  3,
+                  2
+                ],
+                [
+                  4,
+                  2
+                ]
+              ],
+              "relation_mask": 8704,
+              "relation_code": "02020000",
+              "reverse": {
+                "left": "B",
+                "right": "E",
+                "allowed_pairs": [
+                  [
+                    2,
+                    3
+                  ],
+                  [
+                    2,
+                    4
+                  ]
+                ],
+                "relation_mask": 192,
+                "relation_code": "00003000"
+              }
+            },
+            {
+              "id": "E7",
+              "left": "E",
+              "right": "C",
+              "kind": "separator",
+              "allowed_pairs": [],
+              "relation_mask": 0,
+              "relation_code": "00000000",
+              "reverse": {
+                "left": "C",
+                "right": "E",
+                "allowed_pairs": [],
+                "relation_mask": 0,
+                "relation_code": "00000000"
+              }
+            },
+            {
+              "id": "E8",
+              "left": "E",
+              "right": "D",
+              "kind": "separator",
+              "allowed_pairs": [
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  3
+                ]
+              ],
+              "relation_mask": 18432,
+              "relation_code": "10200000",
+              "reverse": {
+                "left": "D",
+                "right": "E",
+                "allowed_pairs": [
+                  [
+                    3,
+                    4
+                  ],
+                  [
+                    4,
+                    3
+                  ]
+                ],
+                "relation_mask": 18432,
+                "relation_code": "10200000"
+              }
+            }
+          ],
+          "point_contacts": [],
+          "equal_names": [],
+          "choices": 0,
+          "backtracks": 0,
+          "representatives_are_assignments": false,
+          "scope": "Declared contact constraints only; no greedy choice, DFS, or recoloring. Singletons are checked against the original constraints before solved. Underdetermined representatives are not a complete coloring, and nonempty binary relations do not certify global extendibility."
+        }
+      },
+      {
+        "kind": "main",
+        "document": {
+          "sides": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "lines": [
+            {
+              "id": "E0",
+              "left": "B",
+              "right": "C",
+              "kind": "separator"
+            },
+            {
+              "id": "E1",
+              "left": "B",
+              "right": "D",
+              "kind": "separator"
+            },
+            {
+              "id": "E2",
+              "left": "C",
+              "right": "D",
+              "kind": "separator"
+            },
+            {
+              "id": "E3",
+              "left": "A",
+              "right": "B",
+              "kind": "separator"
+            },
+            {
+              "id": "E4",
+              "left": "A",
+              "right": "C",
+              "kind": "separator"
+            },
+            {
+              "id": "E5",
+              "left": "A",
+              "right": "D",
+              "kind": "separator"
+            },
+            {
+              "id": "E6",
+              "left": "E",
+              "right": "B",
+              "kind": "separator"
+            },
+            {
+              "id": "E7",
+              "left": "E",
+              "right": "C",
+              "kind": "separator"
+            },
+            {
+              "id": "E8",
+              "left": "E",
+              "right": "D",
+              "kind": "separator"
+            }
+          ],
+          "anchors": {
+            "A": 1
+          },
+          "states": {
+            "A": "1100",
+            "E": "0111",
+            "B": "0011"
+          }
+        },
+        "outcome": {
+          "schema_version": 1,
+          "model": "quaternary-contact-relations-v1",
+          "status": "conflict",
+          "original_input": {
+            "sides": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E"
+            ],
+            "lines": [
+              {
+                "id": "E0",
+                "left": "B",
+                "right": "C",
+                "kind": "separator"
+              },
+              {
+                "id": "E1",
+                "left": "B",
+                "right": "D",
+                "kind": "separator"
+              },
+              {
+                "id": "E2",
+                "left": "C",
+                "right": "D",
+                "kind": "separator"
+              },
+              {
+                "id": "E3",
+                "left": "A",
+                "right": "B",
+                "kind": "separator"
+              },
+              {
+                "id": "E4",
+                "left": "A",
+                "right": "C",
+                "kind": "separator"
+              },
+              {
+                "id": "E5",
+                "left": "A",
+                "right": "D",
+                "kind": "separator"
+              },
+              {
+                "id": "E6",
+                "left": "E",
+                "right": "B",
+                "kind": "separator"
+              },
+              {
+                "id": "E7",
+                "left": "E",
+                "right": "C",
+                "kind": "separator"
+              },
+              {
+                "id": "E8",
+                "left": "E",
+                "right": "D",
+                "kind": "separator"
+              }
+            ],
+            "anchors": {
+              "A": 1
+            },
+            "states": {
+              "A": "1100",
+              "E": "0111",
+              "B": "0011"
+            }
+          },
+          "side_order": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "initial_domains": [
+            [
+              1
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              1,
+              2,
+              3,
+              4
+            ],
+            [
+              1,
+              2,
+              3,
+              4
+            ],
+            [
+              2,
+              3,
+              4
+            ]
+          ],
+          "initial_states": {
+            "A": {
+              "code": 192,
+              "quaternary": "3000",
+              "candidates": [
+                1
+              ],
+              "candidate_mask": 1,
+              "representative": 1,
+              "anchored": true
+            },
+            "B": {
+              "code": 5,
+              "quaternary": "0011",
+              "candidates": [
+                3,
+                4
+              ],
+              "candidate_mask": 12,
+              "representative": 3,
+              "anchored": false
+            },
+            "C": {
+              "code": 85,
+              "quaternary": "1111",
+              "candidates": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "candidate_mask": 15,
+              "representative": 1,
+              "anchored": false
+            },
+            "D": {
+              "code": 85,
+              "quaternary": "1111",
+              "candidates": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "candidate_mask": 15,
+              "representative": 1,
+              "anchored": false
+            },
+            "E": {
+              "code": 21,
+              "quaternary": "0111",
+              "candidates": [
+                2,
+                3,
+                4
+              ],
+              "candidate_mask": 14,
+              "representative": 2,
+              "anchored": false
+            }
+          },
+          "explicit_anchor_sources": {
+            "A": [
+              {
+                "source": "anchors",
+                "name": 1
+              }
+            ],
+            "B": [],
+            "C": [],
+            "D": [],
+            "E": []
+          },
+          "name_states": {
+            "A": {
+              "code": 192,
+              "quaternary": "3000",
+              "candidates": [
+                1
+              ],
+              "candidate_mask": 1,
+              "representative": 1,
+              "anchored": true
+            },
+            "B": {
+              "code": 5,
+              "quaternary": "0011",
+              "candidates": [
+                3,
+                4
+              ],
+              "candidate_mask": 12,
+              "representative": 3,
+              "anchored": false
+            },
+            "C": {
+              "code": 21,
+              "quaternary": "0111",
+              "candidates": [
+                2,
+                3,
+                4
+              ],
+              "candidate_mask": 14,
+              "representative": 2,
+              "anchored": false
+            },
+            "D": {
+              "code": 21,
+              "quaternary": "0111",
+              "candidates": [
+                2,
+                3,
+                4
+              ],
+              "candidate_mask": 14,
+              "representative": 2,
+              "anchored": false
+            },
+            "E": {
+              "code": 21,
+              "quaternary": "0111",
+              "candidates": [
+                2,
+                3,
+                4
+              ],
+              "candidate_mask": 14,
+              "representative": 2,
+              "anchored": false
+            }
+          },
+          "domains": [
+            [
+              1
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              2,
+              3,
+              4
+            ],
+            [
+              2,
+              3,
+              4
+            ],
+            [
+              2,
+              3,
+              4
+            ]
+          ],
+          "colors": null,
+          "initial_relations": [
+            [
+              1,
+              12,
+              14,
+              14,
+              14
+            ],
+            [
+              4352,
+              33792,
+              31488,
+              31488,
+              27136
+            ],
+            [
+              4368,
+              18636,
+              33825,
+              31710,
+              27342
+            ],
+            [
+              4368,
+              18636,
+              31710,
+              33825,
+              27342
+            ],
+            [
+              4368,
+              18624,
+              31696,
+              31696,
+              33824
+            ]
+          ],
+          "relations": [
+            [
+              1,
+              12,
+              14,
+              14,
+              14
+            ],
+            [
+              4352,
+              33792,
+              27136,
+              27136,
+              27136
+            ],
+            [
+              4368,
+              18624,
+              33824,
+              8896,
+              0
+            ],
+            [
+              4368,
+              18624,
+              8896,
+              33824,
+              8896
+            ],
+            [
+              4368,
+              18624,
+              0,
+              8896,
+              33824
+            ]
+          ],
+          "trace": [
+            {
+              "i": 2,
+              "j": 1,
+              "via": 0,
+              "before": 18636,
+              "left": 4368,
+              "right": 12,
+              "after": 18624,
+              "removed": 12
+            },
+            {
+              "i": 3,
+              "j": 1,
+              "via": 0,
+              "before": 18636,
+              "left": 4368,
+              "right": 12,
+              "after": 18624,
+              "removed": 12
+            },
+            {
+              "i": 2,
+              "j": 2,
+              "via": 0,
+              "before": 33825,
+              "left": 4368,
+              "right": 14,
+              "after": 33824,
+              "removed": 1
+            },
+            {
+              "i": 3,
+              "j": 2,
+              "via": 0,
+              "before": 31710,
+              "left": 4368,
+              "right": 14,
+              "after": 27328,
+              "removed": 4382
+            },
+            {
+              "i": 4,
+              "j": 2,
+              "via": 0,
+              "before": 31696,
+              "left": 4368,
+              "right": 14,
+              "after": 27328,
+              "removed": 4368
+            },
+            {
+              "i": 3,
+              "j": 3,
+              "via": 0,
+              "before": 33825,
+              "left": 4368,
+              "right": 14,
+              "after": 33824,
+              "removed": 1
+            },
+            {
+              "i": 4,
+              "j": 3,
+              "via": 0,
+              "before": 31696,
+              "left": 4368,
+              "right": 14,
+              "after": 27328,
+              "removed": 4368
+            },
+            {
+              "i": 3,
+              "j": 2,
+              "via": 1,
+              "before": 27328,
+              "left": 18624,
+              "right": 27136,
+              "after": 8896,
+              "removed": 18432
+            },
+            {
+              "i": 4,
+              "j": 2,
+              "via": 1,
+              "before": 27328,
+              "left": 18624,
+              "right": 27136,
+              "after": 8896,
+              "removed": 18432
+            },
+            {
+              "i": 4,
+              "j": 3,
+              "via": 1,
+              "before": 27328,
+              "left": 18624,
+              "right": 27136,
+              "after": 8896,
+              "removed": 18432
+            },
+            {
+              "i": 2,
+              "j": 4,
+              "via": 3,
+              "before": 8896,
+              "left": 8896,
+              "right": 8896,
+              "after": 0,
+              "removed": 8896
+            }
+          ],
+          "revisions": 139,
+          "lines": [
+            {
+              "id": "E0",
+              "left": "B",
+              "right": "C",
+              "kind": "separator",
+              "allowed_pairs": [
+                [
+                  3,
+                  2
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  2
+                ],
+                [
+                  4,
+                  3
+                ]
+              ],
+              "relation_mask": 27136,
+              "relation_code": "12220000",
+              "reverse": {
+                "left": "C",
+                "right": "B",
+                "allowed_pairs": [
+                  [
+                    2,
+                    3
+                  ],
+                  [
+                    2,
+                    4
+                  ],
+                  [
+                    3,
+                    4
+                  ],
+                  [
+                    4,
+                    3
+                  ]
+                ],
+                "relation_mask": 18624,
+                "relation_code": "10203000"
+              }
+            },
+            {
+              "id": "E1",
+              "left": "B",
+              "right": "D",
+              "kind": "separator",
+              "allowed_pairs": [
+                [
+                  3,
+                  2
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  2
+                ],
+                [
+                  4,
+                  3
+                ]
+              ],
+              "relation_mask": 27136,
+              "relation_code": "12220000",
+              "reverse": {
+                "left": "D",
+                "right": "B",
+                "allowed_pairs": [
+                  [
+                    2,
+                    3
+                  ],
+                  [
+                    2,
+                    4
+                  ],
+                  [
+                    3,
+                    4
+                  ],
+                  [
+                    4,
+                    3
+                  ]
+                ],
+                "relation_mask": 18624,
+                "relation_code": "10203000"
+              }
+            },
+            {
+              "id": "E2",
+              "left": "C",
+              "right": "D",
+              "kind": "separator",
+              "allowed_pairs": [
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  2
+                ],
+                [
+                  4,
+                  2
+                ]
+              ],
+              "relation_mask": 8896,
+              "relation_code": "02023000",
+              "reverse": {
+                "left": "D",
+                "right": "C",
+                "allowed_pairs": [
+                  [
+                    2,
+                    3
+                  ],
+                  [
+                    2,
+                    4
+                  ],
+                  [
+                    3,
+                    2
+                  ],
+                  [
+                    4,
+                    2
+                  ]
+                ],
+                "relation_mask": 8896,
+                "relation_code": "02023000"
+              }
+            },
+            {
+              "id": "E3",
+              "left": "A",
+              "right": "B",
+              "kind": "separator",
+              "allowed_pairs": [
+                [
+                  1,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ]
+              ],
+              "relation_mask": 12,
+              "relation_code": "00000030",
+              "reverse": {
+                "left": "B",
+                "right": "A",
+                "allowed_pairs": [
+                  [
+                    3,
+                    1
+                  ],
+                  [
+                    4,
+                    1
+                  ]
+                ],
+                "relation_mask": 4352,
+                "relation_code": "01010000"
+              }
+            },
+            {
+              "id": "E4",
+              "left": "A",
+              "right": "C",
+              "kind": "separator",
+              "allowed_pairs": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  1,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ]
+              ],
+              "relation_mask": 14,
+              "relation_code": "00000032",
+              "reverse": {
+                "left": "C",
+                "right": "A",
+                "allowed_pairs": [
+                  [
+                    2,
+                    1
+                  ],
+                  [
+                    3,
+                    1
+                  ],
+                  [
+                    4,
+                    1
+                  ]
+                ],
+                "relation_mask": 4368,
+                "relation_code": "01010100"
+              }
+            },
+            {
+              "id": "E5",
+              "left": "A",
+              "right": "D",
+              "kind": "separator",
+              "allowed_pairs": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  1,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ]
+              ],
+              "relation_mask": 14,
+              "relation_code": "00000032",
+              "reverse": {
+                "left": "D",
+                "right": "A",
+                "allowed_pairs": [
+                  [
+                    2,
+                    1
+                  ],
+                  [
+                    3,
+                    1
+                  ],
+                  [
+                    4,
+                    1
+                  ]
+                ],
+                "relation_mask": 4368,
+                "relation_code": "01010100"
+              }
+            },
+            {
+              "id": "E6",
+              "left": "E",
+              "right": "B",
+              "kind": "separator",
+              "allowed_pairs": [
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  3
+                ]
+              ],
+              "relation_mask": 18624,
+              "relation_code": "10203000",
+              "reverse": {
+                "left": "B",
+                "right": "E",
+                "allowed_pairs": [
+                  [
+                    3,
+                    2
+                  ],
+                  [
+                    3,
+                    4
+                  ],
+                  [
+                    4,
+                    2
+                  ],
+                  [
+                    4,
+                    3
+                  ]
+                ],
+                "relation_mask": 27136,
+                "relation_code": "12220000"
+              }
+            },
+            {
+              "id": "E7",
+              "left": "E",
+              "right": "C",
+              "kind": "separator",
+              "allowed_pairs": [],
+              "relation_mask": 0,
+              "relation_code": "00000000",
+              "reverse": {
+                "left": "C",
+                "right": "E",
+                "allowed_pairs": [],
+                "relation_mask": 0,
+                "relation_code": "00000000"
+              }
+            },
+            {
+              "id": "E8",
+              "left": "E",
+              "right": "D",
+              "kind": "separator",
+              "allowed_pairs": [
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  2
+                ],
+                [
+                  4,
+                  2
+                ]
+              ],
+              "relation_mask": 8896,
+              "relation_code": "02023000",
+              "reverse": {
+                "left": "D",
+                "right": "E",
+                "allowed_pairs": [
+                  [
+                    2,
+                    3
+                  ],
+                  [
+                    2,
+                    4
+                  ],
+                  [
+                    3,
+                    2
+                  ],
+                  [
+                    4,
+                    2
+                  ]
+                ],
+                "relation_mask": 8896,
+                "relation_code": "02023000"
+              }
+            }
+          ],
+          "point_contacts": [],
+          "equal_names": [],
+          "choices": 0,
+          "backtracks": 0,
+          "representatives_are_assignments": false,
+          "scope": "Declared contact constraints only; no greedy choice, DFS, or recoloring. Singletons are checked against the original constraints before solved. Underdetermined representatives are not a complete coloring, and nonempty binary relations do not certify global extendibility."
+        }
+      }
+    ],
+    "events": [
+      {
+        "side": "A",
+        "symbol": 1,
+        "candidates_before": [
+          1,
+          2
+        ],
+        "selection": {
+          "side": 0,
+          "selection_group": "input-order",
+          "schedule": "first-unresolved-input-order-v1",
+          "reason": "first-unresolved-input-side",
+          "side_id": "A",
+          "candidate_order": [
+            1,
+            2
+          ]
+        },
+        "before_phase": 0,
+        "trial_phase": 1,
+        "kind": "commit",
+        "after_phase": 1,
+        "extension_claim": "inconclusive"
+      },
+      {
+        "side": "B",
+        "symbol": 2,
+        "candidates_before": [
+          2,
+          3,
+          4
+        ],
+        "selection": {
+          "side": 1,
+          "selection_group": "input-order",
+          "schedule": "first-unresolved-input-order-v1",
+          "reason": "first-unresolved-input-side",
+          "side_id": "B",
+          "candidate_order": [
+            2,
+            3,
+            4
+          ]
+        },
+        "before_phase": 1,
+        "trial_phase": 2,
+        "kind": "reject",
+        "after_phase": 3,
+        "extension_claim": "refuted"
+      }
+    ],
+    "final_phase": 3,
+    "status": "conflict",
+    "reason": "propagation-conflict-under-current-commitments",
+    "colors": null,
+    "name_states": {
+      "A": {
+        "code": 192,
+        "quaternary": "3000",
+        "candidates": [
+          1
+        ],
+        "candidate_mask": 1,
+        "representative": 1,
+        "anchored": true
+      },
+      "B": {
+        "code": 5,
+        "quaternary": "0011",
+        "candidates": [
+          3,
+          4
+        ],
+        "candidate_mask": 12,
+        "representative": 3,
+        "anchored": false
+      },
+      "C": {
+        "code": 21,
+        "quaternary": "0111",
+        "candidates": [
+          2,
+          3,
+          4
+        ],
+        "candidate_mask": 14,
+        "representative": 2,
+        "anchored": false
+      },
+      "D": {
+        "code": 21,
+        "quaternary": "0111",
+        "candidates": [
+          2,
+          3,
+          4
+        ],
+        "candidate_mask": 14,
+        "representative": 2,
+        "anchored": false
+      },
+      "E": {
+        "code": 21,
+        "quaternary": "0111",
+        "candidates": [
+          2,
+          3,
+          4
+        ],
+        "candidate_mask": 14,
+        "representative": 2,
+        "anchored": false
+      }
+    },
+    "domains": [
+      [
+        1
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        2,
+        3,
+        4
+      ],
+      [
+        2,
+        3,
+        4
+      ],
+      [
+        2,
+        3,
+        4
+      ]
+    ],
+    "choices": 1,
+    "probes": 2,
+    "rejections": 1,
+    "backtracks": 0,
+    "decision_limit": 128,
+    "probe_limit": 512,
+    "oracle_feedback_to_producer": false,
+    "old_colors_read": false,
+    "scope": "One-level conditional propagation with low-name preference; no committed color rollback, oracle feedback, Hall filter, or structural refutation. Surviving non-complete trials are inconclusive, not safe-extension proofs."
+  },
+  "audit": {
+    "passed": true,
+    "initial_enumeration": {
+      "cartesian_assignments_checked": 1024,
+      "assignments_satisfying_unary_inputs": 384,
+      "legal_assignment_count": 6,
+      "legal_assignments": [
+        {
+          "A": 2,
+          "B": 1,
+          "C": 3,
+          "D": 4,
+          "E": 2
+        },
+        {
+          "A": 2,
+          "B": 1,
+          "C": 4,
+          "D": 3,
+          "E": 2
+        },
+        {
+          "A": 2,
+          "B": 3,
+          "C": 1,
+          "D": 4,
+          "E": 2
+        },
+        {
+          "A": 2,
+          "B": 3,
+          "C": 4,
+          "D": 1,
+          "E": 2
+        },
+        {
+          "A": 2,
+          "B": 4,
+          "C": 1,
+          "D": 3,
+          "E": 2
+        },
+        {
+          "A": 2,
+          "B": 4,
+          "C": 3,
+          "D": 1,
+          "E": 2
+        }
+      ]
+    },
+    "phases": [
+      {
+        "phase": 0,
+        "kind": "main",
+        "bounded_trace_audit": {
+          "passed": true,
+          "metadata_passed": true,
+          "trace_audit": "independent_literal_set_replay",
+          "trace_steps_checked": 3,
+          "final_fixed_point": "checked",
+          "attempted_revision_telemetry": "lower_bound_checked_not_worklist_replayed",
+          "complete_assignment_preservation": "sound_each_step_by_existential_pair_composition",
+          "status": "underdetermined"
+        },
+        "full_enumeration": {
+          "cartesian_assignments_checked": 1024,
+          "assignments_satisfying_unary_inputs": 384,
+          "legal_assignment_count": 6,
+          "legal_assignments": [
+            {
+              "A": 2,
+              "B": 1,
+              "C": 3,
+              "D": 4,
+              "E": 2
+            },
+            {
+              "A": 2,
+              "B": 1,
+              "C": 4,
+              "D": 3,
+              "E": 2
+            },
+            {
+              "A": 2,
+              "B": 3,
+              "C": 1,
+              "D": 4,
+              "E": 2
+            },
+            {
+              "A": 2,
+              "B": 3,
+              "C": 4,
+              "D": 1,
+              "E": 2
+            },
+            {
+              "A": 2,
+              "B": 4,
+              "C": 1,
+              "D": 3,
+              "E": 2
+            },
+            {
+              "A": 2,
+              "B": 4,
+              "C": 3,
+              "D": 1,
+              "E": 2
+            }
+          ]
+        },
+        "complete_assignment_projection_preservation": {
+          "passed": true,
+          "complete_solutions_checked": 6,
+          "pair_projection_checks": 318,
+          "empty_solution_set_checks_are_vacuous": false
+        }
+      },
+      {
+        "phase": 1,
+        "kind": "trial",
+        "bounded_trace_audit": {
+          "passed": true,
+          "metadata_passed": true,
+          "trace_audit": "independent_literal_set_replay",
+          "trace_steps_checked": 9,
+          "final_fixed_point": "checked",
+          "attempted_revision_telemetry": "lower_bound_checked_not_worklist_replayed",
+          "complete_assignment_preservation": "sound_each_step_by_existential_pair_composition",
+          "status": "underdetermined"
+        },
+        "full_enumeration": {
+          "cartesian_assignments_checked": 1024,
+          "assignments_satisfying_unary_inputs": 192,
+          "legal_assignment_count": 0,
+          "legal_assignments": []
+        },
+        "complete_assignment_projection_preservation": {
+          "passed": true,
+          "complete_solutions_checked": 0,
+          "pair_projection_checks": 0,
+          "empty_solution_set_checks_are_vacuous": true
+        }
+      },
+      {
+        "phase": 2,
+        "kind": "trial",
+        "bounded_trace_audit": {
+          "passed": true,
+          "metadata_passed": true,
+          "trace_audit": "independent_literal_set_replay",
+          "trace_steps_checked": 12,
+          "final_fixed_point": "not_required_after_conflict",
+          "attempted_revision_telemetry": "lower_bound_checked_not_worklist_replayed",
+          "complete_assignment_preservation": "sound_each_step_by_existential_pair_composition",
+          "status": "conflict"
+        },
+        "full_enumeration": {
+          "cartesian_assignments_checked": 1024,
+          "assignments_satisfying_unary_inputs": 48,
+          "legal_assignment_count": 0,
+          "legal_assignments": []
+        },
+        "complete_assignment_projection_preservation": {
+          "passed": true,
+          "complete_solutions_checked": 0,
+          "pair_projection_checks": 0,
+          "empty_solution_set_checks_are_vacuous": true
+        }
+      },
+      {
+        "phase": 3,
+        "kind": "main",
+        "bounded_trace_audit": {
+          "passed": true,
+          "metadata_passed": true,
+          "trace_audit": "independent_literal_set_replay",
+          "trace_steps_checked": 11,
+          "final_fixed_point": "not_required_after_conflict",
+          "attempted_revision_telemetry": "lower_bound_checked_not_worklist_replayed",
+          "complete_assignment_preservation": "sound_each_step_by_existential_pair_composition",
+          "status": "conflict"
+        },
+        "full_enumeration": {
+          "cartesian_assignments_checked": 1024,
+          "assignments_satisfying_unary_inputs": 96,
+          "legal_assignment_count": 0,
+          "legal_assignments": []
+        },
+        "complete_assignment_projection_preservation": {
+          "passed": true,
+          "complete_solutions_checked": 0,
+          "pair_projection_checks": 0,
+          "empty_solution_set_checks_are_vacuous": true
+        }
+      }
+    ],
+    "events": [
+      {
+        "event": 0,
+        "kind": "commit",
+        "side": "A",
+        "symbol": 1,
+        "before_legal_assignment_count": 6,
+        "before_legal_assignments": [
+          {
+            "A": 2,
+            "B": 1,
+            "C": 3,
+            "D": 4,
+            "E": 2
+          },
+          {
+            "A": 2,
+            "B": 1,
+            "C": 4,
+            "D": 3,
+            "E": 2
+          },
+          {
+            "A": 2,
+            "B": 3,
+            "C": 1,
+            "D": 4,
+            "E": 2
+          },
+          {
+            "A": 2,
+            "B": 3,
+            "C": 4,
+            "D": 1,
+            "E": 2
+          },
+          {
+            "A": 2,
+            "B": 4,
+            "C": 1,
+            "D": 3,
+            "E": 2
+          },
+          {
+            "A": 2,
+            "B": 4,
+            "C": 3,
+            "D": 1,
+            "E": 2
+          }
+        ],
+        "after_legal_assignment_count": 0,
+        "after_legal_assignments": [],
+        "trial_legal_assignment_count": 0,
+        "trial_legal_assignments": [],
+        "unsafe_commit": true
+      },
+      {
+        "event": 1,
+        "kind": "reject",
+        "side": "B",
+        "symbol": 2,
+        "before_legal_assignment_count": 0,
+        "before_legal_assignments": [],
+        "after_legal_assignment_count": 0,
+        "after_legal_assignments": [],
+        "trial_legal_assignment_count": 0,
+        "trial_legal_assignments": [],
+        "unsafe_commit": false
+      }
+    ],
+    "first_unsafe_commit": {
+      "event": 0,
+      "kind": "commit",
+      "side": "A",
+      "symbol": 1,
+      "before_legal_assignment_count": 6,
+      "before_legal_assignments": [
+        {
+          "A": 2,
+          "B": 1,
+          "C": 3,
+          "D": 4,
+          "E": 2
+        },
+        {
+          "A": 2,
+          "B": 1,
+          "C": 4,
+          "D": 3,
+          "E": 2
+        },
+        {
+          "A": 2,
+          "B": 3,
+          "C": 1,
+          "D": 4,
+          "E": 2
+        },
+        {
+          "A": 2,
+          "B": 3,
+          "C": 4,
+          "D": 1,
+          "E": 2
+        },
+        {
+          "A": 2,
+          "B": 4,
+          "C": 1,
+          "D": 3,
+          "E": 2
+        },
+        {
+          "A": 2,
+          "B": 4,
+          "C": 3,
+          "D": 1,
+          "E": 2
+        }
+      ],
+      "after_legal_assignment_count": 0,
+      "after_legal_assignments": [],
+      "trial_legal_assignment_count": 0,
+      "trial_legal_assignments": [],
+      "unsafe_commit": true
+    },
+    "all_phase_documents_and_solution_projections_checked": true,
+    "trace_steps_independently_checked": 35,
+    "total_cartesian_assignments_checked": 4096,
+    "exact_oracle_called": false,
+    "oracle_feedback_to_producer": false
+  },
+  "enumeration_scope": {
+    "side_count": 5,
+    "palette": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "cartesian_assignments_per_phase": 1024,
+    "symmetry_quotient": false,
+    "sampling": false,
+    "all_initial_legal_assignments_saved": true
+  },
+  "mathematical_explanation": [
+    "BCD is a triangle, so its three names are distinct. A and E both touch all of BCD and therefore must share the remaining fourth name in every complete coloring.",
+    "Input A in {1,2} and E in {2,3,4} consequently force A=E=2. The six solutions are all permutations of {1,3,4} on B,C,D.",
+    "After A=1, B,C,D,E form K4 with only {2,3,4}. There is no complete coloring, but each unequal pair has a third-name support, so path consistency can survive.",
+    "The contact graph is planar: place A on one side of triangle BCD and E on its other side on the sphere, connecting each apex to all triangle vertices. This triangular-bipyramid construction is a planarity argument, not an exported drawing."
+  ],
+  "scope": {
+    "formal_geometry_experiment": false,
+    "post_design_development_diagnostic": true,
+    "external_domain_restrictions": {
+      "A": [
+        1,
+        2
+      ],
+      "E": [
+        2,
+        3,
+        4
+      ]
+    },
+    "schedule": "first-unresolved-input-order-v1",
+    "geometry_adapter_input": false,
+    "one_anchor_initialization_reachability": "not_established",
+    "two_anchor_initialization_reachability": "not_established",
+    "mother_peer_geometric_history_reachability": "not_established",
+    "no_changes_to_frozen_policy_or_corpus": true,
+    "claim": "Conditional path-consistency survival does not certify safe extension for arbitrary supplied candidate domains; this does not refute the current formally tested geometric initialization and reachable-state scope."
+  }
+}
