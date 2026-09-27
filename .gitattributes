@@ -20,3 +20,10 @@ docs/figures/** -text
 
 # Preserve the exact input bytes cited by the frozen orbit example report.
 examples/prior-v4-least-failure-graph.json -text
+
+# These frozen September 24 sources were hashed with CRLF line endings.
+# Preserve their bytes instead of normalizing historical research evidence.
+scripts/quaternary_odd_cycle_eq_inputs.py -text
+tests/test_quaternary_odd_cycle_eq_inputs.py -text
+tests/test_quaternary_candidate_scan.py -text
+tests/test_check_quaternary_candidate_scan.py -text

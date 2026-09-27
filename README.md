@@ -6,7 +6,43 @@ and verifiable Klein-four-group flow repair.**
 [中文说明](README.zh-CN.md) · [Mathematical foundations](docs/FOUNDATIONS.en.md) · [数学基础](docs/FOUNDATIONS.md)
 · [Research questions](docs/RESEARCH_PLAN.md) · [Related work](docs/RELATED_WORK.md)
 
-## Research progress — 2026-09-22
+## Research update — 2026-09-27 (results through September 26)
+
+**Certified relations now remove some candidates earlier, but full-candidate
+probing has not increased completion on the paired real-geometry tests. Its
+54,540 trial calls are 16.04 times the baseline's 3,400; a known inference gap
+remains.** The initiating line-side idea belongs to Qinzi27.
+
+- [Mother-line order diagnostics](docs/QUATERNARY_ORDER_PROBE_RESULTS-2026-09-23.md):
+  25 eligible geometries, 50 runs and 566 independently extendible commitments.
+  Changing frame support can put the inner K4 first, but did not reproduce the
+  unsafe abstract-order state. All 19 excluded geometries remain documented.
+- [Shared-triangle EQ](docs/QUATERNARY_TRIANGLE_EQ_RESULTS-2026-09-23.md):
+  311 paired scenarios; completion changes from 310 to 311 by repairing the known
+  ten-vertex **abstract-order** example. No new real-geometry repair is claimed.
+- [Shared-odd-cycle EQ](docs/QUATERNARY_ODD_CYCLE_EQ_RESULTS-2026-09-24.md):
+  both versions complete all 619 pairs. Extra EQ relations in 76 scenarios remove
+  244 initial candidate entries, with identical actual decisions and final colors.
+- [Residual candidate scan](docs/QUATERNARY_CANDIDATE_SCAN_RESULTS-2026-09-24.md):
+  51,036 retained candidates across 3,630 reachable persistent states include seven
+  unsupported targets; three survive conditional propagation. None of those three
+  is actually committed, so they are inference gaps, not three failed runs.
+- [All-candidate probing](docs/QUATERNARY_ALL_CANDIDATE_RESULTS-2026-09-26.md):
+  both versions complete all **767 pairs**, with **3,399 safe commitments each**
+  and identical commitment sequences and final colors. Earlier elimination of
+  `S3=2,3,4` removes `S4=1/S5=1` before the next commitment, but initial `S10=1`
+  still survives despite being globally impossible. Completion repairs and
+  regressions are both zero; the extra scans substantially increase work.
+
+The latest saved local checkpoint passes **1,274 Python tests and comprehensive
+validation**. This is a historical test result, not confirmation of this archive's
+push or remote CI. See the [publication scope](docs/PUBLICATION-2026-09-27.md) and
+[reproduction commands](docs/REPRODUCING_RESEARCH.md). The next research step is a
+separate, independently checkable logical-NEQ certificate for the remaining
+`S1 ≠ S10` relation. No general completeness, speed advantage or originality is
+established, and the website's default algorithm remains unchanged.
+
+## Earlier research progress — 2026-09-22
 
 **The current question is whether a low-color commitment preserves a complete
 coloring. Real-geometry tests pass within their declared scope; a preserved
@@ -218,7 +254,7 @@ nor a universal proof.
 · [English research history](docs/RESEARCH_HISTORY.en.md)
 · [Reproduce from a clean checkout](docs/REPRODUCING_RESEARCH.md)
 
-The archive includes research through **2026-09-22**. The September 20–22 additions
+The archive navigation includes research through **2026-09-26**. The September 20–26 additions
 are linked above; the chronology below preserves the earlier stages. It covers changing definitions,
 implementations, finite experiments, repaired examples, remaining obstructions,
 and regressions. Different versions and test denominators must not be combined.

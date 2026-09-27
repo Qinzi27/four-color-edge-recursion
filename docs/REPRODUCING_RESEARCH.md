@@ -1,9 +1,95 @@
 # 外部复现：算法、完整实验、证书与图件
 
-本指南包含截至 2026-09-22 的研究记录。发起思路属于 Qinzi27。
+本指南包含截至 2026-09-26 的研究记录，导航于2026-09-27更新。发起思路属于 Qinzi27。
 这里公开的是可复现的候选方法、成功和负结果，不是一份新的四色定理证明。
 
-## 当前检查：逐步延拓、四进制候选与危险域可达性（2026-09-21—22）
+## 当前检查：顺序、同名证书、剩余候选与全候选试排（2026-09-23—26）
+
+这五轮分别冻结来源、输入和预算，具体发布范围见
+[2026-09-27归档说明](PUBLICATION-2026-09-27.md)。从完整仓库根目录运行，
+保留此前归档及全部检查点；后续manifest依赖前序证据，不能只下载最新摘要。
+以下`run`从既有冻结清单重新执行，`check`复核原正式报告的保存证据。
+候选扫描的`run`只作离线诊断，不重新运行生产器；其他四轮的`run`包含生产与事后审计。
+`check`不重新选色或执行oracle搜索，但规则核验与有限赋值枚举仍可能耗时。
+
+所有`my-`输出名及自动生成的同前缀`-checkpoints/`目录都须使用尚不存在的新位置。
+如需检查自己新跑的结果，把`check`中的`--report`改为相应`my-`报告；不要改名或覆盖
+正式清单、正式检查点。`passed`表示保存证据的核查通过，不等于所有策略都完成。
+
+### F. 母线顺序与外框支撑
+
+```text
+python -X utf8 scripts/validate_quaternary_order_probe.py run --manifest outputs/quaternary-order-probe-manifest-2026-09-23.json.gz --output outputs/my-order-probe.json.gz
+python -X utf8 scripts/validate_quaternary_order_probe.py check --manifest outputs/quaternary-order-probe-manifest-2026-09-23.json.gz --report outputs/quaternary-order-probe-2026-09-23.json.gz --output outputs/my-order-probe-check.json
+```
+
+[44条输入记录](QUATERNARY_ORDER_PROBE_RESULTS-2026-09-23.md)含25个合格几何和19个保留的几何错误；
+两种初始化共50次运行、566次安全提交。没有重现已知抽象危险状态，也未证明一般调度安全。
+本轮隔离几何入口允许更多线段，旧几何引擎及配色规则未改。
+
+### G. 共同三角形EQ
+
+```text
+python -X utf8 scripts/validate_quaternary_triangle_eq.py run --manifest outputs/quaternary-triangle-eq-manifest-2026-09-23.json.gz --output outputs/my-triangle-eq.json.gz
+python -X utf8 scripts/validate_quaternary_triangle_eq.py check --manifest outputs/quaternary-triangle-eq-manifest-2026-09-23.json.gz --report outputs/quaternary-triangle-eq-2026-09-23.json.gz --output outputs/my-triangle-eq-check.json
+```
+
+[311组配对](QUATERNARY_TRIANGLE_EQ_RESULTS-2026-09-23.md)的完成数310→311，唯一修复是已知10顶点
+抽象input-order诊断，不是新增真实母线失败修复。五顶点全部1,024图×1,024赋值核验规则实现。
+逻辑EQ不合并面身份；新增规则使用原始真实邻接，不让oracle读取EQ或推导单例。
+
+### H. 共同奇环EQ
+
+```text
+python -X utf8 scripts/validate_quaternary_odd_cycle_eq.py run --manifest outputs/quaternary-odd-cycle-eq-manifest-2026-09-24.json.gz --output outputs/my-odd-cycle-eq.json.gz
+python -X utf8 scripts/validate_quaternary_odd_cycle_eq.py check --manifest outputs/quaternary-odd-cycle-eq-manifest-2026-09-24.json.gz --report outputs/quaternary-odd-cycle-eq-2026-09-24.json.gz --output outputs/my-odd-cycle-eq-check.json
+```
+
+[619组配对](QUATERNARY_ODD_CYCLE_EQ_RESULTS-2026-09-24.md)两版均完成，各3,010次安全提交。
+76个场景补充EQ，初始候选项减少244，但实际事件序列和最终配色相同。
+规则核查穷举预声明80图的7,337,984个图—赋值对，不是所有九顶点图。
+
+### I. 既有可达状态的剩余候选扫描
+
+```text
+python -X utf8 scripts/validate_quaternary_candidate_scan.py run --manifest outputs/quaternary-candidate-scan-manifest-2026-09-24.json.gz --output outputs/my-candidate-scan.json.gz
+python -X utf8 scripts/validate_quaternary_candidate_scan.py check --manifest outputs/quaternary-candidate-scan-manifest-2026-09-24.json.gz --report outputs/quaternary-candidate-scan-2026-09-24.json.gz --output outputs/my-candidate-scan-check.json
+```
+
+[冻结619条旧运行的3,630个持久状态](QUATERNARY_CANDIDATE_SCAN_RESULTS-2026-09-24.md)，
+逐色查询51,036个未决面的候选，得到7个无支持目标，其中3个条件传播仍未决。
+3,010次实际提交均有支持；3个漏检候选没有被实际选择。保留的51,603份原始精确证据
+不进入生产器，也不能把这些共享图和状态的目标解释成独立随机样本。
+
+### J. 全候选试排配对实验
+
+```text
+python -X utf8 scripts/validate_quaternary_all_candidate.py run --manifest outputs/quaternary-all-candidate-manifest-2026-09-26.json.gz --output outputs/my-all-candidate.json.gz
+python -X utf8 scripts/validate_quaternary_all_candidate.py check --manifest outputs/quaternary-all-candidate-manifest-2026-09-26.json.gz --report outputs/quaternary-all-candidate-2026-09-26.json.gz --output outputs/my-all-candidate-check.json
+```
+
+[403条记录、767组配对](QUATERNARY_ALL_CANDIDATE_RESULTS-2026-09-26.md)含383个合格几何、
+1个抽象例和19个旧几何排除。两版各767完成、3,399次安全提交，承诺序列和最终颜色全部相同；
+新增完成修复/退步均0。共同试探上限8192下，实际probe为3,400→54,540（16.04倍），
+传播轨迹220,534→6,372,700（28.90倍）。619份旧基线只规范化原512预算字段，结果仍逐项一致。
+
+已知单锚图提前完成`S3=1111→1011→1001→2000`，排除S4/S5的1，但初始S10=1仍未被
+条件传播识别为无解。新版本的1个unsupported存活probe统计只覆盖实际尝试事件，
+不等于再次扫描了所有中间状态的完整候选清单；详见
+[保存的已知案例包](../outputs/quaternary-all-candidate-known-gap-2026-09-26.json)。
+
+75个新声明图含旧空框；严格新增为74图/148场景，两版全部完成且没有新增拒绝或修复。
+两版各633运行满足全枚举预算，各134运行明确未全枚举；这里633是运行数，与经典633构形无关。
+55条历史的每个前缀重新初始化，不表示继承前图配色。生产后半批并行且与其他检查有时间重叠，
+正式耗时不作为严格速度基准；确定性的试探/轨迹次数是本轮成本比较重点。
+
+原正式落盘复核应同时读取
+`outputs/quaternary-all-candidate-artifact-check-2026-09-26.json`与
+`outputs/quaternary-all-candidate-parallel-check-execution-2026-09-26.json`：
+后者绑定1,534次冻结检查器调用和对应的完整参数摘要复用。上面的标准`check`命令
+可自行顺序重放，无需该内存复用安排；它仍需完整403个检查点及前序归档。
+
+## 此前检查：逐步延拓、四进制候选与危险域可达性（2026-09-21—22）
 
 以下五阶段各自冻结输入、规则和来源。它们不是同一算法逐次相加的成功数。
 从完整仓库根目录运行，使用Python 3.10+及现有Node；环境见第2节。
@@ -324,10 +410,12 @@ python -X utf8 scripts/validate.py --output outputs/my-validation.json
 2026-09-19 研究快照记录为536项 Python 和107项 Node 测试通过；
 9月21日连续修复阶段为786项 Python 与107项 Node；结构主线阶段为 **831项 Python及综合验证通过**。
 后续研究检查点依次为逐步延拓869项、候选原型908项、真实几何940项、低色对照982项，
-9月22日可达性研究最终为 **1,029项Python测试及综合验证通过**，详见[当轮结果末尾](QUATERNARY_REACHABILITY_RESULTS-2026-09-22.md)。
+9月22日可达性研究为1,029项；后续顺序检查1,077项、三角形EQ 1,128项、奇环EQ 1,185项、
+候选扫描1,224项，至9月26日全候选试排为 **1,274项Python测试及综合验证通过**，
+详见[保存的综合验证](../outputs/validation-quaternary-all-candidate-2026-09-26.json)。
 这些是各自保存的本地检查点，不是本次发布的远端CI成绩，也不等于各算法均已普遍安全。
 结构阶段实际调用 Node 几何引擎，但未重跑整套网页测试。发布时另做的干净副本及远端检查以
-[发布日志](PUBLICATION-2026-09-21.md)和实际工作流状态为准，不把前次记录当成本次 CI 结果。
+[各次发布日志](PUBLICATION-2026-09-27.md)和实际工作流状态为准，不把前次记录当成本次 CI 结果。
 
 完整测试导入 Pillow，但绘图单元测试用记录画布核对坐标，不实际加载 Windows 的 `msyh.ttc`。
 仅跑软件测试不需要安装这个字体。真正重新生成 PNG 时才需要可用的中文字体。
@@ -421,7 +509,8 @@ python -X utf8 scripts/check_publication_archive.py --output outputs/my-publicat
 此前发布索引检查绑定 v4 的30份冻结源码及索引证据字节；新主线另按各运行器清单绑定31／35项来源。
 发布索引检查的实际覆盖以脚本与新输出为准，不代表每个历史版本都已重新运行或其原源码哈希均与当前同名文件相同。
 
-本次归档范围见[9月21日发布说明](PUBLICATION-2026-09-21.md)：完整正式报告与分片保留，
+最新拟归档范围见[9月27日发布说明](PUBLICATION-2026-09-27.md)，此前范围仍见
+[9月21日发布说明](PUBLICATION-2026-09-21.md)与[9月22日发布说明](PUBLICATION-2026-09-22.md)：完整正式报告与分片保留，
 结构 smoke、本地文本日志、重复大明文 JSON 和早期 inside-out 草图不发布；本地原件均保留。
 旧报告里的“未上传”“未发布”是当时状态，不为本次归档改写，也不由本指南预先宣称远端推送或 CI 成功。
 
@@ -454,4 +543,6 @@ npm run build
 v4 的完整实验、负结果和固定隐含异名引理，以及最新结构反证主线，属于分别冻结的 Python 研究部分；
 **此次整理公开研究材料，没有把网页默认命名器替换为这些研究策略。**
 旧 v4 状态以其[结果报告](PEER_BATCH_RESULTS-2026-09-19.md)和[隐含异名引理](IMPLICIT_INEQUALITY-2026-09-19.md)为准；
-最新主线以[结构重启结果](STRUCTURAL_RESTART_RESULTS-2026-09-21.md)及其单独命令行为准。
+结构重启主线以[结构重启结果](STRUCTURAL_RESTART_RESULTS-2026-09-21.md)及其单独命令行为准；
+最新四进制分支以[全候选试排结果](QUATERNARY_ALL_CANDIDATE_RESULTS-2026-09-26.md)及本指南F—J入口为准，
+未用该分支替换网页默认器，也不把其有限结果当作结构重启版的新成绩。

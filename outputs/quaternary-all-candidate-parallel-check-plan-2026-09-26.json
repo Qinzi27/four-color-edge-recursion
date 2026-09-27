@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-09-26T11:34:28.805706+00:00",
+  "driver": "outputs/quaternary-all-candidate-parallel-check-2026-09-26.py",
+  "driver_sha256": "65c8f9df4cf02cce1db5600bdc7f94a91a614e19152bc8404222cc1f956f6320",
+  "manifest": "outputs/quaternary-all-candidate-manifest-2026-09-26.json.gz",
+  "manifest_sha256": "9c6b5a375d690d764dfaa972f5c11838d1d8c91e7a998e54c9d120a83beaeb8a",
+  "report": "outputs/quaternary-all-candidate-2026-09-26.json.gz",
+  "report_sha256": "3c2f6375bf30c80312c2dbdee1bd7f67ca69a969bfa7195146c682637b57546e",
+  "workers": 3,
+  "output": "outputs/quaternary-all-candidate-artifact-check-2026-09-26.json",
+  "execution_evidence": "outputs/quaternary-all-candidate-parallel-check-execution-2026-09-26.json",
+  "scope": "Original frozen per-run checkers verify every run in independent processes. Original global checker then validates headers, coverage, raw bindings and all summaries; per-run calls reused only through exact full-argument digests of in-memory verified results. No external cache accepted and no algorithm/core changes.",
+  "previous_attempt": "Sequential read-only check stopped to reschedule verification in parallel; no check result was created, no evidence was changed."
+}

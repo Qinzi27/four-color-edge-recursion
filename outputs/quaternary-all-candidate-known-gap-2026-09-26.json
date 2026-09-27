@@ -1,0 +1,3932 @@
+{
+  "geometry_sha256": "3e067e83428342a439e8b59cb6375252dfcb9223dd56fe4de18080559b97348c",
+  "interpretation": {
+    "outcome_boundary": "Both modes retain exactly the baseline commitment sequence and final colors. Additional elimination is earlier propagation, not a new completion or speed improvement.",
+    "probe_count_boundary": "Probe supported/unsupported counts cover actual attempted surviving probes only, with repetitions where the policy retests a candidate. They are not an exhaustive inventory of every retained candidate at every intermediate persistent state.",
+    "remaining_gap": "The initial S10=1 trial remains inconclusive despite a verified original-graph UNSAT certificate. The actual scheduler commits S16=1 first, which removes S10=1 through its real NEQ edge.",
+    "repaired_mechanism": "With only S1=1 and S16=1 committed, refuting S3=2,3,4 forces unanchored S3=1; original NEQ edges S3-S4 and S3-S5 then remove color 1 before S10=2 is committed."
+  },
+  "modes": [
+    {
+      "all_candidate": {
+        "actual_surviving_probe_counts": {
+          "preexisting_unsat": 0,
+          "supported": 216,
+          "unknown": 0,
+          "unsupported": 1
+        },
+        "audit_seconds_observed_single_run": 7.812215999998443,
+        "choices": 5,
+        "commitment_counts": {
+          "preexisting_unsat": 0,
+          "safe": 5,
+          "unknown": 0,
+          "unsafe": 0
+        },
+        "commitment_sequence": [
+          [
+            "S16",
+            1
+          ],
+          [
+            "S10",
+            2
+          ],
+          [
+            "S15",
+            3
+          ],
+          [
+            "S14",
+            1
+          ],
+          [
+            "S11",
+            3
+          ]
+        ],
+        "final_colors": {
+          "S0": 4,
+          "S1": 1,
+          "S10": 2,
+          "S11": 3,
+          "S12": 2,
+          "S13": 4,
+          "S14": 1,
+          "S15": 3,
+          "S16": 1,
+          "S17": 3,
+          "S18": 2,
+          "S2": 2,
+          "S3": 1,
+          "S4": 2,
+          "S5": 3,
+          "S6": 1,
+          "S7": 3,
+          "S8": 2,
+          "S9": 3
+        },
+        "implementation_policy": "quaternary-low-color-all-candidate-v1",
+        "oracle_record_count": 201,
+        "phase_count": 224,
+        "policy": "all-candidate",
+        "probes": 220,
+        "producer_seconds_observed_single_run": 6.797583499999746,
+        "rejection_counts": {
+          "exact_unsat": 3,
+          "unknown": 0
+        },
+        "rejections": 3,
+        "status": "solved",
+        "sweeps_completed": 5,
+        "sweeps_started": 8,
+        "trace_steps_checked": 77808
+      },
+      "baseline": {
+        "actual_surviving_probe_counts": null,
+        "audit_seconds_observed_single_run": 0.3209305999989738,
+        "choices": 5,
+        "commitment_counts": {
+          "preexisting_unsat": 0,
+          "safe": 5,
+          "unknown": 0,
+          "unsafe": 0
+        },
+        "commitment_sequence": [
+          [
+            "S16",
+            1
+          ],
+          [
+            "S10",
+            2
+          ],
+          [
+            "S15",
+            3
+          ],
+          [
+            "S14",
+            1
+          ],
+          [
+            "S11",
+            3
+          ]
+        ],
+        "final_colors": {
+          "S0": 4,
+          "S1": 1,
+          "S10": 2,
+          "S11": 3,
+          "S12": 2,
+          "S13": 4,
+          "S14": 1,
+          "S15": 3,
+          "S16": 1,
+          "S17": 3,
+          "S18": 2,
+          "S2": 2,
+          "S3": 1,
+          "S4": 2,
+          "S5": 3,
+          "S6": 1,
+          "S7": 3,
+          "S8": 2,
+          "S9": 3
+        },
+        "implementation_policy": "quaternary-low-color-odd-cycle-eq-v1",
+        "oracle_record_count": 6,
+        "phase_count": 6,
+        "policy": "odd-cycle-eq",
+        "probes": 5,
+        "producer_seconds_observed_single_run": 0.19983870000214665,
+        "rejection_counts": {
+          "exact_unsat": 0,
+          "unknown": 0
+        },
+        "rejections": 0,
+        "status": "solved",
+        "sweeps_completed": null,
+        "sweeps_started": null,
+        "trace_steps_checked": 2479
+      },
+      "same_commitment_sequence": true,
+      "same_final_colors": true,
+      "scenario": "one-bounded-anchor"
+    },
+    {
+      "all_candidate": {
+        "actual_surviving_probe_counts": {
+          "preexisting_unsat": 0,
+          "supported": 321,
+          "unknown": 0,
+          "unsupported": 0
+        },
+        "audit_seconds_observed_single_run": 8.552600800001528,
+        "choices": 9,
+        "commitment_counts": {
+          "preexisting_unsat": 0,
+          "safe": 9,
+          "unknown": 0,
+          "unsafe": 0
+        },
+        "commitment_sequence": [
+          [
+            "S10",
+            3
+          ],
+          [
+            "S11",
+            2
+          ],
+          [
+            "S14",
+            1
+          ],
+          [
+            "S15",
+            2
+          ],
+          [
+            "S16",
+            1
+          ],
+          [
+            "S9",
+            2
+          ],
+          [
+            "S13",
+            3
+          ],
+          [
+            "S18",
+            2
+          ],
+          [
+            "S7",
+            3
+          ]
+        ],
+        "final_colors": {
+          "S0": 1,
+          "S1": 2,
+          "S10": 3,
+          "S11": 2,
+          "S12": 4,
+          "S13": 3,
+          "S14": 1,
+          "S15": 2,
+          "S16": 1,
+          "S17": 1,
+          "S18": 2,
+          "S2": 3,
+          "S3": 4,
+          "S4": 2,
+          "S5": 3,
+          "S6": 4,
+          "S7": 3,
+          "S8": 4,
+          "S9": 2
+        },
+        "implementation_policy": "quaternary-low-color-all-candidate-v1",
+        "oracle_record_count": 300,
+        "phase_count": 324,
+        "policy": "all-candidate",
+        "probes": 322,
+        "producer_seconds_observed_single_run": 9.685234100001253,
+        "rejection_counts": {
+          "exact_unsat": 1,
+          "unknown": 0
+        },
+        "rejections": 1,
+        "status": "solved",
+        "sweeps_completed": 9,
+        "sweeps_started": 10,
+        "trace_steps_checked": 117524
+      },
+      "baseline": {
+        "actual_surviving_probe_counts": null,
+        "audit_seconds_observed_single_run": 0.44693869999900926,
+        "choices": 9,
+        "commitment_counts": {
+          "preexisting_unsat": 0,
+          "safe": 9,
+          "unknown": 0,
+          "unsafe": 0
+        },
+        "commitment_sequence": [
+          [
+            "S10",
+            3
+          ],
+          [
+            "S11",
+            2
+          ],
+          [
+            "S14",
+            1
+          ],
+          [
+            "S15",
+            2
+          ],
+          [
+            "S16",
+            1
+          ],
+          [
+            "S9",
+            2
+          ],
+          [
+            "S13",
+            3
+          ],
+          [
+            "S18",
+            2
+          ],
+          [
+            "S7",
+            3
+          ]
+        ],
+        "final_colors": {
+          "S0": 1,
+          "S1": 2,
+          "S10": 3,
+          "S11": 2,
+          "S12": 4,
+          "S13": 3,
+          "S14": 1,
+          "S15": 2,
+          "S16": 1,
+          "S17": 1,
+          "S18": 2,
+          "S2": 3,
+          "S3": 4,
+          "S4": 2,
+          "S5": 3,
+          "S6": 4,
+          "S7": 3,
+          "S8": 4,
+          "S9": 2
+        },
+        "implementation_policy": "quaternary-low-color-odd-cycle-eq-v1",
+        "oracle_record_count": 11,
+        "phase_count": 12,
+        "policy": "odd-cycle-eq",
+        "probes": 10,
+        "producer_seconds_observed_single_run": 0.33681720000095083,
+        "rejection_counts": {
+          "exact_unsat": 1,
+          "unknown": 0
+        },
+        "rejections": 1,
+        "status": "solved",
+        "sweeps_completed": null,
+        "sweeps_started": null,
+        "trace_steps_checked": 3209
+      },
+      "same_commitment_sequence": true,
+      "same_final_colors": true,
+      "scenario": "legacy-frame-anchors"
+    }
+  ],
+  "new_rejections": [
+    {
+      "after": {
+        "anchors": {
+          "S1": 1,
+          "S16": 1
+        },
+        "domains": {
+          "S10": [
+            2,
+            3,
+            4
+          ],
+          "S3": [
+            1,
+            3,
+            4
+          ],
+          "S4": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "S5": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "quaternary": {
+          "S10": "0111",
+          "S3": "1011",
+          "S4": "1111",
+          "S5": "1111"
+        },
+        "supplied_states": {
+          "S3": "1011"
+        }
+      },
+      "audit_step": {
+        "after_oracle_index": 57,
+        "after_phase": 76,
+        "after_status": "sat",
+        "before_oracle_index": 57,
+        "before_phase": 57,
+        "before_status": "sat",
+        "event_index": 75,
+        "extendibility": "refuted",
+        "kind": "reject",
+        "side": "S3",
+        "symbol": 2,
+        "trial_oracle_index": 75,
+        "trial_phase": 75,
+        "trial_status": "unsat"
+      },
+      "before": {
+        "anchors": {
+          "S1": 1,
+          "S16": 1
+        },
+        "domains": {
+          "S10": [
+            2,
+            3,
+            4
+          ],
+          "S3": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "S4": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "S5": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "quaternary": {
+          "S10": "0111",
+          "S3": "1111",
+          "S4": "1111",
+          "S5": "1111"
+        },
+        "supplied_states": {}
+      },
+      "certificate_sha256": "afc3728050c6674d821950f4f48717ff683899f74cf7a524f940986a77ada677",
+      "event": {
+        "after_phase": 76,
+        "before_phase": 57,
+        "candidates_before": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "extension_claim": "refuted",
+        "kind": "reject",
+        "selection": null,
+        "side": "S3",
+        "symbol": 2,
+        "trial_phase": 75
+      },
+      "event_index": 75,
+      "original_raw_oracle_record": {
+        "input": {
+          "anchors": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              16,
+              1
+            ]
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              0,
+              7
+            ],
+            [
+              0,
+              8
+            ],
+            [
+              0,
+              9
+            ],
+            [
+              0,
+              10
+            ],
+            [
+              0,
+              11
+            ],
+            [
+              0,
+              12
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              12
+            ],
+            [
+              1,
+              13
+            ],
+            [
+              1,
+              17
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              17
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              3,
+              17
+            ],
+            [
+              3,
+              18
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              5,
+              18
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              18
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              7,
+              16
+            ],
+            [
+              7,
+              18
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              8,
+              16
+            ],
+            [
+              9,
+              10
+            ],
+            [
+              9,
+              16
+            ],
+            [
+              10,
+              11
+            ],
+            [
+              10,
+              14
+            ],
+            [
+              10,
+              15
+            ],
+            [
+              10,
+              16
+            ],
+            [
+              11,
+              12
+            ],
+            [
+              11,
+              14
+            ],
+            [
+              12,
+              13
+            ],
+            [
+              12,
+              14
+            ],
+            [
+              12,
+              15
+            ],
+            [
+              13,
+              15
+            ],
+            [
+              13,
+              16
+            ],
+            [
+              13,
+              17
+            ],
+            [
+              13,
+              18
+            ],
+            [
+              14,
+              15
+            ],
+            [
+              15,
+              16
+            ],
+            [
+              16,
+              18
+            ],
+            [
+              17,
+              18
+            ]
+          ],
+          "n": 19
+        },
+        "result": {
+          "certificate": {
+            "children": [
+              {
+                "child": {
+                  "children": [
+                    {
+                      "child": {
+                        "children": [
+                          {
+                            "child": {
+                              "children": [
+                                {
+                                  "child": {
+                                    "children": [
+                                      {
+                                        "child": {
+                                          "children": [
+                                            {
+                                              "child": {
+                                                "children": [
+                                                  {
+                                                    "child": {
+                                                      "children": [
+                                                        {
+                                                          "child": {
+                                                            "blockers": [
+                                                              {
+                                                                "color": 1,
+                                                                "neighbor": 5
+                                                              },
+                                                              {
+                                                                "color": 2,
+                                                                "neighbor": 7
+                                                              },
+                                                              {
+                                                                "color": 3,
+                                                                "neighbor": 0
+                                                              },
+                                                              {
+                                                                "color": 4,
+                                                                "neighbor": 18
+                                                              }
+                                                            ],
+                                                            "kind": "dead_end",
+                                                            "vertex": 6
+                                                          },
+                                                          "color": 2
+                                                        }
+                                                      ],
+                                                      "kind": "branch",
+                                                      "vertex": 7
+                                                    },
+                                                    "color": 1
+                                                  }
+                                                ],
+                                                "kind": "branch",
+                                                "vertex": 5
+                                              },
+                                              "color": 4
+                                            }
+                                          ],
+                                          "kind": "branch",
+                                          "vertex": 12
+                                        },
+                                        "color": 2
+                                      }
+                                    ],
+                                    "kind": "branch",
+                                    "vertex": 13
+                                  },
+                                  "color": 4
+                                }
+                              ],
+                              "kind": "branch",
+                              "vertex": 18
+                            },
+                            "color": 3
+                          }
+                        ],
+                        "kind": "branch",
+                        "vertex": 17
+                      },
+                      "color": 4
+                    }
+                  ],
+                  "kind": "branch",
+                  "vertex": 2
+                },
+                "color": 3
+              },
+              {
+                "child": {
+                  "children": [
+                    {
+                      "child": {
+                        "children": [
+                          {
+                            "child": {
+                              "children": [
+                                {
+                                  "child": {
+                                    "children": [
+                                      {
+                                        "child": {
+                                          "children": [
+                                            {
+                                              "child": {
+                                                "children": [
+                                                  {
+                                                    "child": {
+                                                      "children": [
+                                                        {
+                                                          "child": {
+                                                            "blockers": [
+                                                              {
+                                                                "color": 1,
+                                                                "neighbor": 5
+                                                              },
+                                                              {
+                                                                "color": 2,
+                                                                "neighbor": 7
+                                                              },
+                                                              {
+                                                                "color": 3,
+                                                                "neighbor": 18
+                                                              },
+                                                              {
+                                                                "color": 4,
+                                                                "neighbor": 0
+                                                              }
+                                                            ],
+                                                            "kind": "dead_end",
+                                                            "vertex": 6
+                                                          },
+                                                          "color": 2
+                                                        }
+                                                      ],
+                                                      "kind": "branch",
+                                                      "vertex": 7
+                                                    },
+                                                    "color": 1
+                                                  }
+                                                ],
+                                                "kind": "branch",
+                                                "vertex": 5
+                                              },
+                                              "color": 3
+                                            }
+                                          ],
+                                          "kind": "branch",
+                                          "vertex": 12
+                                        },
+                                        "color": 2
+                                      }
+                                    ],
+                                    "kind": "branch",
+                                    "vertex": 13
+                                  },
+                                  "color": 3
+                                }
+                              ],
+                              "kind": "branch",
+                              "vertex": 18
+                            },
+                            "color": 4
+                          }
+                        ],
+                        "kind": "branch",
+                        "vertex": 17
+                      },
+                      "color": 3
+                    }
+                  ],
+                  "kind": "branch",
+                  "vertex": 2
+                },
+                "color": 4
+              }
+            ],
+            "kind": "branch",
+            "vertex": 0
+          },
+          "input_sha256": "ed299fe2ef6648da7673d317659b1b4225d59c9324ec7354d2cc44d1f4ed985a",
+          "method": "independent-mrv-literal-four-colors-v1",
+          "node_limit": 200000,
+          "nodes": 17,
+          "palette": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "reason": null,
+          "schema_version": 1,
+          "status": "unsat",
+          "witness": null
+        },
+        "verification": {
+          "claim": "complete-literal-four-name-unsat-tree",
+          "conclusive": true,
+          "leaves_checked": 2,
+          "nodes_independently_counted": 17,
+          "passed": true,
+          "status": "unsat"
+        }
+      },
+      "reverified_certificate": {
+        "claim": "complete-literal-four-name-unsat-tree",
+        "conclusive": true,
+        "leaves_checked": 2,
+        "nodes_independently_counted": 17,
+        "passed": true,
+        "status": "unsat"
+      },
+      "scenario": "one-bounded-anchor",
+      "trial_status": "conflict",
+      "trial_trace_steps": 313
+    },
+    {
+      "after": {
+        "anchors": {
+          "S1": 1,
+          "S16": 1
+        },
+        "domains": {
+          "S10": [
+            2,
+            3,
+            4
+          ],
+          "S3": [
+            1,
+            4
+          ],
+          "S4": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "S5": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "quaternary": {
+          "S10": "0111",
+          "S3": "1001",
+          "S4": "1111",
+          "S5": "1111"
+        },
+        "supplied_states": {
+          "S3": "1001"
+        }
+      },
+      "audit_step": {
+        "after_oracle_index": 57,
+        "after_phase": 85,
+        "after_status": "sat",
+        "before_oracle_index": 57,
+        "before_phase": 76,
+        "before_status": "sat",
+        "event_index": 83,
+        "extendibility": "refuted",
+        "kind": "reject",
+        "side": "S3",
+        "symbol": 3,
+        "trial_oracle_index": 76,
+        "trial_phase": 84,
+        "trial_status": "unsat"
+      },
+      "before": {
+        "anchors": {
+          "S1": 1,
+          "S16": 1
+        },
+        "domains": {
+          "S10": [
+            2,
+            3,
+            4
+          ],
+          "S3": [
+            1,
+            3,
+            4
+          ],
+          "S4": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "S5": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "quaternary": {
+          "S10": "0111",
+          "S3": "1011",
+          "S4": "1111",
+          "S5": "1111"
+        },
+        "supplied_states": {
+          "S3": "1011"
+        }
+      },
+      "certificate_sha256": "90ad796ebd0d9ab43d803f08531d31c7b775f002c1b9588b6acfca81913e4085",
+      "event": {
+        "after_phase": 85,
+        "before_phase": 76,
+        "candidates_before": [
+          1,
+          3,
+          4
+        ],
+        "extension_claim": "refuted",
+        "kind": "reject",
+        "selection": null,
+        "side": "S3",
+        "symbol": 3,
+        "trial_phase": 84
+      },
+      "event_index": 83,
+      "original_raw_oracle_record": {
+        "input": {
+          "anchors": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              16,
+              1
+            ]
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              0,
+              7
+            ],
+            [
+              0,
+              8
+            ],
+            [
+              0,
+              9
+            ],
+            [
+              0,
+              10
+            ],
+            [
+              0,
+              11
+            ],
+            [
+              0,
+              12
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              12
+            ],
+            [
+              1,
+              13
+            ],
+            [
+              1,
+              17
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              17
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              3,
+              17
+            ],
+            [
+              3,
+              18
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              5,
+              18
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              18
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              7,
+              16
+            ],
+            [
+              7,
+              18
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              8,
+              16
+            ],
+            [
+              9,
+              10
+            ],
+            [
+              9,
+              16
+            ],
+            [
+              10,
+              11
+            ],
+            [
+              10,
+              14
+            ],
+            [
+              10,
+              15
+            ],
+            [
+              10,
+              16
+            ],
+            [
+              11,
+              12
+            ],
+            [
+              11,
+              14
+            ],
+            [
+              12,
+              13
+            ],
+            [
+              12,
+              14
+            ],
+            [
+              12,
+              15
+            ],
+            [
+              13,
+              15
+            ],
+            [
+              13,
+              16
+            ],
+            [
+              13,
+              17
+            ],
+            [
+              13,
+              18
+            ],
+            [
+              14,
+              15
+            ],
+            [
+              15,
+              16
+            ],
+            [
+              16,
+              18
+            ],
+            [
+              17,
+              18
+            ]
+          ],
+          "n": 19
+        },
+        "result": {
+          "certificate": {
+            "children": [
+              {
+                "child": {
+                  "children": [
+                    {
+                      "child": {
+                        "children": [
+                          {
+                            "child": {
+                              "children": [
+                                {
+                                  "child": {
+                                    "children": [
+                                      {
+                                        "child": {
+                                          "children": [
+                                            {
+                                              "child": {
+                                                "children": [
+                                                  {
+                                                    "child": {
+                                                      "children": [
+                                                        {
+                                                          "child": {
+                                                            "blockers": [
+                                                              {
+                                                                "color": 1,
+                                                                "neighbor": 5
+                                                              },
+                                                              {
+                                                                "color": 2,
+                                                                "neighbor": 0
+                                                              },
+                                                              {
+                                                                "color": 3,
+                                                                "neighbor": 7
+                                                              },
+                                                              {
+                                                                "color": 4,
+                                                                "neighbor": 18
+                                                              }
+                                                            ],
+                                                            "kind": "dead_end",
+                                                            "vertex": 6
+                                                          },
+                                                          "color": 3
+                                                        }
+                                                      ],
+                                                      "kind": "branch",
+                                                      "vertex": 7
+                                                    },
+                                                    "color": 1
+                                                  }
+                                                ],
+                                                "kind": "branch",
+                                                "vertex": 5
+                                              },
+                                              "color": 4
+                                            }
+                                          ],
+                                          "kind": "branch",
+                                          "vertex": 12
+                                        },
+                                        "color": 3
+                                      }
+                                    ],
+                                    "kind": "branch",
+                                    "vertex": 13
+                                  },
+                                  "color": 4
+                                }
+                              ],
+                              "kind": "branch",
+                              "vertex": 18
+                            },
+                            "color": 2
+                          }
+                        ],
+                        "kind": "branch",
+                        "vertex": 17
+                      },
+                      "color": 4
+                    }
+                  ],
+                  "kind": "branch",
+                  "vertex": 2
+                },
+                "color": 2
+              },
+              {
+                "child": {
+                  "children": [
+                    {
+                      "child": {
+                        "children": [
+                          {
+                            "child": {
+                              "children": [
+                                {
+                                  "child": {
+                                    "children": [
+                                      {
+                                        "child": {
+                                          "children": [
+                                            {
+                                              "child": {
+                                                "children": [
+                                                  {
+                                                    "child": {
+                                                      "children": [
+                                                        {
+                                                          "child": {
+                                                            "blockers": [
+                                                              {
+                                                                "color": 1,
+                                                                "neighbor": 5
+                                                              },
+                                                              {
+                                                                "color": 2,
+                                                                "neighbor": 18
+                                                              },
+                                                              {
+                                                                "color": 3,
+                                                                "neighbor": 7
+                                                              },
+                                                              {
+                                                                "color": 4,
+                                                                "neighbor": 0
+                                                              }
+                                                            ],
+                                                            "kind": "dead_end",
+                                                            "vertex": 6
+                                                          },
+                                                          "color": 3
+                                                        }
+                                                      ],
+                                                      "kind": "branch",
+                                                      "vertex": 7
+                                                    },
+                                                    "color": 1
+                                                  }
+                                                ],
+                                                "kind": "branch",
+                                                "vertex": 5
+                                              },
+                                              "color": 2
+                                            }
+                                          ],
+                                          "kind": "branch",
+                                          "vertex": 12
+                                        },
+                                        "color": 3
+                                      }
+                                    ],
+                                    "kind": "branch",
+                                    "vertex": 13
+                                  },
+                                  "color": 2
+                                }
+                              ],
+                              "kind": "branch",
+                              "vertex": 18
+                            },
+                            "color": 4
+                          }
+                        ],
+                        "kind": "branch",
+                        "vertex": 17
+                      },
+                      "color": 2
+                    }
+                  ],
+                  "kind": "branch",
+                  "vertex": 2
+                },
+                "color": 4
+              }
+            ],
+            "kind": "branch",
+            "vertex": 0
+          },
+          "input_sha256": "5eeb98e8366d59b916f765a1db54b75b59390601e29fb02d2acfd26f7a85e384",
+          "method": "independent-mrv-literal-four-colors-v1",
+          "node_limit": 200000,
+          "nodes": 17,
+          "palette": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "reason": null,
+          "schema_version": 1,
+          "status": "unsat",
+          "witness": null
+        },
+        "verification": {
+          "claim": "complete-literal-four-name-unsat-tree",
+          "conclusive": true,
+          "leaves_checked": 2,
+          "nodes_independently_counted": 17,
+          "passed": true,
+          "status": "unsat"
+        }
+      },
+      "reverified_certificate": {
+        "claim": "complete-literal-four-name-unsat-tree",
+        "conclusive": true,
+        "leaves_checked": 2,
+        "nodes_independently_counted": 17,
+        "passed": true,
+        "status": "unsat"
+      },
+      "scenario": "one-bounded-anchor",
+      "trial_status": "conflict",
+      "trial_trace_steps": 313
+    },
+    {
+      "after": {
+        "anchors": {
+          "S1": 1,
+          "S16": 1
+        },
+        "domains": {
+          "S10": [
+            2,
+            3,
+            4
+          ],
+          "S3": [
+            1
+          ],
+          "S4": [
+            2,
+            3,
+            4
+          ],
+          "S5": [
+            2,
+            3,
+            4
+          ]
+        },
+        "quaternary": {
+          "S10": "0111",
+          "S3": "2000",
+          "S4": "0111",
+          "S5": "0111"
+        },
+        "supplied_states": {
+          "S3": "2000"
+        }
+      },
+      "audit_step": {
+        "after_oracle_index": 57,
+        "after_phase": 94,
+        "after_status": "sat",
+        "before_oracle_index": 57,
+        "before_phase": 85,
+        "before_status": "sat",
+        "event_index": 91,
+        "extendibility": "refuted",
+        "kind": "reject",
+        "side": "S3",
+        "symbol": 4,
+        "trial_oracle_index": 77,
+        "trial_phase": 93,
+        "trial_status": "unsat"
+      },
+      "before": {
+        "anchors": {
+          "S1": 1,
+          "S16": 1
+        },
+        "domains": {
+          "S10": [
+            2,
+            3,
+            4
+          ],
+          "S3": [
+            1,
+            4
+          ],
+          "S4": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "S5": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "quaternary": {
+          "S10": "0111",
+          "S3": "1001",
+          "S4": "1111",
+          "S5": "1111"
+        },
+        "supplied_states": {
+          "S3": "1001"
+        }
+      },
+      "certificate_sha256": "1a183468a632df5ff1d790af1fac7ee4dbbd77c5ff3c5ac20c35678f3c62920d",
+      "event": {
+        "after_phase": 94,
+        "before_phase": 85,
+        "candidates_before": [
+          1,
+          4
+        ],
+        "extension_claim": "refuted",
+        "kind": "reject",
+        "selection": null,
+        "side": "S3",
+        "symbol": 4,
+        "trial_phase": 93
+      },
+      "event_index": 91,
+      "original_raw_oracle_record": {
+        "input": {
+          "anchors": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              16,
+              1
+            ]
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              0,
+              7
+            ],
+            [
+              0,
+              8
+            ],
+            [
+              0,
+              9
+            ],
+            [
+              0,
+              10
+            ],
+            [
+              0,
+              11
+            ],
+            [
+              0,
+              12
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              12
+            ],
+            [
+              1,
+              13
+            ],
+            [
+              1,
+              17
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              17
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              3,
+              17
+            ],
+            [
+              3,
+              18
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              5,
+              18
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              18
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              7,
+              16
+            ],
+            [
+              7,
+              18
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              8,
+              16
+            ],
+            [
+              9,
+              10
+            ],
+            [
+              9,
+              16
+            ],
+            [
+              10,
+              11
+            ],
+            [
+              10,
+              14
+            ],
+            [
+              10,
+              15
+            ],
+            [
+              10,
+              16
+            ],
+            [
+              11,
+              12
+            ],
+            [
+              11,
+              14
+            ],
+            [
+              12,
+              13
+            ],
+            [
+              12,
+              14
+            ],
+            [
+              12,
+              15
+            ],
+            [
+              13,
+              15
+            ],
+            [
+              13,
+              16
+            ],
+            [
+              13,
+              17
+            ],
+            [
+              13,
+              18
+            ],
+            [
+              14,
+              15
+            ],
+            [
+              15,
+              16
+            ],
+            [
+              16,
+              18
+            ],
+            [
+              17,
+              18
+            ]
+          ],
+          "n": 19
+        },
+        "result": {
+          "certificate": {
+            "children": [
+              {
+                "child": {
+                  "children": [
+                    {
+                      "child": {
+                        "children": [
+                          {
+                            "child": {
+                              "children": [
+                                {
+                                  "child": {
+                                    "children": [
+                                      {
+                                        "child": {
+                                          "children": [
+                                            {
+                                              "child": {
+                                                "children": [
+                                                  {
+                                                    "child": {
+                                                      "children": [
+                                                        {
+                                                          "child": {
+                                                            "blockers": [
+                                                              {
+                                                                "color": 1,
+                                                                "neighbor": 5
+                                                              },
+                                                              {
+                                                                "color": 2,
+                                                                "neighbor": 0
+                                                              },
+                                                              {
+                                                                "color": 3,
+                                                                "neighbor": 18
+                                                              },
+                                                              {
+                                                                "color": 4,
+                                                                "neighbor": 7
+                                                              }
+                                                            ],
+                                                            "kind": "dead_end",
+                                                            "vertex": 6
+                                                          },
+                                                          "color": 4
+                                                        }
+                                                      ],
+                                                      "kind": "branch",
+                                                      "vertex": 7
+                                                    },
+                                                    "color": 1
+                                                  }
+                                                ],
+                                                "kind": "branch",
+                                                "vertex": 5
+                                              },
+                                              "color": 3
+                                            }
+                                          ],
+                                          "kind": "branch",
+                                          "vertex": 12
+                                        },
+                                        "color": 4
+                                      }
+                                    ],
+                                    "kind": "branch",
+                                    "vertex": 13
+                                  },
+                                  "color": 3
+                                }
+                              ],
+                              "kind": "branch",
+                              "vertex": 18
+                            },
+                            "color": 2
+                          }
+                        ],
+                        "kind": "branch",
+                        "vertex": 17
+                      },
+                      "color": 3
+                    }
+                  ],
+                  "kind": "branch",
+                  "vertex": 2
+                },
+                "color": 2
+              },
+              {
+                "child": {
+                  "children": [
+                    {
+                      "child": {
+                        "children": [
+                          {
+                            "child": {
+                              "children": [
+                                {
+                                  "child": {
+                                    "children": [
+                                      {
+                                        "child": {
+                                          "children": [
+                                            {
+                                              "child": {
+                                                "children": [
+                                                  {
+                                                    "child": {
+                                                      "children": [
+                                                        {
+                                                          "child": {
+                                                            "blockers": [
+                                                              {
+                                                                "color": 1,
+                                                                "neighbor": 5
+                                                              },
+                                                              {
+                                                                "color": 2,
+                                                                "neighbor": 18
+                                                              },
+                                                              {
+                                                                "color": 3,
+                                                                "neighbor": 0
+                                                              },
+                                                              {
+                                                                "color": 4,
+                                                                "neighbor": 7
+                                                              }
+                                                            ],
+                                                            "kind": "dead_end",
+                                                            "vertex": 6
+                                                          },
+                                                          "color": 4
+                                                        }
+                                                      ],
+                                                      "kind": "branch",
+                                                      "vertex": 7
+                                                    },
+                                                    "color": 1
+                                                  }
+                                                ],
+                                                "kind": "branch",
+                                                "vertex": 5
+                                              },
+                                              "color": 2
+                                            }
+                                          ],
+                                          "kind": "branch",
+                                          "vertex": 12
+                                        },
+                                        "color": 4
+                                      }
+                                    ],
+                                    "kind": "branch",
+                                    "vertex": 13
+                                  },
+                                  "color": 2
+                                }
+                              ],
+                              "kind": "branch",
+                              "vertex": 18
+                            },
+                            "color": 3
+                          }
+                        ],
+                        "kind": "branch",
+                        "vertex": 17
+                      },
+                      "color": 2
+                    }
+                  ],
+                  "kind": "branch",
+                  "vertex": 2
+                },
+                "color": 3
+              }
+            ],
+            "kind": "branch",
+            "vertex": 0
+          },
+          "input_sha256": "75d7e4054c3d615dd6d7dcb3e8eb831f815aacdd2d25e3bc03dd187e620327cd",
+          "method": "independent-mrv-literal-four-colors-v1",
+          "node_limit": 200000,
+          "nodes": 17,
+          "palette": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "reason": null,
+          "schema_version": 1,
+          "status": "unsat",
+          "witness": null
+        },
+        "verification": {
+          "claim": "complete-literal-four-name-unsat-tree",
+          "conclusive": true,
+          "leaves_checked": 2,
+          "nodes_independently_counted": 17,
+          "passed": true,
+          "status": "unsat"
+        }
+      },
+      "reverified_certificate": {
+        "claim": "complete-literal-four-name-unsat-tree",
+        "conclusive": true,
+        "leaves_checked": 2,
+        "nodes_independently_counted": 17,
+        "passed": true,
+        "status": "unsat"
+      },
+      "scenario": "one-bounded-anchor",
+      "trial_status": "conflict",
+      "trial_trace_steps": 313
+    },
+    {
+      "after": {
+        "anchors": {
+          "S0": 1,
+          "S1": 2
+        },
+        "domains": {
+          "S10": [
+            3,
+            4
+          ],
+          "S3": [
+            2,
+            3,
+            4
+          ],
+          "S4": [
+            2,
+            3,
+            4
+          ],
+          "S5": [
+            2,
+            3,
+            4
+          ]
+        },
+        "quaternary": {
+          "S10": "0011",
+          "S3": "0111",
+          "S4": "0111",
+          "S5": "0111"
+        },
+        "supplied_states": {
+          "S10": "0011"
+        }
+      },
+      "audit_step": {
+        "after_oracle_index": 0,
+        "after_phase": 25,
+        "after_status": "sat",
+        "before_oracle_index": 0,
+        "before_phase": 0,
+        "before_status": "sat",
+        "event_index": 23,
+        "extendibility": "refuted",
+        "kind": "reject",
+        "side": "S10",
+        "symbol": 2,
+        "trial_oracle_index": 24,
+        "trial_phase": 24,
+        "trial_status": "unsat"
+      },
+      "before": {
+        "anchors": {
+          "S0": 1,
+          "S1": 2
+        },
+        "domains": {
+          "S10": [
+            2,
+            3,
+            4
+          ],
+          "S3": [
+            2,
+            3,
+            4
+          ],
+          "S4": [
+            2,
+            3,
+            4
+          ],
+          "S5": [
+            2,
+            3,
+            4
+          ]
+        },
+        "quaternary": {
+          "S10": "0111",
+          "S3": "0111",
+          "S4": "0111",
+          "S5": "0111"
+        },
+        "supplied_states": {}
+      },
+      "certificate_sha256": "07c30095ba4338b92caec4b9624e79e4ab3c9992a1e92512696b92bc3be23780",
+      "event": {
+        "after_phase": 25,
+        "before_phase": 0,
+        "candidates_before": [
+          2,
+          3,
+          4
+        ],
+        "extension_claim": "refuted",
+        "kind": "reject",
+        "selection": null,
+        "side": "S10",
+        "symbol": 2,
+        "trial_phase": 24
+      },
+      "event_index": 23,
+      "original_raw_oracle_record": {
+        "input": {
+          "anchors": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              10,
+              2
+            ]
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              0,
+              7
+            ],
+            [
+              0,
+              8
+            ],
+            [
+              0,
+              9
+            ],
+            [
+              0,
+              10
+            ],
+            [
+              0,
+              11
+            ],
+            [
+              0,
+              12
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              12
+            ],
+            [
+              1,
+              13
+            ],
+            [
+              1,
+              17
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              17
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              3,
+              17
+            ],
+            [
+              3,
+              18
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              5,
+              18
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              18
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              7,
+              16
+            ],
+            [
+              7,
+              18
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              8,
+              16
+            ],
+            [
+              9,
+              10
+            ],
+            [
+              9,
+              16
+            ],
+            [
+              10,
+              11
+            ],
+            [
+              10,
+              14
+            ],
+            [
+              10,
+              15
+            ],
+            [
+              10,
+              16
+            ],
+            [
+              11,
+              12
+            ],
+            [
+              11,
+              14
+            ],
+            [
+              12,
+              13
+            ],
+            [
+              12,
+              14
+            ],
+            [
+              12,
+              15
+            ],
+            [
+              13,
+              15
+            ],
+            [
+              13,
+              16
+            ],
+            [
+              13,
+              17
+            ],
+            [
+              13,
+              18
+            ],
+            [
+              14,
+              15
+            ],
+            [
+              15,
+              16
+            ],
+            [
+              16,
+              18
+            ],
+            [
+              17,
+              18
+            ]
+          ],
+          "n": 19
+        },
+        "result": {
+          "certificate": {
+            "children": [
+              {
+                "child": {
+                  "children": [
+                    {
+                      "child": {
+                        "children": [
+                          {
+                            "child": {
+                              "children": [
+                                {
+                                  "child": {
+                                    "children": [
+                                      {
+                                        "child": {
+                                          "children": [
+                                            {
+                                              "child": {
+                                                "children": [
+                                                  {
+                                                    "child": {
+                                                      "children": [
+                                                        {
+                                                          "child": {
+                                                            "children": [
+                                                              {
+                                                                "child": {
+                                                                  "children": [
+                                                                    {
+                                                                      "child": {
+                                                                        "children": [
+                                                                          {
+                                                                            "child": {
+                                                                              "children": [
+                                                                                {
+                                                                                  "child": {
+                                                                                    "children": [
+                                                                                      {
+                                                                                        "child": {
+                                                                                          "children": [
+                                                                                            {
+                                                                                              "child": {
+                                                                                                "blockers": [
+                                                                                                  {
+                                                                                                    "color": 1,
+                                                                                                    "neighbor": 0
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "color": 2,
+                                                                                                    "neighbor": 1
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "color": 3,
+                                                                                                    "neighbor": 3
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "color": 4,
+                                                                                                    "neighbor": 17
+                                                                                                  }
+                                                                                                ],
+                                                                                                "kind": "dead_end",
+                                                                                                "vertex": 2
+                                                                                              },
+                                                                                              "color": 4
+                                                                                            }
+                                                                                          ],
+                                                                                          "kind": "branch",
+                                                                                          "vertex": 17
+                                                                                        },
+                                                                                        "color": 3
+                                                                                      }
+                                                                                    ],
+                                                                                    "kind": "branch",
+                                                                                    "vertex": 3
+                                                                                  },
+                                                                                  "color": 4
+                                                                                }
+                                                                              ],
+                                                                              "kind": "branch",
+                                                                              "vertex": 5
+                                                                            },
+                                                                            "color": 3
+                                                                          }
+                                                                        ],
+                                                                        "kind": "branch",
+                                                                        "vertex": 6
+                                                                      },
+                                                                      "color": 2
+                                                                    }
+                                                                  ],
+                                                                  "kind": "branch",
+                                                                  "vertex": 18
+                                                                },
+                                                                "color": 4
+                                                              }
+                                                            ],
+                                                            "kind": "branch",
+                                                            "vertex": 7
+                                                          },
+                                                          "color": 2
+                                                        }
+                                                      ],
+                                                      "kind": "branch",
+                                                      "vertex": 8
+                                                    },
+                                                    "color": 4
+                                                  }
+                                                ],
+                                                "kind": "branch",
+                                                "vertex": 9
+                                              },
+                                              "color": 3
+                                            }
+                                          ],
+                                          "kind": "branch",
+                                          "vertex": 16
+                                        },
+                                        "color": 1
+                                      }
+                                    ],
+                                    "kind": "branch",
+                                    "vertex": 13
+                                  },
+                                  "color": 4
+                                }
+                              ],
+                              "kind": "branch",
+                              "vertex": 15
+                            },
+                            "color": 1
+                          }
+                        ],
+                        "kind": "branch",
+                        "vertex": 14
+                      },
+                      "color": 4
+                    }
+                  ],
+                  "kind": "branch",
+                  "vertex": 11
+                },
+                "color": 3
+              },
+              {
+                "child": {
+                  "children": [
+                    {
+                      "child": {
+                        "children": [
+                          {
+                            "child": {
+                              "children": [
+                                {
+                                  "child": {
+                                    "children": [
+                                      {
+                                        "child": {
+                                          "children": [
+                                            {
+                                              "child": {
+                                                "children": [
+                                                  {
+                                                    "child": {
+                                                      "children": [
+                                                        {
+                                                          "child": {
+                                                            "children": [
+                                                              {
+                                                                "child": {
+                                                                  "children": [
+                                                                    {
+                                                                      "child": {
+                                                                        "children": [
+                                                                          {
+                                                                            "child": {
+                                                                              "children": [
+                                                                                {
+                                                                                  "child": {
+                                                                                    "children": [
+                                                                                      {
+                                                                                        "child": {
+                                                                                          "children": [
+                                                                                            {
+                                                                                              "child": {
+                                                                                                "blockers": [
+                                                                                                  {
+                                                                                                    "color": 1,
+                                                                                                    "neighbor": 0
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "color": 2,
+                                                                                                    "neighbor": 1
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "color": 3,
+                                                                                                    "neighbor": 17
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "color": 4,
+                                                                                                    "neighbor": 3
+                                                                                                  }
+                                                                                                ],
+                                                                                                "kind": "dead_end",
+                                                                                                "vertex": 2
+                                                                                              },
+                                                                                              "color": 3
+                                                                                            }
+                                                                                          ],
+                                                                                          "kind": "branch",
+                                                                                          "vertex": 17
+                                                                                        },
+                                                                                        "color": 4
+                                                                                      }
+                                                                                    ],
+                                                                                    "kind": "branch",
+                                                                                    "vertex": 3
+                                                                                  },
+                                                                                  "color": 3
+                                                                                }
+                                                                              ],
+                                                                              "kind": "branch",
+                                                                              "vertex": 5
+                                                                            },
+                                                                            "color": 4
+                                                                          }
+                                                                        ],
+                                                                        "kind": "branch",
+                                                                        "vertex": 6
+                                                                      },
+                                                                      "color": 2
+                                                                    }
+                                                                  ],
+                                                                  "kind": "branch",
+                                                                  "vertex": 18
+                                                                },
+                                                                "color": 3
+                                                              }
+                                                            ],
+                                                            "kind": "branch",
+                                                            "vertex": 7
+                                                          },
+                                                          "color": 2
+                                                        }
+                                                      ],
+                                                      "kind": "branch",
+                                                      "vertex": 8
+                                                    },
+                                                    "color": 3
+                                                  }
+                                                ],
+                                                "kind": "branch",
+                                                "vertex": 9
+                                              },
+                                              "color": 4
+                                            }
+                                          ],
+                                          "kind": "branch",
+                                          "vertex": 16
+                                        },
+                                        "color": 1
+                                      }
+                                    ],
+                                    "kind": "branch",
+                                    "vertex": 13
+                                  },
+                                  "color": 3
+                                }
+                              ],
+                              "kind": "branch",
+                              "vertex": 15
+                            },
+                            "color": 1
+                          }
+                        ],
+                        "kind": "branch",
+                        "vertex": 14
+                      },
+                      "color": 3
+                    }
+                  ],
+                  "kind": "branch",
+                  "vertex": 11
+                },
+                "color": 4
+              }
+            ],
+            "kind": "branch",
+            "vertex": 12
+          },
+          "input_sha256": "60328c1655d0fc3576d83e378b652cd7dc58968f540d64af7384083e2fd45672",
+          "method": "independent-mrv-literal-four-colors-v1",
+          "node_limit": 200000,
+          "nodes": 29,
+          "palette": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "reason": null,
+          "schema_version": 1,
+          "status": "unsat",
+          "witness": null
+        },
+        "verification": {
+          "claim": "complete-literal-four-name-unsat-tree",
+          "conclusive": true,
+          "leaves_checked": 2,
+          "nodes_independently_counted": 29,
+          "passed": true,
+          "status": "unsat"
+        }
+      },
+      "reverified_certificate": {
+        "claim": "complete-literal-four-name-unsat-tree",
+        "conclusive": true,
+        "leaves_checked": 2,
+        "nodes_independently_counted": 29,
+        "passed": true,
+        "status": "unsat"
+      },
+      "scenario": "legacy-frame-anchors",
+      "trial_status": "conflict",
+      "trial_trace_steps": 355
+    }
+  ],
+  "raw_drawing_key": "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132",
+  "schema_version": 1,
+  "scope": "Posthoc extraction of one complete frozen checkpoint. No new producer, propagation, or oracle search. Saved UNSAT certificates are independently replayed against original real NEQ edges and actual anchors plus the tested candidate. This packet does not claim complete candidate inventories at every intermediate rejection state.",
+  "source_checkpoint": {
+    "manifest_record_index": 44,
+    "path": "outputs/quaternary-all-candidate-2026-09-26-checkpoints/044-8070783fd68d.json.gz",
+    "record_sha256": "865bca18b1fb20a911b1ad73c8eaa16c762df6a7bf6cb0ac44ab10f7a6e3d384",
+    "sha256": "296bf8fd70bd4aa67ae6ded9605b47e8fbe8b96b397b34548e1b4075e65640f9"
+  },
+  "source_contains": "Full drawing, geometry, raw documents, complete producer phases/traces, and all exact certificates remain in the source manifest/checkpoint.",
+  "source_manifest": {
+    "path": "outputs/quaternary-all-candidate-manifest-2026-09-26.json.gz",
+    "sha256": "9c6b5a375d690d764dfaa972f5c11838d1d8c91e7a998e54c9d120a83beaeb8a"
+  },
+  "unhandled_initial_probe": {
+    "after": {
+      "anchors": {
+        "S1": 1
+      },
+      "domains": {
+        "S10": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S3": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S4": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S5": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "quaternary": {
+        "S10": "1111",
+        "S3": "1111",
+        "S4": "1111",
+        "S5": "1111"
+      },
+      "supplied_states": {}
+    },
+    "audit_step": {
+      "after_oracle_index": 0,
+      "after_phase": 0,
+      "after_status": "sat",
+      "before_oracle_index": 0,
+      "before_phase": 0,
+      "before_status": "sat",
+      "event_index": 34,
+      "extendibility": "unsupported",
+      "kind": "probe",
+      "side": "S10",
+      "symbol": 1,
+      "trial_oracle_index": 35,
+      "trial_phase": 35,
+      "trial_status": "unsat"
+    },
+    "before": {
+      "anchors": {
+        "S1": 1
+      },
+      "domains": {
+        "S10": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S3": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S4": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S5": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "quaternary": {
+        "S10": "1111",
+        "S3": "1111",
+        "S4": "1111",
+        "S5": "1111"
+      },
+      "supplied_states": {}
+    },
+    "certificate_sha256": "acbadc75e84d70911bf1a5d4873ba2b51dfb3e9038f7fd1f32718a6ac8c95f4e",
+    "event": {
+      "after_phase": 0,
+      "before_phase": 0,
+      "candidates_before": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "extension_claim": "inconclusive",
+      "kind": "probe",
+      "selection": null,
+      "side": "S10",
+      "symbol": 1,
+      "trial_phase": 35
+    },
+    "event_index": 34,
+    "original_raw_oracle_record": {
+      "input": {
+        "anchors": [
+          [
+            1,
+            1
+          ],
+          [
+            10,
+            1
+          ]
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            0,
+            10
+          ],
+          [
+            0,
+            11
+          ],
+          [
+            0,
+            12
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            1,
+            13
+          ],
+          [
+            1,
+            17
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            17
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            17
+          ],
+          [
+            3,
+            18
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            5,
+            18
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            6,
+            18
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            7,
+            16
+          ],
+          [
+            7,
+            18
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            8,
+            16
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            9,
+            16
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            10,
+            14
+          ],
+          [
+            10,
+            15
+          ],
+          [
+            10,
+            16
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            11,
+            14
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            12,
+            14
+          ],
+          [
+            12,
+            15
+          ],
+          [
+            13,
+            15
+          ],
+          [
+            13,
+            16
+          ],
+          [
+            13,
+            17
+          ],
+          [
+            13,
+            18
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            16,
+            18
+          ],
+          [
+            17,
+            18
+          ]
+        ],
+        "n": 19
+      },
+      "result": {
+        "certificate": {
+          "children": [
+            {
+              "child": {
+                "children": [
+                  {
+                    "child": {
+                      "children": [
+                        {
+                          "child": {
+                            "children": [
+                              {
+                                "child": {
+                                  "children": [
+                                    {
+                                      "child": {
+                                        "children": [
+                                          {
+                                            "child": {
+                                              "children": [
+                                                {
+                                                  "child": {
+                                                    "children": [
+                                                      {
+                                                        "child": {
+                                                          "children": [
+                                                            {
+                                                              "child": {
+                                                                "children": [
+                                                                  {
+                                                                    "child": {
+                                                                      "children": [
+                                                                        {
+                                                                          "child": {
+                                                                            "children": [
+                                                                              {
+                                                                                "child": {
+                                                                                  "children": [
+                                                                                    {
+                                                                                      "child": {
+                                                                                        "children": [
+                                                                                          {
+                                                                                            "child": {
+                                                                                              "children": [
+                                                                                                {
+                                                                                                  "child": {
+                                                                                                    "blockers": [
+                                                                                                      {
+                                                                                                        "color": 1,
+                                                                                                        "neighbor": 1
+                                                                                                      },
+                                                                                                      {
+                                                                                                        "color": 2,
+                                                                                                        "neighbor": 0
+                                                                                                      },
+                                                                                                      {
+                                                                                                        "color": 3,
+                                                                                                        "neighbor": 3
+                                                                                                      },
+                                                                                                      {
+                                                                                                        "color": 4,
+                                                                                                        "neighbor": 17
+                                                                                                      }
+                                                                                                    ],
+                                                                                                    "kind": "dead_end",
+                                                                                                    "vertex": 2
+                                                                                                  },
+                                                                                                  "color": 4
+                                                                                                }
+                                                                                              ],
+                                                                                              "kind": "branch",
+                                                                                              "vertex": 17
+                                                                                            },
+                                                                                            "color": 3
+                                                                                          }
+                                                                                        ],
+                                                                                        "kind": "branch",
+                                                                                        "vertex": 3
+                                                                                      },
+                                                                                      "color": 4
+                                                                                    }
+                                                                                  ],
+                                                                                  "kind": "branch",
+                                                                                  "vertex": 5
+                                                                                },
+                                                                                "color": 3
+                                                                              }
+                                                                            ],
+                                                                            "kind": "branch",
+                                                                            "vertex": 6
+                                                                          },
+                                                                          "color": 1
+                                                                        }
+                                                                      ],
+                                                                      "kind": "branch",
+                                                                      "vertex": 18
+                                                                    },
+                                                                    "color": 4
+                                                                  }
+                                                                ],
+                                                                "kind": "branch",
+                                                                "vertex": 7
+                                                              },
+                                                              "color": 1
+                                                            }
+                                                          ],
+                                                          "kind": "branch",
+                                                          "vertex": 8
+                                                        },
+                                                        "color": 4
+                                                      }
+                                                    ],
+                                                    "kind": "branch",
+                                                    "vertex": 9
+                                                  },
+                                                  "color": 3
+                                                }
+                                              ],
+                                              "kind": "branch",
+                                              "vertex": 16
+                                            },
+                                            "color": 2
+                                          }
+                                        ],
+                                        "kind": "branch",
+                                        "vertex": 13
+                                      },
+                                      "color": 4
+                                    }
+                                  ],
+                                  "kind": "branch",
+                                  "vertex": 15
+                                },
+                                "color": 2
+                              }
+                            ],
+                            "kind": "branch",
+                            "vertex": 14
+                          },
+                          "color": 4
+                        }
+                      ],
+                      "kind": "branch",
+                      "vertex": 11
+                    },
+                    "color": 3
+                  },
+                  {
+                    "child": {
+                      "children": [
+                        {
+                          "child": {
+                            "children": [
+                              {
+                                "child": {
+                                  "children": [
+                                    {
+                                      "child": {
+                                        "children": [
+                                          {
+                                            "child": {
+                                              "children": [
+                                                {
+                                                  "child": {
+                                                    "children": [
+                                                      {
+                                                        "child": {
+                                                          "children": [
+                                                            {
+                                                              "child": {
+                                                                "children": [
+                                                                  {
+                                                                    "child": {
+                                                                      "children": [
+                                                                        {
+                                                                          "child": {
+                                                                            "children": [
+                                                                              {
+                                                                                "child": {
+                                                                                  "children": [
+                                                                                    {
+                                                                                      "child": {
+                                                                                        "children": [
+                                                                                          {
+                                                                                            "child": {
+                                                                                              "children": [
+                                                                                                {
+                                                                                                  "child": {
+                                                                                                    "blockers": [
+                                                                                                      {
+                                                                                                        "color": 1,
+                                                                                                        "neighbor": 1
+                                                                                                      },
+                                                                                                      {
+                                                                                                        "color": 2,
+                                                                                                        "neighbor": 0
+                                                                                                      },
+                                                                                                      {
+                                                                                                        "color": 3,
+                                                                                                        "neighbor": 17
+                                                                                                      },
+                                                                                                      {
+                                                                                                        "color": 4,
+                                                                                                        "neighbor": 3
+                                                                                                      }
+                                                                                                    ],
+                                                                                                    "kind": "dead_end",
+                                                                                                    "vertex": 2
+                                                                                                  },
+                                                                                                  "color": 3
+                                                                                                }
+                                                                                              ],
+                                                                                              "kind": "branch",
+                                                                                              "vertex": 17
+                                                                                            },
+                                                                                            "color": 4
+                                                                                          }
+                                                                                        ],
+                                                                                        "kind": "branch",
+                                                                                        "vertex": 3
+                                                                                      },
+                                                                                      "color": 3
+                                                                                    }
+                                                                                  ],
+                                                                                  "kind": "branch",
+                                                                                  "vertex": 5
+                                                                                },
+                                                                                "color": 4
+                                                                              }
+                                                                            ],
+                                                                            "kind": "branch",
+                                                                            "vertex": 6
+                                                                          },
+                                                                          "color": 1
+                                                                        }
+                                                                      ],
+                                                                      "kind": "branch",
+                                                                      "vertex": 18
+                                                                    },
+                                                                    "color": 3
+                                                                  }
+                                                                ],
+                                                                "kind": "branch",
+                                                                "vertex": 7
+                                                              },
+                                                              "color": 1
+                                                            }
+                                                          ],
+                                                          "kind": "branch",
+                                                          "vertex": 8
+                                                        },
+                                                        "color": 3
+                                                      }
+                                                    ],
+                                                    "kind": "branch",
+                                                    "vertex": 9
+                                                  },
+                                                  "color": 4
+                                                }
+                                              ],
+                                              "kind": "branch",
+                                              "vertex": 16
+                                            },
+                                            "color": 2
+                                          }
+                                        ],
+                                        "kind": "branch",
+                                        "vertex": 13
+                                      },
+                                      "color": 3
+                                    }
+                                  ],
+                                  "kind": "branch",
+                                  "vertex": 15
+                                },
+                                "color": 2
+                              }
+                            ],
+                            "kind": "branch",
+                            "vertex": 14
+                          },
+                          "color": 3
+                        }
+                      ],
+                      "kind": "branch",
+                      "vertex": 11
+                    },
+                    "color": 4
+                  }
+                ],
+                "kind": "branch",
+                "vertex": 12
+              },
+              "color": 2
+            },
+            {
+              "child": {
+                "children": [
+                  {
+                    "child": {
+                      "children": [
+                        {
+                          "child": {
+                            "children": [
+                              {
+                                "child": {
+                                  "children": [
+                                    {
+                                      "child": {
+                                        "children": [
+                                          {
+                                            "child": {
+                                              "children": [
+                                                {
+                                                  "child": {
+                                                    "children": [
+                                                      {
+                                                        "child": {
+                                                          "children": [
+                                                            {
+                                                              "child": {
+                                                                "children": [
+                                                                  {
+                                                                    "child": {
+                                                                      "children": [
+                                                                        {
+                                                                          "child": {
+                                                                            "children": [
+                                                                              {
+                                                                                "child": {
+                                                                                  "children": [
+                                                                                    {
+                                                                                      "child": {
+                                                                                        "children": [
+                                                                                          {
+                                                                                            "child": {
+                                                                                              "children": [
+                                                                                                {
+                                                                                                  "child": {
+                                                                                                    "blockers": [
+                                                                                                      {
+                                                                                                        "color": 1,
+                                                                                                        "neighbor": 1
+                                                                                                      },
+                                                                                                      {
+                                                                                                        "color": 2,
+                                                                                                        "neighbor": 3
+                                                                                                      },
+                                                                                                      {
+                                                                                                        "color": 3,
+                                                                                                        "neighbor": 0
+                                                                                                      },
+                                                                                                      {
+                                                                                                        "color": 4,
+                                                                                                        "neighbor": 17
+                                                                                                      }
+                                                                                                    ],
+                                                                                                    "kind": "dead_end",
+                                                                                                    "vertex": 2
+                                                                                                  },
+                                                                                                  "color": 4
+                                                                                                }
+                                                                                              ],
+                                                                                              "kind": "branch",
+                                                                                              "vertex": 17
+                                                                                            },
+                                                                                            "color": 2
+                                                                                          }
+                                                                                        ],
+                                                                                        "kind": "branch",
+                                                                                        "vertex": 3
+                                                                                      },
+                                                                                      "color": 4
+                                                                                    }
+                                                                                  ],
+                                                                                  "kind": "branch",
+                                                                                  "vertex": 5
+                                                                                },
+                                                                                "color": 2
+                                                                              }
+                                                                            ],
+                                                                            "kind": "branch",
+                                                                            "vertex": 6
+                                                                          },
+                                                                          "color": 1
+                                                                        }
+                                                                      ],
+                                                                      "kind": "branch",
+                                                                      "vertex": 18
+                                                                    },
+                                                                    "color": 4
+                                                                  }
+                                                                ],
+                                                                "kind": "branch",
+                                                                "vertex": 7
+                                                              },
+                                                              "color": 1
+                                                            }
+                                                          ],
+                                                          "kind": "branch",
+                                                          "vertex": 8
+                                                        },
+                                                        "color": 4
+                                                      }
+                                                    ],
+                                                    "kind": "branch",
+                                                    "vertex": 9
+                                                  },
+                                                  "color": 2
+                                                }
+                                              ],
+                                              "kind": "branch",
+                                              "vertex": 16
+                                            },
+                                            "color": 3
+                                          }
+                                        ],
+                                        "kind": "branch",
+                                        "vertex": 13
+                                      },
+                                      "color": 4
+                                    }
+                                  ],
+                                  "kind": "branch",
+                                  "vertex": 15
+                                },
+                                "color": 3
+                              }
+                            ],
+                            "kind": "branch",
+                            "vertex": 14
+                          },
+                          "color": 4
+                        }
+                      ],
+                      "kind": "branch",
+                      "vertex": 11
+                    },
+                    "color": 2
+                  },
+                  {
+                    "child": {
+                      "children": [
+                        {
+                          "child": {
+                            "children": [
+                              {
+                                "child": {
+                                  "children": [
+                                    {
+                                      "child": {
+                                        "children": [
+                                          {
+                                            "child": {
+                                              "children": [
+                                                {
+                                                  "child": {
+                                                    "children": [
+                                                      {
+                                                        "child": {
+                                                          "children": [
+                                                            {
+                                                              "child": {
+                                                                "children": [
+                                                                  {
+                                                                    "child": {
+                                                                      "children": [
+                                                                        {
+                                                                          "child": {
+                                                                            "children": [
+                                                                              {
+                                                                                "child": {
+                                                                                  "children": [
+                                                                                    {
+                                                                                      "child": {
+                                                                                        "children": [
+                                                                                          {
+                                                                                            "child": {
+                                                                                              "children": [
+                                                                                                {
+                                                                                                  "child": {
+                                                                                                    "blockers": [
+                                                                                                      {
+                                                                                                        "color": 1,
+                                                                                                        "neighbor": 1
+                                                                                                      },
+                                                                                                      {
+                                                                                                        "color": 2,
+                                                                                                        "neighbor": 17
+                                                                                                      },
+                                                                                                      {
+                                                                                                        "color": 3,
+                                                                                                        "neighbor": 0
+                                                                                                      },
+                                                                                                      {
+                                                                                                        "color": 4,
+                                                                                                        "neighbor": 3
+                                                                                                      }
+                                                                                                    ],
+                                                                                                    "kind": "dead_end",
+                                                                                                    "vertex": 2
+                                                                                                  },
+                                                                                                  "color": 2
+                                                                                                }
+                                                                                              ],
+                                                                                              "kind": "branch",
+                                                                                              "vertex": 17
+                                                                                            },
+                                                                                            "color": 4
+                                                                                          }
+                                                                                        ],
+                                                                                        "kind": "branch",
+                                                                                        "vertex": 3
+                                                                                      },
+                                                                                      "color": 2
+                                                                                    }
+                                                                                  ],
+                                                                                  "kind": "branch",
+                                                                                  "vertex": 5
+                                                                                },
+                                                                                "color": 4
+                                                                              }
+                                                                            ],
+                                                                            "kind": "branch",
+                                                                            "vertex": 6
+                                                                          },
+                                                                          "color": 1
+                                                                        }
+                                                                      ],
+                                                                      "kind": "branch",
+                                                                      "vertex": 18
+                                                                    },
+                                                                    "color": 2
+                                                                  }
+                                                                ],
+                                                                "kind": "branch",
+                                                                "vertex": 7
+                                                              },
+                                                              "color": 1
+                                                            }
+                                                          ],
+                                                          "kind": "branch",
+                                                          "vertex": 8
+                                                        },
+                                                        "color": 2
+                                                      }
+                                                    ],
+                                                    "kind": "branch",
+                                                    "vertex": 9
+                                                  },
+                                                  "color": 4
+                                                }
+                                              ],
+                                              "kind": "branch",
+                                              "vertex": 16
+                                            },
+                                            "color": 3
+                                          }
+                                        ],
+                                        "kind": "branch",
+                                        "vertex": 13
+                                      },
+                                      "color": 2
+                                    }
+                                  ],
+                                  "kind": "branch",
+                                  "vertex": 15
+                                },
+                                "color": 3
+                              }
+                            ],
+                            "kind": "branch",
+                            "vertex": 14
+                          },
+                          "color": 2
+                        }
+                      ],
+                      "kind": "branch",
+                      "vertex": 11
+                    },
+                    "color": 4
+                  }
+                ],
+                "kind": "branch",
+                "vertex": 12
+              },
+              "color": 3
+            },
+            {
+              "child": {
+                "children": [
+                  {
+                    "child": {
+                      "children": [
+                        {
+                          "child": {
+                            "children": [
+                              {
+                                "child": {
+                                  "children": [
+                                    {
+                                      "child": {
+                                        "children": [
+                                          {
+                                            "child": {
+                                              "children": [
+                                                {
+                                                  "child": {
+                                                    "children": [
+                                                      {
+                                                        "child": {
+                                                          "children": [
+                                                            {
+                                                              "child": {
+                                                                "children": [
+                                                                  {
+                                                                    "child": {
+                                                                      "children": [
+                                                                        {
+                                                                          "child": {
+                                                                            "children": [
+                                                                              {
+                                                                                "child": {
+                                                                                  "children": [
+                                                                                    {
+                                                                                      "child": {
+                                                                                        "children": [
+                                                                                          {
+                                                                                            "child": {
+                                                                                              "children": [
+                                                                                                {
+                                                                                                  "child": {
+                                                                                                    "blockers": [
+                                                                                                      {
+                                                                                                        "color": 1,
+                                                                                                        "neighbor": 1
+                                                                                                      },
+                                                                                                      {
+                                                                                                        "color": 2,
+                                                                                                        "neighbor": 3
+                                                                                                      },
+                                                                                                      {
+                                                                                                        "color": 3,
+                                                                                                        "neighbor": 17
+                                                                                                      },
+                                                                                                      {
+                                                                                                        "color": 4,
+                                                                                                        "neighbor": 0
+                                                                                                      }
+                                                                                                    ],
+                                                                                                    "kind": "dead_end",
+                                                                                                    "vertex": 2
+                                                                                                  },
+                                                                                                  "color": 3
+                                                                                                }
+                                                                                              ],
+                                                                                              "kind": "branch",
+                                                                                              "vertex": 17
+                                                                                            },
+                                                                                            "color": 2
+                                                                                          }
+                                                                                        ],
+                                                                                        "kind": "branch",
+                                                                                        "vertex": 3
+                                                                                      },
+                                                                                      "color": 3
+                                                                                    }
+                                                                                  ],
+                                                                                  "kind": "branch",
+                                                                                  "vertex": 5
+                                                                                },
+                                                                                "color": 2
+                                                                              }
+                                                                            ],
+                                                                            "kind": "branch",
+                                                                            "vertex": 6
+                                                                          },
+                                                                          "color": 1
+                                                                        }
+                                                                      ],
+                                                                      "kind": "branch",
+                                                                      "vertex": 18
+                                                                    },
+                                                                    "color": 3
+                                                                  }
+                                                                ],
+                                                                "kind": "branch",
+                                                                "vertex": 7
+                                                              },
+                                                              "color": 1
+                                                            }
+                                                          ],
+                                                          "kind": "branch",
+                                                          "vertex": 8
+                                                        },
+                                                        "color": 3
+                                                      }
+                                                    ],
+                                                    "kind": "branch",
+                                                    "vertex": 9
+                                                  },
+                                                  "color": 2
+                                                }
+                                              ],
+                                              "kind": "branch",
+                                              "vertex": 16
+                                            },
+                                            "color": 4
+                                          }
+                                        ],
+                                        "kind": "branch",
+                                        "vertex": 13
+                                      },
+                                      "color": 3
+                                    }
+                                  ],
+                                  "kind": "branch",
+                                  "vertex": 15
+                                },
+                                "color": 4
+                              }
+                            ],
+                            "kind": "branch",
+                            "vertex": 14
+                          },
+                          "color": 3
+                        }
+                      ],
+                      "kind": "branch",
+                      "vertex": 11
+                    },
+                    "color": 2
+                  },
+                  {
+                    "child": {
+                      "children": [
+                        {
+                          "child": {
+                            "children": [
+                              {
+                                "child": {
+                                  "children": [
+                                    {
+                                      "child": {
+                                        "children": [
+                                          {
+                                            "child": {
+                                              "children": [
+                                                {
+                                                  "child": {
+                                                    "children": [
+                                                      {
+                                                        "child": {
+                                                          "children": [
+                                                            {
+                                                              "child": {
+                                                                "children": [
+                                                                  {
+                                                                    "child": {
+                                                                      "children": [
+                                                                        {
+                                                                          "child": {
+                                                                            "children": [
+                                                                              {
+                                                                                "child": {
+                                                                                  "children": [
+                                                                                    {
+                                                                                      "child": {
+                                                                                        "children": [
+                                                                                          {
+                                                                                            "child": {
+                                                                                              "children": [
+                                                                                                {
+                                                                                                  "child": {
+                                                                                                    "blockers": [
+                                                                                                      {
+                                                                                                        "color": 1,
+                                                                                                        "neighbor": 1
+                                                                                                      },
+                                                                                                      {
+                                                                                                        "color": 2,
+                                                                                                        "neighbor": 17
+                                                                                                      },
+                                                                                                      {
+                                                                                                        "color": 3,
+                                                                                                        "neighbor": 3
+                                                                                                      },
+                                                                                                      {
+                                                                                                        "color": 4,
+                                                                                                        "neighbor": 0
+                                                                                                      }
+                                                                                                    ],
+                                                                                                    "kind": "dead_end",
+                                                                                                    "vertex": 2
+                                                                                                  },
+                                                                                                  "color": 2
+                                                                                                }
+                                                                                              ],
+                                                                                              "kind": "branch",
+                                                                                              "vertex": 17
+                                                                                            },
+                                                                                            "color": 3
+                                                                                          }
+                                                                                        ],
+                                                                                        "kind": "branch",
+                                                                                        "vertex": 3
+                                                                                      },
+                                                                                      "color": 2
+                                                                                    }
+                                                                                  ],
+                                                                                  "kind": "branch",
+                                                                                  "vertex": 5
+                                                                                },
+                                                                                "color": 3
+                                                                              }
+                                                                            ],
+                                                                            "kind": "branch",
+                                                                            "vertex": 6
+                                                                          },
+                                                                          "color": 1
+                                                                        }
+                                                                      ],
+                                                                      "kind": "branch",
+                                                                      "vertex": 18
+                                                                    },
+                                                                    "color": 2
+                                                                  }
+                                                                ],
+                                                                "kind": "branch",
+                                                                "vertex": 7
+                                                              },
+                                                              "color": 1
+                                                            }
+                                                          ],
+                                                          "kind": "branch",
+                                                          "vertex": 8
+                                                        },
+                                                        "color": 2
+                                                      }
+                                                    ],
+                                                    "kind": "branch",
+                                                    "vertex": 9
+                                                  },
+                                                  "color": 3
+                                                }
+                                              ],
+                                              "kind": "branch",
+                                              "vertex": 16
+                                            },
+                                            "color": 4
+                                          }
+                                        ],
+                                        "kind": "branch",
+                                        "vertex": 13
+                                      },
+                                      "color": 2
+                                    }
+                                  ],
+                                  "kind": "branch",
+                                  "vertex": 15
+                                },
+                                "color": 4
+                              }
+                            ],
+                            "kind": "branch",
+                            "vertex": 14
+                          },
+                          "color": 2
+                        }
+                      ],
+                      "kind": "branch",
+                      "vertex": 11
+                    },
+                    "color": 3
+                  }
+                ],
+                "kind": "branch",
+                "vertex": 12
+              },
+              "color": 4
+            }
+          ],
+          "kind": "branch",
+          "vertex": 0
+        },
+        "input_sha256": "485a726450bdfcff66cf2e1a3b8c3e17fc0313b70f696764a9d1c759c0cd9ffb",
+        "method": "independent-mrv-literal-four-colors-v1",
+        "node_limit": 200000,
+        "nodes": 88,
+        "palette": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "reason": null,
+        "schema_version": 1,
+        "status": "unsat",
+        "witness": null
+      },
+      "verification": {
+        "claim": "complete-literal-four-name-unsat-tree",
+        "conclusive": true,
+        "leaves_checked": 6,
+        "nodes_independently_counted": 88,
+        "passed": true,
+        "status": "unsat"
+      }
+    },
+    "reverified_certificate": {
+      "claim": "complete-literal-four-name-unsat-tree",
+      "conclusive": true,
+      "leaves_checked": 6,
+      "nodes_independently_counted": 88,
+      "passed": true,
+      "status": "unsat"
+    },
+    "scenario": "one-bounded-anchor",
+    "trial_status": "underdetermined",
+    "trial_trace_steps": 147
+  },
+  "verification": {
+    "geometry_hash_matches": true,
+    "manifest_and_record_hashes_match": true,
+    "new_oracle_searches": 0,
+    "new_producer_runs": 0,
+    "new_propagation_runs": 0,
+    "raw_documents_rebuilt_from_frozen_geometry_and_scenario_anchors": true,
+    "saved_unsat_certificates_verified": 5
+  },
+  "version": "quaternary-all-candidate-known-gap-posthoc-v1"
+}
