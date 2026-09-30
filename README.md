@@ -6,7 +6,43 @@ and verifiable Klein-four-group flow repair.**
 [中文说明](README.zh-CN.md) · [Mathematical foundations](docs/FOUNDATIONS.en.md) · [数学基础](docs/FOUNDATIONS.md)
 · [Research questions](docs/RESEARCH_PLAN.md) · [Related work](docs/RELATED_WORK.md)
 
-## Research update — 2026-09-27 (results through September 26)
+## Research update — 2026-09-30
+
+**Conditional equality now refutes six of the eight previously unresolved joint
+trials. Two remain unresolved by the algorithm. Both versions still complete
+all 935 paired scenarios with identical decisions and final colors; the extra
+inference has not improved completion or speed.** The initiating line-side idea
+belongs to Qinzi27.
+
+- [Logical NEQ](docs/QUATERNARY_LOGICAL_NEQ_RESULTS-2026-09-27.md) preserves
+  structural certificates separately from physical contacts; all 855 pairs
+  complete, with one fewer failed probe and no completion gain.
+- [Single-candidate scan](docs/QUATERNARY_LOGICAL_NEQ_CANDIDATE_SCAN_RESULTS-2026-09-29.md)
+  verifies all 56,645 retained candidates individually. The
+  [pair scan](docs/QUATERNARY_LOGICAL_NEQ_PAIR_SCAN_RESULTS-2026-09-29.md) finds
+  1,814 unsupported combinations among 670,916 retained pairs: individual
+  support does not imply joint compatibility.
+- [Odd-wheel certificates](docs/QUATERNARY_ODD_WHEEL_RESULTS-2026-09-30.md)
+  reduce the unrefuted combinations from 11 to 8.
+- [Conditional common-edge EQ](docs/QUATERNARY_CONDITIONAL_DIAMOND_RESULTS-2026-09-30.md)
+  reduces them from 8 to 2. Across 935 pairs, each version makes 3,941 safe
+  commitments. Eight conditional-EQ references strengthen four intermediate
+  phases, without changing decisions, terminal relations or colors. Production
+  time in this single run increases from 43.30 to 57.22 seconds; this is not a
+  controlled speed benchmark. All 49 geometric exclusions remain explicit.
+
+The current frozen code passes **1,620 Python tests and comprehensive validation**;
+saved evidence replay verifies 1,870 runs and 9,752 raw exact records. The next
+step is a conditional three-color triangle saturation certificate, followed by
+new-state safety checks and selective/incremental cost experiments. The two
+remaining posthoc proof chains are not implemented repairs. General safety,
+completeness and originality are not established.
+
+See the [publication scope](docs/PUBLICATION-2026-09-30.md),
+[reproduction guide](docs/REPRODUCING_RESEARCH.md), and [next step](NEXT_STEP.md).
+Local validation and remote CI are recorded separately.
+
+## Earlier archive — 2026-09-27 (results through September 26)
 
 **Certified relations now remove some candidates earlier, but full-candidate
 probing has not increased completion on the paired real-geometry tests. Its

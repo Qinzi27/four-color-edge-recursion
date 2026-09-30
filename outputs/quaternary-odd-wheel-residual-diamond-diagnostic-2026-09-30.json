@@ -1,0 +1,1095 @@
+{
+  "schema_version": 1,
+  "version": "quaternary-odd-wheel-residual-diamond-posthoc-v1",
+  "date": "2026-09-30",
+  "bindings": {
+    "manifest": {
+      "path": "outputs/quaternary-odd-wheel-manifest-2026-09-30.json.gz",
+      "sha256": "4470fa82fa5cb32b0af8462af10b34ab0f9d615bf8f6197f8fffef32867b2b5c",
+      "source_count": 234
+    },
+    "known_pair_gap_checkpoint": {
+      "path": "outputs/quaternary-odd-wheel-2026-09-30-checkpoints/known-pair-gaps.json.gz",
+      "sha256": "b608dc700bc5fac791ab204773b1bf083e94e6966b83fa012856f6277eb5103f"
+    },
+    "old_pair_checkpoint": {
+      "path": "outputs/quaternary-logical-neq-pair-scan-2026-09-29-checkpoints/044-8070783fd68d.json.gz",
+      "sha256": "f3be9670ae9d377d12e1ed201053f8d6b5355e428c2ebb8cc0da66496f91c17c"
+    },
+    "all_234_frozen_sources_match": true,
+    "all_five_manifest_inputs_match": true
+  },
+  "target": {
+    "key": "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132",
+    "scenario": "one-bounded-anchor",
+    "state_index": 0,
+    "target_index": 661,
+    "phase": 0,
+    "sides": [
+      "S4",
+      "S14"
+    ],
+    "symbols": [
+      1,
+      1
+    ],
+    "old_status": "conditional_inconclusive",
+    "input_sha256": "e96ce7ef2b2844c635a890cf2960356a7f165c76edb8accf065a9f6ce9cda80e",
+    "old_outcome_sha256": "e487ee64a721dd4675f8d3a896e4961af7e6429cf9b07bc7ae7b5edd62cfce69",
+    "new_gap_row_index": 997
+  },
+  "premises": {
+    "actual_persistent_anchors": {
+      "S1": 1
+    },
+    "hypothetical_pair_anchors": {
+      "S4": 1,
+      "S14": 1
+    },
+    "conditional_document_sha256": "e96ce7ef2b2844c635a890cf2960356a7f165c76edb8accf065a9f6ce9cda80e",
+    "conditional_document": {
+      "sides": [
+        "S0",
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7",
+        "S8",
+        "S9",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S14",
+        "S15",
+        "S16",
+        "S17",
+        "S18"
+      ],
+      "lines": [
+        {
+          "id": "E0",
+          "left": "S0",
+          "right": "S1",
+          "kind": "separator"
+        },
+        {
+          "id": "E1",
+          "left": "S0",
+          "right": "S2",
+          "kind": "separator"
+        },
+        {
+          "id": "E2",
+          "left": "S0",
+          "right": "S3",
+          "kind": "separator"
+        },
+        {
+          "id": "E3",
+          "left": "S0",
+          "right": "S4",
+          "kind": "separator"
+        },
+        {
+          "id": "E4",
+          "left": "S0",
+          "right": "S4",
+          "kind": "separator"
+        },
+        {
+          "id": "E5",
+          "left": "S0",
+          "right": "S5",
+          "kind": "separator"
+        },
+        {
+          "id": "E6",
+          "left": "S0",
+          "right": "S6",
+          "kind": "separator"
+        },
+        {
+          "id": "E7",
+          "left": "S0",
+          "right": "S7",
+          "kind": "separator"
+        },
+        {
+          "id": "E8",
+          "left": "S0",
+          "right": "S8",
+          "kind": "separator"
+        },
+        {
+          "id": "E9",
+          "left": "S0",
+          "right": "S9",
+          "kind": "separator"
+        },
+        {
+          "id": "E10",
+          "left": "S0",
+          "right": "S10",
+          "kind": "separator"
+        },
+        {
+          "id": "E11",
+          "left": "S0",
+          "right": "S10",
+          "kind": "separator"
+        },
+        {
+          "id": "E12",
+          "left": "S0",
+          "right": "S10",
+          "kind": "separator"
+        },
+        {
+          "id": "E13",
+          "left": "S0",
+          "right": "S11",
+          "kind": "separator"
+        },
+        {
+          "id": "E14",
+          "left": "S0",
+          "right": "S12",
+          "kind": "separator"
+        },
+        {
+          "id": "E15",
+          "left": "S0",
+          "right": "S1",
+          "kind": "separator"
+        },
+        {
+          "id": "E16",
+          "left": "S1",
+          "right": "S12",
+          "kind": "separator"
+        },
+        {
+          "id": "E17",
+          "left": "S1",
+          "right": "S13",
+          "kind": "separator"
+        },
+        {
+          "id": "E18",
+          "left": "S12",
+          "right": "S11",
+          "kind": "separator"
+        },
+        {
+          "id": "E19",
+          "left": "S12",
+          "right": "S14",
+          "kind": "separator"
+        },
+        {
+          "id": "E20",
+          "left": "S12",
+          "right": "S15",
+          "kind": "separator"
+        },
+        {
+          "id": "E21",
+          "left": "S13",
+          "right": "S15",
+          "kind": "separator"
+        },
+        {
+          "id": "E22",
+          "left": "S13",
+          "right": "S16",
+          "kind": "separator"
+        },
+        {
+          "id": "E23",
+          "left": "S11",
+          "right": "S10",
+          "kind": "separator"
+        },
+        {
+          "id": "E24",
+          "left": "S14",
+          "right": "S10",
+          "kind": "separator"
+        },
+        {
+          "id": "E25",
+          "left": "S15",
+          "right": "S10",
+          "kind": "separator"
+        },
+        {
+          "id": "E26",
+          "left": "S16",
+          "right": "S10",
+          "kind": "separator"
+        },
+        {
+          "id": "E27",
+          "left": "S9",
+          "right": "S10",
+          "kind": "separator"
+        },
+        {
+          "id": "E28",
+          "left": "S14",
+          "right": "S11",
+          "kind": "separator"
+        },
+        {
+          "id": "E29",
+          "left": "S15",
+          "right": "S14",
+          "kind": "separator"
+        },
+        {
+          "id": "E30",
+          "left": "S13",
+          "right": "S12",
+          "kind": "separator"
+        },
+        {
+          "id": "E31",
+          "left": "S16",
+          "right": "S15",
+          "kind": "separator"
+        },
+        {
+          "id": "E32",
+          "left": "S2",
+          "right": "S1",
+          "kind": "separator"
+        },
+        {
+          "id": "E33",
+          "left": "S17",
+          "right": "S1",
+          "kind": "separator"
+        },
+        {
+          "id": "E34",
+          "left": "S17",
+          "right": "S13",
+          "kind": "separator"
+        },
+        {
+          "id": "E35",
+          "left": "S18",
+          "right": "S13",
+          "kind": "separator"
+        },
+        {
+          "id": "E36",
+          "left": "S18",
+          "right": "S16",
+          "kind": "separator"
+        },
+        {
+          "id": "E37",
+          "left": "S7",
+          "right": "S16",
+          "kind": "separator"
+        },
+        {
+          "id": "E38",
+          "left": "S8",
+          "right": "S16",
+          "kind": "separator"
+        },
+        {
+          "id": "E39",
+          "left": "S9",
+          "right": "S16",
+          "kind": "separator"
+        },
+        {
+          "id": "E40",
+          "left": "S2",
+          "right": "S17",
+          "kind": "separator"
+        },
+        {
+          "id": "E41",
+          "left": "S17",
+          "right": "S18",
+          "kind": "separator"
+        },
+        {
+          "id": "E42",
+          "left": "S3",
+          "right": "S18",
+          "kind": "separator"
+        },
+        {
+          "id": "E43",
+          "left": "S18",
+          "right": "S7",
+          "kind": "separator"
+        },
+        {
+          "id": "E44",
+          "left": "S6",
+          "right": "S7",
+          "kind": "separator"
+        },
+        {
+          "id": "E45",
+          "left": "S7",
+          "right": "S8",
+          "kind": "separator"
+        },
+        {
+          "id": "E46",
+          "left": "S8",
+          "right": "S9",
+          "kind": "separator"
+        },
+        {
+          "id": "E47",
+          "left": "S3",
+          "right": "S2",
+          "kind": "separator"
+        },
+        {
+          "id": "E48",
+          "left": "S3",
+          "right": "S17",
+          "kind": "separator"
+        },
+        {
+          "id": "E49",
+          "left": "S4",
+          "right": "S3",
+          "kind": "separator"
+        },
+        {
+          "id": "E50",
+          "left": "S5",
+          "right": "S3",
+          "kind": "separator"
+        },
+        {
+          "id": "E51",
+          "left": "S5",
+          "right": "S18",
+          "kind": "separator"
+        },
+        {
+          "id": "E52",
+          "left": "S6",
+          "right": "S18",
+          "kind": "separator"
+        },
+        {
+          "id": "E53",
+          "left": "S4",
+          "right": "S5",
+          "kind": "separator"
+        },
+        {
+          "id": "E54",
+          "left": "S5",
+          "right": "S6",
+          "kind": "separator"
+        }
+      ],
+      "anchors": {
+        "S1": 1,
+        "S4": 1,
+        "S14": 1
+      },
+      "states": {},
+      "point_contacts": [],
+      "different_names": [
+        [
+          "S1",
+          "S10"
+        ],
+        [
+          "S2",
+          "S15"
+        ],
+        [
+          "S2",
+          "S16"
+        ]
+      ]
+    },
+    "saved_side_order": [
+      "S0",
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "S10",
+      "S11",
+      "S12",
+      "S13",
+      "S14",
+      "S15",
+      "S16",
+      "S17",
+      "S18"
+    ],
+    "saved_domains": {
+      "S0": [
+        2,
+        3,
+        4
+      ],
+      "S1": [
+        1
+      ],
+      "S2": [
+        2,
+        3,
+        4
+      ],
+      "S3": [
+        2,
+        3,
+        4
+      ],
+      "S4": [
+        1
+      ],
+      "S5": [
+        2,
+        3,
+        4
+      ],
+      "S6": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "S7": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "S8": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "S9": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "S10": [
+        2,
+        3,
+        4
+      ],
+      "S11": [
+        2,
+        3,
+        4
+      ],
+      "S12": [
+        2,
+        3,
+        4
+      ],
+      "S13": [
+        2,
+        3,
+        4
+      ],
+      "S14": [
+        1
+      ],
+      "S15": [
+        2,
+        3,
+        4
+      ],
+      "S16": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "S17": [
+        2,
+        3,
+        4
+      ],
+      "S18": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "saved_domains_sha256": "dde20e337fc06e0699fcef8331c1c3a4994bb878c1f4d8d474cf3aaf72e73001",
+    "saved_equal_names": [],
+    "saved_different_names": [
+      [
+        "S1",
+        "S10"
+      ],
+      [
+        "S2",
+        "S15"
+      ],
+      [
+        "S2",
+        "S16"
+      ]
+    ],
+    "base_status": "underdetermined",
+    "wheel_status": "underdetermined",
+    "wheel_check": {
+      "version": "quaternary-domain-odd-wheel-v1",
+      "raw_document_sha256": "e96ce7ef2b2844c635a890cf2960356a7f165c76edb8accf065a9f6ce9cda80e",
+      "domains_sha256": "dde20e337fc06e0699fcef8331c1c3a4994bb878c1f4d8d474cf3aaf72e73001",
+      "certificate": null,
+      "statistics": {
+        "palettes_examined": 4,
+        "centers_examined": 19,
+        "eligible_neighbor_sets": 9,
+        "bfs_components": 15,
+        "vertices_visited": 32,
+        "edges_examined": 34,
+        "odd_cycles_found": 0
+      }
+    }
+  },
+  "conditional_diamond_eq_steps": [
+    {
+      "id": "left",
+      "conditional_equal_sides": [
+        "S0",
+        "S17"
+      ],
+      "common_edge": {
+        "sides": [
+          "S2",
+          "S3"
+        ],
+        "separator_line_ids": [
+          "E47"
+        ]
+      },
+      "physical_spokes": [
+        {
+          "sides": [
+            "S0",
+            "S2"
+          ],
+          "separator_line_ids": [
+            "E1"
+          ]
+        },
+        {
+          "sides": [
+            "S0",
+            "S3"
+          ],
+          "separator_line_ids": [
+            "E2"
+          ]
+        },
+        {
+          "sides": [
+            "S17",
+            "S2"
+          ],
+          "separator_line_ids": [
+            "E40"
+          ]
+        },
+        {
+          "sides": [
+            "S17",
+            "S3"
+          ],
+          "separator_line_ids": [
+            "E48"
+          ]
+        }
+      ],
+      "domains": {
+        "S0": [
+          2,
+          3,
+          4
+        ],
+        "S17": [
+          2,
+          3,
+          4
+        ],
+        "S2": [
+          2,
+          3,
+          4
+        ],
+        "S3": [
+          2,
+          3,
+          4
+        ]
+      },
+      "common_palette": [
+        2,
+        3,
+        4
+      ],
+      "saved_relation_mask": 61152,
+      "saved_allowed_pairs": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "elementary_argument": "The physical common edge uses two distinct colors from the three-color palette. Each opposite vertex must use the same remaining color. The EQ is conditional on these saved domains."
+    },
+    {
+      "id": "right",
+      "conditional_equal_sides": [
+        "S10",
+        "S12"
+      ],
+      "common_edge": {
+        "sides": [
+          "S0",
+          "S11"
+        ],
+        "separator_line_ids": [
+          "E13"
+        ]
+      },
+      "physical_spokes": [
+        {
+          "sides": [
+            "S10",
+            "S0"
+          ],
+          "separator_line_ids": [
+            "E10",
+            "E11",
+            "E12"
+          ]
+        },
+        {
+          "sides": [
+            "S10",
+            "S11"
+          ],
+          "separator_line_ids": [
+            "E23"
+          ]
+        },
+        {
+          "sides": [
+            "S12",
+            "S0"
+          ],
+          "separator_line_ids": [
+            "E14"
+          ]
+        },
+        {
+          "sides": [
+            "S12",
+            "S11"
+          ],
+          "separator_line_ids": [
+            "E18"
+          ]
+        }
+      ],
+      "domains": {
+        "S10": [
+          2,
+          3,
+          4
+        ],
+        "S12": [
+          2,
+          3,
+          4
+        ],
+        "S0": [
+          2,
+          3,
+          4
+        ],
+        "S11": [
+          2,
+          3,
+          4
+        ]
+      },
+      "common_palette": [
+        2,
+        3,
+        4
+      ],
+      "saved_relation_mask": 61152,
+      "saved_allowed_pairs": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "elementary_argument": "The physical common edge uses two distinct colors from the three-color palette. Each opposite vertex must use the same remaining color. The EQ is conditional on these saved domains."
+    }
+  ],
+  "triangle_color_exclusion_steps": [
+    {
+      "id": "left",
+      "physical_triangle": [
+        "S0",
+        "S3",
+        "S5"
+      ],
+      "triangle_edges": [
+        {
+          "sides": [
+            "S0",
+            "S3"
+          ],
+          "separator_line_ids": [
+            "E2"
+          ]
+        },
+        {
+          "sides": [
+            "S0",
+            "S5"
+          ],
+          "separator_line_ids": [
+            "E5"
+          ]
+        },
+        {
+          "sides": [
+            "S3",
+            "S5"
+          ],
+          "separator_line_ids": [
+            "E50"
+          ]
+        }
+      ],
+      "triangle_domains": {
+        "S0": [
+          2,
+          3,
+          4
+        ],
+        "S3": [
+          2,
+          3,
+          4
+        ],
+        "S5": [
+          2,
+          3,
+          4
+        ]
+      },
+      "target_side": "S18",
+      "target_saved_domain": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "physical_neighbor_edges": [
+        {
+          "sides": [
+            "S18",
+            "S17"
+          ],
+          "separator_line_ids": [
+            "E41"
+          ]
+        },
+        {
+          "sides": [
+            "S18",
+            "S3"
+          ],
+          "separator_line_ids": [
+            "E42"
+          ]
+        },
+        {
+          "sides": [
+            "S18",
+            "S5"
+          ],
+          "separator_line_ids": [
+            "E51"
+          ]
+        }
+      ],
+      "neighbor_color_identity_mapping": [
+        {
+          "actual_physical_neighbor": "S17",
+          "triangle_vertex": "S0",
+          "conditional_eq_certificate": "left"
+        },
+        {
+          "actual_physical_neighbor": "S3",
+          "triangle_vertex": "S3",
+          "conditional_eq_certificate": null
+        },
+        {
+          "actual_physical_neighbor": "S5",
+          "triangle_vertex": "S5",
+          "conditional_eq_certificate": null
+        }
+      ],
+      "forced_color_in_manual_argument": 1,
+      "elementary_argument": "This actual triangle uses all of colors 2,3,4. The target physically touches representatives of all three triangle colors, using the cited conditional EQ for one representative. Therefore only color 1 remains; no virtual physical edge is created."
+    },
+    {
+      "id": "right",
+      "physical_triangle": [
+        "S12",
+        "S13",
+        "S15"
+      ],
+      "triangle_edges": [
+        {
+          "sides": [
+            "S12",
+            "S13"
+          ],
+          "separator_line_ids": [
+            "E30"
+          ]
+        },
+        {
+          "sides": [
+            "S12",
+            "S15"
+          ],
+          "separator_line_ids": [
+            "E20"
+          ]
+        },
+        {
+          "sides": [
+            "S13",
+            "S15"
+          ],
+          "separator_line_ids": [
+            "E21"
+          ]
+        }
+      ],
+      "triangle_domains": {
+        "S12": [
+          2,
+          3,
+          4
+        ],
+        "S13": [
+          2,
+          3,
+          4
+        ],
+        "S15": [
+          2,
+          3,
+          4
+        ]
+      },
+      "target_side": "S16",
+      "target_saved_domain": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "physical_neighbor_edges": [
+        {
+          "sides": [
+            "S16",
+            "S10"
+          ],
+          "separator_line_ids": [
+            "E26"
+          ]
+        },
+        {
+          "sides": [
+            "S16",
+            "S13"
+          ],
+          "separator_line_ids": [
+            "E22"
+          ]
+        },
+        {
+          "sides": [
+            "S16",
+            "S15"
+          ],
+          "separator_line_ids": [
+            "E31"
+          ]
+        }
+      ],
+      "neighbor_color_identity_mapping": [
+        {
+          "actual_physical_neighbor": "S10",
+          "triangle_vertex": "S12",
+          "conditional_eq_certificate": "right"
+        },
+        {
+          "actual_physical_neighbor": "S13",
+          "triangle_vertex": "S13",
+          "conditional_eq_certificate": null
+        },
+        {
+          "actual_physical_neighbor": "S15",
+          "triangle_vertex": "S15",
+          "conditional_eq_certificate": null
+        }
+      ],
+      "forced_color_in_manual_argument": 1,
+      "elementary_argument": "This actual triangle uses all of colors 2,3,4. The target physically touches representatives of all three triangle colors, using the cited conditional EQ for one representative. Therefore only color 1 remains; no virtual physical edge is created."
+    }
+  ],
+  "final_contradiction": {
+    "physical_edge": {
+      "sides": [
+        "S16",
+        "S18"
+      ],
+      "separator_line_ids": [
+        "E36"
+      ]
+    },
+    "conditionally_forced_colors": {
+      "S16": 1,
+      "S18": 1
+    },
+    "claim": "Two physically adjacent faces would share color 1 under this fixed hypothetical pair."
+  },
+  "saved_oracle_context": {
+    "pair_oracle_index": 682,
+    "input_sha256": "be9541436532e7c0c30fb03c525ed883b1f5474511fdf5a3b8b0ca7525fdd7d1",
+    "status": "unsat",
+    "reported_nodes": 112,
+    "saved_verification": {
+      "passed": true,
+      "status": "unsat",
+      "conclusive": true,
+      "claim": "complete-literal-four-name-unsat-tree",
+      "leaves_checked": 18,
+      "nodes_independently_counted": 112
+    },
+    "role": "The existing exact UNSAT proof motivated this posthoc inspection. It is not a producer input and no oracle search was run for this diagnostic."
+  },
+  "literal_verification": {
+    "inventory_membership_checked": true,
+    "target_state_and_pair_checked": true,
+    "old_new_conditional_domains_and_relations_identical": true,
+    "all_cited_edges_are_real_separators": true,
+    "both_eq_pairs_still_have_all_nine_saved_pairs": true,
+    "common_palette_domains_checked": true,
+    "saved_wheel_absence_replayed": false,
+    "new_oracle_searches": 0,
+    "new_propagation_calls": 0,
+    "new_wheel_detector_calls": 0,
+    "new_producer_runs": 0
+  },
+  "research_status": {
+    "posthoc_candidate_certificate": true,
+    "implemented_in_producer": false,
+    "general_certificate_checker_implemented": false,
+    "other_seven_residuals_examined_by_this_diagnostic": false,
+    "scope": "One saved residual only. The two EQ implications depend on audited current domains and anchors. They are not unconditioned raw-graph EQ/NEQ, physical edges, proof of complete coloring, or an 8-of-8 repair claim."
+  }
+}

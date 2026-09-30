@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-09-27T10:56:43.249873+00:00",
+  "repository": "https://github.com/Qinzi27/four-color-edge-recursion",
+  "branch": "main",
+  "local_and_remote_head": "06e0084a89b6efaed6ed42d06617427bfd1cf326",
+  "push_completed": true,
+  "workflows": [
+    {
+      "name": "Publish public map lab",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/Qinzi27/four-color-edge-recursion/actions/runs/36313668103"
+    },
+    {
+      "name": "Validate mathematical examples",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/Qinzi27/four-color-edge-recursion/actions/runs/36313668081"
+    }
+  ],
+  "scope": "Read-only git ls-remote and GitHub CLI workflow verification for the published archive. Later local logical-NEQ work is separate and not part of this commit."
+}

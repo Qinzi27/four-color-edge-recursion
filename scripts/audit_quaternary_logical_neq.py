@@ -1,0 +1,760 @@
+"""Audit certified EQ and logical NEQ against original physical contacts.
+
+The learned equalities are theorem-backed producer input, not exact-oracle
+premises. Every trace is replayed against the augmented input, while exhaustive
+assignments and exact certificates read only original NEQ edges, original
+anchors and actual commitments. A saved-artifact replay reruns neither the
+producer nor exact-oracle search; it may repeat bounded raw enumeration.
+This module derives the outer event checks from the frozen odd-cycle auditor.
+NEQ certificates use the preexisting independent set-partition refutation
+checker. Literal relation replay is separate from the producer's mask engine;
+geometry and scheduling retain their documented shared helpers. Inferred
+singleton domains and either learned relation never become oracle premises.
+"""
+
+from collections import Counter
+from copy import deepcopy
+from itertools import product
+from math import prod
+from pathlib import Path
+import sys
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+
+from fourcolor.global_restart import current_segments
+from fourcolor.level_sides import level_metadata
+from fourcolor.whole_lines import build_whole_lines
+from scripts.audit_quaternary_geometry import audit_geometry, _same, _mask, _pairs
+from scripts.audit_quaternary_low_color import _preserved, _selection
+from scripts.audit_quaternary_order_probe import _edges
+from scripts.scan_low_color_obstruction_states import digest, persistent_phases, raw_graph
+from scripts.validate_structural_restart import audit_refutation
+from scripts.validate_quaternary_contacts_v2 import check_domains, check_matrix, check_state
+from scripts.exact_extendibility_oracle import solve_exact, verify_exact_result
+from scripts.quaternary_odd_cycle_eq import verify_odd_cycle_equalities
+from scripts.validate_quaternary_contacts_v2 import expected_state, raw_metadata, require
+
+AUDIT_VERSION = "quaternary-low-color-logical-neq-audit-v1"
+POLICY = "quaternary-low-color-logical-neq-v1"
+
+
+def logical_metadata(document):
+    """Validate only the added relation field, then use independent old parsing.
+
+    Physical line records remain byte-for-byte the caller's original records.
+    Dropping the logical field here is solely for unary metadata parsing; the
+    phase checker inserts and verifies the logical relation separately.
+    """
+    require(isinstance(document, dict), 'contact document must be an object')
+    base = {key: value for key, value in document.items() if key != 'different_names'}
+    sides, domains, sources = raw_metadata(base)
+    relations = document.get('different_names', [])
+    require(isinstance(relations, list), 'different_names must be an array')
+    for pair in relations:
+        require(isinstance(pair, list) and len(pair) == 2
+                and all(isinstance(side, str) and side in sides for side in pair)
+                and pair[0] != pair[1], 'logical NEQ needs two distinct known sides')
+    return sides, domains, sources
+
+
+def verify_logical_inequalities(document, learning):
+    """Check every raw nonedge query with independent set-partition proofs.
+
+    All nonadjacent pairs are covered in original side-index order. The only
+    proof premises are original separator edges; anchors are retained in the
+    input hash but never supplied to the refutation checker. The existing
+    checker accepts independently valid proof orders and checks saturation for
+    inconclusive queries; its triangles_examined statistic is a lower-bound
+    check, not an independent replay of the producer's worklist.
+    """
+    require('different_names' not in document and not document.get('states')
+            and not document.get('equal_names'), 'raw logical-NEQ input forbids supplied states/EQ/NEQ')
+    sides, _, _ = raw_metadata(document)
+    positions = {side: i for i, side in enumerate(sides)}
+    edges = sorted({tuple(sorted((positions[line['left']], positions[line['right']])))
+                    for line in document['lines'] if line['kind'] == 'separator'})
+    edge_set = set(edges)
+    pairs = [(a, b) for a in range(len(sides)) for b in range(a + 1, len(sides))
+             if (a, b) not in edge_set]
+    require(isinstance(learning, dict) and set(learning) ==
+            {'version', 'raw_document_sha256', 'different_names', 'queries', 'stats'},
+            'logical-NEQ learning schema differs')
+    require(learning['version'] == 'quaternary-raw-logical-inequalities-v1', 'logical-NEQ version differs')
+    _same(learning['raw_document_sha256'], digest(document), 'logical-NEQ raw input hash')
+    require(isinstance(learning['queries'], list) and len(learning['queries']) == len(pairs),
+            'logical-NEQ nonedge query coverage differs')
+    proved, inconclusive, merges = [], 0, 0
+    for (a, b), query in zip(pairs, learning['queries']):
+        require(isinstance(query, dict) and set(query) == {'pair', 'result'}, 'query fields differ')
+        _same(query['pair'], [sides[a], sides[b]], 'canonical nonedge query order')
+        certificate = query['result']
+        require(isinstance(certificate, dict) and set(certificate) ==
+                {'schema_version', 'rule', 'palette_size', 'vertex_count', 'assumed_equal',
+                 'status', 'merges', 'contradiction', 'final_classes', 'statistics', 'scope'},
+                'refutation certificate fields differ')
+        def literal_types(value):
+            """The old set proof uses integer IDs; JSON bool/float aliases are forbidden."""
+            if isinstance(value, dict):
+                return all(isinstance(key, str) and literal_types(item) for key, item in value.items())
+            if isinstance(value, list):
+                return all(literal_types(item) for item in value)
+            return value is None or type(value) in (int, str)
+        require(literal_types(certificate), 'proof contains a nonliteral integer identity')
+        require(type(certificate['schema_version']) is int and type(certificate['palette_size']) is int
+                and type(certificate['vertex_count']) is int, 'proof integer fields must exclude booleans')
+        _same(certificate['assumed_equal'], [a, b], 'raw proof hypothesis')
+        checked = audit_refutation(len(sides), edges, a, b, certificate)
+        require(checked['passed'] is True, 'logical-NEQ refutation replay failed')
+        merges += checked['forced_merges']
+        if certificate['status'] == 'proved_different':
+            proved.append([sides[a], sides[b]])
+        else:
+            inconclusive += 1
+    _same(learning['different_names'], proved, 'proved logical-NEQ coverage')
+    stats = {'side_count': len(sides), 'neq_edge_count': len(edges),
+             'separator_line_count': sum(line['kind'] == 'separator' for line in document['lines']),
+             'bridge_line_count': sum(line['kind'] == 'bridge' for line in document['lines']),
+             'point_contact_count': len(document.get('point_contacts', [])),
+             'eligible_pairs': len(pairs), 'proved_different': len(proved), 'inconclusive': inconclusive}
+    _same(learning['stats'], stats, 'logical-NEQ learning statistics')
+    return {'passed': True, 'query_count': len(pairs), 'proved_different': len(proved),
+            'inconclusive': inconclusive, 'forced_merges_checked': merges,
+            'raw_anchor_premises': 0, 'physical_edges_added': 0,
+            'proof_check': 'independent_raw_edge_set_partition_replay',
+            'triangles_examined_scope': 'lower_bound_checked_not_worklist_replayed'}
+
+
+def _bind_envelope(document, envelope):
+    """Verify every learned premise before inspecting producer or oracle evidence."""
+    require('different_names' not in document and not document.get("states") and not document.get("equal_names"),
+            "odd-cycle-EQ audit requires original NEQ and anchors only; states/EQ unsupported")
+    require(type(envelope["schema_version"]) is int and envelope["schema_version"] == 1
+            and envelope["policy"] == POLICY, "wrong odd-cycle-EQ envelope schema")
+    require(envelope["oracle_feedback_to_producer"] is False
+            and envelope["old_colors_read"] is False, "invalid odd-cycle-EQ production mode")
+    _same(envelope["original_input"], document, "odd-cycle-EQ original raw input")
+    require(isinstance(envelope['learning'], dict)
+            and set(envelope['learning']) == {'equalities', 'inequalities'}, 'combined learning fields differ')
+    verified = verify_odd_cycle_equalities(document, envelope["learning"]["equalities"])
+    neq_verified = verify_logical_inequalities(document, envelope['learning']['inequalities'])
+    require(verified["passed"] is True, "odd-cycle-EQ certificate verification failed")
+    augmented = deepcopy(document)
+    if envelope["learning"]["equalities"]["equal_names"]:
+        augmented["equal_names"] = deepcopy(envelope["learning"]["equalities"]["equal_names"])
+    if envelope['learning']['inequalities']['different_names']:
+        augmented['different_names'] = deepcopy(envelope['learning']['inequalities']['different_names'])
+    _same(envelope["augmented_input"], augmented, "odd-cycle-EQ augmented input")
+    result = envelope["run"]
+    _same(result["original_input"], augmented, "odd-cycle-EQ producer input")
+    require(result["probe"] is True, "odd-cycle-EQ requires guarded propagation")
+    return augmented, result, verified, neq_verified
+
+
+def audit_logical_neq(document, envelope, *, geometry=None, adapted=None,
+                    assignment_limit=262144, node_limit=200000):
+    """Return independently verified evidence, including unsafe choices as data.
+
+    ``passed`` concerns evidence/trace integrity; ``commitment_counts.unsafe``
+    separately counts SAT-to-UNSAT commitments. UNKNOWN never counts as safe.
+    Exact certificates are deduplicated in ``oracle_records`` and referenced by
+    indices. The first unsafe commitment additionally contains full evidence.
+    """
+    require(type(assignment_limit) is int and assignment_limit >= 0, "invalid assignment limit")
+    require(type(node_limit) is int and node_limit >= 0, "invalid oracle node limit")
+    augmented, result, equality_check, inequality_check = _bind_envelope(document, envelope)
+    # Raw domains contain only original singleton anchors, never learned EQ.
+    sides, initial_domains, _ = raw_metadata(document)
+    require((geometry is None) == (adapted is None), "geometry and adapted must be supplied together")
+    index = {side: i for i, side in enumerate(sides)}
+    edges = sorted({tuple(sorted((index[line["left"]], index[line["right"]])))
+                    for line in document["lines"] if line["kind"] == "separator"})
+    geometry_check, context = None, None
+    if geometry is not None:
+        _same(adapted["contact_document"], document, "adapter contact input")
+        geometry_check, actual_edges = audit_geometry(geometry, adapted)
+        require(edges == actual_edges, "geometry audit and raw edges disagree")
+        model = build_whole_lines(geometry)
+        require(sides == ["S" + str(i) for i in range(len(model.plane_map.faces))],
+                "geometric schedule requires global ordered side IDs")
+        context = model, current_segments(model), level_metadata(model)
+    _same(result["original_input"], augmented, "low-color augmented input")
+    require(type(result["schema_version"]) is int and result["schema_version"] == 1
+            and result["policy"] == "quaternary-low-color-logical-neq-conditional-v1", "wrong producer schema")
+    require(result["schedule"] == ("mother-peer-with-frame-only-fallback-v1" if context else
+            "first-unresolved-input-order-v1"), "incorrect schedule label")
+    require(type(result["probe"]) is bool and type(result["backtracks"]) is int
+            and result["backtracks"] == 0 and result["oracle_feedback_to_producer"] is False
+            and result["old_colors_read"] is False, "invalid production mode")
+    for name in ("decision_limit", "probe_limit"):
+        require(type(result[name]) is int and result[name] >= 0, "invalid production resource limit")
+    phases, events = result["phases"], result["events"]
+    require(isinstance(phases, list) and bool(phases) and isinstance(events, list), "missing phases/events")
+    require(phases[0]["kind"] == "main", "initial phase must be persistent")
+    _same(phases[0]["document"], augmented, "initial augmented propagation document")
+    phase_audits = [audit_logical_contacts(phase["document"], phase["outcome"]) for phase in phases]
+    size = prod(len(values) for values in initial_domains)
+    enumerate_all = size <= assignment_limit
+    legal = ([values for values in product(*initial_domains)
+              if all(values[a] != values[b] for a, b in edges)] if enumerate_all else None)
+    legal_count = len(legal) if enumerate_all else None
+    phase_checks, preserved_count = 0, 0
+    oracle_records, oracle_cache = [], {}
+
+    def raw_oracle(fixed):
+        """Cache ONLY raw graph plus actual commitment signatures, not phase domains."""
+        key = tuple(sorted(fixed.items()))
+        if key not in oracle_cache:
+            evidence = solve_exact(len(sides), edges, fixed, node_limit=node_limit)
+            verified = verify_exact_result(len(sides), edges, fixed, evidence)
+            oracle_cache[key] = len(oracle_records)
+            oracle_records.append({"input": {"n": len(sides), "edges": [list(p) for p in edges],
+                                            "anchors": [list(p) for p in key]},
+                                   "result": evidence, "verification": verified})
+        return oracle_cache[key]
+
+    def check_phase(phase_number, current_legal, oracle_index):
+        """Use exhaustive raw solutions and, separately, a raw oracle witness."""
+        nonlocal phase_checks, preserved_count
+        outcome = phases[phase_number]["outcome"]
+        evidence = oracle_records[oracle_index]["result"]
+        if enumerate_all:
+            _preserved(outcome, current_legal)
+            phase_checks += 1
+            preserved_count += len(current_legal)
+            if evidence["status"] != "unknown":
+                require(bool(current_legal) == (evidence["status"] == "sat"),
+                        "complete enumeration and raw oracle disagree")
+        if evidence["status"] == "sat":
+            _preserved(outcome, [evidence["witness"]])
+
+    committed = {index[side]: color for side, color in document.get("anchors", {}).items()}
+    initial_oracle = raw_oracle(committed)
+    check_phase(0, legal, initial_oracle)
+    current_phase, consumed = 0, 1
+    choices, probes, rejections = 0, 0, 0
+    commitment_counts = {"safe": 0, "unsafe": 0, "unknown": 0, "preexisting_unsat": 0}
+    rejection_counts = {"exact_unsat": 0, "unknown": 0}
+    steps, first_bad = [], None
+    for event_number, event in enumerate(events):
+        require(choices < result["decision_limit"], "event after decision limit")
+        before_phase = current_phase
+        before = phases[before_phase]["outcome"]
+        require(before["status"] == "underdetermined", "event after terminal propagation status")
+        require(type(event["before_phase"]) is int and event["before_phase"] == before_phase,
+                "event does not continue latest persistent phase")
+        side, symbol = event["side"], event["symbol"]
+        require(side in index and type(symbol) is int, "invalid selected identity or literal")
+        selected, expected_selection = _selection(sides, before["domains"], context)
+        require(index[side] == selected, "side violates declared schedule")
+        candidates = before["domains"][selected]
+        require(symbol == min(candidates) and len(candidates) > 1, "choice is not minimum unresolved color")
+        _same(event["candidates_before"], candidates, "event candidates")
+        selection = event["selection"]
+        require(selection["side"] == selected and selection["side_id"] == side,
+                "selection identity mismatch")
+        _same(selection["candidate_order"], candidates, "selection low-color order")
+        expected_selection.update(side_id=side, candidate_order=candidates)
+        _same(selection, expected_selection, "scheduler metadata")
+        before_oracle = raw_oracle(committed)
+        trial_fixed = {**committed, selected: symbol}
+        trial_oracle = raw_oracle(trial_fixed)
+        trial_legal = [values for values in legal if values[selected] == symbol] if enumerate_all else None
+        trial_document = deepcopy(phases[before_phase]["document"])
+        trial_document.setdefault("anchors", {})[side] = symbol
+        if result["probe"]:
+            require(probes < result["probe_limit"], "trial after probe limit")
+            require(type(event["trial_phase"]) is int and event["trial_phase"] == consumed,
+                    "trial phase omitted, reused, or out of order")
+            require(consumed < len(phases) and phases[consumed]["kind"] == "trial", "wrong trial phase kind")
+            _same(phases[consumed]["document"], trial_document, "trial assumptions")
+            check_phase(consumed, trial_legal, trial_oracle)
+            trial_phase = consumed
+            consumed += 1
+            probes += 1
+        else:
+            require(event["trial_phase"] is None, "unprobed event has trial")
+            trial_phase = None
+        kind = event["kind"]
+        require(kind in ("reject", "commit"), "unsupported event")
+        if kind == "reject":
+            require(result["probe"] and phases[trial_phase]["outcome"]["status"] == "conflict",
+                    "candidate rejection lacks a proved propagation conflict")
+            require(event["extension_claim"] == "refuted", "rejection claim mismatch")
+            require(not trial_legal if enumerate_all else True, "rejection removed a raw legal coloring")
+            status = oracle_records[trial_oracle]["result"]["status"]
+            require(status != "sat", "rejected trial has a complete raw witness")
+            rejection_counts["exact_unsat" if status == "unsat" else "unknown"] += 1
+            rejections += 1
+            after_document = deepcopy(phases[before_phase]["document"])
+            remaining = [color for color in candidates if color != symbol]
+            after_document.setdefault("states", {})[side] = expected_state(remaining, False)["quaternary"]
+            require(consumed < len(phases) and phases[consumed]["kind"] == "main", "missing post-rejection main")
+            _same(phases[consumed]["document"], after_document, "post-rejection restrictions")
+            current_phase = consumed
+            consumed += 1
+            after_oracle = before_oracle
+            check_phase(current_phase, legal, after_oracle)
+            extension = "refuted"
+        else:
+            choices += 1
+            if result["probe"]:
+                require(phases[trial_phase]["outcome"]["status"] != "conflict", "conflicting trial was committed")
+                current_phase = trial_phase
+            else:
+                require(consumed < len(phases) and phases[consumed]["kind"] == "main", "missing committed phase")
+                _same(phases[consumed]["document"], trial_document, "commitment assumptions")
+                current_phase = consumed
+                consumed += 1
+                check_phase(current_phase, trial_legal, trial_oracle)
+            claim = (("complete-witness" if phases[current_phase]["outcome"]["status"] == "solved"
+                     else "inconclusive") if result["probe"] else "unchecked")
+            require(event["extension_claim"] == claim, "commitment overstates extension evidence")
+            committed, legal = trial_fixed, trial_legal
+            after_oracle = trial_oracle
+            before_status = oracle_records[before_oracle]["result"]["status"]
+            after_status = oracle_records[after_oracle]["result"]["status"]
+            extension = ("preexisting_unsat" if before_status == "unsat" else
+                         "unknown" if "unknown" in (before_status, after_status) else
+                         "unsafe" if after_status == "unsat" else "safe")
+            commitment_counts[extension] += 1
+        require(type(event["after_phase"]) is int and event["after_phase"] == current_phase,
+                "wrong post-event phase index")
+        step = {"event_index": event_number, "kind": kind, "side": side, "symbol": symbol,
+                "before_phase": before_phase, "trial_phase": trial_phase, "after_phase": current_phase,
+                "before_oracle_index": before_oracle, "trial_oracle_index": trial_oracle,
+                "after_oracle_index": after_oracle,
+                "before_status": oracle_records[before_oracle]["result"]["status"],
+                "after_status": oracle_records[after_oracle]["result"]["status"],
+                "extendibility": extension}
+        steps.append(step)
+        if extension == "unsafe" and first_bad is None:
+            first_bad = {**step, "event": deepcopy(event),
+                         "before": deepcopy(oracle_records[before_oracle]),
+                         "after": deepcopy(oracle_records[after_oracle])}
+    require(consumed == len(phases), "unreferenced propagation phases")
+    require(type(result["final_phase"]) is int and result["final_phase"] == current_phase, "wrong final phase")
+    final = phases[current_phase]["outcome"]
+    require(all(type(result[name]) is int for name in ("choices", "probes", "rejections"))
+            and result["choices"] == choices and result["probes"] == probes and result["rejections"] == rejections,
+            "incorrect event telemetry")
+    for name in ("name_states", "domains", "colors"):
+        _same(result[name], final[name], "final " + name)
+    if final["status"] == "underdetermined":
+        require(choices == result["decision_limit"] or (result["probe"] and probes == result["probe_limit"]),
+                "unexplained early stop")
+        require(result["status"] == "incomplete" and result["reason"] ==
+                ("decision-limit-exhausted" if choices == result["decision_limit"]
+                 else "probe-limit-exhausted"), "budget exhaustion mislabeled")
+    else:
+        require(result["status"] == final["status"], "terminal status mismatch")
+        require(result["reason"] == ("complete-coloring-verified" if final["status"] == "solved"
+                else "propagation-conflict-under-current-commitments"), "terminal reason mismatch")
+    if final["colors"] is not None:
+        values = [final["colors"][side] for side in sides]
+        require(all(values[i] in initial_domains[i] for i in range(len(sides)))
+                and all(values[a] != values[b] for a, b in edges), "final colors violate raw constraints")
+    return {"passed": True, "audit_version": AUDIT_VERSION, "geometry": geometry_check,
+            "odd_cycle_eq_check": equality_check,
+            "logical_neq_check": inequality_check,
+            "phase_count": len(phases), "phase_audits": phase_audits,
+            "trace_steps_checked": sum(row["trace_steps_checked"] for row in phase_audits),
+            "initial_oracle_index": initial_oracle, "oracle_records": oracle_records, "steps": steps,
+            "first_bad_commitment": first_bad, "commitment_counts": commitment_counts,
+            "rejection_counts": rejection_counts,
+            "oracle_unknown": sum(row["result"]["status"] == "unknown" for row in oracle_records),
+            "full_enumeration": {"status": "run" if enumerate_all else "not_run",
+                "reason": None if enumerate_all else "initial_assignment_product_exceeds_limit",
+                "assignment_product": size, "assignment_limit": assignment_limit,
+                "literal_assignments_checked": size if enumerate_all else 0,
+                "initial_legal_assignments": legal_count, "phase_checks": phase_checks,
+                "legal_assignments_preserved": preserved_count},
+            "oracle_scope": "original_real_neq_initial_anchors_and_actual_commitments_only",
+            "oracle_feedback_to_producer": False,
+            "schedule_audit": "shared_mother_peer_selector_with_explicit_frame_fallback" if context
+                              else "independent_first_unresolved_input_order",
+            "scope": "Passed audits can contain unsafe commitments; unknown is not safe or UNSAT."}
+
+
+def _replay_raw_preservation(document, result, audit, resources):
+    """Recompute raw enumeration and verify witnesses against every saved phase.
+
+    A committed trial and its persistent phase have the same phase index. The
+    mapping below checks each allocated phase exactly once; rejected trials
+    keep their proposed anchor, but their following persistent phase does not.
+    Neither the legal assignments nor the oracle inputs contain learned EQ.
+    """
+    sides, domains, _ = raw_metadata(document)
+    index = {side: i for i, side in enumerate(sides)}
+    edges = sorted({tuple(sorted((index[line['left']], index[line['right']])))
+                    for line in document['lines'] if line['kind'] == 'separator'})
+    size = prod(len(values) for values in domains)
+    enumerate_all = size <= resources['assignment_limit']
+    initial_legal = ([values for values in product(*domains)
+                      if all(values[a] != values[b] for a, b in edges)]
+                     if enumerate_all else None)
+    committed = {index[side]: color for side, color in document.get('anchors', {}).items()}
+    phase_inputs = {0: (deepcopy(committed), audit['initial_oracle_index'])}
+
+    def bind(phase, fixed, oracle_index):
+        """Repeated references must have precisely the same actual promises."""
+        value = (deepcopy(fixed), oracle_index)
+        if phase in phase_inputs:
+            _same(phase_inputs[phase], value, 'saved phase raw promises differ')
+        phase_inputs[phase] = value
+
+    for event, step in zip(result['events'], audit['steps']):
+        bind(event['before_phase'], committed, step['before_oracle_index'])
+        trial = {**committed, index[event['side']]: event['symbol']}
+        bind(event['trial_phase'], trial, step['trial_oracle_index'])
+        if event['kind'] == 'commit':
+            committed = trial
+        bind(event['after_phase'], committed, step['after_oracle_index'])
+    require(set(phase_inputs) == set(range(len(result['phases']))),
+            'raw preservation phase coverage differs')
+    preserved_count = 0
+    for phase_number, (fixed, oracle_index) in sorted(phase_inputs.items()):
+        outcome = result['phases'][phase_number]['outcome']
+        oracle = audit['oracle_records'][oracle_index]['result']
+        if enumerate_all:
+            legal = [values for values in initial_legal
+                     if all(values[side] == color for side, color in fixed.items())]
+            _preserved(outcome, legal)
+            preserved_count += len(legal)
+            if oracle['status'] != 'unknown':
+                require(bool(legal) == (oracle['status'] == 'sat'),
+                        'saved raw enumeration and oracle disagree')
+        if oracle['status'] == 'sat':
+            _preserved(outcome, [oracle['witness']])
+    expected = {'status': 'run' if enumerate_all else 'not_run',
+                'reason': None if enumerate_all else 'initial_assignment_product_exceeds_limit',
+                'assignment_product': size, 'assignment_limit': resources['assignment_limit'],
+                'literal_assignments_checked': size if enumerate_all else 0,
+                'initial_legal_assignments': len(initial_legal) if enumerate_all else None,
+                'phase_checks': len(result['phases']) if enumerate_all else 0,
+                'legal_assignments_preserved': preserved_count}
+    _same(audit['full_enumeration'], expected, 'saved raw enumeration differs')
+    final = result['phases'][result['final_phase']]['outcome']
+    if final['colors'] is not None:
+        values = [final['colors'][side] for side in sides]
+        require(all(values[i] in domains[i] for i in range(len(sides)))
+                and all(values[a] != values[b] for a, b in edges),
+                'saved final colors violate original raw constraints')
+
+
+def check_logical_neq_artifacts(document, envelope, audit, resources, *, geometry=None, adapted=None):
+    """Verify every exact certificate against raw NEQ and actual commitments."""
+    for name in ("decision_limit", "probe_limit", "assignment_limit", "node_limit"):
+        require(type(resources[name]) is int and resources[name] >= 0, "invalid saved resource limit")
+    augmented, result, equality_check, inequality_check = _bind_envelope(document, envelope)
+    require(isinstance(result['phases'], list) and bool(result['phases'])
+            and result['phases'][0]['kind'] == 'main',
+            'saved initial phase must be persistent main')
+    require(audit["audit_version"] == AUDIT_VERSION, "saved audit version differs")
+    _same(audit["odd_cycle_eq_check"], equality_check, "saved odd-cycle-EQ verification differs")
+    _same(audit['logical_neq_check'], inequality_check, 'saved logical-NEQ verification differs')
+    require((geometry is None) == (adapted is None), "geometry and adapted must be supplied together")
+    geometry_check = None
+    if geometry is not None:
+        _same(adapted["contact_document"], document, "saved raw adapter input")
+        geometry_check, _ = audit_geometry(geometry, adapted)
+    _same(audit["geometry"], geometry_check, "saved geometry audit differs")
+    require(audit["oracle_scope"] == "original_real_neq_initial_anchors_and_actual_commitments_only",
+            "saved exact scope differs")
+    expected_schedule = ("shared_mother_peer_selector_with_explicit_frame_fallback" if geometry is not None
+                         else "independent_first_unresolved_input_order")
+    require(audit["schedule_audit"] == expected_schedule, "saved audit schedule differs")
+    check_saved_schedule(augmented, result, geometry, resources)
+    require(audit['passed'] is True and audit['oracle_feedback_to_producer'] is False,
+            'independent audit contract differs')
+    require(not document.get('states') and not document.get('equal_names'),
+            'exact raw audit requires original NEQ and singleton anchors')
+    require(result['decision_limit'] == resources['decision_limit']
+            and result['probe_limit'] == resources['probe_limit'], 'producer limits differ')
+    sides = document['sides']
+    index = {side: i for i, side in enumerate(sides)}
+    edges = sorted({tuple(sorted((index[line['left']], index[line['right']])))
+                    for line in document['lines'] if line['kind'] == 'separator'})
+    phase_count = check_transitions(augmented, result, audit['phase_audits'])
+    require(audit['phase_count'] == phase_count and audit['trace_steps_checked'] == sum(
+        p['trace_steps_checked'] for p in audit['phase_audits']), 'trace counters differ')
+    records, used, statuses, signatures = audit['oracle_records'], set(), Counter(), set()
+    for record in records:
+        raw = record['input']
+        require(set(raw) == {"n", "edges", "anchors"}, "extra oracle input premises")
+        require(type(raw['n']) is int, "oracle vertex count is not an integer")
+        _same(raw['edges'], [list(edge) for edge in edges], 'oracle graph differs')
+        require(raw['n'] == len(sides), 'oracle vertex coverage differs')
+        fixed = dict(raw['anchors'])
+        _same(raw['anchors'], [list(p) for p in sorted(fixed.items())], 'noncanonical oracle commitments')
+        signature = tuple(sorted(fixed.items()))
+        require(signature not in signatures, 'duplicated oracle signature')
+        signatures.add(signature)
+        require(record['result']['node_limit'] == resources['node_limit'], 'oracle budget differs')
+        verified = verify_exact_result(len(sides), edges, fixed, record['result'])
+        require(verified['passed'], 'exact certificate rejected')
+        _same(verified, record['verification'], 'saved exact verification differs')
+        statuses[record['result']['status']] += 1
+
+    def at(number, fixed):
+        """A reference may contain no restrictions beyond cumulative promises."""
+        require(type(number) is int and 0 <= number < len(records), 'invalid oracle reference')
+        used.add(number)
+        record = records[number]
+        _same(record['input']['anchors'], [list(p) for p in sorted(fixed.items())],
+             'oracle commitment binding differs')
+        return record
+
+    committed = {index[side]: color for side, color in document.get('anchors', {}).items()}
+    at(audit['initial_oracle_index'], committed)
+    require(len(audit['steps']) == len(result['events']), 'event/step coverage differs')
+    counts = {'safe': 0, 'unsafe': 0, 'unknown': 0, 'preexisting_unsat': 0}
+    rejections, first_bad = {'exact_unsat': 0, 'unknown': 0}, None
+    for number, (event, step) in enumerate(zip(result['events'], audit['steps'])):
+        require(step['event_index'] == number, 'step order differs')
+        for field in ('kind', 'side', 'symbol', 'before_phase', 'trial_phase', 'after_phase'):
+            _same(step[field], event[field], 'event/step identity differs')
+        before = at(step['before_oracle_index'], committed)
+        proposed = {**committed, index[event['side']]: event['symbol']}
+        trial = at(step['trial_oracle_index'], proposed)
+        b, t = before['result']['status'], trial['result']['status']
+        if event['kind'] == 'reject':
+            require(t != 'sat', 'rejected trial has a verified witness')
+            extension = 'refuted'
+            rejections['exact_unsat' if t == 'unsat' else 'unknown'] += 1
+        else:
+            extension = ('preexisting_unsat' if b == 'unsat' else
+                         'unknown' if 'unknown' in (b, t) else 'unsafe' if t == 'unsat' else 'safe')
+            counts[extension] += 1
+            committed = proposed
+        after = at(step['after_oracle_index'], committed)
+        require(step['before_status'] == b and step['after_status'] == after['result']['status']
+                and step['extendibility'] == extension, 'extendibility classification differs')
+        if extension == 'unsafe' and first_bad is None:
+            first_bad = {**step, 'event': event, 'before': before, 'after': after}
+    require(used == set(range(len(records))), 'unreferenced oracle certificate')
+    _same(audit['commitment_counts'], counts, 'commitment totals differ')
+    _same(audit['rejection_counts'], rejections, 'rejection totals differ')
+    _same(audit['first_bad_commitment'], first_bad, 'first unsafe evidence differs')
+    require(audit['oracle_unknown'] == statuses['unknown'], 'unknown count differs')
+    _replay_raw_preservation(document, result, audit, resources)
+    return {'passed': True, 'odd_cycle_eq_check': equality_check, 'logical_neq_check': inequality_check, 'producer_runs': 0,
+            'oracle_searches': 0, 'oracle_records': len(records), 'oracle_statuses': dict(statuses),
+            'phases': phase_count, 'unsafe_commitments': counts['unsafe']}
+
+
+# The three functions below derive from the frozen literal/schedule auditors.
+# Only the explicit logical-NEQ language and version bindings are extended.
+
+def audit_logical_contacts(document, outcome):
+    """Audit all metadata and replay sound set deletions without assignment enumeration."""
+    sides, initial_domains, sources = logical_metadata(document)
+    n, index = len(sides), {s: i for i, s in enumerate(sides)}
+    require(type(outcome["schema_version"]) is int and outcome["schema_version"] == 1
+            and outcome["model"] == "quaternary-logical-neq-contact-relations-v1", "wrong contact producer")
+    _same(outcome["original_input"], document, "contact original input")
+    _same(outcome["side_order"], sides, "contact side order")
+    require(type(outcome["choices"]) is int and outcome["choices"] == 0
+            and type(outcome["backtracks"]) is int and outcome["backtracks"] == 0
+            and outcome["representatives_are_assignments"] is False, "representative became a commitment")
+    check_domains(outcome["initial_domains"], n, "initial domains")
+    check_domains(outcome["domains"], n, "final domains")
+    require(outcome["initial_domains"] == initial_domains, "initial domains differ")
+    check_matrix(outcome["initial_relations"], n, "initial relations")
+    check_matrix(outcome["relations"], n, "final relations")
+    unequal = {tuple(sorted((index[l["left"]], index[l["right"]]))) for l in document["lines"] if l["kind"] == "separator"}
+    unequal.update(tuple(sorted((index[a], index[b]))) for a, b in document.get("different_names", []))
+    equal = {tuple(sorted((index[a], index[b]))) for a, b in document.get("equal_names", [])}
+    current = [[{(a, b) for a in initial_domains[i] for b in initial_domains[j]
+                 if (i != j or a == b) and (tuple(sorted((i, j))) not in unequal or a != b)
+                 and (tuple(sorted((i, j))) not in equal or a == b)} for j in range(n)] for i in range(n)]
+    require(outcome["initial_relations"] == [[_mask(p) for p in row] for row in current], "wrong initial constraints")
+    trace = outcome["trace"]
+    require(isinstance(trace, list) and type(outcome["revisions"]) is int
+            and outcome["revisions"] >= len(trace), "trace exceeds attempted revision count")
+    for step in trace:
+        require(not any(not pairs for row in current for pairs in row), "trace continues after a conflict")
+        require(isinstance(step, dict) and set(step) == {"i", "j", "via", "before", "left", "right", "after", "removed"}
+                and all(type(v) is int for v in step.values()), "malformed trace step")
+        i, j, k = step["i"], step["j"], step["via"]
+        require(all(0 <= v < n for v in (i, j, k)), "trace side outside input")
+        before, left, right = current[i][j], current[i][k], current[k][j]
+        require((step["before"], step["left"], step["right"]) == (_mask(before), _mask(left), _mask(right)),
+                "trace premises differ from current literal relations")
+        after = before & {(a, b) for a, c in left for other, b in right if c == other}
+        require(after != before and step["after"] == _mask(after)
+                and step["removed"] == _mask(before - after), "trace deletion is not exact set composition")
+        current[i][j] = after
+        current[j][i] = {(b, a) for a, b in after}
+    require(outcome["relations"] == [[_mask(p) for p in row] for row in current], "final matrix is not the replayed trace")
+    conflict = any(not p for row in current for p in row)
+    if not conflict:
+        # Every retained pair must have a supporting literal intermediate name.
+        for i, j, k in product(range(n), repeat=3):
+            require(all(any((a, c) in current[i][k] and (c, b) in current[k][j] for c in (1, 2, 3, 4))
+                        for a, b in current[i][j]), "nonconflict result is not a set-relation fixed point")
+    domains = [sorted(a for a, b in current[i][i] if a == b) for i in range(n)]
+    require(outcome["domains"] == domains, "domains differ from diagonal relations")
+    for key in ("initial_states", "name_states", "explicit_anchor_sources"):
+        require(isinstance(outcome[key], dict) and set(outcome[key]) == set(sides), "wrong state/source identity coverage")
+    _same(outcome["explicit_anchor_sources"], sources, "explicit anchor source records")
+    for i, side in enumerate(sides):
+        check_state(outcome["initial_states"][side], expected_state(initial_domains[i], sources[side]), "initial state")
+        check_state(outcome["name_states"][side], expected_state(domains[i], sources[side]), "final state")
+    status = "conflict" if conflict else "solved" if all(len(d) == 1 for d in domains) else "underdetermined"
+    require(outcome["status"] == status, "status is not the literal singleton/empty classification")
+    _same(outcome["point_contacts"], document.get("point_contacts", []), "point echo")
+    _same(outcome["equal_names"], document.get("equal_names", []), "logical EQ echo")
+    _same(outcome["different_names"], document.get("different_names", []), "logical NEQ echo")
+    require(isinstance(outcome["lines"], list) and len(outcome["lines"]) == len(document["lines"]), "line count differs")
+    for source, line in zip(document["lines"], outcome["lines"]):
+        require(all(line[k] == v for k, v in source.items()), "line identity/direction differs")
+        expected = current[index[source["left"]]][index[source["right"]]]
+        for view, pairs, left, right in ((line, expected, source["left"], source["right"]),
+                (line["reverse"], {(b, a) for a, b in expected}, source["right"], source["left"])):
+            require(view["left"] == left and view["right"] == right, "reverse side identity differs")
+            require(type(view["relation_mask"]) is int and view["relation_mask"] == _mask(pairs), "line mask differs")
+            _same(view["allowed_pairs"], [list(p) for p in sorted(pairs)], "line literal pairs")
+            word = view["relation_code"]
+            require(isinstance(word, str) and len(word) == 8 and all(c in "0123" for c in word)
+                    and int(word, 4) == _mask(pairs), "packed directed relation differs")
+    if status == "solved":
+        colors = [d[0] for d in domains]
+        _same(outcome["colors"], dict(zip(sides, colors)), "solved colors")
+        require(all(colors[i] in initial_domains[i] for i in range(n))
+                and all(colors[a] != colors[b] for a, b in unequal)
+                and all(colors[a] == colors[b] for a, b in equal), "solved colors violate original constraints")
+    else:
+        require(outcome["colors"] is None, "unresolved display exported as a coloring")
+    return {"passed": True, "metadata_passed": True, "trace_audit": "independent_literal_set_replay",
+            "trace_steps_checked": len(trace), "final_fixed_point": "not_required_after_conflict" if conflict else "checked",
+            "attempted_revision_telemetry": "lower_bound_checked_not_worklist_replayed",
+            "complete_assignment_preservation": "sound_each_step_by_existential_pair_composition",
+            "status": status}
+
+
+def check_saved_schedule(document, result, geometry, resources):
+    """Recheck saved choices with frozen scheduler helpers and no color search.
+
+    This is a shared-code check of the declared scheduling convention, not an
+    independent mathematical safety oracle. The caller separately replays the
+    relation traces and verifies exact certificates. ``geometry=None`` supports
+    old abstract fixtures; actual geometry runs must supply their saved geometry.
+    """
+    require(digest(result["original_input"]) == digest(document), "schedule original input differs")
+    require(type(result["schema_version"]) is int and result["schema_version"] == 1
+            and result["policy"] == "quaternary-low-color-logical-neq-conditional-v1",
+            "saved producer schema/policy differs")
+    require(result["probe"] is True and result["oracle_feedback_to_producer"] is False
+            and result["old_colors_read"] is False and type(result["backtracks"]) is int
+            and result["backtracks"] == 0, "saved producer mode contract differs")
+    for name in ("decision_limit", "probe_limit"):
+        require(type(result[name]) is int and result[name] >= 0
+                and type(resources[name]) is int and result[name] == resources[name],
+                "saved producer resource limit differs: " + name)
+    expected_schedule = ("mother-peer-with-frame-only-fallback-v1" if geometry is not None
+                         else "first-unresolved-input-order-v1")
+    require(result["schedule"] == expected_schedule, "saved schedule label differs")
+    sides, edges = _edges(document)
+    context = None
+    if geometry is not None:
+        raw_sides, raw_edges, raw_lines = raw_graph(geometry)
+        require(sides == raw_sides and edges == raw_edges, "saved schedule geometry identities differ")
+        require(digest(sorted(document["lines"], key=lambda row: row["id"]))
+                == digest(sorted(raw_lines, key=lambda row: row["id"])),
+                "saved schedule physical contacts differ")
+        model = build_whole_lines(geometry)
+        require(sides == [f"S{i}" for i in range(len(model.plane_map.faces))],
+                "saved schedule model face order differs")
+        context = model, current_segments(model), level_metadata(model)
+    persistent_phases(result)
+    choices, probes, rejects = 0, 0, 0
+    for event in result["events"]:
+        require(choices < resources["decision_limit"] and probes < resources["probe_limit"],
+                "saved event after resource exhaustion")
+        before = result["phases"][event["before_phase"]]["outcome"]
+        require(before["status"] == "underdetermined" and before["side_order"] == sides,
+                "saved selection after terminal phase or different side order")
+        selected, expected = _selection(sides, before["domains"], context)
+        candidates = before["domains"][selected]
+        expected.update(side_id=sides[selected], candidate_order=candidates)
+        require(digest(event["selection"]) == digest(expected), "saved scheduler metadata differs")
+        require(event["side"] == sides[selected] and type(event["symbol"]) is int
+                and len(candidates) > 1 and event["symbol"] == min(candidates)
+                and event["candidates_before"] == candidates, "saved low-color selection differs")
+        probes += 1
+        if event["kind"] == "commit":
+            choices += 1
+        else:
+            rejects += 1
+    for name, actual in (("choices", choices), ("probes", probes), ("rejections", rejects)):
+        require(type(result[name]) is int and result[name] == actual, "saved schedule telemetry differs")
+    final = result["phases"][result["final_phase"]]["outcome"]
+    if final["status"] == "underdetermined":
+        require(choices == resources["decision_limit"] or probes == resources["probe_limit"],
+                "saved run stopped before declared resource limit")
+        reason = "decision-limit-exhausted" if choices == resources["decision_limit"] else "probe-limit-exhausted"
+        require(result["status"] == "incomplete" and result["reason"] == reason,
+                "saved resource stop mislabeled")
+    else:
+        require(final["status"] in ("solved", "conflict") and result["status"] == final["status"],
+                "saved terminal status differs")
+        reason = ("complete-coloring-verified" if final["status"] == "solved"
+                  else "propagation-conflict-under-current-commitments")
+        require(result["reason"] == reason, "saved terminal reason differs")
+    return {"passed": True, "schedule": expected_schedule, "events_checked": len(result["events"]),
+            "producer_rerun": False, "oracle_search_rerun": False,
+            "scope": "Frozen scheduler helpers check scheduling metadata; exact safety is checked separately."}
+
+
+def check_transitions(document, result, stored_phase_audits):
+    """Replay saved input mutations and trace certificates, never propagation."""
+    _same(result['original_input'], document, 'producer original input changed')
+    require(result['probe'] is True and result['oracle_feedback_to_producer'] is False
+            and result['backtracks'] == 0, 'guarded/no-feedback contract differs')
+    persistent_phases(result)  # Ensures every allocated phase is referenced once.
+    phases = result['phases']
+    _same(phases[0]['document'], document, 'initial phase differs')
+    require(len(phases) == len(stored_phase_audits), 'phase audit coverage differs')
+    for phase, stored in zip(phases, stored_phase_audits):
+        _same(audit_logical_contacts(phase['document'], phase['outcome']), stored,
+             'saved propagation trace audit differs')
+    current, commits, rejects = 0, 0, 0
+    for event in result['events']:
+        side, color = event['side'], event['symbol']
+        before = phases[current]
+        require(before['outcome']['status'] == 'underdetermined'
+                and event['before_phase'] == current, 'event skips current live phase')
+        index = document['sides'].index(side)
+        candidates = before['outcome']['domains'][index]
+        _same(event['candidates_before'], candidates, 'candidate record differs')
+        require(len(candidates) > 1 and color == min(candidates), 'not a low-color unresolved choice')
+        require(side not in before['document'].get('anchors', {}), 'overwritten commitment')
+        trial_document = deepcopy(before['document'])
+        trial_document.setdefault('anchors', {})[side] = color
+        trial = phases[event['trial_phase']]
+        _same(trial['document'], trial_document, 'trial imports extra restrictions')
+        if event['kind'] == 'reject':
+            require(trial['outcome']['status'] == 'conflict'
+                    and event['extension_claim'] == 'refuted', 'rejection lacks conflict')
+            expected = deepcopy(before['document'])
+            remaining = [c for c in candidates if c != color]
+            expected.setdefault('states', {})[side] = expected_state(remaining, False)['quaternary']
+            rejects += 1
+        else:
+            require(event['kind'] == 'commit' and trial['outcome']['status'] != 'conflict',
+                    'invalid committed trial')
+            expected = trial_document
+            claim = 'complete-witness' if trial['outcome']['status'] == 'solved' else 'inconclusive'
+            require(event['extension_claim'] == claim, 'commitment overclaims its trial')
+            commits += 1
+        current = event['after_phase']
+        _same(phases[current]['document'], expected, 'persistent input mutation differs')
+    require(result['choices'] == commits and result['rejections'] == rejects
+            and result['probes'] == len(result['events']), 'producer counters differ')
+    final = phases[current]['outcome']
+    for field in ('name_states', 'domains', 'colors'):
+        _same(result[field], final[field], 'final phase differs: ' + field)
+    require(result['status'] == ('incomplete' if final['status'] == 'underdetermined'
+                                else final['status']), 'final status differs')
+    return len(phases)

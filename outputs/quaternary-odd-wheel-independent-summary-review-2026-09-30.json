@@ -1,0 +1,595 @@
+{
+  "schema_version": 1,
+  "passed": true,
+  "created_at_utc": "2026-09-30T05:33:33.327577+00:00",
+  "manifest_sha256": "4470fa82fa5cb32b0af8462af10b34ab0f9d615bf8f6197f8fffef32867b2b5c",
+  "report_sha256": "2e1e2d110132bd84044323c94f142638a98799fb76e68bb5c622d0b498bdcd4f",
+  "source_files_checked": 234,
+  "input_files_checked": 5,
+  "checkpoint_count": 497,
+  "checkpoint_references_sha256": "7b8bff58d1857bf953761a500482e8e7ca3b7f6c26ebf534f9f7625b75fe0ca8",
+  "eligibility": {
+    "geometry_error": 12,
+    "ready": 448,
+    "geometry_audit_error": 37
+  },
+  "population_record_counts": {
+    "all-records": 497,
+    "regression-logical-neq": 477,
+    "fresh-declared": 75,
+    "fresh-overlap": 55,
+    "fresh-new-key": 20
+  },
+  "groups": {
+    "all-records/logical-neq": {
+      "runs": 895,
+      "execution_audited": 895,
+      "initial_sat": 895,
+      "final_solved": 895,
+      "actual_commit_safe": 3791,
+      "actual_commit_unsafe": 0,
+      "actual_commit_unknown": 0,
+      "actual_commit_preexisting_unsat": 0,
+      "choices": 3791,
+      "probes": 3791,
+      "rejections": 0,
+      "phases": 4686,
+      "oracle_record_count": 4686,
+      "oracle_nodes": 26664,
+      "wheel_checks": 0,
+      "wheel_conflicts": 0,
+      "wheel_edges_examined": 0
+    },
+    "regression-logical-neq/logical-neq": {
+      "runs": 855,
+      "execution_audited": 855,
+      "initial_sat": 855,
+      "final_solved": 855,
+      "actual_commit_safe": 3663,
+      "actual_commit_unsafe": 0,
+      "actual_commit_unknown": 0,
+      "actual_commit_preexisting_unsat": 0,
+      "choices": 3663,
+      "probes": 3663,
+      "rejections": 0,
+      "phases": 4518,
+      "oracle_record_count": 4518,
+      "oracle_nodes": 26028,
+      "wheel_checks": 0,
+      "wheel_conflicts": 0,
+      "wheel_edges_examined": 0
+    },
+    "all-records/odd-wheel": {
+      "runs": 895,
+      "execution_audited": 895,
+      "initial_sat": 895,
+      "final_solved": 895,
+      "actual_commit_safe": 3791,
+      "actual_commit_unsafe": 0,
+      "actual_commit_unknown": 0,
+      "actual_commit_preexisting_unsat": 0,
+      "choices": 3791,
+      "probes": 3791,
+      "rejections": 0,
+      "phases": 4686,
+      "oracle_record_count": 4686,
+      "oracle_nodes": 26664,
+      "wheel_checks": 3791,
+      "wheel_conflicts": 0,
+      "wheel_edges_examined": 57692
+    },
+    "regression-logical-neq/odd-wheel": {
+      "runs": 855,
+      "execution_audited": 855,
+      "initial_sat": 855,
+      "final_solved": 855,
+      "actual_commit_safe": 3663,
+      "actual_commit_unsafe": 0,
+      "actual_commit_unknown": 0,
+      "actual_commit_preexisting_unsat": 0,
+      "choices": 3663,
+      "probes": 3663,
+      "rejections": 0,
+      "phases": 4518,
+      "oracle_record_count": 4518,
+      "oracle_nodes": 26028,
+      "wheel_checks": 3663,
+      "wheel_conflicts": 0,
+      "wheel_edges_examined": 56866
+    },
+    "fresh-declared/logical-neq": {
+      "runs": 150,
+      "execution_audited": 150,
+      "initial_sat": 150,
+      "final_solved": 150,
+      "actual_commit_safe": 367,
+      "actual_commit_unsafe": 0,
+      "actual_commit_unknown": 0,
+      "actual_commit_preexisting_unsat": 0,
+      "choices": 367,
+      "probes": 367,
+      "rejections": 0,
+      "phases": 517,
+      "oracle_record_count": 517,
+      "oracle_nodes": 1700,
+      "wheel_checks": 0,
+      "wheel_conflicts": 0,
+      "wheel_edges_examined": 0
+    },
+    "fresh-overlap/logical-neq": {
+      "runs": 110,
+      "execution_audited": 110,
+      "initial_sat": 110,
+      "final_solved": 110,
+      "actual_commit_safe": 239,
+      "actual_commit_unsafe": 0,
+      "actual_commit_unknown": 0,
+      "actual_commit_preexisting_unsat": 0,
+      "choices": 239,
+      "probes": 239,
+      "rejections": 0,
+      "phases": 349,
+      "oracle_record_count": 349,
+      "oracle_nodes": 1064,
+      "wheel_checks": 0,
+      "wheel_conflicts": 0,
+      "wheel_edges_examined": 0
+    },
+    "fresh-declared/odd-wheel": {
+      "runs": 150,
+      "execution_audited": 150,
+      "initial_sat": 150,
+      "final_solved": 150,
+      "actual_commit_safe": 367,
+      "actual_commit_unsafe": 0,
+      "actual_commit_unknown": 0,
+      "actual_commit_preexisting_unsat": 0,
+      "choices": 367,
+      "probes": 367,
+      "rejections": 0,
+      "phases": 517,
+      "oracle_record_count": 517,
+      "oracle_nodes": 1700,
+      "wheel_checks": 367,
+      "wheel_conflicts": 0,
+      "wheel_edges_examined": 2720
+    },
+    "fresh-overlap/odd-wheel": {
+      "runs": 110,
+      "execution_audited": 110,
+      "initial_sat": 110,
+      "final_solved": 110,
+      "actual_commit_safe": 239,
+      "actual_commit_unsafe": 0,
+      "actual_commit_unknown": 0,
+      "actual_commit_preexisting_unsat": 0,
+      "choices": 239,
+      "probes": 239,
+      "rejections": 0,
+      "phases": 349,
+      "oracle_record_count": 349,
+      "oracle_nodes": 1064,
+      "wheel_checks": 239,
+      "wheel_conflicts": 0,
+      "wheel_edges_examined": 1894
+    },
+    "fresh-new-key/logical-neq": {
+      "runs": 40,
+      "execution_audited": 40,
+      "initial_sat": 40,
+      "final_solved": 40,
+      "actual_commit_safe": 128,
+      "actual_commit_unsafe": 0,
+      "actual_commit_unknown": 0,
+      "actual_commit_preexisting_unsat": 0,
+      "choices": 128,
+      "probes": 128,
+      "rejections": 0,
+      "phases": 168,
+      "oracle_record_count": 168,
+      "oracle_nodes": 636,
+      "wheel_checks": 0,
+      "wheel_conflicts": 0,
+      "wheel_edges_examined": 0
+    },
+    "fresh-new-key/odd-wheel": {
+      "runs": 40,
+      "execution_audited": 40,
+      "initial_sat": 40,
+      "final_solved": 40,
+      "actual_commit_safe": 128,
+      "actual_commit_unsafe": 0,
+      "actual_commit_unknown": 0,
+      "actual_commit_preexisting_unsat": 0,
+      "choices": 128,
+      "probes": 128,
+      "rejections": 0,
+      "phases": 168,
+      "oracle_record_count": 168,
+      "oracle_nodes": 636,
+      "wheel_checks": 128,
+      "wheel_conflicts": 0,
+      "wheel_edges_examined": 826
+    }
+  },
+  "oracle_statuses": {
+    "all-records/logical-neq": {
+      "sat": 4686
+    },
+    "regression-logical-neq/logical-neq": {
+      "sat": 4518
+    },
+    "all-records/odd-wheel": {
+      "sat": 4686
+    },
+    "regression-logical-neq/odd-wheel": {
+      "sat": 4518
+    },
+    "fresh-declared/logical-neq": {
+      "sat": 517
+    },
+    "fresh-overlap/logical-neq": {
+      "sat": 349
+    },
+    "fresh-declared/odd-wheel": {
+      "sat": 517
+    },
+    "fresh-overlap/odd-wheel": {
+      "sat": 349
+    },
+    "fresh-new-key/logical-neq": {
+      "sat": 168
+    },
+    "fresh-new-key/odd-wheel": {
+      "sat": 168
+    }
+  },
+  "measurements": {
+    "all-records/logical-neq": {
+      "producer_seconds": 34.37754569998651,
+      "audit_seconds": 59.76462839999476
+    },
+    "regression-logical-neq/logical-neq": {
+      "producer_seconds": 34.047102499990615,
+      "audit_seconds": 59.21798119999585
+    },
+    "all-records/odd-wheel": {
+      "producer_seconds": 40.343429100009416,
+      "audit_seconds": 51.654764899997645
+    },
+    "regression-logical-neq/odd-wheel": {
+      "producer_seconds": 39.943209300009585,
+      "audit_seconds": 51.04186369999934
+    },
+    "fresh-declared/logical-neq": {
+      "producer_seconds": 0.9057721999997739,
+      "audit_seconds": 2.251552400005494
+    },
+    "fresh-overlap/logical-neq": {
+      "producer_seconds": 0.575329000003876,
+      "audit_seconds": 1.7049052000065785
+    },
+    "fresh-declared/odd-wheel": {
+      "producer_seconds": 1.098190999997314,
+      "audit_seconds": 1.8062960999941424
+    },
+    "fresh-overlap/odd-wheel": {
+      "producer_seconds": 0.6979711999974825,
+      "audit_seconds": 1.1933948999958375
+    },
+    "fresh-new-key/logical-neq": {
+      "producer_seconds": 0.3304431999958979,
+      "audit_seconds": 0.5466471999989153
+    },
+    "fresh-new-key/odd-wheel": {
+      "producer_seconds": 0.4002197999998316,
+      "audit_seconds": 0.612901199998305
+    }
+  },
+  "paired_scenarios": 895,
+  "pairs_same_actual_commit_sequence": {
+    "all-records": 895,
+    "regression-logical-neq": 855,
+    "fresh-declared": 150,
+    "fresh-overlap": 110,
+    "fresh-new-key": 40
+  },
+  "pairs_same_final_colors": {
+    "all-records": 895,
+    "regression-logical-neq": 855,
+    "fresh-declared": 150,
+    "fresh-overlap": 110,
+    "fresh-new-key": 40
+  },
+  "archived_baselines_exactly_equal": 855,
+  "raw_query_premises_checked": 9372,
+  "literal_sat_witnesses_checked": 9372,
+  "actual_events_checked": 7582,
+  "final_colorings_checked": 1790,
+  "physical_wheel_certificates_checked_rule_and_production": 4,
+  "history_totals": {
+    "fresh-declared/logical-neq": {
+      "history_mode_records": 14,
+      "complete_history_mode_records": 14,
+      "prefix_references": 162,
+      "excluded_prefix_references": 0
+    },
+    "fresh-declared/odd-wheel": {
+      "history_mode_records": 14,
+      "complete_history_mode_records": 14,
+      "prefix_references": 162,
+      "excluded_prefix_references": 0
+    },
+    "regression-logical-neq/logical-neq": {
+      "history_mode_records": 124,
+      "complete_history_mode_records": 118,
+      "prefix_references": 1360,
+      "excluded_prefix_references": 60
+    },
+    "regression-logical-neq/odd-wheel": {
+      "history_mode_records": 124,
+      "complete_history_mode_records": 118,
+      "prefix_references": 1360,
+      "excluded_prefix_references": 60
+    }
+  },
+  "history_records_checked": 276,
+  "rule_counts": {
+    "raw_four_color_witnesses": 4124,
+    "negative_domain_witnesses": 4120,
+    "case_count": 4124,
+    "case_assignment_pairs": 16941056,
+    "domain_assignment_pairs": 3018060,
+    "missed_domain_unsat": 0,
+    "positive_certificates": 4
+  },
+  "gap_counts": {
+    "targets": 1814,
+    "checked": 1814,
+    "new_conflict": 1806,
+    "repaired": 3,
+    "persistent_inconclusive": 8,
+    "regressions": 0,
+    "wheel_checks": 11,
+    "wheel_certificates": 3,
+    "wheel_edges_examined": 438,
+    "new_underdetermined": 8
+  },
+  "gap_wheel_certificates": [
+    {
+      "key": "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132",
+      "scenario": "one-bounded-anchor",
+      "state_index": 0,
+      "target_index": 545,
+      "phase": 0,
+      "sides": [
+        "S4",
+        "S6"
+      ],
+      "symbols": [
+        1,
+        1
+      ],
+      "old_status": "conditional_inconclusive",
+      "input_sha256": "00e99f28639739dab1d4ddc46fe2fd48bebbc6798c92242aea967577fa8b694f",
+      "old_outcome_sha256": "51b5ec8da16ff11bedcdf161921e88178d374db9e0cccbedcbf8932c1f418b3a",
+      "certificate": {
+        "center": "S3",
+        "rim": [
+          "S0",
+          "S2",
+          "S17",
+          "S18",
+          "S5"
+        ],
+        "excluded_color": 1
+      }
+    },
+    {
+      "key": "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132",
+      "scenario": "one-bounded-anchor",
+      "state_index": 0,
+      "target_index": 561,
+      "phase": 0,
+      "sides": [
+        "S4",
+        "S7"
+      ],
+      "symbols": [
+        1,
+        1
+      ],
+      "old_status": "conditional_inconclusive",
+      "input_sha256": "c49130732b7b75802c02d20291f62eb279b7d705647da628b683574fd15334e0",
+      "old_outcome_sha256": "00dbe77626b382712498a2c4a070c763640203d124c464818ba7fdc99980ed9e",
+      "certificate": {
+        "center": "S3",
+        "rim": [
+          "S0",
+          "S2",
+          "S17",
+          "S18",
+          "S5"
+        ],
+        "excluded_color": 1
+      }
+    },
+    {
+      "key": "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132",
+      "scenario": "one-bounded-anchor",
+      "state_index": 0,
+      "target_index": 693,
+      "phase": 0,
+      "sides": [
+        "S4",
+        "S16"
+      ],
+      "symbols": [
+        1,
+        1
+      ],
+      "old_status": "conditional_inconclusive",
+      "input_sha256": "d347a1e994a105a151b5aed8776183669c627f5a06be2aab2b4a4ac99760a98a",
+      "old_outcome_sha256": "27961c1b2aa2cad80775456643a92c9b0a57fedcb53aa35a5c5c64be51245f95",
+      "certificate": {
+        "center": "S3",
+        "rim": [
+          "S0",
+          "S2",
+          "S17",
+          "S18",
+          "S5"
+        ],
+        "excluded_color": 1
+      }
+    }
+  ],
+  "gap_residuals": [
+    {
+      "key": "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132",
+      "scenario": "one-bounded-anchor",
+      "state_index": 0,
+      "target_index": 661,
+      "phase": 0,
+      "sides": [
+        "S4",
+        "S14"
+      ],
+      "symbols": [
+        1,
+        1
+      ],
+      "old_status": "conditional_inconclusive",
+      "input_sha256": "e96ce7ef2b2844c635a890cf2960356a7f165c76edb8accf065a9f6ce9cda80e",
+      "old_outcome_sha256": "e487ee64a721dd4675f8d3a896e4961af7e6429cf9b07bc7ae7b5edd62cfce69"
+    },
+    {
+      "key": "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132",
+      "scenario": "one-bounded-anchor",
+      "state_index": 0,
+      "target_index": 765,
+      "phase": 0,
+      "sides": [
+        "S5",
+        "S8"
+      ],
+      "symbols": [
+        1,
+        1
+      ],
+      "old_status": "conditional_inconclusive",
+      "input_sha256": "74b9db792fdee02597aeacdbdf622c067aab381cf86182160a998cb5642737b7",
+      "old_outcome_sha256": "347b06f70a5c417954f512de86fa6553983beea8c69a77b2a4ac13cccfefb9f1"
+    },
+    {
+      "key": "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132",
+      "scenario": "one-bounded-anchor",
+      "state_index": 0,
+      "target_index": 849,
+      "phase": 0,
+      "sides": [
+        "S5",
+        "S14"
+      ],
+      "symbols": [
+        1,
+        1
+      ],
+      "old_status": "conditional_inconclusive",
+      "input_sha256": "271213fb2bad81209bcbf0c68a471030ef236ad727035c5aa7e0eeb75a7f3f66",
+      "old_outcome_sha256": "3ee68413a8f559d5034b48019f100323bd4302311b5f4ed1d836ebe69939fc3a"
+    },
+    {
+      "key": "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132",
+      "scenario": "one-bounded-anchor",
+      "state_index": 0,
+      "target_index": 881,
+      "phase": 0,
+      "sides": [
+        "S5",
+        "S16"
+      ],
+      "symbols": [
+        1,
+        1
+      ],
+      "old_status": "conditional_inconclusive",
+      "input_sha256": "6455c9d1669213076d2291ef192ccbe9decac195053a847a1cc9f9fc51d7f981",
+      "old_outcome_sha256": "6e9a70ed51b0a1f9902bfe4bfbff96a023c51d2d98e136d0bf43408ba680c00d"
+    },
+    {
+      "key": "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132",
+      "scenario": "one-bounded-anchor",
+      "state_index": 0,
+      "target_index": 1169,
+      "phase": 0,
+      "sides": [
+        "S7",
+        "S14"
+      ],
+      "symbols": [
+        1,
+        1
+      ],
+      "old_status": "conditional_inconclusive",
+      "input_sha256": "4a8ea3e73c51f483c5b36701ea623fc750f17987fb45529ea66e5794087de654",
+      "old_outcome_sha256": "f794eb10b05212181936f65e93611293e2ac0d4f92f1d68bd90efa6c80ec53b6"
+    },
+    {
+      "key": "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132",
+      "scenario": "one-bounded-anchor",
+      "state_index": 0,
+      "target_index": 1301,
+      "phase": 0,
+      "sides": [
+        "S8",
+        "S14"
+      ],
+      "symbols": [
+        1,
+        1
+      ],
+      "old_status": "conditional_inconclusive",
+      "input_sha256": "63ef7c553d06920f278f80c74c8812c02dd65388ea45b14d825b8fdb24f3b009",
+      "old_outcome_sha256": "aa82b095c20438c9317c610fa5276eddefa15d2fcada44fb65b9dcd81165a4f7"
+    },
+    {
+      "key": "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132",
+      "scenario": "one-bounded-anchor",
+      "state_index": 0,
+      "target_index": 1422,
+      "phase": 0,
+      "sides": [
+        "S9",
+        "S14"
+      ],
+      "symbols": [
+        1,
+        1
+      ],
+      "old_status": "conditional_inconclusive",
+      "input_sha256": "782719dddd790a6b018c8ed15a0aa2fd52bc44ab9a73d69335b09ea246f9bf17",
+      "old_outcome_sha256": "6843ef207993d2b8874a0fccbe12ea132f82cae0b78599dd8ed448b704bcb509"
+    },
+    {
+      "key": "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132",
+      "scenario": "one-bounded-anchor",
+      "state_index": 0,
+      "target_index": 1804,
+      "phase": 0,
+      "sides": [
+        "S14",
+        "S18"
+      ],
+      "symbols": [
+        1,
+        1
+      ],
+      "old_status": "conditional_inconclusive",
+      "input_sha256": "5a00e2f82c27f7f8346baaadd18c7d00c55694facc1c80c558965e8a231ff3df",
+      "old_outcome_sha256": "baeb9871f9635a9e4b7df624a6c3647fdf2168fa19d5705cd18fed64df1f195c"
+    }
+  ],
+  "no_production_oracle_propagation_or_full_checker_reruns": true,
+  "scope": "Independent standard-library byte/hash, coverage, raw SAT witnesses, actual commitment premises, literal final colors and summary reconstruction. No re-enumeration of rule tuples, no UNSAT proof replay, no propagation trace replay; those remain in the separately executed full artifact check."
+}

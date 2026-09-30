@@ -1,9 +1,42 @@
 # 外部复现：算法、完整实验、证书与图件
 
-本指南包含截至 2026-09-26 的研究记录，导航于2026-09-27更新。发起思路属于 Qinzi27。
+本指南包含截至 2026-09-30 的研究记录。发起思路属于 Qinzi27。
 这里公开的是可复现的候选方法、成功和负结果，不是一份新的四色定理证明。
 
-## 当前检查：顺序、同名证书、剩余候选与全候选试排（2026-09-23—26）
+## 当前检查：逻辑异名、联合候选、奇轮与条件同名（2026-09-27—30）
+
+本批五阶段依赖前序完整档案，见[发布范围](PUBLICATION-2026-09-30.md)。
+请从完整仓库根目录执行，使用尚不存在的输出路径。最新版本冻结253项来源；
+不要重排、重压缩或改换行，否则会破坏证据哈希。单候选与二元扫描仅作离线
+诊断；三个算法阶段先生产，再用原始邻接及实际承诺独立检查。
+
+最新版本的运行与保存复核：
+
+```text
+python -X utf8 -m unittest discover -s tests -v
+python -X utf8 scripts/validate.py --output outputs/my-diamond-validation.json
+python -X utf8 scripts/validate_quaternary_conditional_diamond.py run --manifest outputs/quaternary-conditional-diamond-manifest-2026-09-30.json.gz --output outputs/my-conditional-diamond.json.gz
+python -X utf8 scripts/validate_quaternary_conditional_diamond.py check --manifest outputs/quaternary-conditional-diamond-manifest-2026-09-30.json.gz --report outputs/quaternary-conditional-diamond-2026-09-30.json.gz --output outputs/my-conditional-diamond-check.json
+```
+
+最后一条检查正式保存结果；检查自己的重跑结果时，将`--report`换成自己的文件。
+`check`不重新生产、传播或精确搜索，但会检查全部保存证书与有限字面赋值。
+两个残余未识别组合并不使证据检查失败：`passed`和执行完整标志不表示算法完备。
+
+前序入口均支持同样的`prepare/run/check`和`--manifest/--report/--output`参数：
+
+| 阶段 | 脚本后缀（`scripts/validate_`之后） | 正式清单（`outputs/`下） |
+| --- | --- | --- |
+| 逻辑NEQ | `quaternary_logical_neq.py` | `quaternary-logical-neq-manifest-2026-09-27.json.gz` |
+| 单候选离线扫描 | `quaternary_logical_neq_candidate_scan.py` | `quaternary-logical-neq-candidate-scan-manifest-2026-09-29.json.gz` |
+| 二元离线扫描 | `quaternary_logical_neq_pair_scan.py` | `quaternary-logical-neq-pair-scan-manifest-2026-09-29.json.gz` |
+| 奇轮规则 | `quaternary_odd_wheel.py` | `quaternary-odd-wheel-manifest-2026-09-30.json.gz` |
+
+各阶段完整资源、已执行范围及限制见对应RESULTS/PROTOCOL文档；新实验用新的
+清单名先`prepare`冻结输入。20个新输入键、相关历史前缀以及两种初始化不能
+合并解释成独立图族或普遍成功概率。完整验证通过也不替代一般可延拓性论证。
+
+## 此前检查：顺序、同名证书、剩余候选与全候选试排（2026-09-23—26）
 
 这五轮分别冻结来源、输入和预算，具体发布范围见
 [2026-09-27归档说明](PUBLICATION-2026-09-27.md)。从完整仓库根目录运行，

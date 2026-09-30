@@ -1,0 +1,3977 @@
+{
+  "schema_version": 1,
+  "review_kind": "independent_saved_result_extraction",
+  "sources": {
+    "manifest": {
+      "path": "outputs/quaternary-odd-wheel-manifest-2026-09-30.json.gz",
+      "sha256": "4470fa82fa5cb32b0af8462af10b34ab0f9d615bf8f6197f8fffef32867b2b5c"
+    },
+    "known_pair_gaps": {
+      "path": "outputs/quaternary-odd-wheel-2026-09-30-checkpoints/known-pair-gaps.json.gz",
+      "sha256": "b608dc700bc5fac791ab204773b1bf083e94e6966b83fa012856f6277eb5103f"
+    }
+  },
+  "all_target_count": {
+    "targets": 1814,
+    "checked": 1814,
+    "new_conflict": 1806,
+    "repaired": 3,
+    "persistent_inconclusive": 8,
+    "regressions": 0,
+    "wheel_checks": 11,
+    "wheel_certificates": 3,
+    "wheel_edges_examined": 438,
+    "new_underdetermined": 8
+  },
+  "status_transitions": {
+    "conditional_refuted -> conflict": 1803,
+    "conditional_inconclusive -> conflict": 3,
+    "conditional_inconclusive -> underdetermined": 8
+  },
+  "old_inconclusive_count": 11,
+  "repaired_pairs": [
+    [
+      "S4",
+      "S6"
+    ],
+    [
+      "S4",
+      "S7"
+    ],
+    [
+      "S4",
+      "S16"
+    ]
+  ],
+  "residual_pairs": [
+    [
+      "S4",
+      "S14"
+    ],
+    [
+      "S5",
+      "S8"
+    ],
+    [
+      "S5",
+      "S14"
+    ],
+    [
+      "S5",
+      "S16"
+    ],
+    [
+      "S7",
+      "S14"
+    ],
+    [
+      "S8",
+      "S14"
+    ],
+    [
+      "S9",
+      "S14"
+    ],
+    [
+      "S14",
+      "S18"
+    ]
+  ],
+  "diagnostics": [
+    {
+      "key": "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132",
+      "scenario": "one-bounded-anchor",
+      "state_index": 0,
+      "phase": 0,
+      "target_index": 545,
+      "source_checkpoint": {
+        "path": "outputs/quaternary-logical-neq-pair-scan-2026-09-29-checkpoints/044-8070783fd68d.json.gz",
+        "sha256": "f3be9670ae9d377d12e1ed201053f8d6b5355e428c2ebb8cc0da66496f91c17c"
+      },
+      "source_raw_document_sha256": "711ea708150173a1d6a9db41411fb8a87aa86a512fde994823822b30619be474",
+      "source_base_anchors": {
+        "S1": 1
+      },
+      "pair_hypothesis": {
+        "S4": 1,
+        "S6": 1
+      },
+      "next_action": "not_next_choice",
+      "conditional_anchors": {
+        "S1": 1,
+        "S4": 1,
+        "S6": 1
+      },
+      "conditional_document_sha256": "00e99f28639739dab1d4ddc46fe2fd48bebbc6798c92242aea967577fa8b694f",
+      "old_outcome_sha256": "51b5ec8da16ff11bedcdf161921e88178d374db9e0cccbedcbf8932c1f418b3a",
+      "new_outcome_sha256": "24cda0b64e3b7c1b3b37febd68d35fff0c29bfcb0081949c281eaef176200380",
+      "old_status": "conditional_inconclusive",
+      "new_status": "conflict",
+      "base_status": "underdetermined",
+      "all_final_domains": {
+        "S0": [
+          2,
+          3,
+          4
+        ],
+        "S1": [
+          1
+        ],
+        "S2": [
+          2,
+          3,
+          4
+        ],
+        "S3": [
+          2,
+          3,
+          4
+        ],
+        "S4": [
+          1
+        ],
+        "S5": [
+          2,
+          3,
+          4
+        ],
+        "S6": [
+          1
+        ],
+        "S7": [
+          2,
+          3,
+          4
+        ],
+        "S8": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S9": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S10": [
+          2,
+          3,
+          4
+        ],
+        "S11": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S12": [
+          2,
+          3,
+          4
+        ],
+        "S13": [
+          2,
+          3,
+          4
+        ],
+        "S14": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S15": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S16": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S17": [
+          2,
+          3,
+          4
+        ],
+        "S18": [
+          2,
+          3,
+          4
+        ]
+      },
+      "complete_wheel_check": {
+        "version": "quaternary-domain-odd-wheel-v1",
+        "raw_document_sha256": "00e99f28639739dab1d4ddc46fe2fd48bebbc6798c92242aea967577fa8b694f",
+        "domains_sha256": "67df2d08a72d0c9164cb3ccb45e4ec09d321685330bb62b71e8db1da4c6ada46",
+        "certificate": {
+          "center": "S3",
+          "rim": [
+            "S0",
+            "S2",
+            "S17",
+            "S18",
+            "S5"
+          ],
+          "excluded_color": 1
+        },
+        "statistics": {
+          "palettes_examined": 1,
+          "centers_examined": 3,
+          "eligible_neighbor_sets": 3,
+          "bfs_components": 6,
+          "vertices_visited": 13,
+          "edges_examined": 16,
+          "odd_cycles_found": 1
+        }
+      },
+      "saved_contact_verification": {
+        "passed": true,
+        "metadata_passed": true,
+        "trace_audit": "independent_literal_set_replay",
+        "trace_steps_checked": 146,
+        "final_fixed_point": "checked",
+        "attempted_revision_telemetry": "lower_bound_checked_not_worklist_replayed",
+        "complete_assignment_preservation": "literal_pair_composition_then_real_edge_common_excluded_color_odd_wheel",
+        "status": "conflict",
+        "base_status": "underdetermined",
+        "wheel_check": {
+          "passed": true,
+          "found": true,
+          "certificate_checked": true,
+          "absence_checked": false,
+          "telemetry_scope": "literal_bounds_only_not_detector_work_replay",
+          "scope": "Conflict under supplied domains; absence means no declared real-edge common-excluded-color odd wheel, not global satisfiability."
+        }
+      },
+      "certificate_literal_details": {
+        "domains": {
+          "S3": [
+            2,
+            3,
+            4
+          ],
+          "S0": [
+            2,
+            3,
+            4
+          ],
+          "S2": [
+            2,
+            3,
+            4
+          ],
+          "S17": [
+            2,
+            3,
+            4
+          ],
+          "S18": [
+            2,
+            3,
+            4
+          ],
+          "S5": [
+            2,
+            3,
+            4
+          ]
+        },
+        "spokes": [
+          {
+            "sides": [
+              "S3",
+              "S0"
+            ],
+            "raw_line_ids": [
+              "E2"
+            ]
+          },
+          {
+            "sides": [
+              "S3",
+              "S2"
+            ],
+            "raw_line_ids": [
+              "E47"
+            ]
+          },
+          {
+            "sides": [
+              "S3",
+              "S17"
+            ],
+            "raw_line_ids": [
+              "E48"
+            ]
+          },
+          {
+            "sides": [
+              "S3",
+              "S18"
+            ],
+            "raw_line_ids": [
+              "E42"
+            ]
+          },
+          {
+            "sides": [
+              "S3",
+              "S5"
+            ],
+            "raw_line_ids": [
+              "E50"
+            ]
+          }
+        ],
+        "rim_edges": [
+          {
+            "sides": [
+              "S0",
+              "S2"
+            ],
+            "raw_line_ids": [
+              "E1"
+            ]
+          },
+          {
+            "sides": [
+              "S2",
+              "S17"
+            ],
+            "raw_line_ids": [
+              "E40"
+            ]
+          },
+          {
+            "sides": [
+              "S17",
+              "S18"
+            ],
+            "raw_line_ids": [
+              "E41"
+            ]
+          },
+          {
+            "sides": [
+              "S18",
+              "S5"
+            ],
+            "raw_line_ids": [
+              "E51"
+            ]
+          },
+          {
+            "sides": [
+              "S5",
+              "S0"
+            ],
+            "raw_line_ids": [
+              "E5"
+            ]
+          }
+        ],
+        "reason": "All six wheel vertices exclude color 1, so use only 2,3,4. The center consumes one name, leaving two for a five-cycle. This is impossible under these domains."
+      },
+      "reference_wheel_q1_blockers": {},
+      "reference_wheel_blockers_scope": "For the fixed S3 / S0-S2-S17-S18-S5 wheel only; global absence is the saved independent bipartiteness result.",
+      "raw_query_evidence": [
+        {
+          "role": "base",
+          "oracle_record_index": 0,
+          "record_sha256": "4a1400d1cc929a30d62a13b7a83c1f459c38702f80c9aeaf6436e0a4164bba70",
+          "status": "sat",
+          "anchors": {
+            "S1": 1
+          },
+          "sat_witness": {
+            "S0": 2,
+            "S1": 1,
+            "S2": 3,
+            "S3": 1,
+            "S4": 3,
+            "S5": 4,
+            "S6": 1,
+            "S7": 4,
+            "S8": 3,
+            "S9": 4,
+            "S10": 3,
+            "S11": 1,
+            "S12": 3,
+            "S13": 2,
+            "S14": 2,
+            "S15": 4,
+            "S16": 1,
+            "S17": 4,
+            "S18": 3
+          },
+          "saved_verification": {
+            "passed": true,
+            "status": "sat",
+            "conclusive": true,
+            "claim": "complete-four-name-witness",
+            "edges_checked": 51,
+            "anchors_checked": 1,
+            "nodes_independently_counted": null
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        },
+        {
+          "role": "joint",
+          "oracle_record_index": 564,
+          "record_sha256": "c199efcb0814b30e04c1371502474773ae928ce857fea7c39124956eb07a85a3",
+          "status": "unsat",
+          "anchors": {
+            "S1": 1,
+            "S4": 1,
+            "S6": 1
+          },
+          "sat_witness": null,
+          "saved_verification": {
+            "passed": true,
+            "status": "unsat",
+            "conclusive": true,
+            "claim": "complete-literal-four-name-unsat-tree",
+            "leaves_checked": 6,
+            "nodes_independently_counted": 28
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        },
+        {
+          "role": "single_0",
+          "oracle_record_index": 565,
+          "record_sha256": "1d2cfe77d3d42203c5bf7a6b77c151482b8168ca2ce03fdf32c4c42c987806eb",
+          "status": "sat",
+          "anchors": {
+            "S1": 1,
+            "S4": 1
+          },
+          "sat_witness": {
+            "S0": 2,
+            "S1": 1,
+            "S2": 4,
+            "S3": 3,
+            "S4": 1,
+            "S5": 4,
+            "S6": 3,
+            "S7": 4,
+            "S8": 1,
+            "S9": 4,
+            "S10": 3,
+            "S11": 1,
+            "S12": 3,
+            "S13": 4,
+            "S14": 2,
+            "S15": 1,
+            "S16": 2,
+            "S17": 2,
+            "S18": 1
+          },
+          "saved_verification": {
+            "passed": true,
+            "status": "sat",
+            "conclusive": true,
+            "claim": "complete-four-name-witness",
+            "edges_checked": 51,
+            "anchors_checked": 2,
+            "nodes_independently_counted": null
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        },
+        {
+          "role": "single_1",
+          "oracle_record_index": 355,
+          "record_sha256": "1a3bcc8d8c9882b8199a0caff5298ccfe6c9c570c23f55f5314f2d728766e926",
+          "status": "sat",
+          "anchors": {
+            "S1": 1,
+            "S6": 1
+          },
+          "sat_witness": {
+            "S0": 2,
+            "S1": 1,
+            "S2": 3,
+            "S3": 1,
+            "S4": 3,
+            "S5": 4,
+            "S6": 1,
+            "S7": 4,
+            "S8": 3,
+            "S9": 4,
+            "S10": 3,
+            "S11": 1,
+            "S12": 3,
+            "S13": 2,
+            "S14": 2,
+            "S15": 4,
+            "S16": 1,
+            "S17": 4,
+            "S18": 3
+          },
+          "saved_verification": {
+            "passed": true,
+            "status": "sat",
+            "conclusive": true,
+            "claim": "complete-four-name-witness",
+            "edges_checked": 51,
+            "anchors_checked": 2,
+            "nodes_independently_counted": null
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        }
+      ],
+      "interpretation": "Same old persistent state with two hypothetical colors; no actual simultaneous joint commitment claimed. Remaining UNSAT hypotheses are local detector gaps, not failure of whole-graph four-colorability."
+    },
+    {
+      "key": "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132",
+      "scenario": "one-bounded-anchor",
+      "state_index": 0,
+      "phase": 0,
+      "target_index": 561,
+      "source_checkpoint": {
+        "path": "outputs/quaternary-logical-neq-pair-scan-2026-09-29-checkpoints/044-8070783fd68d.json.gz",
+        "sha256": "f3be9670ae9d377d12e1ed201053f8d6b5355e428c2ebb8cc0da66496f91c17c"
+      },
+      "source_raw_document_sha256": "711ea708150173a1d6a9db41411fb8a87aa86a512fde994823822b30619be474",
+      "source_base_anchors": {
+        "S1": 1
+      },
+      "pair_hypothesis": {
+        "S4": 1,
+        "S7": 1
+      },
+      "next_action": "not_next_choice",
+      "conditional_anchors": {
+        "S1": 1,
+        "S4": 1,
+        "S7": 1
+      },
+      "conditional_document_sha256": "c49130732b7b75802c02d20291f62eb279b7d705647da628b683574fd15334e0",
+      "old_outcome_sha256": "00dbe77626b382712498a2c4a070c763640203d124c464818ba7fdc99980ed9e",
+      "new_outcome_sha256": "db938e1a53de9df86bab4bec7bce91c1213c0c67928b9e7b3fa8094b677d8f51",
+      "old_status": "conditional_inconclusive",
+      "new_status": "conflict",
+      "base_status": "underdetermined",
+      "all_final_domains": {
+        "S0": [
+          2,
+          3,
+          4
+        ],
+        "S1": [
+          1
+        ],
+        "S2": [
+          2,
+          3,
+          4
+        ],
+        "S3": [
+          2,
+          3,
+          4
+        ],
+        "S4": [
+          1
+        ],
+        "S5": [
+          2,
+          3,
+          4
+        ],
+        "S6": [
+          2,
+          3,
+          4
+        ],
+        "S7": [
+          1
+        ],
+        "S8": [
+          2,
+          3,
+          4
+        ],
+        "S9": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S10": [
+          2,
+          3,
+          4
+        ],
+        "S11": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S12": [
+          2,
+          3,
+          4
+        ],
+        "S13": [
+          2,
+          3,
+          4
+        ],
+        "S14": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S15": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S16": [
+          2,
+          3,
+          4
+        ],
+        "S17": [
+          2,
+          3,
+          4
+        ],
+        "S18": [
+          2,
+          3,
+          4
+        ]
+      },
+      "complete_wheel_check": {
+        "version": "quaternary-domain-odd-wheel-v1",
+        "raw_document_sha256": "c49130732b7b75802c02d20291f62eb279b7d705647da628b683574fd15334e0",
+        "domains_sha256": "336b097e84412e56ef3add9f10554830dde6ac2ad8613754ad0844ca317a82c8",
+        "certificate": {
+          "center": "S3",
+          "rim": [
+            "S0",
+            "S2",
+            "S17",
+            "S18",
+            "S5"
+          ],
+          "excluded_color": 1
+        },
+        "statistics": {
+          "palettes_examined": 1,
+          "centers_examined": 3,
+          "eligible_neighbor_sets": 3,
+          "bfs_components": 6,
+          "vertices_visited": 14,
+          "edges_examined": 18,
+          "odd_cycles_found": 1
+        }
+      },
+      "saved_contact_verification": {
+        "passed": true,
+        "metadata_passed": true,
+        "trace_audit": "independent_literal_set_replay",
+        "trace_steps_checked": 173,
+        "final_fixed_point": "checked",
+        "attempted_revision_telemetry": "lower_bound_checked_not_worklist_replayed",
+        "complete_assignment_preservation": "literal_pair_composition_then_real_edge_common_excluded_color_odd_wheel",
+        "status": "conflict",
+        "base_status": "underdetermined",
+        "wheel_check": {
+          "passed": true,
+          "found": true,
+          "certificate_checked": true,
+          "absence_checked": false,
+          "telemetry_scope": "literal_bounds_only_not_detector_work_replay",
+          "scope": "Conflict under supplied domains; absence means no declared real-edge common-excluded-color odd wheel, not global satisfiability."
+        }
+      },
+      "certificate_literal_details": {
+        "domains": {
+          "S3": [
+            2,
+            3,
+            4
+          ],
+          "S0": [
+            2,
+            3,
+            4
+          ],
+          "S2": [
+            2,
+            3,
+            4
+          ],
+          "S17": [
+            2,
+            3,
+            4
+          ],
+          "S18": [
+            2,
+            3,
+            4
+          ],
+          "S5": [
+            2,
+            3,
+            4
+          ]
+        },
+        "spokes": [
+          {
+            "sides": [
+              "S3",
+              "S0"
+            ],
+            "raw_line_ids": [
+              "E2"
+            ]
+          },
+          {
+            "sides": [
+              "S3",
+              "S2"
+            ],
+            "raw_line_ids": [
+              "E47"
+            ]
+          },
+          {
+            "sides": [
+              "S3",
+              "S17"
+            ],
+            "raw_line_ids": [
+              "E48"
+            ]
+          },
+          {
+            "sides": [
+              "S3",
+              "S18"
+            ],
+            "raw_line_ids": [
+              "E42"
+            ]
+          },
+          {
+            "sides": [
+              "S3",
+              "S5"
+            ],
+            "raw_line_ids": [
+              "E50"
+            ]
+          }
+        ],
+        "rim_edges": [
+          {
+            "sides": [
+              "S0",
+              "S2"
+            ],
+            "raw_line_ids": [
+              "E1"
+            ]
+          },
+          {
+            "sides": [
+              "S2",
+              "S17"
+            ],
+            "raw_line_ids": [
+              "E40"
+            ]
+          },
+          {
+            "sides": [
+              "S17",
+              "S18"
+            ],
+            "raw_line_ids": [
+              "E41"
+            ]
+          },
+          {
+            "sides": [
+              "S18",
+              "S5"
+            ],
+            "raw_line_ids": [
+              "E51"
+            ]
+          },
+          {
+            "sides": [
+              "S5",
+              "S0"
+            ],
+            "raw_line_ids": [
+              "E5"
+            ]
+          }
+        ],
+        "reason": "All six wheel vertices exclude color 1, so use only 2,3,4. The center consumes one name, leaving two for a five-cycle. This is impossible under these domains."
+      },
+      "reference_wheel_q1_blockers": {},
+      "reference_wheel_blockers_scope": "For the fixed S3 / S0-S2-S17-S18-S5 wheel only; global absence is the saved independent bipartiteness result.",
+      "raw_query_evidence": [
+        {
+          "role": "base",
+          "oracle_record_index": 0,
+          "record_sha256": "4a1400d1cc929a30d62a13b7a83c1f459c38702f80c9aeaf6436e0a4164bba70",
+          "status": "sat",
+          "anchors": {
+            "S1": 1
+          },
+          "sat_witness": {
+            "S0": 2,
+            "S1": 1,
+            "S2": 3,
+            "S3": 1,
+            "S4": 3,
+            "S5": 4,
+            "S6": 1,
+            "S7": 4,
+            "S8": 3,
+            "S9": 4,
+            "S10": 3,
+            "S11": 1,
+            "S12": 3,
+            "S13": 2,
+            "S14": 2,
+            "S15": 4,
+            "S16": 1,
+            "S17": 4,
+            "S18": 3
+          },
+          "saved_verification": {
+            "passed": true,
+            "status": "sat",
+            "conclusive": true,
+            "claim": "complete-four-name-witness",
+            "edges_checked": 51,
+            "anchors_checked": 1,
+            "nodes_independently_counted": null
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        },
+        {
+          "role": "joint",
+          "oracle_record_index": 581,
+          "record_sha256": "3cbc6db5dbaf34c192dfea4e6d97b542a48d25a44736689ab06b757c43b6c7be",
+          "status": "unsat",
+          "anchors": {
+            "S1": 1,
+            "S4": 1,
+            "S7": 1
+          },
+          "sat_witness": null,
+          "saved_verification": {
+            "passed": true,
+            "status": "unsat",
+            "conclusive": true,
+            "claim": "complete-literal-four-name-unsat-tree",
+            "leaves_checked": 6,
+            "nodes_independently_counted": 28
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        },
+        {
+          "role": "single_0",
+          "oracle_record_index": 565,
+          "record_sha256": "1d2cfe77d3d42203c5bf7a6b77c151482b8168ca2ce03fdf32c4c42c987806eb",
+          "status": "sat",
+          "anchors": {
+            "S1": 1,
+            "S4": 1
+          },
+          "sat_witness": {
+            "S0": 2,
+            "S1": 1,
+            "S2": 4,
+            "S3": 3,
+            "S4": 1,
+            "S5": 4,
+            "S6": 3,
+            "S7": 4,
+            "S8": 1,
+            "S9": 4,
+            "S10": 3,
+            "S11": 1,
+            "S12": 3,
+            "S13": 4,
+            "S14": 2,
+            "S15": 1,
+            "S16": 2,
+            "S17": 2,
+            "S18": 1
+          },
+          "saved_verification": {
+            "passed": true,
+            "status": "sat",
+            "conclusive": true,
+            "claim": "complete-four-name-witness",
+            "edges_checked": 51,
+            "anchors_checked": 2,
+            "nodes_independently_counted": null
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        },
+        {
+          "role": "single_1",
+          "oracle_record_index": 582,
+          "record_sha256": "1ecb2421c7de76d88500041036dfb6392926745644ffb5101fb4d010dee9c6e4",
+          "status": "sat",
+          "anchors": {
+            "S1": 1,
+            "S7": 1
+          },
+          "sat_witness": {
+            "S0": 2,
+            "S1": 1,
+            "S2": 3,
+            "S3": 4,
+            "S4": 3,
+            "S5": 1,
+            "S6": 4,
+            "S7": 1,
+            "S8": 3,
+            "S9": 1,
+            "S10": 3,
+            "S11": 1,
+            "S12": 3,
+            "S13": 4,
+            "S14": 2,
+            "S15": 1,
+            "S16": 2,
+            "S17": 2,
+            "S18": 3
+          },
+          "saved_verification": {
+            "passed": true,
+            "status": "sat",
+            "conclusive": true,
+            "claim": "complete-four-name-witness",
+            "edges_checked": 51,
+            "anchors_checked": 2,
+            "nodes_independently_counted": null
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        }
+      ],
+      "interpretation": "Same old persistent state with two hypothetical colors; no actual simultaneous joint commitment claimed. Remaining UNSAT hypotheses are local detector gaps, not failure of whole-graph four-colorability."
+    },
+    {
+      "key": "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132",
+      "scenario": "one-bounded-anchor",
+      "state_index": 0,
+      "phase": 0,
+      "target_index": 661,
+      "source_checkpoint": {
+        "path": "outputs/quaternary-logical-neq-pair-scan-2026-09-29-checkpoints/044-8070783fd68d.json.gz",
+        "sha256": "f3be9670ae9d377d12e1ed201053f8d6b5355e428c2ebb8cc0da66496f91c17c"
+      },
+      "source_raw_document_sha256": "711ea708150173a1d6a9db41411fb8a87aa86a512fde994823822b30619be474",
+      "source_base_anchors": {
+        "S1": 1
+      },
+      "pair_hypothesis": {
+        "S4": 1,
+        "S14": 1
+      },
+      "next_action": "not_next_choice",
+      "conditional_anchors": {
+        "S1": 1,
+        "S4": 1,
+        "S14": 1
+      },
+      "conditional_document_sha256": "e96ce7ef2b2844c635a890cf2960356a7f165c76edb8accf065a9f6ce9cda80e",
+      "old_outcome_sha256": "e487ee64a721dd4675f8d3a896e4961af7e6429cf9b07bc7ae7b5edd62cfce69",
+      "new_outcome_sha256": "e96470ac66c74fa64dab6d524fabfaa212fe7fe135760de74228a60a0f6c38ee",
+      "old_status": "conditional_inconclusive",
+      "new_status": "underdetermined",
+      "base_status": "underdetermined",
+      "all_final_domains": {
+        "S0": [
+          2,
+          3,
+          4
+        ],
+        "S1": [
+          1
+        ],
+        "S2": [
+          2,
+          3,
+          4
+        ],
+        "S3": [
+          2,
+          3,
+          4
+        ],
+        "S4": [
+          1
+        ],
+        "S5": [
+          2,
+          3,
+          4
+        ],
+        "S6": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S7": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S8": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S9": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S10": [
+          2,
+          3,
+          4
+        ],
+        "S11": [
+          2,
+          3,
+          4
+        ],
+        "S12": [
+          2,
+          3,
+          4
+        ],
+        "S13": [
+          2,
+          3,
+          4
+        ],
+        "S14": [
+          1
+        ],
+        "S15": [
+          2,
+          3,
+          4
+        ],
+        "S16": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S17": [
+          2,
+          3,
+          4
+        ],
+        "S18": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "complete_wheel_check": {
+        "version": "quaternary-domain-odd-wheel-v1",
+        "raw_document_sha256": "e96ce7ef2b2844c635a890cf2960356a7f165c76edb8accf065a9f6ce9cda80e",
+        "domains_sha256": "dde20e337fc06e0699fcef8331c1c3a4994bb878c1f4d8d474cf3aaf72e73001",
+        "certificate": null,
+        "statistics": {
+          "palettes_examined": 4,
+          "centers_examined": 19,
+          "eligible_neighbor_sets": 9,
+          "bfs_components": 15,
+          "vertices_visited": 32,
+          "edges_examined": 34,
+          "odd_cycles_found": 0
+        }
+      },
+      "saved_contact_verification": {
+        "passed": true,
+        "metadata_passed": true,
+        "trace_audit": "independent_literal_set_replay",
+        "trace_steps_checked": 154,
+        "final_fixed_point": "checked",
+        "attempted_revision_telemetry": "lower_bound_checked_not_worklist_replayed",
+        "complete_assignment_preservation": "literal_pair_composition_then_real_edge_common_excluded_color_odd_wheel",
+        "status": "underdetermined",
+        "base_status": "underdetermined",
+        "wheel_check": {
+          "passed": true,
+          "found": false,
+          "certificate_checked": false,
+          "absence_checked": true,
+          "telemetry_scope": "literal_bounds_only_not_detector_work_replay",
+          "scope": "Conflict under supplied domains; absence means no declared real-edge common-excluded-color odd wheel, not global satisfiability."
+        }
+      },
+      "certificate_literal_details": null,
+      "reference_wheel_q1_blockers": {
+        "S18": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "reference_wheel_blockers_scope": "For the fixed S3 / S0-S2-S17-S18-S5 wheel only; global absence is the saved independent bipartiteness result.",
+      "raw_query_evidence": [
+        {
+          "role": "base",
+          "oracle_record_index": 0,
+          "record_sha256": "4a1400d1cc929a30d62a13b7a83c1f459c38702f80c9aeaf6436e0a4164bba70",
+          "status": "sat",
+          "anchors": {
+            "S1": 1
+          },
+          "sat_witness": {
+            "S0": 2,
+            "S1": 1,
+            "S2": 3,
+            "S3": 1,
+            "S4": 3,
+            "S5": 4,
+            "S6": 1,
+            "S7": 4,
+            "S8": 3,
+            "S9": 4,
+            "S10": 3,
+            "S11": 1,
+            "S12": 3,
+            "S13": 2,
+            "S14": 2,
+            "S15": 4,
+            "S16": 1,
+            "S17": 4,
+            "S18": 3
+          },
+          "saved_verification": {
+            "passed": true,
+            "status": "sat",
+            "conclusive": true,
+            "claim": "complete-four-name-witness",
+            "edges_checked": 51,
+            "anchors_checked": 1,
+            "nodes_independently_counted": null
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        },
+        {
+          "role": "joint",
+          "oracle_record_index": 682,
+          "record_sha256": "6420a3a34e1ca15176c707a4162bbf799f084555cb8f7cf6039cfb401e0c58b8",
+          "status": "unsat",
+          "anchors": {
+            "S1": 1,
+            "S4": 1,
+            "S14": 1
+          },
+          "sat_witness": null,
+          "saved_verification": {
+            "passed": true,
+            "status": "unsat",
+            "conclusive": true,
+            "claim": "complete-literal-four-name-unsat-tree",
+            "leaves_checked": 18,
+            "nodes_independently_counted": 112
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        },
+        {
+          "role": "single_0",
+          "oracle_record_index": 565,
+          "record_sha256": "1d2cfe77d3d42203c5bf7a6b77c151482b8168ca2ce03fdf32c4c42c987806eb",
+          "status": "sat",
+          "anchors": {
+            "S1": 1,
+            "S4": 1
+          },
+          "sat_witness": {
+            "S0": 2,
+            "S1": 1,
+            "S2": 4,
+            "S3": 3,
+            "S4": 1,
+            "S5": 4,
+            "S6": 3,
+            "S7": 4,
+            "S8": 1,
+            "S9": 4,
+            "S10": 3,
+            "S11": 1,
+            "S12": 3,
+            "S13": 4,
+            "S14": 2,
+            "S15": 1,
+            "S16": 2,
+            "S17": 2,
+            "S18": 1
+          },
+          "saved_verification": {
+            "passed": true,
+            "status": "sat",
+            "conclusive": true,
+            "claim": "complete-four-name-witness",
+            "edges_checked": 51,
+            "anchors_checked": 2,
+            "nodes_independently_counted": null
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        },
+        {
+          "role": "single_1",
+          "oracle_record_index": 480,
+          "record_sha256": "5390bee415b81332535769b6063c47d4e926cfbbb7deb920a541c751b9b60faf",
+          "status": "sat",
+          "anchors": {
+            "S1": 1,
+            "S14": 1
+          },
+          "sat_witness": {
+            "S0": 2,
+            "S1": 1,
+            "S2": 3,
+            "S3": 1,
+            "S4": 3,
+            "S5": 4,
+            "S6": 1,
+            "S7": 4,
+            "S8": 3,
+            "S9": 4,
+            "S10": 3,
+            "S11": 4,
+            "S12": 3,
+            "S13": 2,
+            "S14": 1,
+            "S15": 4,
+            "S16": 1,
+            "S17": 4,
+            "S18": 3
+          },
+          "saved_verification": {
+            "passed": true,
+            "status": "sat",
+            "conclusive": true,
+            "claim": "complete-four-name-witness",
+            "edges_checked": 51,
+            "anchors_checked": 2,
+            "nodes_independently_counted": null
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        }
+      ],
+      "interpretation": "Same old persistent state with two hypothetical colors; no actual simultaneous joint commitment claimed. Remaining UNSAT hypotheses are local detector gaps, not failure of whole-graph four-colorability."
+    },
+    {
+      "key": "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132",
+      "scenario": "one-bounded-anchor",
+      "state_index": 0,
+      "phase": 0,
+      "target_index": 693,
+      "source_checkpoint": {
+        "path": "outputs/quaternary-logical-neq-pair-scan-2026-09-29-checkpoints/044-8070783fd68d.json.gz",
+        "sha256": "f3be9670ae9d377d12e1ed201053f8d6b5355e428c2ebb8cc0da66496f91c17c"
+      },
+      "source_raw_document_sha256": "711ea708150173a1d6a9db41411fb8a87aa86a512fde994823822b30619be474",
+      "source_base_anchors": {
+        "S1": 1
+      },
+      "pair_hypothesis": {
+        "S4": 1,
+        "S16": 1
+      },
+      "next_action": "not_next_choice",
+      "conditional_anchors": {
+        "S1": 1,
+        "S4": 1,
+        "S16": 1
+      },
+      "conditional_document_sha256": "d347a1e994a105a151b5aed8776183669c627f5a06be2aab2b4a4ac99760a98a",
+      "old_outcome_sha256": "27961c1b2aa2cad80775456643a92c9b0a57fedcb53aa35a5c5c64be51245f95",
+      "new_outcome_sha256": "72581544d1315b68266dca5c179f578ab07ea56b5453e748b66f59133f517908",
+      "old_status": "conditional_inconclusive",
+      "new_status": "conflict",
+      "base_status": "underdetermined",
+      "all_final_domains": {
+        "S0": [
+          2,
+          3,
+          4
+        ],
+        "S1": [
+          1
+        ],
+        "S2": [
+          2,
+          3,
+          4
+        ],
+        "S3": [
+          2,
+          3,
+          4
+        ],
+        "S4": [
+          1
+        ],
+        "S5": [
+          2,
+          3,
+          4
+        ],
+        "S6": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S7": [
+          2,
+          3,
+          4
+        ],
+        "S8": [
+          2,
+          3,
+          4
+        ],
+        "S9": [
+          2,
+          3,
+          4
+        ],
+        "S10": [
+          2,
+          3,
+          4
+        ],
+        "S11": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S12": [
+          2,
+          3,
+          4
+        ],
+        "S13": [
+          2,
+          3,
+          4
+        ],
+        "S14": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S15": [
+          2,
+          3,
+          4
+        ],
+        "S16": [
+          1
+        ],
+        "S17": [
+          2,
+          3,
+          4
+        ],
+        "S18": [
+          2,
+          3,
+          4
+        ]
+      },
+      "complete_wheel_check": {
+        "version": "quaternary-domain-odd-wheel-v1",
+        "raw_document_sha256": "d347a1e994a105a151b5aed8776183669c627f5a06be2aab2b4a4ac99760a98a",
+        "domains_sha256": "10fa5d9cf81f9e08be05db00da8556b7b43ecb930e2ed22d826a534c295f602e",
+        "certificate": {
+          "center": "S3",
+          "rim": [
+            "S0",
+            "S2",
+            "S17",
+            "S18",
+            "S5"
+          ],
+          "excluded_color": 1
+        },
+        "statistics": {
+          "palettes_examined": 1,
+          "centers_examined": 3,
+          "eligible_neighbor_sets": 3,
+          "bfs_components": 5,
+          "vertices_visited": 15,
+          "edges_examined": 22,
+          "odd_cycles_found": 1
+        }
+      },
+      "saved_contact_verification": {
+        "passed": true,
+        "metadata_passed": true,
+        "trace_audit": "independent_literal_set_replay",
+        "trace_steps_checked": 198,
+        "final_fixed_point": "checked",
+        "attempted_revision_telemetry": "lower_bound_checked_not_worklist_replayed",
+        "complete_assignment_preservation": "literal_pair_composition_then_real_edge_common_excluded_color_odd_wheel",
+        "status": "conflict",
+        "base_status": "underdetermined",
+        "wheel_check": {
+          "passed": true,
+          "found": true,
+          "certificate_checked": true,
+          "absence_checked": false,
+          "telemetry_scope": "literal_bounds_only_not_detector_work_replay",
+          "scope": "Conflict under supplied domains; absence means no declared real-edge common-excluded-color odd wheel, not global satisfiability."
+        }
+      },
+      "certificate_literal_details": {
+        "domains": {
+          "S3": [
+            2,
+            3,
+            4
+          ],
+          "S0": [
+            2,
+            3,
+            4
+          ],
+          "S2": [
+            2,
+            3,
+            4
+          ],
+          "S17": [
+            2,
+            3,
+            4
+          ],
+          "S18": [
+            2,
+            3,
+            4
+          ],
+          "S5": [
+            2,
+            3,
+            4
+          ]
+        },
+        "spokes": [
+          {
+            "sides": [
+              "S3",
+              "S0"
+            ],
+            "raw_line_ids": [
+              "E2"
+            ]
+          },
+          {
+            "sides": [
+              "S3",
+              "S2"
+            ],
+            "raw_line_ids": [
+              "E47"
+            ]
+          },
+          {
+            "sides": [
+              "S3",
+              "S17"
+            ],
+            "raw_line_ids": [
+              "E48"
+            ]
+          },
+          {
+            "sides": [
+              "S3",
+              "S18"
+            ],
+            "raw_line_ids": [
+              "E42"
+            ]
+          },
+          {
+            "sides": [
+              "S3",
+              "S5"
+            ],
+            "raw_line_ids": [
+              "E50"
+            ]
+          }
+        ],
+        "rim_edges": [
+          {
+            "sides": [
+              "S0",
+              "S2"
+            ],
+            "raw_line_ids": [
+              "E1"
+            ]
+          },
+          {
+            "sides": [
+              "S2",
+              "S17"
+            ],
+            "raw_line_ids": [
+              "E40"
+            ]
+          },
+          {
+            "sides": [
+              "S17",
+              "S18"
+            ],
+            "raw_line_ids": [
+              "E41"
+            ]
+          },
+          {
+            "sides": [
+              "S18",
+              "S5"
+            ],
+            "raw_line_ids": [
+              "E51"
+            ]
+          },
+          {
+            "sides": [
+              "S5",
+              "S0"
+            ],
+            "raw_line_ids": [
+              "E5"
+            ]
+          }
+        ],
+        "reason": "All six wheel vertices exclude color 1, so use only 2,3,4. The center consumes one name, leaving two for a five-cycle. This is impossible under these domains."
+      },
+      "reference_wheel_q1_blockers": {},
+      "reference_wheel_blockers_scope": "For the fixed S3 / S0-S2-S17-S18-S5 wheel only; global absence is the saved independent bipartiteness result.",
+      "raw_query_evidence": [
+        {
+          "role": "base",
+          "oracle_record_index": 0,
+          "record_sha256": "4a1400d1cc929a30d62a13b7a83c1f459c38702f80c9aeaf6436e0a4164bba70",
+          "status": "sat",
+          "anchors": {
+            "S1": 1
+          },
+          "sat_witness": {
+            "S0": 2,
+            "S1": 1,
+            "S2": 3,
+            "S3": 1,
+            "S4": 3,
+            "S5": 4,
+            "S6": 1,
+            "S7": 4,
+            "S8": 3,
+            "S9": 4,
+            "S10": 3,
+            "S11": 1,
+            "S12": 3,
+            "S13": 2,
+            "S14": 2,
+            "S15": 4,
+            "S16": 1,
+            "S17": 4,
+            "S18": 3
+          },
+          "saved_verification": {
+            "passed": true,
+            "status": "sat",
+            "conclusive": true,
+            "claim": "complete-four-name-witness",
+            "edges_checked": 51,
+            "anchors_checked": 1,
+            "nodes_independently_counted": null
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        },
+        {
+          "role": "joint",
+          "oracle_record_index": 717,
+          "record_sha256": "ca1ab94a85e8d2d7522e2198001061b3ea3a19e67b1fd984b23c79c878ee858e",
+          "status": "unsat",
+          "anchors": {
+            "S1": 1,
+            "S4": 1,
+            "S16": 1
+          },
+          "sat_witness": null,
+          "saved_verification": {
+            "passed": true,
+            "status": "unsat",
+            "conclusive": true,
+            "claim": "complete-literal-four-name-unsat-tree",
+            "leaves_checked": 6,
+            "nodes_independently_counted": 28
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        },
+        {
+          "role": "single_0",
+          "oracle_record_index": 565,
+          "record_sha256": "1d2cfe77d3d42203c5bf7a6b77c151482b8168ca2ce03fdf32c4c42c987806eb",
+          "status": "sat",
+          "anchors": {
+            "S1": 1,
+            "S4": 1
+          },
+          "sat_witness": {
+            "S0": 2,
+            "S1": 1,
+            "S2": 4,
+            "S3": 3,
+            "S4": 1,
+            "S5": 4,
+            "S6": 3,
+            "S7": 4,
+            "S8": 1,
+            "S9": 4,
+            "S10": 3,
+            "S11": 1,
+            "S12": 3,
+            "S13": 4,
+            "S14": 2,
+            "S15": 1,
+            "S16": 2,
+            "S17": 2,
+            "S18": 1
+          },
+          "saved_verification": {
+            "passed": true,
+            "status": "sat",
+            "conclusive": true,
+            "claim": "complete-four-name-witness",
+            "edges_checked": 51,
+            "anchors_checked": 2,
+            "nodes_independently_counted": null
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        },
+        {
+          "role": "single_1",
+          "oracle_record_index": 516,
+          "record_sha256": "e7f2b55f890ddcead06c5c558a044cfb423a151bacb6c1dbcb02e873c920fd40",
+          "status": "sat",
+          "anchors": {
+            "S1": 1,
+            "S16": 1
+          },
+          "sat_witness": {
+            "S0": 2,
+            "S1": 1,
+            "S2": 4,
+            "S3": 1,
+            "S4": 4,
+            "S5": 3,
+            "S6": 1,
+            "S7": 4,
+            "S8": 3,
+            "S9": 4,
+            "S10": 3,
+            "S11": 1,
+            "S12": 3,
+            "S13": 4,
+            "S14": 4,
+            "S15": 2,
+            "S16": 1,
+            "S17": 3,
+            "S18": 2
+          },
+          "saved_verification": {
+            "passed": true,
+            "status": "sat",
+            "conclusive": true,
+            "claim": "complete-four-name-witness",
+            "edges_checked": 51,
+            "anchors_checked": 2,
+            "nodes_independently_counted": null
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        }
+      ],
+      "interpretation": "Same old persistent state with two hypothetical colors; no actual simultaneous joint commitment claimed. Remaining UNSAT hypotheses are local detector gaps, not failure of whole-graph four-colorability."
+    },
+    {
+      "key": "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132",
+      "scenario": "one-bounded-anchor",
+      "state_index": 0,
+      "phase": 0,
+      "target_index": 765,
+      "source_checkpoint": {
+        "path": "outputs/quaternary-logical-neq-pair-scan-2026-09-29-checkpoints/044-8070783fd68d.json.gz",
+        "sha256": "f3be9670ae9d377d12e1ed201053f8d6b5355e428c2ebb8cc0da66496f91c17c"
+      },
+      "source_raw_document_sha256": "711ea708150173a1d6a9db41411fb8a87aa86a512fde994823822b30619be474",
+      "source_base_anchors": {
+        "S1": 1
+      },
+      "pair_hypothesis": {
+        "S5": 1,
+        "S8": 1
+      },
+      "next_action": "not_next_choice",
+      "conditional_anchors": {
+        "S1": 1,
+        "S5": 1,
+        "S8": 1
+      },
+      "conditional_document_sha256": "74b9db792fdee02597aeacdbdf622c067aab381cf86182160a998cb5642737b7",
+      "old_outcome_sha256": "347b06f70a5c417954f512de86fa6553983beea8c69a77b2a4ac13cccfefb9f1",
+      "new_outcome_sha256": "0f8426632b3de51df3ad2d1a0543053e88dd48301d57ef55dad4a3bcf5605611",
+      "old_status": "conditional_inconclusive",
+      "new_status": "underdetermined",
+      "base_status": "underdetermined",
+      "all_final_domains": {
+        "S0": [
+          2,
+          3,
+          4
+        ],
+        "S1": [
+          1
+        ],
+        "S2": [
+          2,
+          3,
+          4
+        ],
+        "S3": [
+          2,
+          3,
+          4
+        ],
+        "S4": [
+          2,
+          3,
+          4
+        ],
+        "S5": [
+          1
+        ],
+        "S6": [
+          2,
+          3,
+          4
+        ],
+        "S7": [
+          2,
+          3,
+          4
+        ],
+        "S8": [
+          1
+        ],
+        "S9": [
+          2,
+          3,
+          4
+        ],
+        "S10": [
+          2,
+          3,
+          4
+        ],
+        "S11": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S12": [
+          2,
+          3,
+          4
+        ],
+        "S13": [
+          2,
+          3,
+          4
+        ],
+        "S14": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S15": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S16": [
+          2,
+          3,
+          4
+        ],
+        "S17": [
+          2,
+          3,
+          4
+        ],
+        "S18": [
+          2,
+          3,
+          4
+        ]
+      },
+      "complete_wheel_check": {
+        "version": "quaternary-domain-odd-wheel-v1",
+        "raw_document_sha256": "74b9db792fdee02597aeacdbdf622c067aab381cf86182160a998cb5642737b7",
+        "domains_sha256": "b3a4bea5eef90ce8cda03f3876ce2d084f275a525314f641fe2b658a6cac088a",
+        "certificate": null,
+        "statistics": {
+          "palettes_examined": 4,
+          "centers_examined": 22,
+          "eligible_neighbor_sets": 11,
+          "bfs_components": 16,
+          "vertices_visited": 48,
+          "edges_examined": 64,
+          "odd_cycles_found": 0
+        }
+      },
+      "saved_contact_verification": {
+        "passed": true,
+        "metadata_passed": true,
+        "trace_audit": "independent_literal_set_replay",
+        "trace_steps_checked": 186,
+        "final_fixed_point": "checked",
+        "attempted_revision_telemetry": "lower_bound_checked_not_worklist_replayed",
+        "complete_assignment_preservation": "literal_pair_composition_then_real_edge_common_excluded_color_odd_wheel",
+        "status": "underdetermined",
+        "base_status": "underdetermined",
+        "wheel_check": {
+          "passed": true,
+          "found": false,
+          "certificate_checked": false,
+          "absence_checked": true,
+          "telemetry_scope": "literal_bounds_only_not_detector_work_replay",
+          "scope": "Conflict under supplied domains; absence means no declared real-edge common-excluded-color odd wheel, not global satisfiability."
+        }
+      },
+      "certificate_literal_details": null,
+      "reference_wheel_q1_blockers": {
+        "S5": [
+          1
+        ]
+      },
+      "reference_wheel_blockers_scope": "For the fixed S3 / S0-S2-S17-S18-S5 wheel only; global absence is the saved independent bipartiteness result.",
+      "raw_query_evidence": [
+        {
+          "role": "base",
+          "oracle_record_index": 0,
+          "record_sha256": "4a1400d1cc929a30d62a13b7a83c1f459c38702f80c9aeaf6436e0a4164bba70",
+          "status": "sat",
+          "anchors": {
+            "S1": 1
+          },
+          "sat_witness": {
+            "S0": 2,
+            "S1": 1,
+            "S2": 3,
+            "S3": 1,
+            "S4": 3,
+            "S5": 4,
+            "S6": 1,
+            "S7": 4,
+            "S8": 3,
+            "S9": 4,
+            "S10": 3,
+            "S11": 1,
+            "S12": 3,
+            "S13": 2,
+            "S14": 2,
+            "S15": 4,
+            "S16": 1,
+            "S17": 4,
+            "S18": 3
+          },
+          "saved_verification": {
+            "passed": true,
+            "status": "sat",
+            "conclusive": true,
+            "claim": "complete-four-name-witness",
+            "edges_checked": 51,
+            "anchors_checked": 1,
+            "nodes_independently_counted": null
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        },
+        {
+          "role": "joint",
+          "oracle_record_index": 794,
+          "record_sha256": "cb28521957eafda4aa566dfa4a9766563ae40d633285a12f1bcbc744fb267004",
+          "status": "unsat",
+          "anchors": {
+            "S1": 1,
+            "S5": 1,
+            "S8": 1
+          },
+          "sat_witness": null,
+          "saved_verification": {
+            "passed": true,
+            "status": "unsat",
+            "conclusive": true,
+            "claim": "complete-literal-four-name-unsat-tree",
+            "leaves_checked": 6,
+            "nodes_independently_counted": 52
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        },
+        {
+          "role": "single_0",
+          "oracle_record_index": 779,
+          "record_sha256": "13423d9cffb0757b71535c7f598b5ff5348bbca7461a5f01611f8ed746042245",
+          "status": "sat",
+          "anchors": {
+            "S1": 1,
+            "S5": 1
+          },
+          "sat_witness": {
+            "S0": 2,
+            "S1": 1,
+            "S2": 4,
+            "S3": 3,
+            "S4": 4,
+            "S5": 1,
+            "S6": 3,
+            "S7": 1,
+            "S8": 3,
+            "S9": 1,
+            "S10": 3,
+            "S11": 1,
+            "S12": 4,
+            "S13": 3,
+            "S14": 2,
+            "S15": 1,
+            "S16": 2,
+            "S17": 2,
+            "S18": 4
+          },
+          "saved_verification": {
+            "passed": true,
+            "status": "sat",
+            "conclusive": true,
+            "claim": "complete-four-name-witness",
+            "edges_checked": 51,
+            "anchors_checked": 2,
+            "nodes_independently_counted": null
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        },
+        {
+          "role": "single_1",
+          "oracle_record_index": 795,
+          "record_sha256": "f5e60fa462a339c4f1e3360f3f635c8d2a75197134992cf1767b4f0119c2f8c4",
+          "status": "sat",
+          "anchors": {
+            "S1": 1,
+            "S8": 1
+          },
+          "sat_witness": {
+            "S0": 2,
+            "S1": 1,
+            "S2": 4,
+            "S3": 3,
+            "S4": 1,
+            "S5": 4,
+            "S6": 3,
+            "S7": 4,
+            "S8": 1,
+            "S9": 4,
+            "S10": 3,
+            "S11": 1,
+            "S12": 3,
+            "S13": 4,
+            "S14": 2,
+            "S15": 1,
+            "S16": 2,
+            "S17": 2,
+            "S18": 1
+          },
+          "saved_verification": {
+            "passed": true,
+            "status": "sat",
+            "conclusive": true,
+            "claim": "complete-four-name-witness",
+            "edges_checked": 51,
+            "anchors_checked": 2,
+            "nodes_independently_counted": null
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        }
+      ],
+      "interpretation": "Same old persistent state with two hypothetical colors; no actual simultaneous joint commitment claimed. Remaining UNSAT hypotheses are local detector gaps, not failure of whole-graph four-colorability."
+    },
+    {
+      "key": "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132",
+      "scenario": "one-bounded-anchor",
+      "state_index": 0,
+      "phase": 0,
+      "target_index": 849,
+      "source_checkpoint": {
+        "path": "outputs/quaternary-logical-neq-pair-scan-2026-09-29-checkpoints/044-8070783fd68d.json.gz",
+        "sha256": "f3be9670ae9d377d12e1ed201053f8d6b5355e428c2ebb8cc0da66496f91c17c"
+      },
+      "source_raw_document_sha256": "711ea708150173a1d6a9db41411fb8a87aa86a512fde994823822b30619be474",
+      "source_base_anchors": {
+        "S1": 1
+      },
+      "pair_hypothesis": {
+        "S5": 1,
+        "S14": 1
+      },
+      "next_action": "not_next_choice",
+      "conditional_anchors": {
+        "S1": 1,
+        "S5": 1,
+        "S14": 1
+      },
+      "conditional_document_sha256": "271213fb2bad81209bcbf0c68a471030ef236ad727035c5aa7e0eeb75a7f3f66",
+      "old_outcome_sha256": "3ee68413a8f559d5034b48019f100323bd4302311b5f4ed1d836ebe69939fc3a",
+      "new_outcome_sha256": "15991a08cc4de9c32fddbfec9e0f3684d6c01fa5d874124c82ecd1185c8dc707",
+      "old_status": "conditional_inconclusive",
+      "new_status": "underdetermined",
+      "base_status": "underdetermined",
+      "all_final_domains": {
+        "S0": [
+          2,
+          3,
+          4
+        ],
+        "S1": [
+          1
+        ],
+        "S2": [
+          2,
+          3,
+          4
+        ],
+        "S3": [
+          2,
+          3,
+          4
+        ],
+        "S4": [
+          2,
+          3,
+          4
+        ],
+        "S5": [
+          1
+        ],
+        "S6": [
+          2,
+          3,
+          4
+        ],
+        "S7": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S8": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S9": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S10": [
+          2,
+          3,
+          4
+        ],
+        "S11": [
+          2,
+          3,
+          4
+        ],
+        "S12": [
+          2,
+          3,
+          4
+        ],
+        "S13": [
+          2,
+          3,
+          4
+        ],
+        "S14": [
+          1
+        ],
+        "S15": [
+          2,
+          3,
+          4
+        ],
+        "S16": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S17": [
+          2,
+          3,
+          4
+        ],
+        "S18": [
+          2,
+          3,
+          4
+        ]
+      },
+      "complete_wheel_check": {
+        "version": "quaternary-domain-odd-wheel-v1",
+        "raw_document_sha256": "271213fb2bad81209bcbf0c68a471030ef236ad727035c5aa7e0eeb75a7f3f66",
+        "domains_sha256": "1bbd9577e2849a53f3e6a862a3087111b99bed2e06d53486d5c52dd254db5409",
+        "certificate": null,
+        "statistics": {
+          "palettes_examined": 4,
+          "centers_examined": 21,
+          "eligible_neighbor_sets": 10,
+          "bfs_components": 17,
+          "vertices_visited": 40,
+          "edges_examined": 46,
+          "odd_cycles_found": 0
+        }
+      },
+      "saved_contact_verification": {
+        "passed": true,
+        "metadata_passed": true,
+        "trace_audit": "independent_literal_set_replay",
+        "trace_steps_checked": 179,
+        "final_fixed_point": "checked",
+        "attempted_revision_telemetry": "lower_bound_checked_not_worklist_replayed",
+        "complete_assignment_preservation": "literal_pair_composition_then_real_edge_common_excluded_color_odd_wheel",
+        "status": "underdetermined",
+        "base_status": "underdetermined",
+        "wheel_check": {
+          "passed": true,
+          "found": false,
+          "certificate_checked": false,
+          "absence_checked": true,
+          "telemetry_scope": "literal_bounds_only_not_detector_work_replay",
+          "scope": "Conflict under supplied domains; absence means no declared real-edge common-excluded-color odd wheel, not global satisfiability."
+        }
+      },
+      "certificate_literal_details": null,
+      "reference_wheel_q1_blockers": {
+        "S5": [
+          1
+        ]
+      },
+      "reference_wheel_blockers_scope": "For the fixed S3 / S0-S2-S17-S18-S5 wheel only; global absence is the saved independent bipartiteness result.",
+      "raw_query_evidence": [
+        {
+          "role": "base",
+          "oracle_record_index": 0,
+          "record_sha256": "4a1400d1cc929a30d62a13b7a83c1f459c38702f80c9aeaf6436e0a4164bba70",
+          "status": "sat",
+          "anchors": {
+            "S1": 1
+          },
+          "sat_witness": {
+            "S0": 2,
+            "S1": 1,
+            "S2": 3,
+            "S3": 1,
+            "S4": 3,
+            "S5": 4,
+            "S6": 1,
+            "S7": 4,
+            "S8": 3,
+            "S9": 4,
+            "S10": 3,
+            "S11": 1,
+            "S12": 3,
+            "S13": 2,
+            "S14": 2,
+            "S15": 4,
+            "S16": 1,
+            "S17": 4,
+            "S18": 3
+          },
+          "saved_verification": {
+            "passed": true,
+            "status": "sat",
+            "conclusive": true,
+            "claim": "complete-four-name-witness",
+            "edges_checked": 51,
+            "anchors_checked": 1,
+            "nodes_independently_counted": null
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        },
+        {
+          "role": "joint",
+          "oracle_record_index": 879,
+          "record_sha256": "7ec27909c92349fe589534a1c935659e3e53391cb366783714a2ab8461eb3761",
+          "status": "unsat",
+          "anchors": {
+            "S1": 1,
+            "S5": 1,
+            "S14": 1
+          },
+          "sat_witness": null,
+          "saved_verification": {
+            "passed": true,
+            "status": "unsat",
+            "conclusive": true,
+            "claim": "complete-literal-four-name-unsat-tree",
+            "leaves_checked": 6,
+            "nodes_independently_counted": 58
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        },
+        {
+          "role": "single_0",
+          "oracle_record_index": 779,
+          "record_sha256": "13423d9cffb0757b71535c7f598b5ff5348bbca7461a5f01611f8ed746042245",
+          "status": "sat",
+          "anchors": {
+            "S1": 1,
+            "S5": 1
+          },
+          "sat_witness": {
+            "S0": 2,
+            "S1": 1,
+            "S2": 4,
+            "S3": 3,
+            "S4": 4,
+            "S5": 1,
+            "S6": 3,
+            "S7": 1,
+            "S8": 3,
+            "S9": 1,
+            "S10": 3,
+            "S11": 1,
+            "S12": 4,
+            "S13": 3,
+            "S14": 2,
+            "S15": 1,
+            "S16": 2,
+            "S17": 2,
+            "S18": 4
+          },
+          "saved_verification": {
+            "passed": true,
+            "status": "sat",
+            "conclusive": true,
+            "claim": "complete-four-name-witness",
+            "edges_checked": 51,
+            "anchors_checked": 2,
+            "nodes_independently_counted": null
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        },
+        {
+          "role": "single_1",
+          "oracle_record_index": 480,
+          "record_sha256": "5390bee415b81332535769b6063c47d4e926cfbbb7deb920a541c751b9b60faf",
+          "status": "sat",
+          "anchors": {
+            "S1": 1,
+            "S14": 1
+          },
+          "sat_witness": {
+            "S0": 2,
+            "S1": 1,
+            "S2": 3,
+            "S3": 1,
+            "S4": 3,
+            "S5": 4,
+            "S6": 1,
+            "S7": 4,
+            "S8": 3,
+            "S9": 4,
+            "S10": 3,
+            "S11": 4,
+            "S12": 3,
+            "S13": 2,
+            "S14": 1,
+            "S15": 4,
+            "S16": 1,
+            "S17": 4,
+            "S18": 3
+          },
+          "saved_verification": {
+            "passed": true,
+            "status": "sat",
+            "conclusive": true,
+            "claim": "complete-four-name-witness",
+            "edges_checked": 51,
+            "anchors_checked": 2,
+            "nodes_independently_counted": null
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        }
+      ],
+      "interpretation": "Same old persistent state with two hypothetical colors; no actual simultaneous joint commitment claimed. Remaining UNSAT hypotheses are local detector gaps, not failure of whole-graph four-colorability."
+    },
+    {
+      "key": "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132",
+      "scenario": "one-bounded-anchor",
+      "state_index": 0,
+      "phase": 0,
+      "target_index": 881,
+      "source_checkpoint": {
+        "path": "outputs/quaternary-logical-neq-pair-scan-2026-09-29-checkpoints/044-8070783fd68d.json.gz",
+        "sha256": "f3be9670ae9d377d12e1ed201053f8d6b5355e428c2ebb8cc0da66496f91c17c"
+      },
+      "source_raw_document_sha256": "711ea708150173a1d6a9db41411fb8a87aa86a512fde994823822b30619be474",
+      "source_base_anchors": {
+        "S1": 1
+      },
+      "pair_hypothesis": {
+        "S5": 1,
+        "S16": 1
+      },
+      "next_action": "not_next_choice",
+      "conditional_anchors": {
+        "S1": 1,
+        "S5": 1,
+        "S16": 1
+      },
+      "conditional_document_sha256": "6455c9d1669213076d2291ef192ccbe9decac195053a847a1cc9f9fc51d7f981",
+      "old_outcome_sha256": "6e9a70ed51b0a1f9902bfe4bfbff96a023c51d2d98e136d0bf43408ba680c00d",
+      "new_outcome_sha256": "8183e5ccb0781ee6e80a4db81c78460e88610ce0ad0fd320e3dc2226386077a6",
+      "old_status": "conditional_inconclusive",
+      "new_status": "underdetermined",
+      "base_status": "underdetermined",
+      "all_final_domains": {
+        "S0": [
+          2,
+          3,
+          4
+        ],
+        "S1": [
+          1
+        ],
+        "S2": [
+          2,
+          3,
+          4
+        ],
+        "S3": [
+          2,
+          3,
+          4
+        ],
+        "S4": [
+          2,
+          3,
+          4
+        ],
+        "S5": [
+          1
+        ],
+        "S6": [
+          2,
+          3,
+          4
+        ],
+        "S7": [
+          2,
+          3,
+          4
+        ],
+        "S8": [
+          2,
+          3,
+          4
+        ],
+        "S9": [
+          2,
+          3,
+          4
+        ],
+        "S10": [
+          2,
+          3,
+          4
+        ],
+        "S11": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S12": [
+          2,
+          3,
+          4
+        ],
+        "S13": [
+          2,
+          3,
+          4
+        ],
+        "S14": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S15": [
+          2,
+          3,
+          4
+        ],
+        "S16": [
+          1
+        ],
+        "S17": [
+          2,
+          3,
+          4
+        ],
+        "S18": [
+          2,
+          3,
+          4
+        ]
+      },
+      "complete_wheel_check": {
+        "version": "quaternary-domain-odd-wheel-v1",
+        "raw_document_sha256": "6455c9d1669213076d2291ef192ccbe9decac195053a847a1cc9f9fc51d7f981",
+        "domains_sha256": "b9c73c0693fa74fad62267e46d182ce52339935ffa793d5408a052e255085c57",
+        "certificate": null,
+        "statistics": {
+          "palettes_examined": 4,
+          "centers_examined": 23,
+          "eligible_neighbor_sets": 13,
+          "bfs_components": 20,
+          "vertices_visited": 52,
+          "edges_examined": 64,
+          "odd_cycles_found": 0
+        }
+      },
+      "saved_contact_verification": {
+        "passed": true,
+        "metadata_passed": true,
+        "trace_audit": "independent_literal_set_replay",
+        "trace_steps_checked": 212,
+        "final_fixed_point": "checked",
+        "attempted_revision_telemetry": "lower_bound_checked_not_worklist_replayed",
+        "complete_assignment_preservation": "literal_pair_composition_then_real_edge_common_excluded_color_odd_wheel",
+        "status": "underdetermined",
+        "base_status": "underdetermined",
+        "wheel_check": {
+          "passed": true,
+          "found": false,
+          "certificate_checked": false,
+          "absence_checked": true,
+          "telemetry_scope": "literal_bounds_only_not_detector_work_replay",
+          "scope": "Conflict under supplied domains; absence means no declared real-edge common-excluded-color odd wheel, not global satisfiability."
+        }
+      },
+      "certificate_literal_details": null,
+      "reference_wheel_q1_blockers": {
+        "S5": [
+          1
+        ]
+      },
+      "reference_wheel_blockers_scope": "For the fixed S3 / S0-S2-S17-S18-S5 wheel only; global absence is the saved independent bipartiteness result.",
+      "raw_query_evidence": [
+        {
+          "role": "base",
+          "oracle_record_index": 0,
+          "record_sha256": "4a1400d1cc929a30d62a13b7a83c1f459c38702f80c9aeaf6436e0a4164bba70",
+          "status": "sat",
+          "anchors": {
+            "S1": 1
+          },
+          "sat_witness": {
+            "S0": 2,
+            "S1": 1,
+            "S2": 3,
+            "S3": 1,
+            "S4": 3,
+            "S5": 4,
+            "S6": 1,
+            "S7": 4,
+            "S8": 3,
+            "S9": 4,
+            "S10": 3,
+            "S11": 1,
+            "S12": 3,
+            "S13": 2,
+            "S14": 2,
+            "S15": 4,
+            "S16": 1,
+            "S17": 4,
+            "S18": 3
+          },
+          "saved_verification": {
+            "passed": true,
+            "status": "sat",
+            "conclusive": true,
+            "claim": "complete-four-name-witness",
+            "edges_checked": 51,
+            "anchors_checked": 1,
+            "nodes_independently_counted": null
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        },
+        {
+          "role": "joint",
+          "oracle_record_index": 911,
+          "record_sha256": "44d048fd201e993278aa7895a01361b400f136773c9db07ce845ae523df9f731",
+          "status": "unsat",
+          "anchors": {
+            "S1": 1,
+            "S5": 1,
+            "S16": 1
+          },
+          "sat_witness": null,
+          "saved_verification": {
+            "passed": true,
+            "status": "unsat",
+            "conclusive": true,
+            "claim": "complete-literal-four-name-unsat-tree",
+            "leaves_checked": 6,
+            "nodes_independently_counted": 46
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        },
+        {
+          "role": "single_0",
+          "oracle_record_index": 779,
+          "record_sha256": "13423d9cffb0757b71535c7f598b5ff5348bbca7461a5f01611f8ed746042245",
+          "status": "sat",
+          "anchors": {
+            "S1": 1,
+            "S5": 1
+          },
+          "sat_witness": {
+            "S0": 2,
+            "S1": 1,
+            "S2": 4,
+            "S3": 3,
+            "S4": 4,
+            "S5": 1,
+            "S6": 3,
+            "S7": 1,
+            "S8": 3,
+            "S9": 1,
+            "S10": 3,
+            "S11": 1,
+            "S12": 4,
+            "S13": 3,
+            "S14": 2,
+            "S15": 1,
+            "S16": 2,
+            "S17": 2,
+            "S18": 4
+          },
+          "saved_verification": {
+            "passed": true,
+            "status": "sat",
+            "conclusive": true,
+            "claim": "complete-four-name-witness",
+            "edges_checked": 51,
+            "anchors_checked": 2,
+            "nodes_independently_counted": null
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        },
+        {
+          "role": "single_1",
+          "oracle_record_index": 516,
+          "record_sha256": "e7f2b55f890ddcead06c5c558a044cfb423a151bacb6c1dbcb02e873c920fd40",
+          "status": "sat",
+          "anchors": {
+            "S1": 1,
+            "S16": 1
+          },
+          "sat_witness": {
+            "S0": 2,
+            "S1": 1,
+            "S2": 4,
+            "S3": 1,
+            "S4": 4,
+            "S5": 3,
+            "S6": 1,
+            "S7": 4,
+            "S8": 3,
+            "S9": 4,
+            "S10": 3,
+            "S11": 1,
+            "S12": 3,
+            "S13": 4,
+            "S14": 4,
+            "S15": 2,
+            "S16": 1,
+            "S17": 3,
+            "S18": 2
+          },
+          "saved_verification": {
+            "passed": true,
+            "status": "sat",
+            "conclusive": true,
+            "claim": "complete-four-name-witness",
+            "edges_checked": 51,
+            "anchors_checked": 2,
+            "nodes_independently_counted": null
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        }
+      ],
+      "interpretation": "Same old persistent state with two hypothetical colors; no actual simultaneous joint commitment claimed. Remaining UNSAT hypotheses are local detector gaps, not failure of whole-graph four-colorability."
+    },
+    {
+      "key": "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132",
+      "scenario": "one-bounded-anchor",
+      "state_index": 0,
+      "phase": 0,
+      "target_index": 1169,
+      "source_checkpoint": {
+        "path": "outputs/quaternary-logical-neq-pair-scan-2026-09-29-checkpoints/044-8070783fd68d.json.gz",
+        "sha256": "f3be9670ae9d377d12e1ed201053f8d6b5355e428c2ebb8cc0da66496f91c17c"
+      },
+      "source_raw_document_sha256": "711ea708150173a1d6a9db41411fb8a87aa86a512fde994823822b30619be474",
+      "source_base_anchors": {
+        "S1": 1
+      },
+      "pair_hypothesis": {
+        "S7": 1,
+        "S14": 1
+      },
+      "next_action": "not_next_choice",
+      "conditional_anchors": {
+        "S1": 1,
+        "S7": 1,
+        "S14": 1
+      },
+      "conditional_document_sha256": "4a8ea3e73c51f483c5b36701ea623fc750f17987fb45529ea66e5794087de654",
+      "old_outcome_sha256": "f794eb10b05212181936f65e93611293e2ac0d4f92f1d68bd90efa6c80ec53b6",
+      "new_outcome_sha256": "4415e9f56bfd6f96a1f326fc6193831ca600fcb378e0a967c792288ee12a8854",
+      "old_status": "conditional_inconclusive",
+      "new_status": "underdetermined",
+      "base_status": "underdetermined",
+      "all_final_domains": {
+        "S0": [
+          2,
+          3,
+          4
+        ],
+        "S1": [
+          1
+        ],
+        "S2": [
+          2,
+          3,
+          4
+        ],
+        "S3": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S4": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S5": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S6": [
+          2,
+          3,
+          4
+        ],
+        "S7": [
+          1
+        ],
+        "S8": [
+          2,
+          3,
+          4
+        ],
+        "S9": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S10": [
+          2,
+          3,
+          4
+        ],
+        "S11": [
+          2,
+          3,
+          4
+        ],
+        "S12": [
+          2,
+          3,
+          4
+        ],
+        "S13": [
+          2,
+          3,
+          4
+        ],
+        "S14": [
+          1
+        ],
+        "S15": [
+          2,
+          3,
+          4
+        ],
+        "S16": [
+          2,
+          3,
+          4
+        ],
+        "S17": [
+          2,
+          3,
+          4
+        ],
+        "S18": [
+          2,
+          3,
+          4
+        ]
+      },
+      "complete_wheel_check": {
+        "version": "quaternary-domain-odd-wheel-v1",
+        "raw_document_sha256": "4a8ea3e73c51f483c5b36701ea623fc750f17987fb45529ea66e5794087de654",
+        "domains_sha256": "da848557d17886402c2e756d2cbf810b8022aa17f6939f62cf92913fedf5d06e",
+        "certificate": null,
+        "statistics": {
+          "palettes_examined": 4,
+          "centers_examined": 21,
+          "eligible_neighbor_sets": 9,
+          "bfs_components": 17,
+          "vertices_visited": 38,
+          "edges_examined": 42,
+          "odd_cycles_found": 0
+        }
+      },
+      "saved_contact_verification": {
+        "passed": true,
+        "metadata_passed": true,
+        "trace_audit": "independent_literal_set_replay",
+        "trace_steps_checked": 175,
+        "final_fixed_point": "checked",
+        "attempted_revision_telemetry": "lower_bound_checked_not_worklist_replayed",
+        "complete_assignment_preservation": "literal_pair_composition_then_real_edge_common_excluded_color_odd_wheel",
+        "status": "underdetermined",
+        "base_status": "underdetermined",
+        "wheel_check": {
+          "passed": true,
+          "found": false,
+          "certificate_checked": false,
+          "absence_checked": true,
+          "telemetry_scope": "literal_bounds_only_not_detector_work_replay",
+          "scope": "Conflict under supplied domains; absence means no declared real-edge common-excluded-color odd wheel, not global satisfiability."
+        }
+      },
+      "certificate_literal_details": null,
+      "reference_wheel_q1_blockers": {
+        "S3": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S5": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "reference_wheel_blockers_scope": "For the fixed S3 / S0-S2-S17-S18-S5 wheel only; global absence is the saved independent bipartiteness result.",
+      "raw_query_evidence": [
+        {
+          "role": "base",
+          "oracle_record_index": 0,
+          "record_sha256": "4a1400d1cc929a30d62a13b7a83c1f459c38702f80c9aeaf6436e0a4164bba70",
+          "status": "sat",
+          "anchors": {
+            "S1": 1
+          },
+          "sat_witness": {
+            "S0": 2,
+            "S1": 1,
+            "S2": 3,
+            "S3": 1,
+            "S4": 3,
+            "S5": 4,
+            "S6": 1,
+            "S7": 4,
+            "S8": 3,
+            "S9": 4,
+            "S10": 3,
+            "S11": 1,
+            "S12": 3,
+            "S13": 2,
+            "S14": 2,
+            "S15": 4,
+            "S16": 1,
+            "S17": 4,
+            "S18": 3
+          },
+          "saved_verification": {
+            "passed": true,
+            "status": "sat",
+            "conclusive": true,
+            "claim": "complete-four-name-witness",
+            "edges_checked": 51,
+            "anchors_checked": 1,
+            "nodes_independently_counted": null
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        },
+        {
+          "role": "joint",
+          "oracle_record_index": 1199,
+          "record_sha256": "57d05d51ebb885c6c770cb0825152f58d9b16adeba39e5883efb5fca86ef9608",
+          "status": "unsat",
+          "anchors": {
+            "S1": 1,
+            "S7": 1,
+            "S14": 1
+          },
+          "sat_witness": null,
+          "saved_verification": {
+            "passed": true,
+            "status": "unsat",
+            "conclusive": true,
+            "claim": "complete-literal-four-name-unsat-tree",
+            "leaves_checked": 12,
+            "nodes_independently_counted": 46
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        },
+        {
+          "role": "single_0",
+          "oracle_record_index": 582,
+          "record_sha256": "1ecb2421c7de76d88500041036dfb6392926745644ffb5101fb4d010dee9c6e4",
+          "status": "sat",
+          "anchors": {
+            "S1": 1,
+            "S7": 1
+          },
+          "sat_witness": {
+            "S0": 2,
+            "S1": 1,
+            "S2": 3,
+            "S3": 4,
+            "S4": 3,
+            "S5": 1,
+            "S6": 4,
+            "S7": 1,
+            "S8": 3,
+            "S9": 1,
+            "S10": 3,
+            "S11": 1,
+            "S12": 3,
+            "S13": 4,
+            "S14": 2,
+            "S15": 1,
+            "S16": 2,
+            "S17": 2,
+            "S18": 3
+          },
+          "saved_verification": {
+            "passed": true,
+            "status": "sat",
+            "conclusive": true,
+            "claim": "complete-four-name-witness",
+            "edges_checked": 51,
+            "anchors_checked": 2,
+            "nodes_independently_counted": null
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        },
+        {
+          "role": "single_1",
+          "oracle_record_index": 480,
+          "record_sha256": "5390bee415b81332535769b6063c47d4e926cfbbb7deb920a541c751b9b60faf",
+          "status": "sat",
+          "anchors": {
+            "S1": 1,
+            "S14": 1
+          },
+          "sat_witness": {
+            "S0": 2,
+            "S1": 1,
+            "S2": 3,
+            "S3": 1,
+            "S4": 3,
+            "S5": 4,
+            "S6": 1,
+            "S7": 4,
+            "S8": 3,
+            "S9": 4,
+            "S10": 3,
+            "S11": 4,
+            "S12": 3,
+            "S13": 2,
+            "S14": 1,
+            "S15": 4,
+            "S16": 1,
+            "S17": 4,
+            "S18": 3
+          },
+          "saved_verification": {
+            "passed": true,
+            "status": "sat",
+            "conclusive": true,
+            "claim": "complete-four-name-witness",
+            "edges_checked": 51,
+            "anchors_checked": 2,
+            "nodes_independently_counted": null
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        }
+      ],
+      "interpretation": "Same old persistent state with two hypothetical colors; no actual simultaneous joint commitment claimed. Remaining UNSAT hypotheses are local detector gaps, not failure of whole-graph four-colorability."
+    },
+    {
+      "key": "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132",
+      "scenario": "one-bounded-anchor",
+      "state_index": 0,
+      "phase": 0,
+      "target_index": 1301,
+      "source_checkpoint": {
+        "path": "outputs/quaternary-logical-neq-pair-scan-2026-09-29-checkpoints/044-8070783fd68d.json.gz",
+        "sha256": "f3be9670ae9d377d12e1ed201053f8d6b5355e428c2ebb8cc0da66496f91c17c"
+      },
+      "source_raw_document_sha256": "711ea708150173a1d6a9db41411fb8a87aa86a512fde994823822b30619be474",
+      "source_base_anchors": {
+        "S1": 1
+      },
+      "pair_hypothesis": {
+        "S8": 1,
+        "S14": 1
+      },
+      "next_action": "not_next_choice",
+      "conditional_anchors": {
+        "S1": 1,
+        "S8": 1,
+        "S14": 1
+      },
+      "conditional_document_sha256": "63ef7c553d06920f278f80c74c8812c02dd65388ea45b14d825b8fdb24f3b009",
+      "old_outcome_sha256": "aa82b095c20438c9317c610fa5276eddefa15d2fcada44fb65b9dcd81165a4f7",
+      "new_outcome_sha256": "87c350877991a5d480eff8b0b8b9ce96643e8e1b0ba912abf4976d407af3bbe6",
+      "old_status": "conditional_inconclusive",
+      "new_status": "underdetermined",
+      "base_status": "underdetermined",
+      "all_final_domains": {
+        "S0": [
+          2,
+          3,
+          4
+        ],
+        "S1": [
+          1
+        ],
+        "S2": [
+          2,
+          3,
+          4
+        ],
+        "S3": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S4": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S5": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S6": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S7": [
+          2,
+          3,
+          4
+        ],
+        "S8": [
+          1
+        ],
+        "S9": [
+          2,
+          3,
+          4
+        ],
+        "S10": [
+          2,
+          3,
+          4
+        ],
+        "S11": [
+          2,
+          3,
+          4
+        ],
+        "S12": [
+          2,
+          3,
+          4
+        ],
+        "S13": [
+          2,
+          3,
+          4
+        ],
+        "S14": [
+          1
+        ],
+        "S15": [
+          2,
+          3,
+          4
+        ],
+        "S16": [
+          2,
+          3,
+          4
+        ],
+        "S17": [
+          2,
+          3,
+          4
+        ],
+        "S18": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "complete_wheel_check": {
+        "version": "quaternary-domain-odd-wheel-v1",
+        "raw_document_sha256": "63ef7c553d06920f278f80c74c8812c02dd65388ea45b14d825b8fdb24f3b009",
+        "domains_sha256": "228599818a1e8a74527cb10bee72792ebab413e8c9f6f8e7372bf34f3a8c1c94",
+        "certificate": null,
+        "statistics": {
+          "palettes_examined": 4,
+          "centers_examined": 20,
+          "eligible_neighbor_sets": 8,
+          "bfs_components": 13,
+          "vertices_visited": 34,
+          "edges_examined": 42,
+          "odd_cycles_found": 0
+        }
+      },
+      "saved_contact_verification": {
+        "passed": true,
+        "metadata_passed": true,
+        "trace_audit": "independent_literal_set_replay",
+        "trace_steps_checked": 165,
+        "final_fixed_point": "checked",
+        "attempted_revision_telemetry": "lower_bound_checked_not_worklist_replayed",
+        "complete_assignment_preservation": "literal_pair_composition_then_real_edge_common_excluded_color_odd_wheel",
+        "status": "underdetermined",
+        "base_status": "underdetermined",
+        "wheel_check": {
+          "passed": true,
+          "found": false,
+          "certificate_checked": false,
+          "absence_checked": true,
+          "telemetry_scope": "literal_bounds_only_not_detector_work_replay",
+          "scope": "Conflict under supplied domains; absence means no declared real-edge common-excluded-color odd wheel, not global satisfiability."
+        }
+      },
+      "certificate_literal_details": null,
+      "reference_wheel_q1_blockers": {
+        "S3": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S18": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S5": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "reference_wheel_blockers_scope": "For the fixed S3 / S0-S2-S17-S18-S5 wheel only; global absence is the saved independent bipartiteness result.",
+      "raw_query_evidence": [
+        {
+          "role": "base",
+          "oracle_record_index": 0,
+          "record_sha256": "4a1400d1cc929a30d62a13b7a83c1f459c38702f80c9aeaf6436e0a4164bba70",
+          "status": "sat",
+          "anchors": {
+            "S1": 1
+          },
+          "sat_witness": {
+            "S0": 2,
+            "S1": 1,
+            "S2": 3,
+            "S3": 1,
+            "S4": 3,
+            "S5": 4,
+            "S6": 1,
+            "S7": 4,
+            "S8": 3,
+            "S9": 4,
+            "S10": 3,
+            "S11": 1,
+            "S12": 3,
+            "S13": 2,
+            "S14": 2,
+            "S15": 4,
+            "S16": 1,
+            "S17": 4,
+            "S18": 3
+          },
+          "saved_verification": {
+            "passed": true,
+            "status": "sat",
+            "conclusive": true,
+            "claim": "complete-four-name-witness",
+            "edges_checked": 51,
+            "anchors_checked": 1,
+            "nodes_independently_counted": null
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        },
+        {
+          "role": "joint",
+          "oracle_record_index": 1331,
+          "record_sha256": "72b1fc16ccc3932c6a0057efa802f6dce8a04bc58df9d3dcb859f5bc3c0a79af",
+          "status": "unsat",
+          "anchors": {
+            "S1": 1,
+            "S8": 1,
+            "S14": 1
+          },
+          "sat_witness": null,
+          "saved_verification": {
+            "passed": true,
+            "status": "unsat",
+            "conclusive": true,
+            "claim": "complete-literal-four-name-unsat-tree",
+            "leaves_checked": 6,
+            "nodes_independently_counted": 34
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        },
+        {
+          "role": "single_0",
+          "oracle_record_index": 795,
+          "record_sha256": "f5e60fa462a339c4f1e3360f3f635c8d2a75197134992cf1767b4f0119c2f8c4",
+          "status": "sat",
+          "anchors": {
+            "S1": 1,
+            "S8": 1
+          },
+          "sat_witness": {
+            "S0": 2,
+            "S1": 1,
+            "S2": 4,
+            "S3": 3,
+            "S4": 1,
+            "S5": 4,
+            "S6": 3,
+            "S7": 4,
+            "S8": 1,
+            "S9": 4,
+            "S10": 3,
+            "S11": 1,
+            "S12": 3,
+            "S13": 4,
+            "S14": 2,
+            "S15": 1,
+            "S16": 2,
+            "S17": 2,
+            "S18": 1
+          },
+          "saved_verification": {
+            "passed": true,
+            "status": "sat",
+            "conclusive": true,
+            "claim": "complete-four-name-witness",
+            "edges_checked": 51,
+            "anchors_checked": 2,
+            "nodes_independently_counted": null
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        },
+        {
+          "role": "single_1",
+          "oracle_record_index": 480,
+          "record_sha256": "5390bee415b81332535769b6063c47d4e926cfbbb7deb920a541c751b9b60faf",
+          "status": "sat",
+          "anchors": {
+            "S1": 1,
+            "S14": 1
+          },
+          "sat_witness": {
+            "S0": 2,
+            "S1": 1,
+            "S2": 3,
+            "S3": 1,
+            "S4": 3,
+            "S5": 4,
+            "S6": 1,
+            "S7": 4,
+            "S8": 3,
+            "S9": 4,
+            "S10": 3,
+            "S11": 4,
+            "S12": 3,
+            "S13": 2,
+            "S14": 1,
+            "S15": 4,
+            "S16": 1,
+            "S17": 4,
+            "S18": 3
+          },
+          "saved_verification": {
+            "passed": true,
+            "status": "sat",
+            "conclusive": true,
+            "claim": "complete-four-name-witness",
+            "edges_checked": 51,
+            "anchors_checked": 2,
+            "nodes_independently_counted": null
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        }
+      ],
+      "interpretation": "Same old persistent state with two hypothetical colors; no actual simultaneous joint commitment claimed. Remaining UNSAT hypotheses are local detector gaps, not failure of whole-graph four-colorability."
+    },
+    {
+      "key": "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132",
+      "scenario": "one-bounded-anchor",
+      "state_index": 0,
+      "phase": 0,
+      "target_index": 1422,
+      "source_checkpoint": {
+        "path": "outputs/quaternary-logical-neq-pair-scan-2026-09-29-checkpoints/044-8070783fd68d.json.gz",
+        "sha256": "f3be9670ae9d377d12e1ed201053f8d6b5355e428c2ebb8cc0da66496f91c17c"
+      },
+      "source_raw_document_sha256": "711ea708150173a1d6a9db41411fb8a87aa86a512fde994823822b30619be474",
+      "source_base_anchors": {
+        "S1": 1
+      },
+      "pair_hypothesis": {
+        "S9": 1,
+        "S14": 1
+      },
+      "next_action": "not_next_choice",
+      "conditional_anchors": {
+        "S1": 1,
+        "S9": 1,
+        "S14": 1
+      },
+      "conditional_document_sha256": "782719dddd790a6b018c8ed15a0aa2fd52bc44ab9a73d69335b09ea246f9bf17",
+      "old_outcome_sha256": "6843ef207993d2b8874a0fccbe12ea132f82cae0b78599dd8ed448b704bcb509",
+      "new_outcome_sha256": "8ecd700a4d10c644405eafafc5341f62e1ed91ffe534b6aec89769ed571e4cb6",
+      "old_status": "conditional_inconclusive",
+      "new_status": "underdetermined",
+      "base_status": "underdetermined",
+      "all_final_domains": {
+        "S0": [
+          2,
+          3,
+          4
+        ],
+        "S1": [
+          1
+        ],
+        "S2": [
+          2,
+          3,
+          4
+        ],
+        "S3": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S4": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S5": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S6": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S7": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S8": [
+          2,
+          3,
+          4
+        ],
+        "S9": [
+          1
+        ],
+        "S10": [
+          2,
+          3,
+          4
+        ],
+        "S11": [
+          2,
+          3,
+          4
+        ],
+        "S12": [
+          2,
+          3,
+          4
+        ],
+        "S13": [
+          2,
+          3,
+          4
+        ],
+        "S14": [
+          1
+        ],
+        "S15": [
+          2,
+          3,
+          4
+        ],
+        "S16": [
+          2,
+          3,
+          4
+        ],
+        "S17": [
+          2,
+          3,
+          4
+        ],
+        "S18": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "complete_wheel_check": {
+        "version": "quaternary-domain-odd-wheel-v1",
+        "raw_document_sha256": "782719dddd790a6b018c8ed15a0aa2fd52bc44ab9a73d69335b09ea246f9bf17",
+        "domains_sha256": "8b5d164399cda18ec2fdcd9799c99f513854653c84c7e9033a6ceb3e26b11f3c",
+        "certificate": null,
+        "statistics": {
+          "palettes_examined": 4,
+          "centers_examined": 19,
+          "eligible_neighbor_sets": 7,
+          "bfs_components": 13,
+          "vertices_visited": 28,
+          "edges_examined": 30,
+          "odd_cycles_found": 0
+        }
+      },
+      "saved_contact_verification": {
+        "passed": true,
+        "metadata_passed": true,
+        "trace_audit": "independent_literal_set_replay",
+        "trace_steps_checked": 152,
+        "final_fixed_point": "checked",
+        "attempted_revision_telemetry": "lower_bound_checked_not_worklist_replayed",
+        "complete_assignment_preservation": "literal_pair_composition_then_real_edge_common_excluded_color_odd_wheel",
+        "status": "underdetermined",
+        "base_status": "underdetermined",
+        "wheel_check": {
+          "passed": true,
+          "found": false,
+          "certificate_checked": false,
+          "absence_checked": true,
+          "telemetry_scope": "literal_bounds_only_not_detector_work_replay",
+          "scope": "Conflict under supplied domains; absence means no declared real-edge common-excluded-color odd wheel, not global satisfiability."
+        }
+      },
+      "certificate_literal_details": null,
+      "reference_wheel_q1_blockers": {
+        "S3": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S18": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S5": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "reference_wheel_blockers_scope": "For the fixed S3 / S0-S2-S17-S18-S5 wheel only; global absence is the saved independent bipartiteness result.",
+      "raw_query_evidence": [
+        {
+          "role": "base",
+          "oracle_record_index": 0,
+          "record_sha256": "4a1400d1cc929a30d62a13b7a83c1f459c38702f80c9aeaf6436e0a4164bba70",
+          "status": "sat",
+          "anchors": {
+            "S1": 1
+          },
+          "sat_witness": {
+            "S0": 2,
+            "S1": 1,
+            "S2": 3,
+            "S3": 1,
+            "S4": 3,
+            "S5": 4,
+            "S6": 1,
+            "S7": 4,
+            "S8": 3,
+            "S9": 4,
+            "S10": 3,
+            "S11": 1,
+            "S12": 3,
+            "S13": 2,
+            "S14": 2,
+            "S15": 4,
+            "S16": 1,
+            "S17": 4,
+            "S18": 3
+          },
+          "saved_verification": {
+            "passed": true,
+            "status": "sat",
+            "conclusive": true,
+            "claim": "complete-four-name-witness",
+            "edges_checked": 51,
+            "anchors_checked": 1,
+            "nodes_independently_counted": null
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        },
+        {
+          "role": "joint",
+          "oracle_record_index": 1461,
+          "record_sha256": "9056bed5ac9c14c2f2a5845979cb5d079174bead0fda20f378aa478665088688",
+          "status": "unsat",
+          "anchors": {
+            "S1": 1,
+            "S9": 1,
+            "S14": 1
+          },
+          "sat_witness": null,
+          "saved_verification": {
+            "passed": true,
+            "status": "unsat",
+            "conclusive": true,
+            "claim": "complete-literal-four-name-unsat-tree",
+            "leaves_checked": 12,
+            "nodes_independently_counted": 46
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        },
+        {
+          "role": "single_0",
+          "oracle_record_index": 1462,
+          "record_sha256": "952f670cb628c2e44664ec691da3a098cdf7e5ba61c5bb177d40b620566d383b",
+          "status": "sat",
+          "anchors": {
+            "S1": 1,
+            "S9": 1
+          },
+          "sat_witness": {
+            "S0": 2,
+            "S1": 1,
+            "S2": 4,
+            "S3": 3,
+            "S4": 1,
+            "S5": 4,
+            "S6": 3,
+            "S7": 4,
+            "S8": 3,
+            "S9": 1,
+            "S10": 3,
+            "S11": 1,
+            "S12": 3,
+            "S13": 4,
+            "S14": 2,
+            "S15": 1,
+            "S16": 2,
+            "S17": 2,
+            "S18": 1
+          },
+          "saved_verification": {
+            "passed": true,
+            "status": "sat",
+            "conclusive": true,
+            "claim": "complete-four-name-witness",
+            "edges_checked": 51,
+            "anchors_checked": 2,
+            "nodes_independently_counted": null
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        },
+        {
+          "role": "single_1",
+          "oracle_record_index": 480,
+          "record_sha256": "5390bee415b81332535769b6063c47d4e926cfbbb7deb920a541c751b9b60faf",
+          "status": "sat",
+          "anchors": {
+            "S1": 1,
+            "S14": 1
+          },
+          "sat_witness": {
+            "S0": 2,
+            "S1": 1,
+            "S2": 3,
+            "S3": 1,
+            "S4": 3,
+            "S5": 4,
+            "S6": 1,
+            "S7": 4,
+            "S8": 3,
+            "S9": 4,
+            "S10": 3,
+            "S11": 4,
+            "S12": 3,
+            "S13": 2,
+            "S14": 1,
+            "S15": 4,
+            "S16": 1,
+            "S17": 4,
+            "S18": 3
+          },
+          "saved_verification": {
+            "passed": true,
+            "status": "sat",
+            "conclusive": true,
+            "claim": "complete-four-name-witness",
+            "edges_checked": 51,
+            "anchors_checked": 2,
+            "nodes_independently_counted": null
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        }
+      ],
+      "interpretation": "Same old persistent state with two hypothetical colors; no actual simultaneous joint commitment claimed. Remaining UNSAT hypotheses are local detector gaps, not failure of whole-graph four-colorability."
+    },
+    {
+      "key": "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132",
+      "scenario": "one-bounded-anchor",
+      "state_index": 0,
+      "phase": 0,
+      "target_index": 1804,
+      "source_checkpoint": {
+        "path": "outputs/quaternary-logical-neq-pair-scan-2026-09-29-checkpoints/044-8070783fd68d.json.gz",
+        "sha256": "f3be9670ae9d377d12e1ed201053f8d6b5355e428c2ebb8cc0da66496f91c17c"
+      },
+      "source_raw_document_sha256": "711ea708150173a1d6a9db41411fb8a87aa86a512fde994823822b30619be474",
+      "source_base_anchors": {
+        "S1": 1
+      },
+      "pair_hypothesis": {
+        "S14": 1,
+        "S18": 1
+      },
+      "next_action": "not_next_choice",
+      "conditional_anchors": {
+        "S1": 1,
+        "S14": 1,
+        "S18": 1
+      },
+      "conditional_document_sha256": "5a00e2f82c27f7f8346baaadd18c7d00c55694facc1c80c558965e8a231ff3df",
+      "old_outcome_sha256": "baeb9871f9635a9e4b7df624a6c3647fdf2168fa19d5705cd18fed64df1f195c",
+      "new_outcome_sha256": "3a4b78569780ea371fee021a870c1db87a537e1e3d8bdd319840ef58e37e296c",
+      "old_status": "conditional_inconclusive",
+      "new_status": "underdetermined",
+      "base_status": "underdetermined",
+      "all_final_domains": {
+        "S0": [
+          2,
+          3,
+          4
+        ],
+        "S1": [
+          1
+        ],
+        "S2": [
+          2,
+          3,
+          4
+        ],
+        "S3": [
+          2,
+          3,
+          4
+        ],
+        "S4": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S5": [
+          2,
+          3,
+          4
+        ],
+        "S6": [
+          2,
+          3,
+          4
+        ],
+        "S7": [
+          2,
+          3,
+          4
+        ],
+        "S8": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S9": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "S10": [
+          2,
+          3,
+          4
+        ],
+        "S11": [
+          2,
+          3,
+          4
+        ],
+        "S12": [
+          2,
+          3,
+          4
+        ],
+        "S13": [
+          2,
+          3,
+          4
+        ],
+        "S14": [
+          1
+        ],
+        "S15": [
+          2,
+          3,
+          4
+        ],
+        "S16": [
+          2,
+          3,
+          4
+        ],
+        "S17": [
+          2,
+          3,
+          4
+        ],
+        "S18": [
+          1
+        ]
+      },
+      "complete_wheel_check": {
+        "version": "quaternary-domain-odd-wheel-v1",
+        "raw_document_sha256": "5a00e2f82c27f7f8346baaadd18c7d00c55694facc1c80c558965e8a231ff3df",
+        "domains_sha256": "95fa87b0772a86a0317c3bce2990dc6d28d1d0678f096703fb1ff2969800846c",
+        "certificate": null,
+        "statistics": {
+          "palettes_examined": 4,
+          "centers_examined": 22,
+          "eligible_neighbor_sets": 13,
+          "bfs_components": 20,
+          "vertices_visited": 50,
+          "edges_examined": 60,
+          "odd_cycles_found": 0
+        }
+      },
+      "saved_contact_verification": {
+        "passed": true,
+        "metadata_passed": true,
+        "trace_audit": "independent_literal_set_replay",
+        "trace_steps_checked": 199,
+        "final_fixed_point": "checked",
+        "attempted_revision_telemetry": "lower_bound_checked_not_worklist_replayed",
+        "complete_assignment_preservation": "literal_pair_composition_then_real_edge_common_excluded_color_odd_wheel",
+        "status": "underdetermined",
+        "base_status": "underdetermined",
+        "wheel_check": {
+          "passed": true,
+          "found": false,
+          "certificate_checked": false,
+          "absence_checked": true,
+          "telemetry_scope": "literal_bounds_only_not_detector_work_replay",
+          "scope": "Conflict under supplied domains; absence means no declared real-edge common-excluded-color odd wheel, not global satisfiability."
+        }
+      },
+      "certificate_literal_details": null,
+      "reference_wheel_q1_blockers": {
+        "S18": [
+          1
+        ]
+      },
+      "reference_wheel_blockers_scope": "For the fixed S3 / S0-S2-S17-S18-S5 wheel only; global absence is the saved independent bipartiteness result.",
+      "raw_query_evidence": [
+        {
+          "role": "base",
+          "oracle_record_index": 0,
+          "record_sha256": "4a1400d1cc929a30d62a13b7a83c1f459c38702f80c9aeaf6436e0a4164bba70",
+          "status": "sat",
+          "anchors": {
+            "S1": 1
+          },
+          "sat_witness": {
+            "S0": 2,
+            "S1": 1,
+            "S2": 3,
+            "S3": 1,
+            "S4": 3,
+            "S5": 4,
+            "S6": 1,
+            "S7": 4,
+            "S8": 3,
+            "S9": 4,
+            "S10": 3,
+            "S11": 1,
+            "S12": 3,
+            "S13": 2,
+            "S14": 2,
+            "S15": 4,
+            "S16": 1,
+            "S17": 4,
+            "S18": 3
+          },
+          "saved_verification": {
+            "passed": true,
+            "status": "sat",
+            "conclusive": true,
+            "claim": "complete-four-name-witness",
+            "edges_checked": 51,
+            "anchors_checked": 1,
+            "nodes_independently_counted": null
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        },
+        {
+          "role": "joint",
+          "oracle_record_index": 1844,
+          "record_sha256": "9351199afcff6f7fc6c2eee9aa8f284a26d91d9de9950c1e165f7a360f2aa7d1",
+          "status": "unsat",
+          "anchors": {
+            "S1": 1,
+            "S14": 1,
+            "S18": 1
+          },
+          "sat_witness": null,
+          "saved_verification": {
+            "passed": true,
+            "status": "unsat",
+            "conclusive": true,
+            "claim": "complete-literal-four-name-unsat-tree",
+            "leaves_checked": 18,
+            "nodes_independently_counted": 112
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        },
+        {
+          "role": "single_0",
+          "oracle_record_index": 480,
+          "record_sha256": "5390bee415b81332535769b6063c47d4e926cfbbb7deb920a541c751b9b60faf",
+          "status": "sat",
+          "anchors": {
+            "S1": 1,
+            "S14": 1
+          },
+          "sat_witness": {
+            "S0": 2,
+            "S1": 1,
+            "S2": 3,
+            "S3": 1,
+            "S4": 3,
+            "S5": 4,
+            "S6": 1,
+            "S7": 4,
+            "S8": 3,
+            "S9": 4,
+            "S10": 3,
+            "S11": 4,
+            "S12": 3,
+            "S13": 2,
+            "S14": 1,
+            "S15": 4,
+            "S16": 1,
+            "S17": 4,
+            "S18": 3
+          },
+          "saved_verification": {
+            "passed": true,
+            "status": "sat",
+            "conclusive": true,
+            "claim": "complete-four-name-witness",
+            "edges_checked": 51,
+            "anchors_checked": 2,
+            "nodes_independently_counted": null
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        },
+        {
+          "role": "single_1",
+          "oracle_record_index": 753,
+          "record_sha256": "90aff8e3fd54fe201fa652c31905ad71f01787936d759914f7bd71c245194d64",
+          "status": "sat",
+          "anchors": {
+            "S1": 1,
+            "S18": 1
+          },
+          "sat_witness": {
+            "S0": 2,
+            "S1": 1,
+            "S2": 4,
+            "S3": 3,
+            "S4": 1,
+            "S5": 4,
+            "S6": 3,
+            "S7": 4,
+            "S8": 1,
+            "S9": 4,
+            "S10": 3,
+            "S11": 1,
+            "S12": 3,
+            "S13": 4,
+            "S14": 2,
+            "S15": 1,
+            "S16": 2,
+            "S17": 2,
+            "S18": 1
+          },
+          "saved_verification": {
+            "passed": true,
+            "status": "sat",
+            "conclusive": true,
+            "claim": "complete-four-name-witness",
+            "edges_checked": 51,
+            "anchors_checked": 2,
+            "nodes_independently_counted": null
+          },
+          "review_scope": "SAT witness independently checked literally; UNSAT saved proof identity bound, not searched or replayed in this extraction"
+        }
+      ],
+      "interpretation": "Same old persistent state with two hypothetical colors; no actual simultaneous joint commitment claimed. Remaining UNSAT hypotheses are local detector gaps, not failure of whole-graph four-colorability."
+    }
+  ],
+  "queries_rerun": 0,
+  "producer_reruns": 0,
+  "propagation_reruns": 0,
+  "detector_reruns": 0,
+  "frozen_sources_modified": 0,
+  "review_scope": "Count/hash/old-base equivalence/literal real-edge/domain checks and three saved SAT roles per gap only. Root formal saved checker separately replays UNSAT and all traces. No new rule or inference experiment."
+}

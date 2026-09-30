@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "scope": "Final staged bindings for all253 frozen sources, selected artifacts, and final navigation privacy patterns; not a mathematical rerun or exhaustive secret detector.",
+  "passed": true,
+  "manifest": "outputs/quaternary-conditional-diamond-manifest-2026-09-30.json.gz",
+  "manifest_sha256": "4a1caa6487d03d16530588dd52231981a0679b993ae32f530149be659341299b",
+  "frozen_sources_checked": 253,
+  "selected_files_checked": 2566,
+  "navigation": [
+    {
+      "path": "README.md",
+      "index_sha256": "fec10bdd296ea530c2c115169e763ac29cb4feaa937f74f52fa0565b87b65a08",
+      "private_marker_matches": 0
+    },
+    {
+      "path": "README.zh-CN.md",
+      "index_sha256": "0678e2cfa3ccb3aea59640c4eec92030ff743f0235d71ad12efce10d680167e5",
+      "private_marker_matches": 0
+    },
+    {
+      "path": "NEXT_STEP.md",
+      "index_sha256": "94ec2d854c7ad4c1ebe7d9e272aa7c863cf87fb104d255ce2688628e72e4f8b5",
+      "private_marker_matches": 0
+    },
+    {
+      "path": "docs/REPRODUCING_RESEARCH.md",
+      "index_sha256": "c79312505bf14982668f96a37652a65ff0152780197225357426d8d1bd6c3099",
+      "private_marker_matches": 0
+    },
+    {
+      "path": "docs/PUBLICATION-2026-09-30.md",
+      "index_sha256": "3d107b613104a71be3728a745e1d89c7afb90017b73cea6915df594c657640f3",
+      "private_marker_matches": 0
+    }
+  ],
+  "errors": []
+}

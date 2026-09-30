@@ -1,0 +1,2551 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-09-29T13:00:44.767207+00:00",
+  "passed": true,
+  "scope": "Independent read-only source/input/checkpoint hashing, literal SAT witness checking and summary recount. No producer, propagator, oracle search, formal checker or rule enumeration was rerun.",
+  "checks": {
+    "sources_verified": 208,
+    "input_files_verified": 4,
+    "scan_checkpoint_hashes_verified": 477,
+    "archive_checkpoint_hashes_verified": 477,
+    "summaries_recomputed_from_states_and_queries": 855,
+    "literal_sat_witnesses_checked": 57500,
+    "raw_edge_anchor_query_references_bound": 61163,
+    "history_mode_records_bound": 124
+  },
+  "manifest_sha256": "c9ab66b4267e2a0547f9707736019bc3041cf1837bcac92eab529f71951e8c2a",
+  "report_sha256": "ad62c31125de4b8aa862d719e1f077c98471fd7bbf18fbd78da02b7f5b06efae",
+  "counts": {
+    "records": 477,
+    "eligibility": {
+      "geometry_error": 12,
+      "ready": 428,
+      "geometry_audit_error": 37
+    },
+    "runs": 855,
+    "persistent_states": 4518,
+    "candidate_targets": 56645
+  },
+  "groups": {
+    "all": {
+      "runs": 855,
+      "checked": 855,
+      "errors": 0,
+      "metrics": {
+        "state_count": 4518,
+        "target_count": 56645,
+        "no_target_state_count": 855,
+        "base_status_counts": {
+          "sat": 4518,
+          "unsat": 0,
+          "unknown": 0
+        },
+        "target_status_counts": {
+          "supported": 56645,
+          "unsupported": 0,
+          "unknown": 0,
+          "preexisting_unsat": 0
+        },
+        "category_counts": {
+          "scheduled_min": {
+            "supported": 3663,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "same_side_other": {
+            "supported": 5303,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "other_side_min": {
+            "supported": 15524,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "other_side_other": {
+            "supported": 32155,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          }
+        },
+        "action_counts": {
+          "actual_commit": {
+            "supported": 3663,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "actual_rejected_trial": {
+            "supported": 0,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "not_selected": {
+            "supported": 52982,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          }
+        },
+        "conditional_counts": {
+          "conditional_refuted": 0,
+          "conditional_inconclusive": 0
+        },
+        "unsupported_state_count": 0,
+        "oracle_record_count": 57500,
+        "oracle_status_counts": {
+          "sat": 57500,
+          "unsat": 0,
+          "unknown": 0
+        }
+      }
+    },
+    "geometry": {
+      "runs": 854,
+      "checked": 854,
+      "errors": 0,
+      "metrics": {
+        "state_count": 4512,
+        "target_count": 56558,
+        "no_target_state_count": 854,
+        "base_status_counts": {
+          "sat": 4512,
+          "unsat": 0,
+          "unknown": 0
+        },
+        "target_status_counts": {
+          "supported": 56558,
+          "unsupported": 0,
+          "unknown": 0,
+          "preexisting_unsat": 0
+        },
+        "category_counts": {
+          "scheduled_min": {
+            "supported": 3658,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "same_side_other": {
+            "supported": 5294,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "other_side_min": {
+            "supported": 15502,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "other_side_other": {
+            "supported": 32104,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          }
+        },
+        "action_counts": {
+          "actual_commit": {
+            "supported": 3658,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "actual_rejected_trial": {
+            "supported": 0,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "not_selected": {
+            "supported": 52900,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          }
+        },
+        "conditional_counts": {
+          "conditional_refuted": 0,
+          "conditional_inconclusive": 0
+        },
+        "unsupported_state_count": 0,
+        "oracle_record_count": 57412,
+        "oracle_status_counts": {
+          "sat": 57412,
+          "unsat": 0,
+          "unknown": 0
+        }
+      }
+    },
+    "geometry/one-bounded-anchor": {
+      "runs": 427,
+      "checked": 427,
+      "errors": 0,
+      "metrics": {
+        "state_count": 2473,
+        "target_count": 31931,
+        "no_target_state_count": 427,
+        "base_status_counts": {
+          "sat": 2473,
+          "unsat": 0,
+          "unknown": 0
+        },
+        "target_status_counts": {
+          "supported": 31931,
+          "unsupported": 0,
+          "unknown": 0,
+          "preexisting_unsat": 0
+        },
+        "category_counts": {
+          "scheduled_min": {
+            "supported": 2046,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "same_side_other": {
+            "supported": 3209,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "other_side_min": {
+            "supported": 8624,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "other_side_other": {
+            "supported": 18052,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          }
+        },
+        "action_counts": {
+          "actual_commit": {
+            "supported": 2046,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "actual_rejected_trial": {
+            "supported": 0,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "not_selected": {
+            "supported": 29885,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          }
+        },
+        "conditional_counts": {
+          "conditional_refuted": 0,
+          "conditional_inconclusive": 0
+        },
+        "unsupported_state_count": 0,
+        "oracle_record_count": 32358,
+        "oracle_status_counts": {
+          "sat": 32358,
+          "unsat": 0,
+          "unknown": 0
+        }
+      }
+    },
+    "population/regression-all-candidate": {
+      "runs": 767,
+      "checked": 767,
+      "errors": 0,
+      "metrics": {
+        "state_count": 4166,
+        "target_count": 54497,
+        "no_target_state_count": 767,
+        "base_status_counts": {
+          "sat": 4166,
+          "unsat": 0,
+          "unknown": 0
+        },
+        "target_status_counts": {
+          "supported": 54497,
+          "unsupported": 0,
+          "unknown": 0,
+          "preexisting_unsat": 0
+        },
+        "category_counts": {
+          "scheduled_min": {
+            "supported": 3399,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "same_side_other": {
+            "supported": 4902,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "other_side_min": {
+            "supported": 15022,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "other_side_other": {
+            "supported": 31174,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          }
+        },
+        "action_counts": {
+          "actual_commit": {
+            "supported": 3399,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "actual_rejected_trial": {
+            "supported": 0,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "not_selected": {
+            "supported": 51098,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          }
+        },
+        "conditional_counts": {
+          "conditional_refuted": 0,
+          "conditional_inconclusive": 0
+        },
+        "unsupported_state_count": 0,
+        "oracle_record_count": 55264,
+        "oracle_status_counts": {
+          "sat": 55264,
+          "unsat": 0,
+          "unknown": 0
+        }
+      }
+    },
+    "geometry/legacy-frame-anchors": {
+      "runs": 427,
+      "checked": 427,
+      "errors": 0,
+      "metrics": {
+        "state_count": 2039,
+        "target_count": 24627,
+        "no_target_state_count": 427,
+        "base_status_counts": {
+          "sat": 2039,
+          "unsat": 0,
+          "unknown": 0
+        },
+        "target_status_counts": {
+          "supported": 24627,
+          "unsupported": 0,
+          "unknown": 0,
+          "preexisting_unsat": 0
+        },
+        "category_counts": {
+          "scheduled_min": {
+            "supported": 1612,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "same_side_other": {
+            "supported": 2085,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "other_side_min": {
+            "supported": 6878,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "other_side_other": {
+            "supported": 14052,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          }
+        },
+        "action_counts": {
+          "actual_commit": {
+            "supported": 1612,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "actual_rejected_trial": {
+            "supported": 0,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "not_selected": {
+            "supported": 23015,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          }
+        },
+        "conditional_counts": {
+          "conditional_refuted": 0,
+          "conditional_inconclusive": 0
+        },
+        "unsupported_state_count": 0,
+        "oracle_record_count": 25054,
+        "oracle_status_counts": {
+          "sat": 25054,
+          "unsat": 0,
+          "unknown": 0
+        }
+      }
+    },
+    "population/fresh-declared": {
+      "runs": 90,
+      "checked": 90,
+      "errors": 0,
+      "metrics": {
+        "state_count": 355,
+        "target_count": 2151,
+        "no_target_state_count": 90,
+        "base_status_counts": {
+          "sat": 355,
+          "unsat": 0,
+          "unknown": 0
+        },
+        "target_status_counts": {
+          "supported": 2151,
+          "unsupported": 0,
+          "unknown": 0,
+          "preexisting_unsat": 0
+        },
+        "category_counts": {
+          "scheduled_min": {
+            "supported": 265,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "same_side_other": {
+            "supported": 403,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "other_side_min": {
+            "supported": 502,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "other_side_other": {
+            "supported": 981,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          }
+        },
+        "action_counts": {
+          "actual_commit": {
+            "supported": 265,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "actual_rejected_trial": {
+            "supported": 0,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "not_selected": {
+            "supported": 1886,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          }
+        },
+        "conditional_counts": {
+          "conditional_refuted": 0,
+          "conditional_inconclusive": 0
+        },
+        "unsupported_state_count": 0,
+        "oracle_record_count": 2241,
+        "oracle_status_counts": {
+          "sat": 2241,
+          "unsat": 0,
+          "unknown": 0
+        }
+      }
+    },
+    "population/fresh-overlap": {
+      "runs": 2,
+      "checked": 2,
+      "errors": 0,
+      "metrics": {
+        "state_count": 3,
+        "target_count": 3,
+        "no_target_state_count": 2,
+        "base_status_counts": {
+          "sat": 3,
+          "unsat": 0,
+          "unknown": 0
+        },
+        "target_status_counts": {
+          "supported": 3,
+          "unsupported": 0,
+          "unknown": 0,
+          "preexisting_unsat": 0
+        },
+        "category_counts": {
+          "scheduled_min": {
+            "supported": 1,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "same_side_other": {
+            "supported": 2,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "other_side_min": {
+            "supported": 0,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "other_side_other": {
+            "supported": 0,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          }
+        },
+        "action_counts": {
+          "actual_commit": {
+            "supported": 1,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "actual_rejected_trial": {
+            "supported": 0,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "not_selected": {
+            "supported": 2,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          }
+        },
+        "conditional_counts": {
+          "conditional_refuted": 0,
+          "conditional_inconclusive": 0
+        },
+        "unsupported_state_count": 0,
+        "oracle_record_count": 5,
+        "oracle_status_counts": {
+          "sat": 5,
+          "unsat": 0,
+          "unknown": 0
+        }
+      }
+    },
+    "abstract": {
+      "runs": 1,
+      "checked": 1,
+      "errors": 0,
+      "metrics": {
+        "state_count": 6,
+        "target_count": 87,
+        "no_target_state_count": 1,
+        "base_status_counts": {
+          "sat": 6,
+          "unsat": 0,
+          "unknown": 0
+        },
+        "target_status_counts": {
+          "supported": 87,
+          "unsupported": 0,
+          "unknown": 0,
+          "preexisting_unsat": 0
+        },
+        "category_counts": {
+          "scheduled_min": {
+            "supported": 5,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "same_side_other": {
+            "supported": 9,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "other_side_min": {
+            "supported": 22,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "other_side_other": {
+            "supported": 51,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          }
+        },
+        "action_counts": {
+          "actual_commit": {
+            "supported": 5,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "actual_rejected_trial": {
+            "supported": 0,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "not_selected": {
+            "supported": 82,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          }
+        },
+        "conditional_counts": {
+          "conditional_refuted": 0,
+          "conditional_inconclusive": 0
+        },
+        "unsupported_state_count": 0,
+        "oracle_record_count": 88,
+        "oracle_status_counts": {
+          "sat": 88,
+          "unsat": 0,
+          "unknown": 0
+        }
+      }
+    },
+    "abstract/single-anchor-input-order": {
+      "runs": 1,
+      "checked": 1,
+      "errors": 0,
+      "metrics": {
+        "state_count": 6,
+        "target_count": 87,
+        "no_target_state_count": 1,
+        "base_status_counts": {
+          "sat": 6,
+          "unsat": 0,
+          "unknown": 0
+        },
+        "target_status_counts": {
+          "supported": 87,
+          "unsupported": 0,
+          "unknown": 0,
+          "preexisting_unsat": 0
+        },
+        "category_counts": {
+          "scheduled_min": {
+            "supported": 5,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "same_side_other": {
+            "supported": 9,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "other_side_min": {
+            "supported": 22,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "other_side_other": {
+            "supported": 51,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          }
+        },
+        "action_counts": {
+          "actual_commit": {
+            "supported": 5,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "actual_rejected_trial": {
+            "supported": 0,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "not_selected": {
+            "supported": 82,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          }
+        },
+        "conditional_counts": {
+          "conditional_refuted": 0,
+          "conditional_inconclusive": 0
+        },
+        "unsupported_state_count": 0,
+        "oracle_record_count": 88,
+        "oracle_status_counts": {
+          "sat": 88,
+          "unsat": 0,
+          "unknown": 0
+        }
+      }
+    },
+    "population/fresh-new-key": {
+      "runs": 88,
+      "checked": 88,
+      "errors": 0,
+      "metrics": {
+        "state_count": 352,
+        "target_count": 2148,
+        "no_target_state_count": 88,
+        "base_status_counts": {
+          "sat": 352,
+          "unsat": 0,
+          "unknown": 0
+        },
+        "target_status_counts": {
+          "supported": 2148,
+          "unsupported": 0,
+          "unknown": 0,
+          "preexisting_unsat": 0
+        },
+        "category_counts": {
+          "scheduled_min": {
+            "supported": 264,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "same_side_other": {
+            "supported": 401,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "other_side_min": {
+            "supported": 502,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "other_side_other": {
+            "supported": 981,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          }
+        },
+        "action_counts": {
+          "actual_commit": {
+            "supported": 264,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "actual_rejected_trial": {
+            "supported": 0,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "not_selected": {
+            "supported": 1884,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          }
+        },
+        "conditional_counts": {
+          "conditional_refuted": 0,
+          "conditional_inconclusive": 0
+        },
+        "unsupported_state_count": 0,
+        "oracle_record_count": 2236,
+        "oracle_status_counts": {
+          "sat": 2236,
+          "unsat": 0,
+          "unknown": 0
+        }
+      }
+    }
+  },
+  "resources": {
+    "reported_search_nodes": 547694,
+    "cached_queries": 57500,
+    "scan_checkpoint_gzip_bytes": 4423534,
+    "scan_checkpoint_json_bytes": 62643000,
+    "maximum_reported_query_nodes": {
+      "key": "c93ede87db203061cd25d58d376b4c84d06bb6c69d92c02fa982b6c078dfb6ee",
+      "scenario": "one-bounded-anchor",
+      "oracle_index": 19,
+      "nodes": 86,
+      "checkpoint": "outputs/quaternary-logical-neq-candidate-scan-2026-09-29-checkpoints/028-c93ede87db20.json.gz"
+    },
+    "largest_compressed_checkpoint": {
+      "path": "outputs/quaternary-logical-neq-candidate-scan-2026-09-29-checkpoints/035-cb5813ca45a8.json.gz",
+      "gzip_bytes": 142197,
+      "json_bytes": 2969461
+    },
+    "manifest_bytes": 307160,
+    "report_bytes": 26190,
+    "node_count_scope": "Producer-reported search counts, not independently replayed search work; all saved SAT assignments checked directly."
+  },
+  "history_counts": {
+    "original_histories": 62,
+    "original_prefix_references": 680,
+    "mode_records": 124,
+    "prefix_references": 1360,
+    "scanned_prefix_references": 1300,
+    "excluded_prefix_references": 60,
+    "fully_covered_mode_records": 118,
+    "geometry_incomplete_mode_records": 6
+  },
+  "histories": [
+    {
+      "population": "fresh-declared",
+      "id": "logical-neq-holdout-guillotine-20262701",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 6,
+      "scanned_prefix_references": 6,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "fresh-declared",
+      "id": "logical-neq-holdout-guillotine-20262701",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 6,
+      "scanned_prefix_references": 6,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "fresh-declared",
+      "id": "logical-neq-holdout-full-chord-arrangement-20262701",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 6,
+      "scanned_prefix_references": 6,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "fresh-declared",
+      "id": "logical-neq-holdout-full-chord-arrangement-20262701",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 6,
+      "scanned_prefix_references": 6,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "fresh-declared",
+      "id": "logical-neq-holdout-guillotine-20262702",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 6,
+      "scanned_prefix_references": 6,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "fresh-declared",
+      "id": "logical-neq-holdout-guillotine-20262702",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 6,
+      "scanned_prefix_references": 6,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "fresh-declared",
+      "id": "logical-neq-holdout-full-chord-arrangement-20262702",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 6,
+      "scanned_prefix_references": 6,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "fresh-declared",
+      "id": "logical-neq-holdout-full-chord-arrangement-20262702",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 6,
+      "scanned_prefix_references": 6,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "fresh-declared",
+      "id": "logical-neq-holdout-concentric-polygons-n5-rings2-angle31",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 16,
+      "scanned_prefix_references": 1,
+      "excluded_prefix_references": 15,
+      "full_coverage": false
+    },
+    {
+      "population": "fresh-declared",
+      "id": "logical-neq-holdout-concentric-polygons-n5-rings2-angle31",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 16,
+      "scanned_prefix_references": 1,
+      "excluded_prefix_references": 15,
+      "full_coverage": false
+    },
+    {
+      "population": "fresh-declared",
+      "id": "logical-neq-holdout-concentric-polygons-n6-rings2-angle31",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 19,
+      "scanned_prefix_references": 12,
+      "excluded_prefix_references": 7,
+      "full_coverage": false
+    },
+    {
+      "population": "fresh-declared",
+      "id": "logical-neq-holdout-concentric-polygons-n6-rings2-angle31",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 19,
+      "scanned_prefix_references": 12,
+      "excluded_prefix_references": 7,
+      "full_coverage": false
+    },
+    {
+      "population": "fresh-declared",
+      "id": "logical-neq-holdout-concentric-polygons-n7-rings2-angle31",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 22,
+      "scanned_prefix_references": 14,
+      "excluded_prefix_references": 8,
+      "full_coverage": false
+    },
+    {
+      "population": "fresh-declared",
+      "id": "logical-neq-holdout-concentric-polygons-n7-rings2-angle31",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 22,
+      "scanned_prefix_references": 14,
+      "excluded_prefix_references": 8,
+      "full_coverage": false
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "root-support-base-rotation-0",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 1,
+      "scanned_prefix_references": 1,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "root-support-base-rotation-0",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 1,
+      "scanned_prefix_references": 1,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "root-support-left-rotation-0",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 2,
+      "scanned_prefix_references": 2,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "root-support-left-rotation-0",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 2,
+      "scanned_prefix_references": 2,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "root-support-right-rotation-0",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 2,
+      "scanned_prefix_references": 2,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "root-support-right-rotation-0",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 2,
+      "scanned_prefix_references": 2,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "root-support-horizontal-rotation-0",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 3,
+      "scanned_prefix_references": 3,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "root-support-horizontal-rotation-0",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 3,
+      "scanned_prefix_references": 3,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "root-support-diagonal-rotation-0",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 3,
+      "scanned_prefix_references": 3,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "root-support-diagonal-rotation-0",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 3,
+      "scanned_prefix_references": 3,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "root-support-both-rotation-0",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 5,
+      "scanned_prefix_references": 5,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "root-support-both-rotation-0",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 5,
+      "scanned_prefix_references": 5,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "root-support-base-rotation-180",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 1,
+      "scanned_prefix_references": 1,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "root-support-base-rotation-180",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 1,
+      "scanned_prefix_references": 1,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "root-support-left-rotation-180",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 2,
+      "scanned_prefix_references": 2,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "root-support-left-rotation-180",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 2,
+      "scanned_prefix_references": 2,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "root-support-right-rotation-180",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 2,
+      "scanned_prefix_references": 2,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "root-support-right-rotation-180",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 2,
+      "scanned_prefix_references": 2,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "root-support-horizontal-rotation-180",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 3,
+      "scanned_prefix_references": 3,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "root-support-horizontal-rotation-180",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 3,
+      "scanned_prefix_references": 3,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "root-support-diagonal-rotation-180",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 3,
+      "scanned_prefix_references": 3,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "root-support-diagonal-rotation-180",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 3,
+      "scanned_prefix_references": 3,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "root-support-both-rotation-180",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 5,
+      "scanned_prefix_references": 5,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "root-support-both-rotation-180",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 5,
+      "scanned_prefix_references": 5,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-guillotine-20262331",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 7,
+      "scanned_prefix_references": 7,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-guillotine-20262331",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 7,
+      "scanned_prefix_references": 7,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-full-chord-arrangement-20262331",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 7,
+      "scanned_prefix_references": 7,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-full-chord-arrangement-20262331",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 7,
+      "scanned_prefix_references": 7,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-guillotine-20262332",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 7,
+      "scanned_prefix_references": 7,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-guillotine-20262332",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 7,
+      "scanned_prefix_references": 7,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-full-chord-arrangement-20262332",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 7,
+      "scanned_prefix_references": 7,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-full-chord-arrangement-20262332",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 7,
+      "scanned_prefix_references": 7,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-guillotine-20262333",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 7,
+      "scanned_prefix_references": 7,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-guillotine-20262333",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 7,
+      "scanned_prefix_references": 7,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-full-chord-arrangement-20262333",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 7,
+      "scanned_prefix_references": 7,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-full-chord-arrangement-20262333",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 7,
+      "scanned_prefix_references": 7,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-guillotine-20262334",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 7,
+      "scanned_prefix_references": 7,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-guillotine-20262334",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 7,
+      "scanned_prefix_references": 7,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-full-chord-arrangement-20262334",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 7,
+      "scanned_prefix_references": 7,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-full-chord-arrangement-20262334",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 7,
+      "scanned_prefix_references": 7,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-concentric-polygons-n3-rings1-angle0",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 4,
+      "scanned_prefix_references": 4,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-concentric-polygons-n3-rings1-angle0",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 4,
+      "scanned_prefix_references": 4,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-concentric-polygons-n3-rings1-angle30",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 4,
+      "scanned_prefix_references": 4,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-concentric-polygons-n3-rings1-angle30",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 4,
+      "scanned_prefix_references": 4,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-concentric-polygons-n3-rings2-angle0",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 10,
+      "scanned_prefix_references": 10,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-concentric-polygons-n3-rings2-angle0",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 10,
+      "scanned_prefix_references": 10,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-concentric-polygons-n3-rings2-angle30",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 10,
+      "scanned_prefix_references": 10,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-concentric-polygons-n3-rings2-angle30",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 10,
+      "scanned_prefix_references": 10,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-concentric-polygons-n3-rings3-angle0",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 16,
+      "scanned_prefix_references": 16,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-concentric-polygons-n3-rings3-angle0",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 16,
+      "scanned_prefix_references": 16,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-concentric-polygons-n3-rings3-angle30",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 16,
+      "scanned_prefix_references": 16,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-concentric-polygons-n3-rings3-angle30",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 16,
+      "scanned_prefix_references": 16,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-concentric-polygons-n5-rings1-angle0",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 6,
+      "scanned_prefix_references": 6,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-concentric-polygons-n5-rings1-angle0",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 6,
+      "scanned_prefix_references": 6,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-concentric-polygons-n5-rings1-angle30",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 6,
+      "scanned_prefix_references": 6,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-concentric-polygons-n5-rings1-angle30",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 6,
+      "scanned_prefix_references": 6,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-concentric-polygons-n5-rings2-angle0",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 16,
+      "scanned_prefix_references": 16,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-concentric-polygons-n5-rings2-angle0",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 16,
+      "scanned_prefix_references": 16,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-concentric-polygons-n5-rings2-angle30",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 16,
+      "scanned_prefix_references": 16,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-concentric-polygons-n5-rings2-angle30",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 16,
+      "scanned_prefix_references": 16,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-concentric-polygons-n5-rings3-angle0",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 26,
+      "scanned_prefix_references": 26,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-concentric-polygons-n5-rings3-angle0",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 26,
+      "scanned_prefix_references": 26,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-concentric-polygons-n5-rings3-angle30",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 26,
+      "scanned_prefix_references": 26,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "eq-holdout-concentric-polygons-n5-rings3-angle30",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 26,
+      "scanned_prefix_references": 26,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "odd-eq-holdout-guillotine-20262401",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 7,
+      "scanned_prefix_references": 7,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "odd-eq-holdout-guillotine-20262401",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 7,
+      "scanned_prefix_references": 7,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "odd-eq-holdout-full-chord-arrangement-20262401",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 7,
+      "scanned_prefix_references": 7,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "odd-eq-holdout-full-chord-arrangement-20262401",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 7,
+      "scanned_prefix_references": 7,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "odd-eq-holdout-guillotine-20262402",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 7,
+      "scanned_prefix_references": 7,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "odd-eq-holdout-guillotine-20262402",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 7,
+      "scanned_prefix_references": 7,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "odd-eq-holdout-full-chord-arrangement-20262402",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 7,
+      "scanned_prefix_references": 7,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "odd-eq-holdout-full-chord-arrangement-20262402",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 7,
+      "scanned_prefix_references": 7,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "odd-eq-holdout-concentric-polygons-n4-rings1-angle0",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 5,
+      "scanned_prefix_references": 5,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "odd-eq-holdout-concentric-polygons-n4-rings1-angle0",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 5,
+      "scanned_prefix_references": 5,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "odd-eq-holdout-concentric-polygons-n4-rings2-angle0",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 13,
+      "scanned_prefix_references": 13,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "odd-eq-holdout-concentric-polygons-n4-rings2-angle0",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 13,
+      "scanned_prefix_references": 13,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "odd-eq-holdout-concentric-polygons-n4-rings3-angle0",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 21,
+      "scanned_prefix_references": 21,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "odd-eq-holdout-concentric-polygons-n4-rings3-angle0",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 21,
+      "scanned_prefix_references": 21,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "odd-eq-holdout-concentric-polygons-n6-rings1-angle0",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 7,
+      "scanned_prefix_references": 7,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "odd-eq-holdout-concentric-polygons-n6-rings1-angle0",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 7,
+      "scanned_prefix_references": 7,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "odd-eq-holdout-concentric-polygons-n6-rings2-angle0",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 19,
+      "scanned_prefix_references": 19,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "odd-eq-holdout-concentric-polygons-n6-rings2-angle0",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 19,
+      "scanned_prefix_references": 19,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "odd-eq-holdout-concentric-polygons-n6-rings3-angle0",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 31,
+      "scanned_prefix_references": 31,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "odd-eq-holdout-concentric-polygons-n6-rings3-angle0",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 31,
+      "scanned_prefix_references": 31,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "odd-eq-holdout-concentric-polygons-n7-rings1-angle0",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 8,
+      "scanned_prefix_references": 8,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "odd-eq-holdout-concentric-polygons-n7-rings1-angle0",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 8,
+      "scanned_prefix_references": 8,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "odd-eq-holdout-concentric-polygons-n7-rings2-angle0",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 22,
+      "scanned_prefix_references": 22,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "odd-eq-holdout-concentric-polygons-n7-rings2-angle0",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 22,
+      "scanned_prefix_references": 22,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "odd-eq-holdout-concentric-polygons-n7-rings3-angle0",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 36,
+      "scanned_prefix_references": 36,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "odd-eq-holdout-concentric-polygons-n7-rings3-angle0",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 36,
+      "scanned_prefix_references": 36,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "odd-eq-holdout-concentric-polygons-n9-rings1-angle0",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 10,
+      "scanned_prefix_references": 10,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "odd-eq-holdout-concentric-polygons-n9-rings1-angle0",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 10,
+      "scanned_prefix_references": 10,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "odd-eq-holdout-concentric-polygons-n9-rings2-angle0",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 28,
+      "scanned_prefix_references": 28,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "odd-eq-holdout-concentric-polygons-n9-rings2-angle0",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 28,
+      "scanned_prefix_references": 28,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "odd-eq-holdout-concentric-polygons-n9-rings3-angle0",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 46,
+      "scanned_prefix_references": 46,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "odd-eq-holdout-concentric-polygons-n9-rings3-angle0",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 46,
+      "scanned_prefix_references": 46,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "all-candidate-holdout-guillotine-20262601",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 6,
+      "scanned_prefix_references": 6,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "all-candidate-holdout-guillotine-20262601",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 6,
+      "scanned_prefix_references": 6,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "all-candidate-holdout-full-chord-arrangement-20262601",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 6,
+      "scanned_prefix_references": 6,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "all-candidate-holdout-full-chord-arrangement-20262601",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 6,
+      "scanned_prefix_references": 6,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "all-candidate-holdout-guillotine-20262602",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 6,
+      "scanned_prefix_references": 6,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "all-candidate-holdout-guillotine-20262602",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 6,
+      "scanned_prefix_references": 6,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "all-candidate-holdout-full-chord-arrangement-20262602",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 6,
+      "scanned_prefix_references": 6,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "all-candidate-holdout-full-chord-arrangement-20262602",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 6,
+      "scanned_prefix_references": 6,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "all-candidate-holdout-concentric-polygons-n5-rings2-angle17",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 16,
+      "scanned_prefix_references": 16,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "all-candidate-holdout-concentric-polygons-n5-rings2-angle17",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 16,
+      "scanned_prefix_references": 16,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "all-candidate-holdout-concentric-polygons-n6-rings2-angle17",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 19,
+      "scanned_prefix_references": 19,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "all-candidate-holdout-concentric-polygons-n6-rings2-angle17",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 19,
+      "scanned_prefix_references": 19,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "all-candidate-holdout-concentric-polygons-n7-rings2-angle17",
+      "scenario": "one-bounded-anchor",
+      "declared_prefix_references": 22,
+      "scanned_prefix_references": 22,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    },
+    {
+      "population": "regression-all-candidate",
+      "id": "all-candidate-holdout-concentric-polygons-n7-rings2-angle17",
+      "scenario": "legacy-frame-anchors",
+      "declared_prefix_references": 22,
+      "scanned_prefix_references": 22,
+      "excluded_prefix_references": 0,
+      "full_coverage": true
+    }
+  ],
+  "known_19_face_case": [
+    {
+      "key": "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132",
+      "scenario": "one-bounded-anchor",
+      "metrics": {
+        "state_count": 6,
+        "target_count": 201,
+        "no_target_state_count": 1,
+        "base_status_counts": {
+          "sat": 6,
+          "unsat": 0,
+          "unknown": 0
+        },
+        "target_status_counts": {
+          "supported": 201,
+          "unsupported": 0,
+          "unknown": 0,
+          "preexisting_unsat": 0
+        },
+        "category_counts": {
+          "scheduled_min": {
+            "supported": 5,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "same_side_other": {
+            "supported": 7,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "other_side_min": {
+            "supported": 64,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "other_side_other": {
+            "supported": 125,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          }
+        },
+        "action_counts": {
+          "actual_commit": {
+            "supported": 5,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "actual_rejected_trial": {
+            "supported": 0,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "not_selected": {
+            "supported": 196,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          }
+        },
+        "conditional_counts": {
+          "conditional_refuted": 0,
+          "conditional_inconclusive": 0
+        },
+        "unsupported_state_count": 0,
+        "oracle_record_count": 202,
+        "oracle_status_counts": {
+          "sat": 202,
+          "unsat": 0,
+          "unknown": 0
+        }
+      },
+      "phase_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actual_anchor_sets": [
+        [
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            10,
+            2
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            16,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            16,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            14,
+            1
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            16,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            11,
+            3
+          ],
+          [
+            14,
+            1
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            16,
+            1
+          ]
+        ]
+      ],
+      "initial_s10_targets": [
+        {
+          "symbol": 2,
+          "status": "supported"
+        },
+        {
+          "symbol": 3,
+          "status": "supported"
+        },
+        {
+          "symbol": 4,
+          "status": "supported"
+        }
+      ]
+    },
+    {
+      "key": "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132",
+      "scenario": "legacy-frame-anchors",
+      "metrics": {
+        "state_count": 10,
+        "target_count": 298,
+        "no_target_state_count": 1,
+        "base_status_counts": {
+          "sat": 10,
+          "unsat": 0,
+          "unknown": 0
+        },
+        "target_status_counts": {
+          "supported": 298,
+          "unsupported": 0,
+          "unknown": 0,
+          "preexisting_unsat": 0
+        },
+        "category_counts": {
+          "scheduled_min": {
+            "supported": 9,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "same_side_other": {
+            "supported": 9,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "other_side_min": {
+            "supported": 101,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "other_side_other": {
+            "supported": 179,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          }
+        },
+        "action_counts": {
+          "actual_commit": {
+            "supported": 9,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "actual_rejected_trial": {
+            "supported": 0,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          },
+          "not_selected": {
+            "supported": 289,
+            "unsupported": 0,
+            "unknown": 0,
+            "preexisting_unsat": 0
+          }
+        },
+        "conditional_counts": {
+          "conditional_refuted": 0,
+          "conditional_inconclusive": 0
+        },
+        "unsupported_state_count": 0,
+        "oracle_record_count": 299,
+        "oracle_status_counts": {
+          "sat": 299,
+          "unsat": 0,
+          "unknown": 0
+        }
+      },
+      "phase_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "actual_anchor_sets": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            10,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            10,
+            3
+          ],
+          [
+            11,
+            2
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            10,
+            3
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            14,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            10,
+            3
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            14,
+            1
+          ],
+          [
+            15,
+            2
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            10,
+            3
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            14,
+            1
+          ],
+          [
+            15,
+            2
+          ],
+          [
+            16,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            3
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            14,
+            1
+          ],
+          [
+            15,
+            2
+          ],
+          [
+            16,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            3
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            14,
+            1
+          ],
+          [
+            15,
+            2
+          ],
+          [
+            16,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            3
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            14,
+            1
+          ],
+          [
+            15,
+            2
+          ],
+          [
+            16,
+            1
+          ],
+          [
+            18,
+            2
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            3
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            14,
+            1
+          ],
+          [
+            15,
+            2
+          ],
+          [
+            16,
+            1
+          ],
+          [
+            18,
+            2
+          ]
+        ]
+      ],
+      "initial_s10_targets": [
+        {
+          "symbol": 3,
+          "status": "supported"
+        },
+        {
+          "symbol": 4,
+          "status": "supported"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Only unresolved retained candidates in actually reached frozen states were scanned; derived singletons were not queried separately.",
+    "Every candidate individually has a witness; witnesses may differ and do not guarantee arbitrary simultaneous choices or universal continuation.",
+    "49 geometry-excluded records remain excluded; 3 new polygon histories retain incomplete prefix coverage.",
+    "The old S16-first state is absent on the new known single-anchor path; no subtraction of old S4/S5 candidate counts is justified.",
+    "Input reuse and shared history prefixes do not form independent graph-family or success-probability samples."
+  ],
+  "producer_calls": 0,
+  "propagation_calls": 0,
+  "oracle_search_calls": 0,
+  "formal_checker_calls": 0
+}

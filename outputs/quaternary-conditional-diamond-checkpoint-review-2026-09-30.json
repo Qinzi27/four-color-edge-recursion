@@ -1,0 +1,1280 @@
+{
+  "schema_version": 1,
+  "review_kind": "independent_checkpoint_count_and_literal_witness_review",
+  "sources": {
+    "manifest": {
+      "path": "outputs/quaternary-conditional-diamond-manifest-2026-09-30.json.gz",
+      "sha256": "4a1caa6487d03d16530588dd52231981a0679b993ae32f530149be659341299b"
+    },
+    "report": {
+      "path": "outputs/quaternary-conditional-diamond-2026-09-30.json.gz",
+      "sha256": "b8707192952ce27fc88adfcb323a077d7298d1fc02ee529dd8fc6b10a949b23d"
+    }
+  },
+  "frozen_source_hashes_checked": 253,
+  "upstream_input_hashes_checked": 6,
+  "checkpoint_hashes_checked": 517,
+  "eligibility": {
+    "geometry_error": 12,
+    "ready": 468,
+    "geometry_audit_error": 37
+  },
+  "entry_counts": {
+    "odd-wheel": 935,
+    "conditional-diamond": 935
+  },
+  "status_counts": {
+    "odd-wheel/solved": 935,
+    "conditional-diamond/solved": 935
+  },
+  "raw_oracle_status_counts": {
+    "sat": 9752
+  },
+  "literal_sat_witnesses_checked": 9752,
+  "phase_raw_sat_query_mappings_checked": 9752,
+  "actual_event_counts": {
+    "commit": 7882
+  },
+  "final_colorings_checked": 1870,
+  "full_archived_baseline_envelopes_identical": 895,
+  "paired_checks": {
+    "paired_scenarios": 935,
+    "same_events": 935,
+    "same_final_colors": 935,
+    "same_commit_sequence": 935,
+    "same_phase_documents": 935,
+    "same_first_round_wheel_outcomes": 935,
+    "same_domains_relations_colors_status_at_every_corresponding_phase": 933,
+    "same_terminal_outcome_semantics": 935
+  },
+  "paired_differences": [
+    {
+      "key": "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132",
+      "scenario": "legacy-frame-anchors",
+      "same_events": true,
+      "same_final_colors": true,
+      "same_commit_sequence": true,
+      "same_phase_documents": true,
+      "choice_difference": 0,
+      "probe_difference": 0,
+      "differing_intermediate_phase_indices": [
+        5,
+        6,
+        7
+      ],
+      "same_terminal_outcome_semantics": true,
+      "old_terminal_phase": 9,
+      "new_terminal_phase": 9
+    },
+    {
+      "key": "bcbb8b274017fbddd3a6bfceeea27b0c6ab758c9aee2647e79d6688f2bece457",
+      "scenario": "single-anchor-input-order",
+      "same_events": true,
+      "same_final_colors": true,
+      "same_commit_sequence": true,
+      "same_phase_documents": true,
+      "choice_difference": 0,
+      "probe_difference": 0,
+      "differing_intermediate_phase_indices": [
+        1
+      ],
+      "same_terminal_outcome_semantics": true,
+      "old_terminal_phase": 5,
+      "new_terminal_phase": 5
+    }
+  ],
+  "groups": {
+    "all-records/odd-wheel": {
+      "runs": 935,
+      "choices": 3941,
+      "probes": 3941,
+      "rejections": 0,
+      "phases": 4876,
+      "oracle_record_count": 4876,
+      "oracle_nodes": 27500,
+      "producer_seconds": 43.30126959999143,
+      "audit_seconds": 65.3104228999673,
+      "propagation_rounds": 4876,
+      "conditional_eq_pairs": 0,
+      "trace_steps": 231967,
+      "wheel_checks": 3941,
+      "wheel_conflicts": 0,
+      "wheel_edges_examined": 58774,
+      "diamond_checks": 0,
+      "diamond_certificates": 0
+    },
+    "regression-odd-wheel/odd-wheel": {
+      "runs": 895,
+      "choices": 3791,
+      "probes": 3791,
+      "rejections": 0,
+      "phases": 4686,
+      "oracle_record_count": 4686,
+      "oracle_nodes": 26664,
+      "producer_seconds": 42.37885889999416,
+      "audit_seconds": 64.2437378999748,
+      "propagation_rounds": 4686,
+      "conditional_eq_pairs": 0,
+      "trace_steps": 227138,
+      "wheel_checks": 3791,
+      "wheel_conflicts": 0,
+      "wheel_edges_examined": 57692,
+      "diamond_checks": 0,
+      "diamond_certificates": 0
+    },
+    "all-records/conditional-diamond": {
+      "runs": 935,
+      "choices": 3941,
+      "probes": 3941,
+      "rejections": 0,
+      "phases": 4876,
+      "oracle_record_count": 4876,
+      "oracle_nodes": 27500,
+      "producer_seconds": 57.22272019999218,
+      "audit_seconds": 70.43976630000179,
+      "propagation_rounds": 4880,
+      "conditional_eq_pairs": 8,
+      "trace_steps": 232705,
+      "wheel_checks": 3945,
+      "wheel_conflicts": 0,
+      "wheel_edges_examined": 59012,
+      "diamond_checks": 3945,
+      "diamond_certificates": 8,
+      "diamond_pairs_examined": 252250,
+      "diamond_pairs_with_offdiagonal": 231123,
+      "diamond_palettes_examined": 924468,
+      "diamond_common_edges_examined": 40891,
+      "diamond_certificates_found": 8
+    },
+    "regression-odd-wheel/conditional-diamond": {
+      "runs": 895,
+      "choices": 3791,
+      "probes": 3791,
+      "rejections": 0,
+      "phases": 4686,
+      "oracle_record_count": 4686,
+      "oracle_nodes": 26664,
+      "producer_seconds": 55.967250799991234,
+      "audit_seconds": 68.96152330000405,
+      "propagation_rounds": 4690,
+      "conditional_eq_pairs": 8,
+      "trace_steps": 227876,
+      "wheel_checks": 3795,
+      "wheel_conflicts": 0,
+      "wheel_edges_examined": 57930,
+      "diamond_checks": 3795,
+      "diamond_certificates": 8,
+      "diamond_pairs_examined": 246713,
+      "diamond_pairs_with_offdiagonal": 226196,
+      "diamond_palettes_examined": 904760,
+      "diamond_common_edges_examined": 39656,
+      "diamond_certificates_found": 8
+    },
+    "fresh-declared/odd-wheel": {
+      "runs": 42,
+      "choices": 151,
+      "probes": 151,
+      "rejections": 0,
+      "phases": 193,
+      "oracle_record_count": 193,
+      "oracle_nodes": 840,
+      "producer_seconds": 0.9238389999973151,
+      "audit_seconds": 1.0741713999923377,
+      "propagation_rounds": 193,
+      "conditional_eq_pairs": 0,
+      "trace_steps": 4830,
+      "wheel_checks": 151,
+      "wheel_conflicts": 0,
+      "wheel_edges_examined": 1082,
+      "diamond_checks": 0,
+      "diamond_certificates": 0
+    },
+    "fresh-overlap/odd-wheel": {
+      "runs": 2,
+      "choices": 1,
+      "probes": 1,
+      "rejections": 0,
+      "phases": 3,
+      "oracle_record_count": 3,
+      "oracle_nodes": 4,
+      "producer_seconds": 0.0014283000000432367,
+      "audit_seconds": 0.007486399999834248,
+      "propagation_rounds": 3,
+      "conditional_eq_pairs": 0,
+      "trace_steps": 1,
+      "wheel_checks": 1,
+      "wheel_conflicts": 0,
+      "wheel_edges_examined": 0,
+      "diamond_checks": 0,
+      "diamond_certificates": 0
+    },
+    "fresh-declared/conditional-diamond": {
+      "runs": 42,
+      "choices": 151,
+      "probes": 151,
+      "rejections": 0,
+      "phases": 193,
+      "oracle_record_count": 193,
+      "oracle_nodes": 840,
+      "producer_seconds": 1.2572626000019227,
+      "audit_seconds": 1.4810406999986299,
+      "propagation_rounds": 193,
+      "conditional_eq_pairs": 0,
+      "trace_steps": 4830,
+      "wheel_checks": 151,
+      "wheel_conflicts": 0,
+      "wheel_edges_examined": 1082,
+      "diamond_checks": 151,
+      "diamond_certificates": 0,
+      "diamond_pairs_examined": 5538,
+      "diamond_pairs_with_offdiagonal": 4928,
+      "diamond_palettes_examined": 19712,
+      "diamond_common_edges_examined": 1235,
+      "diamond_certificates_found": 0
+    },
+    "fresh-overlap/conditional-diamond": {
+      "runs": 2,
+      "choices": 1,
+      "probes": 1,
+      "rejections": 0,
+      "phases": 3,
+      "oracle_record_count": 3,
+      "oracle_nodes": 4,
+      "producer_seconds": 0.0017932000009750482,
+      "audit_seconds": 0.0027977000008831965,
+      "propagation_rounds": 3,
+      "conditional_eq_pairs": 0,
+      "trace_steps": 1,
+      "wheel_checks": 1,
+      "wheel_conflicts": 0,
+      "wheel_edges_examined": 0,
+      "diamond_checks": 1,
+      "diamond_certificates": 0,
+      "diamond_pairs_examined": 1,
+      "diamond_pairs_with_offdiagonal": 1,
+      "diamond_palettes_examined": 4,
+      "diamond_common_edges_examined": 0,
+      "diamond_certificates_found": 0
+    },
+    "fresh-new-key/odd-wheel": {
+      "runs": 40,
+      "choices": 150,
+      "probes": 150,
+      "rejections": 0,
+      "phases": 190,
+      "oracle_record_count": 190,
+      "oracle_nodes": 836,
+      "producer_seconds": 0.9224106999972719,
+      "audit_seconds": 1.0666849999925034,
+      "propagation_rounds": 190,
+      "conditional_eq_pairs": 0,
+      "trace_steps": 4829,
+      "wheel_checks": 150,
+      "wheel_conflicts": 0,
+      "wheel_edges_examined": 1082,
+      "diamond_checks": 0,
+      "diamond_certificates": 0
+    },
+    "fresh-new-key/conditional-diamond": {
+      "runs": 40,
+      "choices": 150,
+      "probes": 150,
+      "rejections": 0,
+      "phases": 190,
+      "oracle_record_count": 190,
+      "oracle_nodes": 836,
+      "producer_seconds": 1.2554694000009476,
+      "audit_seconds": 1.4782429999977467,
+      "propagation_rounds": 190,
+      "conditional_eq_pairs": 0,
+      "trace_steps": 4829,
+      "wheel_checks": 150,
+      "wheel_conflicts": 0,
+      "wheel_edges_examined": 1082,
+      "diamond_checks": 150,
+      "diamond_certificates": 0,
+      "diamond_pairs_examined": 5537,
+      "diamond_pairs_with_offdiagonal": 4927,
+      "diamond_palettes_examined": 19708,
+      "diamond_common_edges_examined": 1235,
+      "diamond_certificates_found": 0
+    }
+  },
+  "fresh_new_key_records": [
+    {
+      "key": "f6ce6764911aef3b9618bdc1b9456d5d267d798d4cdaea0bf2609062b0eea4d6",
+      "eligibility": "ready",
+      "scenarios": [
+        "one-bounded-anchor",
+        "legacy-frame-anchors"
+      ],
+      "populations": [
+        "fresh-declared",
+        "fresh-new-key"
+      ]
+    },
+    {
+      "key": "fa118b56a1dfcd43b02f33eaedc7ff9459ebc766513fbdff7ea99224358b1dbb",
+      "eligibility": "ready",
+      "scenarios": [
+        "one-bounded-anchor",
+        "legacy-frame-anchors"
+      ],
+      "populations": [
+        "fresh-declared",
+        "fresh-new-key"
+      ]
+    },
+    {
+      "key": "db71e3bd83d1ea634f82f1e964c6fa03da9597d1cdc4ea917a3b7579604170b2",
+      "eligibility": "ready",
+      "scenarios": [
+        "one-bounded-anchor",
+        "legacy-frame-anchors"
+      ],
+      "populations": [
+        "fresh-declared",
+        "fresh-new-key"
+      ]
+    },
+    {
+      "key": "073d680f298d80ee8c4d8fb12ec092adfb8f18499ce1d748efc284a00bae15a0",
+      "eligibility": "ready",
+      "scenarios": [
+        "one-bounded-anchor",
+        "legacy-frame-anchors"
+      ],
+      "populations": [
+        "fresh-declared",
+        "fresh-new-key"
+      ]
+    },
+    {
+      "key": "7be4afe96b1e0de6067790086a5a6cced816baa329c25d8dff011fbd39b785bc",
+      "eligibility": "ready",
+      "scenarios": [
+        "one-bounded-anchor",
+        "legacy-frame-anchors"
+      ],
+      "populations": [
+        "fresh-declared",
+        "fresh-new-key"
+      ]
+    },
+    {
+      "key": "9b8fc89353e92f6719fb805799f544d1c809e9188f7ad04575bb31a45b925495",
+      "eligibility": "ready",
+      "scenarios": [
+        "one-bounded-anchor",
+        "legacy-frame-anchors"
+      ],
+      "populations": [
+        "fresh-declared",
+        "fresh-new-key"
+      ]
+    },
+    {
+      "key": "087dcb40f338915b7e654d5ca373e94c05bc6d07eb2698499dd4b146d2870ff9",
+      "eligibility": "ready",
+      "scenarios": [
+        "one-bounded-anchor",
+        "legacy-frame-anchors"
+      ],
+      "populations": [
+        "fresh-declared",
+        "fresh-new-key"
+      ]
+    },
+    {
+      "key": "d9bfdca1f0d17a9c5cf0b64bc0f7e437c3c7888afd95d6ea94bd0253dfbb0d61",
+      "eligibility": "ready",
+      "scenarios": [
+        "one-bounded-anchor",
+        "legacy-frame-anchors"
+      ],
+      "populations": [
+        "fresh-declared",
+        "fresh-new-key"
+      ]
+    },
+    {
+      "key": "043596d66938bbd37eb5a48b171204a7c7cb11651b62043b197dc1bfd05ff7fb",
+      "eligibility": "ready",
+      "scenarios": [
+        "one-bounded-anchor",
+        "legacy-frame-anchors"
+      ],
+      "populations": [
+        "fresh-declared",
+        "fresh-new-key"
+      ]
+    },
+    {
+      "key": "eb8f011d862a6970c8428ab0291cfb169116fd4fb8a2bd17ed393c28fbf0d9a4",
+      "eligibility": "ready",
+      "scenarios": [
+        "one-bounded-anchor",
+        "legacy-frame-anchors"
+      ],
+      "populations": [
+        "fresh-declared",
+        "fresh-new-key"
+      ]
+    },
+    {
+      "key": "2f4af013df73f25aebbdfe1b5a694258727af3e893809ae307dfcff24a3e33b9",
+      "eligibility": "ready",
+      "scenarios": [
+        "one-bounded-anchor",
+        "legacy-frame-anchors"
+      ],
+      "populations": [
+        "fresh-declared",
+        "fresh-new-key"
+      ]
+    },
+    {
+      "key": "c7af61194b5a9468b9f1df7be66638049585cb7e467ce1833f09726aa872fae8",
+      "eligibility": "ready",
+      "scenarios": [
+        "one-bounded-anchor",
+        "legacy-frame-anchors"
+      ],
+      "populations": [
+        "fresh-declared",
+        "fresh-new-key"
+      ]
+    },
+    {
+      "key": "8f33224d6b765d670a48c60456dc095ee27b08020544dc69ae22c8b5184f7d1a",
+      "eligibility": "ready",
+      "scenarios": [
+        "one-bounded-anchor",
+        "legacy-frame-anchors"
+      ],
+      "populations": [
+        "fresh-declared",
+        "fresh-new-key"
+      ]
+    },
+    {
+      "key": "832024380078881b9ca323e4d7473b613d389bcd1cebaddfc1343f7f74c96677",
+      "eligibility": "ready",
+      "scenarios": [
+        "one-bounded-anchor",
+        "legacy-frame-anchors"
+      ],
+      "populations": [
+        "fresh-declared",
+        "fresh-new-key"
+      ]
+    },
+    {
+      "key": "787fe7d5133a58d0b4ae429a8d9ed09b3eaf370b731a26088cae06b50448104a",
+      "eligibility": "ready",
+      "scenarios": [
+        "one-bounded-anchor",
+        "legacy-frame-anchors"
+      ],
+      "populations": [
+        "fresh-declared",
+        "fresh-new-key"
+      ]
+    },
+    {
+      "key": "a935aab6031937ec29ebf367641b2f91ff9356d324b11c4cc1ea2eb49544c50c",
+      "eligibility": "ready",
+      "scenarios": [
+        "one-bounded-anchor",
+        "legacy-frame-anchors"
+      ],
+      "populations": [
+        "fresh-declared",
+        "fresh-new-key"
+      ]
+    },
+    {
+      "key": "f994fddb1bcc626726bb52d51ab604df24c8d3a9511595938cd9809d54b0b6cc",
+      "eligibility": "ready",
+      "scenarios": [
+        "one-bounded-anchor",
+        "legacy-frame-anchors"
+      ],
+      "populations": [
+        "fresh-declared",
+        "fresh-new-key"
+      ]
+    },
+    {
+      "key": "64611e0d8779df563c4c6c055c1cd7bc45368f2670cdbf916d6bb33723828c42",
+      "eligibility": "ready",
+      "scenarios": [
+        "one-bounded-anchor",
+        "legacy-frame-anchors"
+      ],
+      "populations": [
+        "fresh-declared",
+        "fresh-new-key"
+      ]
+    },
+    {
+      "key": "b35c1b769bc51229a77d83854b5d61beb74824822eda04d1a47b623b6eacadab",
+      "eligibility": "ready",
+      "scenarios": [
+        "one-bounded-anchor",
+        "legacy-frame-anchors"
+      ],
+      "populations": [
+        "fresh-declared",
+        "fresh-new-key"
+      ]
+    },
+    {
+      "key": "cb7aa3ed4be7938b927ae7734d790195da23369da0419fe0c9407a0649ebaad6",
+      "eligibility": "ready",
+      "scenarios": [
+        "one-bounded-anchor",
+        "legacy-frame-anchors"
+      ],
+      "populations": [
+        "fresh-declared",
+        "fresh-new-key"
+      ]
+    }
+  ],
+  "actual_path_conditional_learning_records": [
+    {
+      "key": "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132",
+      "scenario": "legacy-frame-anchors",
+      "policy": "conditional-diamond",
+      "conditional_eq_pair_references": 7,
+      "rounds": 13,
+      "phases": [
+        {
+          "phase_index": 5,
+          "kind": "trial",
+          "anchors": {
+            "S0": 1,
+            "S1": 2,
+            "S10": 3,
+            "S11": 2,
+            "S14": 1,
+            "S15": 2,
+            "S16": 1
+          },
+          "document_sha256": "73454641801b2931f70ddbe41228a8d7babf0661f8d3a6ddebd558d263099a74",
+          "conditional_equalities": [
+            [
+              "S3",
+              "S6"
+            ],
+            [
+              "S4",
+              "S18"
+            ],
+            [
+              "S5",
+              "S7"
+            ]
+          ],
+          "round_count": 2,
+          "round_certificates": [
+            [
+              {
+                "pair": [
+                  "S3",
+                  "S6"
+                ],
+                "edge": [
+                  "S5",
+                  "S18"
+                ],
+                "excluded_color": 1
+              },
+              {
+                "pair": [
+                  "S4",
+                  "S18"
+                ],
+                "edge": [
+                  "S3",
+                  "S5"
+                ],
+                "excluded_color": 1
+              },
+              {
+                "pair": [
+                  "S5",
+                  "S7"
+                ],
+                "edge": [
+                  "S6",
+                  "S18"
+                ],
+                "excluded_color": 1
+              }
+            ],
+            []
+          ],
+          "domain_changes": [],
+          "learned_pair_relations": [
+            {
+              "pair": [
+                "S3",
+                "S6"
+              ],
+              "before": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  2
+                ],
+                [
+                  3,
+                  3
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  2
+                ],
+                [
+                  4,
+                  3
+                ],
+                [
+                  4,
+                  4
+                ]
+              ],
+              "after": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  3,
+                  3
+                ],
+                [
+                  4,
+                  4
+                ]
+              ]
+            },
+            {
+              "pair": [
+                "S4",
+                "S18"
+              ],
+              "before": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  2
+                ],
+                [
+                  3,
+                  3
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  2
+                ],
+                [
+                  4,
+                  3
+                ],
+                [
+                  4,
+                  4
+                ]
+              ],
+              "after": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  3,
+                  3
+                ],
+                [
+                  4,
+                  4
+                ]
+              ]
+            },
+            {
+              "pair": [
+                "S5",
+                "S7"
+              ],
+              "before": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  2
+                ],
+                [
+                  3,
+                  3
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  2
+                ],
+                [
+                  4,
+                  3
+                ],
+                [
+                  4,
+                  4
+                ]
+              ],
+              "after": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  3,
+                  3
+                ],
+                [
+                  4,
+                  4
+                ]
+              ]
+            }
+          ],
+          "relation_changes": {
+            "directed_slots_changed": 20,
+            "upper_triangle_slots_changed": 10,
+            "directed_bits_removed": 72,
+            "upper_triangle_bits_removed": 36,
+            "diagonal_bits_removed": 0
+          }
+        },
+        {
+          "phase_index": 6,
+          "kind": "trial",
+          "anchors": {
+            "S0": 1,
+            "S1": 2,
+            "S10": 3,
+            "S11": 2,
+            "S14": 1,
+            "S15": 2,
+            "S16": 1,
+            "S9": 2
+          },
+          "document_sha256": "07c56968fc3d66f01100459c2fb8a59f69172e96c594effc224f149d81076719",
+          "conditional_equalities": [
+            [
+              "S3",
+              "S6"
+            ],
+            [
+              "S4",
+              "S18"
+            ],
+            [
+              "S5",
+              "S7"
+            ]
+          ],
+          "round_count": 2,
+          "round_certificates": [
+            [
+              {
+                "pair": [
+                  "S3",
+                  "S6"
+                ],
+                "edge": [
+                  "S5",
+                  "S18"
+                ],
+                "excluded_color": 1
+              },
+              {
+                "pair": [
+                  "S4",
+                  "S18"
+                ],
+                "edge": [
+                  "S3",
+                  "S5"
+                ],
+                "excluded_color": 1
+              },
+              {
+                "pair": [
+                  "S5",
+                  "S7"
+                ],
+                "edge": [
+                  "S6",
+                  "S18"
+                ],
+                "excluded_color": 1
+              }
+            ],
+            []
+          ],
+          "domain_changes": [],
+          "learned_pair_relations": [
+            {
+              "pair": [
+                "S3",
+                "S6"
+              ],
+              "before": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  2
+                ],
+                [
+                  3,
+                  3
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  2
+                ],
+                [
+                  4,
+                  3
+                ],
+                [
+                  4,
+                  4
+                ]
+              ],
+              "after": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  3,
+                  3
+                ],
+                [
+                  4,
+                  4
+                ]
+              ]
+            },
+            {
+              "pair": [
+                "S4",
+                "S18"
+              ],
+              "before": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  2
+                ],
+                [
+                  3,
+                  3
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  2
+                ],
+                [
+                  4,
+                  3
+                ],
+                [
+                  4,
+                  4
+                ]
+              ],
+              "after": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  3,
+                  3
+                ],
+                [
+                  4,
+                  4
+                ]
+              ]
+            },
+            {
+              "pair": [
+                "S5",
+                "S7"
+              ],
+              "before": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  2
+                ],
+                [
+                  3,
+                  3
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  2
+                ],
+                [
+                  4,
+                  3
+                ],
+                [
+                  4,
+                  4
+                ]
+              ],
+              "after": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  3,
+                  3
+                ],
+                [
+                  4,
+                  4
+                ]
+              ]
+            }
+          ],
+          "relation_changes": {
+            "directed_slots_changed": 20,
+            "upper_triangle_slots_changed": 10,
+            "directed_bits_removed": 70,
+            "upper_triangle_bits_removed": 35,
+            "diagonal_bits_removed": 0
+          }
+        },
+        {
+          "phase_index": 7,
+          "kind": "trial",
+          "anchors": {
+            "S0": 1,
+            "S1": 2,
+            "S10": 3,
+            "S11": 2,
+            "S14": 1,
+            "S15": 2,
+            "S16": 1,
+            "S9": 2,
+            "S13": 3
+          },
+          "document_sha256": "123a8cc208be4884ab55f425342244531a523850f1572d805f8a708001953eb5",
+          "conditional_equalities": [
+            [
+              "S4",
+              "S18"
+            ]
+          ],
+          "round_count": 2,
+          "round_certificates": [
+            [
+              {
+                "pair": [
+                  "S4",
+                  "S18"
+                ],
+                "edge": [
+                  "S3",
+                  "S5"
+                ],
+                "excluded_color": 1
+              }
+            ],
+            []
+          ],
+          "domain_changes": [],
+          "learned_pair_relations": [
+            {
+              "pair": [
+                "S4",
+                "S18"
+              ],
+              "before": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  4,
+                  2
+                ],
+                [
+                  4,
+                  4
+                ]
+              ],
+              "after": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  4,
+                  4
+                ]
+              ]
+            }
+          ],
+          "relation_changes": {
+            "directed_slots_changed": 2,
+            "upper_triangle_slots_changed": 1,
+            "directed_bits_removed": 4,
+            "upper_triangle_bits_removed": 2,
+            "diagonal_bits_removed": 0
+          }
+        }
+      ]
+    },
+    {
+      "key": "bcbb8b274017fbddd3a6bfceeea27b0c6ab758c9aee2647e79d6688f2bece457",
+      "scenario": "single-anchor-input-order",
+      "policy": "conditional-diamond",
+      "conditional_eq_pair_references": 1,
+      "rounds": 7,
+      "phases": [
+        {
+          "phase_index": 1,
+          "kind": "trial",
+          "anchors": {
+            "Z": 1,
+            "P": 1
+          },
+          "document_sha256": "09c9b73563b920a659ec6e07f5f723a0012c4c6a598756f99ab57d0cce32da09",
+          "conditional_equalities": [
+            [
+              "Q",
+              "A"
+            ]
+          ],
+          "round_count": 2,
+          "round_certificates": [
+            [
+              {
+                "pair": [
+                  "Q",
+                  "A"
+                ],
+                "edge": [
+                  "X",
+                  "Y"
+                ],
+                "excluded_color": 1
+              }
+            ],
+            []
+          ],
+          "domain_changes": [],
+          "learned_pair_relations": [
+            {
+              "pair": [
+                "Q",
+                "A"
+              ],
+              "before": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  2
+                ],
+                [
+                  3,
+                  3
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  2
+                ],
+                [
+                  4,
+                  3
+                ],
+                [
+                  4,
+                  4
+                ]
+              ],
+              "after": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  3,
+                  3
+                ],
+                [
+                  4,
+                  4
+                ]
+              ]
+            }
+          ],
+          "relation_changes": {
+            "directed_slots_changed": 10,
+            "upper_triangle_slots_changed": 5,
+            "directed_bits_removed": 42,
+            "upper_triangle_bits_removed": 21,
+            "diagonal_bits_removed": 0
+          }
+        }
+      ]
+    }
+  ],
+  "actual_path_conditional_learning_totals": {
+    "phases_with_new_eq": 4,
+    "trial_phases_with_new_eq": 4,
+    "conditional_eq_pair_references": 8,
+    "candidate_references_removed": 0,
+    "directed_relation_bits_removed": 188,
+    "upper_triangle_relation_bits_removed": 94,
+    "diagonal_relation_bits_removed": 0
+  },
+  "history_counts": {
+    "records": 292,
+    "prefix_references": 3140,
+    "excluded_prefix_references": 120,
+    "complete_records": 280,
+    "fresh-declared/records": 16,
+    "fresh-declared/prefix_references": 96,
+    "regression-odd-wheel/records": 276,
+    "regression-odd-wheel/prefix_references": 3044
+  },
+  "checkpoint_bytes": {
+    "gzip_bytes": 30802079,
+    "decoded_json_bytes": 427914692
+  },
+  "passed": true,
+  "producer_reruns": 0,
+  "propagation_reruns": 0,
+  "oracle_search_reruns": 0,
+  "scope": "Standard-library independent byte, coverage, raw SAT witness, event and metric review. No geometry re-export, no production or propagation, no exact search, no fresh trace derivation. Saved conditional certificate and full trace replay belongs to the separate artifact checker. Detector work statistics are summed telemetry, not independently replayed work. Fresh keys remain same-family inputs and history-prefix counts are correlated references.",
+  "pair_comparison_scope": "The 933 count compares each corresponding phase closure (the last internal round of that phase), including intermediate trial phases. All 935 terminal phases have identical domains, relations, colors and status. Differences occur only at intermediate phases of two paired runs."
+}

@@ -1,0 +1,767 @@
+{
+  "schema_version": 1,
+  "version": "saved-pair-three-color-odd-wheel-diagnostic-v1",
+  "created_at_utc": "2026-09-29T14:57:58.710164+00:00",
+  "provenance": {
+    "checkpoint_path": "outputs/quaternary-logical-neq-pair-scan-2026-09-29-checkpoints/044-8070783fd68d.json.gz",
+    "checkpoint_sha256": "f3be9670ae9d377d12e1ed201053f8d6b5355e428c2ebb8cc0da66496f91c17c",
+    "manifest_sha256": "950697fa87b5c13eeeb55b041cc43bb06d78a8da32519ede9eef49fcef13e844",
+    "record_sha256": "7cdb0c0f15bdb0515d78eaf51698f0b26dd4a5ee3bac825196ae7ca2b89e699e",
+    "geometry_key": "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132",
+    "run_index": 0,
+    "scenario": "one-bounded-anchor",
+    "state_index": 0,
+    "phase": 0,
+    "target_index": 545,
+    "canonicalization": "UTF-8 json.dumps(sort_keys=True, ensure_ascii=False, separators=(comma,colon))",
+    "raw_document_sha256": "711ea708150173a1d6a9db41411fb8a87aa86a512fde994823822b30619be474",
+    "target_sha256": "8252d3aa2b77a7161a0c34e473a7457a13e1afa01739ef95bbfcab666b5cd9b9",
+    "saved_scan_verification_passed": true
+  },
+  "raw_sides": [
+    "S0",
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7",
+    "S8",
+    "S9",
+    "S10",
+    "S11",
+    "S12",
+    "S13",
+    "S14",
+    "S15",
+    "S16",
+    "S17",
+    "S18"
+  ],
+  "raw_physical_edges": [
+    [
+      "S0",
+      "S1"
+    ],
+    [
+      "S0",
+      "S10"
+    ],
+    [
+      "S0",
+      "S11"
+    ],
+    [
+      "S0",
+      "S12"
+    ],
+    [
+      "S0",
+      "S2"
+    ],
+    [
+      "S0",
+      "S3"
+    ],
+    [
+      "S0",
+      "S4"
+    ],
+    [
+      "S0",
+      "S5"
+    ],
+    [
+      "S0",
+      "S6"
+    ],
+    [
+      "S0",
+      "S7"
+    ],
+    [
+      "S0",
+      "S8"
+    ],
+    [
+      "S0",
+      "S9"
+    ],
+    [
+      "S1",
+      "S12"
+    ],
+    [
+      "S1",
+      "S13"
+    ],
+    [
+      "S1",
+      "S17"
+    ],
+    [
+      "S1",
+      "S2"
+    ],
+    [
+      "S10",
+      "S11"
+    ],
+    [
+      "S10",
+      "S14"
+    ],
+    [
+      "S10",
+      "S15"
+    ],
+    [
+      "S10",
+      "S16"
+    ],
+    [
+      "S10",
+      "S9"
+    ],
+    [
+      "S11",
+      "S12"
+    ],
+    [
+      "S11",
+      "S14"
+    ],
+    [
+      "S12",
+      "S13"
+    ],
+    [
+      "S12",
+      "S14"
+    ],
+    [
+      "S12",
+      "S15"
+    ],
+    [
+      "S13",
+      "S15"
+    ],
+    [
+      "S13",
+      "S16"
+    ],
+    [
+      "S13",
+      "S17"
+    ],
+    [
+      "S13",
+      "S18"
+    ],
+    [
+      "S14",
+      "S15"
+    ],
+    [
+      "S15",
+      "S16"
+    ],
+    [
+      "S16",
+      "S18"
+    ],
+    [
+      "S16",
+      "S7"
+    ],
+    [
+      "S16",
+      "S8"
+    ],
+    [
+      "S16",
+      "S9"
+    ],
+    [
+      "S17",
+      "S18"
+    ],
+    [
+      "S17",
+      "S2"
+    ],
+    [
+      "S17",
+      "S3"
+    ],
+    [
+      "S18",
+      "S3"
+    ],
+    [
+      "S18",
+      "S5"
+    ],
+    [
+      "S18",
+      "S6"
+    ],
+    [
+      "S18",
+      "S7"
+    ],
+    [
+      "S2",
+      "S3"
+    ],
+    [
+      "S3",
+      "S4"
+    ],
+    [
+      "S3",
+      "S5"
+    ],
+    [
+      "S4",
+      "S5"
+    ],
+    [
+      "S5",
+      "S6"
+    ],
+    [
+      "S6",
+      "S7"
+    ],
+    [
+      "S7",
+      "S8"
+    ],
+    [
+      "S8",
+      "S9"
+    ]
+  ],
+  "actual_anchors": {
+    "S1": 1
+  },
+  "hypothetical_anchors": {
+    "S4": 1,
+    "S6": 1
+  },
+  "target": {
+    "side_indices": [
+      4,
+      6
+    ],
+    "sides": [
+      "S4",
+      "S6"
+    ],
+    "symbols": [
+      1,
+      1
+    ],
+    "category": "both_min",
+    "next_action": "not_next_choice",
+    "pair_oracle_index": 564,
+    "status": "unsupported",
+    "single_oracle_indices": [
+      565,
+      355
+    ],
+    "single_support": "both_supported"
+  },
+  "saved_evidence": {
+    "base_oracle_index": 0,
+    "base_status": "sat",
+    "pair_oracle_index": 564,
+    "pair_query_input": {
+      "n": 19,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          0,
+          10
+        ],
+        [
+          0,
+          11
+        ],
+        [
+          0,
+          12
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          12
+        ],
+        [
+          1,
+          13
+        ],
+        [
+          1,
+          17
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          17
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          17
+        ],
+        [
+          3,
+          18
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          18
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          18
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          7,
+          16
+        ],
+        [
+          7,
+          18
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          8,
+          16
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          9,
+          16
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          10,
+          14
+        ],
+        [
+          10,
+          15
+        ],
+        [
+          10,
+          16
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          11,
+          14
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          12,
+          14
+        ],
+        [
+          12,
+          15
+        ],
+        [
+          13,
+          15
+        ],
+        [
+          13,
+          16
+        ],
+        [
+          13,
+          17
+        ],
+        [
+          13,
+          18
+        ],
+        [
+          14,
+          15
+        ],
+        [
+          15,
+          16
+        ],
+        [
+          16,
+          18
+        ],
+        [
+          17,
+          18
+        ]
+      ],
+      "anchors": [
+        [
+          1,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          6,
+          1
+        ]
+      ]
+    },
+    "pair_exact_status": "unsat",
+    "pair_exact_nodes": 28,
+    "pair_result_sha256": "6a6af6f548c604cb92299ee2bae5f2dce6726f0b7b9611736769622b5b8157c5",
+    "single_oracle_indices": [
+      565,
+      355
+    ],
+    "single_exact_statuses": [
+      "sat",
+      "sat"
+    ],
+    "conditional_status": "conditional_inconclusive",
+    "conditional_outcome_status": "underdetermined",
+    "conditional_input_sha256": "00e99f28639739dab1d4ddc46fe2fd48bebbc6798c92242aea967577fa8b694f",
+    "conditional_outcome_sha256": "51b5ec8da16ff11bedcdf161921e88178d374db9e0cccbedcbf8932c1f418b3a",
+    "conditional_trace_audit_sha256": "f1c62cddb7acf15639e2b639faf02f0f9cbbd8f67a154f936e4d32f13cde561d"
+  },
+  "structural_witness": {
+    "center": "S3",
+    "ordered_rim": [
+      "S0",
+      "S2",
+      "S17",
+      "S18",
+      "S5"
+    ],
+    "rim_length": 5,
+    "rim_edges": [
+      {
+        "endpoints": [
+          "S0",
+          "S2"
+        ],
+        "separator_line_ids": [
+          "E1"
+        ]
+      },
+      {
+        "endpoints": [
+          "S2",
+          "S17"
+        ],
+        "separator_line_ids": [
+          "E40"
+        ]
+      },
+      {
+        "endpoints": [
+          "S17",
+          "S18"
+        ],
+        "separator_line_ids": [
+          "E41"
+        ]
+      },
+      {
+        "endpoints": [
+          "S18",
+          "S5"
+        ],
+        "separator_line_ids": [
+          "E51"
+        ]
+      },
+      {
+        "endpoints": [
+          "S5",
+          "S0"
+        ],
+        "separator_line_ids": [
+          "E5"
+        ]
+      }
+    ],
+    "spokes": [
+      {
+        "endpoints": [
+          "S3",
+          "S0"
+        ],
+        "separator_line_ids": [
+          "E2"
+        ]
+      },
+      {
+        "endpoints": [
+          "S3",
+          "S2"
+        ],
+        "separator_line_ids": [
+          "E47"
+        ]
+      },
+      {
+        "endpoints": [
+          "S3",
+          "S17"
+        ],
+        "separator_line_ids": [
+          "E48"
+        ]
+      },
+      {
+        "endpoints": [
+          "S3",
+          "S18"
+        ],
+        "separator_line_ids": [
+          "E42"
+        ]
+      },
+      {
+        "endpoints": [
+          "S3",
+          "S5"
+        ],
+        "separator_line_ids": [
+          "E50"
+        ]
+      }
+    ],
+    "blocked_color": 1,
+    "remaining_palette": [
+      2,
+      3,
+      4
+    ],
+    "anchor_color_exclusions": [
+      {
+        "vertex": "S3",
+        "excluded_color": 1,
+        "anchor": "S4",
+        "anchor_source": "hypothetical",
+        "raw_neq_witness": {
+          "endpoints": [
+            "S3",
+            "S4"
+          ],
+          "separator_line_ids": [
+            "E49"
+          ]
+        }
+      },
+      {
+        "vertex": "S0",
+        "excluded_color": 1,
+        "anchor": "S1",
+        "anchor_source": "actual",
+        "raw_neq_witness": {
+          "endpoints": [
+            "S0",
+            "S1"
+          ],
+          "separator_line_ids": [
+            "E0",
+            "E15"
+          ]
+        }
+      },
+      {
+        "vertex": "S2",
+        "excluded_color": 1,
+        "anchor": "S1",
+        "anchor_source": "actual",
+        "raw_neq_witness": {
+          "endpoints": [
+            "S2",
+            "S1"
+          ],
+          "separator_line_ids": [
+            "E32"
+          ]
+        }
+      },
+      {
+        "vertex": "S17",
+        "excluded_color": 1,
+        "anchor": "S1",
+        "anchor_source": "actual",
+        "raw_neq_witness": {
+          "endpoints": [
+            "S17",
+            "S1"
+          ],
+          "separator_line_ids": [
+            "E33"
+          ]
+        }
+      },
+      {
+        "vertex": "S18",
+        "excluded_color": 1,
+        "anchor": "S6",
+        "anchor_source": "hypothetical",
+        "raw_neq_witness": {
+          "endpoints": [
+            "S18",
+            "S6"
+          ],
+          "separator_line_ids": [
+            "E52"
+          ]
+        }
+      },
+      {
+        "vertex": "S5",
+        "excluded_color": 1,
+        "anchor": "S4",
+        "anchor_source": "hypothetical",
+        "raw_neq_witness": {
+          "endpoints": [
+            "S5",
+            "S4"
+          ],
+          "separator_line_ids": [
+            "E53"
+          ]
+        }
+      }
+    ],
+    "uses_learned_eq_or_neq": false,
+    "uses_propagated_domains": false,
+    "uses_oracle_tree_as_structural_premise": false
+  },
+  "elementary_argument": [
+    "With S1=S4=S6=1, each listed wheel vertex has a real adjacent anchor of color 1, so all six vertices are restricted to {2,3,4}.",
+    "The center S3 must use one of these three colors. Every rim vertex is really adjacent to S3 and must avoid that center color.",
+    "The five rim vertices therefore have at most two colors, but a cycle of odd length cannot be properly colored with two colors.",
+    "Hence the displayed physical edges and the three color-1 premises have no legal four-color extension."
+  ],
+  "conditional_scope": {
+    "guard": {
+      "S1": 1
+    },
+    "forbidden_conjunction": {
+      "S4": 1,
+      "S6": 1
+    },
+    "entailed_formula": "(S1=1) implies not(S4=1 and S6=1), on this unchanged raw graph",
+    "global_formula_with_guard_retained": "not(S1=1 and S4=1 and S6=1)",
+    "not_a_global_different_names_claim": "This does not prove S4 and S6 have different colors for every coloring.",
+    "not_an_actual_bad_commitment": "Both hypotheses are off the next actual choice in this saved state; no joint commitment occurred.",
+    "reuse_boundary": "Retain the graph identity and guard; reuse only under the same guard or stronger commitments. Dropping the guard requires a separate proof."
+  },
+  "checks": {
+    "saved_literals_bound": true,
+    "distinct_odd_rim_and_center": true,
+    "all_spokes_and_rim_edges_are_raw": true,
+    "all_six_color_exclusions_have_raw_anchor_neighbor": true,
+    "raw_base_saved_sat_and_pair_saved_unsat": true,
+    "both_individual_saved_queries_sat": true,
+    "saved_conditional_remains_inconclusive": true
+  },
+  "limitations": [
+    "This extracts and checks one explicitly identified wheel; it does not minimize the graph or claim all eleven inconclusive pair targets have this certificate.",
+    "A prospective domain-aware odd-wheel contradiction rule is not implemented or benchmark-tested in the frozen producer.",
+    "The elementary odd-cycle argument is not a novelty claim and does not establish general algorithm completeness.",
+    "No new exact search, propagation, relation learning, or producer execution was performed to construct this diagnostic."
+  ],
+  "oracle_searches": 0,
+  "propagation_runs": 0,
+  "producer_runs": 0
+}

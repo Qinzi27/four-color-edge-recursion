@@ -1,0 +1,1251 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-09-27T11:10:00.063769+00:00",
+  "scope": "Independent read-only reconstruction from frozen manifest and compact records, with raw-byte source/input hashes; no producer, propagation, oracle search, or certificate replay reruns. Formal saved checker remains separate.",
+  "source_manifest": {
+    "path": "outputs/quaternary-logical-neq-manifest-2026-09-27.json.gz",
+    "sha256": "d313d9dae7f234ac1b5fe1ec9f96d6e6362cd55751ca133ada61a42a1cfac7c3"
+  },
+  "source_report": {
+    "path": "outputs/quaternary-logical-neq-2026-09-27.json.gz",
+    "sha256": "8d943b84103b0f8e30abe9e2ff9ada6764c54244887c7624110af95161dd89da"
+  },
+  "frozen_source_count": 201,
+  "source_hash_drift": [],
+  "input_hash_drift": [],
+  "paired_scenario_count_reconstructed": 855,
+  "exclusions": {
+    "old": {
+      "geometry_error": 10,
+      "geometry_audit_error": 9
+    },
+    "new": {
+      "geometry_audit_error": 28,
+      "geometry_error": 2
+    }
+  },
+  "histories": {
+    "history_count": 62,
+    "declared_prefix_references": 680,
+    "mode_policy_records": 248,
+    "mode_policy_prefix_references": 2720,
+    "complete_history_mode_policy_records": 236,
+    "incomplete_history_mode_policy_records": 12,
+    "qualities": {
+      "success": 2600,
+      "geometry_audit_error": 112,
+      "geometry_error": 8
+    },
+    "excluded_prefix_references": 120,
+    "producer_uncompleted_prefix_references": 0,
+    "failed_prefix_references": 0
+  },
+  "totals": {
+    "odd-cycle-eq": {
+      "runs": 855,
+      "safe": 3663,
+      "unsafe": 0,
+      "unknown": 0,
+      "logical_neq_references": 0,
+      "learned_run_count": 0,
+      "choices": 3663,
+      "probes": 3664,
+      "trace_steps": 225524,
+      "rejections": 1
+    },
+    "logical-neq": {
+      "runs": 855,
+      "safe": 3663,
+      "unsafe": 0,
+      "unknown": 0,
+      "logical_neq_references": 311,
+      "learned_run_count": 193,
+      "choices": 3663,
+      "probes": 3663,
+      "trace_steps": 224224,
+      "rejections": 0
+    }
+  },
+  "learning": {
+    "positive_runs": 193,
+    "distinct_positive_geometry_keys": 96,
+    "distinct_positive_abstract_keys": 1,
+    "distinct_key_pair_references": 157,
+    "abstract": [
+      {
+        "key": "bcbb8b274017fbddd3a6bfceeea27b0c6ab758c9aee2647e79d6688f2bece457",
+        "kind": "abstract",
+        "scenario": "single-anchor-input-order",
+        "populations": [
+          "regression-all-candidate"
+        ],
+        "logical_neq_pair_count": 3
+      }
+    ],
+    "fresh_positive_runs": 10,
+    "fresh_positive_geometry_keys": 5,
+    "fresh_positive_runs_detail": [
+      {
+        "key": "7de7b7349117be6899b2ff75985a9b29216f0635067237ccb736dd0a637ce63b",
+        "kind": "geometry",
+        "scenario": "legacy-frame-anchors",
+        "populations": [
+          "fresh-declared",
+          "fresh-new-key"
+        ],
+        "logical_neq_pair_count": 1
+      },
+      {
+        "key": "7de7b7349117be6899b2ff75985a9b29216f0635067237ccb736dd0a637ce63b",
+        "kind": "geometry",
+        "scenario": "one-bounded-anchor",
+        "populations": [
+          "fresh-declared",
+          "fresh-new-key"
+        ],
+        "logical_neq_pair_count": 1
+      },
+      {
+        "key": "9ee7cfd727f529d678acdd6bd926b34af18f1332402caff51723fd1542ea0c0f",
+        "kind": "geometry",
+        "scenario": "legacy-frame-anchors",
+        "populations": [
+          "fresh-declared",
+          "fresh-new-key"
+        ],
+        "logical_neq_pair_count": 1
+      },
+      {
+        "key": "9ee7cfd727f529d678acdd6bd926b34af18f1332402caff51723fd1542ea0c0f",
+        "kind": "geometry",
+        "scenario": "one-bounded-anchor",
+        "populations": [
+          "fresh-declared",
+          "fresh-new-key"
+        ],
+        "logical_neq_pair_count": 1
+      },
+      {
+        "key": "0ca4729a157ed42cb773c227ba06c99607b62d46a3b93054d09d14bc3536e46d",
+        "kind": "geometry",
+        "scenario": "legacy-frame-anchors",
+        "populations": [
+          "fresh-declared",
+          "fresh-new-key"
+        ],
+        "logical_neq_pair_count": 1
+      },
+      {
+        "key": "0ca4729a157ed42cb773c227ba06c99607b62d46a3b93054d09d14bc3536e46d",
+        "kind": "geometry",
+        "scenario": "one-bounded-anchor",
+        "populations": [
+          "fresh-declared",
+          "fresh-new-key"
+        ],
+        "logical_neq_pair_count": 1
+      },
+      {
+        "key": "18f96dc817bcafa969d12393c8e9f37cd866a067628783f6558389b895103593",
+        "kind": "geometry",
+        "scenario": "legacy-frame-anchors",
+        "populations": [
+          "fresh-declared",
+          "fresh-new-key"
+        ],
+        "logical_neq_pair_count": 1
+      },
+      {
+        "key": "18f96dc817bcafa969d12393c8e9f37cd866a067628783f6558389b895103593",
+        "kind": "geometry",
+        "scenario": "one-bounded-anchor",
+        "populations": [
+          "fresh-declared",
+          "fresh-new-key"
+        ],
+        "logical_neq_pair_count": 1
+      },
+      {
+        "key": "4eed95adc8db53e381b803eceb4265ae81c60c76916373f30c02c65cf1c7ff5d",
+        "kind": "geometry",
+        "scenario": "legacy-frame-anchors",
+        "populations": [
+          "fresh-declared",
+          "fresh-new-key"
+        ],
+        "logical_neq_pair_count": 1
+      },
+      {
+        "key": "4eed95adc8db53e381b803eceb4265ae81c60c76916373f30c02c65cf1c7ff5d",
+        "kind": "geometry",
+        "scenario": "one-bounded-anchor",
+        "populations": [
+          "fresh-declared",
+          "fresh-new-key"
+        ],
+        "logical_neq_pair_count": 1
+      }
+    ]
+  },
+  "initial_changes": [
+    {
+      "key": "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132",
+      "kind": "geometry",
+      "scenario": "legacy-frame-anchors",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 3,
+      "removed": [
+        [
+          "S10",
+          2
+        ]
+      ],
+      "added": []
+    },
+    {
+      "key": "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 3,
+      "removed": [
+        [
+          "S10",
+          1
+        ]
+      ],
+      "added": []
+    }
+  ],
+  "sequence_changes": [
+    {
+      "key": "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 3,
+      "old_sequence": [
+        [
+          "S16",
+          1
+        ],
+        [
+          "S10",
+          2
+        ],
+        [
+          "S15",
+          3
+        ],
+        [
+          "S14",
+          1
+        ],
+        [
+          "S11",
+          3
+        ]
+      ],
+      "new_sequence": [
+        [
+          "S10",
+          2
+        ],
+        [
+          "S16",
+          1
+        ],
+        [
+          "S15",
+          3
+        ],
+        [
+          "S14",
+          1
+        ],
+        [
+          "S11",
+          3
+        ]
+      ],
+      "same_final_colors": true
+    }
+  ],
+  "all_final_colors_equal": true,
+  "trace_comparisons": {
+    "lower": 78,
+    "same": 775,
+    "higher": 2
+  },
+  "trace_changed_pairs": [
+    {
+      "key": "449307f20d34a946682dde1c8a9e8b4492bfd5f4565fa3f76059f5f3b642ea9a",
+      "kind": "geometry",
+      "scenario": "legacy-frame-anchors",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 3,
+      "trace_difference": -16,
+      "old_probes": 6,
+      "new_probes": 6
+    },
+    {
+      "key": "449307f20d34a946682dde1c8a9e8b4492bfd5f4565fa3f76059f5f3b642ea9a",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 3,
+      "trace_difference": -15,
+      "old_probes": 7,
+      "new_probes": 7
+    },
+    {
+      "key": "81dd138706468598aab4d187ca98273203202db9a7f593914ec8a9e6d55f64e5",
+      "kind": "geometry",
+      "scenario": "legacy-frame-anchors",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 3,
+      "trace_difference": -16,
+      "old_probes": 6,
+      "new_probes": 6
+    },
+    {
+      "key": "81dd138706468598aab4d187ca98273203202db9a7f593914ec8a9e6d55f64e5",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 3,
+      "trace_difference": -15,
+      "old_probes": 7,
+      "new_probes": 7
+    },
+    {
+      "key": "716980ae4b35cfbca8cd591ab2c2cf613866d48b263ff377bcc6d8c5001eca52",
+      "kind": "geometry",
+      "scenario": "legacy-frame-anchors",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 3,
+      "trace_difference": -5,
+      "old_probes": 6,
+      "new_probes": 6
+    },
+    {
+      "key": "716980ae4b35cfbca8cd591ab2c2cf613866d48b263ff377bcc6d8c5001eca52",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 3,
+      "trace_difference": -3,
+      "old_probes": 7,
+      "new_probes": 7
+    },
+    {
+      "key": "a329ac11ea6b597912cc486efb2926a17cbeba2da6d620dd11323f95e8b7b968",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 3,
+      "trace_difference": 3,
+      "old_probes": 7,
+      "new_probes": 7
+    },
+    {
+      "key": "b3efb8c9c80d16bd47582206a118895255e72660650ced00424d701e63ba0b91",
+      "kind": "geometry",
+      "scenario": "legacy-frame-anchors",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 3,
+      "trace_difference": -9,
+      "old_probes": 6,
+      "new_probes": 6
+    },
+    {
+      "key": "b3efb8c9c80d16bd47582206a118895255e72660650ced00424d701e63ba0b91",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 3,
+      "trace_difference": -7,
+      "old_probes": 7,
+      "new_probes": 7
+    },
+    {
+      "key": "1c5f9fb39fab4954bff1d8ffe1fe779333f46eb01fd40bb3e48e54373d26522d",
+      "kind": "geometry",
+      "scenario": "legacy-frame-anchors",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 3,
+      "trace_difference": -12,
+      "old_probes": 6,
+      "new_probes": 6
+    },
+    {
+      "key": "1c5f9fb39fab4954bff1d8ffe1fe779333f46eb01fd40bb3e48e54373d26522d",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 3,
+      "trace_difference": -11,
+      "old_probes": 7,
+      "new_probes": 7
+    },
+    {
+      "key": "62c7ddbeefaca60fa5f06359b178ec769de21e03096094f447cfd7ce54104e20",
+      "kind": "geometry",
+      "scenario": "legacy-frame-anchors",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 3,
+      "trace_difference": -3,
+      "old_probes": 6,
+      "new_probes": 6
+    },
+    {
+      "key": "62c7ddbeefaca60fa5f06359b178ec769de21e03096094f447cfd7ce54104e20",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 3,
+      "trace_difference": -9,
+      "old_probes": 7,
+      "new_probes": 7
+    },
+    {
+      "key": "806afe4435ac12e8763be2415a9ea7abfbe94b7f4c29ab51653a3af0515ff0e7",
+      "kind": "geometry",
+      "scenario": "legacy-frame-anchors",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 4,
+      "trace_difference": -4,
+      "old_probes": 6,
+      "new_probes": 6
+    },
+    {
+      "key": "806afe4435ac12e8763be2415a9ea7abfbe94b7f4c29ab51653a3af0515ff0e7",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 4,
+      "trace_difference": -7,
+      "old_probes": 7,
+      "new_probes": 7
+    },
+    {
+      "key": "ad26766f363960bce376d79da8102e057ec03ca21fcb5bd55c047af8c6387a16",
+      "kind": "geometry",
+      "scenario": "legacy-frame-anchors",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 4,
+      "trace_difference": -17,
+      "old_probes": 6,
+      "new_probes": 6
+    },
+    {
+      "key": "ad26766f363960bce376d79da8102e057ec03ca21fcb5bd55c047af8c6387a16",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 4,
+      "trace_difference": -26,
+      "old_probes": 7,
+      "new_probes": 7
+    },
+    {
+      "key": "c93ede87db203061cd25d58d376b4c84d06bb6c69d92c02fa982b6c078dfb6ee",
+      "kind": "geometry",
+      "scenario": "legacy-frame-anchors",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 3,
+      "trace_difference": -12,
+      "old_probes": 6,
+      "new_probes": 6
+    },
+    {
+      "key": "c93ede87db203061cd25d58d376b4c84d06bb6c69d92c02fa982b6c078dfb6ee",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 3,
+      "trace_difference": -18,
+      "old_probes": 7,
+      "new_probes": 7
+    },
+    {
+      "key": "0c830f0f0a9d765b6a67584daa908e50298656e54d369e756f1df9a40eb39067",
+      "kind": "geometry",
+      "scenario": "legacy-frame-anchors",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 3,
+      "trace_difference": -13,
+      "old_probes": 6,
+      "new_probes": 6
+    },
+    {
+      "key": "0c830f0f0a9d765b6a67584daa908e50298656e54d369e756f1df9a40eb39067",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 3,
+      "trace_difference": -19,
+      "old_probes": 7,
+      "new_probes": 7
+    },
+    {
+      "key": "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132",
+      "kind": "geometry",
+      "scenario": "legacy-frame-anchors",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 3,
+      "trace_difference": -521,
+      "old_probes": 10,
+      "new_probes": 9
+    },
+    {
+      "key": "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 3,
+      "trace_difference": -2,
+      "old_probes": 5,
+      "new_probes": 5
+    },
+    {
+      "key": "72053c364126aa1b2e0f7738e9575a6c05592caba1a17f67a2477065599d8a1b",
+      "kind": "geometry",
+      "scenario": "legacy-frame-anchors",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 1,
+      "trace_difference": -1,
+      "old_probes": 1,
+      "new_probes": 1
+    },
+    {
+      "key": "72053c364126aa1b2e0f7738e9575a6c05592caba1a17f67a2477065599d8a1b",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 1,
+      "trace_difference": -1,
+      "old_probes": 2,
+      "new_probes": 2
+    },
+    {
+      "key": "de67492eab78c915ccd086a559e20faa0df5f07f571aef861d4497dc9a6d18b7",
+      "kind": "geometry",
+      "scenario": "legacy-frame-anchors",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 3,
+      "trace_difference": -1,
+      "old_probes": 1,
+      "new_probes": 1
+    },
+    {
+      "key": "de67492eab78c915ccd086a559e20faa0df5f07f571aef861d4497dc9a6d18b7",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 3,
+      "trace_difference": -1,
+      "old_probes": 2,
+      "new_probes": 2
+    },
+    {
+      "key": "fdb78a346638c509683fe687848147e151322d2eca3de4671e4132e03500c662",
+      "kind": "geometry",
+      "scenario": "legacy-frame-anchors",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 2,
+      "trace_difference": -2,
+      "old_probes": 4,
+      "new_probes": 4
+    },
+    {
+      "key": "fdb78a346638c509683fe687848147e151322d2eca3de4671e4132e03500c662",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 2,
+      "trace_difference": -2,
+      "old_probes": 4,
+      "new_probes": 4
+    },
+    {
+      "key": "4edaf6866bc0e90e6e87ce35c691ea7c1e074acb9eba1c5364e85088c2a974cd",
+      "kind": "geometry",
+      "scenario": "legacy-frame-anchors",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 1,
+      "trace_difference": -6,
+      "old_probes": 1,
+      "new_probes": 1
+    },
+    {
+      "key": "4edaf6866bc0e90e6e87ce35c691ea7c1e074acb9eba1c5364e85088c2a974cd",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 1,
+      "trace_difference": -6,
+      "old_probes": 2,
+      "new_probes": 2
+    },
+    {
+      "key": "e774b7dec98999e08702f813dcf1b66cd03fb9f9adac4f3a5c458ea035175af7",
+      "kind": "geometry",
+      "scenario": "legacy-frame-anchors",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 3,
+      "trace_difference": -9,
+      "old_probes": 1,
+      "new_probes": 1
+    },
+    {
+      "key": "e774b7dec98999e08702f813dcf1b66cd03fb9f9adac4f3a5c458ea035175af7",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 3,
+      "trace_difference": -12,
+      "old_probes": 2,
+      "new_probes": 2
+    },
+    {
+      "key": "fd189ab5eb2fa3b26e1b379cedbc349e42eece33fef5ad7f12592a82461e951e",
+      "kind": "geometry",
+      "scenario": "legacy-frame-anchors",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 5,
+      "trace_difference": -11,
+      "old_probes": 1,
+      "new_probes": 1
+    },
+    {
+      "key": "fd189ab5eb2fa3b26e1b379cedbc349e42eece33fef5ad7f12592a82461e951e",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 5,
+      "trace_difference": -14,
+      "old_probes": 2,
+      "new_probes": 2
+    },
+    {
+      "key": "f39faa5d830b7fd6f8190236528a72df36696aea4c4b48d4aa438a8a9392405f",
+      "kind": "geometry",
+      "scenario": "legacy-frame-anchors",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 3,
+      "trace_difference": -11,
+      "old_probes": 2,
+      "new_probes": 2
+    },
+    {
+      "key": "f39faa5d830b7fd6f8190236528a72df36696aea4c4b48d4aa438a8a9392405f",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 3,
+      "trace_difference": -20,
+      "old_probes": 3,
+      "new_probes": 3
+    },
+    {
+      "key": "6c9164c818a6066e97d88b66f174bc5b2e6c10f6f21243ee974743cc17dccf0b",
+      "kind": "geometry",
+      "scenario": "legacy-frame-anchors",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 1,
+      "trace_difference": 1,
+      "old_probes": 2,
+      "new_probes": 2
+    },
+    {
+      "key": "6c9164c818a6066e97d88b66f174bc5b2e6c10f6f21243ee974743cc17dccf0b",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 1,
+      "trace_difference": -2,
+      "old_probes": 3,
+      "new_probes": 3
+    },
+    {
+      "key": "5d7a743ed6f1772793a4b2fe6077ac4cfdfcbab10f96b321d617aca36fd52fbf",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 1,
+      "trace_difference": -3,
+      "old_probes": 4,
+      "new_probes": 4
+    },
+    {
+      "key": "f01a8159a5a933165a1a90ce776bb99c58421b2b24778f877d94224a2c98b5fd",
+      "kind": "geometry",
+      "scenario": "legacy-frame-anchors",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 2,
+      "trace_difference": -8,
+      "old_probes": 3,
+      "new_probes": 3
+    },
+    {
+      "key": "f01a8159a5a933165a1a90ce776bb99c58421b2b24778f877d94224a2c98b5fd",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 2,
+      "trace_difference": -11,
+      "old_probes": 4,
+      "new_probes": 4
+    },
+    {
+      "key": "37b7526d65e67d466989506e8fa6bfcaab66fc9c6d3d3444faad70aa5c411066",
+      "kind": "geometry",
+      "scenario": "legacy-frame-anchors",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 2,
+      "trace_difference": -8,
+      "old_probes": 3,
+      "new_probes": 3
+    },
+    {
+      "key": "37b7526d65e67d466989506e8fa6bfcaab66fc9c6d3d3444faad70aa5c411066",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 2,
+      "trace_difference": -11,
+      "old_probes": 4,
+      "new_probes": 4
+    },
+    {
+      "key": "88f705fc029f003c76b2333ff1f83e4e1aba20b9aa4086b6fac17ed789dc7c68",
+      "kind": "geometry",
+      "scenario": "legacy-frame-anchors",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 2,
+      "trace_difference": -8,
+      "old_probes": 3,
+      "new_probes": 3
+    },
+    {
+      "key": "88f705fc029f003c76b2333ff1f83e4e1aba20b9aa4086b6fac17ed789dc7c68",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 2,
+      "trace_difference": -11,
+      "old_probes": 4,
+      "new_probes": 4
+    },
+    {
+      "key": "8d6d33ddeb6a6eb4d058bc57a753f416a271391a2abd24c3a20492dcb118c998",
+      "kind": "geometry",
+      "scenario": "legacy-frame-anchors",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 2,
+      "trace_difference": -8,
+      "old_probes": 3,
+      "new_probes": 3
+    },
+    {
+      "key": "8d6d33ddeb6a6eb4d058bc57a753f416a271391a2abd24c3a20492dcb118c998",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 2,
+      "trace_difference": -11,
+      "old_probes": 4,
+      "new_probes": 4
+    },
+    {
+      "key": "b1c096be4a30f6b36bdc8e55dc37a740591aeac63ad1fa739cabf4aaaa5fa625",
+      "kind": "geometry",
+      "scenario": "legacy-frame-anchors",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 2,
+      "trace_difference": -10,
+      "old_probes": 5,
+      "new_probes": 5
+    },
+    {
+      "key": "b1c096be4a30f6b36bdc8e55dc37a740591aeac63ad1fa739cabf4aaaa5fa625",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 2,
+      "trace_difference": -14,
+      "old_probes": 6,
+      "new_probes": 6
+    },
+    {
+      "key": "7ef25ba1c7e162587186eca893a96efa374d622b9c1c8d9592ddf89dd3d36725",
+      "kind": "geometry",
+      "scenario": "legacy-frame-anchors",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 2,
+      "trace_difference": -10,
+      "old_probes": 5,
+      "new_probes": 5
+    },
+    {
+      "key": "7ef25ba1c7e162587186eca893a96efa374d622b9c1c8d9592ddf89dd3d36725",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 2,
+      "trace_difference": -14,
+      "old_probes": 6,
+      "new_probes": 6
+    },
+    {
+      "key": "969d9baf3f96e3aea68d5a6914d4e6750fef75e094089595ebc0dc9f9d11acea",
+      "kind": "geometry",
+      "scenario": "legacy-frame-anchors",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 2,
+      "trace_difference": -9,
+      "old_probes": 5,
+      "new_probes": 5
+    },
+    {
+      "key": "969d9baf3f96e3aea68d5a6914d4e6750fef75e094089595ebc0dc9f9d11acea",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 2,
+      "trace_difference": -13,
+      "old_probes": 6,
+      "new_probes": 6
+    },
+    {
+      "key": "d78ab8c56cfa4a12fab31e071b71773d2ed5aac158bb457a9ce3dee873172b10",
+      "kind": "geometry",
+      "scenario": "legacy-frame-anchors",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 2,
+      "trace_difference": -9,
+      "old_probes": 5,
+      "new_probes": 5
+    },
+    {
+      "key": "d78ab8c56cfa4a12fab31e071b71773d2ed5aac158bb457a9ce3dee873172b10",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 2,
+      "trace_difference": -13,
+      "old_probes": 6,
+      "new_probes": 6
+    },
+    {
+      "key": "bcbb8b274017fbddd3a6bfceeea27b0c6ab758c9aee2647e79d6688f2bece457",
+      "kind": "abstract",
+      "scenario": "single-anchor-input-order",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 3,
+      "trace_difference": -17,
+      "old_probes": 5,
+      "new_probes": 5
+    },
+    {
+      "key": "a074fe149f166891374fcedb8bf6b2c0158efe48e31a2ef2fbe04a05d5c55fa9",
+      "kind": "geometry",
+      "scenario": "legacy-frame-anchors",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 3,
+      "trace_difference": -9,
+      "old_probes": 1,
+      "new_probes": 1
+    },
+    {
+      "key": "a074fe149f166891374fcedb8bf6b2c0158efe48e31a2ef2fbe04a05d5c55fa9",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 3,
+      "trace_difference": -9,
+      "old_probes": 2,
+      "new_probes": 2
+    },
+    {
+      "key": "54302f02914b74080706db0770a05aaedf7f9ef2c8929079193d20d65e9abda5",
+      "kind": "geometry",
+      "scenario": "legacy-frame-anchors",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 5,
+      "trace_difference": -10,
+      "old_probes": 1,
+      "new_probes": 1
+    },
+    {
+      "key": "54302f02914b74080706db0770a05aaedf7f9ef2c8929079193d20d65e9abda5",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 5,
+      "trace_difference": -13,
+      "old_probes": 2,
+      "new_probes": 2
+    },
+    {
+      "key": "4c6e2c7dc33b96889aa0dc60037cc78376c080a4ecb541dd97992844d2ee71ef",
+      "kind": "geometry",
+      "scenario": "legacy-frame-anchors",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 1,
+      "trace_difference": -4,
+      "old_probes": 2,
+      "new_probes": 2
+    },
+    {
+      "key": "4c6e2c7dc33b96889aa0dc60037cc78376c080a4ecb541dd97992844d2ee71ef",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 1,
+      "trace_difference": -7,
+      "old_probes": 3,
+      "new_probes": 3
+    },
+    {
+      "key": "ff13bf491e718d9e91fc367e9e08dd9d1d423a1bcebf149b736df427a4e50a24",
+      "kind": "geometry",
+      "scenario": "legacy-frame-anchors",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 1,
+      "trace_difference": -4,
+      "old_probes": 3,
+      "new_probes": 3
+    },
+    {
+      "key": "ff13bf491e718d9e91fc367e9e08dd9d1d423a1bcebf149b736df427a4e50a24",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 1,
+      "trace_difference": -7,
+      "old_probes": 4,
+      "new_probes": 4
+    },
+    {
+      "key": "a44b86df9f2104f7a450abfdfe12e5183a9be5177954c7f5d31c11fffdb5b57b",
+      "kind": "geometry",
+      "scenario": "legacy-frame-anchors",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 2,
+      "trace_difference": -14,
+      "old_probes": 7,
+      "new_probes": 7
+    },
+    {
+      "key": "a44b86df9f2104f7a450abfdfe12e5183a9be5177954c7f5d31c11fffdb5b57b",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 2,
+      "trace_difference": -19,
+      "old_probes": 8,
+      "new_probes": 8
+    },
+    {
+      "key": "9a22f8bb4ba8756092f0274ffa62db05dc91e6b90cc0e94e2ba18d2c55d06d20",
+      "kind": "geometry",
+      "scenario": "legacy-frame-anchors",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 2,
+      "trace_difference": -14,
+      "old_probes": 7,
+      "new_probes": 7
+    },
+    {
+      "key": "9a22f8bb4ba8756092f0274ffa62db05dc91e6b90cc0e94e2ba18d2c55d06d20",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 2,
+      "trace_difference": -19,
+      "old_probes": 8,
+      "new_probes": 8
+    },
+    {
+      "key": "7d14c59772291dcf929a1029cbd014f587efb82412378b5b21730dd2e0106107",
+      "kind": "geometry",
+      "scenario": "legacy-frame-anchors",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 2,
+      "trace_difference": -16,
+      "old_probes": 9,
+      "new_probes": 9
+    },
+    {
+      "key": "7d14c59772291dcf929a1029cbd014f587efb82412378b5b21730dd2e0106107",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 2,
+      "trace_difference": -22,
+      "old_probes": 10,
+      "new_probes": 10
+    },
+    {
+      "key": "181d41afd3dd3f75c049015c31bdf062dd9236433c0c9e5bc3080859f849e241",
+      "kind": "geometry",
+      "scenario": "legacy-frame-anchors",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 2,
+      "trace_difference": -16,
+      "old_probes": 9,
+      "new_probes": 9
+    },
+    {
+      "key": "181d41afd3dd3f75c049015c31bdf062dd9236433c0c9e5bc3080859f849e241",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 2,
+      "trace_difference": -22,
+      "old_probes": 10,
+      "new_probes": 10
+    },
+    {
+      "key": "d033082d3e7d0ecd5cce53228ed24a140c0356ccce963781be0c3547c808d0e1",
+      "kind": "geometry",
+      "scenario": "legacy-frame-anchors",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 1,
+      "trace_difference": -6,
+      "old_probes": 1,
+      "new_probes": 1
+    },
+    {
+      "key": "d033082d3e7d0ecd5cce53228ed24a140c0356ccce963781be0c3547c808d0e1",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 1,
+      "trace_difference": -6,
+      "old_probes": 2,
+      "new_probes": 2
+    },
+    {
+      "key": "2e82f85b1ae8e2670a1c75400f47ab8d6bdb9d8473ed84792b3f6583060fbd0b",
+      "kind": "geometry",
+      "scenario": "legacy-frame-anchors",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 2,
+      "trace_difference": -8,
+      "old_probes": 1,
+      "new_probes": 1
+    },
+    {
+      "key": "2e82f85b1ae8e2670a1c75400f47ab8d6bdb9d8473ed84792b3f6583060fbd0b",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 2,
+      "trace_difference": -8,
+      "old_probes": 2,
+      "new_probes": 2
+    },
+    {
+      "key": "a190c7bf5db542a26c38c101af253b1912db59c6e5763f9f83f76b43de8e5d46",
+      "kind": "geometry",
+      "scenario": "legacy-frame-anchors",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 3,
+      "trace_difference": -7,
+      "old_probes": 1,
+      "new_probes": 1
+    },
+    {
+      "key": "a190c7bf5db542a26c38c101af253b1912db59c6e5763f9f83f76b43de8e5d46",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "regression-all-candidate"
+      ],
+      "logical_neq_pair_count": 3,
+      "trace_difference": -14,
+      "old_probes": 2,
+      "new_probes": 2
+    },
+    {
+      "key": "7de7b7349117be6899b2ff75985a9b29216f0635067237ccb736dd0a637ce63b",
+      "kind": "geometry",
+      "scenario": "one-bounded-anchor",
+      "populations": [
+        "fresh-declared",
+        "fresh-new-key"
+      ],
+      "logical_neq_pair_count": 1,
+      "trace_difference": -3,
+      "old_probes": 4,
+      "new_probes": 4
+    }
+  ],
+  "fresh_new_key_initial_changes": [],
+  "formal_saved_checker_repeated": false
+}
