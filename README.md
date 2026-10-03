@@ -6,7 +6,50 @@ and verifiable Klein-four-group flow repair.**
 [中文说明](README.zh-CN.md) · [Mathematical foundations](docs/FOUNDATIONS.en.md) · [数学基础](docs/FOUNDATIONS.md)
 · [Research questions](docs/RESEARCH_PLAN.md) · [Related work](docs/RELATED_WORK.md)
 
-## Research update — 2026-09-30
+## Research update — 2026-10-03
+
+**All 1,846 currently retained, jointly unsupported color pairs are refuted by
+conditional propagation on the audited states. A necessary-condition prefilter
+reduces triangle enumeration by 48.8%, but has not demonstrated a stable runtime
+gain. Profiling now points to nested evidence copying as the next optimization
+target.** The initiating line-side idea belongs to Qinzi27.
+
+- [Triangle saturation](docs/QUATERNARY_TRIANGLE_SATURATION_RESULTS-2026-10-01.md)
+  closes the two remaining gaps in the old 1,814-pair diagnostic set. Both
+  versions complete all 975 paired scenarios, with identical actual decisions
+  and final colors and 4,067 independently extendible commitments each. This
+  is a finite result, not a general safe-choice guarantee.
+- [Current-state support census](docs/QUATERNARY_TRIANGLE_SATURATION_SUPPORT_RESULTS-2026-10-03.md)
+  checks 60,777 single candidates and 695,575 allowed pairs. All singles have
+  support; 1,846 pairs have no joint support and all are conditionally refuted.
+  Those pairs remain allowed by the persistent matrices. Exact evidence reuse
+  avoids repeated searches without feeding oracle answers into production.
+- [Equivalent prefilter](docs/QUATERNARY_TRIANGLE_SATURATION_PREFILTER_RESULTS-2026-10-03.md)
+  preserves complete outputs on 975 production scenarios and 1,846 diagnostics,
+  plus rule evidence on 6,120 declared cases. Actual production triangle trials
+  fall from 1,058,850 to 542,199; paired runtime changes of -5.354% and +2.828%
+  do not establish a stable overall speedup.
+- [Full-production profiling](docs/QUATERNARY_TRIANGLE_SATURATION_PROFILE_RESULTS-2026-10-03.md)
+  attributes 56.47% of profiled exclusive time to `copy.py` and 16.74% to
+  `relation_names.py`. Plain calls total 103.730 seconds and profiled calls
+  296.569 seconds. These diagnostic shares include profiler effects and are
+  neither unprofiled cost fractions nor promised speed gains.
+
+The latest frozen source set contains **295 items**. The final local checkpoint
+passes **1,833 Python tests and comprehensive validation**, with no failures,
+errors or skips. Later equivalent implementations inherit the audited 975
+completions and 4,067 safe commitments through full-output identity; the
+prefilter and profiling stages did not repeat the earlier exact-oracle audit.
+All 49 geometric exclusions remain explicit. General path safety, completeness
+and originality remain open.
+
+The next experiment will reduce redundant evidence copying while preserving
+snapshot isolation and complete outputs, then measure runtime independently.
+See the [October 3 publication scope](docs/PUBLICATION-2026-10-03.md),
+[reproduction guide](docs/REPRODUCING_RESEARCH.md) and [next step](NEXT_STEP.md).
+Local validation is not confirmation of a new push or remote CI result.
+
+## Earlier research update — 2026-09-30
 
 **Conditional equality now refutes six of the eight previously unresolved joint
 trials. Two remain unresolved by the algorithm. Both versions still complete
@@ -290,7 +333,7 @@ nor a universal proof.
 · [English research history](docs/RESEARCH_HISTORY.en.md)
 · [Reproduce from a clean checkout](docs/REPRODUCING_RESEARCH.md)
 
-The archive navigation includes research through **2026-09-26**. The September 20–26 additions
+The archive navigation includes research through **2026-10-03**. The September 20–October 3 additions
 are linked above; the chronology below preserves the earlier stages. It covers changing definitions,
 implementations, finite experiments, repaired examples, remaining obstructions,
 and regressions. Different versions and test denominators must not be combined.

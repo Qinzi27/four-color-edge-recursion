@@ -1,0 +1,1484 @@
+{
+  "schema_version": 1,
+  "passed": true,
+  "source_files": 295,
+  "manifest": "outputs/quaternary-triangle-saturation-profile-manifest-2026-10-03.json.gz",
+  "files": [
+    {
+      "path": "docs/QUATERNARY_CONTACT_PROTOCOL-2026-09-21.md",
+      "sha256": "12435b95a631d13ffc89c95d8979b1a2e36004603064797971b6714384cb66d1",
+      "git_blob_oid": "d3f96d5e9f2ff21ccf9a78708f48977e615a9a1d"
+    },
+    {
+      "path": "examples/quaternary-contact-prototype-2026-09-21.json",
+      "sha256": "232aad292554854a0054831b9e3372284cbb9463f41160c2e9d368224e1b5186",
+      "git_blob_oid": "899300696f8965fe693f9f3139467f880bc58555"
+    },
+    {
+      "path": "fourcolor/__init__.py",
+      "sha256": "dd3939384003ac2beb3abc6d0890b7d5feb5b7642c257a8e8c7b7a67940eba4f",
+      "git_blob_oid": "832f968593e5c85864fcf31eae80069be3e85bad"
+    },
+    {
+      "path": "fourcolor/__main__.py",
+      "sha256": "c1f15bb0a448700a1c9a9c66138d0075b0ac5ae78eda5e7a138af59746b3e60d",
+      "git_blob_oid": "098a1b17d1d17d40934e2dc5618a50f354d47c35"
+    },
+    {
+      "path": "fourcolor/anchor_forest.py",
+      "sha256": "6bf04f6365d8fbfd086e77d65a9cd845f4b0d8965b4ff861576c41e226f1d42e",
+      "git_blob_oid": "3644c44e9cefcd3b93e8e85af637910d0ca408d4"
+    },
+    {
+      "path": "fourcolor/apex_triangle_cost.py",
+      "sha256": "94ef396c2e665ac670c9a1de63c1f2ab64d4801ebaa20fe1ba4c9a658fb6cc6c",
+      "git_blob_oid": "67bbdf467de0bc7a0c5681de37cdcf4dc6a6c8a2"
+    },
+    {
+      "path": "fourcolor/circle_layer_repair.py",
+      "sha256": "f9f281b794c93df44df9b98008b99113268686f6090df6af651b5d6be3a90dcd",
+      "git_blob_oid": "6d51dc664527dc72d1dbb7c020f5cacc0b38c0d3"
+    },
+    {
+      "path": "fourcolor/circle_layers.py",
+      "sha256": "a716db37fb9bf133e5e0218051ff90f662401329e4bf65e76260722ca7f385b1",
+      "git_blob_oid": "7674f6e16c6abb92fdfa84a374f7ec1f98b8e8b7"
+    },
+    {
+      "path": "fourcolor/closed_interfaces.py",
+      "sha256": "5572a3dcd31218215347acff8f0f398a148124c4105e95242089a86c8a9b992f",
+      "git_blob_oid": "4e3b39ee994596a7649470917e7426d3d7788585"
+    },
+    {
+      "path": "fourcolor/closed_support.py",
+      "sha256": "0a95dd2802d16654a4342332ae9f9825944a26c4fe2cad182de0a214fbfc56f1",
+      "git_blob_oid": "6e58cbc04d64f2d15db31d817490598247e3635f"
+    },
+    {
+      "path": "fourcolor/coloring.py",
+      "sha256": "270cdd398002eadefbd8df0d2293c085e33a98fddd75e35a257c6cbe02e9e03c",
+      "git_blob_oid": "63ccd6dda9db74d24fa8972c5b86d46bb2be07b9"
+    },
+    {
+      "path": "fourcolor/conservative_recoloring.py",
+      "sha256": "26956dbc1bb5e56a4e05ebb5132cc869ec3737e74261e1e71ae7da387315ff10",
+      "git_blob_oid": "b034b2fcd1a2d25955114505a4f4982bfe1b2411"
+    },
+    {
+      "path": "fourcolor/current_geometry.py",
+      "sha256": "b782c4bf35f31363bfc3e70a60670e17b94041e4dc267a6a2a177196db0509ae",
+      "git_blob_oid": "8574c85173efb28aa5252cd771a8979130030e7c"
+    },
+    {
+      "path": "fourcolor/current_names.py",
+      "sha256": "6ed8422ff38e138e2d98d03d5da226a7b91ab3725bdab094349edee9d392d049",
+      "git_blob_oid": "f140b30bf862af67ccb69e8fc5795e6f8acf2102"
+    },
+    {
+      "path": "fourcolor/embedding.py",
+      "sha256": "1b36ed820e7f6affc5e38ce60c9ca3c21c42df5d9da7d5d54986d4b02fee180e",
+      "git_blob_oid": "e6c2f127ffab55fa55c0dff42aa86c8496329773"
+    },
+    {
+      "path": "fourcolor/examples.py",
+      "sha256": "2c0b5ae47b258bbb509ed0a6d0b8e9139304ac9128623ec1068a69150ff11b98",
+      "git_blob_oid": "983657c76770200874565addaa1ca739cb481374"
+    },
+    {
+      "path": "fourcolor/frontier_order.py",
+      "sha256": "9fd9abe4d17101f5938bf269ff2f8dc72f57a0fc0f4f3c12118e9975a0a80f98",
+      "git_blob_oid": "97d32127adfa9682f9268938f1f8c6608b8016b1"
+    },
+    {
+      "path": "fourcolor/frontier_restart.py",
+      "sha256": "2b82e9de0ecad888b5248602d039997889becac1718282f5c4a5eaa6d8c1c533",
+      "git_blob_oid": "7273af0e5595ce9236d2cc10dc0474e19ff84a80"
+    },
+    {
+      "path": "fourcolor/global_restart.py",
+      "sha256": "56aafff2632cf4c02cc20c7a056d02b9932f65f700311846d7d81c1cb32b3cbb",
+      "git_blob_oid": "96ff9c714d90c3287ef1d0b3c3162b955c095da5"
+    },
+    {
+      "path": "fourcolor/history.py",
+      "sha256": "20859575858700887da6524e8f9d743b4a454700d39f7d3aaf053a550317c17f",
+      "git_blob_oid": "8fc36b6e985248400c7c6cea66f42f458c130bc8"
+    },
+    {
+      "path": "fourcolor/implicit_inequality.py",
+      "sha256": "f69df9171708f6c6102d155b6e39e7a8f8d2356013e7053a4713f1ea84d12662",
+      "git_blob_oid": "75c2de4856f92cc20fcb9330fb2e6b4f4cfa7337"
+    },
+    {
+      "path": "fourcolor/inherited_names.py",
+      "sha256": "235751061bc97b7cac9036890a29971c3d11688cad4aa628ceafa09412fd4c14",
+      "git_blob_oid": "30a3858c29ce20bc108b7bb3fdb5b4a193785350"
+    },
+    {
+      "path": "fourcolor/interface_names.py",
+      "sha256": "cd3d468c3feb75b2e0aa319d95177307aed53b4ce50bb0105c9dbee215e742c4",
+      "git_blob_oid": "a1c84aa109138edb6284c3d424b711314abd8cad"
+    },
+    {
+      "path": "fourcolor/interface_signatures.py",
+      "sha256": "47e142a462034e3358acba38238ed85a10c01e9c7d1225643edb9fcc165802c2",
+      "git_blob_oid": "ad007220a31d0bde15875bb6782acb0d82948971"
+    },
+    {
+      "path": "fourcolor/joint_boundary.py",
+      "sha256": "f2191d544d036ba904fe912d68327f9c3e6f14e41eaa686c01b4303b9353ed53",
+      "git_blob_oid": "29b599226c4e1c168fffc1624eeb98c362d274ce"
+    },
+    {
+      "path": "fourcolor/joint_boundary_restart.py",
+      "sha256": "3690431efde9bf437f1e0926bd87a3a26ff044f78e70df6162710e6e331648e6",
+      "git_blob_oid": "bd17f9ca1bc1e140f37d2c639935f04d12c75339"
+    },
+    {
+      "path": "fourcolor/joint_lines.py",
+      "sha256": "7d0fa2df82b719ceba514818f27d4b155f7e96d47b3c173743e3adf44b930e88",
+      "git_blob_oid": "1bfad090bdf64bae8738b6695e13529eeca705ce"
+    },
+    {
+      "path": "fourcolor/kempe_history_policy.py",
+      "sha256": "0f26efa5a90def334831c973e6965e417c3ae811c5abbe0622f9cd6baa4d6d5a",
+      "git_blob_oid": "27cc66abdc6a58bca66fae975bde90507b572701"
+    },
+    {
+      "path": "fourcolor/kempe_reconfiguration.py",
+      "sha256": "cd1dd753532d19d02114fc31d55a47aaa2f995f5b6d156d4b3a8e2daccdf3c04",
+      "git_blob_oid": "4c0f8969c413035470026d2bff57369103f6ddda"
+    },
+    {
+      "path": "fourcolor/kempe_split.py",
+      "sha256": "b5264dfcde5953f38a976bedf5d1684bd6fe347e93aab8517047c53785d4eb30",
+      "git_blob_oid": "46b094064d58bcb2c0d0c8f8257f0d3adb1dea7a"
+    },
+    {
+      "path": "fourcolor/level_sides.py",
+      "sha256": "222a8f752722e95c646d5ec58bbbcfc6ff94108d1d893d00806c960a25fd45ba",
+      "git_blob_oid": "e0525dfcff05b35c37ca14dca738dfa3e41b63eb"
+    },
+    {
+      "path": "fourcolor/level_sides_peer.py",
+      "sha256": "a1b1add2d97d34ab29c35e6fab7f5a665aa6841742080907ea95b5d4002a5c56",
+      "git_blob_oid": "4617a7b8028eb981dea875ae8e58195e5cb55b94"
+    },
+    {
+      "path": "fourcolor/line_names.py",
+      "sha256": "8fdfb7019d89edd01643bb5e1554a3aba8480dfbc032f34c72039782c620ce33",
+      "git_blob_oid": "c04f74de5b4cd2adc1f71adfeefa5f5cae69a2c7"
+    },
+    {
+      "path": "fourcolor/local_reuse.py",
+      "sha256": "f16793e320bb446c2966a14b5c723158c908f13214ed00b94ba6a009e9b5f5e8",
+      "git_blob_oid": "cc13ab77aa551aa959d792b49f1a3ff30159a7aa"
+    },
+    {
+      "path": "fourcolor/orbit_frontier.py",
+      "sha256": "13067029f33fc13961cbb79d12b7d2252432493b63ce26776d44794363375d00",
+      "git_blob_oid": "402016053e73b69b555ca734fea39692f8e83ac1"
+    },
+    {
+      "path": "fourcolor/peer_batches.py",
+      "sha256": "ad8bc0ffcb9b658da6b56ed0c32d18685996f9639f0b01598e37031f620333ff",
+      "git_blob_oid": "c6fa25b646830430c43a69501b208bf435e830ce"
+    },
+    {
+      "path": "fourcolor/prior_operation_restart.py",
+      "sha256": "d9432da1e9811055994ba0531c572e79e4deb0cb01292a1ca7501e7683ee237d",
+      "git_blob_oid": "f41d0bae789e573df88f840ce5fce412097462c9"
+    },
+    {
+      "path": "fourcolor/prior_rule_reuse.py",
+      "sha256": "315ac359efb51fa264b3bb866b0ee2272137ef7cceba03fdf10a7314a7e10e49",
+      "git_blob_oid": "8f93f88cf3e7628da533ea143460c8959609883f"
+    },
+    {
+      "path": "fourcolor/probabilistic_names.py",
+      "sha256": "ed1bf39e471319346c48a8e1a5daeae4f8a1433b398ff6a700701d83ad142764",
+      "git_blob_oid": "da168a6db457b1ae6f351b1f337d2b232e97ad49"
+    },
+    {
+      "path": "fourcolor/recoloring_boundary.py",
+      "sha256": "16c525cdcdac35a26e53e7429a0130b435d65929aeb4633c112f47bf62ff21ae",
+      "git_blob_oid": "81d345598f1bef1298a4171fbbae9dfde42bdf89"
+    },
+    {
+      "path": "fourcolor/relation_frontier.py",
+      "sha256": "9d385da99c36e0b9f59c3d2182b697cd8d2b27734014cf97b0314c4ef785e316",
+      "git_blob_oid": "115a04e1a5a629de991b521dcbca3556be023bd0"
+    },
+    {
+      "path": "fourcolor/relation_names.py",
+      "sha256": "cc6566e959ab87c47d670dc8113d856f64e77132e5542c6d6ec8e98cec28d8cf",
+      "git_blob_oid": "867c22ebff04b6e8f01c35293b14197e708d7be6"
+    },
+    {
+      "path": "fourcolor/repair.py",
+      "sha256": "1e5dff45897ff5f83202b577ae9cebc4f58231143e8e02b10f5c34a0ef879cb6",
+      "git_blob_oid": "e5050e4129536e67be697c6f08988a65d2678899"
+    },
+    {
+      "path": "fourcolor/retained_profiles.py",
+      "sha256": "5caed3fe79850cd7bd66a142ada98e5732e3af058325adfc2772fc2da5faec47",
+      "git_blob_oid": "a32be1c8fd3b1d87846c5a443df074f474e49866"
+    },
+    {
+      "path": "fourcolor/staged_levels.py",
+      "sha256": "50eba883b5ba20b3af578695a27d6f30ccea43de4abd8e63f7942492ca381e4c",
+      "git_blob_oid": "7fcd47c0d91c4eba34c4dda0890ff3162bfbd5f4"
+    },
+    {
+      "path": "fourcolor/strip_chain.py",
+      "sha256": "30f33bb5f988d34b8ab5a68f6887b6dfa13dadb7cf1ca7a550f6c9098be67d1c",
+      "git_blob_oid": "b6c729cefd72d4ea160fcbd33bf427c20c907b14"
+    },
+    {
+      "path": "fourcolor/structural_name_relations.py",
+      "sha256": "20b7a71008ca6f85d5a785e5fd354778da55e032e7848603992b399cc157015f",
+      "git_blob_oid": "2474362a2ea8a1f7bd913d39560eeb98e1f95944"
+    },
+    {
+      "path": "fourcolor/structural_restart.py",
+      "sha256": "de75e46c09f9bf981c5dd04af6e7b572a809630ca93552b96d0841b925a41a34",
+      "git_blob_oid": "64ac189023a19805d47ae3a13e19f5ef2ec3490a"
+    },
+    {
+      "path": "fourcolor/target_renaming.py",
+      "sha256": "8d0a44ced52a63f9878cd57444d2a1f53812a3f0c05a5d9f20001032f7e9ce5a",
+      "git_blob_oid": "be3f8dd3f69f68826280e143225ff635f63a21ef"
+    },
+    {
+      "path": "fourcolor/triangle_chain_family.py",
+      "sha256": "93d58a2a13c6d401fea55e9c1bde804b2fbea921420be79cb4fc4410595d94ec",
+      "git_blob_oid": "2578020d34b3377a4945d9dfb0118bc1ecd01176"
+    },
+    {
+      "path": "fourcolor/triangle_chain_replay.py",
+      "sha256": "f36652e6d99018e0b64a7a547b249cf5a5bb0dadee1bcc3f98af0d412aaa2864",
+      "git_blob_oid": "c464912be165a228f5e3f081952a1e2f0cf9e13b"
+    },
+    {
+      "path": "fourcolor/two_port_reduction.py",
+      "sha256": "b5bc8580804d83275d73ecd139d8e7721f228e05a37b56e7af704778ec82d558",
+      "git_blob_oid": "36be0e2482877892ea7ac97de1fc9ec850bfa077"
+    },
+    {
+      "path": "fourcolor/weighted_lines.py",
+      "sha256": "21cf5484a0504807463dafaa54992bf2cd6b1a4924e80b5a4ad29d3381ddd389",
+      "git_blob_oid": "6efe450397c9ae91b9fd4359dbb56cbe392c1aeb"
+    },
+    {
+      "path": "fourcolor/whole_lines.py",
+      "sha256": "5bd54516c18ff74c2dcba2a5e89a27b1af7e3c0277fb3aa8e12f0efa55f9312c",
+      "git_blob_oid": "88978d6fb3941ca59000b01ba8c4be7e65ff238a"
+    },
+    {
+      "path": "scripts/quaternary_contact_model.py",
+      "sha256": "12bd29155a224d72484981033f2fa18ca3c6ac1c9193bd919602c78d929b9dd1",
+      "git_blob_oid": "f433f68aea943b445ed5710fe4a0e0ca163d5765"
+    },
+    {
+      "path": "scripts/validate_global_restart.py",
+      "sha256": "2807c3ce904e42e4fb2bd194f773724c6bf7364f592d8cc730dfecc856601c18",
+      "git_blob_oid": "2bed61bac6fb7ae703122b5b1c9864fae2424dfb"
+    },
+    {
+      "path": "scripts/validate_quaternary_contacts.py",
+      "sha256": "cd348938078377136c41ae9bc3038b1ff524dc173eaacc2d1b02d354ba309a72",
+      "git_blob_oid": "fbc706609dc6bc136e2fcbbbef55b96ef711fc0b"
+    },
+    {
+      "path": "tests/test_quaternary_contact_audit.py",
+      "sha256": "81fbdabde00b70b19993563bf9d26871271e3786db52589cede359899510e2fc",
+      "git_blob_oid": "863f25ca02fc3333119393b158f48d7baaba7da7"
+    },
+    {
+      "path": "tests/test_quaternary_contact_model.py",
+      "sha256": "ddb0b4e5ff840f2760713ca1e2cdfb7920190d34c6a1176eda8e27d2c8d30698",
+      "git_blob_oid": "2593bc2088788c3523ae23a8c6e249a2f7e9ec20"
+    },
+    {
+      "path": "scripts/validate_quaternary_contacts_v2.py",
+      "sha256": "e5c6584c881d74a6189a301cb161e55c9b1533138bb4491aa4b819efbb4c3fc2",
+      "git_blob_oid": "e1e4db6059d2396cfd3efb98ffb26c45141dee01"
+    },
+    {
+      "path": "tests/test_quaternary_contact_metadata.py",
+      "sha256": "726c09d9ca7bebcb0c98f7967a85cf486132a351d29d502f13119dd7c58f6b84",
+      "git_blob_oid": "6e142f8080eddf3008fff4b0025c53b36eb54813"
+    },
+    {
+      "path": "docs/QUATERNARY_CONTACT_AUDIT_V2-2026-09-21.md",
+      "sha256": "b6bf126079e0940f76ee3b25383835d449f4e61d35a0fba5f7334dea0cb79662",
+      "git_blob_oid": "4d569359730525ea57c2d7df41de3d57975b6816"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "47fc2c02a1b9ff1a44c789e36a91d06f8e29294ec011b2fd576cbc2896febc6d",
+      "git_blob_oid": "95ca041e4183f234a1b9327213d096cfe2c1e4bb"
+    },
+    {
+      "path": "docs/EXTENDIBILITY_PROTOCOL-2026-09-21.md",
+      "sha256": "e0468f0a722c49f051e16ed474d8fd59cfb7c0657fd65534dad942c03316a6f9",
+      "git_blob_oid": "d3fbc249ad327b4271a008fbc16960ead27cd472"
+    },
+    {
+      "path": "scripts/analyze_line_generations.py",
+      "sha256": "48058342337b5a7c5ec523df42e16d447ccf1009dd4ffdf9f1924e06c1e57bd6",
+      "git_blob_oid": "63733894d09413fbed42b8e4f1dfad113509bc8b"
+    },
+    {
+      "path": "scripts/audit_commit_extendibility.py",
+      "sha256": "48b5fe0a6e0cfdf0af79557447810bc32810760e350ea8bdad2aa6bf719e64c7",
+      "git_blob_oid": "20f144b520ed2cda54aeafca7b36f9eb03c7079a"
+    },
+    {
+      "path": "scripts/current_corpus.py",
+      "sha256": "f107a35500c84db4fbfc3b9b4c02b7dbd8dc49f0402309525066dd6d0023e519",
+      "git_blob_oid": "d360b9f9047c4ddb1a361842bde27e7d6560b14e"
+    },
+    {
+      "path": "scripts/exact_extendibility_oracle.py",
+      "sha256": "8e11354484b53c38446b5afab607064b6314ac46a1d6f2594089b11167f0ece2",
+      "git_blob_oid": "1d88d6621bd359aa75fb1c195d0fc06604016882"
+    },
+    {
+      "path": "scripts/exhaustive_grid_subsets.py",
+      "sha256": "1803f8cbaf1a3325d8913ac107a519c22cf79c295547280538514c07686eaa3f",
+      "git_blob_oid": "ef8bc79fb5f998ee03b222dc7d1703a8b9f7f437"
+    },
+    {
+      "path": "scripts/exhaustive_rectangular_histories.py",
+      "sha256": "db5c9faecda0b5c2f4536fe55475c055d74c3c75aaa6b8997288832d4c24a702",
+      "git_blob_oid": "92c00fa51e5832a9efbc1b84615fd18ba002cb68"
+    },
+    {
+      "path": "scripts/restart-geometry.mjs",
+      "sha256": "66d72196c12e56e2ca63b6debb06b661e6dc9a110be6c4f236d9f8f32653897e",
+      "git_blob_oid": "a2b5d628f8da733dc9d8756d6c6383cc334f07b1"
+    },
+    {
+      "path": "scripts/validate_frontier_restart.py",
+      "sha256": "74b0d487b04ee218c3328cdbf566801812472cbe47a71b4f78bbda580aae39a7",
+      "git_blob_oid": "bd82478416ef6d8901fedefe3891dad65580ff31"
+    },
+    {
+      "path": "scripts/validate_level_sides_peer.py",
+      "sha256": "1226941d2a95b632eec0532581b21d775afd25eb24a38b05a039d485528e803f",
+      "git_blob_oid": "8fa5938be81871841814e12a7b3da3eb008a5f8e"
+    },
+    {
+      "path": "scripts/validate_relation_frontier.py",
+      "sha256": "d572cdb030021d3d080e7cf277f688e80c2a5af87b7a52cab3d1991f75b4248e",
+      "git_blob_oid": "1061d1f7767f2114cc6cbbc42d52e3d31394fee1"
+    },
+    {
+      "path": "scripts/validate_structural_restart.py",
+      "sha256": "3900b1bbe98f46e068f485e1297cb7c08299bac3468a06609c8378d63b866c05",
+      "git_blob_oid": "5932b3f43a81ba74fa699da1828260998dfcc5ba"
+    },
+    {
+      "path": "scripts/validate_weighted_lines.py",
+      "sha256": "d4cd30cb02e5e269598d48599fcd090731c92c7d9903222bd581e81cdd6f0eea",
+      "git_blob_oid": "6092367e0c7e8a7c60c920ae3fe061aaaec36109"
+    },
+    {
+      "path": "tests/test_commit_extendibility.py",
+      "sha256": "f4d13bd3f72ce0c4ab77f3c5e87ad202d8973cf4a775153bfec7156e39bdcb47",
+      "git_blob_oid": "5ae10f624dd4c20d9acdec6ce64a887e1c2aee69"
+    },
+    {
+      "path": "tests/test_exact_extendibility_oracle.py",
+      "sha256": "6d0810c3e27ff37dfeb454044d15ed7cc1107c7a777de962b0a0674fd0539722",
+      "git_blob_oid": "a675d855b8bb93129549258c23be04046a04dc95"
+    },
+    {
+      "path": "tests/test_exhaustive_grid_subsets.py",
+      "sha256": "334da333257d0960b383bafc060b25ad1b3a229d0d1268dd735ae3ecd1aefdc4",
+      "git_blob_oid": "4fbebda317012af2f2430671ab6962d10e26db82"
+    },
+    {
+      "path": "tests/test_exhaustive_rectangular_histories.py",
+      "sha256": "3ad0f03df79ff3c85950cb4dd7f8132237fb263a04f4ae99b35db186fb093658",
+      "git_blob_oid": "071dbcf484ffca930f56a2a71e1a2ecb2db6e1ec"
+    },
+    {
+      "path": "web/app.js",
+      "sha256": "90faedfe01694890cf6e604b810a5a2d98ac360211aa57c0c7723ce837c0ab2d",
+      "git_blob_oid": "a5966354bff6005dc5af04dec9c4a03f96672c88"
+    },
+    {
+      "path": "web/cases.js",
+      "sha256": "55bb239e396e8d6020ad16b3815bead6b6a285ae9384a438cc116038d3543493",
+      "git_blob_oid": "4ef6c9a5942c3d3cec8318ddaa29000e9816c50a"
+    },
+    {
+      "path": "web/construction-cases.js",
+      "sha256": "c2f1735ca5d46c1a54c2f1c8321856766eb39fb20379fea6facdc18ec7ccefdb",
+      "git_blob_oid": "896f483fc4a4b3faecdd80a6d40bed9ebc6445bb"
+    },
+    {
+      "path": "web/construction.js",
+      "sha256": "c79ae59a8f7d71bd5b4f8669e3720e2f49f634211a0d340f5aaec651615525f8",
+      "git_blob_oid": "e43c5f01e5af0b84869dd2954aa6988d02fc8d71"
+    },
+    {
+      "path": "web/engine.js",
+      "sha256": "1451287b703e6f90765a1ed96acd2c4c5fc30d467be6c207da81f4b982035d84",
+      "git_blob_oid": "bf7c7a592cbf59c1fecf2697940ddbf004e5d0c4"
+    },
+    {
+      "path": "web/priority-names.js",
+      "sha256": "50181d9d0ae7b1dfe61b98fb3754f980a49d2398c0fef1bd9234c44ebe74f8c0",
+      "git_blob_oid": "66ef6c8e3d0e9160cb262fce4cfbccbe37e26825"
+    },
+    {
+      "path": "web/rules-app.js",
+      "sha256": "c85e70542916d8e1923931ce93336f7e71a8cd76dfc0009023bb2ff917e9ee5b",
+      "git_blob_oid": "f286c401774f07cc32a7728eb0d7356c0b70cf06"
+    },
+    {
+      "path": "web/webmcp.js",
+      "sha256": "84964c5863ba415462e552c1a34bc343359a21948d6b9628dfe86fd7e55ece12",
+      "git_blob_oid": "0ea2246efea17cd77d748fa051a8023f9930cb20"
+    },
+    {
+      "path": "web/worker.js",
+      "sha256": "d5d41927a36af40b74017fb6153a793d9f4a0b09dab80211b482f6fc9e2b5885",
+      "git_blob_oid": "b7ce311f7f8a95c2f54c2d18f465b86cc789e6d2"
+    },
+    {
+      "path": "docs/STRUCTURAL_RESTART_RULES-2026-09-21.md",
+      "sha256": "fc0fa642730d1bc4ff728243f41aa9ffee6ac66b041f764bc1c1d3b5fd07b9b8",
+      "git_blob_oid": "25d1302e614163595bebc63f21e8c1f3ca48ee59"
+    },
+    {
+      "path": "scripts/validate_level_sides.py",
+      "sha256": "b3fc714c0d07e7159c10ae14a92a787aeff3a499470917429b3bee20058ecff8",
+      "git_blob_oid": "d115c0aa9b607d9a674ecf67f0f90a02d30414cb"
+    },
+    {
+      "path": "scripts/validate_level_sides_peer_full.py",
+      "sha256": "d2ccbcbed7530ff1a996e288816c26afdb3668fa6e810adc68df64583911e41e",
+      "git_blob_oid": "b2c7f6d81b9366c76cb56d7c938080e17a9e7985"
+    },
+    {
+      "path": "scripts/validate_relation_frontier_full.py",
+      "sha256": "d5e06a138f26a8275358ee1c9473cac697e63407ba43c551132b3c72fb3dca69",
+      "git_blob_oid": "5f03f1750db00446a8eda99baaea1b6179131070"
+    },
+    {
+      "path": "scripts/validate_structural_restart_full.py",
+      "sha256": "f668082657fb7943ab211f4ac4abe31a06e5acb3275ee6dcb5a284586841226f",
+      "git_blob_oid": "1aa2e1358913b9091d026e58fb0a6ee848e44822"
+    },
+    {
+      "path": "tests/test_structural_name_relations.py",
+      "sha256": "2d6b81cedb62eafedaa26e6ba92603d77655a273e2d8f0dbeb473c29c3a20940",
+      "git_blob_oid": "8d57f6e9dc59891d3139c41aa4bea7a49119deb0"
+    },
+    {
+      "path": "tests/test_structural_restart.py",
+      "sha256": "1eacd6e81f8341df0b24a13f3d080e78a617a25250988680111e1f4d72cd98b8",
+      "git_blob_oid": "31fea2fb89c08fcd7492f15f59c94d6e226eda40"
+    },
+    {
+      "path": "tests/test_structural_restart_full.py",
+      "sha256": "1d2d9769d2295036ac692df3a2ead79168d0d6d2d399acf92d604d508ab40bff",
+      "git_blob_oid": "0b45ea4130cd7de1256918e780adb4a55775155d"
+    },
+    {
+      "path": "tests/test_structural_restart_validation.py",
+      "sha256": "c64d4700628d2e145a122ffeacd366ef252ccbc3e0090faaa0e329bb8e5d425a",
+      "git_blob_oid": "c7677e0f8ba3eca5e903caf2a947516cde284c8f"
+    },
+    {
+      "path": "scripts/quaternary_geometry_adapter.py",
+      "sha256": "6219e8b66e65844fdb646ee2ea26dd1e2fd1e9981395db4b264b56f9a4499204",
+      "git_blob_oid": "07cf006e4dfb99fabf31c7c371a95b72828402f8"
+    },
+    {
+      "path": "scripts/audit_quaternary_geometry.py",
+      "sha256": "58cc6019a952cb874ee4f37552c552ae0fef3276de16d67fff3669be4ecbaa41",
+      "git_blob_oid": "1e00338c28ac9ded98cc271063d6be8279937fed"
+    },
+    {
+      "path": "scripts/validate_quaternary_geometry.py",
+      "sha256": "3e104f5937cb0ffad9725d31ae3fe9dfc866f85a0e5121f0a0dc08ab2bd6e4da",
+      "git_blob_oid": "abf9bb16399bed8323cc39fc05ebe60f8307e411"
+    },
+    {
+      "path": "tests/test_quaternary_geometry_adapter.py",
+      "sha256": "b71b0b46958e390c23085727a182d1993bd21851da17d8c1b45aa5d705a93931",
+      "git_blob_oid": "290ea150a637e86fe70cb4d9d6224d4e5cb738e0"
+    },
+    {
+      "path": "tests/test_quaternary_geometry_audit.py",
+      "sha256": "460e9560ef80fe122c6087284fbee13d5717f5c1ade4e68f7b8b3d66a9d8b293",
+      "git_blob_oid": "a5f0335fcffc5aa945399449c69c74e08d8cf8ec"
+    },
+    {
+      "path": "tests/test_quaternary_geometry_experiment.py",
+      "sha256": "a73c7877f1a963fe9bd8164c0d68f81e28a426e826ff63ef8e400b1b4bd12ff6",
+      "git_blob_oid": "b374924e95cb7b868b3bd94e7b0de04a2ca2f5bf"
+    },
+    {
+      "path": "docs/QUATERNARY_GEOMETRY_PROTOCOL-2026-09-21.md",
+      "sha256": "7967a54fc4a4a734ef3a0ccea2d5870cd092314844923e4011086a1eedf5e5d6",
+      "git_blob_oid": "cdf4c206d98618de11d5511e85c71eaea8d6d7bd"
+    },
+    {
+      "path": "examples/quaternary-real-regressions-2026-09-21.json",
+      "sha256": "05d924a26dcdfcf6db85d839d2db50191124ce0662ac0ec38962b2df33cf1d23",
+      "git_blob_oid": "8dbfd6133cb0746a698b0a1b2a8df2a74fab9453"
+    },
+    {
+      "path": "scripts/construction-experiments.mjs",
+      "sha256": "094517ba881cdc70b9e4b7ab796af251af5e3eae73e5f71c561d2c47a1306e76",
+      "git_blob_oid": "3112222c40f6f6e39832fa8c3c251924e9953619"
+    },
+    {
+      "path": "tests/test_quaternary_low_color.py",
+      "sha256": "32b0c576ba4ea39d553c7167414fbfafc2c75ce36344d8e928fd88c84b3797fb",
+      "git_blob_oid": "b7fa7dfad1713796f664d0757868d8d5ca1e03ec"
+    },
+    {
+      "path": "tests/test_quaternary_low_color_experiment.py",
+      "sha256": "515666091e7ecbd1808ce64cd1dcf56afa465689889fccc9962598f1235f037c",
+      "git_blob_oid": "b5bd3e85460bf427b4d5baf305bb95bf3adeb9e6"
+    },
+    {
+      "path": "scripts/quaternary_low_color.py",
+      "sha256": "2e33ad1504d223dd4a37fcb22089b05c1fec23fdbedf5fc798888b1ad1e18a95",
+      "git_blob_oid": "e618ebd5d1a0b078739c1e7c6f1b514610ac6693"
+    },
+    {
+      "path": "scripts/quaternary_low_color_inputs.py",
+      "sha256": "19fd01e7e4b8335bae3722c0c87ad029546b7945ed27b7215c2849763efbaf54",
+      "git_blob_oid": "4128643b817df0afe574b862aeeb8149166c7108"
+    },
+    {
+      "path": "tests/test_quaternary_low_color_audit.py",
+      "sha256": "d184558d97dcc99b35c837d7df884460a84b403bc5efde47d8bdbbc45f5676df",
+      "git_blob_oid": "08761f0d34ad06ca038d78034cb9694136741b22"
+    },
+    {
+      "path": "docs/QUATERNARY_LOW_COLOR_PROTOCOL-2026-09-22.md",
+      "sha256": "203ad7cc47bef5ae430221034fbe9eb553b8db63fd3c85de0aaeb92a27d66403",
+      "git_blob_oid": "9377e885703b3fa0bcf71d4338e4c131d16b0216"
+    },
+    {
+      "path": "scripts/audit_quaternary_low_color.py",
+      "sha256": "318b0a08f71630ef13ece61a9f90c94c31a5afb255f9a9a7e612eed2768cd436",
+      "git_blob_oid": "1ff8150fe85217154998ff31b4bd6ef676ecc121"
+    },
+    {
+      "path": "scripts/validate_quaternary_low_color.py",
+      "sha256": "0e397257ce4ddcd1e81566be2884d15d83d9dcc832d5591be1d87c84ea9c3e52",
+      "git_blob_oid": "616d8b15df920099192b7cb522a8d69a23df459c"
+    },
+    {
+      "path": "tests/test_quaternary_low_color_inputs.py",
+      "sha256": "c51ae4b7b2fc9b4741182418176da2ccfa7c95a361af2c76e0ff50b1b0b3dcae",
+      "git_blob_oid": "a597d151adbae1c15d63552b8e54e89d1019b2c0"
+    },
+    {
+      "path": "docs/QUATERNARY_REACHABILITY_PROTOCOL-2026-09-22.md",
+      "sha256": "1bb002de0aea1a73f3e4789c2e0001940b905b07ee7ec2faec01c9e85fbe8c09",
+      "git_blob_oid": "e69fde6d9c9a1f9c042cfb98b49addaa8c589706"
+    },
+    {
+      "path": "tests/test_lifted_bipyramid.py",
+      "sha256": "f58cf77f37a99f519679b54138ccc01e5b6f0b665ac2e1d43e4cb36726a4c382",
+      "git_blob_oid": "122be76017559dd3c9c52fb13816bd1ffcdc9f5f"
+    },
+    {
+      "path": "scripts/check_quaternary_reachability.py",
+      "sha256": "0d44e69161b5640990f58563a2a42ffabf763004b21016fb4056c495b6bbe963",
+      "git_blob_oid": "846cd755b9a88e0de00ade4c3b98aa8d9dc550ca"
+    },
+    {
+      "path": "tests/test_quaternary_lifted_obstruction_inputs.py",
+      "sha256": "7e574718038ff912061d4268608774a4ca9a4d591303546ed2f102be7e41cb3e",
+      "git_blob_oid": "0e6deaa6898a792c2e15fb0765453cb8cc8c98d8"
+    },
+    {
+      "path": "scripts/quaternary_lifted_obstruction_inputs.py",
+      "sha256": "0125228fe4d54b4aaf8405c867ef26863fa176294b359456eb8415302dcb1cd2",
+      "git_blob_oid": "338081930c4a83c398a1f0a160b0c86f00248c28"
+    },
+    {
+      "path": "scripts/quaternary_bipyramid_inputs.py",
+      "sha256": "c6f341a7e055571ca61be3ff9603fa8ec71b0e159ed3837ed99de3885b3e759e",
+      "git_blob_oid": "1c60fb2bf2648886f4f2d92ffbcf48d1a9b879e4"
+    },
+    {
+      "path": "tests/test_low_color_obstruction_states.py",
+      "sha256": "cda472a2f785af644578be560a103c58fa1ea96ea160254be75ad8fdab0a1d01",
+      "git_blob_oid": "244fb4ecd7c01116d031dedf35662caf21192163"
+    },
+    {
+      "path": "tests/test_quaternary_reachability.py",
+      "sha256": "d402dbc619f66ed97b6f7fbadf16d8d3859047bde17a57541a2f745b0bafb0bf",
+      "git_blob_oid": "a89473541afe85ec6d994d57b827783a9a584db1"
+    },
+    {
+      "path": "scripts/audit_bare_bipyramid.py",
+      "sha256": "db72b23c3950989fcc837f4e8d0be7667f4fbfadaea66a3d56fca2737e635fcf",
+      "git_blob_oid": "4392dd61c44bddf9cecfeb24c2ba662679b93389"
+    },
+    {
+      "path": "scripts/audit_lifted_bipyramid.py",
+      "sha256": "7aab43c809d5f6c0641da50cd896798d37ba93c2dadfa22251f55134b7579b03",
+      "git_blob_oid": "f190afb6dc3e09ded28f654b10232e2c2fac4e3e"
+    },
+    {
+      "path": "tests/test_bare_bipyramid.py",
+      "sha256": "042ec665193c77fa71fa042f8d14c58566f9b19844e594ecc28b549cffec0e57",
+      "git_blob_oid": "0aa0dd396abcfb85b2453b77ce076bbbded84d99"
+    },
+    {
+      "path": "scripts/scan_low_color_obstruction_states.py",
+      "sha256": "0b2faa973903cabe7af4bd35bf88c54a4eaacb2374c6a5d10793d2fa3f96c417",
+      "git_blob_oid": "51a6f651f7603f9bfaf3ef8a8e9e4ab187dc0426"
+    },
+    {
+      "path": "tests/test_quaternary_bipyramid_inputs.py",
+      "sha256": "3ed6e02ae64d1ab6b8235135b78dcc4453f9540d272f53882d3361db57c3a083",
+      "git_blob_oid": "5a45fc0808c7bc616fa562d58f6f65b37abe1cab"
+    },
+    {
+      "path": "scripts/validate_quaternary_order_probe.py",
+      "sha256": "74fb1213b67d0975c3dbc03384244527c991175be501045e2a25048a957f711b",
+      "git_blob_oid": "1f81616e4a9e2c93cdccb4f1fee4a6c320a23d72"
+    },
+    {
+      "path": "tests/test_quaternary_order_probe.py",
+      "sha256": "fd84d376e97bcc5ee963ab490279c9e5875938e04bbe87825d6bf8c3a2a06134",
+      "git_blob_oid": "f65948ad3053c6f1399a817aaa76294d4c00f8f2"
+    },
+    {
+      "path": "tests/test_quaternary_reachability_artifacts.py",
+      "sha256": "2397fcf951754d7878a9ada6f7d5c3374a6f134c6c9815721d1ab939de1d9270",
+      "git_blob_oid": "1ecbac62a640046d0c4d080d020e3ceb2929a4c5"
+    },
+    {
+      "path": "scripts/validate_local_reuse.py",
+      "sha256": "4bd55b56a41ef7e3cea32a80293d4d2e8ab4a711bd20441fc376371b21aa350c",
+      "git_blob_oid": "94a013afce76821f936c5f9ece19414549ab6240"
+    },
+    {
+      "path": "tests/test_quaternary_root_support_inputs.py",
+      "sha256": "db3daef8687efe07d015cbc162ddbd62aadab313b448c90c7f4306c48eb0f3f7",
+      "git_blob_oid": "b51fe19fd8f61e4e74bc2cd49e09ae980a63522b"
+    },
+    {
+      "path": "tests/test_quaternary_reroot_inputs.py",
+      "sha256": "4ba14870dc4614384ed54e4ffc836be50814d7952f72bddf1c446764d247f0b4",
+      "git_blob_oid": "afcd6c23e020b3f2a857e39fa6e32fbb481701b7"
+    },
+    {
+      "path": "scripts/check_quaternary_reachability_artifacts.py",
+      "sha256": "1b7f97a13584b17ecd286fa3067cbe5ee32bbcb4ff9ea697730c12719ff8e06d",
+      "git_blob_oid": "5ac63db7d4097125c8ed4de3f3b42322e641b1df"
+    },
+    {
+      "path": "scripts/audit_quaternary_order_probe.py",
+      "sha256": "9370ed93f2a5997d07e9c707fb4e153dce801f84b4fcc115ba1dd0e790be3d5d",
+      "git_blob_oid": "bd7d88832872bdc5f3b10755e6edee9357f62d6a"
+    },
+    {
+      "path": "scripts/compare_local_marks.py",
+      "sha256": "d77aca237830512b78127222c2c8a660bd50d418a6cfa47439bda7bee29cce73",
+      "git_blob_oid": "328ebeeaa5637896d241bbb77ea0565963abe821"
+    },
+    {
+      "path": "scripts/check_quaternary_low_color_artifacts.py",
+      "sha256": "df33ebc9ca9b9945241af98608718ec6764f840b5c0430a8f21ab91f08418bfc",
+      "git_blob_oid": "d3c38fd62c09b62f8696a8658cdba22c77ab8d81"
+    },
+    {
+      "path": "tests/test_validate_quaternary_order_probe.py",
+      "sha256": "98fc17093e5eaea85a5594876150cfb753ca020e39556ffd885b77c8cf232ff5",
+      "git_blob_oid": "eba256d20c91a09a4b1636368d47fc9cabbd3986"
+    },
+    {
+      "path": "scripts/validate_retained_profiles.py",
+      "sha256": "0a5d700d557bb0a54f401c3a8c7d7f8dc21d448720f24404ba195f2292c941c4",
+      "git_blob_oid": "b83c57df93cced469dba75968713181366266d67"
+    },
+    {
+      "path": "scripts/order-probe-geometry.mjs",
+      "sha256": "11d87e83370fc76007fe6035bce0f93d66c8d5f312cf5648d725925ca7e542fe",
+      "git_blob_oid": "45c4070b90330d2dd6fa4abe5a6ad253e3e16886"
+    },
+    {
+      "path": "scripts/quaternary_reroot_inputs.py",
+      "sha256": "0e7505b796b3d6014b316700792ce72ab9a8eb9a264b8832317df5a7fcfce058",
+      "git_blob_oid": "a4a1509e867009d3b3a358e265dfc4aef45367db"
+    },
+    {
+      "path": "scripts/quaternary_root_support_inputs.py",
+      "sha256": "779b2e89ab2252a381505751ad748647d3a5ab9f6869aab947aa74dfeba037ff",
+      "git_blob_oid": "fafef7b6af3588aa317c311214250a48ee5d7d82"
+    },
+    {
+      "path": "docs/QUATERNARY_ORDER_PROBE_PROTOCOL-2026-09-23.md",
+      "sha256": "08980e8d578340bb092b6a5ea5e8e037d2036c712b0f315cb7402618debe5cb4",
+      "git_blob_oid": "8cdac0deb81d4c37e9e2565ac4315882f4c80841"
+    },
+    {
+      "path": "scripts/audit_retained_blocks.py",
+      "sha256": "be76a3a94cc9e2a473045b8575283ad84264247ae6ad494b3387aa92808fdb19",
+      "git_blob_oid": "4eeba3a8f0c914b49402b47056ba044130fcbcb2"
+    },
+    {
+      "path": "tests/test_quaternary_triangle_eq.py",
+      "sha256": "d01671223d42909a493b56bc3d04d87c85e37af44e1a7f2f1e87f69e5698a71a",
+      "git_blob_oid": "baa882bf57bb07db92616b7cbb4aabe944c460f0"
+    },
+    {
+      "path": "scripts/quaternary_triangle_eq_inputs.py",
+      "sha256": "418ef07717c71df8b7ff259127b28c89a3fa836904df715255fb6a6262a83caf",
+      "git_blob_oid": "236d8f2f15acb262d1c6a50336120674dcfb8d5c"
+    },
+    {
+      "path": "tests/test_quaternary_triangle_eq_inputs.py",
+      "sha256": "3bdf1ea9da6bfa23bf3398cae27a86dd6e5b64e6125e1765ddf7a318fb9defea",
+      "git_blob_oid": "66c0a0540528665138c55ae8375770924b330128"
+    },
+    {
+      "path": "scripts/quaternary_triangle_eq.py",
+      "sha256": "fcbebb5e242375fd7c09bae9c6791fdc87b4dbd9846f9b03567973a6bec7ac99",
+      "git_blob_oid": "9bcfd74984ea00654682cd7e5ea9341d569ee22a"
+    },
+    {
+      "path": "scripts/quaternary_triangle_eq_low_color.py",
+      "sha256": "c3591008469ddee67431fd6f714edc70ebb5cecf078a482fbc0b2b1f86574b5b",
+      "git_blob_oid": "e1b0f4081aa8245003c03e91458b540ba49877a6"
+    },
+    {
+      "path": "scripts/check_triangle_eq_rule_soundness.py",
+      "sha256": "12382d3f5c22ebe8ed8968a59f802e158235dbb5de3d48b95f790f44204778a9",
+      "git_blob_oid": "097fe9e30ef236a5ada122c2371c65bc1e774069"
+    },
+    {
+      "path": "tests/test_validate_quaternary_triangle_eq.py",
+      "sha256": "d678d03ccea3d46836f7c45a5aa09c3651435136dedf099435deab24b8b07ffc",
+      "git_blob_oid": "5c8fa6ad8a2fb68a8a926b75b7508a1fae5024cb"
+    },
+    {
+      "path": "docs/QUATERNARY_TRIANGLE_EQ_PROTOCOL-2026-09-23.md",
+      "sha256": "1ecbecf0f30eaa80ff02cfa5bdbcc45f4b8574bb71fcd61394ba53f3223dde09",
+      "git_blob_oid": "0fbf6f3a4f6414c983b32a2f1e4b519e69aae4f4"
+    },
+    {
+      "path": "tests/test_quaternary_triangle_eq_low_color.py",
+      "sha256": "32d066fff09c1d9fe218db6360f00e0447b5ef5c1530f7c9740c6d7fb0eef3f1",
+      "git_blob_oid": "69564aa34135b6a93f384adc286ad2e962bc021d"
+    },
+    {
+      "path": "scripts/validate_quaternary_triangle_eq.py",
+      "sha256": "eb9bfbaea317562bb54b30815f283ae723c8f775f8308a6b1de45ae984a0730a",
+      "git_blob_oid": "3f695eaed4f5e92921e6ee205f4346735ea84537"
+    },
+    {
+      "path": "scripts/audit_quaternary_triangle_eq.py",
+      "sha256": "70f687df7fd6ff4465bcd016897ff539a6ab2f5f93c893efdd290c77a82df66b",
+      "git_blob_oid": "a751379c401243d0d8c8f69cf0248068749049a1"
+    },
+    {
+      "path": "tests/test_quaternary_triangle_eq_audit.py",
+      "sha256": "a97ce96e4db647f548efa38b7794cd28076ea097fa5f9af005044a6d73462605",
+      "git_blob_oid": "4b276783938488267cd3d4118574a99f994a5fac"
+    },
+    {
+      "path": "scripts/quaternary_odd_cycle_eq_inputs.py",
+      "sha256": "6fc69ec41b00db56bf7be6faf264106976622015dadd7bf5a10fbde8a6c33496",
+      "git_blob_oid": "dc69805a8cd4582d20c8fa887186c45581342705"
+    },
+    {
+      "path": "tests/test_validate_quaternary_odd_cycle_eq.py",
+      "sha256": "79015767c2c42eafb07d0de8ed193349ab208689e980443158c3792a043fcac4",
+      "git_blob_oid": "c1cdd28888ca9bba8c4eb24b6604251a81ba6a4c"
+    },
+    {
+      "path": "scripts/check_odd_cycle_eq_rule_soundness.py",
+      "sha256": "ce29983c010e38d7e0f4e5123b193fb23b31d4b92e542d98189b9a3612484127",
+      "git_blob_oid": "39b911051c9b87a098b7520ec67c40aa7a9fca7e"
+    },
+    {
+      "path": "scripts/quaternary_odd_cycle_eq_low_color.py",
+      "sha256": "3f02a9d5ce4f0b99a363d2fc0dd6dfc2c7f7e5489ffe41cc579069f68ad97d40",
+      "git_blob_oid": "4915932bb16865fcfc092dafe6264667968b48f1"
+    },
+    {
+      "path": "tests/test_quaternary_odd_cycle_eq.py",
+      "sha256": "9194d0cefa8be0bcf84bedab2158419d51c038a4a72cbc1320f78277aaedc02d",
+      "git_blob_oid": "3d41d1286d973a6060cadbe11f26d9931569b40b"
+    },
+    {
+      "path": "docs/QUATERNARY_ODD_CYCLE_EQ_PROTOCOL-2026-09-24.md",
+      "sha256": "4ada0a320410299564af4faeef4e10c50c3aaa71b93439bd816e34415ebe5840",
+      "git_blob_oid": "8235b67234904487c2cf5df6474da73cae9ebfd6"
+    },
+    {
+      "path": "tests/test_quaternary_odd_cycle_eq_low_color.py",
+      "sha256": "f75cacd592c374bff4e734c252477cfcf2df202124a15c07982da580139d97ab",
+      "git_blob_oid": "a348b369e2b219f5c96f4a74606232f32a76ed1c"
+    },
+    {
+      "path": "scripts/audit_quaternary_odd_cycle_eq.py",
+      "sha256": "fc637e3e13d7c339e7c96e777d3cb64d06cdd1e3238578638ff54cf7785d995c",
+      "git_blob_oid": "4b42a22b6f5354565d053fb5b6ef2b2cbb4a2340"
+    },
+    {
+      "path": "scripts/validate_quaternary_odd_cycle_eq.py",
+      "sha256": "c5553040392dc7edd234812f87fd4a79f8b5ba4720cfe37200f3fd706cd58b11",
+      "git_blob_oid": "0ac4aa7aa167ee2ae24ba588f8b7e15841554af7"
+    },
+    {
+      "path": "tests/test_quaternary_odd_cycle_eq_inputs.py",
+      "sha256": "0ce7f8980e271942de84d5be4d2ddfe0fa6419285a42805adbbfe97fe952afa7",
+      "git_blob_oid": "7119b70b261febbbac9135c56e18a043348875c1"
+    },
+    {
+      "path": "tests/test_quaternary_odd_cycle_eq_audit.py",
+      "sha256": "88967c4940f78e4c08af591ef9bcd9492bdb7ad4308774a8356f45413b631930",
+      "git_blob_oid": "a13cedb6e5832d0988d8238d066ca869be836804"
+    },
+    {
+      "path": "scripts/quaternary_odd_cycle_eq.py",
+      "sha256": "42d99e518161469924a1932d6799c483c87cc59dd481d5f8d1d9edf06cd99bf3",
+      "git_blob_oid": "b4215dbb7cb157a7a30632393a02ac7633cb118b"
+    },
+    {
+      "path": "scripts/quaternary_candidate_scan.py",
+      "sha256": "e4db7083ee1b80e348055eb33ec5360a5f26447c7cea1a04475acc28e96e30e0",
+      "git_blob_oid": "ad8e930a448962296e37c8bd593f6965e25c79f1"
+    },
+    {
+      "path": "tests/test_quaternary_candidate_scan.py",
+      "sha256": "d079958b9b6a39d2498c1e05e099e17b9dfbc6a642b966392bd29720d85b4500",
+      "git_blob_oid": "03a2cdeb2cc4ad710dcaca45c100990d1e94d66a"
+    },
+    {
+      "path": "scripts/check_quaternary_candidate_scan.py",
+      "sha256": "a64e9af54cafd66633393d88d6bd42a46e78a50a0383e37bd0c04befc5446418",
+      "git_blob_oid": "50be7fe3e33e802544f9d4586bc082594f883b0b"
+    },
+    {
+      "path": "tests/test_check_quaternary_candidate_scan.py",
+      "sha256": "09370070f05f3c80dfd2eaa9e259232c4c06a5ebca317353f5dc21da1f2bc846",
+      "git_blob_oid": "a7f6012f59ec13d1d25eff23c4a9ced7daa249a0"
+    },
+    {
+      "path": "scripts/validate_quaternary_candidate_scan.py",
+      "sha256": "d1fdfe99f22f85ae3e00a6a2330a082e2b6b3b196724450c78cac9be74ede683",
+      "git_blob_oid": "d891c9544d0a6033b98103686a1224a0b6880f3d"
+    },
+    {
+      "path": "tests/test_validate_quaternary_candidate_scan.py",
+      "sha256": "bf0782624798218aee7559f7b3cf3d7231745816f7bb05ba40b93bc9aadead32",
+      "git_blob_oid": "7fd5c3a83fb2af1741763196a3f66f44fc656bd5"
+    },
+    {
+      "path": "docs/QUATERNARY_CANDIDATE_SCAN_PROTOCOL-2026-09-24.md",
+      "sha256": "3ed66dbc17ad2761f0ff78ef2469a953a5c0881be36c0b543a6f3d0ea7dc0996",
+      "git_blob_oid": "07637501539d7aff81bd157f448348b538373514"
+    },
+    {
+      "path": "scripts/quaternary_all_candidate_low_color.py",
+      "sha256": "12aad77e5ac365baec2a03a28e0dc6a836da4029a55980ba299e2be9e4125a57",
+      "git_blob_oid": "a53792dd1ca25cec06180eb3e68a6fdaef379a19"
+    },
+    {
+      "path": "tests/test_quaternary_all_candidate_low_color.py",
+      "sha256": "44db95ad052fc62c7fbe101b07fafc225b43bd666e82dad5dfc47cdcdba61898",
+      "git_blob_oid": "8b845b44391b83c8b4b611689ea51cdc9d851161"
+    },
+    {
+      "path": "scripts/audit_quaternary_all_candidate.py",
+      "sha256": "de14466bcd4b5386986fad90187e6fe37aaf477a6c21d2e28f0edeacaab4ffa6",
+      "git_blob_oid": "4004a1e1756b19cc0a1428c97ef940ae4e925e67"
+    },
+    {
+      "path": "tests/test_audit_quaternary_all_candidate.py",
+      "sha256": "3be7b48797951e3f472a4de41401120b581898de1243ad2b8b5a22a06abcf29b",
+      "git_blob_oid": "f11676317a167cefe8b839652460f31bd5c7c210"
+    },
+    {
+      "path": "scripts/quaternary_all_candidate_inputs.py",
+      "sha256": "6290711b36da08dc9cf8696a0e57ea02dc2ecb68ed5672d64ed82cf7275e758e",
+      "git_blob_oid": "02c98e9d3c86494446ad091641303a355bd2da85"
+    },
+    {
+      "path": "tests/test_quaternary_all_candidate_inputs.py",
+      "sha256": "12cea09f5465146c5f85deb50008e212ff918e94c80c0cb94c0db29a18caf79b",
+      "git_blob_oid": "581061f57858259f8c7d031156be7f840cf4f233"
+    },
+    {
+      "path": "scripts/validate_quaternary_all_candidate.py",
+      "sha256": "b3a9fa556099514c28f1d92bb0c362e91b373ade7e46cb09ecee69e4de586d06",
+      "git_blob_oid": "e4dad7c9d5137dca96ffd0916f83dabe1358e26b"
+    },
+    {
+      "path": "tests/test_validate_quaternary_all_candidate.py",
+      "sha256": "dd4092d80fd51ef27553768c1898b815474f28da5a7ef69df8b4ff114dbdcb8f",
+      "git_blob_oid": "5d9674230cda47e4cf20861f628e73d1556873f3"
+    },
+    {
+      "path": "docs/QUATERNARY_ALL_CANDIDATE_PROTOCOL-2026-09-26.md",
+      "sha256": "f24e5dd5bc32263965e8bd0bdc1ddbafc45a7d2ccade3cec467a5a73d105cf1f",
+      "git_blob_oid": "d5558024e60166f164a01dd63dd59556770e0a0f"
+    },
+    {
+      "path": "scripts/quaternary_logical_neq.py",
+      "sha256": "282663ea3564bc9aaee98f68dce3effc741921a0f0be307ae79f80e970642127",
+      "git_blob_oid": "9e1b51d58bb92f5fce4038720dd99344608ca10c"
+    },
+    {
+      "path": "scripts/quaternary_logical_neq_contacts.py",
+      "sha256": "791db278ed7f7e2419d3d3a6c7f09c89521019bc596eb16f316e8e6104d106a2",
+      "git_blob_oid": "cd74ba9c210df04068dd0358ad3f6ffaa27886bd"
+    },
+    {
+      "path": "scripts/quaternary_logical_neq_low_color.py",
+      "sha256": "a4ce8ad0dd7992713ee6111a2658b1152438e1c63f41d0b17a10e1df8f78caf9",
+      "git_blob_oid": "12667c95036541d9ef8048ae3abc1e87dce370f4"
+    },
+    {
+      "path": "tests/test_quaternary_logical_neq.py",
+      "sha256": "bd8433c98e70b1508961ad0d687f6a064e34dcc9a3ef7e3230fe4e8090f12d0c",
+      "git_blob_oid": "a1881117d5ee050e041237172b6e3c607177b7d0"
+    },
+    {
+      "path": "tests/test_quaternary_logical_neq_contacts.py",
+      "sha256": "d102d1a91a3618a377d9d227be7b9ed94df4b2053f0d6fb868002e13c0438db8",
+      "git_blob_oid": "c01e3b73df7cd715d5861bb6bec61d36b9104aac"
+    },
+    {
+      "path": "tests/test_quaternary_logical_neq_low_color.py",
+      "sha256": "80fb5e37addff4b4e5e029bbe34345520b03da9bd260a49b13bd5ffca736a1c4",
+      "git_blob_oid": "cc061319648b53bca1473e021b8ff216bdb5e2d2"
+    },
+    {
+      "path": "scripts/audit_quaternary_logical_neq.py",
+      "sha256": "a532477e898cc5d63d458a859a8abe07f0ed4c5d54436a8f3683f03bdb1447fa",
+      "git_blob_oid": "6afdef3ec471f159c1dda5686a7bc080d8f6aa99"
+    },
+    {
+      "path": "tests/test_audit_quaternary_logical_neq.py",
+      "sha256": "8786e5e49d5ae0ac2072834ef8237a70adebe2510a55a50d331506ef968a712b",
+      "git_blob_oid": "62ef426c4091b48f224677d9831fd92ec4d92331"
+    },
+    {
+      "path": "scripts/quaternary_logical_neq_inputs.py",
+      "sha256": "9665a06209f974edffe4a6546f5dff6746c6e702b2902c9126296239e5d0a3c5",
+      "git_blob_oid": "09b650d14e921728d3fa6271ee72178e009cb4b3"
+    },
+    {
+      "path": "tests/test_quaternary_logical_neq_inputs.py",
+      "sha256": "d748551c5b94853a24f0d5275651075028097770468806a7f96cdf02fc81ab0e",
+      "git_blob_oid": "e080e91c97ed3d5c8250fda7e08da02d8247b956"
+    },
+    {
+      "path": "scripts/validate_quaternary_logical_neq.py",
+      "sha256": "e06ded29141315d81a260fe5e8b9eb8b3d515e62ee51f5f534f303533b550b3a",
+      "git_blob_oid": "f4fe74b7658af7889a8a6008ed65a34fd2c61732"
+    },
+    {
+      "path": "tests/test_validate_quaternary_logical_neq.py",
+      "sha256": "41f4f18b992cc98df53250f403e5951b799f09b15c5e884c3f7431a6bbf85950",
+      "git_blob_oid": "acb4b9c39760e96dddf416abf8d3ab7a9d24b340"
+    },
+    {
+      "path": "scripts/check_logical_neq_rule_soundness.py",
+      "sha256": "638f3f91b52f34c3b87dafe204fb3a6baae6fbf148ddb49641397181fef002f7",
+      "git_blob_oid": "9f24a85c84b891cd676ac24fc2da1ae080e46302"
+    },
+    {
+      "path": "tests/test_logical_neq_rule_soundness.py",
+      "sha256": "6ffad06bb5154180545a146889708eb90a95cf67ccaf3057cb2af6ee4e747c73",
+      "git_blob_oid": "623b502bf0f4efb6c82803f24a0b5c7a6f7f1b1f"
+    },
+    {
+      "path": "docs/QUATERNARY_LOGICAL_NEQ_PROTOCOL-2026-09-27.md",
+      "sha256": "6a8caaf37127ec33b55feece6dc8e1cac473f4c7579508919dd60c5a17a943c3",
+      "git_blob_oid": "002d5010aab18cac3b895f8fa29c522501e5da80"
+    },
+    {
+      "path": "scripts/quaternary_logical_neq_candidate_scan.py",
+      "sha256": "917adf6a6c04e79e6e51ecb0c211a9144af043f1d7ed46840e5b5e2a381ef907",
+      "git_blob_oid": "c0b57ee1dbfed309a1d982c76fc7de332c843244"
+    },
+    {
+      "path": "tests/test_quaternary_logical_neq_candidate_scan.py",
+      "sha256": "39137f56885fcbd896a22bb8921f13e8d34782b58546eb234bcac79a0f1ce297",
+      "git_blob_oid": "37b9ef9e3b4232aad7f7080f74a46f233ec6f4b1"
+    },
+    {
+      "path": "scripts/check_quaternary_logical_neq_candidate_scan.py",
+      "sha256": "cbdfcca5e764fc36b69a0580fffba0d6dca73d523ab88faaef0fcef26006d48b",
+      "git_blob_oid": "56869baaee73762bea7292a8b3b9aa4a8c9aa48d"
+    },
+    {
+      "path": "tests/test_check_quaternary_logical_neq_candidate_scan.py",
+      "sha256": "4a3b788bae5af03548662e1487851b40993ca3973002008fb6a2dad2fc3afbc6",
+      "git_blob_oid": "235a606980d40479e30f2476353f3169848ed9bc"
+    },
+    {
+      "path": "scripts/validate_quaternary_logical_neq_candidate_scan.py",
+      "sha256": "2d1ef5bf905de7b82ba565d1efb354150e53c2813125c48f7d734c6c12b2ecda",
+      "git_blob_oid": "10fe7a69adcb264979732b0effd1fddc75a3a404"
+    },
+    {
+      "path": "tests/test_validate_quaternary_logical_neq_candidate_scan.py",
+      "sha256": "ae2a7aae20faf759df4202100d689a4228080e36f21b2e2fc345389eb313a110",
+      "git_blob_oid": "d0b026913e8a95757915fc696f75c779b5453aec"
+    },
+    {
+      "path": "docs/QUATERNARY_LOGICAL_NEQ_CANDIDATE_SCAN_PROTOCOL-2026-09-29.md",
+      "sha256": "7e3ab35e6304d08af94495d6ff9cad4d2d7ee564a199dce159cf5e1502286410",
+      "git_blob_oid": "5bfa9e5e1d69ac39993a2a3d500e548960b1ec09"
+    },
+    {
+      "path": "scripts/quaternary_logical_neq_pair_scan.py",
+      "sha256": "82c09a9d43c2c645fbd19c8fe45e15be78a63a926344ff26b08518d5d551d54b",
+      "git_blob_oid": "9641f55b8906317b16127dcbb17d71e53986dd49"
+    },
+    {
+      "path": "tests/test_quaternary_logical_neq_pair_scan.py",
+      "sha256": "5db667bec8bb25b7bc1d617e2b376c7d6e6c77abe6d2a5181db0fe5a3c8d7fe5",
+      "git_blob_oid": "bfe90ed1d5762e86279a10737cacd457cd35a3db"
+    },
+    {
+      "path": "scripts/check_quaternary_logical_neq_pair_scan.py",
+      "sha256": "23ea4629b9c08933b6ca99862caf7a87e8f517fa85fa83c108c807ed3da136da",
+      "git_blob_oid": "9d297fda5b7da6b2cd81006fc5012e01b34eb67c"
+    },
+    {
+      "path": "tests/test_check_quaternary_logical_neq_pair_scan.py",
+      "sha256": "8a5ed5298996a8a3642759f1a3d8ace408041df3272d9688e326a4a8ee71f365",
+      "git_blob_oid": "4380f9f65cc93dbe1e85a6ecb0198241247e6d4a"
+    },
+    {
+      "path": "scripts/validate_quaternary_logical_neq_pair_scan.py",
+      "sha256": "2a8e2a492d4cf124b5a32ff7ebf458744809a7c197693f284029035b8c88b278",
+      "git_blob_oid": "56d0c0cf4bc1b98ce4eb00c49ef22b49668aa746"
+    },
+    {
+      "path": "tests/test_validate_quaternary_logical_neq_pair_scan.py",
+      "sha256": "e54335b8850d9e6bd8cd2377b5569f2c528ce08129cf730347fdc67dea4c5a36",
+      "git_blob_oid": "eeeb8acb669735ffeb36017522d5b4391b4dc87e"
+    },
+    {
+      "path": "docs/QUATERNARY_LOGICAL_NEQ_PAIR_SCAN_PROTOCOL-2026-09-29.md",
+      "sha256": "352a1abb39a9051a0fb8995d7500f91b4ba3847eac46a4db8572c56715f33ab4",
+      "git_blob_oid": "fdfd44f42028151becdd555a7e202a52b7778adf"
+    },
+    {
+      "path": "scripts/quaternary_odd_wheel.py",
+      "sha256": "72e678a10ce6de76503bfd93145ec2cc67a17898037fec237efdf1e51c45502b",
+      "git_blob_oid": "569c72240aa717dd30a4a2a874bd517961a10c72"
+    },
+    {
+      "path": "scripts/quaternary_odd_wheel_contacts.py",
+      "sha256": "da27189421eab146bb9d6502b80e2f95f04bf141202a913c1cc41be235199a33",
+      "git_blob_oid": "f5fdfc290e3081680bbf42c39764cdfc722b0f64"
+    },
+    {
+      "path": "scripts/quaternary_odd_wheel_low_color.py",
+      "sha256": "94a6b054f070eed0253298f78fa5a58591ec8390ed2b8d03d8fef287491e07e2",
+      "git_blob_oid": "4e5116e801b4575ff29dc4409703edfb0ae9b3b3"
+    },
+    {
+      "path": "tests/test_quaternary_odd_wheel.py",
+      "sha256": "a09b60e9dedae1f1dfdfffb70f458ce58611f8740b2cd94a28b6f8e23f01ef44",
+      "git_blob_oid": "0a2084a999d41ae60f031d783bc6ea6da77432f7"
+    },
+    {
+      "path": "tests/test_quaternary_odd_wheel_contacts.py",
+      "sha256": "68eb3f106aca28df0421b6fbd5555860e5a84befb0200ae9c07cc9448c904f3a",
+      "git_blob_oid": "9ff66eb65ed64d6fb08ae5a345246cfcb3444c71"
+    },
+    {
+      "path": "tests/test_quaternary_odd_wheel_low_color.py",
+      "sha256": "9467119b91a676eb7a235a99857189a8782b0b0c9413b85a7eb6828a71569b26",
+      "git_blob_oid": "d3545e2f0e547d499ef785cd025e6d9ea166b6a5"
+    },
+    {
+      "path": "scripts/check_quaternary_odd_wheel.py",
+      "sha256": "27586e7da6e22a4b71ec20b7fd4629e18229033e1f6c119a342e22e7e5983f80",
+      "git_blob_oid": "9a0fafdd51a8ddc1c608608ee7b49cd72fc6a948"
+    },
+    {
+      "path": "scripts/audit_quaternary_odd_wheel.py",
+      "sha256": "a656c8c42f1e718de21eae2464451177977992e9e7badc568369f44300193517",
+      "git_blob_oid": "9472570b08ac574bef9bbf51a4fca4aeb388d1d6"
+    },
+    {
+      "path": "tests/test_check_quaternary_odd_wheel.py",
+      "sha256": "b30891fe25e281499c3a0991b3b3198a161a710a9e9cd668ac6c00776a21e5c9",
+      "git_blob_oid": "b8f0f081f07c0c7c6d86efaa6eeb9c10230c2942"
+    },
+    {
+      "path": "tests/test_audit_quaternary_odd_wheel.py",
+      "sha256": "983bc7207f2c03dfe308ef82b90d08b4cc381568563ca440e539a71858ecb390",
+      "git_blob_oid": "4dbea56a1e186fd46299bc85fc1d09ba5208fbcb"
+    },
+    {
+      "path": "scripts/check_odd_wheel_rule_soundness.py",
+      "sha256": "9396c34507205eb0031971753747d57fe4df3232ff50cfdeb5dbef1ac3d8409a",
+      "git_blob_oid": "2cc28db6a7cd638c942c09795c57bbeec813c97e"
+    },
+    {
+      "path": "tests/test_odd_wheel_rule_soundness.py",
+      "sha256": "8f056099b64655f6b8db095ec86d5fc2a4c3b520ef8315113d65c4b1c6e7d79c",
+      "git_blob_oid": "65161400ad9262967f2b4f55405c647291dd381f"
+    },
+    {
+      "path": "scripts/quaternary_odd_wheel_inputs.py",
+      "sha256": "9323cb49226cdcad2ced4de87b27e115bb03594101812c85a269b140fcb68917",
+      "git_blob_oid": "d1bbcd28e05424c0593647649fdbdb14eeca3e5f"
+    },
+    {
+      "path": "tests/test_quaternary_odd_wheel_inputs.py",
+      "sha256": "b0737234ae6dbe907779ab67a3baa080388684f5560ca186db5e66d178564ef9",
+      "git_blob_oid": "e835c46b107e6d64969c068ff2064739b7ac06cc"
+    },
+    {
+      "path": "scripts/quaternary_odd_wheel_gap_check.py",
+      "sha256": "17af1e3f28c329687f6454865a91e623ba40d96375903142ba5fcfa40813bfa1",
+      "git_blob_oid": "beae98ed6c88ca473cb0514427b8e3683a86f06f"
+    },
+    {
+      "path": "tests/test_quaternary_odd_wheel_gap_check.py",
+      "sha256": "e103518c5aa147232b4c9284b0efc5535cd40e998eaf862fce2f255a5c42a270",
+      "git_blob_oid": "74ced3ba32a56e117eb8ab54418b472bf19d55e0"
+    },
+    {
+      "path": "scripts/validate_quaternary_odd_wheel.py",
+      "sha256": "dd61ac12aec3dfd97ec49e194c35ff27805096eea0f58a58e0ab8111a9da9d83",
+      "git_blob_oid": "50073bc6de415f61cc4aca3096059c48354aab2e"
+    },
+    {
+      "path": "tests/test_validate_quaternary_odd_wheel.py",
+      "sha256": "ee797e51d41ea4983717adc0e50476cd5abad55fa219a0e8ab6577a41a646039",
+      "git_blob_oid": "cd614266a3fe83e886594f61e7cd2fce50302bac"
+    },
+    {
+      "path": "docs/QUATERNARY_ODD_WHEEL_PROTOCOL-2026-09-30.md",
+      "sha256": "24f0fd51a60083d1888f332e702ee70d215a191096ba2497e08f8770e8558b55",
+      "git_blob_oid": "fc8960fd8de598145546926ba4b83293de4d41cb"
+    },
+    {
+      "path": "scripts/quaternary_conditional_diamond.py",
+      "sha256": "e22504d37fc50b84cc8521e33cd043048b661f45b53a29312a1e5189b4acf947",
+      "git_blob_oid": "c5163c6bc5ae7a29f646e8a42c6bf7592de6c922"
+    },
+    {
+      "path": "scripts/quaternary_conditional_diamond_contacts.py",
+      "sha256": "43697c2091438fab6e77adc55ca7654c7a224f0c434ecb38182426e7591fb54a",
+      "git_blob_oid": "d2fd26b31f6b3548d480aa3563eb20592f96e929"
+    },
+    {
+      "path": "scripts/quaternary_conditional_diamond_low_color.py",
+      "sha256": "680d13643d3b7587efa05c84acf5fb225b6ae28c50200a1eaf37f6e1dbd85abc",
+      "git_blob_oid": "851cb66e2f88d5fe0501704582a6eac1026dc43a"
+    },
+    {
+      "path": "tests/test_quaternary_conditional_diamond.py",
+      "sha256": "c73efa1578aae78f9ffbf842521dfb54c3f2a5ff6567e040ba6b6697eddcc407",
+      "git_blob_oid": "2eb577caab466bfb23e1940705f4a18bd6324088"
+    },
+    {
+      "path": "tests/test_quaternary_conditional_diamond_contacts.py",
+      "sha256": "edcfae6db60534e318230c648989d3b131e1f7b7c20c33e6156e47841c9c4731",
+      "git_blob_oid": "936d7f753c7da578f08971160384637beea1d3ed"
+    },
+    {
+      "path": "tests/test_quaternary_conditional_diamond_low_color.py",
+      "sha256": "2e0a73f1d9e498262b8ff6d51fa82fb1bcbe42d4a99fe4d21f42d5b8556f7f04",
+      "git_blob_oid": "ac911893c984490795e18e9aa91aee24bac496ea"
+    },
+    {
+      "path": "scripts/check_quaternary_conditional_diamond.py",
+      "sha256": "185404069cde786530867ea98748829f8926a51a43d630c6e5280fc8fd548ae5",
+      "git_blob_oid": "e451d3a77e05ae489dda64513817b3f487422b19"
+    },
+    {
+      "path": "scripts/audit_quaternary_conditional_diamond.py",
+      "sha256": "9eb710f1e80c7b07a15dffedda21525a4b1633f9cbd4e3ef9767bbed320be4e9",
+      "git_blob_oid": "fff873d151ed7ede9734bb476d8a901712854240"
+    },
+    {
+      "path": "tests/test_check_quaternary_conditional_diamond.py",
+      "sha256": "b862a94ac30183b9784a41c990e44bc7a82edacb48846789ade69e29161c5a4c",
+      "git_blob_oid": "5a7111f9fd8f0c2fce3a7e0b6e801fdff6f8559f"
+    },
+    {
+      "path": "tests/test_audit_quaternary_conditional_diamond.py",
+      "sha256": "8f1a425596add0a812c57edb7faa83bb9f47e9f63c965c7e0aa71e31d4b332dd",
+      "git_blob_oid": "ed3697635ff1adb45c299227c811a8c5476c1cec"
+    },
+    {
+      "path": "scripts/check_conditional_diamond_rule_soundness.py",
+      "sha256": "3ccde7122f0b009926a6dd6ab17d8c29b5d41de27732a162b9193d978cdd5224",
+      "git_blob_oid": "d6734b1f775d2702c70085488861e175f26ceddb"
+    },
+    {
+      "path": "tests/test_conditional_diamond_rule_soundness.py",
+      "sha256": "173d3fe3e599daef9af7768ff33e8c0e0b198b5cfb356f1f7cd800fac91e71ab",
+      "git_blob_oid": "a8b320e7abcdc4f67c5f9c2b1c7bde1f454e1084"
+    },
+    {
+      "path": "scripts/quaternary_conditional_diamond_inputs.py",
+      "sha256": "a790d32654b564e076f74e61ed83566af6567074dc2e26123f830ce9579e1d60",
+      "git_blob_oid": "e0fcb11d13067cd4bb877761c4121067e4149c7d"
+    },
+    {
+      "path": "tests/test_quaternary_conditional_diamond_inputs.py",
+      "sha256": "f7b417228fa727bf354a388355a57991146cb1acfd14d19d4c8b486a20a25a13",
+      "git_blob_oid": "2719e315a72f3069189d73ade14c91fd72eae64b"
+    },
+    {
+      "path": "scripts/quaternary_conditional_diamond_gap_check.py",
+      "sha256": "364da321276c4f2d3273ec965b1eae133fbf658b305a0895658647c4021c1875",
+      "git_blob_oid": "68a6adb9af5f471ba5c9e886bd3e68836898dcd0"
+    },
+    {
+      "path": "tests/test_quaternary_conditional_diamond_gap_check.py",
+      "sha256": "5683a4dff8b8a8eac1624b2929f0cf22887c7ea4db69c67d28f3bc40e9bd9f61",
+      "git_blob_oid": "c6e4159b0b5d6c037ca72e3211c7d2d9baee76df"
+    },
+    {
+      "path": "scripts/validate_quaternary_conditional_diamond.py",
+      "sha256": "95a1c5b735bba7087f2883e09f7189c8573eb8b0fb9e2c36fcea134da86ba0d7",
+      "git_blob_oid": "9202347bb56a541aa6f08e7376078370d5586243"
+    },
+    {
+      "path": "tests/test_validate_quaternary_conditional_diamond.py",
+      "sha256": "11437d1a2f1420a99ceba41b51def509ffa7a96f250ec8c4026836d25fda1ad0",
+      "git_blob_oid": "4f17d05079fcb0a04b93be65648bcb87a67fac16"
+    },
+    {
+      "path": "docs/QUATERNARY_CONDITIONAL_DIAMOND_PROTOCOL-2026-09-30.md",
+      "sha256": "5bb7650bcd2da5ae1fb8ed6f637d9916ac5bb559c7bfb6dde405bd1b1dc88c46",
+      "git_blob_oid": "68b707dc0a1f0bca9bb4c349029a2066608378c6"
+    },
+    {
+      "path": "scripts/quaternary_triangle_saturation.py",
+      "sha256": "8f030a1daa686667640d8ac419a78002d5789dbfd12369a24474a209a13089de",
+      "git_blob_oid": "410951eed760aab36f8184dba476bf9b951c2aae"
+    },
+    {
+      "path": "scripts/quaternary_triangle_saturation_contacts.py",
+      "sha256": "1f1af1ed0c2e5a07ed21104fee60ffa564796379e0d10b7918a5968dbddc3346",
+      "git_blob_oid": "7d9b103be1dc8f494cde7e99341da1c4875c1b1a"
+    },
+    {
+      "path": "scripts/quaternary_triangle_saturation_low_color.py",
+      "sha256": "0f1e752d1a6192decc992598a833fceb24654d175deeb2a1bed4ee41e4d31607",
+      "git_blob_oid": "3bb8bacd99b43870e28b2b0210f6e3416166c886"
+    },
+    {
+      "path": "tests/test_quaternary_triangle_saturation.py",
+      "sha256": "0642b50c46520322888dd79244c5b5948c7e3debe0e63c23260b8a06935bd036",
+      "git_blob_oid": "3e8a18ef0625e19d886278b924aaa1f0a695ab4f"
+    },
+    {
+      "path": "tests/test_quaternary_triangle_saturation_contacts.py",
+      "sha256": "f1be39c1236ed6e8d0279cab1604689ed2f249d99d34cc25ae3639980018b9b4",
+      "git_blob_oid": "ede3c45f1ef32e95f960204b0af73b19327ff267"
+    },
+    {
+      "path": "tests/test_quaternary_triangle_saturation_low_color.py",
+      "sha256": "d32720d768511188de20d6c80748a60a9a0ed1da2f724f15958490cd1ae0c659",
+      "git_blob_oid": "8eabfc36c43a17700713d95915b8c990a75f4d1f"
+    },
+    {
+      "path": "scripts/check_quaternary_triangle_saturation.py",
+      "sha256": "d3ecdf559474f3901494dff60f2090b54ec12230d260fd7d6614720049674459",
+      "git_blob_oid": "ca93661b60cec6adc811cba5080ce827f92bc537"
+    },
+    {
+      "path": "scripts/audit_quaternary_triangle_saturation.py",
+      "sha256": "4f6e1b809beab68c0c26dcdc09992a238eefed822e0e2fffb2b800364a4be9a4",
+      "git_blob_oid": "f5c31c3e31ff943732d7dbdb9100af03e39f8dfc"
+    },
+    {
+      "path": "tests/test_check_quaternary_triangle_saturation.py",
+      "sha256": "ba8a954b7b08e694cc7ac57e34604033480234e2753f3fa35cd6e469e1926002",
+      "git_blob_oid": "f4f67bb560167efcc4371577bc7daa3160975f00"
+    },
+    {
+      "path": "tests/test_audit_quaternary_triangle_saturation.py",
+      "sha256": "90765bd51186bc5a6ba636ecd23d4d8961438867fdedfbe78a8bceaafcfefe0e",
+      "git_blob_oid": "4415c65c351d89172de0fe7e85ce101348cd1ed0"
+    },
+    {
+      "path": "scripts/check_triangle_saturation_rule_soundness.py",
+      "sha256": "fc66b8a2967d8e715e8a1c10e5b853ec396638b48d62d18cc5dc228f5daf142e",
+      "git_blob_oid": "f772d12d14d1f8de3b98e2fcc19ba21f8401c84e"
+    },
+    {
+      "path": "tests/test_triangle_saturation_rule_soundness.py",
+      "sha256": "a44e8bef944eb89a4b171eb1ba64abeaa6bed5dabb82a78f5e47498048691b31",
+      "git_blob_oid": "fbd652af0da45128ccfb916ff1474755eeb9d398"
+    },
+    {
+      "path": "scripts/quaternary_triangle_saturation_inputs.py",
+      "sha256": "bc526236db1bba0aac187d9486edb824d10cec90f0adf755512d571e0ba8ca18",
+      "git_blob_oid": "013bb384eac95a7d28a95e9f1dce69c12a3fba58"
+    },
+    {
+      "path": "tests/test_quaternary_triangle_saturation_inputs.py",
+      "sha256": "cbf3e51ca15f99b0691de10cfc5a3b50ef8157d473468a4e55abc966b93ba044",
+      "git_blob_oid": "f495c25fe6da1102d6c77ca9eff4bddb239cdd1b"
+    },
+    {
+      "path": "scripts/quaternary_triangle_saturation_gap_check.py",
+      "sha256": "9730c306d6e77aa5e54b973a2c6b987de0b7a0e19eb6ab896e474704b53343ce",
+      "git_blob_oid": "ae152be7385fa795a2ab10ba567462c5f3b380c6"
+    },
+    {
+      "path": "tests/test_quaternary_triangle_saturation_gap_check.py",
+      "sha256": "761fc565015bea29fa44708f262ac70cad1dc01ccf88bf0b9ba183c178daaadb",
+      "git_blob_oid": "a3ad2fb78e05621ae5b3ce4939621789efd17c56"
+    },
+    {
+      "path": "scripts/validate_quaternary_triangle_saturation.py",
+      "sha256": "a9c81ab9cb0c86d7cd36b76b7c4435387324de3071dbbf51673e510491e2a374",
+      "git_blob_oid": "4b87ee21780ed4009b94fc3cd07bdfbc75979ecd"
+    },
+    {
+      "path": "tests/test_validate_quaternary_triangle_saturation.py",
+      "sha256": "083b005b14f97b65ad5cd0d17737d1f41203a58f98ba6d6e6f52e26d9a7ac20f",
+      "git_blob_oid": "5ed3ba0e630acf6bccb1b6542a1fb4feee338070"
+    },
+    {
+      "path": "docs/QUATERNARY_TRIANGLE_SATURATION_PROTOCOL-2026-10-01.md",
+      "sha256": "5e74db1fd16b0bfa89f0d918522981ff23843f119a56166c401100a04cc39bcd",
+      "git_blob_oid": "cf351c949cb8d51687d91c7ce517f5075b044d71"
+    },
+    {
+      "path": "scripts/quaternary_triangle_saturation_support_scan.py",
+      "sha256": "78ac2c602d509636b1c0137188c04c978aed620755d32b9d4386d275dd26526b",
+      "git_blob_oid": "e2ccd8b7d62cb83b12332a21cd8737e7ad13b1dc"
+    },
+    {
+      "path": "tests/test_quaternary_triangle_saturation_support_scan.py",
+      "sha256": "9f594733290252ad1b40304ecc4ad342abcb8f077524d1c54b5856976a1c93a1",
+      "git_blob_oid": "c191401bd73c55e6fa02abf8862acfe489dae2df"
+    },
+    {
+      "path": "scripts/check_quaternary_triangle_saturation_support_scan.py",
+      "sha256": "bdf02efa7a3f7b4a746f7b7043ac7459e4d188320238009876546284aaaec396",
+      "git_blob_oid": "39a320ecf4b51d3738bc425e5b333b03e25349f7"
+    },
+    {
+      "path": "tests/test_check_quaternary_triangle_saturation_support_scan.py",
+      "sha256": "0d92cf85b8ca74f918c7ea67717b4beeda3413d98f7062386031a17119247ddd",
+      "git_blob_oid": "21eaf3b83774827f0f146471c7e58a3b31b4b504"
+    },
+    {
+      "path": "scripts/validate_quaternary_triangle_saturation_support.py",
+      "sha256": "7f2c49e3c6fa23e1b53c3dbc65f61ae20fb2dc32ff866bfb53df2eb0d20d7c07",
+      "git_blob_oid": "ad2a9e3e9f90bf54517346b3a4b17dbc26b02377"
+    },
+    {
+      "path": "tests/test_validate_quaternary_triangle_saturation_support.py",
+      "sha256": "06e7a005bbe3634abbc4bc9e843f73fad99290db21fbad1c1aaf6bc8f7967c08",
+      "git_blob_oid": "f0f52a1a5a51e08f73880a374f8ef52723fec135"
+    },
+    {
+      "path": "docs/QUATERNARY_TRIANGLE_SATURATION_SUPPORT_PROTOCOL-2026-10-03.md",
+      "sha256": "2af0b00112a1ac5c0ad15bc9e4e24214dc5f65ac3f390d55fd0c1eb7f82fdc65",
+      "git_blob_oid": "47af61bf1fdf5e5aa539a8665e5b24ad8b7e22e2"
+    },
+    {
+      "path": "scripts/quaternary_triangle_saturation_prefilter.py",
+      "sha256": "3b966ac1b437e3386033ea94ee0b958a4147748c5d3f712029c1ea48fbbe8409",
+      "git_blob_oid": "42e31c961dca8f8233faea2289486d76771bddb6"
+    },
+    {
+      "path": "scripts/quaternary_triangle_saturation_prefilter_contacts.py",
+      "sha256": "91a4d0e25fff80a966de46d5c7def2705b9146d996e4141beebeb64cd8064881",
+      "git_blob_oid": "afa73a11eca9697d86c7da54d399e240981bca41"
+    },
+    {
+      "path": "scripts/quaternary_triangle_saturation_prefilter_low_color.py",
+      "sha256": "939d03c8a59a64c187a03c08f38783a04f9d0306ecb17b5278cf08cd45dcff47",
+      "git_blob_oid": "80ffed4f00f2304016d637e27798030255f4f898"
+    },
+    {
+      "path": "scripts/check_quaternary_triangle_saturation_prefilter.py",
+      "sha256": "5ac01096d3475895c1a9d869bc6139e265be717e35375d5ffc4efd20f5b7a697",
+      "git_blob_oid": "e3896d1ed151a829a043b02b9437e69592bf0616"
+    },
+    {
+      "path": "scripts/validate_quaternary_triangle_saturation_prefilter.py",
+      "sha256": "821f4c00fec7fc2a36cf6631152c8706c56203ab8c5fe8eceee95a15ed62b20b",
+      "git_blob_oid": "e6e4c141565e7d0df9c5a51c23efb2e4241b1270"
+    },
+    {
+      "path": "tests/test_quaternary_triangle_saturation_prefilter.py",
+      "sha256": "ab04f63dc3eb70c0c4b16929d4b719c844ca732b23a0e00b7e22323249599bcf",
+      "git_blob_oid": "6256e1d99c0530e49bb9623e01a74df19603251d"
+    },
+    {
+      "path": "tests/test_quaternary_triangle_saturation_prefilter_contacts.py",
+      "sha256": "3743cbbe8114f7f416d788ae12c18c4affaef69eb15413af73d0c482c0f98023",
+      "git_blob_oid": "3fb1c32ca8a4458f4e1a501d85dbc51985a9b72f"
+    },
+    {
+      "path": "tests/test_quaternary_triangle_saturation_prefilter_low_color.py",
+      "sha256": "68fcc8a7a0554fc3d22c377ac09b1573764e89716e704a87f97be3437e73b507",
+      "git_blob_oid": "3c26621763a27df97a5c3fc1ccf831c423f5c7ab"
+    },
+    {
+      "path": "tests/test_check_quaternary_triangle_saturation_prefilter.py",
+      "sha256": "aa36c3b76c18e1784cbcaa6ca25e7db69427e1b8c06ecc6bf513646010ee7c18",
+      "git_blob_oid": "28cdb8b764208ac2fbbdfe09eab464f607de3725"
+    },
+    {
+      "path": "tests/test_validate_quaternary_triangle_saturation_prefilter.py",
+      "sha256": "5105992960f7ccf27ac677465162101556c97a465948bcfd54b272b481adf1d5",
+      "git_blob_oid": "52185465bf8cd592fd9eb665bb12610417c04245"
+    },
+    {
+      "path": "docs/QUATERNARY_TRIANGLE_SATURATION_PREFILTER_PROTOCOL-2026-10-03.md",
+      "sha256": "d34b049051800ca19267f17c5f1f5a669e6d0e9df8bbba48ec7bce039c498c81",
+      "git_blob_oid": "ed7c7341d4bfb6ff6d192d7f96843bd8d94cb56e"
+    },
+    {
+      "path": "scripts/quaternary_profile_stats.py",
+      "sha256": "c3b605095dd3384839a2a09660d0072f9b81f122870a93245f255858a2f28449",
+      "git_blob_oid": "14e9f7f454879dddbd85b380ea532dc19b7181cb"
+    },
+    {
+      "path": "tests/test_quaternary_profile_stats.py",
+      "sha256": "10e19e17cb692f6ac5a03986d7a5d15acb3fe44e8a2a05e3b30aa70f3cce2aeb",
+      "git_blob_oid": "9825cc321afebaa10d574b85835496aa07d635f5"
+    },
+    {
+      "path": "scripts/validate_quaternary_triangle_saturation_profile.py",
+      "sha256": "44c6b541a30423ca32dc8d424d2e7943f51212450473414ba6c0e2524edb3a97",
+      "git_blob_oid": "39ed54008a3891af54360205bc0c2fd8ea6118d7"
+    },
+    {
+      "path": "tests/test_validate_quaternary_triangle_saturation_profile.py",
+      "sha256": "f2e60cb4b04e8e6b257c5ccc81d259000f439fa4403aadb38392791229d935e2",
+      "git_blob_oid": "7a724f8b9739af8db7d59a43b46ce401d4ab4323"
+    },
+    {
+      "path": "docs/QUATERNARY_TRIANGLE_SATURATION_PROFILE_PROTOCOL-2026-10-03.md",
+      "sha256": "b5d799eb18de09db3ce88a565d0fb0d381170ef6a3c1704eef467dd919115b16",
+      "git_blob_oid": "0ba944da849ac00ff59b993270e41cbcb0d419a9"
+    }
+  ],
+  "scope": "Latest frozen source raw bytes match the index; no mathematical rerun."
+}

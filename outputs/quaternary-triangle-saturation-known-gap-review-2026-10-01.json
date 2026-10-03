@@ -1,0 +1,1070 @@
+{
+  "schema_version": 1,
+  "version": "quaternary-triangle-saturation-known-gap-independent-review-v1",
+  "date": "2026-10-01",
+  "passed": true,
+  "bindings": {
+    "manifest": {
+      "path": "outputs/quaternary-triangle-saturation-manifest-2026-10-01.json.gz",
+      "sha256": "42efe8132396a15fbaf945379428ff0330f3a37199299327668c8700763e1f52"
+    },
+    "gap_checkpoint": {
+      "path": "outputs/quaternary-triangle-saturation-2026-10-01-checkpoints/known-pair-gaps.json.gz",
+      "sha256": "49c4f71b43765190ee814127c04208276d3b20bedddc3dc2ba5725b4d4b563a1"
+    },
+    "old_baseline_checkpoint": {
+      "path": "outputs/quaternary-conditional-diamond-2026-09-30-checkpoints/known-pair-gaps.json.gz",
+      "sha256": "7e5866a85893c2abf9b3c97f40e27bf0f1f0f77b82d8ef6f4abceae77627065b"
+    },
+    "frozen_sources_checked": 272,
+    "frozen_inputs_checked": 6,
+    "all_frozen_hashes_unchanged": true,
+    "old_pair_checkpoint_groups": 71
+  },
+  "coverage": {
+    "declared_targets": 1814,
+    "unique_target_identities": 1814,
+    "checked_targets": 1814,
+    "identical_first_round_baselines": 1814,
+    "independently_checked_original_logical_traces": 1814,
+    "independently_checked_new_nested_audits": 1814,
+    "previous_status_counts": {
+      "conflict": 1812,
+      "underdetermined": 2
+    },
+    "literal_triangle_certificates_checked_in_previous_residuals": 4
+  },
+  "reconstructed_counts": {
+    "targets": 1814,
+    "checked": 1814,
+    "new_conflict": 1814,
+    "repaired": 2,
+    "persistent_inconclusive": 0,
+    "regressions": 0,
+    "saturation_rounds": 1816,
+    "saturation_added_rounds": 2,
+    "saturation_removed_candidates": 12,
+    "propagation_rounds": 1824,
+    "conditional_eq_pairs": 46,
+    "wheel_checks": 13,
+    "wheel_conflicts": 3,
+    "wheel_edges_examined": 518,
+    "diamond_checks": 10,
+    "diamond_certificates": 46,
+    "triangle_checks": 2,
+    "triangle_certificates": 4,
+    "diamond_pairs_examined": 1710,
+    "diamond_pairs_with_offdiagonal": 1671,
+    "diamond_palettes_examined": 6546,
+    "diamond_common_edges_examined": 218,
+    "diamond_certificates_found": 46,
+    "triangle_classes_examined": 30,
+    "triangle_palettes_examined": 108,
+    "triangle_triangles_examined": 2544,
+    "triangle_physical_witness_edges": 24,
+    "triangle_certificates_found": 4
+  },
+  "trace_cost": {
+    "all_nested_trace_steps": 278370,
+    "final_projected_trace_steps": 276591
+  },
+  "offline_oracle_review": {
+    "query_role_references": {
+      "base": 1814,
+      "pair": 1814,
+      "single_0": 1814,
+      "single_1": 1814
+    },
+    "unique_saved_records_verified": 3663,
+    "unique_saved_status_counts": {
+      "sat": 1849,
+      "unsat": 1814
+    },
+    "searches": 0,
+    "premises": "Original separator graph plus actual anchors and only the declared one/two hypothetical colors.",
+    "SAT_check": "Direct literal color, real-edge and anchor checks, plus frozen exact-certificate verifier.",
+    "UNSAT_check": "Frozen exact-certificate verifier; no search.",
+    "saved_record_deduplication_key": [
+      "original_pair_checkpoint_path",
+      "scenario",
+      "oracle_record_index_within_that_scenario_scan"
+    ],
+    "saved_record_counting_scope": "The 3663 entries are distinct saved-record locations. An index is local to a scenario scan, so scenario is part of the key. Identical raw query inputs or identical proof contents stored at different locations remain separate. This is not the count of distinct canonical n/edges/anchors queries.",
+    "canonical_raw_query_count": "not_computed_by_this_review",
+    "complete_record_or_result_hash_used_for_deduplication": false
+  },
+  "two_previous_residuals": [
+    {
+      "gap_row_index": 997,
+      "key": "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132",
+      "target": {
+        "scenario": "one-bounded-anchor",
+        "state_index": 0,
+        "target_index": 661,
+        "phase": 0,
+        "sides": [
+          "S4",
+          "S14"
+        ],
+        "symbols": [
+          1,
+          1
+        ],
+        "old_status": "conditional_inconclusive",
+        "input_sha256": "e96ce7ef2b2844c635a890cf2960356a7f165c76edb8accf065a9f6ce9cda80e",
+        "old_outcome_sha256": "e487ee64a721dd4675f8d3a896e4961af7e6429cf9b07bc7ae7b5edd62cfce69",
+        "baseline_status": "underdetermined",
+        "baseline_outcome_sha256": "e96470ac66c74fa64dab6d524fabfaa212fe7fe135760de74228a60a0f6c38ee",
+        "diamond_baseline_status": "underdetermined",
+        "diamond_baseline_outcome_sha256": "3d62958f900d6b18bfd9cdf5ae43352552198a573c100fd43ea395d073526218"
+      },
+      "original_pair_checkpoint": {
+        "path": "outputs/quaternary-logical-neq-pair-scan-2026-09-29-checkpoints/044-8070783fd68d.json.gz",
+        "sha256": "f3be9670ae9d377d12e1ed201053f8d6b5355e428c2ebb8cc0da66496f91c17c"
+      },
+      "raw_graph_sha256": "711ea708150173a1d6a9db41411fb8a87aa86a512fde994823822b30619be474",
+      "actual_anchors": {
+        "S1": 1
+      },
+      "hypothetical_anchors": {
+        "S4": 1,
+        "S14": 1
+      },
+      "offline_query_roles": [
+        {
+          "role": "base",
+          "index": 0,
+          "status": "sat",
+          "input_sha256": "a95dc9f7ee2791d678ac27cecfc9f9a533f171d2c99b0fca49a50a4893216088",
+          "result_sha256": "e6da698592e0b83e63e77a4278aad0bd6a367c63a779a173788527f7f55f9710"
+        },
+        {
+          "role": "pair",
+          "index": 682,
+          "status": "unsat",
+          "input_sha256": "be9541436532e7c0c30fb03c525ed883b1f5474511fdf5a3b8b0ca7525fdd7d1",
+          "result_sha256": "d40f1160029cf4e9684ffe810aeb60540f60184dcbadfd6601c6f2159c631e83"
+        },
+        {
+          "role": "single_0",
+          "index": 565,
+          "status": "sat",
+          "input_sha256": "95820db514fcb230ba5e083b4cb426e9a29281405402911733a25c41d546e99b",
+          "result_sha256": "d64fd66f14e11af6d12124c55ca16afaa88a1240b95e03a7ce598d285e34e4b0"
+        },
+        {
+          "role": "single_1",
+          "index": 480,
+          "status": "sat",
+          "input_sha256": "141e56db7c0903a980cdb7a10338a0c964d5da85a88167858567b10d5099d4a5",
+          "result_sha256": "a448961128199b47ff49fee857b08850f36f4a98b64b8cd0a939e606bcebfe6f"
+        }
+      ],
+      "previous_status": "underdetermined",
+      "new_status": "conflict",
+      "removed_candidates": [
+        [
+          "S16",
+          2
+        ],
+        [
+          "S16",
+          3
+        ],
+        [
+          "S16",
+          4
+        ],
+        [
+          "S18",
+          2
+        ],
+        [
+          "S18",
+          3
+        ],
+        [
+          "S18",
+          4
+        ]
+      ],
+      "rounds": [
+        {
+          "round_index": 0,
+          "status_before_triangle": "underdetermined",
+          "document_states": {},
+          "equal_names": [
+            [
+              "S0",
+              "S17"
+            ],
+            [
+              "S2",
+              "S5"
+            ],
+            [
+              "S10",
+              "S12"
+            ]
+          ],
+          "certificates": [
+            {
+              "certificate": {
+                "target": "S16",
+                "triangle": [
+                  "S10",
+                  "S13",
+                  "S15"
+                ],
+                "excluded_color": 1,
+                "removed_colors": [
+                  2,
+                  3,
+                  4
+                ],
+                "edges": [
+                  [
+                    "S12",
+                    "S13"
+                  ],
+                  [
+                    "S10",
+                    "S15"
+                  ],
+                  [
+                    "S13",
+                    "S15"
+                  ],
+                  [
+                    "S16",
+                    "S10"
+                  ],
+                  [
+                    "S16",
+                    "S13"
+                  ],
+                  [
+                    "S16",
+                    "S15"
+                  ]
+                ]
+              },
+              "class_members": {
+                "S16": [
+                  "S16"
+                ],
+                "S10": [
+                  "S10",
+                  "S12"
+                ],
+                "S13": [
+                  "S13"
+                ],
+                "S15": [
+                  "S15"
+                ]
+              },
+              "class_domains": {
+                "S16": [
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "S10": [
+                  2,
+                  3,
+                  4
+                ],
+                "S13": [
+                  2,
+                  3,
+                  4
+                ],
+                "S15": [
+                  2,
+                  3,
+                  4
+                ]
+              },
+              "literal_physical_witnesses": [
+                {
+                  "classes": [
+                    "S10",
+                    "S13"
+                  ],
+                  "edge": [
+                    "S12",
+                    "S13"
+                  ],
+                  "physical_line_ids": [
+                    "E30"
+                  ]
+                },
+                {
+                  "classes": [
+                    "S10",
+                    "S15"
+                  ],
+                  "edge": [
+                    "S10",
+                    "S15"
+                  ],
+                  "physical_line_ids": [
+                    "E25"
+                  ]
+                },
+                {
+                  "classes": [
+                    "S13",
+                    "S15"
+                  ],
+                  "edge": [
+                    "S13",
+                    "S15"
+                  ],
+                  "physical_line_ids": [
+                    "E21"
+                  ]
+                },
+                {
+                  "classes": [
+                    "S16",
+                    "S10"
+                  ],
+                  "edge": [
+                    "S16",
+                    "S10"
+                  ],
+                  "physical_line_ids": [
+                    "E26"
+                  ]
+                },
+                {
+                  "classes": [
+                    "S16",
+                    "S13"
+                  ],
+                  "edge": [
+                    "S16",
+                    "S13"
+                  ],
+                  "physical_line_ids": [
+                    "E22"
+                  ]
+                },
+                {
+                  "classes": [
+                    "S16",
+                    "S15"
+                  ],
+                  "edge": [
+                    "S16",
+                    "S15"
+                  ],
+                  "physical_line_ids": [
+                    "E31"
+                  ]
+                }
+              ]
+            },
+            {
+              "certificate": {
+                "target": "S18",
+                "triangle": [
+                  "S0",
+                  "S2",
+                  "S3"
+                ],
+                "excluded_color": 1,
+                "removed_colors": [
+                  2,
+                  3,
+                  4
+                ],
+                "edges": [
+                  [
+                    "S0",
+                    "S2"
+                  ],
+                  [
+                    "S0",
+                    "S3"
+                  ],
+                  [
+                    "S2",
+                    "S3"
+                  ],
+                  [
+                    "S18",
+                    "S17"
+                  ],
+                  [
+                    "S18",
+                    "S5"
+                  ],
+                  [
+                    "S18",
+                    "S3"
+                  ]
+                ]
+              },
+              "class_members": {
+                "S18": [
+                  "S18"
+                ],
+                "S0": [
+                  "S0",
+                  "S17"
+                ],
+                "S2": [
+                  "S2",
+                  "S5"
+                ],
+                "S3": [
+                  "S3"
+                ]
+              },
+              "class_domains": {
+                "S18": [
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "S0": [
+                  2,
+                  3,
+                  4
+                ],
+                "S2": [
+                  2,
+                  3,
+                  4
+                ],
+                "S3": [
+                  2,
+                  3,
+                  4
+                ]
+              },
+              "literal_physical_witnesses": [
+                {
+                  "classes": [
+                    "S0",
+                    "S2"
+                  ],
+                  "edge": [
+                    "S0",
+                    "S2"
+                  ],
+                  "physical_line_ids": [
+                    "E1"
+                  ]
+                },
+                {
+                  "classes": [
+                    "S0",
+                    "S3"
+                  ],
+                  "edge": [
+                    "S0",
+                    "S3"
+                  ],
+                  "physical_line_ids": [
+                    "E2"
+                  ]
+                },
+                {
+                  "classes": [
+                    "S2",
+                    "S3"
+                  ],
+                  "edge": [
+                    "S2",
+                    "S3"
+                  ],
+                  "physical_line_ids": [
+                    "E47"
+                  ]
+                },
+                {
+                  "classes": [
+                    "S18",
+                    "S0"
+                  ],
+                  "edge": [
+                    "S18",
+                    "S17"
+                  ],
+                  "physical_line_ids": [
+                    "E41"
+                  ]
+                },
+                {
+                  "classes": [
+                    "S18",
+                    "S2"
+                  ],
+                  "edge": [
+                    "S18",
+                    "S5"
+                  ],
+                  "physical_line_ids": [
+                    "E51"
+                  ]
+                },
+                {
+                  "classes": [
+                    "S18",
+                    "S3"
+                  ],
+                  "edge": [
+                    "S18",
+                    "S3"
+                  ],
+                  "physical_line_ids": [
+                    "E42"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "round_index": 1,
+          "status_before_triangle": "conflict",
+          "document_states": {
+            "S16": "2000",
+            "S18": "2000"
+          },
+          "equal_names": [],
+          "certificates": []
+        }
+      ],
+      "final_trace_tail": [],
+      "new_outcome_sha256": "2f9da248f45e42983e937dac6f4a6120955a91583960fd389bf08e801e9a5065",
+      "independent_nested_audit_sha256": "a3e2cca50388d14cebf1170a6c4b96718f365e5178dc014467dc2864614fcf9c",
+      "final_conflict_witnesses": [
+        {
+          "line_id": "E36",
+          "physical_edge": [
+            "S18",
+            "S16"
+          ],
+          "initial_endpoint_domains": [
+            [
+              1
+            ],
+            [
+              1
+            ]
+          ],
+          "initial_relation_mask": 0
+        }
+      ],
+      "final_conflict_explanation": "Last round begins with an actual separator whose two endpoint domains are the same singleton; its initial NEQ relation is empty, hence no shrinking trace steps are needed."
+    },
+    {
+      "gap_row_index": 1015,
+      "key": "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132",
+      "target": {
+        "scenario": "one-bounded-anchor",
+        "state_index": 0,
+        "target_index": 849,
+        "phase": 0,
+        "sides": [
+          "S5",
+          "S14"
+        ],
+        "symbols": [
+          1,
+          1
+        ],
+        "old_status": "conditional_inconclusive",
+        "input_sha256": "271213fb2bad81209bcbf0c68a471030ef236ad727035c5aa7e0eeb75a7f3f66",
+        "old_outcome_sha256": "3ee68413a8f559d5034b48019f100323bd4302311b5f4ed1d836ebe69939fc3a",
+        "baseline_status": "underdetermined",
+        "baseline_outcome_sha256": "15991a08cc4de9c32fddbfec9e0f3684d6c01fa5d874124c82ecd1185c8dc707",
+        "diamond_baseline_status": "underdetermined",
+        "diamond_baseline_outcome_sha256": "9ce42b661b1467f7f06fa1e18786a01bf17c091539c22762e94b2c430500350e"
+      },
+      "original_pair_checkpoint": {
+        "path": "outputs/quaternary-logical-neq-pair-scan-2026-09-29-checkpoints/044-8070783fd68d.json.gz",
+        "sha256": "f3be9670ae9d377d12e1ed201053f8d6b5355e428c2ebb8cc0da66496f91c17c"
+      },
+      "raw_graph_sha256": "711ea708150173a1d6a9db41411fb8a87aa86a512fde994823822b30619be474",
+      "actual_anchors": {
+        "S1": 1
+      },
+      "hypothetical_anchors": {
+        "S5": 1,
+        "S14": 1
+      },
+      "offline_query_roles": [
+        {
+          "role": "base",
+          "index": 0,
+          "status": "sat",
+          "input_sha256": "a95dc9f7ee2791d678ac27cecfc9f9a533f171d2c99b0fca49a50a4893216088",
+          "result_sha256": "e6da698592e0b83e63e77a4278aad0bd6a367c63a779a173788527f7f55f9710"
+        },
+        {
+          "role": "pair",
+          "index": 879,
+          "status": "unsat",
+          "input_sha256": "a8f49fb3058444a7c8dd9158811d505c9aa64c4bac5796292980d0e3dfb994c2",
+          "result_sha256": "6f6bc392545bcfa0f711652f58193100f24d4349f80a85362c2b77e7dbd16e3c"
+        },
+        {
+          "role": "single_0",
+          "index": 779,
+          "status": "sat",
+          "input_sha256": "bfe438b8b7dc9e4cf3d88b9a6c5b85cb85301b5fc7732895eef83e26c8618c96",
+          "result_sha256": "78690621a6909806613a21e821c0dc8acdbd026acc34d82ff0944a48c3a77413"
+        },
+        {
+          "role": "single_1",
+          "index": 480,
+          "status": "sat",
+          "input_sha256": "141e56db7c0903a980cdb7a10338a0c964d5da85a88167858567b10d5099d4a5",
+          "result_sha256": "a448961128199b47ff49fee857b08850f36f4a98b64b8cd0a939e606bcebfe6f"
+        }
+      ],
+      "previous_status": "underdetermined",
+      "new_status": "conflict",
+      "removed_candidates": [
+        [
+          "S7",
+          2
+        ],
+        [
+          "S7",
+          3
+        ],
+        [
+          "S7",
+          4
+        ],
+        [
+          "S16",
+          2
+        ],
+        [
+          "S16",
+          3
+        ],
+        [
+          "S16",
+          4
+        ]
+      ],
+      "rounds": [
+        {
+          "round_index": 0,
+          "status_before_triangle": "underdetermined",
+          "document_states": {},
+          "equal_names": [
+            [
+              "S0",
+              "S17"
+            ],
+            [
+              "S2",
+              "S4"
+            ],
+            [
+              "S2",
+              "S18"
+            ],
+            [
+              "S3",
+              "S13"
+            ],
+            [
+              "S10",
+              "S12"
+            ]
+          ],
+          "certificates": [
+            {
+              "certificate": {
+                "target": "S7",
+                "triangle": [
+                  "S0",
+                  "S2",
+                  "S6"
+                ],
+                "excluded_color": 1,
+                "removed_colors": [
+                  2,
+                  3,
+                  4
+                ],
+                "edges": [
+                  [
+                    "S0",
+                    "S2"
+                  ],
+                  [
+                    "S0",
+                    "S6"
+                  ],
+                  [
+                    "S18",
+                    "S6"
+                  ],
+                  [
+                    "S7",
+                    "S0"
+                  ],
+                  [
+                    "S7",
+                    "S18"
+                  ],
+                  [
+                    "S7",
+                    "S6"
+                  ]
+                ]
+              },
+              "class_members": {
+                "S7": [
+                  "S7"
+                ],
+                "S0": [
+                  "S0",
+                  "S17"
+                ],
+                "S2": [
+                  "S2",
+                  "S4",
+                  "S18"
+                ],
+                "S6": [
+                  "S6"
+                ]
+              },
+              "class_domains": {
+                "S7": [
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "S0": [
+                  2,
+                  3,
+                  4
+                ],
+                "S2": [
+                  2,
+                  3,
+                  4
+                ],
+                "S6": [
+                  2,
+                  3,
+                  4
+                ]
+              },
+              "literal_physical_witnesses": [
+                {
+                  "classes": [
+                    "S0",
+                    "S2"
+                  ],
+                  "edge": [
+                    "S0",
+                    "S2"
+                  ],
+                  "physical_line_ids": [
+                    "E1"
+                  ]
+                },
+                {
+                  "classes": [
+                    "S0",
+                    "S6"
+                  ],
+                  "edge": [
+                    "S0",
+                    "S6"
+                  ],
+                  "physical_line_ids": [
+                    "E6"
+                  ]
+                },
+                {
+                  "classes": [
+                    "S2",
+                    "S6"
+                  ],
+                  "edge": [
+                    "S18",
+                    "S6"
+                  ],
+                  "physical_line_ids": [
+                    "E52"
+                  ]
+                },
+                {
+                  "classes": [
+                    "S7",
+                    "S0"
+                  ],
+                  "edge": [
+                    "S7",
+                    "S0"
+                  ],
+                  "physical_line_ids": [
+                    "E7"
+                  ]
+                },
+                {
+                  "classes": [
+                    "S7",
+                    "S2"
+                  ],
+                  "edge": [
+                    "S7",
+                    "S18"
+                  ],
+                  "physical_line_ids": [
+                    "E43"
+                  ]
+                },
+                {
+                  "classes": [
+                    "S7",
+                    "S6"
+                  ],
+                  "edge": [
+                    "S7",
+                    "S6"
+                  ],
+                  "physical_line_ids": [
+                    "E44"
+                  ]
+                }
+              ]
+            },
+            {
+              "certificate": {
+                "target": "S16",
+                "triangle": [
+                  "S3",
+                  "S10",
+                  "S15"
+                ],
+                "excluded_color": 1,
+                "removed_colors": [
+                  2,
+                  3,
+                  4
+                ],
+                "edges": [
+                  [
+                    "S13",
+                    "S12"
+                  ],
+                  [
+                    "S13",
+                    "S15"
+                  ],
+                  [
+                    "S10",
+                    "S15"
+                  ],
+                  [
+                    "S16",
+                    "S13"
+                  ],
+                  [
+                    "S16",
+                    "S10"
+                  ],
+                  [
+                    "S16",
+                    "S15"
+                  ]
+                ]
+              },
+              "class_members": {
+                "S16": [
+                  "S16"
+                ],
+                "S3": [
+                  "S3",
+                  "S13"
+                ],
+                "S10": [
+                  "S10",
+                  "S12"
+                ],
+                "S15": [
+                  "S15"
+                ]
+              },
+              "class_domains": {
+                "S16": [
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "S3": [
+                  2,
+                  3,
+                  4
+                ],
+                "S10": [
+                  2,
+                  3,
+                  4
+                ],
+                "S15": [
+                  2,
+                  3,
+                  4
+                ]
+              },
+              "literal_physical_witnesses": [
+                {
+                  "classes": [
+                    "S3",
+                    "S10"
+                  ],
+                  "edge": [
+                    "S13",
+                    "S12"
+                  ],
+                  "physical_line_ids": [
+                    "E30"
+                  ]
+                },
+                {
+                  "classes": [
+                    "S3",
+                    "S15"
+                  ],
+                  "edge": [
+                    "S13",
+                    "S15"
+                  ],
+                  "physical_line_ids": [
+                    "E21"
+                  ]
+                },
+                {
+                  "classes": [
+                    "S10",
+                    "S15"
+                  ],
+                  "edge": [
+                    "S10",
+                    "S15"
+                  ],
+                  "physical_line_ids": [
+                    "E25"
+                  ]
+                },
+                {
+                  "classes": [
+                    "S16",
+                    "S3"
+                  ],
+                  "edge": [
+                    "S16",
+                    "S13"
+                  ],
+                  "physical_line_ids": [
+                    "E22"
+                  ]
+                },
+                {
+                  "classes": [
+                    "S16",
+                    "S10"
+                  ],
+                  "edge": [
+                    "S16",
+                    "S10"
+                  ],
+                  "physical_line_ids": [
+                    "E26"
+                  ]
+                },
+                {
+                  "classes": [
+                    "S16",
+                    "S15"
+                  ],
+                  "edge": [
+                    "S16",
+                    "S15"
+                  ],
+                  "physical_line_ids": [
+                    "E31"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "round_index": 1,
+          "status_before_triangle": "conflict",
+          "document_states": {
+            "S7": "2000",
+            "S16": "2000"
+          },
+          "equal_names": [],
+          "certificates": []
+        }
+      ],
+      "final_trace_tail": [],
+      "new_outcome_sha256": "e19885d3137d119afa9ad40ca7d8f61fe85b35c2527b58120a4a12c9a3b8b7f3",
+      "independent_nested_audit_sha256": "e5f402c91b85c5daff718d14ef6865e17a21c100fc077a489a8f21f19464c624",
+      "final_conflict_witnesses": [
+        {
+          "line_id": "E37",
+          "physical_edge": [
+            "S7",
+            "S16"
+          ],
+          "initial_endpoint_domains": [
+            [
+              1
+            ],
+            [
+              1
+            ]
+          ],
+          "initial_relation_mask": 0
+        }
+      ],
+      "final_conflict_explanation": "Last round begins with an actual separator whose two endpoint domains are the same singleton; its initial NEQ relation is empty, hence no shrinking trace steps are needed."
+    }
+  ],
+  "scope": {
+    "producer_reruns": 0,
+    "detector_reruns": 0,
+    "propagation_reruns": 0,
+    "oracle_searches": 0,
+    "shared_checker_dependencies": "Frozen original trace/exact checkers and new independent nested proof checker. No independent second solver.",
+    "inference_boundary": "All 1814 old-path diagnostic trials only; not an inventory of new-policy actual states or a proof of general extendibility."
+  },
+  "review_metadata_correction": {
+    "date": "2026-10-01",
+    "fields_corrected": [
+      "coverage.declared_targets",
+      "coverage.unique_target_identities"
+    ],
+    "previous_reported_value": 64,
+    "corrected_value": 1814,
+    "cause": "The review script reused the name expected for each final source hash; constructing metadata then took len() of the last 64-character hash instead of the previously validated target list. The earlier 1814-identity assertion and all 1814 replay iterations had completed.",
+    "reverification": "Reloaded frozen manifest and gap checkpoint; flattened every group and compared full (key,target) rows in order; reconstructed unique (key,scenario,state_index,target_index) tuples; 1814 declarations, 1814 unique identities, 1814 checked rows. No producer, propagation or oracle search reruns.",
+    "audit_counts_changed": false
+  }
+}

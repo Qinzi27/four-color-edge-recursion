@@ -1,0 +1,3829 @@
+{
+  "schema_version": 1,
+  "version": "quaternary-triangle-saturation-prefilter-independent-inventory-review-v1",
+  "passed": true,
+  "manifest_sha256": "3657ddd23afc353609aacf9c9522ecd944b7eca5944f85e8ff9ba50e434296b6",
+  "source_count": 290,
+  "old_source_count": 279,
+  "new_source_count": 11,
+  "all_current_source_bytes_match": true,
+  "old_sources_preserved": true,
+  "input_count": 6,
+  "input_sha256": {
+    "outputs/quaternary-triangle-saturation-manifest-2026-10-01.json.gz": "42efe8132396a15fbaf945379428ff0330f3a37199299327668c8700763e1f52",
+    "outputs/quaternary-triangle-saturation-2026-10-01.json.gz": "5baa8f2bac8da1c8d24e65aa069a5f5e1758d1fef6ac1c38c555750966a1db6e",
+    "outputs/quaternary-triangle-saturation-artifact-check-2026-10-01.json": "8e5e329f9896c3d76e9b225870933d412fd1ba07417c6a7b94f8c5edfe6a954b",
+    "outputs/quaternary-triangle-saturation-support-manifest-2026-10-03.json.gz": "a84bd676277b76e8821c30fd7a725f80f0b025527d2a41aa4947447cbefe253d",
+    "outputs/quaternary-triangle-saturation-support-2026-10-03.json.gz": "7e1bf0937a848127e5c4d8732004e26d3c10c81543a33b93d68da232542b492c",
+    "outputs/quaternary-triangle-saturation-support-check-2026-10-03.json": "97481e0e4440b78f27f88bbe5074af2665a810ac6a0ea700c5376257f718b4fc"
+  },
+  "counts": {
+    "drawings": 537,
+    "eligibility": {
+      "geometry_error": 12,
+      "ready": 488,
+      "geometry_audit_error": 37
+    },
+    "scenes": 975,
+    "diagnostics": 1846,
+    "production_detector_calls": 4067,
+    "rule_cases": 6120
+  },
+  "conditional_shards": 88,
+  "conditional_parent_child_literal_equality": true,
+  "conditional_status_counts": {
+    "conditional_refuted": 1846
+  },
+  "conditional_detector_call_count": 2,
+  "conditionals_by_detector_call_count": {
+    "0": 1844,
+    "1": 2
+  },
+  "production_call_list_sha256": "d35d0116c386d642a5a5e319e8e160272254b9a12f17005d42ab6ebadeec0cd4",
+  "conditional_call_list_sha256": "7ed550c04293eece5a5195bda85d51d12ece9c89815619ccb978cb1f4e7d5b87",
+  "rules_sha256": "672e60a24b55c28ab17729fdf65c9d869724a58a2cfc52659a6b688395b7375a",
+  "old_1512_rules_sha256": "9d1fd3ba4b7717daec3c6a6a4ffbd3c91ae60f037d56fe2518360bda15da0f79",
+  "added_rule_count": 4608,
+  "added_4608_rules_sha256": "c035d32991e65da766676c77ecf6c639bdb0f9910d6302886415d300d797f901",
+  "new_source_paths": [
+    "docs/QUATERNARY_TRIANGLE_SATURATION_PREFILTER_PROTOCOL-2026-10-03.md",
+    "scripts/check_quaternary_triangle_saturation_prefilter.py",
+    "scripts/quaternary_triangle_saturation_prefilter.py",
+    "scripts/quaternary_triangle_saturation_prefilter_contacts.py",
+    "scripts/quaternary_triangle_saturation_prefilter_low_color.py",
+    "scripts/validate_quaternary_triangle_saturation_prefilter.py",
+    "tests/test_check_quaternary_triangle_saturation_prefilter.py",
+    "tests/test_quaternary_triangle_saturation_prefilter.py",
+    "tests/test_quaternary_triangle_saturation_prefilter_contacts.py",
+    "tests/test_quaternary_triangle_saturation_prefilter_low_color.py",
+    "tests/test_validate_quaternary_triangle_saturation_prefilter.py"
+  ],
+  "per_record": [
+    {
+      "key": "6c7bc2d5fe72c39b59a63addc2dcece2080f77720154bb4cef9abfe388d1207f",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "816d0d937917db6ddf6180561da7c861081f66cf2e702a242e1378c62e19b6bb",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "338da50e522f37ce8ed71ed135648b0a46471fbe8d03564e1001576e4c740324",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "6539f75f2dd6331e697fd3affc12731a1ed62e29c6c0c6dd4fe6522ff84a2aab",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "449307f20d34a946682dde1c8a9e8b4492bfd5f4565fa3f76059f5f3b642ea9a",
+      "scenes": 2,
+      "production_detector_calls": 13,
+      "diagnostics": 24,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "25c07d5e4d20a6e303e52a3965aeeb1a5c3c4f016521870e5db404f5517768d0",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "81dd138706468598aab4d187ca98273203202db9a7f593914ec8a9e6d55f64e5",
+      "scenes": 2,
+      "production_detector_calls": 13,
+      "diagnostics": 24,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "716980ae4b35cfbca8cd591ab2c2cf613866d48b263ff377bcc6d8c5001eca52",
+      "scenes": 2,
+      "production_detector_calls": 13,
+      "diagnostics": 24,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "5299b7d958d765ac3539b763b8f4bb19ccea0ff80fe0da36defcfcbb42fe18bc",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "a329ac11ea6b597912cc486efb2926a17cbeba2da6d620dd11323f95e8b7b968",
+      "scenes": 2,
+      "production_detector_calls": 13,
+      "diagnostics": 24,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "b3efb8c9c80d16bd47582206a118895255e72660650ced00424d701e63ba0b91",
+      "scenes": 2,
+      "production_detector_calls": 13,
+      "diagnostics": 24,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "1c5f9fb39fab4954bff1d8ffe1fe779333f46eb01fd40bb3e48e54373d26522d",
+      "scenes": 2,
+      "production_detector_calls": 13,
+      "diagnostics": 24,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "aa84278a536fb6fe9faad5a37ec93320976be7feb0f40b2593d0a1059d4f03ad",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "8265f988163239be3aa015c2040b304e919ed255ef02763bc34c09856ebd1adb",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "62c7ddbeefaca60fa5f06359b178ec769de21e03096094f447cfd7ce54104e20",
+      "scenes": 2,
+      "production_detector_calls": 13,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "160939fb537728eed904c76ed3ad8bf4e3a3e42cb4d15a2dbec7b017b736a385",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "ff06f0584a19b079832491af56668b9c82a9f2a26c3013ffd0fc8113a4583e5a",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "c45271dd12adac0f321f0e7194e3662ee5344a871167f4f04e34df22e65c513f",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "6d82ae08a546c51aeebb0827139875a1b0863ed04320175b7146d3fee61366ca",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "47fbe3a28df48f02e26e06c29a2a18eda6fa34e9c7437b00f75ad8c97d96961e",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "806afe4435ac12e8763be2415a9ea7abfbe94b7f4c29ab51653a3af0515ff0e7",
+      "scenes": 2,
+      "production_detector_calls": 13,
+      "diagnostics": 48,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "f77a805d20e29464286a97d53d0ad51d4d242cc8c54f073336e3de5371cbad84",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "a9a301a1adaec943a6937bb08336aa0bf4d81f850af6bfac02b1fc69682f37e5",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "600720ad04b16ef84cf950ca4045685b8005f7b19fbbc8b003cfa3ce0eafab08",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "4cc323a27203d12979b0a3a130fa2a289ad87d9761819e69484e3be4e833da80",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "0c756f6eb99449661097f2532f10afd2c2812a106a3ac9527bdf639ecc3805b2",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "c8b29e935329581172e40b0903f53048f2d4736303af077e9a342c9d206dedfe",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "ad26766f363960bce376d79da8102e057ec03ca21fcb5bd55c047af8c6387a16",
+      "scenes": 2,
+      "production_detector_calls": 13,
+      "diagnostics": 48,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "c93ede87db203061cd25d58d376b4c84d06bb6c69d92c02fa982b6c078dfb6ee",
+      "scenes": 2,
+      "production_detector_calls": 13,
+      "diagnostics": 36,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "5cb9b21b409f096a46545bac666e98cea7ce1d889337d162faea14125053efd0",
+      "scenes": 2,
+      "production_detector_calls": 19,
+      "diagnostics": 84,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "08afe49edb440eb8801a87467d6486c1588275fc63b9d11331fa6f5a941a1ae5",
+      "scenes": 2,
+      "production_detector_calls": 19,
+      "diagnostics": 84,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "1b2263e258d4ac39edbdd9d26a841036fed1521778d278713ce29a9d2a400f59",
+      "scenes": 2,
+      "production_detector_calls": 32,
+      "diagnostics": 14,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "78be6077bf64bad95d5bf01e401fd541287f57a62528ac3bfdab83fa1ff7765e",
+      "scenes": 2,
+      "production_detector_calls": 19,
+      "diagnostics": 76,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "dbefabca9aa68d11cbdbb9cb6e869b2977e7c981f2fec835fb55c785ece3b1a9",
+      "scenes": 2,
+      "production_detector_calls": 31,
+      "diagnostics": 14,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "d74c24999f82bcf9a1707b43996d88b570b5e32b6622c715b6936d18ee6a946f",
+      "scenes": 2,
+      "production_detector_calls": 40,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "cb5813ca45a84cbc366c995454a0985395cb6d03ce1d5bb6d02a813b09b7a65a",
+      "scenes": 2,
+      "production_detector_calls": 50,
+      "diagnostics": 5,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "0c830f0f0a9d765b6a67584daa908e50298656e54d369e756f1df9a40eb39067",
+      "scenes": 2,
+      "production_detector_calls": 13,
+      "diagnostics": 36,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "3fad124689760acfc559104b1c4c0e9475a843a60b9c1d875512a30c7a40eb01",
+      "scenes": 2,
+      "production_detector_calls": 19,
+      "diagnostics": 108,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "709131d4f084071df1e5cc956132f0df6b1d0bf918fe3bfd03b3bf990fcc072d",
+      "scenes": 2,
+      "production_detector_calls": 19,
+      "diagnostics": 108,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "9fb8b41b0a7b6370faf6912416db35865698cd7b9a5420d82fb8bc91dbae4857",
+      "scenes": 2,
+      "production_detector_calls": 33,
+      "diagnostics": 14,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "fb9808b32b28f8449c0ec0e95c911474bdfc15b5c72f8b0c398643f777fd3ca8",
+      "scenes": 2,
+      "production_detector_calls": 19,
+      "diagnostics": 132,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "9e596898d628126342d5379930abe037d0d23d0a4ea2888068a2b8e1d3aabab7",
+      "scenes": 2,
+      "production_detector_calls": 33,
+      "diagnostics": 14,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "83a33bf21046d705916c28fd8c42437f712e6b17fb10b33c069d26a2a09baff8",
+      "scenes": 2,
+      "production_detector_calls": 40,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "0954ec86901aba755b605d24f63d1c01335edcb07b916fe6cd4ed2a36511d8d9",
+      "scenes": 2,
+      "production_detector_calls": 50,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "8070783fd68de9a9dd22c6d4c8831a55c330290f4a30e2e9c8f6edb70af66132",
+      "scenes": 2,
+      "production_detector_calls": 14,
+      "diagnostics": 378,
+      "diagnostic_detector_calls": 2
+    },
+    {
+      "key": "5362a35401bc9275e2fb58fb29814cb0cf12af3bb22091754aefabba65e8c51d",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "0c283b34bc62ad318ce68ce8a6bba6ae96c0abe4b17dbe9ef851f6c587966b6e",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "002a5aefbad2bee1832bddc74dce0926ebb311951253f186cad6faea9985d998",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "2c8201c9042ce70263311410ad47880709b10b69b90f3dcdc16c8f86e3f6f561",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "72053c364126aa1b2e0f7738e9575a6c05592caba1a17f67a2477065599d8a1b",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "de67492eab78c915ccd086a559e20faa0df5f07f571aef861d4497dc9a6d18b7",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "fdb78a346638c509683fe687848147e151322d2eca3de4671e4132e03500c662",
+      "scenes": 2,
+      "production_detector_calls": 8,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "c2f6edb72f4b46885afdc1d5c5295492cd5d9fc8928b4cb4e0c4ceec49a9a69d",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "869dc5ce06c7ea4594ead98081379d153a39bcd9014c60472f97c3df677aaf49",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "648872b8aa5cd734bfa4f04e54825615ea4c000af3b04afac8d164f8631520ee",
+      "scenes": 2,
+      "production_detector_calls": 9,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "c253bad6781da060b72c9adece057486463ff2f4c61451fbcee13faff173eee5",
+      "scenes": 2,
+      "production_detector_calls": 11,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "bf6cc1ff9eac36fe8dbae69b5c3722d86422c1fc7f0abd790f1a865621f606a8",
+      "scenes": 2,
+      "production_detector_calls": 13,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "f7d1fc3888b7c6bec8588ec3d08f5bd7b38d0690f528fd55a882623365371d1c",
+      "scenes": 2,
+      "production_detector_calls": 17,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "a3f4c0553faf8589fdc057fa2c6bd8e67924fee43af9798e340cc48b2ab6f74d",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "7bea47c28aa52d448c0c4cf101bc01723bc00b95dd8536a24904b9fc45c15599",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "e1c496c43bd375a6ae11465ad4d1ba3d3ef03e7ab787fe7984ed6ba3de2667a0",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "4edaf6866bc0e90e6e87ce35c691ea7c1e074acb9eba1c5364e85088c2a974cd",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "e774b7dec98999e08702f813dcf1b66cd03fb9f9adac4f3a5c458ea035175af7",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "fd189ab5eb2fa3b26e1b379cedbc349e42eece33fef5ad7f12592a82461e951e",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "226f7237219d6bed83e79d912a29bad5b953bd4938f286ec528093727a44a6fa",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "04fcfc8ba80c70cec70b1013c34929d4fa124567c736b4ff9b3e2309eff9dc75",
+      "scenes": 2,
+      "production_detector_calls": 7,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "01b73abeb0adf56c0cf91d637b07f193b026b3fb0a6b25bbe7c3e53ffb733b8f",
+      "scenes": 2,
+      "production_detector_calls": 11,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "6a3190aba16c3b2d8e1e14e1c375e5e0580ff1f11d96c91cecfe9ba8201fabe4",
+      "scenes": 2,
+      "production_detector_calls": 15,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "d164e2ea5f7dc52983239415a84778454884421631e9ff2da9fd0d3170a6c077",
+      "scenes": 2,
+      "production_detector_calls": 23,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "3e0d37f7562973ff9731e1abbdf8b1df1310a94cc371cee8781be238d5060923",
+      "scenes": 2,
+      "production_detector_calls": 30,
+      "diagnostics": 16,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "ece0e95feb999884836d9a9d295ffd6b975e8e4d1258db0ba967e28720541284",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "6c5b83e5ffd02f87dc2a6e6ea0e0ef4e4e2ad41ce6bd07e533062ff8f6ad2ff6",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "df3fea80b98d211da28b4f2be0a1275096ccde62db35c311c59edd370d29fac7",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "06851e20de8a02039a5c74555c2c0d8bb898f54b57792dd11ca3999e044f57b4",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 18,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "cff4e6b15585800aecea587cf86bf446c9a1ced4f63e53b5e929bf7d55da3e3a",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 18,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "f39faa5d830b7fd6f8190236528a72df36696aea4c4b48d4aa438a8a9392405f",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "5e085479536d4ca9bc862f9a21aabcf2eedfc0858f604be1679a765b5466568f",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "c63931bddf73fae15a1cfcbb44026939cb7245252dfe2697a50fe798acb90c7a",
+      "scenes": 2,
+      "production_detector_calls": 7,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "cf8e2fc498fe170fc0210a34acea74e9eeec2e770952c5189d31a6c592e1c98e",
+      "scenes": 2,
+      "production_detector_calls": 13,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "3d1fda9f5dfdf2667b20fb4d5ff7590f0296929a36762c62d1f2593b84d05bc9",
+      "scenes": 2,
+      "production_detector_calls": 15,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "75268bef09b50e5805bdfd0b8c1a0a3a449a038bca87217453e76524b029f59e",
+      "scenes": 2,
+      "production_detector_calls": 19,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "8b7b7067f08e9b1a1acdcd3a5b1fb86d5e0313334594cdbc3cf4e37d6b77cc8c",
+      "scenes": 2,
+      "production_detector_calls": 25,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "2e237f5f112abb86b4736074cef7c7fa6e266540f405edc477966c17875654d0",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "709f0e1778ffacb2f21cc5b7288d6ea203c0a82732ee8379efb76def6975f31c",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "16ed83d84fad8adbb9f1f106d9192d4154b0b8fa9a3e3a78deb873e05e075560",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "6c9164c818a6066e97d88b66f174bc5b2e6c10f6f21243ee974743cc17dccf0b",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "5d7a743ed6f1772793a4b2fe6077ac4cfdfcbab10f96b321d617aca36fd52fbf",
+      "scenes": 2,
+      "production_detector_calls": 7,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "a51ae728a9c529b76c1a657f3e64e54707458381d2e894c0f556021a545b306a",
+      "scenes": 2,
+      "production_detector_calls": 13,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "cc992ba02a70826d7928607bd777d61a113b97732e31491f9e259545f27966c8",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "52aa7cd9f4affb39403e99e94dcbf45d2bcb434e7c203cc04ff916cb74fb47cf",
+      "scenes": 2,
+      "production_detector_calls": 7,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "c58d10a2ba03a5299834cee58edff9f17add3b0be1c350253897241e628a5333",
+      "scenes": 2,
+      "production_detector_calls": 13,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "243c15875edaf315f4ed377d5afabf701863d5f093b9fa6f25fae5b139a075b1",
+      "scenes": 2,
+      "production_detector_calls": 19,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "00fd3c26d4dc114f9768a0d68087b79ed29596cbb1a07a89aa854960e10099bc",
+      "scenes": 2,
+      "production_detector_calls": 23,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "d70ee68af1500d39a3e77a7fb05a6b2ffbe8ebc0c579857dd693146af50ff0cf",
+      "scenes": 2,
+      "production_detector_calls": 33,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "c69a1dfb3d24fda676652fd05e34d01f9ed6a8a00789383b6b42ac14bc4fef0e",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "06c9b694637c2b354cb37104c29d648621b2ee02846254e2ed815c139ee8734d",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "91a22e62f77bdb27d6a8328e434ff59b137481bb2dbfb4d7c508e1340c1faaf0",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "3de8bc8e94ceec8df520ac8d61d1849deb41178092c0773fd0a360842c54a7e9",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "62aba2293cffc9f4fe3611124e87b6f12cb2394f251979eaafc9b8680c067890",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "1bc6ec30aee3a08c9c889e77393f01f5829fbb40cf1c9c83fba4ef4de8b55fa8",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "6ab5a77353a0b679edd8fe40647fb54569b232eece3ce256e7cd678e24d9a02d",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "837f2129b7081af403dc9338abff499b5c2e46c6bec93fd349ef6fd60db5322e",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "898f3445af7881bb061d03c12925e239c7b028ab66fc882fe930e3613a6d4e15",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "903374dc9a6092c39603dbcc4e65a14c86b337a2fe0154dc4354e072b21e418d",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "28a06494f451a75508c942043d1e929d508fa550f969ddc2bc23ea10f4e94af5",
+      "scenes": 2,
+      "production_detector_calls": 7,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "d954a94bb755ccd1ff9ca395ee4e5d08a004a7af917fe4e457e20bc50e4762ff",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "22835714648527f89f93acc032fa1e140b60c74140001dc6474fa0e41a071c47",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "cb34725a36b0aa09f6fe24edb16516a82f210d96b4a0cc33af46395a205a2ed7",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "cd1c62a94c40b86dc926bb7cc0b9ac1ff7934afa0f533187517d690534f99f7e",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "a0f20abbbfb47eb1122203a1100df584e8a7c79e542e96453968d85b622a5615",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "6a3ae98e0f82037cedfebb5c4f08613c2746881f387e994a4045763a76fa47dd",
+      "scenes": 2,
+      "production_detector_calls": 7,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "a688684ca59f6ee3e15b4ca43d99ad092205dc47ae69cf8742ae9bc15b0a059c",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "3b1b93b6254f3a470770f93f8881c312030abb798d69b88c841918aa2244072a",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "b956e011daa24a305b1d09e95354c5dc3b40f2f032edc7e7b7eb28ce7897ce5d",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "f01a8159a5a933165a1a90ce776bb99c58421b2b24778f877d94224a2c98b5fd",
+      "scenes": 2,
+      "production_detector_calls": 7,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "37b7526d65e67d466989506e8fa6bfcaab66fc9c6d3d3444faad70aa5c411066",
+      "scenes": 2,
+      "production_detector_calls": 7,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "78a1d98fa0fcbb3321d0b4e6d2fb000fdbb5cdc012927486191e5382c55774d0",
+      "scenes": 2,
+      "production_detector_calls": 9,
+      "diagnostics": 12,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "d26bf40490ae10950cc0e716070d23a4cb6e3255d7561199f2c9e151cd53f8ec",
+      "scenes": 2,
+      "production_detector_calls": 9,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "df905e32bf4202c6a06231d34cd66b3beccedc98e9255a42106ccf41bba02be3",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "61a94362b6db80d5e385cbe624a6463554447e5b88e38cfeb4e26a6abc470a79",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "88f705fc029f003c76b2333ff1f83e4e1aba20b9aa4086b6fac17ed789dc7c68",
+      "scenes": 2,
+      "production_detector_calls": 7,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "8d6d33ddeb6a6eb4d058bc57a753f416a271391a2abd24c3a20492dcb118c998",
+      "scenes": 2,
+      "production_detector_calls": 7,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "7d0ab551a350e9eea9f118703a73e4258bf148269405433df259f91f7c794b3a",
+      "scenes": 2,
+      "production_detector_calls": 9,
+      "diagnostics": 12,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "f9563bb7583200959f49b304df45f0cabd911907db79fc07901980624a90ecb4",
+      "scenes": 2,
+      "production_detector_calls": 9,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "ab1091c2f15994488e7a431bd471bdcff130f3adb6dbcdc74fa69c2092e2e31a",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "b5e927fce60731cba1612c49056febc0e696dace11af58fc654e6fdceaf2ed7f",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "1d3b1792da054c171e98629b47c19c8debd9046163ebfc9f73600e01446692fa",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "b9ae95b62af87628bf8032a9df8918982f65d92f3d2fb73efff6102b15612b9e",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "931467e560079af1f229ac70ff57d8fa33c133386a63fe274c74ca7eec55e9f2",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "63fbbde276b65a8817057ddd38aa43b7d3e616fa437d4af513061fb4e06da780",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "fb3843c621540a65be23f1bca4cfdbb938d8e537e8a497fa4fe248b4deafdb1e",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "c6f654cc8d4298b4065a9922c1bd9a6ef4d5ba6e9f20f81ce98446b62465891a",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "a7676f95a7e368e19ccea8d89536838a8c51a204a187c6ae4a02588e2ba9e938",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "54b67e1ffa94cb32ada4d546e6cf7d1651bcb27c83cbd569a5dc78c52c6283cd",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "4f720857565c035aec7c5336a66b25938a6739317b6218f4b8a1b3d76e00ad74",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "baf9585fb685ace6c4ff5b96e37a24eeea3dc148468906c5560c70009fabcd03",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "29728e1072767593ea70d0b886a3809e9a2b069940639535314db9ff398221b7",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "b4edfa8386e8a749a76420d6a0ca697ef9a7f8097a3ba9cd81b074a0b5ca1abe",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "f9a3744367109399983330fcf28a1c55a3f756b7e363c4891db4f1b7f0cad5e2",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "19ec16591638bf53c014c82664ae019419e7c7accc926e047b9aa88122bf69e9",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "c181a77302fb4bdaf871dbbaf8b756969fa286e124d9191ebc7aba0401edaab2",
+      "scenes": 2,
+      "production_detector_calls": 7,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "92717de75cb9206d00f773c3c83625b35e3eb8078c860529677f95dc0dac030e",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "f5a99a085f2a39069089cabc49d5085e10c0fadb1aa0c6d7e4a3a4975e4f791a",
+      "scenes": 2,
+      "production_detector_calls": 11,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "1dfab5c0e49989159cf890c7b88c8af70eb6af993c817998c3769cb76ce049e2",
+      "scenes": 2,
+      "production_detector_calls": 9,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "eba315cda49d7d8f93404e39393e0145e092cb198d7f2cd74d2ee33dd235802d",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "d19c3062c1da9250e127d842935f97a775aac273028118b9f5fad1869e32b062",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "35de6dd400032c12b21d623025e3463abf50df7ff76749c654cddfa2d2c7de87",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "d9c914f9e5e5647419bddefc8df06182450c73f3c0dae4a6e7ef748628fd222a",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "2827a486138e1439ffab3800a524128cd6577b88a020c3f75e613814e5592e41",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "677521397db7c2f203897c5d6088b8d5c998e963e637270857241c7b61ff3482",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "51fb3e342f9a4409b1d3b127c78816723bcbe1c32cd89a799a11d0fc7b4530dd",
+      "scenes": 2,
+      "production_detector_calls": 7,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "9beef74179702974462a1d8f5a6cd7de7e45378dde954cb29422bdcf0f95f8e0",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "8b84b81909be9eb6bf8913ea8a969699cf3c9a32f7f8040ef2b3f69b698b5772",
+      "scenes": 2,
+      "production_detector_calls": 11,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "98827d8a9bf0951aa1832afcd3e9f72a7b0b5f5949c6c40b03c6aeab999d1a0d",
+      "scenes": 2,
+      "production_detector_calls": 9,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "4e4c3c81b20ceaa77cbedd871bdd5736c22ccbbb7eed7dcb60e44a4fa030f1c3",
+      "scenes": 2,
+      "production_detector_calls": 9,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "f77b5b179913848da3528176e3a488d08003c87ce5edc710b31401c99cce7f7f",
+      "scenes": 2,
+      "production_detector_calls": 9,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "a6837770bff00063cddcbe97518ed7d643973c8e8743c0ff300cd89efe6cfa2a",
+      "scenes": 2,
+      "production_detector_calls": 9,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "91026cc2f557699a1128647d969e9cdee6e0aa9677cf45c2ed61c5112aae72d3",
+      "scenes": 2,
+      "production_detector_calls": 9,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "b1c096be4a30f6b36bdc8e55dc37a740591aeac63ad1fa739cabf4aaaa5fa625",
+      "scenes": 2,
+      "production_detector_calls": 11,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "7ef25ba1c7e162587186eca893a96efa374d622b9c1c8d9592ddf89dd3d36725",
+      "scenes": 2,
+      "production_detector_calls": 11,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "ef9c096151c2d72b685898a0d832e7603053db7e75892cb3311360c61f1a3f68",
+      "scenes": 2,
+      "production_detector_calls": 15,
+      "diagnostics": 12,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "98b0556c357a9ccbb7425c0e47e4698cd3d35465b094349e2d0a6fc0ac36ff34",
+      "scenes": 2,
+      "production_detector_calls": 13,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "803c978af16c0b0d5c8007cfc9f3b837aceb3198c58d1df247887d67613b4a05",
+      "scenes": 2,
+      "production_detector_calls": 17,
+      "diagnostics": 2,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "399ba176f1e4786c90940f20742127be8549320f4696b4d56318584d5dd788bb",
+      "scenes": 2,
+      "production_detector_calls": 17,
+      "diagnostics": 10,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "905d503d2d6d3833fb995eb22ee1f6466f9e82d1c1d150dbc7ee4d76f20ef503",
+      "scenes": 2,
+      "production_detector_calls": 9,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "e51f5531f9f614c289bdac82ad24776261a3c915d59f6140eb3815a40fffc8ac",
+      "scenes": 2,
+      "production_detector_calls": 9,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "82cb6de7d12be8cbde47a535526dcb46f436128a71d5c279c9cd6f60609e2892",
+      "scenes": 2,
+      "production_detector_calls": 9,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "69ff9509d1487ce66d1548559b527b6ad07d2af49304fe03452cbed2da013fe5",
+      "scenes": 2,
+      "production_detector_calls": 9,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "969d9baf3f96e3aea68d5a6914d4e6750fef75e094089595ebc0dc9f9d11acea",
+      "scenes": 2,
+      "production_detector_calls": 11,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "d78ab8c56cfa4a12fab31e071b71773d2ed5aac158bb457a9ce3dee873172b10",
+      "scenes": 2,
+      "production_detector_calls": 11,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "2b70a919d23a3c550e51ecd9fd511914d507ff7bcad19e72a84d500d70a9a3e2",
+      "scenes": 2,
+      "production_detector_calls": 13,
+      "diagnostics": 12,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "e6a83883a5fe89d649f327831ff49692661c956e503684d08bf9579f79403668",
+      "scenes": 2,
+      "production_detector_calls": 13,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "df5e772993cc8d46540646e18977f785513f3897e5c605b4b2dd39ec6e2a3b1e",
+      "scenes": 2,
+      "production_detector_calls": 17,
+      "diagnostics": 2,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "dd98fe2d4d4a828b1f5297f3b1832486b78cb9636bd5971d43934bfc28b486f6",
+      "scenes": 2,
+      "production_detector_calls": 17,
+      "diagnostics": 10,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "bcbb8b274017fbddd3a6bfceeea27b0c6ab758c9aee2647e79d6688f2bece457",
+      "scenes": 1,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "7fdfca66c922927afb6aadc81e66f5f02ad653e5334677d6544b7548cd66915e",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "0c7f107297edc0018b9755e4599b68fd8720ec7bba7427a7a77f603322028191",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "7febe9463e4a840c54159926e1bee8eeaa65e1c97c70c42b329d5ccd7b7e637e",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "891a17ce37abf8e623387e686cbd9eaf6b6781bae2deea27b18fc7d4e7135d5c",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "a074fe149f166891374fcedb8bf6b2c0158efe48e31a2ef2fbe04a05d5c55fa9",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "54302f02914b74080706db0770a05aaedf7f9ef2c8929079193d20d65e9abda5",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "322118719cf20ed1a502b3420f8ed07485efa787f2a1344c14615d901157f301",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "37e65565f2afa7f99cae7e2e25438841a24ae2599c5261f32c45fcd6e5de6f06",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "59030cfa2bb2ad5f0594ee64f2c6bf5f2a78cfad3905db7d974dc7243db75884",
+      "scenes": 2,
+      "production_detector_calls": 9,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "8fbfc413f6b408feacacc6c57e2d2cfa85278c0dcfd0380a5fcd551f23cf3d50",
+      "scenes": 2,
+      "production_detector_calls": 11,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "072a3c8470ccf47a2cf9d213f1b891ccc0bef0ce5bf15024dd06bc5e7b650217",
+      "scenes": 2,
+      "production_detector_calls": 13,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "2d999695fff3a261286adede3736523e08b7821685b89c9b4c16c699c54e15df",
+      "scenes": 2,
+      "production_detector_calls": 17,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "30bb4bfecc2d2fedafc4f8487026a50f8e1c6a0d8f7f430ae87819aaf4d89e6b",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "c7614c71ceba0b7c896920d8b9fe9cdfb73ecbf4ac44fcb32e83beb95ff55a0e",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "271ddf6e4e567a41386d9709ed53cd77ad73306f4176ae9360161ea8f4c021e0",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "4c6e2c7dc33b96889aa0dc60037cc78376c080a4ecb541dd97992844d2ee71ef",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "ff13bf491e718d9e91fc367e9e08dd9d1d423a1bcebf149b736df427a4e50a24",
+      "scenes": 2,
+      "production_detector_calls": 7,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "53d09bc6b9e5ccea1c4de777e1792cf1ed3d60e08ed96b9bcb62792b713c7be3",
+      "scenes": 2,
+      "production_detector_calls": 13,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "9ba31e16fece48ef921d816a3be01ef4ebb62f25ad62aed82a8315eec569c915",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "ba839c249361d0d8ca45f8f39b21e97250399ff43f7c05fc663fb4eaf25ab511",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "7a4a4b73c785e422179bbb1177d7064d5268f8f74e55201e11c8f6c1624b3c36",
+      "scenes": 2,
+      "production_detector_calls": 7,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "ca0dc822c837fa19cdfca98e6aa13210e0f2118c87e8df9ad692793b2aafba03",
+      "scenes": 2,
+      "production_detector_calls": 9,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "d10b9c0da2ec7712df8cd88edfce7c13296883b3aa365d0d48ca83ec660e4cf5",
+      "scenes": 2,
+      "production_detector_calls": 19,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "c1bff331d3142b96d952ab282f08ec36ac39fdf6506ec7bc28ae6a529b312510",
+      "scenes": 2,
+      "production_detector_calls": 25,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "9a40892a26ce179f816c47f9a4fe81b1b80991f3f57016e9b1420c2ba38b9a8b",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "66c99fffa6e4095cb579f67d5b6d971a0af3ec6f1095d102064623e7057070c8",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "0d918a1c36b4e6ee74b678406b21f253036fbea5d58057ff022be1eedb05e5b9",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "a71339626328e7aa44337e8a271bdc8cabb4617d5a42949ba5638038b8560163",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "6ffaea696248a2a0a8509c82496c4a39bebd9d048f87611b593ee948abe666d3",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "819db594d12d73e5591bfb5cb8707ea400bcafec077bcef46dcec7de57cb94ca",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "b305c6a284f3ec09df81a361f77451895ede0e297bc67cee78934d1f26222987",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "8db4ab1f7a9339a37ae6f9fd31249dfb103246b8939ec857c687f583ee93398c",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "76a897cfa89d77f142480444569e22a86b1819886997f62954dd15cde4eb7635",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "a1f59e8fb84da3249a394f0e8a36e4d1369e61d4f01607bdd18099a4e2c2f0ee",
+      "scenes": 2,
+      "production_detector_calls": 7,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "b0714d78bb472d89f718478e71e95165009e03f1d0c29001d3a5313b214af1ad",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "a9b2a64b2d755ac361c7077c56537254a4b6634ce51d31001a97e7e0ea518cec",
+      "scenes": 2,
+      "production_detector_calls": 11,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "4a6019d669c7ad474c302f2ee16b4572fa37cfc119230f440e24a20578e32abe",
+      "scenes": 2,
+      "production_detector_calls": 11,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "2718322d67b9d4c3acd1369b6c31dd35b4901374b4691a6b3906a06dbcf8adb3",
+      "scenes": 2,
+      "production_detector_calls": 11,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "dee7fb73c071510abe38ef76e9862843adfce3e65bd499f51ad45aece4089fa0",
+      "scenes": 2,
+      "production_detector_calls": 11,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "a6614be2d9650599a41194e70628e4b6e6873a109f3c29d8f2334d1bcdd13dd8",
+      "scenes": 2,
+      "production_detector_calls": 13,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "d0f85a43e2754f7f865253d3780842c3b572d8b45814965af9c2084b95d529d7",
+      "scenes": 2,
+      "production_detector_calls": 13,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "9149f90b6d04ba75c59e3693971129b56d69c3aa7c091486a1b0a8449496fd20",
+      "scenes": 2,
+      "production_detector_calls": 13,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "f2d0f1e8241226ef9f05a2895ee1fa263daf0b0cb31e6a34563f81199275482b",
+      "scenes": 2,
+      "production_detector_calls": 13,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "4c38f431e4652700e059d723d68b67c5f31f852868c0b01299a4c5bff6db6d04",
+      "scenes": 2,
+      "production_detector_calls": 19,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "0bcdc28e27c0ae4680b1fbb31548ed6c2a5a8b84fa3d6a1b4bd753a583c9e97f",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "5ef6fa73934bfdcf5ae5fe27bee11af1e898a780b846fdc3e4e5c26ffd8d623a",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "1d808c14667f902fc535fa5b9a59238f84c99b933c343cb2df167bc6aa40ad50",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "2331337d60756b36e8af7e3c95d0cc734a24c0bb60c59983c90fbe0bb9f90416",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "914d6e38838e7a13475347bece322171467b9341f3cd10c5c78e1dff16b63694",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "113b88747b38b074dd63b904fe59fc8304e4c8d463c69de44518be6db9faaec6",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "12f138fa71fb60e0bb46a6b65413e276f2773097b266ae129189a9f1c9c63c21",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "5ece8694eb3467eee887d55366d8e3ec17e4b8ccdc3c1bf792879bc26124f88d",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "a108a4a83309fe461767a50bd384c6f62013d312f8b8507e89915e633d0e9490",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "221d568b2628a83ae7a69828f40bde75aeeb510a0b0d3c2206f75b066f60c57d",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "db4f54830ac33e972e05e16a31b0ec8bf92f14e78ccdda5871de7e1921f9c80d",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "69a8ff470cd59437aff997ae32e535495299ab534931bdfd8550bbb53667f64f",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "86cd4956dfcd7aa710532d0a06c699e9a47fb431be2e80895b9a3d76b4df89b5",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "c89081a5e073c1976599c7f9493f6925ca6051586e26bebb56ec6645d7bb1841",
+      "scenes": 2,
+      "production_detector_calls": 7,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "0d24490449c639219855c919bdb7519495d35a27791665b0acab8e47af00bc2a",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "a48a450e58f785ed293181b63ec0352723ed62d05498905f952d149670c0c0c8",
+      "scenes": 2,
+      "production_detector_calls": 11,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "ac312ec518af5bb6c217a04cf26e2f497345528aaa377a6c12c6f49bc39ce7b7",
+      "scenes": 2,
+      "production_detector_calls": 9,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "6bdf4f68a232c729d80c0dd7d753e068f63e56455adbf4519e120d3aa224c3a5",
+      "scenes": 2,
+      "production_detector_calls": 15,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "5533a5426cae2ac2c3868b4d7cc29b91f37244306fa4cb6a2ca8019bf8d7c6fc",
+      "scenes": 2,
+      "production_detector_calls": 15,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "ed0ea1ee4399000fcdbb38a5b3750ae090d7e23c30a20eb79db510fdd60fe852",
+      "scenes": 2,
+      "production_detector_calls": 15,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "20ed7d2e222f13f61901ff6f93ad84fe85e73cfccb99cc18848e9012e4f2e255",
+      "scenes": 2,
+      "production_detector_calls": 15,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "791fd84f89b9fde694b28f9da3aac578da39fe63e61e9018b450019128479122",
+      "scenes": 2,
+      "production_detector_calls": 15,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "0c3a7f43765f3cd463eec7ba0196cf337491ba28096bd0b614ce9030f79fe87e",
+      "scenes": 2,
+      "production_detector_calls": 15,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "acfc93d0883bfbf59a1da07aa5f79619c6e3742a91c9d248e93d9a4eda75a101",
+      "scenes": 2,
+      "production_detector_calls": 17,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "22b729c38d57549fc76c1107f5e66e786284406df6da1ed64406c1d0bc94340e",
+      "scenes": 2,
+      "production_detector_calls": 17,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "a6d3d5ceb859db157695279fa2beef67754b550b1bc1fd5aa96062dd7eeb70c1",
+      "scenes": 2,
+      "production_detector_calls": 19,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "9f426c7d35c4cf920e53828153af6bcee42f26a96ed5b17bdad29e4605bcce79",
+      "scenes": 2,
+      "production_detector_calls": 17,
+      "diagnostics": 14,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "14699f5e91404553c4f10bc19a98933bd220e565aa7a46af1628f9c5d3a2485d",
+      "scenes": 2,
+      "production_detector_calls": 23,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "bb58378f0b2913e22140da733cca578eb4e04562e2cbf93c76ddc196f0433a10",
+      "scenes": 2,
+      "production_detector_calls": 19,
+      "diagnostics": 4,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "5af62eab9a922bc8bf15b8f376e6672ecdcb90f607da06eff011c9b3efa7d26a",
+      "scenes": 2,
+      "production_detector_calls": 27,
+      "diagnostics": 4,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "efc2de78bac638d3695eca4fb435809798d24ffdbddc556b468e6dd29c43f6dc",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "e2cf552f8c39ea35cea3809a1da537594165c20f7942448f38454bdc87ce35bc",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "bc402e8095de69a82e762c1ab810553396b8f467d3774d742a20f083083a76e0",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "b0868d900a44b3604a6e1338bec9170a22b1da0d27163764eb6385d4d1e29ae0",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "5c4e03eefee76ff21f0eda313f841bb88d33898796e33cef6a190293d6d14423",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "9f2ed156b6d60a570c2773c488e0ebb45fde378547dbc6267abe6857245e52fe",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "71d65d2769c2accad04ea96e08fe9cddf4c94df4cc8d4e05026e3a05e25b3436",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "492e025753a03e7d1ece1be18173b41d0f82794a6689be48f5d8f27b6096e6f4",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "ef2240bb6eb5624344429495ae352a524996994c9bfdaeed4da9cdde19a569c2",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "99ebf7121cb495f8df2602ff5e589af1090d3d75c5c2c545638d01ea0533873e",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "2e9bd4a5aed2f39e61cabfea73bbdf42484741621d180178bf563e934c782c91",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "938e46ef94fb1d113bad778dd864c6ba538c1a2093473fae50499b6b36a09dff",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "53937e41788ab2b7df23dd4cd98ae12f54670ba298943b9e2ead74edbb695e4e",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "32c9475ee3f531832dea997c00f391f0344f520162c78174b3de2844f09f3a55",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "e5edc52811ccf6b00ad220d24982c5ebdd9f7aae934f8d293ab088f25b140255",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "3a2efc1786d72e6516635efb510da190ecf52c90bc6142eefb800c7c7a5010b1",
+      "scenes": 2,
+      "production_detector_calls": 7,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "bd91331dcc75254dbf7c766d05b4f473fa594dbe548fa9917f0493aa7cefd7e7",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "02dbeba2094c47c62550a6d430614d4916ae91473f1a672c1e613cb622cd2fdf",
+      "scenes": 2,
+      "production_detector_calls": 11,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "cefdf76408e624d1cacfa688fcc2a5cebba80f7bbffa5ed923d5098f384a8841",
+      "scenes": 2,
+      "production_detector_calls": 9,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "f9f2eeecaf26f8128b57c64dd97e5a5abfd7e0627aadfcd0c3dc493157d2cee9",
+      "scenes": 2,
+      "production_detector_calls": 15,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "3d7d7c6b62171c29b2105347143b19a7916df0f842a5aacdf8d6f5c8bcd0ce5b",
+      "scenes": 2,
+      "production_detector_calls": 13,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "748619eb54a640ba7c71da5ba7b80c66eb4648903ff2a93864d53b03678279b2",
+      "scenes": 2,
+      "production_detector_calls": 13,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "5ff2489db52fd121ba36fa76ba95c70022855d03e0533d863bd77f22144147ec",
+      "scenes": 2,
+      "production_detector_calls": 13,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "d45525311b0dff6b8930525edacfc6677a9adeb9edb2aed323ed265c7b738e05",
+      "scenes": 2,
+      "production_detector_calls": 13,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "9e0efbf0d7762059889d42aefdc41eb69a09f83148b33c719f89c81e13ca7ce0",
+      "scenes": 2,
+      "production_detector_calls": 13,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "b35ac54c65fc9946f2900c0ab4c28cec6c0126f9b8ed21091a3edaa3ef8fc812",
+      "scenes": 2,
+      "production_detector_calls": 13,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "4a2cd3d13874ab820a2e31849756045e7fafb96e8c6ff61b3cc8e8c2c78fef11",
+      "scenes": 2,
+      "production_detector_calls": 13,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "a44b86df9f2104f7a450abfdfe12e5183a9be5177954c7f5d31c11fffdb5b57b",
+      "scenes": 2,
+      "production_detector_calls": 15,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "9a22f8bb4ba8756092f0274ffa62db05dc91e6b90cc0e94e2ba18d2c55d06d20",
+      "scenes": 2,
+      "production_detector_calls": 15,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "609f5d0a4c9dc48793b83b7aa0838984096e94eaedbf1802ee2f7d993a44f409",
+      "scenes": 2,
+      "production_detector_calls": 19,
+      "diagnostics": 12,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "645835527b7b38c724ee79ecd3c641d0190a196ebb8c2986a07dbcf7cc2c3fb0",
+      "scenes": 2,
+      "production_detector_calls": 17,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "13e7469ccdce6f7ca170611634d27e7d8a459fd58c2774ddf193024622d589bc",
+      "scenes": 2,
+      "production_detector_calls": 21,
+      "diagnostics": 4,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "a29b9ec382d2247df3e19374e618ae683fb5757058eba1ee0e918b1309257b1a",
+      "scenes": 2,
+      "production_detector_calls": 21,
+      "diagnostics": 4,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "ae3c4e76fd5c4def5c173488d9d40a91eb1a1e503c8d2e6c03d5697d2bafe587",
+      "scenes": 2,
+      "production_detector_calls": 25,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "a048d0c0f9fd009c5b944c099dfdfe0e3ce0f125818895a3d0f53a213e596673",
+      "scenes": 2,
+      "production_detector_calls": 25,
+      "diagnostics": 18,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "ed22731c19e4b7d52aa4e38eeb0b87e440126a50d95334e9e76d8a6238c9705c",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "414aa671462f73103599f462992d0358f12979f5eaafed326d39c89e4267ceac",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "d13268542203ceb4de409e6ca16c88d4c5727d66ae449013927ea201b63a27bf",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "c175245beb4fa2212a6cc1dd66eaf4db695f76f3ffa506152b066f71ccceb5d5",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "cea7099a74edceb4a5e38aee33c92ad041061d648c01949631e50e00384142c2",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "3a953f2f6347508358faea1170b93e906d082d16348a791e99d7a47c63a27acc",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "2f4d827034f3b9fb67aab7fb0bcd8f5cfd6236ea0266c4507540ed1c5d047f3b",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "6487b8f751fc4675a616c29fb852342ad1b54bf407da8a121178e5c53fc86b83",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "6de5b426160720a587b4bcfb994e39952f140b3ffc0d000137a5957887cf3dc8",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "d2f9621898af81cfb69b46aee26ff9395eb5a090678439eb93ea85a0ababa38f",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "83a2a5751816a3d941bfeb4537b0564102efd4e4cd96e57ff93e6120b9cec4a1",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "02028fd668418c9d11de9d5964efc0352894e42d7d6ec0f260b3d96623a53c62",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "009341e43d56cedb1da2902e93d3fc2e5a635a97cd0e66933f241c5dbb45d045",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "aaf244d0be8b508a6e28814270d9070f7d41cd273aa7bcbc4d64a1ceba632add",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "7e4503374286294cbb02249c33bb1978c350d13292021fdf9c50e724370f0cd3",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "19ddcf8c439c9971fa436195419c236b728033478dbb3c5cde500243b6250a60",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "bd7f2c26f61ae560efaa55864e9705586511070d369e777da51c6123e972413d",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "545b0b3a9cabe2584ca4b1712193b9651ea83ce9feda68af7fee18205ab43a8c",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "83b0caa6ca0ed5766d704205f293f16929359d376dc1e4ab3cb9a0218aa6f2b7",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "c149e3543ee2e448d8f9f0d681b3ddfc8cf3fab937c62fa06528205fea942211",
+      "scenes": 2,
+      "production_detector_calls": 7,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "faf2e6a66f929a732f09f568fd4724aca67f708173769900e7a4c113af8e07ac",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "cc1ebc70536a7dd4487d9bc145960d5eb71f6c18dd1375b8b8888065dedecf3b",
+      "scenes": 2,
+      "production_detector_calls": 11,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "9b2f0bdc82b90932ff139fc1baf41ddf0e8fd8f631d866fb17fad1110411cd1b",
+      "scenes": 2,
+      "production_detector_calls": 9,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "83c45a6bef91e929e04e7646db3d7e27b6c49cda0332621a33fa79ccb64f0de7",
+      "scenes": 2,
+      "production_detector_calls": 15,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "908dbe10ce8419ba60ef169a7bf79537e75e3c3856c1097021921797551f4f41",
+      "scenes": 2,
+      "production_detector_calls": 13,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "9e865dd2ebb18f5ee18028e8f30aef053116a98def4ce685d9a714b54604189c",
+      "scenes": 2,
+      "production_detector_calls": 19,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "ae5be7d280efeecc19c558d6744491050406b7564065a7d8d054b609883dd56d",
+      "scenes": 2,
+      "production_detector_calls": 17,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "488f27cdcd65164552cc2bc454291a96dc8fe18543891bdede7dc99063074c7b",
+      "scenes": 2,
+      "production_detector_calls": 17,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "f5cd17bc0e705f35641210c87f8173e7e6715c8e98ddb4d2acb590add3e9ed7f",
+      "scenes": 2,
+      "production_detector_calls": 17,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "63d0e164bfee920f85c9f71b3967aba3b25fde2ecaf67a15d27a0d704bbb3c14",
+      "scenes": 2,
+      "production_detector_calls": 17,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "c8ef7990b767c6044836c9384eeb936ebf03e1ae351f7c4925892ca4e8653399",
+      "scenes": 2,
+      "production_detector_calls": 17,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "b7b7b26dc309fb0317a206d85d27365b29788dce2a181ea096350e35627f9572",
+      "scenes": 2,
+      "production_detector_calls": 17,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "0e7c15883c7eeaffbb3c9715dadff07316306f5f2f7af0d44181828f9b3652ef",
+      "scenes": 2,
+      "production_detector_calls": 17,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "89966604093949240842f09863b325d5a4aaae6795321b6c35ccd85cb07caf83",
+      "scenes": 2,
+      "production_detector_calls": 17,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "dd13e91040defb2d89019674ba70e8885434b00905874b2c30263561dbdfb0a4",
+      "scenes": 2,
+      "production_detector_calls": 17,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "7d14c59772291dcf929a1029cbd014f587efb82412378b5b21730dd2e0106107",
+      "scenes": 2,
+      "production_detector_calls": 19,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "181d41afd3dd3f75c049015c31bdf062dd9236433c0c9e5bc3080859f849e241",
+      "scenes": 2,
+      "production_detector_calls": 19,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "22f50ee597a806e9bbc7562c57432c6096d943ebb45c940479ab21f932f8ca41",
+      "scenes": 2,
+      "production_detector_calls": 21,
+      "diagnostics": 12,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "9560ac848d3fc06ef1dd508a1f5e253ebb4a7e2a683c32fd98c261ed0aa5d324",
+      "scenes": 2,
+      "production_detector_calls": 21,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "915130b8efd19e1727b989f887dd5f3a42106b93e0858dcd69ae9d2240610d70",
+      "scenes": 2,
+      "production_detector_calls": 23,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "de6bc166f35fbf6dd1a5e6b78f3ad085c57686af387894e687cbb2f5bf1ac1ae",
+      "scenes": 2,
+      "production_detector_calls": 23,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "0195f827dcd2a052e8af8c96df60913f223c088a2e557f7507eaf2ce4a649c2b",
+      "scenes": 2,
+      "production_detector_calls": 27,
+      "diagnostics": 2,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "4fb96275ad43a2199bf53e5da35e72895c55ea60d5f82a55d2ea9e1f04d8edd6",
+      "scenes": 2,
+      "production_detector_calls": 29,
+      "diagnostics": 4,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "dad1bc5d4b4f63ddf574c2db5bfbb018876d420f2ee01965b2d9dbebf4f82e56",
+      "scenes": 2,
+      "production_detector_calls": 33,
+      "diagnostics": 11,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "71afbbe307f6afb46b9bbda33d88a4303bd7abbdbcacdc8f1bbb25522ad03a43",
+      "scenes": 2,
+      "production_detector_calls": 33,
+      "diagnostics": 14,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "97253fe4092cd55d2018a28d95844915051f4a98353f47f5bef212a0d48f91f5",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "55e49508c412202f7ccda4115334c4e9529fc26768c8aaf3218ede2e3822dabc",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "42b35dcf8aed7fa2d3cfa1a42656fcee63c4f59d86b9cd9264fa2f799ea8028b",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "d033082d3e7d0ecd5cce53228ed24a140c0356ccce963781be0c3547c808d0e1",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "2e82f85b1ae8e2670a1c75400f47ab8d6bdb9d8473ed84792b3f6583060fbd0b",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "0724edd8c4f61879162e1a69b2a05878c2b893c0a77551b0c02ef4d801b91c7b",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "c91dcb923acb1c0041e7335e095a58d53875afda9ae0882248f0f1494ab7bbef",
+      "scenes": 2,
+      "production_detector_calls": 7,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "bff33797fd21ba970e05a08d7abb75bce341bf5819cad934e7a994898329d6e9",
+      "scenes": 2,
+      "production_detector_calls": 11,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "19ec02bb181bc505bff45c7755cae2f357d2b77b512b83301b4c8ec4b5e3ecac",
+      "scenes": 2,
+      "production_detector_calls": 17,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "60e18cad9cd2ad9f203f00d6a6f2de07c65dbdde57299f68d59a84a7915b0e81",
+      "scenes": 2,
+      "production_detector_calls": 22,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "48ec8678820b17c6d80a6eb4313bf80433ea86b22a874a548e468f2151675f4d",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "72f45f001023464a7a95f68c0547f4587a642d55b014f4b1efe3400bced727e4",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "f4c695bcd226ff18a09092cf68970b95bff9441446aad2062432e7ba4f6cd8d6",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "c250cb2f6a512df2fcd8dcda61bc887d9ebaa4eccb664e3c60b6fd8fb0fc946c",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "a190c7bf5db542a26c38c101af253b1912db59c6e5763f9f83f76b43de8e5d46",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "dcc616295eb5758521306ca3a86e04769efc4bbe764bc34b09aed46c746083d2",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "bcf52e32598dba14e49aea1ccbf484cb5f90b1e040cf37f3526f96261398e9ac",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "6ec9127d7fac2ef3caf1357138f0f340b2f3accd67a0c04c2ba3581b362b73fd",
+      "scenes": 2,
+      "production_detector_calls": 7,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "b1a091b1693b8b1bfe23f17b67e33d893e909fd67d82f060541203bdaaac2c2c",
+      "scenes": 2,
+      "production_detector_calls": 15,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "1c0def70062a53f99002e5c318276521d6e9b552eaa154e661a9e7ba54f85bd5",
+      "scenes": 2,
+      "production_detector_calls": 23,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "3be2d3c0d8b886911a800f59e6afd1be263e820dab860f93e188be8b9e218088",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "8506d703c99c0d209bfe744ebf3a36b6f38637b53a29f6577ef752be336bfeae",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "d32bedc403af87bb9b0236dac9d55deaa2a385eac469b1ca999df32063969220",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "b31e4f6bd8df9f98b7814c73708d530c60382d831a17cdb3a3ee4369ab1ae4fd",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "a358a305d13541cfd440d767cfd4a46c29f2a025d390cfced04de905e5b3c392",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "10c96e34259968b4ab63f89bfd2d12a865dcc0e163364abe269b633cef93f7d2",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "6eab02ffa4116d09e8a23895eb1554b9d43aaf4abd0300610facd7b50849b0cb",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "c9daebaa72b040ac970f1da011c6a317f6e8fcb2d904320481f2bf7ef4be11b5",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "808cf28add3399334057285d72250a2a43a49b43b0d43733472db0723b95fe51",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "db74e914cf2a706e4876fe56f189a3985989445098157276c9a2249503494fad",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "85aaac4681469af5ee1e87ccb5941b03f50be9a952d966deb289638e6bbc7501",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "c9d2aa5e57f5fe876cf0315b708c0c88200b5ffd63ec2e7b230ee9f9e3d29e0e",
+      "scenes": 2,
+      "production_detector_calls": 7,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "0f322e9579711b01f81e5b261f614843cc365b61f8fbd103026adf46a6383c5a",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "ebce8b9657de5063b04212406d9567bd69e0cb9b160a3ee4a1d62eca1c6d4b74",
+      "scenes": 2,
+      "production_detector_calls": 11,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "7de4f7934e01c485cc418e59419584de563fc5a1df66090bb69c5defe7a4e334",
+      "scenes": 2,
+      "production_detector_calls": 9,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "dd175e70e2cbc4132a26d437483f1657e868738aa6f6bb3f777981b0cc9b23b4",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "c7d5016a337fc766d819add0fafb45921965d053a24871121bab27f98cce9dcc",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "57be92326e35067d0ce3f85def0809e651838cdb0aed4cce2f92d6a922851a1c",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "153db34b8f92344845a55f83fa7190da40bc14eb7885828a3503233280e45207",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "7e76b9532006b369167a24a4b424b5a79797d36589c440eb75b3969078dd0ad4",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "49ee752c11b60d2f33521959657849a4af3e0aa1a44753ed05ac34d44f461062",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "e5d059c27900c44bc2835b83235e11c940b849c8bcc77c38fe61fc7324fd9c6a",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "17163d84c4d7d1303c8ec2db2f949d66c5b12100d8d446a2431d8a75cbbec8f1",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "1ad870b84da3b0dcbc5726a4bd0826c2ef79347e1c33cd095e1f36c1ee36e4b8",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "a827bf4fa6db2c173b3f20cb7e6b7e492cd1b19d8787d69c003233b8dd921326",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "cd21abf92b444bd7b86563765c315a354fdbd3a9278a225728696b27f36b1658",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "2cd65af2b90b89629810aa4f4a7824788e2c4c845ecc1807e99a348cae93692f",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "a9a38f80ed02e0b36b024378545660b2a10e23a50d91d42e83207e21870af610",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "0dfc6633c32826af6b8512ee305314757f1f757b63292fd87e501204d1378bb8",
+      "scenes": 2,
+      "production_detector_calls": 7,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "5ee19cd02f5a9e91a938b9e5189fc172ce17f877958d89ebe81e37495e7facb2",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "0c717520f62d89f2d18addf15d6969318b75ab6d586fec3071be23d12ec1f92e",
+      "scenes": 2,
+      "production_detector_calls": 11,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "21408c69d234294bde0a5bf2cc290415e21be50265b6ab96847e72b0951d5362",
+      "scenes": 2,
+      "production_detector_calls": 9,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "8f7bb8ab44f84033d611c610fa1d3f46c94c92338fad74978a689ff0a153aed9",
+      "scenes": 2,
+      "production_detector_calls": 15,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "1b80d6fccbf370b96afc818469797f72dfd80c95cf3748b5d0d54f7149df9c19",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "4373636a80fafd1264bf1da1484a274ed7a8e8f050461297d0d67acf9c2f3e29",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "05cab4a114d1887b0c65658f11cb5c3f180389a3762961f55a531638baeab1bf",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "9b08f6fd118d243dc6caabb56c18d35ccc846f47c3f8da418abd0a8d63cdddda",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "01ebc7eac7e563495c5c946a22b111b1f5096a6065f7a773459df7ddaa7970db",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "f7221c9e6f86a4c6c16ed0003383b80d491eec8c8b734cca215aca3a1c03e767",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "d0fdde384b69ef873b84d896c1868c1d0da8462d4bf203728a955ebe0ca6c3f9",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "da6045cd332ed9747ceff3f213dc9146f9bb804d0ce163ca7378d2c5f966a72a",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "86de8c1279a9391c998cd6ec6121f7ba63b930ffd7fa88da7f44dbcfe40e49cd",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "2e052b6c760c7c7c304fcfc7f8e83f12d94ca53bc9c9f86214f8a4f96a6dc28e",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "4402e8670efad6fe0d2d8e956a2643f5abded4221a3e83d9faa98d6ea0870a85",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "08ba2410805cabbefa9e8bda05d4f5e2aeba1f209446bb17d7daa843603f6e0d",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "26400a8cce3f69ef78e3249f499bb6ca30231f037b5d2e868934f8dfda3b508b",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "0ff7f5bff9b3ef38c12f51b3d8e667321eca6d58cdc637a0ac21910ca00d972d",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "0e9ceb8d378e6f429c98dfdf64541573aa333a68706d61af83353378f325a7af",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "be5aed6e641417140c4d319835d5e94def95bf47a387974b856f3a20ef37e995",
+      "scenes": 2,
+      "production_detector_calls": 7,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "3724cd6d2648f584dcdcbc9a33bbad747b20ebfc3522d102ec3451852cd2051c",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "d0f9be45b6f9340523bacfc3a6a19cdf37b86582c831270073ca9c0e2596c8e7",
+      "scenes": 2,
+      "production_detector_calls": 11,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "fd95e85a26772f406df4aa38bd29cbc2fcd1ea6d804ed057db04a71552c8cda7",
+      "scenes": 2,
+      "production_detector_calls": 9,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "11edeba4184b3033b22e68cc6f9cb03ee81f6cb2c4559bf29245de1adb88f7c9",
+      "scenes": 2,
+      "production_detector_calls": 15,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "691996204b96abc686352a78b87e245e5dfa1c24e7001847ccebe4e02bb46986",
+      "scenes": 2,
+      "production_detector_calls": 13,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "016ee9a837ecb31ed47e21ddcccf3ded87ed772098184414dc928ae028a8eda2",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "3ed85b855e25eab409a31436880305deb67ff5f140e489fa30770040459d0c51",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "828b94acc651973bf493bfcd1a0066a467cd38a421d61a04ed53f581c0456d72",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "2e245d110e27e99f5fe928b40338e81976f683382661bcf33563aae2d1972a8c",
+      "scenes": 2,
+      "production_detector_calls": 7,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "7de7b7349117be6899b2ff75985a9b29216f0635067237ccb736dd0a637ce63b",
+      "scenes": 2,
+      "production_detector_calls": 7,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "8a7d58fd7ec45b1ee42c58f0025ec8116ae26240eea158777d51e642fe9b9f94",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "708531a9013b7f0d228df83a80fe36571924a7ebad72209310c32b20dca29b62",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "11d037a0ddbfe507b733ad240b51973fe245a9a5bfa97ecd37b66cad49dd427a",
+      "scenes": 2,
+      "production_detector_calls": 9,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "05692e7139b2ba696f1fdd7f3da980658bc20eb15e24c96b9a4da69ff30fcf11",
+      "scenes": 2,
+      "production_detector_calls": 11,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "0624d98a8720fee33fc9fc288bd209ca3888e503503cb3e5c6c56cf7b3c31ddb",
+      "scenes": 2,
+      "production_detector_calls": 19,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "798fb19d90e2429e2c9071eb081a8c3e34a9bfa3a15f68e8c26884e0547acad3",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "0b02cb16e4b7bf280aef35f5af0741a863eaac14d50400e08a3e0d2584afbde8",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "6a481d9eb93054b5591096adb166e1656868922db1727bac1ec4daa8e4df214a",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "ef025b010ffb780781644b8f1aac00a7abfb9dc437c895e781ab197204661021",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "89a6c0b1fc709ca0aff81f0a7875d21a8384f8e20dc9a225271fb2f22cfcecf2",
+      "scenes": 2,
+      "production_detector_calls": 7,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "96567e7ffd84a7617816dcb822264750b5d4c77ac54872228660612fb2a90dc9",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "e8e4e02dbae81142ecd457c1795260ddebd4101665cf8f4a09f169b625216181",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "a252893dbfc9c621c398f59a4606454647f15c6fd49b2df1c29295295d58021d",
+      "scenes": 2,
+      "production_detector_calls": 7,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "1ab89639fbc86216e9c40a0409cf24492a1b040c6875b8ba9c9e9326086ff05a",
+      "scenes": 2,
+      "production_detector_calls": 9,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "f4a8768b429f614e21a0dfd053919f7dbe616f445435a527082e6ef475a046b1",
+      "scenes": 2,
+      "production_detector_calls": 17,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "b2356fb690dce5b61e9ee2a47778b440b2deca6f1772104d43f145584b1c66d0",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "c0fa08bacde66861347ce43aa494b5f7aefbd0e0566c9a215a2667b7300d6c15",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "329f465fa8c3cc7f200e65f13defcbc94c3cc05259d32ec73170fe7cc4ffaf43",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "6dbdf0370cf85dc0870b11ba20a58284e6f5cce6a1a3da174959d644f74cc04c",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "c8f4d17cd07dfd6f0c26fa55eb8bad28be7e5c745d225d86031a115c1cd4a763",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "c3fade9ca40af2fea8bab1f8870a954cceabbd7458cde67300e3d91957131974",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "59ba52e768829200949e8ae70996bd1f43f0a474ba369e4461ad643d3396ea4b",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "e94c58ecaf3ecab1ebaf1f2a4747b011765c112f1318844dfe57bedda3fc12de",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "8eab1d773a8939873ac16aea0ea8104a6493832e27ded81d2dcafaa80b844fbf",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "659fffdecffb8786c469cb27c784b17765ee9d08fae425569e2970b6a8c097b0",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "901116625873d715fe6602b0dd4b82542bb7402c7c318962239ad237f00c1d73",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "3b6ed9daf6dbe2ef5a2c18232b34ed56de5cccb624192d0a9a6e39420417da72",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "87a3baa63fd26768536ec942db7dd170603c2677b4f9f6d38d36909c1bb29426",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "98f8ee939d1f815ecb5ae55d5756285fd88d1ef0bcaafbcc5511c295c372822a",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "4639006a46793b86644ec17bd919b1629b98f05496f19911fba9c5b86932bf3c",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "153a77f4c6ffa0fa43ef1099fc8b9b1d88b71574175dda846e6b27eaceff0633",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "aff38233976fbb0590da29bcf26bdd64937c150b39d44c37285ed842d14dfb12",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "2291f0bfe3e1f95b8e08b5d188a24910aa3d616d79d7c12b3a18f1b0d3236b95",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "99193cfff3cdb8a12e113f7d21fe36c260cd5afd65467dd656433af691936489",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "ac53db36aa184385bd394508fb0309388396a069fcf34609e440e1dfeec1c435",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "ad4feb4040245af0d8590aa824e9c41e1f4776ef0ea16d0bba876e685bd1f095",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "546e0ebfd8573ad42e82d7367857de2cd53c6c897caa6767504686125f0bdf4c",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "0a905987bc55e5f03daa70413513a19c5f4adffd66e317d2524429a52d5d5d7f",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "dd78f6db7a13da4eb343fee9b1eeef3b19ae21c1db131bbccf7c3e43739e2011",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "2aa392a5a5a8a93f7b50f1d1247a460486449afee08d18b17628d0d8b17c5051",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "dfe2811cf4288372313d8bd0f38c4db63df82fa850927c09550ba6ea6c5a38c5",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "5c6520cde232a6ee6816bf935e6ab8941106886c741e722ed28e0b7286ef7756",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "9f19475f04971e34f85cfce721fc8082ac7bfe80c2dfa6a3cdc89cb04a1ac4bb",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "06ce0a46838e67f38f2f538dbcce452847912d6d8ff06c8003de3e1b15fe9f3b",
+      "scenes": 2,
+      "production_detector_calls": 7,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "9ee7cfd727f529d678acdd6bd926b34af18f1332402caff51723fd1542ea0c0f",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "83eb3561bf1bcf26f109173f56075418fe472d36ef3e9f957869edf074544a57",
+      "scenes": 2,
+      "production_detector_calls": 11,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "0ca4729a157ed42cb773c227ba06c99607b62d46a3b93054d09d14bc3536e46d",
+      "scenes": 2,
+      "production_detector_calls": 9,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "c73692bc191386606d21d514ddcb55ef34d780b6718bafbf76aa926b23f08697",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "99074562f366fdc2334583ded72958d1c8842daa632693c1762d2590b92383ed",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "8a1ecb120ff01d0c98a2926d74bd84eb65f6849f1413b0986831219501cfe38f",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "50ed0f6e97e9c3f4ae77c2b2f13a1075a35873a4cd7930ee171984e25db6a209",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "1ac6e4e8e6bee59e32c82c063bec3376be14150d55aa939da87da89a3e677e64",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "5cda6c70b9e8ab4b4881467cfdb631f0305ef2e192a81aea0b8532e6a6cfbec2",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "3c09ea6286bd2ebe3730f22e04e7f9f0754d9a885d5cbb635287a23c5ee87712",
+      "scenes": 2,
+      "production_detector_calls": 1,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "cbf114935405e9c49169afc3c85c30bb3c8221943924df7fce21cfb69d6b08e2",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "2aa1e5a7ce17bfde3de3da68a0ec7a9b95576af935a6b82b259c4b38672eaa96",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "1a24c78f9a4f4daa33942d0c88be98fd01738d86f52038837801b2807a0b3fd0",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "f7abf8bf3020310e498bee8e9456c2160c453e4613b7a3a260b7e366e0883501",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "c65c470955f7e29ef865105305a40ee4314f5c7584d078cc2126e007886f6593",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "324d23003448901bb0844fdc8c37531eed8c3adda76672a042c703b4e95acf6b",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "8ede951d47ad66e06a64f6db73857db8ffd24b4dc7734f39c29033a65dc0f336",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "fd5420565e1bc2b6b60fa11259e57e08f509e3a06103bce8ed2fa42324fad8e3",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "27df9e33b82737bf484135ab4775beb6671b4c73b0d9e76e3361f33ebbdd5495",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "5dccd8b0d3902ca872317afd45f7054175d57d38eb92a800361b469798bf0a65",
+      "scenes": 2,
+      "production_detector_calls": 7,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "18f96dc817bcafa969d12393c8e9f37cd866a067628783f6558389b895103593",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "db85be39e9f628992ee1920d21907d91a16c9db95be60814932db9dc7cd489c2",
+      "scenes": 2,
+      "production_detector_calls": 11,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "4eed95adc8db53e381b803eceb4265ae81c60c76916373f30c02c65cf1c7ff5d",
+      "scenes": 2,
+      "production_detector_calls": 9,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "cbdee14bb6b0dc37a60c93a82d947bdfefa0fe926e3a8a727e4458be279bab3f",
+      "scenes": 2,
+      "production_detector_calls": 15,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "9f3a215a7c79736c0ec9d78063bff1d7bccf71d6d93fd4e1ada465630b0efd5d",
+      "scenes": 0,
+      "production_detector_calls": 0,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "c5e5badfb75693b567f92cc211f160f7dfb599dee46aa037dc2dac2001769b23",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "468f6208186db5a75f5771e6b1cfe138212d3c99785dd6d3bb230cb64596b4b2",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "f9c3a927fb92b39e30547827052d9381b52cb7b41049fd4db8eba63975c33691",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "d8c453452652517dc51941786ba39dd0263e51098323a29853a61abbcefd4d02",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "3012b11a4e50258bbcbc3ee3e302c44e1c40a6ac81f08271b64d724bf98ce7db",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 18,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "3eb093cb93607047cae0917a469c25afd0fda10782a12283f99e0c85fa416eb0",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "fe31dfe33ef5e2230b2e11c1e79ee9a806dca722caa0202ee0110faf71e579eb",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "25fbbcb6c13ead3ec745d8e11c39a541bfce5c03cdc40afa2cc0be1e712c46eb",
+      "scenes": 2,
+      "production_detector_calls": 9,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "035866e4a2ee4fcd54eb47b19dec9052df0ac1ef4110287e3d7a8997b17d8661",
+      "scenes": 2,
+      "production_detector_calls": 13,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "2d64c8cdd25d6e97a285e125bdf1eafb87c30532ac355630ba450c70690d78ad",
+      "scenes": 2,
+      "production_detector_calls": 19,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "38531a89ba7e300217e98eaed6083493ddb51142cbba745845a7945be3c677a9",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "1b014ff361857f7355942b073724472411fdfae439c54abbe25f20c98cf28dc9",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "4df5da51798f6639a29fd99ce6e022d74ea0a3081f16681e23c6593f461c7d63",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "2e8d8060f486c47b8117b44d638343594e6a80a0c168ba4fb8102377e7a2e2e5",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "4287cfb3182d1222718045d82883a656ef5f3f5a937eeceb87058ef50eb1acd4",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "2d8823b1b3b1e83815c1b946890be3a69b935573fda87a941e679b2ea3549da0",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "9f9f77eed19b7a15a5808451c0ec00792969f6eab87819a876f2dff5ae93bc96",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "cc0504943a41bdf210f3c0bb61b82f5406b5883388eef05e43947c319310d8fe",
+      "scenes": 2,
+      "production_detector_calls": 7,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "16d53e481d878bf73aa2d40ce2e8c6ed16458b792fcd5ca5c008eb3361e633c9",
+      "scenes": 2,
+      "production_detector_calls": 11,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "55a56b560c90dd1317c9d2839891a5ec843af45a8b960e9f7ca16c5e07820e3a",
+      "scenes": 2,
+      "production_detector_calls": 15,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "f6ce6764911aef3b9618bdc1b9456d5d267d798d4cdaea0bf2609062b0eea4d6",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "fa118b56a1dfcd43b02f33eaedc7ff9459ebc766513fbdff7ea99224358b1dbb",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "db71e3bd83d1ea634f82f1e964c6fa03da9597d1cdc4ea917a3b7579604170b2",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "073d680f298d80ee8c4d8fb12ec092adfb8f18499ce1d748efc284a00bae15a0",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 12,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "7be4afe96b1e0de6067790086a5a6cced816baa329c25d8dff011fbd39b785bc",
+      "scenes": 2,
+      "production_detector_calls": 11,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "9b8fc89353e92f6719fb805799f544d1c809e9188f7ad04575bb31a45b925495",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "087dcb40f338915b7e654d5ca373e94c05bc6d07eb2698499dd4b146d2870ff9",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "d9bfdca1f0d17a9c5cf0b64bc0f7e437c3c7888afd95d6ea94bd0253dfbb0d61",
+      "scenes": 2,
+      "production_detector_calls": 9,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "043596d66938bbd37eb5a48b171204a7c7cb11651b62043b197dc1bfd05ff7fb",
+      "scenes": 2,
+      "production_detector_calls": 13,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "eb8f011d862a6970c8428ab0291cfb169116fd4fb8a2bd17ed393c28fbf0d9a4",
+      "scenes": 2,
+      "production_detector_calls": 21,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "2f4af013df73f25aebbdfe1b5a694258727af3e893809ae307dfcff24a3e33b9",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "c7af61194b5a9468b9f1df7be66638049585cb7e467ce1833f09726aa872fae8",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "8f33224d6b765d670a48c60456dc095ee27b08020544dc69ae22c8b5184f7d1a",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "832024380078881b9ca323e4d7473b613d389bcd1cebaddfc1343f7f74c96677",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "787fe7d5133a58d0b4ae429a8d9ed09b3eaf370b731a26088cae06b50448104a",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "a935aab6031937ec29ebf367641b2f91ff9356d324b11c4cc1ea2eb49544c50c",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "f994fddb1bcc626726bb52d51ab604df24c8d3a9511595938cd9809d54b0b6cc",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "64611e0d8779df563c4c6c055c1cd7bc45368f2670cdbf916d6bb33723828c42",
+      "scenes": 2,
+      "production_detector_calls": 11,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "b35c1b769bc51229a77d83854b5d61beb74824822eda04d1a47b623b6eacadab",
+      "scenes": 2,
+      "production_detector_calls": 15,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "cb7aa3ed4be7938b927ae7734d790195da23369da0419fe0c9407a0649ebaad6",
+      "scenes": 2,
+      "production_detector_calls": 25,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "6341895a7188bb8dcbc0792f92f8a9ccfe9b4dbc1c0f260330f1f2c507ca47db",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "a4a58c85bbf597c0eed1ff7f789fd987a861f5b5f35c27457a92b35c5ab63cef",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "dfc7314bc0d29cd5c41de63a13ee197b94464b3e826fe1b742d01d9454997b95",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "010100abcd9462684cbdf3133be9fe825176b2dc246c093d940a271d7b5844af",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "0a12eb3d08cbb881750be48501665068a846e03a4f5b849941a0ad5de42ea925",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "5a209c880eaac8bfb69f683097d36647f4531d72649ffddb76aa7f2237f59877",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "3c71515ede2625b5f5bf2c3c3d236dbeaa54f80caf2e0146de48e4e1d7fa7b13",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "6f08bb388a12ff3ff0189a4598ceeb622bce682c6386c1a7dc031684a8edf002",
+      "scenes": 2,
+      "production_detector_calls": 7,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "1f700e5c435e98ab7b07b808b2b0acd803f3e5524db99af8d5b51e8b6e0a49d4",
+      "scenes": 2,
+      "production_detector_calls": 15,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "eb9aff5bce6e9a9b105d4b4ff137ead2fb07c7a8983920293d11acc66ee5731d",
+      "scenes": 2,
+      "production_detector_calls": 23,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "ef662de3021996c5ce040760584446ccb4576346fc4bfe544f7826363a732299",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "a49c5acf9427bd1a5a90e096d26eca2a4bf61bc70109b534d8a402646e05fabb",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "65760a8ffa981fadfbb4951c721adf80a6ba9a9792062d8df2217c591c253f34",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "93c1b57ce051151e24b68c76d32418bbfb7b4f5d997803f70b9a116c8827eec7",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "a01ef5e0e0c3e5365d610000425f1530e6b3a11d8614526d8d882608458a55c6",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "e6bb230498a4adb6a74ef03f716a0e05ad90ca1f2a3e9814c4b7397d5da301f9",
+      "scenes": 2,
+      "production_detector_calls": 3,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "5ae285be2be30c6fe2455b2bce9e5327fff3176368f629c8181c0c05d1822227",
+      "scenes": 2,
+      "production_detector_calls": 5,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "00d86e0166752a9c799314f6cf839286ed3545ce204c80139db9cf3312a8ea91",
+      "scenes": 2,
+      "production_detector_calls": 7,
+      "diagnostics": 0,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "fe95c7c11b3a4005ea898954b942e3ef391aaa29ff78a8c06cffdbde009f7de8",
+      "scenes": 2,
+      "production_detector_calls": 11,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    },
+    {
+      "key": "efc302670dd2773db991db253776c89bd00f92689479d35cf8ff513f118c2206",
+      "scenes": 2,
+      "production_detector_calls": 17,
+      "diagnostics": 6,
+      "diagnostic_detector_calls": 0
+    }
+  ],
+  "detector_runs": 0,
+  "propagator_runs": 0,
+  "coloring_producer_runs": 0,
+  "oracle_searches": 0,
+  "project_module_imports": 0,
+  "created_at_utc": "2026-10-03T11:23:02.145438+00:00",
+  "scope": "Independent stdlib-only bytes, archive ancestry, exact shard contents, recorded call census, and declarative input reconstruction. No inference result or soundness was recomputed."
+}

@@ -1,9 +1,64 @@
 # 外部复现：算法、完整实验、证书与图件
 
-本指南包含截至 2026-09-30 的研究记录。发起思路属于 Qinzi27。
+本指南包含截至 2026-10-03 的研究记录。发起思路属于 Qinzi27。
 这里公开的是可复现的候选方法、成功和负结果，不是一份新的四色定理证明。
 
-## 当前检查：逻辑异名、联合候选、奇轮与条件同名（2026-09-27—30）
+## 当前检查：三角饱和、支持普查、等价预筛与性能剖析（2026-10-01—03）
+
+四轮分别冻结272、279、290、295项来源，前轮字节在后轮中完整保留。
+见[本批发布范围](PUBLICATION-2026-10-03.md)与以下四份结果文档：
+[三角饱和](QUATERNARY_TRIANGLE_SATURATION_RESULTS-2026-10-01.md)、
+[支持普查](QUATERNARY_TRIANGLE_SATURATION_SUPPORT_RESULTS-2026-10-03.md)、
+[等价预筛](QUATERNARY_TRIANGLE_SATURATION_PREFILTER_RESULTS-2026-10-03.md)、
+[性能剖析](QUATERNARY_TRIANGLE_SATURATION_PROFILE_RESULTS-2026-10-03.md)。
+各轮需要完整父归档和按图检查点，不能仅下载主报告。不要改写或重新压缩冻结文件。
+
+先复核已保存结果，四个输出名均须尚不存在：
+
+```text
+python -X utf8 scripts/validate_quaternary_triangle_saturation.py check --manifest outputs/quaternary-triangle-saturation-manifest-2026-10-01.json.gz --report outputs/quaternary-triangle-saturation-2026-10-01.json.gz --output outputs/my-triangle-saturation-check.json
+python -X utf8 scripts/validate_quaternary_triangle_saturation_support.py check --manifest outputs/quaternary-triangle-saturation-support-manifest-2026-10-03.json.gz --report outputs/quaternary-triangle-saturation-support-2026-10-03.json.gz --output outputs/my-triangle-support-check.json
+python -X utf8 scripts/validate_quaternary_triangle_saturation_prefilter.py check --manifest outputs/quaternary-triangle-saturation-prefilter-manifest-2026-10-03.json.gz --report outputs/quaternary-triangle-saturation-prefilter-2026-10-03.json.gz --output outputs/my-triangle-prefilter-check.json
+python -X utf8 scripts/validate_quaternary_triangle_saturation_profile.py check --manifest outputs/quaternary-triangle-saturation-profile-manifest-2026-10-03.json.gz --report outputs/quaternary-triangle-saturation-profile-2026-10-03.json.gz --output outputs/my-triangle-profile-check.json
+```
+
+这些`check`不重新生产、传播或执行oracle搜索，但各自核验范围不同：
+
+| 检查 | 保存核验对象与边界 |
+| --- | --- |
+| 三角饱和 | 975配对的1,950次策略运行、规则案例、旧1,814项条件诊断；含原始精确证据重验及有限赋值核验 |
+| 支持普查 | 975场景、5,042持久状态、60,777单候选与695,575允许色对；重验711,728份场景内去重的原始查询证据，生产轨迹审计按绑定旧档继承 |
+| 等价预筛 | 975完整生产输出、1,846条件输出和6,120规则案例；检查等价与真实工作量，不重跑此前原始oracle审计或重新测时 |
+| 性能剖析 | 975完整生产输出、全部函数及caller记录、总量／分层／排序；不重新剖析、重测时钟或重验旧oracle |
+
+当前生产路径的975次完成、4,067次安全提交来自三角饱和阶段的离线核查，
+后续等价实现通过完整输出相等继承。支持普查中的1,846项无联合支持色对
+仍被持久矩阵允许，条件传播全部能反驳；`passed`不表示矩阵已排净这些组合。
+预筛减少48.8%实际三角枚举，但两轮完整计时方向相反；剖析的copy自身耗时
+56.47%仅供定位成本，不能直接解释为可获得同等加速。
+
+最终本地回归为1,833项测试及综合验证通过，失败／错误／跳过均0，见
+[保存的综合验证](../outputs/validation-quaternary-triangle-saturation-profile-final-2026-10-03.json)。
+需要重新运行软件核查时使用新输出：
+
+```text
+python -X utf8 -m unittest discover -s tests -v
+python -X utf8 scripts/validate.py --output outputs/my-profile-validation.json
+```
+
+四个入口均支持`prepare/run/check`。全量新实验先用唯一新manifest执行
+`prepare --manifest outputs/my-<stage>-manifest.json.gz`，再以该manifest执行
+`run --manifest ... --output outputs/my-<stage>.json.gz`，最后检查自己的主报告。
+这里只是参数形状，`<stage>`需替换为所选阶段；各结果文档提供完整实例命令。
+`run`含真实计算，而支持普查的`run`仅作离线扫描，不能把其oracle计时当作
+配色生产耗时。预筛／剖析按单worker保存配对测量，正式计时期间避免并行负载。
+
+检查点按图保存；未完成时可在来源与输入未变的情况下继续相同运行，已完成
+主报告拒绝覆盖。图内中断仍可能重做该图，并非每一步都可恢复。资源耗尽或
+异常不能计作通过。新输入、规则或复制逻辑的修改需另立冻结版本；不要改动
+旧295项来源后继续要求旧清单通过。本地验证、推送和远端CI状态分别记录。
+
+## 此前检查：逻辑异名、联合候选、奇轮与条件同名（2026-09-27—30）
 
 本批五阶段依赖前序完整档案，见[发布范围](PUBLICATION-2026-09-30.md)。
 请从完整仓库根目录执行，使用尚不存在的输出路径。最新版本冻结253项来源；
@@ -542,7 +597,8 @@ python -X utf8 scripts/check_publication_archive.py --output outputs/my-publicat
 此前发布索引检查绑定 v4 的30份冻结源码及索引证据字节；新主线另按各运行器清单绑定31／35项来源。
 发布索引检查的实际覆盖以脚本与新输出为准，不代表每个历史版本都已重新运行或其原源码哈希均与当前同名文件相同。
 
-最新拟归档范围见[9月27日发布说明](PUBLICATION-2026-09-27.md)，此前范围仍见
+最新拟归档范围见[10月3日发布说明](PUBLICATION-2026-10-03.md)，此前范围仍见
+[9月30日发布说明](PUBLICATION-2026-09-30.md)、[9月27日发布说明](PUBLICATION-2026-09-27.md)、
 [9月21日发布说明](PUBLICATION-2026-09-21.md)与[9月22日发布说明](PUBLICATION-2026-09-22.md)：完整正式报告与分片保留，
 结构 smoke、本地文本日志、重复大明文 JSON 和早期 inside-out 草图不发布；本地原件均保留。
 旧报告里的“未上传”“未发布”是当时状态，不为本次归档改写，也不由本指南预先宣称远端推送或 CI 成功。
@@ -577,5 +633,8 @@ v4 的完整实验、负结果和固定隐含异名引理，以及最新结构�
 **此次整理公开研究材料，没有把网页默认命名器替换为这些研究策略。**
 旧 v4 状态以其[结果报告](PEER_BATCH_RESULTS-2026-09-19.md)和[隐含异名引理](IMPLICIT_INEQUALITY-2026-09-19.md)为准；
 结构重启主线以[结构重启结果](STRUCTURAL_RESTART_RESULTS-2026-09-21.md)及其单独命令行为准；
-最新四进制分支以[全候选试排结果](QUATERNARY_ALL_CANDIDATE_RESULTS-2026-09-26.md)及本指南F—J入口为准，
+最新四进制分支以[三角饱和结果](QUATERNARY_TRIANGLE_SATURATION_RESULTS-2026-10-01.md)、
+[支持普查](QUATERNARY_TRIANGLE_SATURATION_SUPPORT_RESULTS-2026-10-03.md)、
+[预筛](QUATERNARY_TRIANGLE_SATURATION_PREFILTER_RESULTS-2026-10-03.md)、
+[性能剖析](QUATERNARY_TRIANGLE_SATURATION_PROFILE_RESULTS-2026-10-03.md)及本指南顶部四轮入口为准，
 未用该分支替换网页默认器，也不把其有限结果当作结构重启版的新成绩。

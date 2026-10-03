@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "version": "quaternary-triangle-saturation-support-independent-inventory-review-v1",
+  "date": "2026-10-03",
+  "created_at_utc": "2026-10-03T10:40:50.500330+00:00",
+  "passed": true,
+  "bindings": {
+    "manifest": {
+      "path": "outputs/quaternary-triangle-saturation-support-manifest-2026-10-03.json.gz",
+      "sha256": "a84bd676277b76e8821c30fd7a725f80f0b025527d2a41aa4947447cbefe253d"
+    },
+    "prequery_census": {
+      "path": "outputs/quaternary-triangle-saturation-support-prequery-inventory-2026-10-03.json",
+      "sha256": "db1d97059c601f7802a0c9ea0f2a4c3edfa3754da9676ea17c17fa489fae0ac0"
+    }
+  },
+  "coverage": {
+    "current_sources": 279,
+    "unchanged_prior_sources": 272,
+    "direct_inputs": 10,
+    "production_checkpoints": 537,
+    "scenarios": 975,
+    "independently_rebuilt_persistent_states": 5042,
+    "conditional_parent_rows": 1814,
+    "conditional_parts": 71,
+    "conditional_row_bindings": 1814
+  },
+  "counts": {
+    "records": 537,
+    "eligibility": {
+      "geometry_error": 12,
+      "ready": 488,
+      "geometry_audit_error": 37
+    },
+    "runs": 975,
+    "persistent_states": 5042,
+    "single_targets": 60777,
+    "pair_targets": 695575,
+    "eligible_side_pairs": 76249,
+    "cartesian_color_pairs": 776345,
+    "states_without_singles": 975,
+    "states_without_pairs": 1700,
+    "old_scan_runs": 855,
+    "new_scan_runs": 120
+  },
+  "history_counts": {
+    "records": 154,
+    "prefix_references": 1618,
+    "excluded_prefix_references": 60,
+    "complete_records": 148
+  },
+  "independence": {
+    "standard_library_only": true,
+    "tested_scanner_or_checker_called": false,
+    "source_propagation_audits_rerun": false,
+    "oracle_proofs_replayed": 0,
+    "oracle_searches": 0,
+    "propagator_runs": 0,
+    "producer_runs": 0
+  },
+  "elapsed_seconds": 75.59021329999814,
+  "scope": "Independent source, input, complete literal-target inventory and conditional parent/part integrity review. Relies on prior successful production audit; no new raw query conclusion or proof replay."
+}
